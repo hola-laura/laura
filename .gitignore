@@ -3,3 +3,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.log
+
+# Monzo Sans is proprietary (restricted license — no redistribution).
+# Keep the font files locally but never push them to GitHub.
+Monzo Sans (restricted license)/

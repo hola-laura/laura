@@ -29,13 +29,13 @@
 
     <!-- Hero -->
     <header class="cs-hero" id="overview">
-      <span class="mono-label cs-kicker">Accepting Recs · Monzo · 2026</span>
+      <span class="mono-label cs-kicker">Accepting Recs · Monzo · 2026 · Senior Lead Product Designer</span>
       <h1 class="cs-title" data-reveal>
         From <span class="cs-accent">recommendation</span> to decision — closing the trust gap at the moment of highest intent.
       </h1>
 
       <dl class="cs-meta" data-stagger>
-        <div><dt>Role</dt><dd>Lead Product Designer</dd></div>
+        <div><dt>Role</dt><dd>Senior Lead Product Designer</dd></div>
         <div><dt>Team</dt><dd>2 designers · 6 engineers · 1 PM · 1 researcher</dd></div>
         <div><dt>Timeline</dt><dd>14 weeks · Q1–Q2 2026</dd></div>
         <div><dt>Platforms</dt><dd>iOS · Android</dd></div>
@@ -102,6 +102,7 @@
           <li data-link="principles">Principles</li>
           <li data-link="process">Process</li>
           <li data-link="solution">Solution</li>
+          <li data-link="explorations">Explorations</li>
           <li data-link="impact">Impact</li>
           <li data-link="reflection">Reflection</li>
         </ol>
@@ -335,9 +336,114 @@
           </div>
         </section>
 
+        <!-- UI EXPLORATIONS -->
+        <section class="cs-section" id="explorations">
+          <span class="mono-label">07 / UI explorations</span>
+          <h2 data-reveal>Four headers we explored before committing.</h2>
+          <p data-reveal>
+            I led a round of header explorations to answer a question the whole team had: how much room should the <em>broker's</em> brand take on a screen that's ultimately about the customer's decision? Each direction answered it differently — from a loud Santander takeover to a calm neutral layout.
+          </p>
+
+          <div class="rec-exp-grid" data-stagger>
+            <figure class="rec-exp is-chosen">
+              <div class="rec-exp-card rec-exp-a">
+                <div class="rec-exp-toolbar">
+                  <span class="rec-exp-chev">‹</span>
+                  <span class="rec-exp-title">Santander deal</span>
+                  <span class="rec-exp-chat">Chat</span>
+                </div>
+                <div class="rec-exp-body">
+                  <div class="rec-exp-logo">S</div>
+                  <div class="rec-exp-head">3.71% · £841/month</div>
+                  <div class="rec-exp-sub">Fixed for 2 years</div>
+                </div>
+                <div class="rec-exp-hint"></div>
+                <div class="rec-exp-hint"></div>
+              </div>
+              <figcaption>
+                <div class="rec-exp-label">A — Neutral <span class="rec-exp-tag">Chosen</span></div>
+                <p>Trust earned through clarity, not brand prominence. Matches Monzo's calm aesthetic and lets the "why this is best" card do the emotional lifting.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="rec-exp">
+              <div class="rec-exp-card rec-exp-b">
+                <div class="rec-exp-toolbar">
+                  <span class="rec-exp-chev">‹</span>
+                  <span class="rec-exp-title">Santander deal</span>
+                  <span class="rec-exp-chat">Chat</span>
+                </div>
+                <div class="rec-exp-body">
+                  <div class="rec-exp-brand-card">
+                    <div class="rec-exp-brand-name">Santander</div>
+                    <div class="rec-exp-brand-row"><span>✦</span>3.71% rate</div>
+                    <div class="rec-exp-brand-row"><span>✕</span>£841/month</div>
+                    <div class="rec-exp-brand-row"><span>⚡</span>Fixed for 2 years</div>
+                    <div class="rec-exp-brand-logo">S</div>
+                  </div>
+                </div>
+                <div class="rec-exp-hint"></div>
+              </div>
+              <figcaption>
+                <div class="rec-exp-label">B — Branded card</div>
+                <p>Broker identity in colour block. Tested strong recognition but risked feeling like an ad — customers told us it looked "like a banner, not my recommendation."</p>
+              </figcaption>
+            </figure>
+
+            <figure class="rec-exp">
+              <div class="rec-exp-card rec-exp-c">
+                <div class="rec-exp-toolbar rec-exp-toolbar-on-hero">
+                  <span class="rec-exp-chev">‹</span>
+                  <span class="rec-exp-title">Santander deal</span>
+                  <span class="rec-exp-chat">Chat</span>
+                </div>
+                <div class="rec-exp-hero-body">
+                  <div class="rec-exp-logo rec-exp-logo-on-hero">S</div>
+                  <div class="rec-exp-head rec-exp-head-on-hero">3.71% · £841/month</div>
+                  <div class="rec-exp-sub rec-exp-sub-on-hero">Fixed for 2 years</div>
+                </div>
+                <div class="rec-exp-hint rec-exp-hint-overlap"></div>
+                <div class="rec-exp-hint"></div>
+              </div>
+              <figcaption>
+                <div class="rec-exp-label">C — Full hero</div>
+                <p>Whole screen top goes to the broker. Dramatic, but dropped our "your recommendation" framing and made the info card feel secondary.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="rec-exp">
+              <div class="rec-exp-card rec-exp-d">
+                <div class="rec-exp-toolbar rec-exp-toolbar-on-spotlight">
+                  <span class="rec-exp-chev">‹</span>
+                  <span class="rec-exp-title">Santander deal</span>
+                  <span class="rec-exp-chat">Chat</span>
+                </div>
+                <div class="rec-exp-spotlight-body">
+                  <div class="rec-exp-logo rec-exp-logo-on-spotlight">S</div>
+                  <div class="rec-exp-spotlights">
+                    <div><strong>3.71%</strong><span>Rate</span></div>
+                    <div><strong>£841</strong><span>Per month</span></div>
+                    <div><strong>2 years</strong><span>Fixed</span></div>
+                  </div>
+                </div>
+                <div class="rec-exp-hint"></div>
+              </div>
+              <figcaption>
+                <div class="rec-exp-label">D — Spotlight stats</div>
+                <p>Breaks the three values into prominent cards. Loved the clarity — but for mortgages the "why" matters more than the "what", and this pushed the reassurance copy below the fold.</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="cs-aside" data-reveal>
+            <span class="mono-label">A constraint we held from day one</span>
+            <p>Data is incomplete for some recommendations — external deals don't surface rates or fees upfront. The design had to handle missing values gracefully, relying on advisor context and expectation-setting rather than pretending to know what it doesn't. It's the quiet reason we chose a flexible, neutral header over any of the data-rich branded options.</p>
+          </div>
+        </section>
+
         <!-- IMPACT -->
         <section class="cs-section" id="impact">
-          <span class="mono-label">07 / Impact</span>
+          <span class="mono-label">08 / Impact</span>
           <h2 data-reveal>What happened after we shipped.</h2>
           <p data-reveal>Four weeks post-launch, across 5.4M daily active customers.</p>
 
@@ -368,7 +474,7 @@
 
         <!-- REFLECTION -->
         <section class="cs-section" id="reflection">
-          <span class="mono-label">08 / Reflection</span>
+          <span class="mono-label">09 / Reflection</span>
           <h2 data-reveal>What I'd take to the next one.</h2>
           <ul class="cs-reflect" data-stagger>
             <li><strong>Reframing the brief is half the design.</strong> Moving from "discovery problem" to "decision, timing, and trust problem under uncertainty" is what unlocked everything else.</li>

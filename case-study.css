@@ -33,8 +33,9 @@
   --monzo-teal-soft:   rgba(33, 143, 183, 0.14);
   --monzo-radius-box:  24px;
 
-  /* Monzo Sans is proprietary; fall back to DM Sans in public builds. */
-  --font-monzo: "DM Sans", "Monzo Sans Text", system-ui, sans-serif;
+  /* Monzo Sans is private (see styles.css for @font-face declarations);
+     fall back to DM Sans if the font files are missing. */
+  --font-monzo: "Monzo Sans Text", "DM Sans", system-ui, sans-serif;
 }
 
 
@@ -525,6 +526,290 @@
 .phone-screen-monzo .rec-row           { font-size: 11px; padding: 8px 12px; }
 .phone-screen-monzo > .rec-footer      { padding: 8px 10px 12px; margin-top: auto; }
 .phone-screen-monzo .rec-btn           { padding: 10px 0; font-size: 12px; }
+
+
+/* ---------------------------------------------------------------------
+   6b. UI header explorations (Monzo case study)
+   A 2×2 grid of small "screenshot cards" showing four alternative
+   header treatments. Each card uses its own `.rec-exp-*` modifier.
+   --------------------------------------------------------------------- */
+.rec-exp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.rec-exp {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Each card mimics a phone screen — rounded corners, stacked content */
+.rec-exp-card {
+  position: relative;
+  height: 320px;
+  background: var(--monzo-bg);
+  border-radius: 18px;
+  padding: 12px 10px 14px;
+  overflow: hidden;
+  font-family: var(--font-monzo);
+  color: var(--monzo-ink);
+  box-shadow: 0 14px 30px -18px rgba(9, 23, 35, 0.3),
+              0 0 0 1px var(--monzo-separator);
+}
+
+/* Fake toolbar — back + title + chat */
+.rec-exp-toolbar {
+  display: grid;
+  grid-template-columns: 28px 1fr 44px;
+  align-items: center;
+  padding: 4px 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.rec-exp-chev {
+  width: 22px; height: 22px;
+  display: grid; place-items: center;
+  background: var(--monzo-surface);
+  border-radius: 50%;
+  font-size: 14px; line-height: 1;
+  padding-bottom: 2px;
+}
+.rec-exp-title { text-align: center; }
+.rec-exp-chat {
+  justify-self: end;
+  padding: 3px 8px;
+  background: var(--monzo-surface);
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.rec-exp-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 0 10px;
+}
+.rec-exp-logo {
+  width: 48px; height: 48px;
+  border-radius: 14px;
+  background: #ec1c24;
+  color: #fff;
+  display: grid; place-items: center;
+  font-weight: 700;
+  font-size: 22px;
+  border: 1px solid var(--monzo-separator);
+}
+.rec-exp-head {
+  margin-top: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+.rec-exp-sub {
+  font-size: 11px;
+  color: var(--monzo-ink-soft);
+}
+
+/* Hint rows — faint rectangles suggesting the content below the fold */
+.rec-exp-hint {
+  margin: 8px 4px 0;
+  height: 48px;
+  background: var(--monzo-surface);
+  border-radius: 10px;
+}
+
+/* ----- Variant A — Neutral (chosen) ----- */
+/* No modifier needed; .rec-exp-a uses the base styling above.        */
+.rec-exp.is-chosen .rec-exp-card {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ----- Variant B — Branded red card ----- */
+.rec-exp-b .rec-exp-body { padding: 2px 0 6px; }
+.rec-exp-brand-card {
+  position: relative;
+  width: calc(100% - 16px);
+  margin: 4px 8px 0;
+  padding: 14px 14px 12px;
+  background: #ec1c24;
+  color: #fff;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rec-exp-brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+.rec-exp-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+.rec-exp-brand-row span {
+  width: 14px;
+  height: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  color: #fff;
+}
+.rec-exp-brand-logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  color: #ec1c24;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* ----- Variant C — Full red hero ----- */
+.rec-exp-c {
+  background: var(--monzo-surface);
+  padding: 0;
+}
+.rec-exp-toolbar-on-hero,
+.rec-exp-hero-body {
+  background: #ec1c24;
+  color: #fff;
+}
+.rec-exp-toolbar-on-hero {
+  padding: 14px 10px 10px;
+}
+.rec-exp-toolbar-on-hero .rec-exp-chev { background: rgba(255, 255, 255, 0.25); color: #fff; }
+.rec-exp-toolbar-on-hero .rec-exp-chat { background: rgba(255, 255, 255, 0.25); color: #fff; }
+.rec-exp-hero-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 0 18px;
+  border-radius: 0 0 16px 16px;
+}
+.rec-exp-logo-on-hero {
+  background: #fff;
+  color: #ec1c24;
+  border: none;
+}
+.rec-exp-head-on-hero,
+.rec-exp-sub-on-hero { color: #fff; }
+.rec-exp-sub-on-hero { opacity: 0.9; }
+.rec-exp-hint-overlap {
+  margin-top: 16px;
+}
+
+/* ----- Variant D — Spotlight stats ----- */
+.rec-exp-d {
+  background: linear-gradient(180deg, #ffb6a0 0%, #ffe5dd 55%, var(--monzo-bg) 100%);
+}
+.rec-exp-toolbar-on-spotlight { color: var(--monzo-ink); }
+.rec-exp-spotlight-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0 0;
+}
+.rec-exp-logo-on-spotlight {
+  background: #fff;
+  color: #ec1c24;
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--monzo-separator);
+}
+.rec-exp-spotlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: calc(100% - 12px);
+  margin: 0 6px;
+}
+.rec-exp-spotlights > div {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.rec-exp-spotlights strong {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--monzo-ink);
+}
+.rec-exp-spotlights span {
+  font-size: 10px;
+  color: var(--monzo-ink-soft);
+}
+
+/* Figcaption for each variant */
+.rec-exp figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rec-exp-label {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rec-exp-tag {
+  padding: 2px 8px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.rec-exp figcaption p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: none;
+}
+
+/* Aside callout — used for the "data is incomplete" constraint note */
+.cs-aside {
+  margin-top: 40px;
+  padding: 20px 24px;
+  background: var(--bg-raised);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+}
+.cs-aside .mono-label { display: block; margin-bottom: 8px; }
+.cs-aside p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: none;
+}
 
 
 /* ---------------------------------------------------------------------
@@ -1069,6 +1354,7 @@
     gap: 24px;
   }
   .cs-rail { display: none; }
+  .rec-exp-grid { grid-template-columns: 1fr; }
 
   .cs-meta { grid-template-columns: repeat(2, 1fr); }
 

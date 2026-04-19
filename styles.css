@@ -23,6 +23,94 @@
 
 
 /* ---------------------------------------------------------------------
+   1a. Monzo Sans (private typeface)
+   These files are kept locally and excluded from git — see .gitignore.
+   If the folder is missing, each stack falls back to DM Sans cleanly.
+   --------------------------------------------------------------------- */
+
+/* Display family — used for headings, hero titles, big numbers */
+@font-face {
+  font-family: "Monzo Sans Display";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monzo Sans Display";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansDisplay-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monzo Sans Display";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monzo Sans Display";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansDisplay-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monzo Sans Display";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansDisplay-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monzo Sans Display";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Text family — used for body, labels, UI chrome */
+@font-face {
+  font-family: "Monzo Sans Text";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monzo Sans Text";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansText-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monzo Sans Text";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansText-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monzo Sans Text";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansText-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monzo Sans Text";
+  src: url("Monzo%20Sans%20%28restricted%20license%29/WOFF2/MonzoSansText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ---------------------------------------------------------------------
    1. Design tokens
    --------------------------------------------------------------------- */
 :root {
@@ -44,9 +132,11 @@
   --radius-lg: 28px;
   --radius-md: 18px;
 
-  --font-display: "DM Sans", "Borna", system-ui, -apple-system, Segoe UI, sans-serif;
-  --font-body: "DM Sans", system-ui, -apple-system, Segoe UI, sans-serif;
-  --font-mono: "Fragment Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* Monzo Sans first; DM Sans is the fallback when cloning the repo
+     without the private font files. */
+  --font-display: "Monzo Sans Display", "DM Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-body:    "Monzo Sans Text",    "DM Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-mono:    "Fragment Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 /* ---------------------------------------------------------------------

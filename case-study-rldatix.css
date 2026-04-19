@@ -62,11 +62,99 @@
 
 
 /* ---------------------------------------------------------------------
-   2. Browser frame — rounded window with traffic lights + URL bar
+   2. Browser frame — rounded window with traffic lights + URL bar,
+   mounted inside a MacBook Pro 16" frame with a Dynamic-Notch bezel.
    --------------------------------------------------------------------- */
+
+/* Material Symbols — Google's Material Design 3 icon font.
+   The font file is loaded via <link> in the HTML head. */
+/* Material icon font. We load both "Material Icons" (legacy, battle-
+   tested) and "Material Symbols Outlined" (Material 3). The legacy
+   font handles the ligature reliably in every browser we tested.    */
+.material-symbols-outlined,
+.iw-ico .material-symbols-outlined,
+.dash-table .material-symbols-outlined {
+  font-family: "Material Icons", "Material Symbols Outlined" !important;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  font-variant-ligatures: common-ligatures discretionary-ligatures;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* MacBook Pro 16" lid — thin dark bezel with a centred notch.
+   Inside sits the `.browser` window which holds the actual UI.        */
+.laptop {
+  position: relative;
+  padding: 20px 14px 14px;
+  background: #111;
+  border-radius: 14px;
+  box-shadow:
+    0 40px 90px -40px rgba(0, 0, 0, 0.55),
+    0 0 0 1px #1f1f1f,
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+.laptop::before {
+  /* Camera notch at the top centre */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 14px;
+  background: #111;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 4;
+}
+.laptop::after {
+  /* Subtle hint of the hinge under the lid */
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: -6px;
+  height: 6px;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  border-radius: 0 0 10px 10px;
+  opacity: 0.7;
+}
+.laptop-screen {
+  background: #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+/* When the browser sits inside a laptop, drop its shadow and corner
+   radius so the laptop-screen defines the visible edges cleanly.       */
+.laptop-screen .browser {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .rl-mock {
   margin: 40px 0 0;
   padding: 0;
+}
+
+/* Break the mockups out of the 760px main column so content isn't
+   cramped. Only on viewports with room — below 1120px they keep
+   the normal column width.                                             */
+@media (min-width: 1120px) {
+  #mockups .rl-mock {
+    margin-left: -40px;
+    margin-right: -200px;
+  }
 }
 .rl-caption {
   margin-bottom: 12px;
@@ -206,6 +294,53 @@
 .rl-flag-medium  { border-left-color: var(--rl-yellow); }
 .rl-flag-low     { border-left-color: var(--rl-green);  }
 
+/* Collapse toggle — small icon button that lives in a panel header.
+   Clicking toggles a `*-collapsed` class on the parent .iw or .fm.   */
+.rl-collapse-btn {
+  all: unset;
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  color: var(--rl-n60);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.rl-collapse-btn:hover { background: var(--rl-n20); }
+.rl-collapse-btn .material-symbols-outlined { font-size: 18px; }
+
+/* Restore pill — only visible once its panel has been collapsed.
+   Appears in the parent's corner; clicking restores the panel.       */
+.rl-restore-btn {
+  all: unset;
+  position: absolute;
+  top: 14px;
+  padding: 6px 10px;
+  background: var(--rl-n0);
+  border: 1px solid var(--rl-n30);
+  border-radius: 999px;
+  display: none;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--rl-n80);
+  cursor: pointer;
+  z-index: 3;
+  box-shadow: var(--rl-shadow);
+}
+.rl-restore-btn:hover { background: var(--rl-n10); }
+.rl-restore-btn .material-symbols-outlined { font-size: 16px; }
+
+.iw.nav-collapsed  .rl-restore-btn[data-expand="nav"],
+.iw.rail-collapsed .rl-restore-btn[data-expand="rail"],
+.fm.side-collapsed .rl-restore-btn[data-expand="side"] {
+  display: inline-flex;
+}
+.rl-restore-btn[data-expand="nav"]  { left: 14px; }
+.rl-restore-btn[data-expand="rail"] { right: 14px; }
+.rl-restore-btn[data-expand="side"] { right: 16px; }
+
 /* Shared button styles */
 .rl-btn,
 .rl-btn-ghost,
@@ -233,11 +368,23 @@
 /* ---------------------------------------------------------------------
    4. Mockup A — Icon wall landing (.iw-*)
    Three-column: left nav, icon grid, right "recent reports" rail.
+   Both side panels can be collapsed — see the collapse helpers below.
    --------------------------------------------------------------------- */
 .iw {
   display: grid;
-  grid-template-columns: 220px 1fr 260px;
+  grid-template-columns: var(--iw-nav, 220px) 1fr var(--iw-rail, 260px);
   min-height: 560px;
+  position: relative;
+  transition: grid-template-columns 320ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.iw.nav-collapsed  { --iw-nav: 60px; }
+.iw.rail-collapsed { --iw-rail: 0px; }
+.iw.rail-collapsed .iw-rail {
+  opacity: 0;
+  padding: 0;
+  border: none;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 /* --- Left nav --- */
@@ -340,6 +487,10 @@
   flex-direction: column;
   gap: 16px;
   background: var(--rl-n0);
+  /* Prevents the grid children from forcing this column wider than
+     its grid cell — without this, tile content overflows and pushes
+     the right rail out of view.                                     */
+  min-width: 0;
 }
 .iw-top-row {
   display: flex;
@@ -400,12 +551,15 @@
   color: #fff;
 }
 
-/* Tile grid */
+/* Tile grid. minmax(0, 1fr) stops columns from forcing container
+   width when tile content is long — same intent as min-width: 0.   */
 .iw-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
+.iw-tile > span:last-child { min-width: 0; overflow: hidden; }
+.iw-tile-label { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 .iw-tile {
   all: unset;
   display: grid;
@@ -462,6 +616,11 @@
 }
 .iw-ico-lg { width: 56px; height: 56px; font-size: 26px; border-radius: 10px; }
 .iw-ico-lg::before { inset: -5px -5px 5px 5px; border-radius: 10px; }
+
+/* Material Symbols sizes inside the various icon contexts */
+.iw-ico .material-symbols-outlined      { font-size: 22px; }
+.iw-ico-lg .material-symbols-outlined   { font-size: 28px; }
+.dash-table .material-symbols-outlined  { font-size: 18px; }
 .iw-ico-coral::before  { background: var(--rl-coral);  }
 .iw-ico-sky::before    { background: var(--rl-sky);    }
 .iw-ico-amber::before  { background: var(--rl-amber);  }
