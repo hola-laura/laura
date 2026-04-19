@@ -1,0 +1,1005 @@
+/* =====================================================================
+   case-study.css
+   ---------------------------------------------------------------------
+   Styles for the "Accepting Recs" case study page (case-study.html).
+   This file extends styles.css (the main portfolio stylesheet).
+
+   Contents:
+     1. Monzo design tokens (pulled from the Figma file)
+     2. Page wrapper + scroll progress bar
+     3. Hero: title, meta grid, and phone stage
+     4. iPhone 17 frame (used in hero + compare slider)
+     5. The cluttered "before" phone content used in the hero
+     6. Monzo recommendation screen (.rec-*) — used in hero "after"
+        phone and in both panes of the before/after slider
+     7. Sticky rail + main content column
+     8. Section blocks: quotes, pain, stats, principles, steps
+     9. Before/after compare slider
+    10. Impact cards, big quote, reflection, credits
+    11. Responsive adjustments
+   ===================================================================== */
+
+
+/* ---------------------------------------------------------------------
+   1. Monzo design tokens — copied from the Accepting Recs Figma file
+   --------------------------------------------------------------------- */
+:root {
+  --monzo-bg:          #f2f8f3;
+  --monzo-surface:     #ffffff;
+  --monzo-ink:         #091723;
+  --monzo-ink-soft:    rgba(9, 23, 35, 0.6);
+  --monzo-separator:   rgba(9, 23, 35, 0.12);
+  --monzo-teal:        #218fb7;
+  --monzo-teal-soft:   rgba(33, 143, 183, 0.14);
+  --monzo-radius-box:  24px;
+
+  /* Monzo Sans is proprietary; fall back to DM Sans in public builds. */
+  --font-monzo: "DM Sans", "Monzo Sans Text", system-ui, sans-serif;
+}
+
+
+/* ---------------------------------------------------------------------
+   2. Page wrapper + scroll progress bar
+   --------------------------------------------------------------------- */
+.case-page {
+  max-width: 1280px;
+}
+
+.progress {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  z-index: 9998;
+}
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: var(--accent);
+  transition: width 80ms linear;
+}
+
+
+/* ---------------------------------------------------------------------
+   3. Hero: kicker, title, meta grid, phone stage
+   --------------------------------------------------------------------- */
+.cs-hero {
+  padding: 56px 0 120px;
+  position: relative;
+  border-top: none;
+}
+.cs-kicker {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+.cs-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(44px, 6.2vw, 84px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 56px;
+  max-width: 20ch;
+}
+.cs-accent {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.cs-meta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  padding: 32px 0;
+  margin: 0 0 80px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.cs-meta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cs-meta dt {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+}
+.cs-meta dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+/* The stage holds two floating phones + a soft coral glow behind them. */
+.cs-hero-stage {
+  position: relative;
+  height: 640px;
+  margin: 0 -32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+.cs-stage-glow {
+  position: absolute;
+  width: 640px;
+  height: 420px;
+  background: radial-gradient(
+    60% 60% at 50% 50%,
+    rgba(255, 92, 58, 0.18) 0%,
+    rgba(255, 92, 58, 0) 70%
+  );
+  filter: blur(8px);
+  z-index: 0;
+}
+
+
+/* ---------------------------------------------------------------------
+   4. iPhone 17 frame
+   Physical screen is 402×874pt (ratio 19.58:9), 55pt device corner.
+   We scale to 280×608 here and use a Dynamic Island instead of a notch.
+   --------------------------------------------------------------------- */
+.phone {
+  width: 280px;
+  height: 608px;
+  padding: 8px;
+  background: #0d0d0d;
+  border-radius: 38px;
+  position: relative;
+  z-index: 1;
+  box-shadow:
+    0 40px 80px -30px rgba(26, 26, 26, 0.35),
+    0 16px 40px -20px rgba(26, 26, 26, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+.phone-notch {                 /* Dynamic Island */
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84px;
+  height: 26px;
+  background: #0d0d0d;
+  border-radius: 14px;
+  z-index: 3;
+}
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  padding: 48px 14px 14px;     /* top padding leaves room for the island */
+  background: var(--bg);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Variant: hero phones are absolutely positioned and tilt slightly.   */
+.phone-float {
+  position: absolute;
+  transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.phone-before {
+  left: calc(50% - 240px);
+  transform: translateY(16px) rotate(-6deg);
+  opacity: 0.88;
+}
+.phone-after {
+  left: calc(50% - 40px);
+  transform: translateY(-16px) rotate(4deg);
+  z-index: 2;
+}
+
+/* Variant: phones used inside the compare slider sit upright, centered. */
+.phone-compare {
+  position: relative;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+.phone-compare > .rec-screen {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  border-radius: 30px;
+  box-shadow: none;
+}
+.phone-compare > .rec-screen .rec-top {
+  padding-top: 32px;           /* clear the Dynamic Island */
+}
+
+
+/* ---------------------------------------------------------------------
+   5. Hero "before" phone — a deliberately cluttered screen showing
+   the old version of the flow. Only used on the left-tilted phone.
+   --------------------------------------------------------------------- */
+.phone-screen-busy {
+  padding: 40px 10px 10px;
+  gap: 6px;
+}
+.ph-banner {
+  background: #1a1a1a;
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+.ph-balance-busy {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 24px;
+  padding: 4px 4px 0;
+  color: var(--ink);
+}
+.ph-row-busy {
+  font-family: var(--font-display);
+  font-size: 11px;
+  padding: 3px 4px;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+}
+.ph-card {
+  background: #ffe4d8;
+  color: #9a3d1f;
+  font-family: var(--font-display);
+  font-size: 11px;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.ph-card-promo {
+  border: 1px dashed #d88a6b;
+}
+.ph-card-small {
+  font-size: 10px;
+}
+
+
+/* ---------------------------------------------------------------------
+   6. Monzo recommendation screen (.rec-*)
+   Rebuilt 1:1 from the Figma node "Mortgage recommendation - multiple
+   options" (node 2346:61084). Used in:
+     - The hero "after" phone (compact variant, trimmed content)
+     - Both panes of the before/after slider (full scrollable variant)
+   --------------------------------------------------------------------- */
+
+/* When used inside a hero phone, the .phone-screen wrapper already
+   provides the rounded background — strip the outer box styling.     */
+.phone-screen-monzo {
+  background: var(--monzo-bg) !important;
+  padding: 34px 0 0 !important;
+  gap: 0 !important;
+  color: var(--monzo-ink);
+  font-family: var(--font-monzo);
+}
+
+/* Standalone screen — used inside the compare slider phones. */
+.rec-screen {
+  width: 320px;
+  max-width: 90%;
+  max-height: 560px;
+  padding: 0;
+  background: var(--monzo-bg);
+  border-radius: 34px;
+  color: var(--monzo-ink);
+  font-family: var(--font-monzo);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow:
+    0 24px 60px -30px rgba(9, 23, 35, 0.35),
+    0 0 0 1px var(--monzo-separator);
+}
+
+/* --- Top toolbar: back chevron, title, chat button --- */
+.rec-top {
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: 44px 1fr 56px;
+  align-items: center;
+  padding: 10px 12px;
+}
+.rec-chev {
+  all: unset;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--monzo-surface);
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--monzo-ink);
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+.rec-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+.rec-chat {
+  all: unset;
+  justify-self: end;
+  background: var(--monzo-surface);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: var(--monzo-ink);
+}
+
+/* --- Scrollable content area --- */
+.rec-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 16px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  scrollbar-width: thin;
+}
+.rec-scroll::-webkit-scrollbar { width: 4px; }
+.rec-scroll::-webkit-scrollbar-thumb {
+  background: var(--monzo-separator);
+  border-radius: 4px;
+}
+
+/* --- Hero: logo + headline + fixed-term subtitle --- */
+.rec-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 20px 0 4px;
+}
+.rec-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid var(--monzo-separator);
+  overflow: hidden;
+}
+.rec-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rec-headline {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+.rec-sub {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--monzo-ink-soft);
+}
+.rec-info {                    /* Small teal "i" circle */
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--monzo-teal);
+  color: #fff;
+  display: inline-grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 10px;
+  line-height: 1;
+}
+
+/* --- "Why is this best?" info card --- */
+.rec-card {
+  background: var(--monzo-surface);
+  border-radius: var(--monzo-radius-box);
+  padding: 14px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rec-card-head {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.rec-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #d8e6d8;
+  overflow: hidden;
+}
+.rec-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rec-card p {
+  margin: 0;
+  max-width: none;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--monzo-ink-soft);
+}
+.rec-link {
+  padding-top: 2px;
+  font-size: 13px;
+  color: var(--monzo-teal);
+  cursor: pointer;
+}
+
+/* --- Table-style section (Summary / Total cost / After this deal…) --- */
+.rec-section {
+  background: var(--monzo-surface);
+  border-radius: var(--monzo-radius-box);
+  overflow: hidden;
+}
+.rec-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.rec-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 10px 16px;
+  font-size: 13px;
+  border-top: 1px solid var(--monzo-separator);
+}
+.rec-val {
+  color: var(--monzo-ink-soft);
+  text-align: right;
+}
+
+.rec-footnote {
+  margin: 0;
+  max-width: none !important;
+  padding: 0 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--monzo-ink-soft);
+}
+
+/* --- Docked footer with primary/tinted buttons --- */
+.rec-footer {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px 20px;
+  background: var(--monzo-bg);
+  border-top: 1px solid var(--monzo-separator);
+}
+.rec-btn {
+  all: unset;
+  text-align: center;
+  padding: 14px 0;
+  border-radius: 999px;
+  font-family: var(--font-monzo);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+.rec-btn-primary {
+  background: var(--monzo-teal);
+  color: #fff;
+}
+.rec-btn-tinted {
+  background: var(--monzo-teal-soft);
+  color: var(--monzo-teal);
+}
+
+/* --- Compact overrides for the hero phone (less space available) --- */
+.phone-screen-monzo .rec-top           { padding: 4px 8px 6px; }
+.phone-screen-monzo .rec-top .rec-title{ font-size: 13px; }
+.phone-screen-monzo .rec-hero          { padding: 12px 0 4px; }
+.phone-screen-monzo .rec-logo          { width: 54px; height: 54px; border-radius: 16px; }
+.phone-screen-monzo .rec-headline      { font-size: 15px; margin-top: 4px; }
+.phone-screen-monzo .rec-sub           { font-size: 11px; }
+.phone-screen-monzo > .rec-card,
+.phone-screen-monzo > .rec-section     { margin: 6px 10px 0; }
+.phone-screen-monzo > .rec-card        { padding: 10px 12px; }
+.phone-screen-monzo > .rec-card p      { font-size: 11px; }
+.phone-screen-monzo .rec-card-head     { font-size: 12px; }
+.phone-screen-monzo .rec-section-head  { font-size: 12px; padding: 10px 12px; }
+.phone-screen-monzo .rec-row           { font-size: 11px; padding: 8px 12px; }
+.phone-screen-monzo > .rec-footer      { padding: 8px 10px 12px; margin-top: auto; }
+.phone-screen-monzo .rec-btn           { padding: 10px 0; font-size: 12px; }
+
+
+/* ---------------------------------------------------------------------
+   7. Body layout — sticky left rail + main content column
+   --------------------------------------------------------------------- */
+.cs-body {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 80px;
+  padding-top: 40px;
+}
+.cs-rail {
+  position: sticky;
+  top: 40px;
+  align-self: start;
+  height: max-content;
+}
+.cs-rail ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.cs-rail li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition: color 200ms ease, padding-left 200ms ease;
+}
+.cs-rail li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 12px;
+  height: 1px;
+  background: currentColor;
+  transition: width 220ms ease;
+}
+.cs-rail li.is-active {
+  color: var(--ink);
+  padding-left: 36px;
+}
+.cs-rail li.is-active::before {
+  width: 24px;
+  background: var(--accent);
+}
+
+.cs-main {
+  max-width: 760px;
+}
+
+
+/* ---------------------------------------------------------------------
+   8. Section blocks
+   --------------------------------------------------------------------- */
+.cs-section {
+  padding: 48px 0;
+  border-top: 1px solid var(--line);
+}
+.cs-section:first-of-type {
+  padding-top: 0;
+  border-top: none;
+}
+.cs-section h2 {
+  margin: 16px 0 24px;
+  max-width: 22ch;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+.cs-section p {
+  margin: 0 0 16px;
+  max-width: 62ch;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.cs-section p strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+.cs-lead {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2vw, 24px) !important;
+  line-height: 1.45 !important;
+  color: var(--ink) !important;
+  max-width: 30ch;
+}
+
+/* Pain list — the three problem cards (Trust / Timing / Continuity) */
+.cs-pain {
+  list-style: none;
+  margin: 24px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.cs-pain li {
+  padding: 20px;
+  background: var(--bg-raised);
+  border-radius: 16px;
+  border-top: 3px solid var(--accent);
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+.cs-pain li strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* User quotes */
+.cs-quotes {
+  display: grid;
+  gap: 20px;
+  margin-top: 32px;
+}
+.cs-quotes blockquote {
+  margin: 0;
+  padding: 20px 24px;
+  background: var(--bg-raised);
+  border-left: 3px solid var(--accent);
+  border-radius: 18px;
+}
+.cs-quotes blockquote p {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.cs-quotes blockquote cite {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-style: normal;
+  color: var(--ink-muted);
+}
+
+/* Numerical stats grid (Discovery section) */
+.cs-stats {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.cs-stats li {
+  min-height: 140px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.cs-stat-num {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+}
+.cs-stat-lbl {
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--ink-soft);
+}
+
+/* Principles cards. The number spans two rows so the title and body
+   both live in the right column (otherwise body wraps in the 60px col). */
+.cs-principles {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+.cs-principles li {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 20px;
+  row-gap: 6px;
+  align-items: start;
+  padding: 28px;
+  background: var(--bg-raised);
+  border-radius: 20px;
+}
+.cs-pnum {
+  grid-row: 1 / span 2;
+  padding-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--accent);
+}
+.cs-principles h3 {
+  grid-column: 2;
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.cs-principles p {
+  grid-column: 2;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+/* Process steps grid */
+.cs-steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+.cs-step {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.cs-step-num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+.cs-step h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+.cs-step p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+
+/* ---------------------------------------------------------------------
+   9. Before/after compare slider
+   Two absolutely-positioned panes stacked on top of each other. The
+   "after" pane is clipped from the left using clip-path; dragging the
+   handle changes the clip percentage.
+   --------------------------------------------------------------------- */
+.compare {
+  position: relative;
+  height: 700px;
+  margin-top: 40px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  overflow: hidden;
+  user-select: none;
+}
+.compare-pane {
+  position: absolute;
+  inset: 0;
+  padding: 44px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.compare-after {
+  clip-path: inset(0 0 0 50%);
+}
+.compare-label {
+  position: absolute;
+  top: 20px;
+  padding: 6px 10px;
+  background: var(--bg);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.compare-before .compare-label { left: 24px; }
+.compare-after  .compare-label { right: 24px; }
+
+/* The draggable vertical handle */
+.compare-handle {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: var(--ink);
+  cursor: ew-resize;
+  transform: translateX(-50%);
+  z-index: 3;
+  outline: none;
+}
+.compare-handle-grip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ink);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.35);
+}
+.compare-handle-grip::before,
+.compare-handle-grip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  transform: translateY(-50%);
+}
+.compare-handle-grip::before { left: 10px;  border-right-color: #fff; }
+.compare-handle-grip::after  { right: 10px; border-left-color:  #fff; }
+
+
+/* ---------------------------------------------------------------------
+   10. Impact cards + big quote + reflection + credits
+   --------------------------------------------------------------------- */
+.cs-impact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+.cs-impact-card {
+  min-height: 180px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: 22px;
+}
+.cs-impact-card:nth-child(odd) {
+  background: var(--accent);
+  color: #fff;
+}
+.cs-impact-num {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(48px, 6vw, 72px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.cs-impact-lbl {
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.cs-big-quote {
+  margin: 48px 0 0;
+  padding: 40px;
+  background: var(--bg-raised);
+  border-radius: 24px;
+}
+.cs-big-quote p {
+  margin: 0 0 16px !important;
+  max-width: none !important;
+  font-family: var(--font-display);
+  font-weight: 500 !important;
+  font-size: clamp(22px, 2.4vw, 30px) !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.015em;
+  color: var(--ink) !important;
+}
+.cs-big-quote cite {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-style: normal;
+  color: var(--ink-muted);
+}
+
+.cs-reflect {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cs-reflect li {
+  padding-left: 24px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--accent);
+}
+
+.cs-credits {
+  padding-bottom: 96px;
+}
+.cs-next {
+  display: inline-block;
+  margin-top: 24px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+  color: var(--accent);
+}
+.cs-next:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Home-page card link inherits card styles and just adds a pointer. */
+.card-link {
+  cursor: pointer;
+}
+
+
+/* ---------------------------------------------------------------------
+   11. Responsive
+   --------------------------------------------------------------------- */
+@media (max-width: 960px) {
+  .cs-body {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .cs-rail { display: none; }
+
+  .cs-meta { grid-template-columns: repeat(2, 1fr); }
+
+  .cs-hero-stage {
+    height: 540px;
+    margin: 0 -20px;
+  }
+  .phone          { width: 230px; height: 500px; border-radius: 32px; }
+  .phone-notch    { width: 70px; height: 22px; top: 12px; }
+  .phone-screen   { padding: 42px 12px 12px; border-radius: 26px; }
+  .phone-before   { left: calc(50% - 200px); }
+  .phone-after    { left: calc(50% - 32px); }
+
+  .cs-stats,
+  .cs-steps,
+  .cs-impact      { grid-template-columns: 1fr; }
+
+  .cs-pain        { grid-template-columns: 1fr; }
+
+  .compare        { height: 600px; }
+}
