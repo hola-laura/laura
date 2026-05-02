@@ -1,152 +1,204 @@
 /* =====================================================================
    case-study-intercom.css
-   Styles specific to the Intercom × Monzo case study.
-   Extends case-study.css (shared structure) and styles.css (base).
+   Intercom case study — extends case-study.css + styles.css
+   Uses ONLY portfolio tokens: --bg, --bg-raised, --ink, --ink-soft,
+   --ink-muted, --accent, --radius-lg, --radius-md
    ===================================================================== */
 
-:root {
-  --intercom-purple: #8b5cf6;
-  --intercom-purple-soft: rgba(139, 92, 246, 0.12);
-  --intercom-teal: #00a3d9;
-  --intercom-green: #33c78a;
-  --intercom-orange: #f28c1a;
-  --intercom-red: #dc3545;
-}
 
-/* Iteration cards */
+/* Iteration cards ---------------------------------------------------- */
 .cs-iterations {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .cs-iter {
-  background: var(--bg-raised, #ebe6dd);
-  border-radius: var(--radius-lg, 28px);
-  padding: 2.5rem;
-  border-left: 4px solid var(--accent, #ff5c3a);
+  background: var(--bg-raised);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  border-left: 3px solid var(--accent);
 }
 
 .cs-iter-num {
-  font-family: var(--font-mono, "Fragment Mono", monospace);
-  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--accent, #ff5c3a);
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
   margin-bottom: 0.5rem;
   display: block;
 }
 
 .cs-iter h3 {
-  font-size: 1.35rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--ink);
   margin-bottom: 0.75rem;
+}
+
+.cs-iter > p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
 }
 
 .cs-iter-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 1.25rem;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .cs-iter-col h4 {
-  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
   margin-bottom: 0.5rem;
-  opacity: 0.5;
 }
 
 .cs-iter-col p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.6;
+  color: var(--ink-soft);
 }
 
-/* Principle cards — intercom variant */
+
+/* Principle cards (2×2 grid) ----------------------------------------- */
 .cs-principles-intercom {
   list-style: none;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .cs-principles-intercom li {
-  background: var(--bg-raised, #ebe6dd);
-  border-radius: var(--radius-md, 18px);
-  padding: 2rem;
+  background: var(--bg-raised);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
 }
 
 .cs-principles-intercom .cs-pnum {
-  font-family: var(--font-mono, "Fragment Mono", monospace);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  color: var(--accent, #ff5c3a);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
   display: block;
+  margin-bottom: 0.35rem;
+}
+
+.cs-principles-intercom h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink);
   margin-bottom: 0.5rem;
 }
 
-/* Animated prototype description */
+.cs-principles-intercom p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+
+/* Decision callout inside iterations --------------------------------- */
+.cs-decision {
+  background: var(--bg);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  margin: 1.5rem 0 0;
+  border-left: 3px solid var(--ink-muted);
+}
+
+.cs-decision-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.cs-decision p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+
+/* Animated prototype description ------------------------------------- */
 .cs-proto {
-  background: var(--bg-raised, #ebe6dd);
-  border-radius: var(--radius-lg, 28px);
-  padding: 2.5rem;
-  margin: 2rem 0;
+  background: var(--bg-raised);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  margin: 2.5rem 0;
 }
 
 .cs-proto h3 {
-  font-size: 1.2rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.cs-proto > p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
   margin-bottom: 1rem;
 }
 
 .cs-proto-steps {
   list-style: none;
   padding: 0;
+  margin: 0;
   counter-reset: proto;
 }
 
 .cs-proto-steps li {
   counter-increment: proto;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(26, 26, 26, 0.08);
+  border-bottom: 1px solid rgba(26, 26, 26, 0.06);
   display: grid;
-  grid-template-columns: 2.5rem 1fr;
+  grid-template-columns: 2rem 1fr;
   gap: 0.75rem;
   align-items: start;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
 }
 
 .cs-proto-steps li::before {
   content: counter(proto, decimal-leading-zero);
-  font-family: var(--font-mono, "Fragment Mono", monospace);
-  font-size: 0.75rem;
-  color: var(--accent, #ff5c3a);
-  padding-top: 0.15rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  padding-top: 0.2rem;
 }
 
 .cs-proto-steps li:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
-/* Decision card */
-.cs-decision {
-  background: var(--bg-raised, #ebe6dd);
-  border-radius: var(--radius-md, 18px);
-  padding: 2rem;
-  margin: 1.5rem 0;
-  border-left: 4px solid var(--ink-muted, #6b6860);
+.cs-proto-steps strong {
+  color: var(--ink);
 }
 
-.cs-decision-label {
-  font-family: var(--font-mono, "Fragment Mono", monospace);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--ink-muted, #6b6860);
-  margin-bottom: 0.5rem;
-  display: block;
-}
 
-/* Impact grid — matches portfolio warm palette */
+/* Impact grid -------------------------------------------------------- */
 .cs-impact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -155,66 +207,42 @@
 }
 
 .cs-impact-card {
-  background: var(--bg-raised, #ebe6dd);
-  border-radius: var(--radius-md, 18px);
-  padding: 2rem 1.75rem;
+  background: var(--bg-raised);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
 }
 
 .cs-impact-num {
-  font-family: var(--font-monzo, "DM Sans", system-ui, sans-serif);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--ink, #1a1a1a);
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--ink);
   display: block;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
 .cs-impact-label {
   font-size: 0.85rem;
-  color: var(--ink-muted, #6b6860);
+  color: var(--ink-muted);
   line-height: 1.55;
 }
 
-/* Subtle accent bar on each card — uses the portfolio coral */
-.cs-impact-card::before {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 3px;
-  background: var(--accent, #ff5c3a);
-  border-radius: 2px;
-  margin-bottom: 1rem;
-  opacity: 0.7;
-}
 
-/* Figures */
-.cs-figure {
-  margin: 2rem 0;
-}
-
-.cs-figure img {
-  width: 100%;
-  border-radius: var(--radius-md, 18px);
-  border: 1px solid rgba(26, 26, 26, 0.08);
-}
-
-.cs-figure figcaption {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin-top: 0.75rem;
-  color: var(--ink-muted, #6b6860);
-}
-
-.cs-figure figcaption strong {
-  color: var(--ink, #1a1a1a);
-}
-
-/* Responsive */
+/* Responsive --------------------------------------------------------- */
 @media (max-width: 768px) {
   .cs-iter-grid,
   .cs-principles-intercom,
   .cs-impact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cs-iter {
+    padding: 1.5rem;
+  }
+
+  .cs-proto {
+    padding: 1.5rem;
   }
 }
