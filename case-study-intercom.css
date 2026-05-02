@@ -178,6 +178,28 @@
   line-height: 1.5;
 }
 
+/* Figures */
+.cs-figure {
+  margin: 2rem 0;
+}
+
+.cs-figure img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--monzo-separator, rgba(0,0,0,0.08));
+}
+
+.cs-figure figcaption {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+  color: var(--monzo-ink-soft, rgba(9,23,35,0.6));
+}
+
+.cs-figure figcaption strong {
+  color: var(--monzo-ink, #091723);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .cs-iter-grid,
