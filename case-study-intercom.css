@@ -21,10 +21,10 @@
 }
 
 .cs-iter {
-  background: var(--surface);
-  border-radius: var(--monzo-radius-box, 24px);
+  background: var(--bg-raised, #ebe6dd);
+  border-radius: var(--radius-lg, 28px);
   padding: 2.5rem;
-  border-left: 4px solid var(--accent, var(--intercom-purple));
+  border-left: 4px solid var(--accent, #ff5c3a);
 }
 
 .cs-iter-num {
@@ -32,7 +32,7 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--intercom-purple);
+  color: var(--accent, #ff5c3a);
   margin-bottom: 0.5rem;
   display: block;
 }
@@ -72,8 +72,8 @@
 }
 
 .cs-principles-intercom li {
-  background: var(--surface);
-  border-radius: 16px;
+  background: var(--bg-raised, #ebe6dd);
+  border-radius: var(--radius-md, 18px);
   padding: 2rem;
 }
 
@@ -81,14 +81,15 @@
   font-family: var(--font-mono, "Fragment Mono", monospace);
   font-size: 0.75rem;
   letter-spacing: 0.12em;
+  color: var(--accent, #ff5c3a);
   display: block;
   margin-bottom: 0.5rem;
 }
 
 /* Animated prototype description */
 .cs-proto {
-  background: linear-gradient(135deg, rgba(139,92,246,0.06), rgba(0,163,217,0.06));
-  border-radius: var(--monzo-radius-box, 24px);
+  background: var(--bg-raised, #ebe6dd);
+  border-radius: var(--radius-lg, 28px);
   padding: 2.5rem;
   margin: 2rem 0;
 }
@@ -107,7 +108,7 @@
 .cs-proto-steps li {
   counter-increment: proto;
   padding: 1rem 0;
-  border-bottom: 1px solid var(--monzo-separator, rgba(0,0,0,0.08));
+  border-bottom: 1px solid rgba(26, 26, 26, 0.08);
   display: grid;
   grid-template-columns: 2.5rem 1fr;
   gap: 0.75rem;
@@ -118,7 +119,7 @@
   content: counter(proto, decimal-leading-zero);
   font-family: var(--font-mono, "Fragment Mono", monospace);
   font-size: 0.75rem;
-  color: var(--intercom-purple);
+  color: var(--accent, #ff5c3a);
   padding-top: 0.15rem;
 }
 
@@ -128,11 +129,11 @@
 
 /* Decision card */
 .cs-decision {
-  background: var(--surface);
-  border-radius: 16px;
+  background: var(--bg-raised, #ebe6dd);
+  border-radius: var(--radius-md, 18px);
   padding: 2rem;
   margin: 1.5rem 0;
-  border-left: 4px solid var(--intercom-green);
+  border-left: 4px solid var(--ink-muted, #6b6860);
 }
 
 .cs-decision-label {
@@ -140,42 +141,51 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--intercom-green);
+  color: var(--ink-muted, #6b6860);
   margin-bottom: 0.5rem;
   display: block;
 }
 
-/* Impact grid */
+/* Impact grid — matches portfolio warm palette */
 .cs-impact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin: 1.5rem 0;
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
 .cs-impact-card {
-  background: var(--surface);
-  border-radius: 16px;
-  padding: 2rem;
-  text-align: center;
+  background: var(--bg-raised, #ebe6dd);
+  border-radius: var(--radius-md, 18px);
+  padding: 2rem 1.75rem;
 }
 
 .cs-impact-num {
-  font-size: 2.5rem;
+  font-family: var(--font-monzo, "DM Sans", system-ui, sans-serif);
+  font-size: 2rem;
   font-weight: 700;
+  color: var(--ink, #1a1a1a);
   display: block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.1;
 }
 
-.cs-impact-num.green { color: var(--intercom-green); }
-.cs-impact-num.purple { color: var(--intercom-purple); }
-.cs-impact-num.teal { color: var(--intercom-teal); }
-.cs-impact-num.orange { color: var(--intercom-orange); }
-
 .cs-impact-label {
-  font-size: 0.9rem;
-  opacity: 0.65;
-  line-height: 1.5;
+  font-size: 0.85rem;
+  color: var(--ink-muted, #6b6860);
+  line-height: 1.55;
+}
+
+/* Subtle accent bar on each card — uses the portfolio coral */
+.cs-impact-card::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--accent, #ff5c3a);
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  opacity: 0.7;
 }
 
 /* Figures */
@@ -185,19 +195,19 @@
 
 .cs-figure img {
   width: 100%;
-  border-radius: 12px;
-  border: 1px solid var(--monzo-separator, rgba(0,0,0,0.08));
+  border-radius: var(--radius-md, 18px);
+  border: 1px solid rgba(26, 26, 26, 0.08);
 }
 
 .cs-figure figcaption {
   font-size: 0.9rem;
   line-height: 1.6;
   margin-top: 0.75rem;
-  color: var(--monzo-ink-soft, rgba(9,23,35,0.6));
+  color: var(--ink-muted, #6b6860);
 }
 
 .cs-figure figcaption strong {
-  color: var(--monzo-ink, #091723);
+  color: var(--ink, #1a1a1a);
 }
 
 /* Responsive */
