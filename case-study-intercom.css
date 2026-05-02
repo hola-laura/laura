@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 .cs-iter {
@@ -44,6 +44,19 @@
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--ink-soft);
+  margin-bottom: 0.5rem;
+}
+
+.cs-iter .cs-figure {
+  margin: 1.5rem 0;
+}
+
+.cs-iter .cs-figure + p {
+  margin-top: 0;
+}
+
+.cs-iter .cs-pain {
+  margin-top: 1rem;
 }
 
 .cs-iter-grid {
@@ -76,7 +89,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .cs-principles-intercom li {
