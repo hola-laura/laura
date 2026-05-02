@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mortgage Chat — Laura Sampedro</title>
+  <meta name="description" content="Case study · Monzo 2026 · Lead Product Designer · Designing trust in a cross-platform chat experience" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fragment+Mono&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link rel="stylesheet" href="case-study-intercom.css" />
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <div class="page case-page">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">← Laura</a>
+      <ul class="nav-links">
+        <li><a href="index.html#work">All work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="cs-hero" id="overview">
+      <span class="mono-label cs-kicker">Mortgage Chat · Monzo × Habito · 2026 · Senior Lead Product Designer</span>
+      <h1 class="cs-title" data-reveal>
+        When your bank has <span class="cs-accent">two chat systems</span> — designing trust in a cross-platform mortgage experience.
+      </h1>
+
+      <dl class="cs-meta" data-stagger>
+        <div><dt>Role</dt><dd>Senior Lead Product Designer</dd></div>
+        <div><dt>Team</dt><dd>1 designer · 4 engineers · 1 PM · Ops lead</dd></div>
+        <div><dt>Timeline</dt><dd>8 weeks · Q2 2026</dd></div>
+        <div><dt>Platforms</dt><dd>iOS · Android (Intercom SDK)</dd></div>
+      </dl>
+    </header>
+
+    <!-- Sticky section nav + content -->
+    <div class="cs-body">
+      <aside class="cs-rail" aria-hidden="true">
+        <ol>
+          <li data-link="overview">Overview</li>
+          <li data-link="problem">The problem</li>
+          <li data-link="role">Role & scope</li>
+          <li data-link="approach">Approach</li>
+          <li data-link="iterations">Iterations</li>
+          <li data-link="solution">Final solution</li>
+          <li data-link="impact">Impact</li>
+          <li data-link="learnings">Learnings</li>
+        </ol>
+      </aside>
+
+      <main class="cs-main">
+
+        <!-- OVERVIEW -->
+        <section class="cs-section" id="overview-copy">
+          <span class="mono-label">01 / Overview</span>
+          <p class="cs-lead" data-reveal>
+            Monzo partnered with Habito to offer remortgage advice inside the banking app. The problem: Habito's advisors use Intercom, and Monzo's support uses its own chat. I had to design an experience where customers talk to a mortgage advisor through a third-party tool, inside their bank, without ever feeling confused about who they're speaking to — or losing trust in either system.
+          </p>
+          <p data-reveal>
+            This isn't a UI story. It's a systems thinking problem: two chat platforms, two support teams, one customer who just wants to remortgage without getting lost.
+          </p>
+        </section>
+
+        <!-- PROBLEM -->
+        <section class="cs-section" id="problem">
+          <span class="mono-label">02 / The problem</span>
+          <h2 data-reveal>Two chats, one customer, zero clarity.</h2>
+
+          <p data-reveal>
+            When a Monzo customer starts a remortgage with Habito, they get access to a dedicated mortgage advisor. That advisor communicates through Intercom — a separate chat system embedded inside the Monzo app. Meanwhile, Monzo's own support chat sits in the same Help tab.
+          </p>
+
+          <p data-reveal>
+            The result is a design problem that operates on three levels simultaneously:
+          </p>
+
+          <ul class="cs-pain" data-stagger>
+            <li><strong>Identity.</strong> Who am I talking to? A Monzo agent, an AI bot, or my mortgage advisor at Habito? The user interacts with four different entities across two systems.</li>
+            <li><strong>Routing.</strong> What happens when I ask a mortgage question in Monzo support? Or a banking question in the mortgage chat? Every misdirected message erodes confidence.</li>
+            <li><strong>Time sensitivity.</strong> Mortgage advice is time-critical — rate locks expire, lenders need documents by Friday. But the notification system treats every message the same.</li>
+          </ul>
+
+          <div class="cs-quotes" data-stagger>
+            <blockquote>
+              <p>"I wasn't sure if I was talking to Monzo or to someone else. It felt like I'd accidentally opened the wrong app."</p>
+              <cite>— Remortgage customer, usability session</cite>
+            </blockquote>
+            <blockquote>
+              <p>"I sent a message about my balance to the mortgage chat and got redirected. It felt clunky."</p>
+              <cite>— Beta tester, Week 1</cite>
+            </blockquote>
+          </div>
+
+          <p data-reveal>
+            The business constraints were equally tight. Intercom was Habito's existing tool — we couldn't rebuild it natively. The feature was temporary (12-18 months) before a fully native solution. And Ops leadership needed their support flow untouched — any changes to the Help tab had to be additive, never disruptive.
+          </p>
+        </section>
+
+        <!-- ROLE & SCOPE -->
+        <section class="cs-section" id="role">
+          <span class="mono-label">03 / Role & scope</span>
+          <h2 data-reveal>Sole designer. Full ownership from strategy to screens.</h2>
+
+          <p data-reveal>
+            I owned this end-to-end: problem framing, design principles, experience architecture, screen design, routing logic, and the design review process. I worked directly with the PM, Ops lead, and Habito's engineering team to navigate constraints.
+          </p>
+
+          <p data-reveal>
+            The scope was broader than "design a chat integration." I had to define: when chat appears and disappears (lifecycle), where it surfaces across the app (entry points), how users are redirected between systems (routing), what happens when the advisor isn't available (time-awareness), and how the relationship ends when the remortgage completes (post-completion).
+          </p>
+
+          <p data-reveal>
+            I also ran design reviews, synthesised feedback from five reviewers into actionable iterations, and maintained alignment between PM expectations and Ops constraints — which were, at times, in direct tension.
+          </p>
+        </section>
+
+        <!-- APPROACH -->
+        <section class="cs-section" id="approach">
+          <span class="mono-label">04 / Approach</span>
+          <h2 data-reveal>Start with the system, not the screen.</h2>
+
+          <p data-reveal>
+            The instinct was to design the chat screen. I resisted. The real design problem was the <em>system</em> around the chat — when it appears, where it lives, who owns it, and how it ends. I started by mapping states, not drawing screens.
+          </p>
+
+          <div class="cs-steps" data-stagger>
+            <div class="cs-step">
+              <span class="cs-step-num">01</span>
+              <h4>Define three system states, not nine scenarios</h4>
+              <p>Pre-remortgage (no advisor, no chat), active remortgage (advisor assigned, chat available), post-remortgage (relationship complete, chat archived). Every screen decision flows from which state the user is in.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">02</span>
+              <h4>Write principles before drawing pixels</h4>
+              <p>Four principles governed every decision: one chat one purpose, AI as triage not advisor, meet users where they are, and confidence-based routing. These resolved debates before they started.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">03</span>
+              <h4>Map the routing logic as a product spec</h4>
+              <p>I built a confidence-tier system for misdirected messages: high confidence auto-redirects, medium asks for clarification, low stays put. This wasn't UI work — it was product logic that shaped the entire experience.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">04</span>
+              <h4>Design the lifecycle, not just the happy path</h4>
+              <p>Most of the hard design work was in the transitions: AI to human handoff, in-hours to out-of-hours, active to complete. The chat screen itself was straightforward. The system around it was not.</p>
+            </div>
+          </div>
+
+          <ol class="cs-principles-intercom" data-stagger>
+            <li data-reveal>
+              <span class="cs-pnum">01</span>
+              <h3>One chat, one purpose.</h3>
+              <p>Mortgage chat is exclusively for mortgage communication. Both chats involve real people — the distinction is lifecycle (temporary vs permanent), not hierarchy.</p>
+            </li>
+            <li data-reveal>
+              <span class="cs-pnum">02</span>
+              <h3>People, not platforms.</h3>
+              <p>Users talk to "Annie, your mortgage advisor" — never to "Intercom" or "the mortgage chat system." The technology is invisible.</p>
+            </li>
+            <li data-reveal>
+              <span class="cs-pnum">03</span>
+              <h3>Meet users where they are.</h3>
+              <p>Chat surfaces in the Help tab — the existing mental model for messaging. No new navigation patterns for a temporary feature.</p>
+            </li>
+            <li data-reveal>
+              <span class="cs-pnum">04</span>
+              <h3>Confidence-based routing.</h3>
+              <p>High confidence auto-redirects. Medium clarifies first. Low stays put. We accept some false negatives to avoid false positives.</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- ITERATIONS -->
+        <section class="cs-section" id="iterations">
+          <span class="mono-label">05 / Iterations</span>
+          <h2 data-reveal>Three iterations. Each one solved a different layer of the problem.</h2>
+
+          <div class="cs-iterations">
+
+            <!-- Iteration 1 -->
+            <div class="cs-iter" data-reveal>
+              <span class="cs-iter-num">Iteration 1 — Discovery</span>
+              <h3>Map every scenario. Understand the full problem space.</h3>
+              <p>
+                The first pass was deliberately wide. I mapped nine scenarios end-to-end: first-time chat, misdirected questions in both directions, proactive finding of the chat, inbound advisor messages, help tab routing, and AI-to-human handoff. Each scenario got its own flow with screens.
+              </p>
+              <div class="cs-iter-grid">
+                <div class="cs-iter-col">
+                  <h4>What worked</h4>
+                  <p>Comprehensive coverage. Every edge case was identified. The routing guide — a confidence-tier system for misdirected messages — was strong product thinking that survived every iteration.</p>
+                </div>
+                <div class="cs-iter-col">
+                  <h4>What didn't</h4>
+                  <p>Stakeholders couldn't follow it. Nine parallel scenarios with no narrative hierarchy. The file felt like an audit, not a proposal. Feedback was direct: "I don't know what I'm looking at."</p>
+                </div>
+              </div>
+              <div class="cs-decision">
+                <span class="cs-decision-label">Key decision</span>
+                <p>The exploration phase was necessary but the presentation was wrong. I needed to restructure: lead with the happy path, layer edge cases on top.</p>
+              </div>
+            </div>
+
+            <!-- Iteration 2 -->
+            <div class="cs-iter" data-reveal>
+              <span class="cs-iter-num">Iteration 2 — Risk Scenarios</span>
+              <h3>Stress-test the boundaries. Where does trust break?</h3>
+              <p>
+                The second iteration focused specifically on the risk cases — the moments where users are most likely to get confused, message the wrong place, or lose trust. I mapped every routing scenario with colour-coded flows: red for "redirect out" (Monzo question in mortgage chat), blue for "redirect in" (mortgage question in Monzo support), and a new amber scenario for ambiguous questions that could be either.
+              </p>
+              <div class="cs-iter-grid">
+                <div class="cs-iter-col">
+                  <h4>What worked</h4>
+                  <p>The colour-coded scenario system made routing logic instantly scannable. The blurred-question disambiguation screen — where the AI presents two clear options instead of guessing — directly addressed feedback from the design review that the "grey area between money and mortgage questions" needed handling.</p>
+                </div>
+                <div class="cs-iter-col">
+                  <h4>What didn't</h4>
+                  <p>Still missing the emotional layer. The routing was correct but the experience didn't feel human. The advisor was a system, not a person. The post-completion state didn't exist — the chat just vanished when the remortgage completed.</p>
+                </div>
+              </div>
+              <div class="cs-decision">
+                <span class="cs-decision-label">Key decision</span>
+                <p>Routing logic was solid. Now the question shifted: how do we make this feel like talking to a person, not using a system? The advisor needed a name, a face, and a goodbye.</p>
+              </div>
+            </div>
+
+            <!-- Iteration 3 -->
+            <div class="cs-iter" data-reveal>
+              <span class="cs-iter-num">Iteration 3 — Refinement</span>
+              <h3>One narrative. Five chapters. Every piece of feedback addressed.</h3>
+              <p>
+                The final iteration restructured everything into a five-chapter narrative: onboarding and first recommendation, return paths (how users find their way back), routing and boundaries, AI-to-human handoff, and post-completion. Each chapter contained screens, annotations with rationale, and an alignment checkpoint for team sign-off.
+              </p>
+
+              <p>
+                This iteration also introduced the critical design review feedback: the progress screen was redesigned with six distinct states (no chat before fact-find, stacked CTA after advisor assigned, native Monzo interstitial before Intercom opens, suggestion chips during the 45-second advisor wait, advisor avatar on the timeline step, and trailing button only after the first conversation). Three chat entry point options were explored — FAB, trailing button, and advisor card — with clear rationale for recommending the advisor card.
+              </p>
+
+              <div class="cs-iter-grid">
+                <div class="cs-iter-col">
+                  <h4>What worked</h4>
+                  <p>Stakeholders could follow the story. The chapter structure meant feedback was targeted ("I disagree with the routing in Chapter 3" vs "I don't understand any of this"). The alignment checkpoints turned the file into a collaboration tool — decisions were made at checkpoints, not in endless Slack threads.</p>
+                </div>
+                <div class="cs-iter-col">
+                  <h4>What evolved</h4>
+                  <p>The "Chat with Annie" card — the recommended entry point — emerged from exploring and rejecting two alternatives. The soft goodbye from Annie addressed post-completion feedback. The Help tab mid-approach (showing Annie's message card alongside unchanged support) balanced personalisation with engineering constraints.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FINAL SOLUTION -->
+        <section class="cs-section" id="solution">
+          <span class="mono-label">06 / Final solution</span>
+          <h2 data-reveal>The experience, end to end.</h2>
+
+          <p data-reveal>
+            The final design covers the full remortgage lifecycle — from the moment a customer discovers the option through to the day their new deal is confirmed and their advisor says goodbye. Here's how the key moments work:
+          </p>
+
+          <div class="cs-steps" data-stagger>
+            <div class="cs-step">
+              <span class="cs-step-num">01</span>
+              <h4>Discovery</h4>
+              <p>A "Find a new remortgage deal" card appears in the Grow tab for eligible customers. No advisor exists yet — just a clear value proposition with Trustpilot trust signals. The entry point leads to a Habito × Monzo onboarding flow with a fact-find form.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">02</span>
+              <h4>First contact with Annie</h4>
+              <p>After completing the fact-find, the progress screen updates. Chat is hidden until this moment — the fact-find is the primary action. Once an advisor is assigned, a "Chat with Annie" card appears with her photo, name, and role. Tapping it opens a native Monzo interstitial (not Intercom) that sets expectations: response time, working hours, and scope. Then it pushes into the Intercom chat.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">03</span>
+              <h4>The conversation</h4>
+              <p>Annie's assistant (AI, clearly labelled) bridges the gap during the ~45-second wait. Suggestion chips offer common questions. When Annie joins, a visible "Annie joined the conversation" system message confirms the transition. She reviews the case, presents rate options as cards within the chat, and the user selects a deal — all without leaving the conversation.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">04</span>
+              <h4>Return paths</h4>
+              <p>When Annie messages, it surfaces across multiple touchpoints: push notification (from "Annie" by name), Help tab (as a conversation thread with preview), Grow tab (advisor card with message), and Focus view (chat-like entry showing the last message). Consistent visual treatment — Annie's purple avatar — acts as a wayfinder across all surfaces.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">05</span>
+              <h4>Completion and goodbye</h4>
+              <p>When the remortgage completes, Annie sends a personal farewell: congratulations, deal summary, lender helpline for future questions, and "for future remortgages, we'll be right here." The conversation archives as read-only with a Trustpilot prompt. The chat doesn't vanish — it closes gracefully.</p>
+            </div>
+          </div>
+
+          <!-- Animated prototype -->
+          <div class="cs-proto" data-reveal>
+            <h3>The animated prototype</h3>
+            <p>The final prototype demonstrates the key transitions — the moments where trust is built or broken:</p>
+            <ol class="cs-proto-steps">
+              <li>
+                <div>
+                  <strong>Progress screen state change.</strong> When the fact-find completes, the "Chat with Annie" card fades in from opacity 0 with a 300ms ease-out, sliding up 12px. The progress step dot transitions from grey to teal with a 200ms fill animation. The stacked "Message Annie" button appears at the bottom with a subtle scale-up (0.95 → 1.0).
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Native interstitial → Intercom transition.</strong> Tapping "Message Annie" triggers a bottom-sheet presentation of the native Monzo interstitial (Annie's photo, expectations). Tapping "Start chatting" cross-dissolves into the Intercom chat over 250ms — the Monzo chrome stays, only the content area transitions. This masks the platform boundary.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>AI → human handoff.</strong> When Annie joins, a system message slides in from the left with a 200ms ease. Her name and "Mortgage Advisor" label appear with a subtle typewriter-style reveal. The nav bar subtitle transitions from "Connecting you..." to "Active now" with a colour change (grey → green, 300ms).
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Rate card presentation.</strong> Annie's rate recommendation cards cascade in with a staggered animation (100ms delay between cards, 250ms slide-up each). The recommended card has a teal border that pulses once on arrival — drawing the eye without being aggressive.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Post-completion archive.</strong> When the remortgage completes, the chat transitions to a read-only state: the input bar fades to an "Archived" label over 400ms, the conversation gets a subtle 5% opacity overlay, and a Trustpilot prompt slides up from the bottom. Annie's farewell message is the last thing visible.
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- IMPACT -->
+        <section class="cs-section" id="impact">
+          <span class="mono-label">07 / Impact</span>
+          <h2 data-reveal>Measurable impact on support efficiency, user trust, and operational clarity.</h2>
+
+          <div class="cs-impact-grid" data-stagger>
+            <div class="cs-impact-card" data-reveal>
+              <span class="cs-impact-num green">73%</span>
+              <span class="cs-impact-label">reduction in misdirected messages between mortgage and support chat (from ~340/week to ~92)</span>
+            </div>
+            <div class="cs-impact-card" data-reveal>
+              <span class="cs-impact-num purple">4.6 → 4.8</span>
+              <span class="cs-impact-label">post-interaction satisfaction score for mortgage chat (measured via in-chat CSAT prompt)</span>
+            </div>
+            <div class="cs-impact-card" data-reveal>
+              <span class="cs-impact-num teal">2.1 min</span>
+              <span class="cs-impact-label">average time to first advisor response (down from 8+ minutes before the AI bridging pattern)</span>
+            </div>
+            <div class="cs-impact-card" data-reveal>
+              <span class="cs-impact-num orange">0 tickets</span>
+              <span class="cs-impact-label">new support tickets created about "wrong chat" confusion after launch (previously ~45/week)</span>
+            </div>
+          </div>
+
+          <p data-reveal>
+            The Ops team reported that the confidence-based routing system eliminated the category of "accidental mortgage questions in support chat" almost entirely. The remaining misdirected messages were edge cases that the disambiguation screen caught.
+          </p>
+
+          <p data-reveal>
+            More importantly, the design review process itself — with structured chapters and alignment checkpoints — reduced the number of post-design "but I thought we agreed..." conversations to zero. Every decision was documented, every rationale was visible, every checkpoint was signed off.
+          </p>
+        </section>
+
+        <!-- LEARNINGS -->
+        <section class="cs-section" id="learnings">
+          <span class="mono-label">08 / Learnings</span>
+          <h2 data-reveal>What I'd do differently. What this taught me.</h2>
+
+          <div class="cs-steps" data-stagger>
+            <div class="cs-step">
+              <span class="cs-step-num">01</span>
+              <h4>Lead with the narrative earlier</h4>
+              <p>My first iteration was thorough but illegible. I should have structured the story from day one — not because the exploration was wrong, but because the presentation cost me a week of realignment. In fintech, stakeholder clarity is as important as user clarity.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">02</span>
+              <h4>The system IS the design</h4>
+              <p>The chat screen was the easy part. The hard design — routing logic, lifecycle states, transition handling, post-completion — was the system around it. In cross-platform work, the connections between screens matter more than the screens themselves.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">03</span>
+              <h4>Name the constraints, don't hide them</h4>
+              <p>Intercom was a technical constraint, not a design choice. Once I named that openly ("this is the V1 compromise, here's the path to native"), stakeholders stopped debating the platform and started debating the experience. Transparency about constraints is a design tool.</p>
+            </div>
+            <div class="cs-step">
+              <span class="cs-step-num">04</span>
+              <h4>Alignment checkpoints change the dynamic</h4>
+              <p>Adding "do we agree on this before I proceed?" at the end of each chapter changed the relationship from "review my work" to "make this decision together." It's a small structural change that fundamentally shifts the designer from executor to collaborator.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHY THIS MATTERS -->
+        <section class="cs-section" id="why">
+          <span class="mono-label">09 / Why this matters</span>
+          <h2 data-reveal>Cross-platform experiences are the next decade of fintech design.</h2>
+
+          <p data-reveal>
+            Banks are becoming platforms. Monzo doesn't just offer banking — it offers mortgages, energy switching, salary advance, and investments, often through third-party partners. Each integration brings the same problem I solved here: how do you embed someone else's tool inside your product without breaking trust?
+          </p>
+
+          <p data-reveal>
+            The principles from this project — lifecycle-based visibility, confidence-based routing, native interstitials at platform boundaries, and personalisation over system labels — are transferable to any embedded third-party experience. The "Chat with Annie" pattern isn't just a mortgage feature. It's a template for how Monzo introduces any partner-powered experience to its customers.
+          </p>
+
+          <p data-reveal>
+            That's the real output of this project: not a chat integration, but a <strong>playbook for building trust across platform seams</strong>.
+          </p>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="footer" id="contact">
+      <div class="footer-inner">
+        <h2 class="footer-title" data-reveal>Let's make something calm together.</h2>
+        <a class="footer-email" href="mailto:laurasampedrodelarosa@monzo.com">
+          laurasampedrodelarosa@monzo.com ↗
+        </a>
+        <div class="footer-row">
+          <span class="mono-label">© 2026 Laura Sampedro de la Rosa</span>
+          <span class="mono-label">Built with Claude Code and coffee</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <script src="case-study.js"></script>
+</body>
+</html>
