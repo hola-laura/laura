@@ -3,21 +3,55 @@
    Intercom case study — extends case-study.css + styles.css
    Uses ONLY portfolio tokens: --bg, --bg-raised, --ink, --ink-soft,
    --ink-muted, --accent, --radius-lg, --radius-md
+
+   Spacing philosophy:
+     Sections get 72–96px vertical padding (editorial rhythm).
+     Cards inside sections get 2–2.5rem internal padding.
+     Between cards: 3rem gap (enough to read each as a distinct block).
+     Between a heading and the first element: 2rem minimum.
    ===================================================================== */
 
 
-/* Iteration cards ---------------------------------------------------- */
+/* ---- Global overrides for this page -------------------------------- */
+
+/* More generous section padding — editorial, not app-like */
+.case-page .cs-section {
+  padding: 72px 0;
+}
+.case-page .cs-section:first-of-type {
+  padding-top: 0;
+}
+
+/* Ensure section headings have room to breathe */
+.case-page .cs-section h2 {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+/* Paragraphs inside sections get slightly more bottom margin */
+.case-page .cs-section > p {
+  margin-bottom: 24px;
+}
+
+/* Mono labels (01 / Overview etc.) get top space */
+.case-page .cs-section .mono-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+/* ---- Iteration cards ----------------------------------------------- */
 .cs-iterations {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
   margin-top: 2.5rem;
 }
 
 .cs-iter {
   background: var(--bg-raised);
   border-radius: var(--radius-lg);
-  padding: 2rem 2.25rem;
+  padding: 2.25rem 2.5rem;
   border-left: 3px solid var(--accent);
 }
 
@@ -27,7 +61,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-muted);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   display: block;
 }
 
@@ -37,33 +71,39 @@
   font-weight: 500;
   letter-spacing: -0.01em;
   color: var(--ink);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .cs-iter > p {
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--ink-soft);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
+/* Figures inside iteration cards */
 .cs-iter .cs-figure {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
 }
 
 .cs-iter .cs-figure + p {
   margin-top: 0;
 }
 
+/* Pain lists inside iterations */
 .cs-iter .cs-pain {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
+/* Two-column grid (what worked / what didn't) */
 .cs-iter-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  margin-top: 1.5rem;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
 }
 
 .cs-iter-col h4 {
@@ -72,7 +112,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-muted);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .cs-iter-col p {
@@ -82,15 +122,15 @@
 }
 
 
-/* Principle cards (2×2 grid) ----------------------------------------- */
+/* ---- Principle cards (2×2 grid) ------------------------------------ */
 .cs-principles-intercom {
   list-style: none;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .cs-principles-intercom li {
@@ -105,7 +145,7 @@
   letter-spacing: 0.1em;
   color: var(--ink-muted);
   display: block;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
 }
 
 .cs-principles-intercom h3 {
@@ -124,12 +164,12 @@
 }
 
 
-/* Decision callout inside iterations --------------------------------- */
+/* ---- Decision callout inside iterations ---------------------------- */
 .cs-decision {
   background: var(--bg);
   border-radius: var(--radius-md);
   padding: 1.5rem 1.75rem;
-  margin: 1.5rem 0 0;
+  margin: 2rem 0 0;
   border-left: 3px solid var(--ink-muted);
 }
 
@@ -151,12 +191,12 @@
 }
 
 
-/* Animated prototype description ------------------------------------- */
+/* ---- Animated prototype description -------------------------------- */
 .cs-proto {
   background: var(--bg-raised);
   border-radius: var(--radius-lg);
-  padding: 2rem 2.25rem;
-  margin: 2.5rem 0;
+  padding: 2.25rem 2.5rem;
+  margin: 3rem 0;
 }
 
 .cs-proto h3 {
@@ -171,7 +211,7 @@
   font-size: 0.9rem;
   line-height: 1.6;
   color: var(--ink-soft);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .cs-proto-steps {
@@ -183,8 +223,8 @@
 
 .cs-proto-steps li {
   counter-increment: proto;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(26, 26, 26, 0.06);
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line);
   display: grid;
   grid-template-columns: 2rem 1fr;
   gap: 0.75rem;
@@ -212,12 +252,12 @@
 }
 
 
-/* Impact grid -------------------------------------------------------- */
+/* ---- Impact grid --------------------------------------------------- */
 .cs-impact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 
 .cs-impact-card {
@@ -244,8 +284,18 @@
 }
 
 
-/* Responsive --------------------------------------------------------- */
+/* ---- Figures (screen screenshots) ---------------------------------- */
+.case-page .cs-figure {
+  margin: 2.5rem 0;
+}
+
+
+/* ---- Responsive ---------------------------------------------------- */
 @media (max-width: 768px) {
+  .case-page .cs-section {
+    padding: 48px 0;
+  }
+
   .cs-iter-grid,
   .cs-principles-intercom,
   .cs-impact-grid {
