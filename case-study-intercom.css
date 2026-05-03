@@ -53,6 +53,11 @@
   border-radius: var(--radius-lg);
   padding: 2.25rem 2.5rem;
   border-left: 3px solid var(--accent);
+  margin-bottom: 3rem;
+}
+
+.cs-iter:last-child {
+  margin-bottom: 0;
 }
 
 .cs-iter-num {
@@ -256,24 +261,75 @@
 .cs-impact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.25rem;
   margin: 2.5rem 0;
 }
 
 .cs-impact-card {
   background: var(--bg-raised);
   border-radius: var(--radius-md);
-  padding: 1.75rem;
+  padding: 2rem 2rem 1.75rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.cs-impact-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cs-impact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Accent variant — warm gradient */
+.cs-impact-card--accent {
+  background: linear-gradient(135deg, #ff5c3a 0%, #ff8a65 100%);
+}
+
+.cs-impact-card--accent .cs-impact-num {
+  color: #fff;
+}
+
+.cs-impact-card--accent .cs-impact-label {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Subtle shimmer on accent cards */
+.cs-impact-card--accent::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.12) 50%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.cs-impact-card--accent:hover::after {
+  opacity: 1;
 }
 
 .cs-impact-num {
   font-family: var(--font-display);
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: 2.1rem;
+  font-weight: 700;
   color: var(--ink);
   display: block;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.02em;
+  margin-bottom: 0.65rem;
+  letter-spacing: -0.03em;
   line-height: 1.1;
 }
 
@@ -283,6 +339,40 @@
   line-height: 1.55;
 }
 
+
+/* ---- iPhone device frame ------------------------------------------- */
+.device-frame {
+  position: relative;
+  display: inline-block;
+  max-width: 320px;
+  border-radius: 48px;
+  border: 6px solid #1a1a1a;
+  background: #1a1a1a;
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.04),
+    inset 0 0 0 2px #2a2a2a;
+}
+
+.device-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 42px;
+}
+
+.device-island {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 26px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  z-index: 2;
+}
 
 /* ---- Figures (screen screenshots) ---------------------------------- */
 .case-page .cs-figure {

@@ -238,6 +238,57 @@
   };
 
   /* ---------------------------------------------------------------------
+     6. Impact cards — staggered entrance + text reveal for non-numeric
+     --------------------------------------------------------------------- */
+  const setupImpactCards = () => {
+    const grid = document.querySelector(".cs-impact-grid");
+    if (!grid) return;
+
+    const cards = Array.from(grid.querySelectorAll(".cs-impact-card"));
+
+    if (prefersReduced) {
+      cards.forEach((c) => c.classList.add("is-visible"));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          observer.disconnect();
+          cards.forEach((card, i) => {
+            setTimeout(() => card.classList.add("is-visible"), i * 150);
+          });
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(grid);
+
+    // "zero" text reveal — typed feel
+    const textEls = grid.querySelectorAll("[data-impact-text]");
+    const textObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          textObserver.unobserve(entry.target);
+          const el = entry.target;
+          const text = el.dataset.impactText;
+          el.textContent = "";
+          let i = 0;
+          const type = () => {
+            el.textContent = text.slice(0, ++i);
+            if (i < text.length) setTimeout(type, 80);
+          };
+          setTimeout(type, 600);
+        });
+      },
+      { threshold: 0.4 }
+    );
+    textEls.forEach((el) => textObserver.observe(el));
+  };
+
+  /* ---------------------------------------------------------------------
      Boot
      --------------------------------------------------------------------- */
   const init = () => {
@@ -246,6 +297,7 @@
     setupCounters();
     setupCompare();
     setupHeroParallax();
+    setupImpactCards();
   };
 
   if (document.readyState === "loading") {
