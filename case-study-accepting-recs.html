@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accepting Recs · Lead Designer — Laura Sampedro</title>
+  <meta name="description" content="Lead designer case study · Monzo 2026 · From opportunity tree to shipped decision moment" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fragment+Mono&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link rel="stylesheet" href="case-study-accepting-recs.css" />
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <div class="page case-page">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">← Laura</a>
+      <ul class="nav-links">
+        <li><a href="index.html#work">All work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============================================================= -->
+    <!-- HERO                                                          -->
+    <!-- ============================================================= -->
+    <header class="cs-hero" id="overview">
+      <span class="mono-label cs-kicker">Accepting Recs · Monzo · 2026 · Lead Designer</span>
+      <h1 class="cs-title" data-reveal>
+        From research <span class="cs-accent">tree</span> to shipped product — leading design across the full stack.
+      </h1>
+
+      <dl class="cs-meta" data-stagger>
+        <div><dt>Role</dt><dd>Lead Product Designer</dd></div>
+        <div><dt>Team</dt><dd>2 designers · 6 engineers · 1 PM · 1 researcher</dd></div>
+        <div><dt>Timeline</dt><dd>14 weeks · Q1–Q2 2026</dd></div>
+        <div><dt>Platforms</dt><dd>iOS · Android</dd></div>
+      </dl>
+    </header>
+
+    <!-- ============================================================= -->
+    <!-- BODY: RAIL + MAIN                                             -->
+    <!-- ============================================================= -->
+    <div class="cs-body">
+      <aside class="cs-rail" aria-hidden="true">
+        <ol>
+          <li data-link="overview">Overview</li>
+          <li data-link="research">Research</li>
+          <li data-link="framing">Framing</li>
+          <li data-link="principles">Principles</li>
+          <li data-link="screens">The screens</li>
+          <li data-link="flows">Key flows</li>
+          <li data-link="impact">Impact</li>
+          <li data-link="reflection">Reflection</li>
+        </ol>
+      </aside>
+
+      <main class="cs-main">
+
+        <!-- OVERVIEW -->
+        <section class="cs-section" id="overview-copy">
+          <span class="mono-label">01 / Overview</span>
+          <p class="cs-lead" data-reveal>
+            Users were opening their mortgage recommendation, reading it, and leaving to
+            sense-check elsewhere. I led design end-to-end — from mapping the opportunity
+            space with research, through principles and explorations, to shipped screens
+            across iOS and Android.
+          </p>
+          <p data-reveal>
+            This case study shows the full arc: how research shaped the opportunity tree,
+            how the tree shaped design principles, and how those principles turned into
+            the screens and flows that shipped.
+          </p>
+        </section>
+
+        <!-- RESEARCH -->
+        <section class="cs-section" id="research">
+          <span class="mono-label">02 / Research</span>
+          <h2 data-reveal>We built an opportunity solution tree to map the problem space.</h2>
+          <p data-reveal>
+            Before any screens, we ran a structured research phase: moderated walk-throughs
+            with 18 customers mid-decision, clickstream analysis of 12 weeks of journeys,
+            and trust-diary tasks. The output was an opportunity solution tree that mapped
+            every reason users weren't accepting recommendations.
+          </p>
+
+          <figure class="cs-ost-wrap" data-reveal>
+            <img src="assets/accepting-recs/ost.png" alt="Opportunity Solution Tree mapping five opportunity areas: relevancy, experience break, timing, momentum, and friction" loading="lazy" />
+          </figure>
+
+          <h3 class="cs-sub" data-reveal>Five opportunity areas, colour-coded</h3>
+          <p data-reveal>The tree identified five areas causing drop-off. We classified each as a <strong>primary driver</strong> (root cause) or <strong>amplifier</strong> (makes things worse), and mapped who owns each — Monzo or Habito.</p>
+
+          <ul class="cs-pain" data-stagger>
+            <li>
+              <strong>Relevancy</strong>
+              Recommendations felt impersonal. Users wanted to know <em>why</em> this deal was right for them specifically. Primary driver — Habito's hands.
+            </li>
+            <li>
+              <strong>Experience break</strong>
+              The journey felt disconnected from Monzo, reducing confidence. Amplifier — in Monzo's power.
+            </li>
+            <li>
+              <strong>Timing</strong>
+              Users were exploring early and not ready to commit. Primary driver — in Monzo's power.
+            </li>
+          </ul>
+          <ul class="cs-pain" data-stagger>
+            <li>
+              <strong>Momentum</strong>
+              Delays between fact-find and recommendation meant users forgot or moved on. Primary driver — in Monzo's power.
+            </li>
+            <li>
+              <strong>Friction</strong>
+              The process felt too heavy to complete or resume. Amplifier — in Monzo's power.
+            </li>
+          </ul>
+
+          <ul class="cs-stats" data-stagger>
+            <li><span class="cs-stat-num" data-count="62" data-suffix="%">0%</span><span class="cs-stat-lbl">left the flow to sense-check with another broker</span></li>
+            <li><span class="cs-stat-num" data-count="3.4" data-suffix=" days">0 days</span><span class="cs-stat-lbl">average gap between recommendation and action</span></li>
+            <li><span class="cs-stat-num" data-count="41" data-suffix="%">0%</span><span class="cs-stat-lbl">dropped off at the Monzo→web handoff</span></li>
+            <li><span class="cs-stat-num" data-count="3" data-suffix="">0</span><span class="cs-stat-lbl">out of 5 root causes were in Monzo's direct power to fix</span></li>
+          </ul>
+        </section>
+
+        <!-- FRAMING -->
+        <section class="cs-section" id="framing">
+          <span class="mono-label">03 / Framing</span>
+          <h2 data-reveal>This is a decision, timing, and trust problem — not a discovery problem.</h2>
+          <p data-reveal>
+            The key reframe: users already <em>had</em> a recommendation. They weren't
+            struggling to find one — they were struggling to commit. At the moment of
+            receiving a recommendation, three things went wrong at once:
+          </p>
+
+          <div class="cs-quotes" data-stagger>
+            <blockquote>
+              <p>"It looked good, but I wanted to double-check somewhere else before I committed."</p>
+              <cite>— Amara, 34, first-time buyer</cite>
+            </blockquote>
+            <blockquote>
+              <p>"I got to the handoff screen and that was it — I opened a new tab and went to compare."</p>
+              <cite>— Joaquín, 41, re-mortgaging</cite>
+            </blockquote>
+            <blockquote>
+              <p>"How do I know this is actually the best one for me right now?"</p>
+              <cite>— Priya, 29, researching options</cite>
+            </blockquote>
+          </div>
+
+          <div class="cs-aside" data-reveal>
+            <span class="mono-label">The brief we rewrote</span>
+            <p>We replaced "improve the recommendation screen" with "support a decision under uncertainty." That reframing changed everything downstream — it moved us from polishing a screen to designing a moment.</p>
+          </div>
+        </section>
+
+        <!-- PRINCIPLES -->
+        <section class="cs-section" id="principles">
+          <span class="mono-label">04 / Principles</span>
+          <h2 data-reveal>Eight principles that shaped every screen.</h2>
+          <p data-reveal>
+            These emerged from the research tree and guided every design decision.
+            They're not abstract values — each one directly maps to a research finding.
+          </p>
+
+          <div class="cs-principles-grid" data-stagger>
+            <div class="cs-principle-card" data-reveal>
+              <span class="cs-principle-num">01</span>
+              <h3>Advisor-led, not system-led</h3>
+              <p>Frame everything through "Will" the advisor, not the algorithm. Trust comes from a person, not a machine.</p>
+            </div>
+            <div class="cs-principle-card" data-reveal>
+              <span class="cs-principle-num">02</span>
+              <h3>Progressive disclosure</h3>
+              <p>Layer information: summary first, detail on demand. Don't overwhelm at the moment of decision.</p>
+            </div>
+            <div class="cs-principle-card" data-reveal>
+              <span class="cs-principle-num">03</span>
+              <h3>Decision support, not pressure</h3>
+              <p>Show a top pick but keep alternatives visible. Let users compare without feeling pushed.</p>
+            </div>
+            <div class="cs-principle-card" data-reveal>
+              <span class="cs-principle-num">04</span>
+              <h3>Graceful failure</h3>
+              <p>When a deal expires, the advisor is already looking at alternatives. Nothing dead-ends.</p>
+            </div>
+            <div class="cs-principle-card" data-reveal>
+              <span class="cs-principle-num">05</span>
+              <h3>Let users leave safely</h3>
+              <p>Users who aren't ready to decide shouldn't feel like they're abandoning the process.</p>
+            </div>
+            <div class="cs-principle-card" data-reveal>
+              <span class="cs-principle-num">06</span>
+              <h3>One journey, honest about the seams</h3>
+              <p>When the handoff to Habito happens, be transparent. Don't pretend the boundary doesn't exist.</p>
+            </div>
+            <div class="cs-principle-card" data-reveal>
+              <span class="cs-principle-num">07</span>
+              <h3>Continuity across sessions</h3>
+              <p>Assume users will leave and come back. Design for multi-session journeys, not single-sitting conversion.</p>
+            </div>
+            <div class="cs-principle-card" data-reveal>
+              <span class="cs-principle-num">08</span>
+              <h3>Transparency about roles</h3>
+              <p>Be clear about who gives the advice (Habito) and who surfaces it (Monzo). Honesty builds trust.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SCREENS -->
+        <section class="cs-section" id="screens">
+          <span class="mono-label">05 / The screens</span>
+          <h2 data-reveal>What we shipped — every key screen from the flow.</h2>
+          <p data-reveal>
+            Swipe through the screens. Each one maps directly back to an opportunity area
+            from the research tree. Nothing here was designed in isolation — every screen
+            solves a specific problem we identified.
+          </p>
+
+          <div class="cs-screens" data-stagger>
+            <div class="cs-screen-card">
+              <img src="assets/accepting-recs/screen-push.png" alt="Push notification screen" loading="lazy" />
+              <div>
+                <div class="cs-screen-label">Push notification</div>
+                <div class="cs-screen-desc">Re-engages users when their recommendation is ready. Solves: momentum.</div>
+              </div>
+            </div>
+            <div class="cs-screen-card">
+              <img src="assets/accepting-recs/screen-rec-list.png" alt="Recommendation list with multiple options" loading="lazy" />
+              <div>
+                <div class="cs-screen-label">Review your recommendation</div>
+                <div class="cs-screen-desc">Will's top pick + alternatives. Advisor reasoning upfront. Solves: relevancy + trust.</div>
+              </div>
+            </div>
+            <div class="cs-screen-card">
+              <img src="assets/accepting-recs/screen-drilldown.png" alt="Deal drill-down with full details" loading="lazy" />
+              <div>
+                <div class="cs-screen-label">Deal drill-down</div>
+                <div class="cs-screen-desc">Full breakdown: rate, cost, term, fees, what happens after. Progressive disclosure.</div>
+              </div>
+            </div>
+            <div class="cs-screen-card">
+              <img src="assets/accepting-recs/screen-commitment.png" alt="Fear of commitment flow" loading="lazy" />
+              <div>
+                <div class="cs-screen-label">Not ready yet?</div>
+                <div class="cs-screen-desc">Date picker to defer. Users leave safely and choose when to be reminded. Solves: timing.</div>
+              </div>
+            </div>
+            <div class="cs-screen-card">
+              <img src="assets/accepting-recs/screen-handoff.png" alt="Handoff to Habito screen" loading="lazy" />
+              <div>
+                <div class="cs-screen-label">Handoff to Habito</div>
+                <div class="cs-screen-desc">"Taking you back to Habito to continue." Honest about the seam. Solves: experience break.</div>
+              </div>
+            </div>
+            <div class="cs-screen-card">
+              <img src="assets/accepting-recs/screen-tracker.png" alt="Progress tracker" loading="lazy" />
+              <div>
+                <div class="cs-screen-label">Progress tracker</div>
+                <div class="cs-screen-desc">Timeline of where they are. "In progress" state in Monzo. Solves: friction.</div>
+              </div>
+            </div>
+            <div class="cs-screen-card">
+              <img src="assets/accepting-recs/screen-expired.png" alt="Deal expired screen" loading="lazy" />
+              <div>
+                <div class="cs-screen-label">Deal expired</div>
+                <div class="cs-screen-desc">Will is already looking at alternatives. Nothing dead-ends. Graceful failure.</div>
+              </div>
+            </div>
+          </div>
+          <span class="cs-scroll-hint">← Scroll to see all screens →</span>
+        </section>
+
+        <!-- KEY FLOWS -->
+        <section class="cs-section" id="flows">
+          <span class="mono-label">06 / Key flows</span>
+          <h2 data-reveal>Three flows that changed the numbers.</h2>
+
+          <div class="cs-feature-row" data-reveal>
+            <div class="cs-feature-img">
+              <img src="assets/accepting-recs/screen-rec-list.png" alt="Recommendation list screen" loading="lazy" />
+            </div>
+            <div class="cs-feature-text">
+              <span class="cs-feature-tag">Trust</span>
+              <h3>Advisor-led recommendations</h3>
+              <p>"Will's top pick for you" with clear reasoning: "lowest overall cost, based on what you told him." An advisor note explains <em>why</em>, not just <em>what</em>. Users see multiple options but get a clear recommendation. This directly addressed the #1 research finding — recommendations felt impersonal.</p>
+            </div>
+          </div>
+
+          <div class="cs-feature-row is-reversed" data-reveal>
+            <div class="cs-feature-img">
+              <img src="assets/accepting-recs/screen-commitment.png" alt="Fear of commitment flow" loading="lazy" />
+            </div>
+            <div class="cs-feature-text">
+              <span class="cs-feature-tag">Timing</span>
+              <h3>Fear of commitment</h3>
+              <p>Users who aren't ready pick a date to be reminded. They leave without feeling like they've abandoned the process. When the date arrives, a push notification brings them back to the exact same point. This solved the timing mismatch — the biggest root cause in Monzo's power.</p>
+            </div>
+          </div>
+
+          <div class="cs-feature-row" data-reveal>
+            <div class="cs-feature-img">
+              <img src="assets/accepting-recs/screen-expired.png" alt="Deal expired screen" loading="lazy" />
+            </div>
+            <div class="cs-feature-text">
+              <span class="cs-feature-tag">Continuity</span>
+              <h3>Graceful deal expiry</h3>
+              <p>"This deal is no longer available" — but it doesn't dead-end. Will says "I'm already looking at alternative deals for you" and the user sees other options immediately. The advisor relationship survives the failure, and momentum is preserved.</p>
+            </div>
+          </div>
+
+          <figure class="cs-flow" data-reveal>
+            <img src="assets/accepting-recs/flow-main.png" alt="Full flow overview showing push notification, recommendation list, deal details, handoff, and progress tracker" loading="lazy" />
+            <figcaption>Full flow: push → recommendation list → deal details → comparison → handoff → progress tracker</figcaption>
+          </figure>
+
+          <figure class="cs-flow" data-reveal>
+            <img src="assets/accepting-recs/flow-commitment.png" alt="Fear of commitment flow showing date picker and re-entry" loading="lazy" />
+            <figcaption>Fear of commitment flow: defer → date picker → push re-entry → back to recommendations</figcaption>
+          </figure>
+        </section>
+
+        <!-- IMPACT -->
+        <section class="cs-section" id="impact">
+          <span class="mono-label">07 / Impact</span>
+          <h2 data-reveal>What happened after we shipped.</h2>
+          <p data-reveal>Four weeks post-launch, across 5.4M daily active customers.</p>
+
+          <div class="cs-impact" data-stagger>
+            <div class="cs-impact-card">
+              <span class="cs-impact-num" data-count="34" data-suffix="%" data-prefix="+">0%</span>
+              <span class="cs-impact-lbl">recommendations accepted in-app</span>
+            </div>
+            <div class="cs-impact-card">
+              <span class="cs-impact-num" data-count="41" data-suffix="%" data-prefix="−">0%</span>
+              <span class="cs-impact-lbl">drop-off at the Monzo→web handoff</span>
+            </div>
+            <div class="cs-impact-card">
+              <span class="cs-impact-num" data-count="1.6" data-suffix=" days" data-prefix="−">0 days</span>
+              <span class="cs-impact-lbl">average time from recommendation to decision</span>
+            </div>
+            <div class="cs-impact-card">
+              <span class="cs-impact-num" data-count="22" data-suffix="pts" data-prefix="+">0pts</span>
+              <span class="cs-impact-lbl">"I felt confident making this decision" (post-journey survey)</span>
+            </div>
+          </div>
+
+          <blockquote class="cs-big-quote" data-reveal>
+            <p>"Laura reframed the brief. We came in thinking we needed a prettier recommendation screen and left having shipped a decision moment. That reframing is what made the numbers move."</p>
+            <cite>— Product Lead, Accepting Recs</cite>
+          </blockquote>
+        </section>
+
+        <!-- REFLECTION -->
+        <section class="cs-section" id="reflection">
+          <span class="mono-label">08 / Reflection</span>
+          <h2 data-reveal>What I'd take to the next one.</h2>
+          <ul class="cs-reflect" data-stagger>
+            <li><strong>Research trees are design tools.</strong> The OST wasn't just documentation — it was the artifact that aligned the whole team. Every screen decision could be traced back to a branch on the tree.</li>
+            <li><strong>The brief is half the design.</strong> Moving from "discovery problem" to "decision, timing, and trust problem under uncertainty" is what unlocked everything. Reframing before designing is a superpower.</li>
+            <li><strong>Design for the worst case first.</strong> The deal-expired flow and the "not ready yet" flow aren't edge cases — they're where trust is won or lost. Graceful failure is a feature.</li>
+            <li><strong>Principles > process.</strong> Eight principles that the team could recite from memory were more useful than any number of Jira tickets. When an engineer asked "should this link open in Monzo or on the web?" the answer was always in a principle.</li>
+          </ul>
+        </section>
+
+        <!-- CREDITS -->
+        <section class="cs-section cs-credits">
+          <span class="mono-label">Credits</span>
+          <p>With the Accepting Recs squad — product, research, engineering, and content design. Led design; couldn't have done any of it alone.</p>
+          <a class="cs-next" href="index.html#work">Back to all work →</a>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer" id="contact">
+      <div class="footer-inner">
+        <h2 class="footer-title" data-reveal>Let's make something calm together.</h2>
+        <a class="footer-email" href="mailto:laurasampedrodelarosa@monzo.com">
+          laurasampedrodelarosa@monzo.com ↗
+        </a>
+        <div class="footer-row">
+          <span class="mono-label">© 2026 Laura Sampedro de la Rosa</span>
+          <span class="mono-label">Built with Claude Code and coffee</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="case-study.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+/* =====================================================================
+   case-study-accepting-recs.css
+   Styles specific to the "Accepting Recs — Lead Designer" case study.
+   Extends styles.css + case-study.css
+   ===================================================================== */
+
+
+/* ---------------------------------------------------------------------
+   Screen gallery — horizontally scrollable row of phone screens
+   --------------------------------------------------------------------- */
+.cs-screens {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 40px 0 24px;
+  margin: 0 -32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.cs-screens::-webkit-scrollbar { display: none; }
+
+.cs-screen-card {
+  flex: 0 0 auto;
+  width: 260px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cs-screen-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  background: var(--bg-raised);
+  box-shadow:
+    0 20px 50px -20px rgba(26, 26, 26, 0.2),
+    0 0 0 1px rgba(26, 26, 26, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cs-screen-card:hover img {
+  transform: translateY(-6px);
+  box-shadow:
+    0 32px 64px -24px rgba(26, 26, 26, 0.28),
+    0 0 0 1px rgba(26, 26, 26, 0.06);
+}
+.cs-screen-label {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.cs-screen-desc {
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink-muted);
+}
+
+
+/* ---------------------------------------------------------------------
+   Flow overview — full-width image with caption
+   --------------------------------------------------------------------- */
+.cs-flow {
+  margin: 40px 0 0;
+  padding: 0;
+}
+.cs-flow img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+}
+.cs-flow figcaption {
+  margin-top: 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+
+/* ---------------------------------------------------------------------
+   OST research tree — featured image with tinted background
+   --------------------------------------------------------------------- */
+.cs-ost-wrap {
+  margin: 40px 0;
+  padding: 32px;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8ece5 100%);
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.cs-ost-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------------------
+   Principles — 2×4 grid of numbered cards
+   --------------------------------------------------------------------- */
+.cs-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+.cs-principle-card {
+  padding: 28px;
+  background: var(--bg-raised);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cs-principle-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+.cs-principle-num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.cs-principle-card h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1.25;
+}
+.cs-principle-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: none;
+}
+
+
+/* ---------------------------------------------------------------------
+   Feature row — image left/right with text
+   --------------------------------------------------------------------- */
+.cs-feature-row {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: center;
+  margin: 48px 0;
+  padding: 40px;
+  background: var(--bg-raised);
+  border-radius: 24px;
+}
+.cs-feature-row.is-reversed {
+  grid-template-columns: 1fr 280px;
+}
+.cs-feature-row.is-reversed .cs-feature-img {
+  order: 2;
+}
+.cs-feature-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow:
+    0 16px 40px -16px rgba(26, 26, 26, 0.18),
+    0 0 0 1px rgba(26, 26, 26, 0.04);
+}
+.cs-feature-text h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1.2;
+}
+.cs-feature-text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: none;
+}
+.cs-feature-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 4px 10px;
+  background: rgba(255, 92, 58, 0.1);
+  color: var(--accent);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------------------
+   Scroll hint — subtle drag indicator for galleries
+   --------------------------------------------------------------------- */
+.cs-scroll-hint {
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------------------
+   Responsive
+   --------------------------------------------------------------------- */
+@media (max-width: 960px) {
+  .cs-principles-grid { grid-template-columns: 1fr; }
+
+  .cs-feature-row,
+  .cs-feature-row.is-reversed {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+  .cs-feature-row.is-reversed .cs-feature-img { order: 0; }
+
+  .cs-screen-card { width: 220px; }
+}
