@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Manager Differentiator — Laura Sampedro</title>
+  <meta name="description" content="Case study · Monzo 2026 · Lead Product Designer · Shaping the experiment strategy for Monzo's first-time buyer proposition" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fragment+Mono&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link rel="stylesheet" href="case-study-project-manager.css" />
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <div class="page case-page">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">&larr; Laura</a>
+      <ul class="nav-links">
+        <li><a href="index.html#work">All work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="cs-hero" id="overview">
+      <span class="mono-label cs-kicker">Homeownership · Project Manager Pilot · 2026 · Senior Lead Product Designer</span>
+      <h1 class="cs-title" data-reveal>
+        Three positioning routes. One pilot. I shaped the <span class="cs-accent">experiment</span> before anyone opened Figma.
+      </h1>
+
+      <dl class="cs-meta" data-stagger>
+        <div><dt>Role</dt><dd>Lead Product Designer (strategy to wireframes)</dd></div>
+        <div><dt>Team</dt><dd>PM · Design Lead · Data Scientist · Content · Ops</dd></div>
+        <div><dt>Timeline</dt><dd>Ongoing · Q2 2026</dd></div>
+        <div><dt>Scope</dt><dd>Experiment design · Positioning framework · Wireframes · Success criteria</dd></div>
+      </dl>
+    </header>
+
+    <!-- Sticky nav + content -->
+    <div class="cs-body">
+      <aside class="cs-rail" aria-hidden="true">
+        <ol>
+          <li data-link="overview">Overview</li>
+          <li data-link="context">Context</li>
+          <li data-link="problem">The problem</li>
+          <li data-link="approach">My approach</li>
+          <li data-link="positioning">Positioning routes</li>
+          <li data-link="experiment">Experiment design</li>
+          <li data-link="wireframes">Wireframes</li>
+          <li data-link="criteria">Success criteria</li>
+          <li data-link="reflection">Reflection</li>
+        </ol>
+      </aside>
+
+      <main class="cs-main">
+
+        <!-- OVERVIEW -->
+        <section class="cs-section" id="overview-copy">
+          <span class="mono-label">01 / Overview</span>
+          <p class="cs-lead" data-reveal>
+            My team identified a strategic opportunity: positioning Monzo as the "Project Manager" for first-time home buyers. The team had strategy, research, and data &mdash; but no plan for how to actually test it. I was brought in to turn all of that into a concrete experiment.
+          </p>
+          <p data-reveal>
+            Rather than jumping into screens, I spent my first days reading everything &mdash; strategy docs, workshop outputs, data science analysis, and pilot scoping documents. I connected dots that existed in silos and came to the team with a clear recommendation: test targeting and positioning sequentially, not simultaneously.
+          </p>
+        </section>
+
+        <!-- CONTEXT -->
+        <section class="cs-section" id="context">
+          <span class="mono-label">02 / Context</span>
+          <h2 data-reveal>The numbers that framed the problem</h2>
+          <p data-reveal>
+            The data science team had built an ML model to identify likely first-time buyers. These numbers shaped every design decision that followed.
+          </p>
+
+          <div class="pm-stats" data-stagger>
+            <div class="pm-stat"><div class="pm-stat-num">~21k</div><div class="pm-stat-label">Customers become first-time buyers per month</div></div>
+            <div class="pm-stat"><div class="pm-stat-num">0.17%</div><div class="pm-stat-label">Current targeting relevance (base rate)</div></div>
+            <div class="pm-stat"><div class="pm-stat-num">4&times;</div><div class="pm-stat-label">ML model lift over random targeting</div></div>
+            <div class="pm-stat"><div class="pm-stat-num">40%</div><div class="pm-stat-label">Of all FTBs captured in model top 10%</div></div>
+            <div class="pm-stat"><div class="pm-stat-num">~97%</div><div class="pm-stat-label">Of current users see irrelevant content</div></div>
+          </div>
+        </section>
+
+        <!-- PROBLEM -->
+        <section class="cs-section" id="problem">
+          <span class="mono-label">03 / The problem</span>
+          <h2 data-reveal>The team had strategy but no experiment plan</h2>
+
+          <p data-reveal>
+            A cross-functional workshop had identified the core insight: first-time buyers don't need more services &mdash; they need someone to help them understand, coordinate, and feel in control of the whole process.
+          </p>
+          <p data-reveal>
+            The pilot doc had three positioning routes drafted, but critical gaps:
+          </p>
+          <ul data-reveal>
+            <li>The <strong>"What we want to learn"</strong> table was empty</li>
+            <li>No success criteria defined</li>
+            <li>Surfaces not confirmed (email? home feed? bento?)</li>
+            <li>Targeting approach still open</li>
+            <li>No clarity on whether the three routes differ in <strong>visual treatment</strong> or just copy</li>
+          </ul>
+          <p data-reveal>
+            Most critically: nobody had addressed whether targeting and positioning should be tested together or separately. This is the question that shapes the entire experiment.
+          </p>
+        </section>
+
+        <!-- APPROACH -->
+        <section class="cs-section" id="approach">
+          <span class="mono-label">04 / My approach</span>
+          <h2 data-reveal>Read the data, not just the briefs</h2>
+
+          <p data-reveal>
+            I started by connecting three documents that existed in silos:
+          </p>
+          <ul data-reveal>
+            <li><strong>The strategy workshop</strong> told me <em>why</em> &mdash; customer pain themes and the Project Manager vision</li>
+            <li><strong>The data science analysis</strong> told me <em>who</em> &mdash; how to find FTBs with an ML model</li>
+            <li><strong>The pilot scoping doc</strong> told me <em>what</em> &mdash; three positioning routes to test</li>
+          </ul>
+          <p data-reveal>
+            The missing piece was <em>how</em>. That's where I focused.
+          </p>
+
+          <h3 data-reveal>The critical design decision</h3>
+          <p data-reveal>
+            If you change both <em>who sees it</em> (targeting) and <em>what they see</em> (positioning) at the same time, you can't attribute results to either variable. A better result could come from reaching the right people <em>or</em> from saying the right thing &mdash; and you'd never know which.
+          </p>
+          <p data-reveal>
+            My recommendation: <strong>test sequentially.</strong>
+          </p>
+        </section>
+
+        <!-- POSITIONING ROUTES -->
+        <section class="cs-section" id="positioning">
+          <span class="mono-label">05 / Positioning routes</span>
+          <h2 data-reveal>Three ways to frame the same proposition</h2>
+
+          <div class="pm-routes" data-stagger>
+            <div class="pm-route pm-route--a">
+              <span class="pm-route-badge">Route A &middot; Baseline</span>
+              <h4>Your mortgage journey, all in Monzo.</h4>
+              <p>Fee-free expert mortgage advice, brought together in one simple experience.</p>
+              <div class="pm-route-detail">
+                <strong>Emotional territory:</strong> Confidence and ease<br>
+                <strong>Bad guy:</strong> Mortgage journeys spread across different apps, emails, and providers
+              </div>
+            </div>
+            <div class="pm-route pm-route--b">
+              <span class="pm-route-badge">Route B &middot; Paid PM</span>
+              <h4>Stop managing your home move on your own.</h4>
+              <p>Mortgage, legal work, and survey coordinated into one experience &mdash; less chasing, more moving forward.</p>
+              <div class="pm-route-detail">
+                <strong>Emotional territory:</strong> Relief, reassurance, feeling looked after<br>
+                <strong>Bad guy:</strong> A stressful, fragmented process where buyers coordinate everything themselves
+              </div>
+            </div>
+            <div class="pm-route pm-route--c">
+              <span class="pm-route-badge">Route C &middot; Free PM</span>
+              <h4>Your home-buying journey, made clearer in Monzo.</h4>
+              <p>Fee-free mortgage advice plus guidance and visibility that helps you feel in control.</p>
+              <div class="pm-route-detail">
+                <strong>Emotional territory:</strong> Clarity, momentum, and control<br>
+                <strong>Bad guy:</strong> Feeling overwhelmed and constantly unsure what's going on
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIMENT DESIGN -->
+        <section class="cs-section" id="experiment">
+          <span class="mono-label">06 / Experiment design</span>
+          <h2 data-reveal>A three-phase plan to test the right things in the right order</h2>
+
+          <div class="pm-flow" data-stagger>
+            <div class="pm-flow-phase pm-flow-phase--1">
+              <span class="pm-flow-badge">Phase 1</span>
+              <h4>Targeting Validation</h4>
+              <dl>
+                <dt>Goal</dt><dd>Does the model find the right people?</dd>
+                <dt>Message</dt><dd>Route A baseline (stable, neutral)</dd>
+                <dt>Audience</dt><dd>ML top 10% vs untargeted control</dd>
+                <dt>Surface</dt><dd>Bento (personalised home feed grid)</dd>
+                <dt>Measure</dt><dd>Click-through rate difference</dd>
+              </dl>
+            </div>
+            <div class="pm-flow-arrow">&rarr;</div>
+            <div class="pm-flow-phase pm-flow-phase--2">
+              <span class="pm-flow-badge">Phase 2</span>
+              <h4>Positioning Test</h4>
+              <dl>
+                <dt>Goal</dt><dd>Does PM framing outperform baseline?</dd>
+                <dt>Message</dt><dd>Route A vs B vs C</dd>
+                <dt>Audience</dt><dd>Validated targeted group from Phase 1</dd>
+                <dt>Surface</dt><dd>Same surface, proven targeting</dd>
+                <dt>Measure</dt><dd>Conversion, engagement, qualitative</dd>
+              </dl>
+            </div>
+            <div class="pm-flow-arrow">&rarr;</div>
+            <div class="pm-flow-phase pm-flow-phase--3">
+              <span class="pm-flow-badge">Phase 3</span>
+              <h4>Inform Strategy</h4>
+              <dl>
+                <dt>Input</dt><dd>Behavioural + qualitative learnings</dd>
+                <dt>Refine</dt><dd>Proposition, messaging framework</dd>
+                <dt>Decide</dt><dd>Where PM sits in funnel</dd>
+                <dt>Output</dt><dd>Roadmap + investment case</dd>
+                <dt>Next</dt><dd>Concept testing + research</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <!-- WIREFRAMES -->
+        <section class="cs-section" id="wireframes">
+          <span class="mono-label">07 / Wireframes</span>
+          <h2 data-reveal>Lo-fi sketches to align the team on structure</h2>
+          <p data-reveal>
+            I deliberately kept these as sketchy wireframes &mdash; the point was to align the team on structure and flow before investing in visual design. Each shows a Bento card as it would appear in the home feed.
+          </p>
+
+          <div class="pm-sketches" data-stagger>
+            <!-- Route A -->
+            <div class="pm-sketch">
+              <div class="pm-sketch-bar"></div>
+              <div class="pm-sketch-balance"><span></span><span></span></div>
+              <div class="pm-sketch-card">
+                <span class="pm-route-badge" style="background:rgba(0,0,0,0.06);color:#555;font-size:10px;">Route A: Baseline</span>
+                <div class="pm-sketch-img">[ illustration ]</div>
+                <h5>Your mortgage journey, all in Monzo.</h5>
+                <p>Get fee-free mortgage advice, compare deals from 100+ lenders, and track your progress.</p>
+                <span class="pm-sketch-cta">Get started</span>
+              </div>
+              <div class="pm-sketch-ghost"></div>
+              <div class="pm-sketch-tabs"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <!-- Route B -->
+            <div class="pm-sketch">
+              <div class="pm-sketch-bar"></div>
+              <div class="pm-sketch-balance"><span></span><span></span></div>
+              <div class="pm-sketch-card">
+                <span class="pm-route-badge" style="background:var(--pm-orange-soft);color:var(--pm-orange);font-size:10px;">Route B: Paid PM</span>
+                <div class="pm-sketch-img">[ illustration ]</div>
+                <h5>Stop managing your home move on your own.</h5>
+                <p>We bring your mortgage, legal work and survey together into one coordinated experience.</p>
+                <span class="pm-sketch-cta">See how it works</span>
+              </div>
+              <div class="pm-sketch-ghost"></div>
+              <div class="pm-sketch-tabs"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <!-- Route C -->
+            <div class="pm-sketch">
+              <div class="pm-sketch-bar"></div>
+              <div class="pm-sketch-balance"><span></span><span></span></div>
+              <div class="pm-sketch-card">
+                <span class="pm-route-badge" style="background:var(--pm-teal-soft);color:var(--pm-teal);font-size:10px;">Route C: Free PM</span>
+                <div class="pm-sketch-img">[ illustration ]</div>
+                <h5>Your home-buying journey, made clearer in Monzo.</h5>
+                <p>Track milestones, get clear updates and follow your progress &mdash; so you always know where things stand.</p>
+                <span class="pm-sketch-cta">Explore your journey</span>
+              </div>
+              <div class="pm-sketch-ghost"></div>
+              <div class="pm-sketch-tabs"><span></span><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SUCCESS CRITERIA -->
+        <section class="cs-section" id="criteria">
+          <span class="mono-label">08 / Success criteria</span>
+          <h2 data-reveal>I proposed the framework the pilot doc left blank</h2>
+          <p data-reveal>
+            The scoping document had an empty success criteria table. Rather than waiting for someone else to fill it, I proposed a three-tier framework that gives the team clear decision points.
+          </p>
+
+          <div class="pm-criteria" data-stagger>
+            <div class="pm-criteria-col pm-criteria-col--green">
+              <h4>We have confidence when&hellip;</h4>
+              <ul>
+                <li>Targeted users click at 2&times;+ rate vs untargeted</li>
+                <li>At least one PM route outperforms baseline on CTR</li>
+                <li>Qualitative feedback shows FTBs understand and value the concept</li>
+                <li>Referral-to-application conversion exceeds current baseline</li>
+                <li>Users describe it as "helpful" not "salesy"</li>
+              </ul>
+            </div>
+            <div class="pm-criteria-col pm-criteria-col--amber">
+              <h4>We need more data when&hellip;</h4>
+              <ul>
+                <li>Clicks are up but conversion is flat vs untargeted</li>
+                <li>PM routes perform similarly to baseline &mdash; territory resonates but framing doesn't differentiate</li>
+                <li>Sample size too small for statistical significance</li>
+                <li>Users engage but drop off at a specific funnel point</li>
+                <li>Different surfaces show conflicting results</li>
+              </ul>
+            </div>
+            <div class="pm-criteria-col pm-criteria-col--red">
+              <h4>We don't have confidence when&hellip;</h4>
+              <ul>
+                <li>No meaningful CTR difference between targeted and untargeted</li>
+                <li>PM positioning performs worse than baseline</li>
+                <li>Qualitative feedback shows confusion or indifference</li>
+                <li>Users see the content but don't engage at all</li>
+                <li>High click-through but zero downstream conversion</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- REFLECTION -->
+        <section class="cs-section" id="reflection">
+          <span class="mono-label">09 / Reflection</span>
+          <h2 data-reveal>What makes this lead-level work</h2>
+
+          <table class="pm-decisions" data-reveal>
+            <tr><th>Decision</th><th>Why</th></tr>
+            <tr><td>Sequential testing (targeting first)</td><td>Can't isolate variables if you change both audience and message simultaneously</td></tr>
+            <tr><td>Bento as primary surface</td><td>Designed for personalised content, launching imminently, cleanest test environment</td></tr>
+            <tr><td>Baseline as Phase 1 message</td><td>Need a stable, neutral proposition to validate the targeting model</td></tr>
+            <tr><td>Sketchy wireframes over polished UI</td><td>Early-stage alignment tool &mdash; visual polish isn't justified until experiment structure is agreed</td></tr>
+            <tr><td>Three-tier success criteria</td><td>Clear decision points rather than binary pass/fail that could kill a promising direction prematurely</td></tr>
+          </table>
+
+          <p data-reveal>
+            The thing I'm most proud of in this work isn't a screen &mdash; it's the recommendation. "Test targeting and positioning sequentially" is a design decision that shapes every artifact that follows. A lead designer doesn't just make things look good; they figure out what to make and in what order.
+          </p>
+          <p data-reveal>
+            I also proactively filled gaps nobody asked me to fill. The success criteria framework, the data callouts connecting the ML model to the experiment design, the experiment flow diagram &mdash; these were all contributions I brought, not tasks I was assigned.
+          </p>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="cs-footer">
+      <p class="mono-label">
+        &copy; Laura Sampedro 2026 &middot; Specific metrics and internal details have been kept high-level for confidentiality.
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="case-study.js"></script>
+</body>
+</html>
