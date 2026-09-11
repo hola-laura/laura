@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 155" role="img" aria-labelledby="title">
+  <title id="title">A cheerful apple</title>
+  <g id="drawing" fill="none" stroke="#27232c" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+<path fill="#ece6f5" d="M68 61C31 42 8 67 18 110C25 141 52 137 67 127C85 146 119 141 124 105C132 67 94 47 70 61Z"/>
+    <path d="M68 64C63 37 77 14 95 6M68 48C79 20 112 24 95 42C84 52 75 47 68 48Z"/>
+    <path d="M53 87L53 89M83 85L83 87M68 89C64 100 67 103 72 100M55 108Q70 122 84 104"/>
+    <path stroke="#69488f" d="M111 42L119 36M117 51L128 48"/>
+  </g>
+</svg>

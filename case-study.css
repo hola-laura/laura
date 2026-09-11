@@ -116,7 +116,7 @@
   color: var(--ink);
 }
 
-/* The stage holds two floating phones + a soft coral glow behind them. */
+/* The stage holds two floating phones + a soft lavender glow behind them. */
 .cs-hero-stage {
   position: relative;
   height: 640px;
@@ -132,8 +132,8 @@
   height: 420px;
   background: radial-gradient(
     60% 60% at 50% 50%,
-    rgba(255, 92, 58, 0.18) 0%,
-    rgba(255, 92, 58, 0) 70%
+    rgba(var(--accent-rgb), .18) 0%,
+    rgba(var(--accent-rgb), 0) 70%
   );
   filter: blur(8px);
   z-index: 0;

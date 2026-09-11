@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 -128 190 184" role="img" aria-labelledby="title">
+  <title id="title">A friendly little wave</title>
+  <g id="drawing" fill="none" stroke="#27232c" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+<path fill="#faf9f6" d="M-27 1C-45-18-64-51-55-57C-49-60-30-33-20-18C-31-54-43-90-32-93C-21-94-13-43-7-23C-13-66-12-121 0-120C11-117 6-49 8-24C17-65 25-114 38-110C53-103 21-44 23-20C47-52 65-80 74-70C84-58 47-16 41-5C29 38-9 42-27 1Z"/>
+              <path d="M-10-3V0M18-4V-1M4-1C0 8 0 12 5 11M-10 13Q4 27 22 11"/>
+              <path stroke="#69488f" d="M-52-99Q-67-89-68-73M-61-110Q-83-95-84-76"/>
+  </g>
+</svg>

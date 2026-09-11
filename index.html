@@ -15,7 +15,16 @@
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="page">
     <nav class="nav">
-      <a class="nav-logo" href="#top">Laura</a>
+      <div class="nav-signature">
+        <button class="little-jelly" type="button" aria-label="Open a little garden" aria-haspopup="dialog" aria-controls="little-garden" title="A little break">
+          <svg class="flower-art" viewBox="-125 -154 262 292" aria-hidden="true" focusable="false">
+            <g class="flower-bloom"><use href="assets/doodles/flower.svg#drawing"/></g>
+          </svg>
+        </button>
+        <a class="nav-logo" href="#top" aria-label="Laura">
+          <img class="nav-wordmark" src="assets/laura-wordmark.svg" alt="" width="108" height="34"/>
+        </a>
+      </div>
       <ul class="nav-links">
         <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
@@ -23,10 +32,11 @@
       </ul>
     </nav>
 
-    <header class="hero" id="top">
+    <header class="hero hero-illustrated" id="top">
+      <div class="hero-copy">
       <div class="status">
         <span class="status-dot"></span>
-        <span class="status-text">Notifications silenced · Available for chats</span>
+        <span class="status-text">Always up for a good conversation</span>
       </div>
       <h1 class="hero-title" data-reveal>
         I make complicated things feel <span class="hero-accent">simple.</span>
@@ -38,6 +48,45 @@
         Right now I'm deep in mortgages — figuring out how to make the scariest
         financial decision feel calm.
       </p>
+      </div>
+      <div class="hero-doodles" aria-hidden="true">
+        <svg viewBox="0 0 340 440" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+          <!-- Little stems and sparks frame the three hand-drawn characters. -->
+          <g transform="translate(49 38) rotate(12)">
+            <path d="M-12 32C3 24 5 8 7-3"/>
+            <path class="doodle-paper" d="M7-3C-9-15-3-25 5-14C1-34 15-31 12-14C29-28 35-14 18-8C35-3 27 8 15 0C14 17 0 16 7-3Z"/>
+          </g>
+          <g class="doodle-accent" transform="translate(289 48) rotate(9)">
+            <path d="M0-15L-2-3L-14 1L-2 4L1 17L5 4L17 0L5-3L0-15Z"/>
+          </g>
+          <path d="M19 238C4 253 7 270 22 273C36 277 43 265 32 260C17 254 11 277 38 290" stroke-width="1.8"/>
+          <path class="doodle-accent" d="M296 231L308 220M299 241L317 238M293 219L296 208"/>
+
+          <!-- An offbeat, calm flower, with seven deliberately different petals. -->
+          <g transform="translate(149 176) rotate(-9) scale(.86)">
+            <g class="doodle-flower-body">
+              <use href="assets/doodles/flower.svg#drawing"/>
+            </g>
+          </g>
+
+          <!-- A small hello, to echo the invitation above the headline. -->
+          <g transform="translate(83 350) rotate(-10)">
+            <g class="doodle-chat-body">
+              <use href="assets/doodles/hello.svg#drawing"/>
+            </g>
+          </g>
+
+          <!-- A friendly, imperfect little wave. -->
+          <g transform="translate(251 362) rotate(9) scale(.72)">
+            <g class="doodle-hand-body">
+              <use href="assets/doodles/wave.svg#drawing"/>
+            </g>
+          </g>
+          <g class="doodle-accent" transform="translate(155 410)">
+            <path d="M0-9L-2-2L-9 0L-2 3L0 10L3 3L10 0L3-2L0-9Z"/>
+          </g>
+        </svg>
+      </div>
     </header>
 
     <div class="marquee" aria-hidden="true">
@@ -64,8 +113,8 @@
       </div>
 
       <div class="cards">
-        <a class="card card-lg card-link" data-reveal data-tilt href="case-study-project-manager.html">
-          <div class="card-media media-sage"></div>
+        <a class="card card-lg card-link card-featured" data-reveal data-tilt href="case-study-project-manager.html">
+          <div class="card-media media-mist cover-diagram"><img src="assets/positioning-cover.svg" alt="Three positioning routes coming together in one pilot" loading="lazy" width="480" height="360"/></div>
           <div class="card-meta">
             <span class="mono-label">Monzo · Homeownership · 2026</span>
             <h3>Project Manager Differentiator — shaping the experiment before opening Figma ↗</h3>
@@ -74,7 +123,7 @@
         </a>
 
         <a class="card card-lg card-link" data-reveal data-tilt href="case-study-intercom.html">
-          <div class="card-media media-ink"></div>
+          <div class="card-media media-deep cover-phones"><img src="assets/screen-progress.png" alt="Mortgage progress screen" loading="lazy"/><img src="assets/screen-chat.png" alt="Mortgage chat screen" loading="lazy"/></div>
           <div class="card-meta">
             <span class="mono-label">Monzo × Habito · 2026</span>
             <h3>Mortgage Chat — making a third-party tool invisible inside a bank ↗</h3>
@@ -83,7 +132,7 @@
         </a>
 
         <a class="card card-lg card-link" data-reveal data-tilt href="case-study.html">
-          <div class="card-media media-coral"></div>
+          <div class="card-media media-lilac cover-phones cover-single"><img src="assets/screen-recommendation.png" alt="Mortgage recommendations in Monzo" loading="lazy"/></div>
           <div class="card-meta">
             <span class="mono-label">Monzo · 2026</span>
             <h3>Accepting Recs — the moment between recommendation and commitment ↗</h3>
@@ -92,7 +141,7 @@
         </a>
 
         <a class="card card-lg card-link" data-reveal data-tilt href="case-study-accepting-recs.html">
-          <div class="card-media media-butter"></div>
+          <div class="card-media media-paper cover-research"><img src="assets/accepting-recs/ost.png" alt="Opportunity solution tree behind the recommendation journey" loading="lazy"/></div>
           <div class="card-meta">
             <span class="mono-label">Monzo · 2026 · Lead Designer</span>
             <h3>Accepting Recs — from research tree to shipped product ↗</h3>
@@ -101,7 +150,7 @@
         </a>
 
         <a class="card card-lg card-link" data-reveal data-tilt href="case-study-rldatix.html">
-          <div class="card-media media-sage"></div>
+          <div class="card-media media-mist cover-photo"><img src="assets/rldatix/interface.png" alt="RLDatix incident reporting interfaces and icon system" loading="lazy"/></div>
           <div class="card-meta">
             <span class="mono-label">RLDatix · 2020</span>
             <h3>Icon Wall — how 500K clinicians start a patient-safety report ↗</h3>
@@ -110,7 +159,7 @@
         </a>
 
         <article class="card" data-reveal data-tilt>
-          <div class="card-media media-butter"></div>
+          <div class="card-media media-paper cover-doodle"><img src="assets/doodles/sprout.svg" alt="" loading="lazy"/></div>
           <div class="card-meta">
             <span class="mono-label">Design infrastructure</span>
             <h3>Embedded Partner Framework</h3>
@@ -118,7 +167,7 @@
         </article>
 
         <article class="card" data-reveal data-tilt>
-          <div class="card-media media-ink"></div>
+          <div class="card-media media-deep cover-doodle"><img src="assets/doodles/hello.svg" alt="" loading="lazy"/></div>
           <div class="card-meta">
             <span class="mono-label">Org contribution</span>
             <h3>Writing system for financial copy</h3>
@@ -208,16 +257,88 @@
     <footer class="footer" id="contact">
       <div class="footer-inner">
         <h2 class="footer-title" data-reveal>Let's make something calm together.</h2>
-        <a class="footer-email" href="mailto:laurasampedrodelarosa@monzo.com">
-          laurasampedrodelarosa@monzo.com ↗
+        <a class="footer-email" href="mailto:lrsmpdr@gmail.com">
+          lrsmpdr@gmail.com ↗
         </a>
         <div class="footer-row">
           <span class="mono-label">© 2026 Laura Sampedro de la Rosa</span>
-          <span class="mono-label">Built with Claude Code and coffee</span>
+          <a class="mono-label" href="#">Back to top ↑</a>
         </div>
       </div>
     </footer>
   </div>
+
+  <dialog class="garden-dialog" id="little-garden" aria-labelledby="garden-title" aria-describedby="garden-instruction">
+    <div class="garden-dot" aria-hidden="true"></div>
+    <button class="garden-close" type="button" aria-label="Close garden">×</button>
+    <span class="mono-label garden-eyebrow">A little break</span>
+    <h2 id="garden-title">Grow a little good.</h2>
+    <p id="garden-instruction">Five seeds. Five different flowers. A little care.</p>
+    <svg class="garden-symbols" aria-hidden="true"><defs><radialGradient id="glass-poppy" cx=".3" cy=".22" r=".83"><stop stop-color="#ffe8e0" stop-opacity=".8"/><stop offset=".50" stop-color="#ffe8e0" stop-opacity=".28"/><stop offset=".84" stop-color="#de817e" stop-opacity=".50"/><stop offset="1" stop-color="#fffdf5" stop-opacity=".88"/></radialGradient><radialGradient id="glass-daisy" cx=".3" cy=".22" r=".83"><stop stop-color="#fffff7" stop-opacity=".8"/><stop offset=".50" stop-color="#fffff7" stop-opacity=".28"/><stop offset=".84" stop-color="#a9b8bb" stop-opacity=".50"/><stop offset="1" stop-color="#fffdf5" stop-opacity=".88"/></radialGradient><radialGradient id="glass-tulip" cx=".3" cy=".22" r=".83"><stop stop-color="#ffeaf0" stop-opacity=".8"/><stop offset=".50" stop-color="#ffeaf0" stop-opacity=".28"/><stop offset=".84" stop-color="#c98baf" stop-opacity=".50"/><stop offset="1" stop-color="#fffdf5" stop-opacity=".88"/></radialGradient><radialGradient id="glass-iris" cx=".3" cy=".22" r=".83"><stop stop-color="#f4edff" stop-opacity=".8"/><stop offset=".50" stop-color="#f4edff" stop-opacity=".28"/><stop offset=".84" stop-color="#9d92c5" stop-opacity=".50"/><stop offset="1" stop-color="#fffdf5" stop-opacity=".88"/></radialGradient><radialGradient id="glass-cosmos" cx=".3" cy=".22" r=".83"><stop stop-color="#fff1df" stop-opacity=".8"/><stop offset=".50" stop-color="#fff1df" stop-opacity=".28"/><stop offset=".84" stop-color="#caab7a" stop-opacity=".50"/><stop offset="1" stop-color="#fffdf5" stop-opacity=".88"/></radialGradient><radialGradient id="glass-core" cx=".25" cy=".2" r=".8"><stop stop-color="#fffbea"/><stop offset=".65" stop-color="#d9cc9c" stop-opacity=".72"/><stop offset="1" stop-color="#9eaa94" stop-opacity=".76"/></radialGradient><linearGradient id="glass-leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbfff1" stop-opacity=".7"/><stop offset=".55" stop-color="#a8b6a3" stop-opacity=".25"/><stop offset="1" stop-color="#879c91" stop-opacity=".65"/></linearGradient><symbol id="garden-poppy" viewBox="0 0 64 64"><g fill="url(#glass-poppy)" stroke="#de817e" stroke-width=".6" stroke-opacity=".65" stroke-linejoin="round"><path d="M32 32C23 30 7 31 5 20C2 5 22 2 30 12C34 18 33 25 32 32Z" transform="rotate(0 32 32)"/><path d="M32 32C23 30 7 31 5 20C2 5 22 2 30 12C34 18 33 25 32 32Z" transform="rotate(91 32 32)"/><path d="M32 32C23 30 7 31 5 20C2 5 22 2 30 12C34 18 33 25 32 32Z" transform="rotate(181 32 32)"/><path d="M32 32C23 30 7 31 5 20C2 5 22 2 30 12C34 18 33 25 32 32Z" transform="rotate(270 32 32)"/></g><circle cx="32" cy="32" r="4.2" fill="url(#glass-core)" stroke="#aeb59e" stroke-width=".5"/><path d="M12 17Q12 8 23 12M46 17l4 4M20 49l7 2" fill="none" stroke="#fffef8" stroke-width="1.3" stroke-linecap="round" opacity=".85"/></symbol><symbol id="garden-daisy" viewBox="0 0 64 64"><g fill="url(#glass-daisy)" stroke="#a9b8bb" stroke-width=".6" stroke-opacity=".65" stroke-linejoin="round"><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(0 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(30 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(60 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(90 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(120 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(150 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(180 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(210 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(240 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(270 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(300 32 32)"/><ellipse cx="32" cy="17.2" rx="4.1" ry="13" transform="rotate(330 32 32)"/></g><circle cx="32" cy="32" r="6.5" fill="url(#glass-core)" stroke="#aeb59e" stroke-width=".5"/><path d="M31 6v11M7 32h8M48 31h8" fill="none" stroke="#fffef8" stroke-width="1.3" stroke-linecap="round" opacity=".85"/></symbol><symbol id="garden-tulip" viewBox="0 0 64 64"><g fill="url(#glass-tulip)" stroke="#c98baf" stroke-width=".6" stroke-opacity=".65" stroke-linejoin="round"><path d="M32 8C24 12 21 25 24 37Q32 49 40 37C43 24 40 12 32 8Z"/><path d="M12 13C15 36 10 48 31 55C37 37 29 20 12 13Z"/><path d="M52 13C50 37 55 47 32 55C28 37 37 19 52 13Z"/><path d="M32 24C24 34 25 48 32 55C40 47 40 33 32 24Z"/></g><path d="M18 23Q19 37 24 43M43 28l-4 12M31 35v10" fill="none" stroke="#fffef8" stroke-width="1.3" stroke-linecap="round" opacity=".85"/></symbol><symbol id="garden-iris" viewBox="0 0 64 64"><g fill="url(#glass-iris)" stroke="#9d92c5" stroke-width=".6" stroke-opacity=".65" stroke-linejoin="round"><path d="M32 33C19 19 21 4 31 3C44 3 44 20 32 33Z"/><path d="M31 30C18 5 3 13 10 24C13 30 23 32 31 30Z"/><path d="M34 30C45 4 61 15 54 25C49 33 42 34 34 30Z"/><path d="M31 30C14 30 1 44 9 48C18 54 27 43 31 30Z"/><path d="M34 30C50 28 65 45 55 49C46 53 40 42 34 30Z"/><path d="M31 29C18 39 19 59 32 61C48 59 45 39 31 29Z"/></g><circle cx="32" cy="32" r="4.2" fill="url(#glass-core)" stroke="#aeb59e" stroke-width=".5"/><path d="M29 10l-1 10M11 43l9-7M29 45l1 10" fill="none" stroke="#fffef8" stroke-width="1.3" stroke-linecap="round" opacity=".85"/></symbol><symbol id="garden-cosmos" viewBox="0 0 64 64"><g fill="url(#glass-cosmos)" stroke="#caab7a" stroke-width=".6" stroke-opacity=".65" stroke-linejoin="round"><path d="M30 29C22 22 18 10 23 6L27 7L31 3L36 6L40 5C45 14 38 26 33 30Z" transform="rotate(0 32 32)"/><path d="M30 29C22 22 18 10 23 6L27 7L31 3L36 6L40 5C45 14 38 26 33 30Z" transform="rotate(45 32 32)"/><path d="M30 29C22 22 18 10 23 6L27 7L31 3L36 6L40 5C45 14 38 26 33 30Z" transform="rotate(90 32 32)"/><path d="M30 29C22 22 18 10 23 6L27 7L31 3L36 6L40 5C45 14 38 26 33 30Z" transform="rotate(135 32 32)"/><path d="M30 29C22 22 18 10 23 6L27 7L31 3L36 6L40 5C45 14 38 26 33 30Z" transform="rotate(180 32 32)"/><path d="M30 29C22 22 18 10 23 6L27 7L31 3L36 6L40 5C45 14 38 26 33 30Z" transform="rotate(225 32 32)"/><path d="M30 29C22 22 18 10 23 6L27 7L31 3L36 6L40 5C45 14 38 26 33 30Z" transform="rotate(270 32 32)"/><path d="M30 29C22 22 18 10 23 6L27 7L31 3L36 6L40 5C45 14 38 26 33 30Z" transform="rotate(315 32 32)"/></g><circle cx="32" cy="32" r="4.2" fill="url(#glass-core)" stroke="#aeb59e" stroke-width=".5"/><path d="M28 9l2 11M9 35l9-2M39 47l4 5" fill="none" stroke="#fffef8" stroke-width="1.3" stroke-linecap="round" opacity=".85"/></symbol></defs></svg>
+    <div class="garden-bed" role="group" aria-label="Five seeds to grow">
+      <span class="garden-sun" aria-hidden="true"></span>
+      <span class="garden-hint" aria-hidden="true">tap a seed, grow something lovely</span>
+      <svg class="garden-ground" viewBox="0 0 400 72" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30Q80 5 175 27T400 18V72H0Z" fill="#ddd4eb"/><path d="M0 46Q120 27 221 47T400 35V72H0Z" fill="#c9bddc"/></svg>
+      <button class="garden-seed" type="button" data-seed="1" aria-label="Plant seed 1 of 5" style="--x:13%;--plant-height:142px;--lean:-5deg" data-flower="Poppy">
+  <span class="seed-pebble" aria-hidden="true"></span>
+  <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
+    <path d="M49 187C39 142 60 111 48 38" fill="none" stroke="#9aafa1" stroke-width="2.2"/>
+    <path d="M48 187C38 142 59 111 47 38" fill="none" stroke="#f5faee" stroke-width=".65" opacity=".8"/>
+    <path d="M45 148C26 150 21 139 20 128L28 133L28 125L37 135L40 131L45 148ZM47 126C67 125 76 110 72 98L63 109L62 103L54 116L50 112Z" fill="url(#glass-leaf)" stroke="#99ad9e" stroke-width=".8"/>
+    <use href="#garden-poppy" x="10" y="0" width="76" height="76"/>
+  </svg>
+  <span class="garden-flower-name" aria-hidden="true">Poppy</span>
+</button>
+<button class="garden-seed" type="button" data-seed="2" aria-label="Plant seed 2 of 5" style="--x:32%;--plant-height:173px;--lean:2deg" data-flower="Daisy">
+  <span class="seed-pebble" aria-hidden="true"></span>
+  <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
+    <path d="M49 187C39 142 60 111 48 38" fill="none" stroke="#9aafa1" stroke-width="2.2"/>
+    <path d="M48 187C38 142 59 111 47 38" fill="none" stroke="#f5faee" stroke-width=".65" opacity=".8"/>
+    <path d="M47 159Q19 141 20 127Q43 133 47 159ZM48 130Q71 113 71 102Q51 108 48 130Z" fill="url(#glass-leaf)" stroke="#99ad9e" stroke-width=".8"/>
+    <use href="#garden-daisy" x="10" y="0" width="76" height="76"/>
+  </svg>
+  <span class="garden-flower-name" aria-hidden="true">Daisy</span>
+</button>
+<button class="garden-seed" type="button" data-seed="3" aria-label="Plant seed 3 of 5" style="--x:51%;--plant-height:145px;--lean:-3deg" data-flower="Tulip">
+  <span class="seed-pebble" aria-hidden="true"></span>
+  <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
+    <path d="M49 187C39 142 60 111 48 38" fill="none" stroke="#9aafa1" stroke-width="2.2"/>
+    <path d="M48 187C38 142 59 111 47 38" fill="none" stroke="#f5faee" stroke-width=".65" opacity=".8"/>
+    <path d="M46 178C22 150 24 108 19 92C39 120 48 146 46 178ZM49 169C68 142 74 116 71 82C56 105 51 138 49 169Z" fill="url(#glass-leaf)" stroke="#99ad9e" stroke-width=".8"/>
+    <use href="#garden-tulip" x="10" y="0" width="76" height="76"/>
+  </svg>
+  <span class="garden-flower-name" aria-hidden="true">Tulip</span>
+</button>
+<button class="garden-seed" type="button" data-seed="4" aria-label="Plant seed 4 of 5" style="--x:70%;--plant-height:183px;--lean:0deg" data-flower="Iris">
+  <span class="seed-pebble" aria-hidden="true"></span>
+  <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
+    <path d="M49 187C39 142 60 111 48 38" fill="none" stroke="#9aafa1" stroke-width="2.2"/>
+    <path d="M48 187C38 142 59 111 47 38" fill="none" stroke="#f5faee" stroke-width=".65" opacity=".8"/>
+    <path d="M47 181L21 91C39 103 47 147 47 181ZM49 181C54 132 61 91 73 70C68 131 60 160 49 181Z" fill="url(#glass-leaf)" stroke="#99ad9e" stroke-width=".8"/>
+    <use href="#garden-iris" x="10" y="0" width="76" height="76"/>
+  </svg>
+  <span class="garden-flower-name" aria-hidden="true">Iris</span>
+</button>
+<button class="garden-seed" type="button" data-seed="5" aria-label="Plant seed 5 of 5" style="--x:87%;--plant-height:150px;--lean:5deg" data-flower="Cosmos">
+  <span class="seed-pebble" aria-hidden="true"></span>
+  <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
+    <path d="M49 187C39 142 60 111 48 38" fill="none" stroke="#9aafa1" stroke-width="2.2"/>
+    <path d="M48 187C38 142 59 111 47 38" fill="none" stroke="#f5faee" stroke-width=".65" opacity=".8"/>
+    <path d="M47 163Q28 148 21 127M29 140l-11-3M35 149l-10 2M49 144Q65 132 72 112M60 134l13-2M64 126l-1-11" fill="none" stroke="#99ad9e" stroke-width=".8"/>
+    <use href="#garden-cosmos" x="10" y="0" width="76" height="76"/>
+  </svg>
+  <span class="garden-flower-name" aria-hidden="true">Cosmos</span>
+</button>
+    </div>
+    <div class="garden-footer">
+      <p class="garden-count" role="status" aria-live="polite">0 of 5 in bloom</p>
+      <button class="garden-restart" type="button" hidden>Plant again ↗</button>
+    </div>
+    <p class="garden-note">No rush. Good things take a little care.</p>
+  </dialog>
   <script src="script.js"></script>
+  <script src="little-jelly.js"></script>
+  <script src="little-garden.js"></script>
+  <script src="doodle-surprises.js"></script>
 </body>
 </html>

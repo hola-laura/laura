@@ -290,9 +290,9 @@
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* Accent variant — warm gradient */
+/* Accent variant — portfolio violet */
 .cs-impact-card--accent {
-  background: linear-gradient(135deg, #ff5c3a 0%, #ff8a65 100%);
+  background: var(--accent);
 }
 
 .cs-impact-card--accent .cs-impact-num {

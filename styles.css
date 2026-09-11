@@ -114,28 +114,27 @@
    1. Design tokens
    --------------------------------------------------------------------- */
 :root {
-  /* Warm minimal palette inspired by tomasnozina.com */
-  --bg: #f3efe9;
-  --bg-raised: #ebe6dd;
-  --ink: #1a1a1a;
-  --ink-soft: #3a3a38;
-  --ink-muted: #6b6860;
-  --line: rgba(26, 26, 26, 0.08);
-  --accent: #ff5c3a;
-
-  /* Card media tints */
-  --coral: #f7b6a0;
-  --sage: #c9d4b5;
-  --butter: #f2e0a0;
-  --ink-block: #1a1a1a;
+  /* Laura: soft paper, lavender and a single dark drawing ink. */
+  --bg: #faf9f6;
+  --bg-raised: #f0edf4;
+  --surface: #ffffff;
+  --ink: #27232c;
+  --ink-soft: #514b59;
+  --ink-muted: #726b7a;
+  --line: rgba(39, 35, 44, .12);
+  --accent: #69488f;
+  --accent-rgb: 105, 72, 143;
+  --lavender: #d5c9ed;
+  --lavender-soft: #ece6f5;
+  --lavender-mid: #b49bd3;
+  --ink-block: #332b3e;
 
   --radius-lg: 28px;
   --radius-md: 18px;
 
-  /* Monzo Sans first; DM Sans is the fallback when cloning the repo
-     without the private font files. */
-  --font-display: "Monzo Sans Display", "DM Sans", system-ui, -apple-system, Segoe UI, sans-serif;
-  --font-body:    "Monzo Sans Text",    "DM Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  /* The portfolio has its own type; product mockups retain their brand fonts. */
+  --font-display: "DM Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-body:    "DM Sans", system-ui, -apple-system, Segoe UI, sans-serif;
   --font-mono:    "Fragment Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
@@ -226,7 +225,7 @@ a {
   gap: 10px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: var(--bg-raised);
+  background: var(--lavender-soft);
   font-family: var(--font-mono);
   font-size: 12px;
   color: var(--ink-soft);
@@ -237,7 +236,7 @@ a {
   height: 8px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(255, 92, 58, 0.18);
+  box-shadow: 0 0 0 4px rgba(var(--accent-rgb), .15);
 }
 .hero-title {
   font-family: var(--font-display);
@@ -248,7 +247,7 @@ a {
   margin: 0 0 32px;
 }
 .hero-accent {
-  color: var(--ink-muted);
+  color: var(--accent);
   font-style: italic;
 }
 .hero-sub {
@@ -293,17 +292,18 @@ section {
   gap: 24px;
 }
 .card {
-  background: var(--bg-raised);
-  border-radius: var(--radius-lg);
-  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 12px;
   transition: transform 240ms ease, box-shadow 240ms ease;
 }
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 24px 60px -30px rgba(26, 26, 26, 0.25);
+  box-shadow: 0 18px 40px -28px rgba(39, 35, 44, .25);
 }
 .card-lg {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 .card-media {
   aspect-ratio: 16 / 9;
@@ -311,20 +311,12 @@ section {
   margin-bottom: 20px;
 }
 .card-lg .card-media {
-  aspect-ratio: 16 / 8;
+  aspect-ratio: 4 / 3;
 }
-.media-coral {
-  background: radial-gradient(120% 120% at 20% 20%, #ffc9b3 0%, var(--coral) 60%, #e08e72 100%);
-}
-.media-sage {
-  background: radial-gradient(120% 120% at 80% 20%, #e1ecd0 0%, var(--sage) 55%, #8ea07a 100%);
-}
-.media-butter {
-  background: radial-gradient(120% 120% at 50% 20%, #fbecb4 0%, var(--butter) 60%, #c9b06b 100%);
-}
-.media-ink {
-  background: radial-gradient(120% 120% at 30% 30%, #4a4a46 0%, var(--ink-block) 70%);
-}
+.media-lilac { background: var(--lavender); }
+.media-mist { background: var(--lavender-soft); }
+.media-paper { background: var(--bg-raised); }
+.media-deep { background: var(--ink-block); }
 .card-meta {
   padding: 6px 10px 12px;
 }
@@ -432,8 +424,11 @@ section {
    7. Footer
    --------------------------------------------------------------------- */
 .footer {
-  border-top: 1px solid var(--line);
-  padding-top: 96px;
+  border: 0;
+  border-radius: 28px;
+  padding: clamp(28px, 4vw, 56px);
+  margin-top: 64px;
+  background: var(--lavender);
 }
 .footer-inner {
   display: flex;
@@ -589,24 +584,11 @@ section {
    --------------------------------------------------------------------- */
 .marquee {
   overflow: hidden;
-  padding: 32px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  margin-top: 48px;
-  -webkit-mask-image: linear-gradient(
-    90deg,
-    transparent 0,
-    #000 8%,
-    #000 92%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    90deg,
-    transparent 0,
-    #000 8%,
-    #000 92%,
-    transparent 100%
-  );
+  padding: 22px 0;
+  border-radius: 18px;
+  margin: 8px 0 32px;
+  background: var(--lavender);
+  transform: rotate(-1deg);
 }
 .marquee-track {
   display: flex;
@@ -615,7 +597,7 @@ section {
   animation: marquee 32s linear infinite;
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(40px, 6vw, 88px);
+  font-size: clamp(22px, 3vw, 32px);
   letter-spacing: -0.03em;
   color: var(--ink);
   white-space: nowrap;
@@ -668,4 +650,229 @@ section {
     grid-template-columns: 56px 1fr;
     gap: 16px;
   }
+}
+
+
+/* Small elastic jelly signature. The fixed button is its stable hit area. */
+.nav-signature { display: flex; align-items: center; gap: 7px; }
+.little-jelly {
+  position: relative; width: 58px; height: 58px; flex: 0 0 58px; padding: 0;
+  border: 0; border-radius: 50%; background: transparent;
+  color: var(--ink); touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.little-jelly svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.little-jelly:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.little-jelly, .little-jelly * { cursor: none !important; }
+body:has(.little-jelly:hover) .cursor { opacity: 0; }
+@media (max-width: 420px) {
+  .nav-signature { gap: 3px; }
+  .little-jelly { width: 52px; height: 52px; flex-basis: 52px; }
+  .nav-links { gap: 12px; }
+}
+
+/* The same illustrated flower signs the navigation and the hero. */
+.little-jelly { --doodle-fill: var(--lavender); }
+.little-jelly:is(:hover, :focus-visible, :active) { --doodle-fill: var(--lavender-mid); }
+.little-jelly .flower-art { transition: filter 260ms ease; }
+.little-jelly:is(:hover, :focus-visible) .flower-art { filter: saturate(1.25); }
+@media (prefers-reduced-motion: reduce) {
+  .little-jelly .flower-art { transition: none; }
+}
+
+/* Hidden garden, opened from the small signature flower. */
+body.garden-open { overflow: hidden; }
+.garden-dialog {
+  width: min(460px, calc(100vw - 32px)); max-height: calc(100dvh - 32px);
+  overflow: auto; padding: 32px; border: 1px solid var(--line);
+  border-radius: 24px; background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); box-shadow: 0 28px 100px #332b3e30;
+}
+.garden-dialog::backdrop { background: #332b3e35; backdrop-filter: blur(6px); }
+.garden-dialog button { font: inherit; }
+.garden-dialog button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.garden-close {
+  position: absolute; right: 13px; top: 12px; width: 40px; height: 40px;
+  border: 0; background: transparent; color: var(--ink-muted); font-size: 27px !important;
+  border-radius: 50%; z-index: 2;
+}
+.garden-close:hover { background: var(--bg-raised); }
+.garden-eyebrow { font-size: 10px; letter-spacing: .1em; }
+.garden-dialog h2 { font-family: var(--font-display); font-size: 34px; font-weight: 500; line-height: 1.1; letter-spacing: -.04em; margin: 16px 0 12px; }
+#garden-instruction { color: var(--ink-muted); font-size: 14px; line-height: 1.5; margin: 0; min-height: 42px; }
+.garden-symbols { position: absolute; width: 0; height: 0; overflow: hidden; }
+.garden-bed { position: relative; height: 290px; margin: 18px -8px 0; border-radius: 100px 100px 16px 16px; background: linear-gradient(#ece6f500, #e4dcef); isolation: isolate; }
+.garden-sun { position: absolute; width: 33px; height: 33px; top: 27px; right: 46px; background: #e8c36c; border-radius: 48% 52% 53% 47%; opacity: .65; box-shadow: 0 0 0 9px #e8c36c14; }
+.garden-hint { position: absolute; top: 131px; left: 0; width: 100%; text-align: center; font-family: var(--font-mono); font-size: 10px; color: var(--ink-soft); transition: opacity 200ms; }
+.has-started .garden-hint { opacity: 0; }
+.garden-ground { position: absolute; bottom: 0; left: 0; width: 100%; height: 61px; border-radius: 0 0 16px 16px; }
+.garden-seed {
+  position: absolute; bottom: 13px; left: var(--x); transform: translateX(-50%);
+  width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent; padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.seed-pebble { display: block; position: absolute; left: 14px; top: 14px; width: 15px; height: 10px; border-radius: 60% 40% 60% 40%; transform: rotate(-27deg); background: #80794d; box-shadow: inset 2px 2px 0 #a59e6d, 0 4px 0 -2px #6b745943; transition: transform 160ms, opacity 160ms; }
+.garden-seed:not(.is-grown):hover .seed-pebble { transform: rotate(-15deg) translateY(-4px) scale(1.13); }
+.garden-seed:not(.is-grown)::after { content: '+'; position: absolute; color: #5a6746; font-size: 15px; top: -5px; left: 18px; opacity: 0; transition: opacity 160ms; }
+.garden-seed:not(.is-grown):is(:hover,:focus-visible)::after { opacity: 1; }
+.garden-plant {
+  position: absolute; bottom: 20px; left: 50%; width: calc(var(--plant-height) * .505); height: var(--plant-height);
+  overflow: visible; pointer-events: none; transform-origin: 50% 100%;
+  transform: translateX(-50%) scale(0); opacity: 0;
+}
+.is-grown .seed-pebble { opacity: .25; transform: rotate(-27deg) scale(.6); }
+.is-grown .garden-plant { opacity: 1; animation: garden-grow 800ms cubic-bezier(.2,.7,.2,1) both; }
+@keyframes garden-grow {
+  0% { transform: translateX(-50%) scale(.02,.01) rotate(-8deg); opacity: 0; }
+  55% { transform: translateX(-50%) scale(.94,1.08) rotate(calc(var(--lean) + 3deg)); opacity: 1; }
+  78% { transform: translateX(-50%) scale(1.02,.98) rotate(calc(var(--lean) - 2deg)); }
+  100% { transform: translateX(-50%) scale(1) rotate(var(--lean)); opacity: 1; }
+}
+.garden-footer { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 50px; margin-top: 10px; }
+.garden-count { font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); max-width: 190px; margin: 0; }
+.garden-restart { border: 0; border-bottom: 1px solid var(--ink-muted); background: transparent; padding: 10px 0; font-size: 12px !important; white-space: nowrap; }
+.garden-note { font-size: 11px; line-height: 1.5; color: var(--ink-muted); text-align: center; margin: 8px 0 0; }
+.garden-dot { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .garden-dialog, .garden-dialog * { cursor: none !important; }
+  .garden-dot { display: block; position: absolute; top: 0; left: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); pointer-events: none; opacity: 0; z-index: 5; }
+}
+@media (max-width: 420px) {
+  .garden-dialog { padding: 26px 20px; }
+  .garden-dialog h2 { font-size: 30px; }
+  .garden-bed { margin-left: -4px; margin-right: -4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .is-grown .garden-plant { animation: none; transform: translateX(-50%) rotate(var(--lean)); opacity: 1; }
+  .garden-dialog *, .garden-dialog *::after { transition: none !important; }
+}
+
+/* Species names appear with their blooms, in the same order as the seeds. */
+.garden-flower-name {
+  position: absolute; left: 50%; top: 35px; transform: translateX(-50%);
+  font-family: var(--font-mono); font-size: 9px; line-height: 1;
+  white-space: nowrap; color: var(--ink-soft); opacity: 0;
+  transition: opacity 260ms ease 350ms; pointer-events: none;
+}
+.is-grown .garden-flower-name { opacity: 1; }
+.garden-plant { filter: drop-shadow(1px 2px 1px #59685812); }
+
+/* Hand-drawn marker capitals: broad strokes, open spacing, uneven contours. */
+.nav-signature .nav-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-height: 44px;
+  color: var(--ink);
+}
+.nav-wordmark { display: block; width: 108px; height: auto; }
+.nav-signature .nav-logo:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+@media (max-width: 420px) {
+  .nav-wordmark { width: 90px; }
+}
+@media (max-width: 360px) {
+  .nav-wordmark { width: 75px; }
+}
+
+/* A loose ink-drawing composition beside the introduction. */
+.hero-illustrated {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  align-items: center;
+  gap: 32px;
+  max-width: none;
+  padding-top: 48px;
+}
+.hero-copy { min-width: 0; }
+.hero-illustrated .hero-title { font-size: clamp(48px, 6.2vw, 82px); }
+.hero-illustrated .status { margin-bottom: 34px; }
+.hero-illustrated .status-dot { flex-shrink: 0; }
+.hero-illustrated .hero-sub { margin-bottom: 0; }
+.hero-doodles { width: 100%; color: var(--ink); }
+.hero-doodles > svg { display: block; width: 100%; height: auto; overflow: visible; }
+.doodle-paper { fill: var(--bg); }
+.doodle-accent { color: var(--accent); }
+.doodle-blush { fill: var(--accent); stroke: none; opacity: .22; }
+.doodle-flower-body, .doodle-hand-body, .doodle-chat-body {
+  transform-box: fill-box;
+  transform-origin: 50% 70%;
+  transition: transform 600ms cubic-bezier(.2,.8,.2,1);
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .hero-doodles:hover .doodle-hand-body { transform: rotate(-9deg); }
+  .hero-doodles:hover .doodle-flower-body { transform: rotate(4deg); }
+  .hero-doodles:hover .doodle-chat-body { transform: translateY(-4px) rotate(4deg); }
+}
+@media (max-width: 1000px) and (min-width: 761px) {
+  .hero-illustrated { grid-template-columns: minmax(0, 1fr) 220px; gap: 24px; }
+  .hero-illustrated .hero-title { font-size: clamp(48px, 6.5vw, 65px); }
+}
+@media (max-width: 760px) {
+  .hero-illustrated { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 28px 0 56px; }
+  .hero-illustrated .hero-title { font-size: clamp(45px, 8.3vw, 62px); }
+  .hero-illustrated .status { font-size: 10px; gap: 9px; padding: 8px 12px; margin-bottom: 28px; }
+  .hero-doodles { width: min(260px, 75%); justify-self: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .doodle-flower-body, .doodle-hand-body, .doodle-chat-body { transition: none; }
+}
+
+/* Decorative visitors never receive pointer or keyboard input. */
+.doodle-pop {
+  position: fixed; z-index: 20; pointer-events: none; user-select: none;
+  object-fit: contain; opacity: 0; transform-origin: 50% 80%;
+  animation: doodle-visit 1900ms ease both;
+}
+@keyframes doodle-visit {
+  0% { opacity: 0; transform: translateY(12px) scale(.72) rotate(calc(var(--doodle-angle) - 8deg)); }
+  16% { opacity: 1; transform: translateY(-3px) scale(1.04) rotate(var(--doodle-angle)); }
+  28%, 73% { opacity: 1; transform: translateY(0) scale(1) rotate(var(--doodle-angle)); }
+  100% { opacity: 0; transform: translateY(-9px) scale(.96) rotate(calc(var(--doodle-angle) + 4deg)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .doodle-pop { animation: none; opacity: 1; transform: none; }
+}
+
+/* Shared identity and a clearer hierarchy for the work. */
+::selection { background: var(--lavender); color: var(--ink); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.nav-logo-back { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; }
+.nav-logo-back .nav-wordmark { width: 90px; }
+.card-media { position: relative; overflow: hidden; }
+.card-featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; }
+.card-featured .card-media { aspect-ratio: 4 / 3; margin: 0; min-height: 340px; }
+.card-featured .card-meta { align-self: center; padding: 24px 24px 24px 0; }
+.card-featured .card-meta h3 { font-size: clamp(24px, 2.5vw, 32px); }
+.card-media.cover-phones { display: flex; justify-content: center; gap: 5%; align-items: flex-start; }
+.cover-phones img { display: block; width: 35%; height: auto; margin-top: 28px; border-radius: 18px; box-shadow: 0 12px 30px #27232c24; transform: rotate(-4deg); }
+.cover-phones img:nth-child(2) { margin-top: 58px; transform: rotate(4deg); }
+.cover-single img { width: 47%; }
+.cover-diagram, .cover-photo, .cover-doodle { display: grid; place-items: center; }
+.cover-diagram img { width: 92%; height: 90%; object-fit: contain; }
+.cover-photo img { width: 100%; height: 100%; object-fit: cover; }
+.cover-doodle img { width: 40%; height: 66%; object-fit: contain; }
+.cover-research { padding: 24px; }
+.cover-research img { width: 100%; height: 100%; object-fit: contain; border-radius: 8px; }
+.quote { background: var(--lavender-soft); border: 0; border-radius: 24px; padding: 40px; margin: 32px 0; }
+@media (max-width: 760px) {
+  .card-featured { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .card-featured .card-media { min-height: 0; }
+  .card-featured .card-meta { padding: 16px 10px; }
+  .quote { padding: 28px; }
+  .marquee { padding: 18px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html, body { scroll-behavior: auto; }
+}
+
+/* Small text stays readable on the lavender contact panel. */
+.footer .mono-label { color: var(--ink-soft); }
+
+@media (max-width: 600px) {
+  .section-head { flex-direction: column; align-items: flex-start; gap: 10px; margin-bottom: 24px; }
+  .section-head .mono-label { white-space: nowrap; }
 }

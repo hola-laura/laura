@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="none">
+  <title>Three routes. One pilot.</title>
+  <g stroke="#27232c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 172C78 251 196 198 222 257M238 174C218 200 246 217 243 251M398 177C407 236 298 214 271 256"/>
+    <path d="M217 244L224 259L211 255M239 242L243 256L251 246M279 246L268 259L281 256"/>
+    <g transform="translate(26 51) rotate(-7 58 60)"><rect width="115" height="130" rx="16" fill="#faf9f6"/><path d="M20 48H87M20 62H76M20 79H91M20 96H62" stroke="#b7aaca"/><text x="19" y="31" fill="#69488f" stroke="none" font-family="sans-serif" font-size="16">01</text></g>
+    <g transform="translate(182 31) rotate(4 58 65)"><rect width="115" height="143" rx="16" fill="#d5c9ed"/><path d="M20 48H87M20 62H76M20 79H91M20 96H62" stroke="#a08bbb"/><text x="19" y="31" fill="#69488f" stroke="none" font-family="sans-serif" font-size="16">02</text></g>
+    <g transform="translate(337 58) rotate(8 58 60)"><rect width="115" height="130" rx="16" fill="#faf9f6"/><path d="M20 48H87M20 62H76M20 79H91M20 96H62" stroke="#b7aaca"/><text x="19" y="31" fill="#69488f" stroke="none" font-family="sans-serif" font-size="16">03</text></g>
+    <path d="M187 274Q238 268 292 275L288 318Q237 327 183 317Z" fill="#27232c"/>
+    <path d="M326 288l8 6l-7 6M145 283l-10 6l8 7" stroke="#69488f"/>
+  </g>
+  <text x="208" y="302" fill="#faf9f6" font-family="sans-serif" font-size="18">One pilot.</text>
+</svg>
