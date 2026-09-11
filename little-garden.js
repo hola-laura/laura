@@ -1,6 +1,6 @@
 /* A quiet five-seed game, with native modal keyboard and focus handling. */
 (() => {
-  const opener = document.querySelector('.little-jelly');
+  const opener = document.querySelector('.signature-flower');
   const dialog = document.querySelector('#little-garden');
   if (!opener || !dialog) return;
   const seeds = [...dialog.querySelectorAll('[data-seed]')];
@@ -10,6 +10,9 @@
   const instruction = dialog.querySelector('#garden-instruction');
   const note = dialog.querySelector('.garden-note');
   const cursor = dialog.querySelector('.garden-dot');
+  // Reset to the original HTML copy, so content only needs editing once.
+  const initialCopy = [title, instruction, note].map(element => [element, element.textContent]);
+  const total = seeds.length;
   let grown = 0;
   opener.addEventListener('click', () => {
     if (!dialog.open) { dialog.showModal(); document.body.classList.add('garden-open'); }
@@ -37,14 +40,14 @@
     seed.setAttribute('aria-disabled', 'true');
     seed.setAttribute('aria-label', `${seed.dataset.flower}, grown by you`);
     grown++;
-    count.textContent = `${seed.dataset.flower} is blooming. ${grown} of 5 in bloom`;
+    count.textContent = `${seed.dataset.flower} is blooming. ${grown} of ${total} in bloom`;
     dialog.classList.add('has-started');
-    if (grown === seeds.length) {
+    if (grown === total) {
       dialog.classList.add('is-complete');
       title.textContent = 'Look what you grew.';
       instruction.textContent = 'A little garden, just for you.';
       note.textContent = 'Take a breath. Enjoy your little patch of good.';
-      count.textContent = '5 of 5 in bloom. Your garden is complete.';
+      count.textContent = `${total} of ${total} in bloom. Your garden is complete.`;
       restart.hidden = false;
     }
   });
@@ -53,12 +56,10 @@
     dialog.classList.remove('is-complete', 'has-started');
     for (const seed of seeds) {
       seed.classList.remove('is-grown'); seed.removeAttribute('aria-disabled');
-      seed.setAttribute('aria-label', `Plant seed ${seed.dataset.seed} of 5`);
+      seed.setAttribute('aria-label', `Plant seed ${seed.dataset.seed} of ${total}`);
     }
-    count.textContent = '0 of 5 in bloom';
-    title.textContent = 'Grow a little good.';
-    instruction.textContent = 'Five seeds. Five different flowers. A little care.';
-    note.textContent = 'No rush. Good things take a little care.';
+    count.textContent = `0 of ${total} in bloom`;
+    for (const [element, text] of initialCopy) element.textContent = text;
     restart.hidden = true; seeds[0].focus();
   });
 })();
