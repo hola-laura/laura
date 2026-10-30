@@ -1,274 +1,74 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Laura Sampedro — Product Design</title>
-  <meta name="description" content="Product Design at Monzo. Systems, trust, and the details that compound." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fragment+Mono&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="garden.css" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laura Sampedro — Product Design</title>
+<meta name="description" content="Senior Product Designer. I bring teams around the customer moment that matters, clarify trade-offs and turn broad ambition into a plan we can test.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fragment+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="garden.css"><link rel="stylesheet" href="home.css">
 </head>
-<body>
-  <div class="cursor" aria-hidden="true"></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="page">
-    <nav class="nav">
-      <div class="nav-signature">
-        <button class="signature-flower" type="button" aria-label="Open a little garden" aria-haspopup="dialog" aria-controls="little-garden" title="A little break">
-          <svg class="flower-art" viewBox="-125 -154 262 292" aria-hidden="true" focusable="false">
-            <g class="flower-bloom"><use href="assets/doodles/flower.svg#drawing"/></g>
+<body class="portfolio-home" id="top">
+<a class="skip-link" href="#work">Skip to selected work</a>
+<div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
+<img class="dotted-field" src="assets/home/imgDottedFieldSubtleInteractiveTexture.svg" alt="" aria-hidden="true">
+<div class="page">
+<nav class="nav" aria-label="Main navigation"><div class="nav-signature">        <button class="signature-flower" type="button" aria-label="Open a little garden" aria-haspopup="dialog" aria-controls="little-garden" title="A little break">
+          <svg class="flower-art" viewBox="-6 -5 118 131" aria-hidden="true" focusable="false">
+            <g class="flower-bloom"><image href="assets/home/imgDrawing.svg" width="106.146" height="119.423"/></g>
           </svg>
         </button>
-        <a class="nav-logo" href="#top" aria-label="Laura">
-          <img class="nav-wordmark" src="assets/laura-wordmark.svg" alt="" width="108" height="34"/>
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <header class="hero" id="top">
-      <div class="hero-copy">
-      <div class="status">
-        <span class="status-dot"></span>
-        <span class="status-text">Always up for a good conversation</span>
-      </div>
-      <h1 class="hero-title" data-reveal>
-        I make complicated things feel <span class="hero-accent">simple.</span>
-      </h1>
-      <p class="hero-sub">
-        I'm Laura — I design at <a class="link" href="#">Monzo</a>, where I keep ending
-        up on the problems nobody wants to untangle. Cross-team systems, partner
-        integrations, the moments where trust breaks if you get the details wrong.
-        Right now I'm deep in mortgages — figuring out how to make the scariest
-        financial decision feel calm.
-      </p>
-      </div>
-      <div class="hero-doodles" aria-hidden="true">
-        <svg viewBox="0 0 340 440" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-          <!-- Little stems and sparks frame the three hand-drawn characters. -->
-          <g transform="translate(49 38) rotate(12)">
-            <path d="M-12 32C3 24 5 8 7-3"/>
-            <path class="doodle-paper" d="M7-3C-9-15-3-25 5-14C1-34 15-31 12-14C29-28 35-14 18-8C35-3 27 8 15 0C14 17 0 16 7-3Z"/>
-          </g>
-          <g class="doodle-accent" transform="translate(289 48) rotate(9)">
-            <path d="M0-15L-2-3L-14 1L-2 4L1 17L5 4L17 0L5-3L0-15Z"/>
-          </g>
-          <path d="M19 238C4 253 7 270 22 273C36 277 43 265 32 260C17 254 11 277 38 290" stroke-width="1.8"/>
-          <path class="doodle-accent" d="M296 231L308 220M299 241L317 238M293 219L296 208"/>
-
-          <!-- An offbeat, calm flower, with seven deliberately different petals. -->
-          <g transform="translate(149 176) rotate(-9) scale(.86)">
-            <g class="doodle-flower-body">
-              <use href="assets/doodles/flower.svg#drawing"/>
-            </g>
-          </g>
-
-          <!-- A small hello, to echo the invitation above the headline. -->
-          <g transform="translate(83 350) rotate(-10)">
-            <g class="doodle-chat-body">
-              <use href="assets/doodles/hello.svg#drawing"/>
-            </g>
-          </g>
-
-          <!-- A friendly, imperfect little wave. -->
-          <g transform="translate(251 362) rotate(9) scale(.72)">
-            <g class="doodle-hand-body">
-              <use href="assets/doodles/wave.svg#drawing"/>
-            </g>
-          </g>
-          <g class="doodle-accent" transform="translate(155 410)">
-            <path d="M0-9L-2-2L-9 0L-2 3L0 10L3 3L10 0L3-2L0-9Z"/>
-          </g>
-        </svg>
-      </div>
-    </header>
-
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Systems Thinking</span><span>·</span>
-        <span>Cross-platform</span><span>·</span>
-        <span>Design Infrastructure</span><span>·</span>
-        <span>Partner Integrations</span><span>·</span>
-        <span>Fintech</span><span>·</span>
-        <span>Product Strategy</span><span>·</span>
-        <span>Systems Thinking</span><span>·</span>
-        <span>Cross-platform</span><span>·</span>
-        <span>Design Infrastructure</span><span>·</span>
-        <span>Partner Integrations</span><span>·</span>
-        <span>Fintech</span><span>·</span>
-        <span>Product Strategy</span><span>·</span>
-      </div>
-    </div>
-
-    <section class="work" id="work">
-      <div class="section-head">
-        <span class="mono-label">01 / Selected work</span>
-        <h2>Case studies</h2>
-      </div>
-
-      <div class="cards">
-        <a class="card card-lg card-link card-featured" data-reveal data-tilt href="case-study-project-manager.html">
-          <div class="card-media media-mist cover-diagram"><img src="assets/positioning-cover.svg" alt="Three positioning routes coming together in one pilot" loading="lazy" width="480" height="360"/></div>
-          <div class="card-meta">
-            <span class="mono-label">Monzo · Homeownership · 2026</span>
-            <h3>Project Manager Differentiator — shaping the experiment before opening Figma ↗</h3>
-            <p>Three positioning routes, one pilot. I connected strategy, data science, and product to design a two-phase experiment that tests the right things in the right order.</p>
-          </div>
-        </a>
-
-        <a class="card card-lg card-link" data-reveal data-tilt href="case-study-intercom.html">
-          <div class="card-media media-deep cover-phones"><img src="assets/screen-progress.png" alt="Mortgage progress screen" loading="lazy"/><img src="assets/screen-chat.png" alt="Mortgage chat screen" loading="lazy"/></div>
-          <div class="card-meta">
-            <span class="mono-label">Monzo × Habito · 2026</span>
-            <h3>Mortgage Chat — making a third-party tool invisible inside a bank ↗</h3>
-            <p>Two chat platforms, four conversation partners, one customer making the biggest financial decision of their life. I designed the system that prevented every seam.</p>
-          </div>
-        </a>
-
-        <a class="card card-lg card-link" data-reveal data-tilt href="case-study.html">
-          <div class="card-media media-lilac cover-phones cover-single"><img src="assets/screen-recommendation.png" alt="Mortgage recommendations in Monzo" loading="lazy"/></div>
-          <div class="card-meta">
-            <span class="mono-label">Monzo · 2026</span>
-            <h3>Accepting Recs — the moment between recommendation and commitment ↗</h3>
-            <p>Defining the interaction pattern for when a customer decides to trust a financial recommendation. Now the standard across three product areas.</p>
-          </div>
-        </a>
-
-        <a class="card card-lg card-link" data-reveal data-tilt href="case-study-accepting-recs.html">
-          <div class="card-media media-paper cover-research"><img src="assets/accepting-recs/ost.png" alt="Opportunity solution tree behind the recommendation journey" loading="lazy"/></div>
-          <div class="card-meta">
-            <span class="mono-label">Monzo · 2026 · Lead Designer</span>
-            <h3>Accepting Recs — from research tree to shipped product ↗</h3>
-            <p>The full lead designer arc: opportunity mapping, design principles, and every shipped screen. How research shaped the product end-to-end.</p>
-          </div>
-        </a>
-
-        <a class="card card-lg card-link" data-reveal data-tilt href="case-study-rldatix.html">
-          <div class="card-media media-mist cover-photo"><img src="assets/rldatix/interface.png" alt="RLDatix incident reporting interfaces and icon system" loading="lazy"/></div>
-          <div class="card-meta">
-            <span class="mono-label">RLDatix · 2020</span>
-            <h3>Icon Wall — how 500K clinicians start a patient-safety report ↗</h3>
-            <p>Redesigning the entry point to incident reporting across 5,000+ healthcare facilities. A visual language that reduced training time and increased report accuracy.</p>
-          </div>
-        </a>
-
-        <article class="card" data-reveal data-tilt>
-          <div class="card-media media-paper cover-doodle"><img src="assets/doodles/sprout.svg" alt="" loading="lazy"/></div>
-          <div class="card-meta">
-            <span class="mono-label">Design infrastructure</span>
-            <h3>Embedded Partner Framework</h3>
-          </div>
-        </article>
-
-        <article class="card" data-reveal data-tilt>
-          <div class="card-media media-deep cover-doodle"><img src="assets/doodles/hello.svg" alt="" loading="lazy"/></div>
-          <div class="card-meta">
-            <span class="mono-label">Org contribution</span>
-            <h3>Writing system for financial copy</h3>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="section-head">
-        <span class="mono-label">02 / About</span>
-      </div>
-      <p class="about-lead" data-reveal>
-        I've spent the last several years shaping how fintech products work at
-        the systems level — defining frameworks that govern cross-team
-        experiences, building design infrastructure that outlasts any single
-        feature, and making complex multi-partner integrations feel effortless
-        to customers. I think about what happens between the screens, not just
-        on them. The lifecycle, the routing, the transitions, the endings.
-      </p>
-      <p class="about-lead" data-reveal>
-        Before Monzo, I led design for healthcare safety software used across
-        5,000+ hospitals. I move between consumer and enterprise, mobile and web,
-        but the constant is the same: I design the rules, not just the surfaces.
-      </p>
-    </section>
-
-    <section class="quote">
-      <blockquote data-reveal>
-        <p>
-          "Laura doesn't just design features — she defines how the team thinks
-          about a problem space. The frameworks she creates become the shared
-          language between design and engineering. She raises the bar for
-          everyone around her."
-        </p>
-        <footer>
-          <span class="quote-name">Engineering Lead</span>
-          <span class="quote-role">Monzo, Borrowing Collective</span>
-        </footer>
-      </blockquote>
-    </section>
-
-    <section class="services">
-      <div class="section-head">
-        <span class="mono-label">03 / How I work</span>
-        <h2>How I work</h2>
-      </div>
-      <ul class="services-list" data-stagger>
-        <li>
-          <span class="service-num">01</span>
-          <div>
-            <h4>Systems before screens</h4>
-            <p>I define the lifecycle, routing, and rules of an experience before touching a single layout.</p>
-          </div>
-        </li>
-        <li>
-          <span class="service-num">02</span>
-          <div>
-            <h4>Cross-functional alignment</h4>
-            <p>I run workshops and decision documents that get engineering, product, and ops to speak the same language.</p>
-          </div>
-        </li>
-        <li>
-          <span class="service-num">03</span>
-          <div>
-            <h4>Design infrastructure</h4>
-            <p>Frameworks, patterns, and documented principles that make the next project faster — without me in the room.</p>
-          </div>
-        </li>
-        <li>
-          <span class="service-num">04</span>
-          <div>
-            <h4>Craft at every layer</h4>
-            <p>From motion and micro-copy to information architecture and partner APIs. I zoom freely between altitudes.</p>
-          </div>
-        </li>
-        <li>
-          <span class="service-num">05</span>
-          <div>
-            <h4>Team uplift</h4>
-            <p>Workshops, crits, and shared mental models that raise the quality bar across squads — not just my own work.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <footer class="footer" id="contact">
-      <div class="footer-inner">
-        <h2 class="footer-title" data-reveal>Let's make something calm together.</h2>
-        <a class="footer-email" href="mailto:lrsmpdr@gmail.com">
-          lrsmpdr@gmail.com ↗
-        </a>
-        <div class="footer-row">
-          <span class="mono-label">© 2026 Laura Sampedro de la Rosa</span>
-          <a class="mono-label" href="#">Back to top ↑</a>
-        </div>
-      </div>
-    </footer>
-  </div>
-
+</div><ul class="nav-links"><li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<header class="hero">
+<div class="hero-copy">
+<div class="status"><img src="assets/home/imgAvailabilityDot.svg" alt="" width="8" height="8"><span>Always up for a good conversation</span></div>
+<h1 class="hero-title" data-reveal>I lead product design through <span class="hero-accent">complexity.</span></h1>
+<p class="hero-sub">I bring teams around the customer moment that matters, clarify trade-offs and turn broad ambition into a plan we can test.</p>
+<div class="hero-actions"><a class="pill-button" href="#work">See selected work ↓</a><a class="text-link" href="mailto:lrsmpdr@gmail.com">Get in touch ↗</a></div>
+<p class="hero-role">Senior Product Designer</p>
+</div>
+<div class="gallery" aria-label="A few glimpses of Laura">
+<div class="gallery-card gallery-one"><img src="assets/home/imgImage1.png" alt="" width="425" height="566"></div>
+<div class="gallery-card gallery-two"><img src="assets/home/imgScreenshot20260612At1157561.png" alt="" width="799" height="532"></div>
+<div class="gallery-card gallery-three"><img class="gallery-underlay" src="assets/home/imgImage3.png" alt="" width="444" height="592"><img class="gallery-front" src="assets/home/imgImage4.png" alt="Laura sitting with her laptop" width="691" height="518"></div>
+<span class="gallery-sticker">Hey, I’m Laura</span>
+</div>
+</header>
+<main>
+<section class="work" id="work"><div class="section-head"><span class="mono-label">01 / Selected work</span><h2>Case studies</h2></div>
+<div class="cards">
+<article class="card card-featured" data-reveal data-tilt>
+<div class="card-media evidence evidence-referrals"><p class="evidence-label">Mortgage referrals · Three experiments</p>
+<div class="evidence-steps "><div class="evidence-step"><span class="step-num">01</span><strong>Onboarding</strong><small>EXPERIMENT</small></div><div class="evidence-step"><span class="step-num">02</span><strong>Customer communications</strong><small>EXPERIMENT</small></div><div class="evidence-step"><span class="step-num">03</span><strong>Project tracker</strong><small>EXPERIMENT</small></div></div>
+<div class="team-result"><span class="result-label">Team result</span><div class="metrics"><p><strong>7.5K</strong><span>referrals</span></p><p><strong>4.3K</strong><span>goal</span></p></div></div>
+</div>
+<div class="card-meta"><span class="mono-label">Role · Product design / Team · Mortgage referrals</span><h3>Three experiments, 7.5K referrals against a 4.3K goal</h3><p>I led experiments across onboarding, customer communications and the project tracker.</p><p class="case-result">Result · 7.5K team referrals against 4.3K goal</p><span class="case-note">Role · Experiments / Scope · Onboarding, comms, tracker</span></div>
+</article>
+<article class="card card-project" data-reveal data-tilt><div class="card-media evidence evidence-vision"><p class="evidence-label">Vision · Not shipped</p>
+<div class="evidence-steps connected"><div class="evidence-step"><span class="step-num">01</span><strong>In-app</strong><small>Financial Health</small></div><div class="evidence-step"><span class="step-num">02</span><strong>Self-serve</strong><small>More support in-app</small></div><div class="evidence-step"><span class="step-num">03</span><strong>Operations</strong><small>Cost reduction target</small></div></div>
+<p class="evidence-footnote">Target: lower operational cost · Not a measured result</p></div>
+<div class="card-meta"><span class="mono-label">Role · Product vision / Scope · Financial Health</span><h3>Bring Financial Health into the app</h3><p>I shaped an in-app, self-serve vision to help customers access Financial Health while reducing operational cost. The vision was not shipped, and savings were not measured.</p><span class="case-note">Vision · Not shipped / Savings not measured</span></div></article>
+<article class="card card-project" data-reveal data-tilt><div class="card-media evidence evidence-bizum"><p class="evidence-label">A local need · A leadership decision</p>
+<div class="evidence-steps connected"><div class="evidence-step"><span class="step-num">01</span><strong>UK teams</strong><small>Questioned priority</small></div><div class="evidence-step"><span class="step-num">02</span><strong>Local context</strong><small>Made the case</small></div><div class="evidence-step"><span class="step-num">03</span><strong>Customer test</strong><small>Need confirmed</small></div></div>
+<div class="bizum-outcome"><strong>Testing confirmed the need</strong><span>Not launched</span></div></div>
+<div class="card-meta"><span class="mono-label">Role · Market advocacy / Scope · Spain test</span><h3>Making the case to test Bizum in Spain</h3><p>UK teams questioned Bizum’s local priority. I made the case for testing it in Spain; testing confirmed that the need mattered. The product has not launched.</p><span class="case-note">Result · Test confirmed the need / Not launched</span></div></article>
+</div></section>
+<section class="earlier" id="earlier-work"><div class="section-head"><span class="mono-label">02 / Earlier work</span><h2>Earlier work</h2></div>
+<div class="earlier-grid">
+<a class="card earlier-card" href="case-study-rldatix.html" data-reveal data-tilt><span class="mono-label">Healthcare · RLDatix · 2020</span><h3>Icon Wall for safer reporting</h3><p>Designed the visual entry point to safety reports used by 500K+ clinicians across 5,000+ hospitals. The redesign reduced training time and improved report accuracy.</p></a>
+<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Retail &amp; property · Intu · 2019</span><h3>Design system for risk tools</h3><p>Created Intu’s first design system and redesigned its risk-management experience for use across company platforms.</p></article>
+<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Food delivery · Just Eat · 2014–19</span><h3>Family Club journeys</h3><p>Redesigned sign-up and platform experiences for Family Club members and non-members.</p></article>
+</div></section>
+<section class="about" id="about"><span class="mono-label">03 / About</span><p class="about-lead" data-reveal>My work starts before the interface: I bring customer intent, product ambition and delivery reality into the same conversation. Then I help teams decide what to solve first—and what evidence should shape the next investment.</p><h2 class="about-statement" data-reveal>I design the rules, not just the surfaces.</h2></section>
+<section class="services"><div class="section-head"><span class="mono-label">04 / How I work</span><h2>How I lead</h2></div>
+<ul class="services-list" data-stagger>
+<li><span class="service-num">01</span><div><h3>Find the right customer moment</h3><p>For first-time buyers, I mapped customer intent to in-app entry points and triggers across the home-buying journey.</p></div><span class="practice-proof">FTB · Intent &amp; entry points</span></li>
+<li><span class="service-num">02</span><div><h3>Choose the next useful test</h3><p>For in-app recommendations, I focused the proposal on timely re-entry before investing in the full experience.</p></div><span class="practice-proof">Mortgage recommendations</span></li>
+<li><span class="service-num">03</span><div><h3>Turn discovery into a phased plan</h3><p>I shaped the first-time-buyer proposition around scope, success measures, engineering estimates and operational capacity.</p></div><span class="practice-proof">FTB · Phased product strategy</span></li>
+</ul></section>
+</main>
+<footer class="footer" id="contact"><div class="footer-inner"><h2 class="footer-title" data-reveal>Let’s make products feel clear and useful.</h2><div class="footer-actions"><a class="pill-button" href="mailto:lrsmpdr@gmail.com">Email me ↗</a><a href="https://www.linkedin.com/in/laura-sampedro/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div><div class="footer-row"><span class="mono-label">© 2026 Laura Sampedro de la Rosa</span><a class="mono-label" href="#top">Back to top ↑</a></div></div></footer>
+</div>
   <dialog class="garden-dialog" id="little-garden" aria-labelledby="garden-title" aria-describedby="garden-instruction">
     <div class="garden-dot" aria-hidden="true"></div>
     <button class="garden-close" type="button" aria-label="Close garden">×</button>
@@ -321,9 +121,6 @@
     </div>
     <p class="garden-note">No rush. Good things take a little care.</p>
   </dialog>
-  <script src="script.js"></script>
-  <script src="flower-motion.js"></script>
-  <script src="little-garden.js"></script>
-  <script src="doodle-surprises.js"></script>
-</body>
-</html>
+
+<script src="script.js"></script><script src="flower-motion.js"></script><script src="little-garden.js"></script><script src="doodle-surprises.js"></script>
+</body></html>
