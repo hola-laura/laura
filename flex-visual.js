@@ -1,10 +1,4 @@
-(() => {
-const dialog=document.querySelector('.fv-lightbox');let opener;
-document.querySelectorAll('.fv-zoom').forEach(button=>button.addEventListener('click',()=>{opener=button;const source=button.querySelector('img');const img=dialog.querySelector('img');img.src=source.src;img.alt=source.alt;dialog.showModal();}));
-const close=()=>dialog.close();dialog.querySelector('.fv-close').addEventListener('click',close);
-dialog.addEventListener('click',e=>{if(e.target===dialog)close();});
-dialog.addEventListener('close',()=>opener?.focus());
-const image=document.getElementById('fv-edit-image');const caption=document.getElementById('fv-edit-caption');
+(()=>{const image=document.getElementById('fv-edit-image');const caption=document.getElementById('fv-edit-caption');
 document.querySelectorAll('[data-payment-state]').forEach(button=>button.addEventListener('click',()=>{
 const after=button.dataset.paymentState==='after';
 image.src='assets/flex/edit-payment-'+(after?'after':'before')+'.png?v=transparent-5';
