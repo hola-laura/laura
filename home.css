@@ -22,7 +22,7 @@
 .gallery-card[data-slot="0"] { left:56px; top:43px; width:388px; height:484px; transform:rotate(-15.35deg); }
 .gallery-one img { position:absolute; width:425px; height:566px; left:-25px; top:-24px; object-fit:cover; transform:rotate(-.11deg); }
 .gallery-card[data-slot="1"] { left:56px; top:48px; width:388px; height:493px; transform:rotate(-7.8deg); }
-.gallery-two img { position:absolute; width:799px; height:532px; left:-239px; top:-29px; object-fit:cover; transform:rotate(-.43deg); }
+.gallery-two img { position:absolute; width:768.297px; height:511.365px; left:-224.27px; top:-1.68px; object-fit:cover; transform:rotate(.06deg); }
 .gallery-card[data-slot="2"] { left:54px; top:49px; width:398px; height:501px; }
 .gallery-underlay { position:absolute; width:444px; height:592px; left:-1px; top:-1px; object-fit:cover; }
 .gallery-front { position:absolute; width:691px; height:518px; left:-226px; top:-18px; object-fit:cover; }
