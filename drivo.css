@@ -2,7 +2,7 @@
 .portfolio-home .drivo-card { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:40px; padding:11px; align-items:stretch; }
 .drivo-visual { position:relative; border-radius:18px; overflow:hidden; background:var(--lavender-soft); min-height:570px; padding:26px 18px 22px; display:flex; flex-direction:column; }
 .drivo-maker { color:var(--accent); font-size:10px; text-align:center; letter-spacing:.03em; }
-.drivo-screens { flex:1; position:relative; min-height:462px; margin-top:14px; }
+.drivo-screens { flex:1; position:relative; min-height:500px; margin-top:14px; }
 .drivo-screen { display:block; position:absolute; width:46%; height:auto; border:3px solid var(--ink-block); border-radius:23px; box-shadow:0 18px 28px -12px #332b3e50; }
 .drivo-screen-home { top:10px; left:3%; transform:rotate(-7deg); }
 .drivo-screen-practice { top:62px; right:2%; transform:rotate(6deg); }
