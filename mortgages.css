@@ -1,0 +1,54 @@
+/* Homeownership: original product visuals and a short, evidence-led story. */
+.mg-hero{grid-template-columns:.85fr 1.15fr;gap:48px}
+.mg-hero-art{margin:0;min-width:0}
+.mg-hero-art .fv-zoom{overflow:hidden;border-radius:24px}
+.mg-hero-art img{aspect-ratio:6072/4653;object-fit:contain}
+.mg-hero-art figcaption,.mg-wide figcaption{font-size:12px;line-height:1.5;color:#605969;margin-top:14px}
+.mortgage-case .mg-metrics{grid-template-columns:1.15fr 1.15fr .8fr;gap:28px}
+.mortgage-case .mg-metrics strong{font-size:clamp(30px,3.7vw,48px);white-space:nowrap}
+.mortgage-case .mg-metrics span{max-width:29ch;line-height:1.5}
+.mg-section{padding:72px 0;border-bottom:1px solid #ded8e4;scroll-margin-top:24px}
+.mg-intro{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;margin-bottom:32px}
+.mg-section h2{font-size:clamp(28px,3.1vw,42px);line-height:1.12;letter-spacing:-.035em;margin:20px 0 24px}
+.mg-intro p{font-size:17px;line-height:1.6;color:#605969;margin:0 0 18px;max-width:52ch}
+.mg-research{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;padding:28px 32px;background:#eee7f4;border-radius:20px;margin-bottom:32px}
+.mg-research>div{display:flex;align-items:center;gap:20px}
+.mg-research strong{color:#6d4793}.mg-research>div>strong{font-size:46px;letter-spacing:-.04em;font-weight:500}
+.mg-research span{font-size:12px;line-height:1.6}.mg-research p{font-size:17px;line-height:1.6;margin:0;color:#605969}
+.mg-wide{margin:28px 0 0;min-width:0}
+.mg-wide .fv-zoom{overflow:hidden;border-radius:20px}
+.mg-wide img{aspect-ratio:auto;width:100%;height:auto}
+.mg-product{max-width:1020px;margin:32px auto 0}
+.mg-decisions{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:40px 0}
+.mg-decisions article{border-top:1px solid #d7cfdf;padding-top:20px}
+.mg-decisions .mono-label{font-size:10px}.mg-decisions h3{font-size:21px;line-height:1.25;margin:14px 0 12px}
+.mg-decisions p{font-size:15px;line-height:1.6;color:#605969;margin:0}
+.mg-partner{max-width:850px;margin:0 auto}
+.mg-flow-board{background:#e0ece6;grid-template-columns:1fr;gap:24px;padding:32px}
+.mg-flow-board>.mono-label{font-size:10px}
+.mg-flow{display:grid;grid-template-columns:1fr;gap:10px;text-align:center;justify-items:center;background:#f6f8f5;border-radius:16px;padding:24px}
+.mg-flow p{font-size:16px;line-height:1.4;margin:0;padding:10px 20px;background:#fff;border-radius:9px;width:100%;box-sizing:border-box;color:#4d4853}
+.mg-flow>span:not(.mg-flow-tag){font-size:18px;color:#6d4793;line-height:1}
+.mg-flow-tag{font:10px/1.5 var(--font-mono);color:#605969;margin-bottom:4px}
+.mg-flow-after{background:#c8dfd3}.mg-flow-after p{color:#263e32}
+.mg-flow-caption{font-size:11px;line-height:1.5;margin:0;color:#536359}
+.mg-bars{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding:32px;background:#e7eee9;border-radius:20px}
+.mg-bars h3{font-size:16px;line-height:1.4;margin:0 0 22px}
+.mg-bar{display:flex;align-items:center;gap:12px;margin-top:12px;height:42px}
+.mg-bar>span{display:block;flex:0 0 var(--bar);background:#b5c5bd;padding:10px;box-sizing:border-box;line-height:22px;font-size:17px;font-weight:500;min-width:50px;border-radius:5px;color:#263e32}
+.mg-bar-after>span{background:#537b66;color:white}.mg-bar small{font:9px/1.5 var(--font-mono);white-space:nowrap}
+.mg-intro .mg-small,.mg-small{font-size:12px;line-height:1.6;color:#716879}.mg-results>.mg-small{margin:16px 0 32px}
+.mortgage-case .fv-details{margin-top:28px}
+.mg-status{display:inline-block;background:#eee7f4;color:#63477e;padding:8px 12px;border-radius:20px;font-size:11px;line-height:1.5}
+.mg-research-image{padding:20px;background:#fff;border:1px solid #e2dce7;border-radius:20px}
+.mortgage-case .fv-lightbox.is-landscape{width:95vw;max-width:1500px}
+.mortgage-case .fv-lightbox.is-landscape>img{width:100%;height:auto;max-height:80dvh;object-fit:contain}
+.mortgage-home-card .mortgage-home-media{background:#2aabbc;padding:20px!important;display:flex;align-items:center}
+.mortgage-home-card .mortgage-home-media img{height:auto!important;min-height:0!important;object-fit:contain;border-radius:16px}
+@media(max-width:1024px){.mg-hero{gap:28px}.mg-intro,.mg-research{gap:32px}.mg-research>div{display:block}.mg-research span{display:block;margin-top:8px}.mg-bars{gap:28px}.mg-bar{gap:8px}.mg-bar-after>span{flex-basis:min(var(--bar),78%)}}
+@media(max-width:760px){.mg-hero{grid-template-columns:1fr}.mg-hero-art{width:100%}.mg-hero-art figcaption{font-size:11px}.mg-section{padding:44px 0}.mg-intro,.mg-research{grid-template-columns:1fr;gap:12px}.mg-intro{margin-bottom:24px}.mg-intro p{font-size:16px}.mg-section h2{font-size:32px;margin:16px 0 20px}.mg-research{padding:24px;gap:20px}.mg-research>div{display:flex;gap:18px}.mg-research span{margin:0}.mg-research>div>strong{font-size:40px}.mg-research p{font-size:16px}.mortgage-case .mg-metrics{grid-template-columns:1fr;gap:24px}.mortgage-case .mg-metrics strong{font-size:38px}.mortgage-case .mg-metrics span{max-width:32ch;font-size:13px;margin-top:8px}.mg-decisions{grid-template-columns:1fr;gap:24px;margin:28px 0}.mg-flow-board{padding:24px}.mg-flow{padding:20px}.mg-bars{grid-template-columns:1fr;gap:32px;padding:24px}.mg-wide .fv-zoom{border-radius:14px}.mg-wide figcaption{font-size:11px}.mg-research-image{padding:12px}.mg-bar small{font-size:8px}.mortgage-home-card .mortgage-home-media{padding:16px!important}}
+#direction .mg-wide .fv-zoom{background:#eee9e2;padding:16px;box-sizing:border-box}
+#direction .mg-wide img{height:480px;object-fit:contain}
+.mg-bar{display:grid;grid-template-columns:1fr 58px;gap:12px}
+.mg-bar>span,.mg-bar-after>span{width:var(--bar);min-width:50px}
+@media(max-width:760px){#direction .mg-wide img{height:280px}#direction .mg-wide .fv-zoom{padding:8px}.mg-bar{grid-template-columns:1fr 52px;gap:8px}}
