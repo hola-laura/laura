@@ -16,8 +16,8 @@
 .pill-button:hover { background:var(--ink-block); transform:translateY(-2px); box-shadow:0 8px 22px #69488f26; }
 .text-link { font-size:16px; color:var(--accent); font-weight:500; }
 .hero-role { margin:28px 0 0; color:var(--ink-muted); font:13px var(--font-mono); }
-.gallery-stage { position:relative; width:100%; aspect-ratio:528 / 590; min-width:0; }
-.gallery { isolation:isolate; position:absolute; left:0; top:0; width:528px; height:590px; transform:scale(var(--gallery-scale,.6)); transform-origin:top left; }
+.gallery-stage { position:relative; width:100%; aspect-ratio:528 / 606; min-width:0; }
+.gallery { isolation:isolate; position:absolute; left:0; top:0; width:528px; height:606px; transform:scale(var(--gallery-scale,.6)); transform-origin:top left; }
 .gallery-card { position:absolute; background:white; border:1px solid var(--line); border-radius:24px; overflow:hidden; transition:transform 500ms cubic-bezier(.2,.8,.2,1); }
 .gallery-card[data-slot="0"] { left:56px; top:43px; width:388px; height:484px; transform:rotate(-15.35deg); }
 .gallery-one img { position:absolute; width:425px; height:566px; left:-25px; top:-24px; object-fit:cover; transform:rotate(-.11deg); }
@@ -174,7 +174,7 @@
 .gallery-card img { pointer-events:none; -webkit-user-drag:none; }
 .gallery-card.is-dragging { cursor:grabbing; box-shadow:0 24px 40px -16px #27232c50; transition:none; }
 .gallery-sticker { z-index:100; pointer-events:none; transform:translateZ(0) rotate(-7.74deg); }
-.gallery-help { position:absolute; top:562px; left:72px; width:380px; text-align:center; color:var(--ink-muted); font:12px var(--font-mono); pointer-events:none; }
+.gallery-help { position:absolute; top:578px; left:72px; width:380px; text-align:center; color:var(--ink-muted); font:12px var(--font-mono); pointer-events:none; }
 .gallery-announcement { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
 .gallery-card:focus-visible { outline:3px solid var(--accent); outline-offset:6px; }
 body:has(.gallery-card:hover) .cursor,body:has(.gallery-card:hover) .cursor-dot,body.gallery-dragging .cursor,body.gallery-dragging .cursor-dot { opacity:0; }
