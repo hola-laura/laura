@@ -160,5 +160,11 @@
   window.addEventListener('resize', reset);
   document.addEventListener('visibilitychange', () => { if (document.hidden) reset(); });
   reduced.addEventListener('change', reset);
+  const stage = deck.closest('.gallery-stage');
+  if (stage) {
+    const fit = () => stage.style.setProperty('--gallery-scale', stage.clientWidth / 528);
+    fit();
+    new ResizeObserver(() => { fit(); reset(); }).observe(stage);
+  }
   layout();
 })();
