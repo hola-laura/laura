@@ -2,8 +2,17 @@
 .portfolio-home .drivo-card { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:40px; padding:11px; align-items:stretch; }
 .drivo-visual { position:relative; border-radius:18px; overflow:hidden; background:var(--lavender-soft); min-height:570px; padding:26px 18px 22px; display:flex; flex-direction:column; }
 .drivo-maker { color:var(--accent); font-size:10px; text-align:center; letter-spacing:.03em; }
-.drivo-screens { flex:1; position:relative; min-height:500px; margin-top:14px; }
-.drivo-screen { display:block; position:absolute; width:46%; height:auto; border:3px solid var(--ink-block); border-radius:23px; box-shadow:0 18px 28px -12px #332b3e50; }
+.drivo-screens { flex:1; position:relative; min-height:510px; margin-top:14px; }
+.drivo-phone { position:absolute; width:46%; padding:3px; border:1px solid #a49d92; border-radius:15% / 7%; background:linear-gradient(115deg,#e2ddd4,#918b81 28%,#d2ccc3 52%,#837c72 78%,#d7d0c6); box-shadow:inset 0 0 0 1px #f1ede780,0 18px 28px -12px #332b3e60; }
+.drivo-phone-display { position:relative; overflow:hidden; border:3px solid #111113; border-radius:13% / 6%; background:#0b0b0c; }
+.drivo-phone-display img { display:block; width:100%; height:auto; }
+.drivo-phone-display::before { content:""; position:absolute; z-index:2; width:27%; height:3.1%; top:2.4%; left:36.5%; border-radius:999px; background:#09090b; box-shadow:inset -2px 0 2px #202025; }
+.drivo-phone-display::after { content:""; position:absolute; z-index:2; width:32%; height:2px; bottom:1.4%; left:34%; border-radius:999px; background:#16151c; opacity:.8; }
+.phone-button { position:absolute; width:2px; border-radius:2px; background:linear-gradient(90deg,#777168,#d9d2c7); box-shadow:0 0 0 .5px #8a847b; }
+.phone-action { top:17%; left:-3px; height:4%; }
+.phone-volume { top:25%; left:-3px; height:12%; background:linear-gradient(to bottom,#a8a196 0%,#bfb8ad 43%,transparent 43%,transparent 54%,#a8a196 54%,#bfb8ad 100%); box-shadow:none; }
+.phone-power { top:27%; right:-3px; height:10%; }
+.phone-camera { top:63%; right:-3px; height:6%; }
 .drivo-screen-home { top:10px; left:3%; transform:rotate(-7deg); }
 .drivo-screen-practice { top:62px; right:2%; transform:rotate(6deg); }
 .drivo-process { position:relative; text-align:center; color:var(--accent); font-size:10px; margin-top:20px; }
@@ -14,6 +23,7 @@
 .drivo-copy p { font-size:16px; line-height:25px; color:var(--ink-soft); margin:0 0 18px; }
 .drivo-skills { display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:6px 0 30px; }
 .drivo-skills li { border:1px solid var(--line); border-radius:20px; padding:6px 10px; font:10px/1.5 var(--font-mono); color:var(--ink-soft); }
+.drivo-copy .drivo-availability { margin:0 0 16px; color:var(--accent); font-size:13px; line-height:21px; }
 .drivo-actions { display:flex; flex-wrap:wrap; align-items:center; gap:18px; margin-top:auto; }
 .drivo-actions .text-link { font-size:14px; }
 @media(max-width:1100px) {
@@ -27,7 +37,8 @@
  .portfolio-home .drivo-card { grid-template-columns:1fr; gap:0; }
  .drivo-visual { min-height:0; padding:22px 12px; }
  .drivo-screens { width:100%; max-width:390px; margin:24px auto 0; min-height:0; aspect-ratio:1 / 1.18; }
- .drivo-screen { width:44%; border-radius:18px; }
+ .drivo-phone { width:44%; padding:2px; }
+ .drivo-phone-display { border-width:2px; }
  .drivo-screen-home { left:6%; top:0; }
  .drivo-screen-practice { right:5%; top:38px; }
  .drivo-maker,.drivo-process { font-size:9px; }
