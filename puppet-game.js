@@ -2,7 +2,7 @@
   const stage=document.querySelector(".puppet-stage");
   const mount=document.querySelector("#puppet-mount");
   if(!stage||!mount)return;
-  fetch(new URL("assets/puppet/laura-marionette.svg?v=2",document.baseURI))
+  fetch(new URL("assets/puppet/laura-marionette-stage.svg",document.baseURI))
     .then((response)=>{if(!response.ok)throw new Error("Puppet artwork unavailable");return response.text()})
     .then((markup)=>{
       mount.innerHTML=markup;
