@@ -7,71 +7,85 @@
     .then((markup)=>{
       mount.innerHTML=markup;
       const svg=mount.querySelector("svg");
-      const head=mount.querySelector("#puppet-head");
-      const torso=mount.querySelector("#puppet-torso");
-      const leftArm=mount.querySelector("#puppet-arm-left");
-      const rightArm=mount.querySelector("#puppet-arm-right");
-      const leftLeg=mount.querySelector("#puppet-leg-left");
-      const rightLeg=mount.querySelector("#puppet-leg-right");
-      const strings=[...mount.querySelectorAll(".puppet-string")];
-      const parts=[head,torso,leftArm,rightArm,leftLeg,rightLeg].filter(Boolean);
-      const prefersReduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const current={head:0,torso:0,leftArm:0,rightArm:0,leftLeg:0,rightLeg:0,leftString:0,rightString:0};
-      const target={...current};
-      let frame=0;
-      const clamp=(value,min,max)=>Math.max(min,Math.min(max,value));
-      const pointerTarget=(event)=>{
-        const rect=stage.getBoundingClientRect();
-        const nx=clamp(((event.clientX-rect.left)/rect.width)*2-1,-1,1);
-        const ny=clamp(((event.clientY-rect.top)/rect.height)*2-1,-1,1);
-        target.head=nx*13-ny*3;
-        target.torso=nx*4;
-        target.leftArm=clamp(-ny*25-nx*18,-38,38);
-        target.rightArm=clamp(ny*25-nx*18,-38,38);
-        target.leftLeg=clamp(-nx*8+ny*4,-16,16);
-        target.rightLeg=clamp(nx*8+ny*4,-16,16);
-        target.leftString=clamp(nx*1.8-ny*1.2,-4,4);
-        target.rightString=clamp(nx*1.8+ny*1.2,-4,4);
-        stage.classList.add("is-awake");
-        if(!frame)frame=requestAnimationFrame(animate);
+      const specs={
+        "puppet-head":{pivot:[340,250],worldPivot:[340,550],anchor:[340,104],string:mount.querySelector("#puppet-string-head"),ring:mount.querySelector("#puppet-anchor-head"),max:24},
+        "puppet-arm-left":{pivot:[262,388],worldPivot:[262,688],anchor:[62,378],string:mount.querySelector("#puppet-string-left"),ring:mount.querySelector("#puppet-anchor-left"),max:58},
+        "puppet-arm-right":{pivot:[418,388],worldPivot:[418,688],anchor:[617,356],string:mount.querySelector("#puppet-string-right"),ring:mount.querySelector("#puppet-anchor-right"),max:58},
+        "puppet-leg-left":{pivot:[300,573],worldPivot:[300,873],max:42},
+        "puppet-leg-right":{pivot:[380,573],worldPivot:[380,873],max:42},
+        "puppet-torso":{pivot:[340,388],worldPivot:[340,688],max:15}
       };
-      const animate=(time)=>{
-        const easing=prefersReduced?1:.14;
-        for(const key of Object.keys(current))current[key]+=(target[key]-current[key])*easing;
-        if(head)head.style.transform=`rotate(${current.head+Math.sin(time/900)*.45}deg)`;
-        if(torso)torso.style.transform=`rotate(${current.torso+Math.sin(time/1250)*.25}deg)`;
-        if(leftArm)leftArm.style.transform=`rotate(${current.leftArm}deg)`;
-        if(rightArm)rightArm.style.transform=`rotate(${current.rightArm}deg)`;
-        if(leftLeg)leftLeg.style.transform=`rotate(${current.leftLeg}deg)`;
-        if(rightLeg)rightLeg.style.transform=`rotate(${current.rightLeg}deg)`;
-        if(strings[1])strings[1].style.transform=`rotate(${current.leftString}deg)`;
-        if(strings[2])strings[2].style.transform=`rotate(${current.rightString}deg)`;
-        const moving=Object.keys(current).some((key)=>Math.abs(current[key]-target[key])>.025);
-        if(moving||stage.matches(":hover"))frame=requestAnimationFrame(animate);
-        else frame=0;
-      };
-      const settle=()=>{
-        Object.keys(target).forEach((key)=>target[key]=0);
-        stage.classList.remove("is-awake");
-        if(!frame)frame=requestAnimationFrame(animate);
-      };
-      stage.addEventListener("pointermove",pointerTarget,{passive:true});
-      stage.addEventListener("pointerleave",settle);
-      stage.addEventListener("pointerup",(event)=>{if(event.pointerType!=="mouse")settle()});
-      stage.addEventListener("focusin",()=>{target.head=-3;if(!frame)frame=requestAnimationFrame(animate)});
-      stage.addEventListener("focusout",settle);
-      stage.addEventListener("keydown",(event)=>{
-        const directions={ArrowLeft:[-.55,0],ArrowRight:[.55,0],ArrowUp:[0,-.55],ArrowDown:[0,.55]};
-        const direction=directions[event.key];
-        if(!direction)return;
-        event.preventDefault();
-        const rect=stage.getBoundingClientRect();
-        const fakeEvent={clientX:rect.left+rect.width*(.5+direction[0]),clientY:rect.top+rect.height*(.5+direction[1])};
-        pointerTarget(fakeEvent);
+      Object.keys(specs).forEach((id)=>{
+        specs[id].element=mount.querySelector("#"+id);
+        specs[id].baseD=specs[id].string&&specs[id].string.getAttribute("d");
+        if(specs[id].ring)specs[id].baseRing={cx:specs[id].ring.getAttribute("cx"),cy:specs[id].ring.getAttribute("cy")};
       });
-      stage.addEventListener("keyup",(event)=>{
-        if(event.key.startsWith("Arrow"))settle();
+      const point=(event)=>{
+        const p=svg.createSVGPoint();p.x=event.clientX;p.y=event.clientY;
+        return p.matrixTransform(svg.getScreenCTM().inverse());
+      };
+      const angleAt=(p,pivot)=>Math.atan2(p.y-pivot[1],p.x-pivot[0])*180/Math.PI;
+      const normalize=(n)=>((n+540)%360)-180;
+      const rotate=(p,pivot,degrees)=>{
+        const rad=degrees*Math.PI/180,dx=p[0]-pivot[0],dy=p[1]-pivot[1];
+        return [pivot[0]+dx*Math.cos(rad)-dy*Math.sin(rad),pivot[1]+dx*Math.sin(rad)+dy*Math.cos(rad)];
+      };
+      let active=null;
+      const setAngle=(part,degrees)=>{
+        const spec=part.spec,angle=Math.max(-spec.max,Math.min(spec.max,degrees));
+        part.angle=angle;
+        if(spec.element)spec.element.style.transform="rotate("+angle+"deg)";
+        if(spec.string&&spec.anchor){
+          const end=rotate(spec.anchor,spec.pivot,angle);
+          const worldEnd=[end[0],end[1]+300];
+          let start=[340,0];
+          if(spec.string.id==="puppet-string-left")start=[150,0];
+          if(spec.string.id==="puppet-string-right")start=[530,0];
+          spec.string.setAttribute("d","M "+start[0]+" "+start[1]+" L "+worldEnd[0].toFixed(2)+" "+worldEnd[1].toFixed(2));
+          if(spec.ring){spec.ring.setAttribute("cx",end[0].toFixed(2));spec.ring.setAttribute("cy",end[1].toFixed(2));}
+        }
+      };
+      const restore=(spec)=>{
+        if(spec.element)spec.element.style.transform="";
+        if(spec.string)spec.string.setAttribute("d",spec.baseD);
+        if(spec.ring){spec.ring.setAttribute("cx",spec.baseRing.cx);spec.ring.setAttribute("cy",spec.baseRing.cy);}
+      };
+      const release=()=>{
+        if(!active)return;
+        const part=active;active=null;stage.classList.remove("is-dragging");
+        restore(part.spec);
+        try{stage.releasePointerCapture(part.pointerId)}catch(_){}
+      };
+      stage.addEventListener("pointerdown",(event)=>{
+        const hit=event.target.closest("[data-puppet-part],.puppet-grab");
+        if(!hit)return;
+        const id=hit.getAttribute("data-puppet-part")||hit.id,spec=specs[id];
+        if(!spec)return;
+        event.preventDefault();
+        active={id:id,spec:spec,pointerId:event.pointerId,startAngle:angleAt(point(event),spec.worldPivot)};
+        stage.classList.add("is-dragging");
+        try{stage.setPointerCapture(event.pointerId)}catch(_){}
+      });
+      stage.addEventListener("pointermove",(event)=>{
+        if(!active||event.pointerId!==active.pointerId)return;
+        setAngle(active,normalize(angleAt(point(event),active.spec.worldPivot)-active.startAngle));
+      });
+      stage.addEventListener("pointerup",release);
+      stage.addEventListener("pointercancel",release);
+      stage.addEventListener("lostpointercapture",release);
+      mount.querySelectorAll(".puppet-grab").forEach((element)=>{
+        element.addEventListener("keydown",(event)=>{
+          const spec=specs[element.id];if(!spec)return;
+          if(event.key==="Enter"||event.key===" "){
+            event.preventDefault();setAngle({spec:spec},element.id.indexOf("arm")>=0?22:-12);
+            window.setTimeout(()=>restore(spec),560);return;
+          }
+          if(event.key==="ArrowLeft"||event.key==="ArrowRight"){
+            event.preventDefault();setAngle({spec:spec},event.key==="ArrowLeft"?-14:14);
+          }
+        });
+        element.addEventListener("keyup",(event)=>{if(event.key.indexOf("Arrow")===0){const spec=specs[element.id];if(spec)restore(spec)}});
       });
     })
-    .catch(()=>{mount.innerHTML='<p class="mono-label">The marionette is backstage for a moment.</p>'});
+    .catch(()=>{mount.innerHTML='<p class="puppet-sr-only">The marionette is backstage for a moment.</p>'});
 })();
