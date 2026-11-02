@@ -57,6 +57,27 @@
 .rld-product-nav-avatar{display:grid;place-items:center;width:clamp(17px,2.5vw,30px);height:clamp(17px,2.5vw,30px);border-radius:50%;background:#ffffff20;border:1px solid #ffffff40;font-size:clamp(7px,.85vw,10px);flex-shrink:0}
 .rld-compare-current-nav{position:absolute;top:0;left:0;right:0;aspect-ratio:1261.472/74.392;z-index:1}
 .rld-compare-old{z-index:2}.rld-compare-divider{z-index:3}
+</style><style>
+/* One coherent system composition; every example appears once. */
+.rld-system-exhibit .rld-system-overview{grid-template-columns:.8fr 1.3fr;padding:40px;gap:40px;align-items:center}
+.rld-system-exhibit .rld-system-intro{padding:0}
+.rld-system-exhibit .rld-system-intro h3{font-size:clamp(28px,3.1vw,42px)}
+.rld-system-exhibit .rld-parts-canvas{padding:0;gap:14px;grid-template-columns:1fr 1fr;align-items:stretch}
+.rld-system-exhibit .rld-parts-panel{box-shadow:0 5px 20px #0f414606;border-radius:12px;padding:22px}
+.rld-system-exhibit .rld-parts-controls{grid-column:1;grid-row:1}
+.rld-system-exhibit .rld-parts-status{grid-column:2;grid-row:1}
+.rld-system-exhibit .rld-parts-icons{grid-column:1;grid-row:2}
+.rld-system-exhibit .rld-system-field{grid-column:2;grid-row:2}
+.rld-system-exhibit .rld-parts-controls>img{width:100%;margin-top:22px}
+.rld-system-exhibit .rld-parts-select{font-size:12px;padding:10px}
+.rld-system-exhibit .rld-parts-panel>.mono-label{margin-bottom:22px;font-size:9px}
+.rld-system-exhibit .rld-parts-icons .rld-system-icons{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rld-system-exhibit .rld-parts-icons svg{padding:8px;width:22px;height:22px}
+.rld-system-exhibit .rld-state-controls{margin-bottom:14px}
+.rld-system-exhibit .rld-field-message{min-height:0}
+.rld-system-exhibit .rld-parts-confirm{line-height:1.5}
+@media(max-width:1000px){.rld-system-exhibit .rld-system-overview{grid-template-columns:1fr;padding:28px;gap:28px}.rld-system-exhibit .rld-system-intro h3{font-size:34px}.rld-system-exhibit .rld-system-intro p{max-width:46ch}.rld-system-exhibit .rld-foundation-palette{margin:22px 0 14px}}
+@media(max-width:520px){.rld-system-exhibit .rld-system-overview{padding:20px;gap:24px}.rld-system-exhibit .rld-parts-canvas{grid-template-columns:1fr}.rld-system-exhibit .rld-parts-panel{grid-column:1;grid-row:auto}.rld-system-exhibit .rld-system-intro h3{font-size:30px}.rld-system-exhibit .rld-parts-controls>img{max-width:300px}.rld-system-exhibit .rld-parts-icons .rld-system-icons{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}.rld-system-exhibit .rld-parts-icons svg{width:20px;height:20px;padding:5px}}
 </style></head><body class="flex-case" id="top"><a class="skip-link" href="#v3-section-0">Skip to case study</a><div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div><div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
 <div class="page case-page"><nav class="nav" aria-label="Main navigation"><a class="nav-logo nav-logo-back" href="index.html" aria-label="Laura — home"><span aria-hidden="true">←</span><img class="nav-wordmark" src="assets/laura-wordmark.svg" alt="" width="90" height="28"></a><ul class="nav-links"><li><a href="index.html#work">All work</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav>
 
@@ -91,7 +112,7 @@
 <p>To make our two-person design team’s work go further, I focused on shared patterns: navigation, forms, risk tables and configuration. I worked with Engineering to build a reusable UI library, so improvements could carry across products.</p>
 <p>The system brought typography, colour, iconography and interaction states together. It gave design and engineering a common vocabulary for making consistent decisions across products.</p>
 <div class="rld-system-exhibit">
-<div class="rld-system-overview"><div class="rld-system-intro"><span class="mono-label">RLDATIX / SHARED UI LIBRARY</span><h3>Small parts.<br>A connected experience.</h3><p>Navigation, data and actions, built from the same visual language.</p><div class="rld-foundation-palette" aria-label="RLDatix interface palette"><i style="--tone:#0f4146"></i><i style="--tone:#187b78"></i><i style="--tone:#3983ff"></i><i style="--tone:#d8efdf"></i><i style="--tone:#fff0bf"></i><i style="--tone:#fbdde0"></i></div><span class="rld-exhibit-caption">Foundations → Components → Workflows</span></div>
+<div class="rld-system-overview"><div class="rld-system-intro"><span class="mono-label">RLDATIX / SHARED UI LIBRARY</span><h3>A shared language.<br>Across every workflow.</h3><p>Reusable foundations for clear actions, familiar navigation and consistent feedback.</p><div class="rld-foundation-palette" aria-label="RLDatix interface palette"><i style="--tone:#0f4146"></i><i style="--tone:#187b78"></i><i style="--tone:#3983ff"></i><i style="--tone:#d8efdf"></i><i style="--tone:#fff0bf"></i><i style="--tone:#fbdde0"></i></div><span class="rld-exhibit-caption">Foundations → Components → Workflows</span></div>
 <div class="rld-parts-canvas" aria-label="RLDatix reusable interface components">
 <div class="rld-parts-panel rld-parts-controls"><span class="mono-label">INPUTS & ACTIONS</span><span class="rld-parts-label">Organisation unit</span><div class="rld-parts-select">Adult Directorate <span aria-hidden="true">⌄</span></div><img src="assets/rldatix/system-actions-outlined.svg" width="344" height="39" alt="Save changes and Cancel button components" loading="lazy"></div>
 <div class="rld-parts-panel rld-parts-status"><span class="mono-label">STATUS & FEEDBACK</span><div><span class="rld-status-pill" style="background:#d8efdf">Approved</span><span class="rld-status-pill" style="background:#fff0d8">In progress</span><span class="rld-status-pill" style="background:#fbdde0">Overdue</span></div><span class="rld-parts-confirm">✓ Changes saved</span></div>
@@ -118,37 +139,9 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13ZM12 21C12.5523 21 13 20.5523 13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21ZM15 4C15 5.65685 13.6569 7 12 7C10.3431 7 9 5.65685 9 4C9 2.34315 10.3431 1 12 1C13.6569 1 15 2.34315 15 4ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12ZM12 23C13.6569 23 15 21.6569 15 20C15 18.3431 13.6569 17 12 17C10.3431 17 9 18.3431 9 20C9 21.6569 10.3431 23 12 23Z" fill="#0F4146"/>
 </svg>
 </div></div>
-<div class="rld-parts-panel rld-parts-row"><span class="mono-label">DATA PATTERNS</span><img src="assets/rldatix/system-table-outlined.svg" width="1200" height="127" alt="Reusable risk table structure" loading="lazy"></div>
+<article class="rld-parts-panel rld-system-field" data-field-states><span class="mono-label">Interaction states</span><div class="rld-state-controls" role="group" aria-label="Explore field states"><button type="button" data-field-state="default" aria-pressed="true">Default</button><button type="button" data-field-state="focus" aria-pressed="false">Focus</button><button type="button" data-field-state="error" aria-pressed="false">Error</button></div><label class="rld-field-label">Risk title<input class="rld-demo-field" value="Clinical handover consistency" readonly aria-label="Risk title state example"></label><span class="rld-field-message" aria-live="polite">Clear labels and predictable feedback.</span></article>
 </div></div>
-<div class="rld-component-grid">
-<article class="rld-component-tile rld-icon-tile"><span class="mono-label">01 / ICONOGRAPHY</span><h3>Familiar actions.<br>One icon language.</h3><div class="rld-system-icons" aria-label="Navigation and action icons"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.8688 15.4575C19.3126 12.319 19.0918 7.77832 16.2067 4.89313C13.0825 1.76894 8.01714 1.76894 4.89295 4.89313C1.76876 8.01733 1.76876 13.0826 4.89295 16.2068C7.77813 19.092 12.3188 19.3128 15.4573 16.869C15.4708 16.8843 15.4849 16.8993 15.4996 16.9139L19.7422 21.1566C20.1327 21.5471 20.7659 21.5471 21.1564 21.1566C21.5469 20.7661 21.5469 20.1329 21.1564 19.7424L16.9138 15.4997C16.8991 15.4851 16.8841 15.471 16.8688 15.4575ZM14.7924 6.30735C17.1356 8.65049 17.1356 12.4495 14.7924 14.7926C12.4493 17.1358 8.65031 17.1358 6.30716 14.7926C3.96402 12.4495 3.96402 8.65049 6.30716 6.30735C8.65031 3.9642 12.4493 3.9642 14.7924 6.30735Z" fill="#0F4146"/>
-</svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12H16C16.5523 12 17 11.5523 17 11C17 10.4477 16.5523 10 16 10H8Z" fill="#0F4146"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM5 18V8H19V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18Z" fill="#0F4146"/>
-</svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="#0F4146"/>
-<path d="M17 15C17 14.4477 16.5523 14 16 14H8C7.44772 14 7 14.4477 7 15V21H5V15C5 13.3431 6.34315 12 8 12H16C17.6569 12 19 13.3431 19 15V21H17V15Z" fill="#0F4146"/>
-</svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="24" height="24" fill="white" fill-opacity="0.01"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.99999 13H17L18 11H5.99999L6.99999 13ZM3.99299 6C3.44499 6 3.20299 6.405 3.44699 6.895L3.99999 8H20L20.553 6.895C20.8 6.4 20.555 6 20.007 6H3.99299ZM10.778 17.556C10.8509 17.6861 10.9561 17.7953 11.0834 17.8731C11.2107 17.9508 11.3559 17.9945 11.505 18H12.495C12.774 18 13.1 17.8 13.222 17.556L14 16H9.99999L10.778 17.556Z" fill="#42526E"/>
-</svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10 7H12V12H17V14H10V7Z" fill="#0F4146"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="#0F4146"/>
-</svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13ZM12 21C12.5523 21 13 20.5523 13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21ZM15 4C15 5.65685 13.6569 7 12 7C10.3431 7 9 5.65685 9 4C9 2.34315 10.3431 1 12 1C13.6569 1 15 2.34315 15 4ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12ZM12 23C13.6569 23 15 21.6569 15 20C15 18.3431 13.6569 17 12 17C10.3431 17 9 18.3431 9 20C9 21.6569 10.3431 23 12 23Z" fill="#0F4146"/>
-</svg>
-</div><p>Search, filter, people and time—the same cues across workflows.</p></article>
-<article class="rld-component-tile rld-type-tile"><span class="mono-label">02 / HIERARCHY</span><div class="rld-type-specimen"><strong>Dashboard</strong><span>Organisational objectives</span><small>Owner · Status · Next action</small></div><p>Clear levels for scanning dense information.</p></article>
-<article class="rld-component-tile rld-system-actions"><span class="mono-label">Actions & feedback</span><img class="rld-actions-preview" src="assets/rldatix/system-actions-outlined.svg" alt="RLDatix primary Save changes and secondary Cancel actions" width="344" height="39" loading="lazy"><span class="rld-saved-state">✓ Saved successfully</span><p>Consistent action hierarchy and visible outcomes.</p></article>
-<article class="rld-component-tile rld-system-field" data-field-states><span class="mono-label">Interaction states</span><div class="rld-state-controls" role="group" aria-label="Explore field states"><button type="button" data-field-state="default" aria-pressed="true">Default</button><button type="button" data-field-state="focus" aria-pressed="false">Focus</button><button type="button" data-field-state="error" aria-pressed="false">Error</button></div><label class="rld-field-label">Risk title<input class="rld-demo-field" value="Clinical handover consistency" readonly aria-label="Risk title state example"></label><span class="rld-field-message" aria-live="polite">Clear labels and predictable feedback.</span></article>
 </div>
-<article class="rld-system-table"><div><span class="mono-label">FROM COMPONENTS TO WORKFLOWS</span><h3>One pattern. The information that matters.</h3><p>Risk, owner, status and next action together in a reusable table.</p></div><img src="assets/rldatix/system-table-outlined.svg" alt="RLDatix reusable risk table with owner, status and next action" width="1200" height="127" loading="lazy"></article></div>
 <p><a href="https://www.figma.com/design/nyUSBxEraZceGj87gg5Tuz/design-system" target="_blank" rel="noopener noreferrer">Explore the original design system ↗</a></p>
 </section>
 <section class="cx-full rld-iconwall" id="v3-section-4">
