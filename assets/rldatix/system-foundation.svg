@@ -1,0 +1,37 @@
+<svg width="1264" height="112" viewBox="0 0 1264 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_158_2901)">
+<g clip-path="url(#clip1_158_2901)">
+<rect width="292" height="80" rx="6" fill="#0F4146"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="0" y="107.091">Text / #0F4146</tspan></text>
+</g>
+<g clip-path="url(#clip2_158_2901)">
+<rect x="324" width="292" height="80" rx="6" fill="#187B78"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="324" y="107.091">Navigation / teal</tspan></text>
+</g>
+<g clip-path="url(#clip3_158_2901)">
+<rect x="648" width="292" height="80" rx="6" fill="#EFF1F5"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="648" y="107.091">Surface / pale grey</tspan></text>
+</g>
+<g clip-path="url(#clip4_158_2901)">
+<rect x="972" width="292" height="80" rx="6" fill="#387FF5"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="972" y="107.091">Action / blue</tspan></text>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_158_2901">
+<rect width="1264" height="112" fill="white"/>
+</clipPath>
+<clipPath id="clip1_158_2901">
+<rect width="292" height="112" fill="white"/>
+</clipPath>
+<clipPath id="clip2_158_2901">
+<rect width="292" height="112" fill="white" transform="translate(324)"/>
+</clipPath>
+<clipPath id="clip3_158_2901">
+<rect width="292" height="112" fill="white" transform="translate(648)"/>
+</clipPath>
+<clipPath id="clip4_158_2901">
+<rect width="292" height="112" fill="white" transform="translate(972)"/>
+</clipPath>
+</defs>
+</svg>

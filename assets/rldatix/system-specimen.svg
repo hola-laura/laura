@@ -1,0 +1,42 @@
+<svg width="1264" height="308" viewBox="0 0 1264 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1264" height="308" fill="#F3F6F5"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Barlow Condensed" font-size="28" font-weight="bold" letter-spacing="0em"><tspan x="32" y="58.2">Navigation, actions and feedback that work the same way</tspan></text>
+<g clip-path="url(#clip0_158_2914)">
+<rect x="32.5" y="86.5" width="179" height="38" rx="3.5" fill="#187B78"/>
+<rect x="32.5" y="86.5" width="179" height="38" rx="3.5" stroke="#187B78"/>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em"><tspan x="82.9863" y="109.864">Save changes</tspan></text>
+<rect x="236.5" y="86.5" width="139" height="38" rx="3.5" fill="white"/>
+<rect x="236.5" y="86.5" width="139" height="38" rx="3.5" stroke="#187B78"/>
+<text fill="#187B78" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em"><tspan x="287.166" y="109.864">Cancel</tspan></text>
+<text fill="#187B78" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" font-weight="500" letter-spacing="0em"><tspan x="400" y="102.818">Saved successfully</tspan></text>
+</g>
+<g clip-path="url(#clip1_158_2914)">
+<rect x="32" y="149" width="1200" height="127" rx="4" fill="#FBFBFC"/>
+<rect width="1200" height="39" transform="translate(33 150)" fill="#E1E5EC"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="500" letter-spacing="0em"><tspan x="45" y="173.5">Risk</tspan></text>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="500" letter-spacing="0em"><tspan x="473" y="173.5">Owner</tspan></text>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="500" letter-spacing="0em"><tspan x="711" y="173.5">Status</tspan></text>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11" font-weight="500" letter-spacing="0em"><tspan x="899" y="173.5">Next action</tspan></text>
+<rect x="33.5" y="189.5" width="1199" height="42" fill="white"/>
+<rect x="33.5" y="189.5" width="1199" height="42" stroke="#E9EDF2"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="46" y="214.864">Clinical handover consistency</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="474" y="214.864">Governance team</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="712" y="214.864">In review</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="900" y="214.864">Review the controls</tspan></text>
+<rect x="33.5" y="232.5" width="1199" height="42" fill="white"/>
+<rect x="33.5" y="232.5" width="1199" height="42" stroke="#E9EDF2"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="46" y="257.864">Reporting guidance</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="474" y="257.864">Quality team</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="712" y="257.864">Approved</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="900" y="257.864">Publish the update</tspan></text>
+</g>
+<rect x="32.5" y="149.5" width="1199" height="126" rx="3.5" stroke="#E9EDF2"/>
+<defs>
+<clipPath id="clip0_158_2914">
+<rect width="1200" height="39" fill="white" transform="translate(32 86)"/>
+</clipPath>
+<clipPath id="clip1_158_2914">
+<rect x="32" y="149" width="1200" height="127" rx="4" fill="white"/>
+</clipPath>
+</defs>
+</svg>

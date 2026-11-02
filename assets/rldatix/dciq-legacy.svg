@@ -1,0 +1,173 @@
+<svg width="616" height="520" viewBox="0 0 616 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.394872" y="0.394872" width="615.21" height="518.938" fill="white"/>
+<rect x="0.394872" y="0.394872" width="615.21" height="518.938" stroke="#DFE8E5" stroke-width="0.789744"/>
+<rect width="616" height="48.2718" transform="translate(0.790039 0.789795)" fill="#19738D"/>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15.7949" font-weight="600" letter-spacing="0em"><tspan x="13.4258" y="30.6694">RLDatix</tspan></text>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="9.47692" letter-spacing="0em"><tspan x="139.785" y="23.8719">Capture    Evaluate    Strategy    Implement    Assure</tspan></text>
+<g clip-path="url(#clip0_158_2544)">
+<rect width="616" height="469.877" transform="translate(0.790039 49.0615)" fill="white"/>
+<rect width="118.462" height="148.974" transform="translate(0.790039 49.0615)" fill="#F0F2F4"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="9.47692" letter-spacing="0em"><tspan x="15.0059" y="73.723">My Risks</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="9.47692" letter-spacing="0em"><tspan x="15.0059" y="100.359">Risk Registers</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="9.47692" letter-spacing="0em"><tspan x="15.0059" y="126.995">Risk Trackers</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="9.47692" letter-spacing="0em"><tspan x="15.0059" y="153.631">Report a Risk</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="9.47692" letter-spacing="0em"><tspan x="15.0059" y="180.267">Admin</tspan></text>
+<rect width="497.538" height="469.877" transform="translate(119.252 49.0615)" fill="white"/>
+<text fill="#354A56" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12.6359" font-weight="600" letter-spacing="0em"><tspan x="131.888" y="75.2924">Enterprise Risk Manager</tspan></text>
+<text fill="#354A56" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="11.0564" font-weight="600" letter-spacing="0em"><tspan x="131.888" y="102.774">My Risks</tspan></text>
+<g clip-path="url(#clip1_158_2544)">
+<rect width="472.267" height="19.4769" transform="translate(131.888 117.81)" fill="#647D8A"/>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" font-weight="500" letter-spacing="0em"><tspan x="136.626" y="130.133">ID</tspan></text>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" font-weight="500" letter-spacing="0em"><tspan x="164.267" y="130.133">Title</tspan></text>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" font-weight="500" letter-spacing="0em"><tspan x="255.088" y="130.133">Risk Register</tspan></text>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" font-weight="500" letter-spacing="0em"><tspan x="334.062" y="130.133">Type</tspan></text>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" font-weight="500" letter-spacing="0em"><tspan x="387.765" y="130.133">Subtype</tspan></text>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" font-weight="500" letter-spacing="0em"><tspan x="436.729" y="130.133">Review date</tspan></text>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" font-weight="500" letter-spacing="0em"><tspan x="498.328" y="130.133">Escalated?</tspan></text>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" font-weight="500" letter-spacing="0em"><tspan x="547.293" y="130.133">Status</tspan></text>
+</g>
+<g clip-path="url(#clip2_158_2544)">
+<rect x="131.888" y="148.344" width="472.267" height="21.0564" fill="white"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="137.416" y="161.456">1</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="165.057" y="161.456">jt</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="255.877" y="161.456">A&#38;E Risk Register</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="334.852" y="161.456">Operational</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="388.554" y="161.456">Clinical</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="437.519" y="161.456">2019-03-25</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="499.118" y="161.456">No</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="548.082" y="161.456">Open</tspan></text>
+</g>
+<rect x="132.283" y="148.738" width="471.477" height="20.2667" stroke="#DFE8E5" stroke-width="0.789744"/>
+<g clip-path="url(#clip3_158_2544)">
+<rect x="131.888" y="180.456" width="472.267" height="31.0564" fill="#F0F3F5"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="137.416" y="193.569">2</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="165.057" y="193.569">jt</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="255.877" y="193.569">Ward A Risk </tspan><tspan x="255.877" y="203.569">Register</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="334.852" y="193.569">Operational</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="388.554" y="193.569">Clinical</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="437.519" y="193.569">2019-03-25</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="499.118" y="193.569">No</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="548.082" y="193.569">Open</tspan></text>
+</g>
+<rect x="132.283" y="180.851" width="471.477" height="30.2667" stroke="#DFE8E5" stroke-width="0.789744"/>
+<g clip-path="url(#clip4_158_2544)">
+<rect x="131.888" y="222.569" width="472.267" height="31.0564" fill="white"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="137.416" y="235.682">3</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="165.057" y="235.682">Exposed piping in ward </tspan><tspan x="165.057" y="245.682">A</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="255.877" y="235.682">A&#38;E Risk Register</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="334.852" y="235.682">Operational</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="388.554" y="235.682">Clinical</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="437.519" y="235.682">2019-03-25</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="499.118" y="235.682">No</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="548.082" y="235.682">Open</tspan></text>
+</g>
+<rect x="132.283" y="222.964" width="471.477" height="30.2667" stroke="#DFE8E5" stroke-width="0.789744"/>
+<g clip-path="url(#clip5_158_2544)">
+<rect x="131.888" y="264.682" width="472.267" height="31.0564" fill="#F0F3F5"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="137.416" y="277.795">4</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="165.057" y="277.795">Exposed piping in ward </tspan><tspan x="165.057" y="287.795">A</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="255.877" y="277.795">Ward A Risk </tspan><tspan x="255.877" y="287.795">Register</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="334.852" y="277.795">Operational</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="388.554" y="277.795">Clinical</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="437.519" y="277.795">2019-03-25</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="499.118" y="277.795">Yes</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="548.082" y="277.795">Open</tspan></text>
+</g>
+<rect x="132.283" y="265.077" width="471.477" height="30.2667" stroke="#DFE8E5" stroke-width="0.789744"/>
+<g clip-path="url(#clip6_158_2544)">
+<rect x="131.888" y="306.795" width="472.267" height="31.0564" fill="white"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="137.416" y="319.908">5</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="165.057" y="319.908">Exposed piping in ward </tspan><tspan x="165.057" y="329.908">A</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="255.877" y="319.908">A&#38;E Risk Register</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="334.852" y="319.908">Operational</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="388.554" y="319.908">Clinical</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="437.519" y="319.908">2019-03-25</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="499.118" y="319.908">No</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="548.082" y="319.908">Open</tspan></text>
+</g>
+<rect x="132.283" y="307.19" width="471.477" height="30.2667" stroke="#DFE8E5" stroke-width="0.789744"/>
+<g clip-path="url(#clip7_158_2544)">
+<rect x="131.888" y="348.908" width="472.267" height="31.0564" fill="#F0F3F5"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="137.416" y="362.021">6</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="165.057" y="362.021">Exposed piping in ward </tspan><tspan x="165.057" y="372.021">A</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="255.877" y="362.021">Ward A Risk </tspan><tspan x="255.877" y="372.021">Register</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="334.852" y="362.021">Operational</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="388.554" y="362.021">Clinical</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="437.519" y="362.021">2019-03-25</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="499.118" y="362.021">No</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="548.082" y="362.021">Open</tspan></text>
+</g>
+<rect x="132.283" y="349.303" width="471.477" height="30.2667" stroke="#DFE8E5" stroke-width="0.789744"/>
+<g clip-path="url(#clip8_158_2544)">
+<rect x="131.888" y="391.021" width="472.267" height="31.0564" fill="white"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="137.416" y="404.133">7</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="165.057" y="404.133">Exposed piping in ward </tspan><tspan x="165.057" y="414.133">A</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="255.877" y="404.133">A&#38;E Risk Register</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="334.852" y="404.133">Operational</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="388.554" y="404.133">Clinical</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="437.519" y="404.133">2019-03-25</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="499.118" y="404.133">No</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="548.082" y="404.133">Open</tspan></text>
+</g>
+<rect x="132.283" y="391.415" width="471.477" height="30.2667" stroke="#DFE8E5" stroke-width="0.789744"/>
+<g clip-path="url(#clip9_158_2544)">
+<rect x="131.888" y="433.133" width="472.267" height="31.0564" fill="#F0F3F5"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="137.416" y="446.246">8</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="165.057" y="446.246">Exposed piping in ward </tspan><tspan x="165.057" y="456.246">A</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="255.877" y="446.246">Ward A Risk </tspan><tspan x="255.877" y="456.246">Register</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="334.852" y="446.246">Operational</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="388.554" y="446.246">Clinical</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="437.519" y="446.246">2019-03-25</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="499.118" y="446.246">No</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="548.082" y="446.246">Open</tspan></text>
+</g>
+<rect x="132.283" y="433.528" width="471.477" height="30.2667" stroke="#DFE8E5" stroke-width="0.789744"/>
+<g clip-path="url(#clip10_158_2544)">
+<rect x="131.888" y="475.246" width="472.267" height="31.0564" fill="white"/>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="137.416" y="488.359">9</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="165.057" y="488.359">Exposed piping in ward </tspan><tspan x="165.057" y="498.359">A</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="255.877" y="488.359">A&#38;E Risk Register</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="334.852" y="488.359">Operational</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="388.554" y="488.359">Clinical</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="437.519" y="488.359">2019-03-25</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="499.118" y="488.359">No</tspan></text>
+<text fill="#47535D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.10769" letter-spacing="0em"><tspan x="548.082" y="488.359">Open</tspan></text>
+</g>
+<rect x="132.283" y="475.641" width="471.477" height="30.2667" stroke="#DFE8E5" stroke-width="0.789744"/>
+</g>
+<defs>
+<clipPath id="clip0_158_2544">
+<rect width="616" height="469.877" fill="white" transform="translate(0.790039 49.0615)"/>
+</clipPath>
+<clipPath id="clip1_158_2544">
+<rect width="472.267" height="19.4769" fill="white" transform="translate(131.888 117.81)"/>
+</clipPath>
+<clipPath id="clip2_158_2544">
+<rect x="131.888" y="148.344" width="472.267" height="21.0564" fill="white"/>
+</clipPath>
+<clipPath id="clip3_158_2544">
+<rect x="131.888" y="180.456" width="472.267" height="31.0564" fill="white"/>
+</clipPath>
+<clipPath id="clip4_158_2544">
+<rect x="131.888" y="222.569" width="472.267" height="31.0564" fill="white"/>
+</clipPath>
+<clipPath id="clip5_158_2544">
+<rect x="131.888" y="264.682" width="472.267" height="31.0564" fill="white"/>
+</clipPath>
+<clipPath id="clip6_158_2544">
+<rect x="131.888" y="306.795" width="472.267" height="31.0564" fill="white"/>
+</clipPath>
+<clipPath id="clip7_158_2544">
+<rect x="131.888" y="348.908" width="472.267" height="31.0564" fill="white"/>
+</clipPath>
+<clipPath id="clip8_158_2544">
+<rect x="131.888" y="391.021" width="472.267" height="31.0564" fill="white"/>
+</clipPath>
+<clipPath id="clip9_158_2544">
+<rect x="131.888" y="433.133" width="472.267" height="31.0564" fill="white"/>
+</clipPath>
+<clipPath id="clip10_158_2544">
+<rect x="131.888" y="475.246" width="472.267" height="31.0564" fill="white"/>
+</clipPath>
+</defs>
+</svg>
