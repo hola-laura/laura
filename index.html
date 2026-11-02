@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fragment+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="garden.css"><link rel="stylesheet" href="home.css?v=laura-photo-4">
 <link rel="stylesheet" href="flex.css?v=1"><link rel="stylesheet" href="drivo.css?v=iphone-frames-1"><link rel="stylesheet" href="header-dots.css?v=1">
-<link rel="stylesheet" href="spending-block.css?v=1"><link rel="stylesheet" href="mortgages.css?v=1"><link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=flower-2">
+<link rel="stylesheet" href="spending-block.css?v=1"><link rel="stylesheet" href="mortgages.css?v=1"><link rel="stylesheet" href="puppet-game.css?v=1"><link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=flower-2">
 <link rel="shortcut icon" href="favicon.ico?v=flower-2">
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=flower-2">
 
@@ -51,11 +51,30 @@
 <div class="earlier other-projects" id="other-work"><div class="section-head"><span class="mono-label">Other projects</span><h2>More of my work</h2></div>
 <div class="earlier-grid">
 <a class="card earlier-card" href="case-study-mortgages.html" data-reveal data-tilt><span class="mono-label">Homeownership · Monzo · 2024</span><h3>A clearer way to remortgage</h3><p>Led the remortgage journey from discovery to launch. Deal-end date collection in new connections rose from 38% to 88% as a team outcome.</p></a>
-<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Financial Health · Monzo</span><h3>Self-serve support in the app</h3><p>Shaped a product vision to bring Financial Health into the app and make support easier to access, with lower operational cost as a strategic target.</p></article>
-<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Spain · Monzo</span><h3>Making the case for Bizum</h3><p>Used local market knowledge to secure customer testing for Bizum after UK teams questioned its importance in Spain.</p></article>
+<a class="card earlier-card coming-soon-card" href="#project-playground" data-project="financial-health" data-reveal data-tilt><span class="mono-label">Financial Health · Monzo</span><h3>Self-serve support in the app</h3><p>Shaped a product vision to bring Financial Health into the app and make support easier to access, with lower operational cost as a strategic target.</p><span class="coming-soon-tag">Coming soon</span></a>
+<a class="card earlier-card coming-soon-card" href="#project-playground" data-project="bizum" data-reveal data-tilt><span class="mono-label">Spain · Monzo</span><h3>Making the case for Bizum</h3><p>Used local market knowledge to secure customer testing for Bizum after UK teams questioned its importance in Spain.</p><span class="coming-soon-tag">Coming soon</span></a>
 <a class="card earlier-card" href="case-study-rldatix.html" data-reveal data-tilt><span class="mono-label">Healthcare · RLDatix · 2020</span><h3>Clearer risk reporting</h3><p>Redesigned a complex healthcare risk workflow. 96% of participants completed key tasks unaided in testing.</p></a>
-<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Retail &amp; property · Intu · 2019</span><h3>Design system for risk tools</h3><p>Created Intu’s first design system and redesigned risk-management tools for use across company platforms.</p></article>
-<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Food delivery · Just Eat · 2014–19</span><h3>Family Club journeys</h3><p>Redesigned sign-up and platform experiences for Family Club members and non-members.</p></article>
+<a class="card earlier-card coming-soon-card" href="#project-playground" data-project="intu" data-reveal data-tilt><span class="mono-label">Retail &amp; property · Intu · 2019</span><h3>Design system for risk tools</h3><p>Created Intu’s first design system and redesigned risk-management tools for use across company platforms.</p><span class="coming-soon-tag">Coming soon</span></a>
+<a class="card earlier-card coming-soon-card" href="#project-playground" data-project="just-eat" data-reveal data-tilt><span class="mono-label">Food delivery · Just Eat · 2014–19</span><h3>Family Club journeys</h3><p>Redesigned sign-up and platform experiences for Family Club members and non-members.</p><span class="coming-soon-tag">Coming soon</span></a>
+</div>
+<div class="puppet-game" id="project-playground" data-current-project="financial-health">
+  <div class="puppet-game-copy">
+    <span class="mono-label">A few stories are still in progress</span>
+    <h3>Pick a project. Give the puppet a hand.</h3>
+    <p>Some of my earlier work does not have a full case study here yet. Choose a project to preview its story, then give Laura’s marionette a little movement.</p>
+    <div class="puppet-projects" role="group" aria-label="Choose a project preview">
+      <button class="puppet-project-choice" type="button" data-project-select="financial-health" aria-pressed="true">Financial Health</button>
+      <button class="puppet-project-choice" type="button" data-project-select="bizum" aria-pressed="false">Bizum · Spain</button>
+      <button class="puppet-project-choice" type="button" data-project-select="intu" aria-pressed="false">Intu</button>
+      <button class="puppet-project-choice" type="button" data-project-select="just-eat" aria-pressed="false">Just Eat</button>
+    </div>
+    <p class="puppet-story-note" role="status" aria-live="polite">A product vision for bringing Financial Health into the app, with self-serve as a route to lower operational cost.</p>
+    <div class="puppet-controls">
+      <button class="puppet-play" type="button">Make her dance ↗</button>
+      <span class="puppet-hint">Drag an arm or leg. Tab + Enter works too.</span>
+    </div>
+  </div>
+  <div class="puppet-art"><div id="puppet-mount" aria-live="polite"><span class="mono-label">Waking the puppet…</span></div></div>
 </div></div>
 </section>
 <section class="services" id="how-i-work" aria-labelledby="how-i-work-title"><div class="section-head"><span class="mono-label">03 / How I work</span><h2 id="how-i-work-title">Help teams move from ambiguity to a clear next step.</h2></div>
@@ -154,5 +173,5 @@
     <p class="garden-note">No rush. Good things take a little care.</p>
   </dialog>
 
-<script src="header-dots.js?v=1"></script><script src="script.js"></script><script src="gallery-cards.js?v=laura-four-photo-1"></script><script src="flower-motion.js"></script><script src="little-garden.js"></script><script src="doodle-surprises.js"></script>
+<script src="header-dots.js?v=1"></script><script src="script.js"></script><script src="gallery-cards.js?v=laura-four-photo-1"></script><script src="flower-motion.js"></script><script src="little-garden.js"></script><script src="doodle-surprises.js"></script><script src="puppet-game.js?v=1"></script>
 </body></html>
