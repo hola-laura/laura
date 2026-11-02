@@ -18,7 +18,7 @@
 .puppet-stage.is-dragging .puppet-string-hit{cursor:grabbing}
 .puppet-stage:focus-visible{outline:none}
 .puppet-sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.skip-link{z-index:10}
+.puppet-case-page .skip-link:not(:focus){position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.puppet-case-page .skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;z-index:10;padding:12px;background:#faf9f6;color:#27232c}
 @media(max-width:700px){
  .puppet-case-back{top:22px;left:20px;font-size:24px}
  .puppet-coming-title{top:clamp(88px,14vh,120px);width:96vw;font-size:clamp(30px,7.2vw,46px);line-height:1.1}
