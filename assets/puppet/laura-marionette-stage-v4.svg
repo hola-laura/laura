@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 690 1280" role="group" aria-labelledby="puppet-title" aria-describedby="puppet-description"><title id="puppet-title">Laura’s interactive marionette</title><desc id="puppet-description">A hand-drawn vector marionette. Drag her limbs or strings with a mouse, or focus a limb and use the arrow keys.</desc><defs>
 <path id="torso" d="M 262 362 C 284 348 312 346 340 350 C 368 346 396 348 418 362 C 436 400 438 460 428 500 C 430 530 424 556 404 566 C 380 574 300 574 276 566 C 256 556 250 530 252 500 C 242 460 244 400 262 362 Z" />
-<path id="thL" d="M 290 578 C 272 582 262 594 262 612 C 262 640 266 664 272 682 C 294 688 322 688 334 682 C 338 658 338 618 334 592 C 330 582 310 576 290 578Z" />
+<path id="thL" d="M 286 548 C 270 552 262 576 262 612 C 262 640 266 664 272 682 C 294 688 322 688 334 682 C 338 658 338 618 334 592 C 330 562 310 546 286 548Z" />
 <path id="shL" d="M 274 702 C 272 730 270 760 268 792 L 332 792 C 330 760 328 730 326 702 C 310 706 290 706 274 702Z" />
 <clipPath id="cT"><use href="#torso" /></clipPath>
 <clipPath id="cTh"><use href="#thL" /></clipPath>
