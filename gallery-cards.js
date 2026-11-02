@@ -5,7 +5,7 @@
   const cards = [...deck.querySelectorAll('.gallery-card')];
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const announcement = deck.querySelector('.gallery-announcement');
-  let order = [...cards], drag = null, busy = false, paintFrame = 0;
+  let order = [...cards].reverse(), drag = null, busy = false, paintFrame = 0;
   let generation = 0;
   const animations = new Map();
   const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
