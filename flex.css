@@ -139,3 +139,22 @@
   .flex-case .fv-metrics span{margin:0;font-size:13px}
   .flex-case .fv-source-note{padding-top:14px}
 }
+
+/* Repayment story: explain the decision first, then show the paired screens. */
+.flex-case #payments.fv-story{
+  display:block;
+}
+.flex-case #payments .fv-story-copy{
+  max-width:78ch;
+  margin:0 0 32px;
+}
+.flex-case #payments .fv-story-copy>p{
+  max-width:72ch;
+}
+.flex-case #payments>div:last-child{
+  display:grid;
+  gap:32px;
+}
+.flex-case #payments .fv-edit{
+  margin:0;
+}
