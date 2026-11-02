@@ -28,3 +28,8 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}.dt-case{cursor:auto}.dt-cas
 .dt-showcase>.dt-iphone{transform:rotate(-4deg)}
 .dt-showcase>.dt-iphone:last-child{transform:rotate(4deg) translateY(24px)}
 @media(max-width:760px){.dt-iphone{max-width:280px;padding:4px}.dt-iphone-display{border-width:4px}.dt-showcase .dt-iphone{padding:3px}.dt-showcase .dt-iphone-display{border-width:3px}.dt-showcase .dt-iphone-home{height:2px}}
+
+/* A single device ratio keeps web and native captures the same size. */
+.dt-iphone-display{aspect-ratio:390/844;padding:0;box-sizing:border-box}
+.dt-iphone:not(.dt-iphone-native) img{position:absolute;top:30px;left:0;width:100%;height:calc(100% - 49px);aspect-ratio:auto;object-fit:fill}
+.dt-iphone-native img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:top}
