@@ -1,0 +1,288 @@
+<svg width="904" height="998" viewBox="0 0 904 998" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_172_3641)">
+<g clip-path="url(#clip0_172_3641)">
+<rect x="24" y="16" width="856" height="949.424" rx="18.832" fill="#FBFBFC"/>
+<rect width="856" height="29.104" transform="translate(25 17)" fill="#002D2D"/>
+<circle cx="42.9763" cy="31.5525" r="4.28" fill="#FF5D60"/>
+<circle cx="56.6716" cy="31.5525" r="4.28" fill="#FFD948"/>
+<circle cx="70.3679" cy="31.5525" r="4.28" fill="#19C877"/>
+<rect width="856" height="49.968" transform="translate(25 46.1035)" fill="#187B78"/>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18.832" font-weight="500" letter-spacing="0em"><tspan x="45.5439" y="77.9359">ActivityManager</tspan></text>
+<rect width="856" height="868.352" transform="translate(25 96.0723)" fill="#FBFBFC"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="22.256" font-weight="500" letter-spacing="0em"><tspan x="59.2402" y="153.906">Rosters</tspan></text>
+<g clip-path="url(#clip1_172_3641)">
+<rect x="59.6682" y="182.284" width="178.904" height="33.384" rx="3.852" fill="white"/>
+<rect x="59.6682" y="182.284" width="178.904" height="33.384" rx="3.852" stroke="#E2E8EE" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="70.3682" y="202.712">Status</tspan></text>
+<path d="M219.913 196.959C219.69 196.736 219.328 196.736 219.106 196.959C218.883 197.182 218.883 197.543 219.106 197.766L222.737 201.398L226.369 197.766C226.592 197.543 226.592 197.182 226.369 196.959C226.146 196.736 225.785 196.736 225.562 196.959L222.737 199.784L219.913 196.959Z" fill="#0F4146"/>
+<rect x="253.124" y="182.284" width="178.904" height="33.384" rx="3.852" fill="white"/>
+<rect x="253.124" y="182.284" width="178.904" height="33.384" rx="3.852" stroke="#E2E8EE" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="263.824" y="202.712">Activity</tspan></text>
+<path d="M413.369 196.959C413.146 196.736 412.785 196.736 412.562 196.959C412.339 197.182 412.339 197.543 412.562 197.766L416.193 201.398L419.825 197.766C420.048 197.543 420.048 197.182 419.825 196.959C419.602 196.736 419.241 196.736 419.018 196.959L416.193 199.784L413.369 196.959Z" fill="#0F4146"/>
+<rect x="446.58" y="182.284" width="178.904" height="33.384" rx="3.852" fill="white"/>
+<rect x="446.58" y="182.284" width="178.904" height="33.384" rx="3.852" stroke="#E2E8EE" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="457.28" y="202.712">Location</tspan></text>
+<path d="M606.825 196.959C606.602 196.736 606.241 196.736 606.018 196.959C605.795 197.182 605.795 197.543 606.018 197.766L609.649 201.398L613.281 197.766C613.504 197.543 613.504 197.182 613.281 196.959C613.058 196.736 612.697 196.736 612.474 196.959L609.649 199.784L606.825 196.959Z" fill="#0F4146"/>
+<rect x="640.036" y="182.284" width="178.904" height="33.384" rx="3.852" fill="white"/>
+<rect x="640.036" y="182.284" width="178.904" height="33.384" rx="3.852" stroke="#E2E8EE" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="650.736" y="202.712">Requirements</tspan></text>
+<path d="M800.281 196.959C800.058 196.736 799.697 196.736 799.474 196.959C799.251 197.182 799.251 197.543 799.474 197.766L803.105 201.398L806.737 197.766C806.96 197.543 806.96 197.182 806.737 196.959C806.514 196.736 806.153 196.736 805.93 196.959L803.105 199.784L800.281 196.959Z" fill="#0F4146"/>
+</g>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="21" font-weight="500" letter-spacing="0em"><tspan x="59.2402" y="258.777">June 2025</tspan></text>
+<g clip-path="url(#clip2_172_3641)">
+<rect width="787.52" height="644" transform="translate(59.2402 286.185)" fill="white"/>
+<g clip-path="url(#clip3_172_3641)">
+<rect width="787.52" height="36" transform="translate(59.2402 286.185)" fill="#CBD1DE"/>
+<rect x="59.6682" y="286.613" width="136.104" height="35.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#52566B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="68.6562" y="307.821">Show others</tspan></text>
+<rect x="196.628" y="286.613" width="50.504" height="35.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<rect x="247.989" y="286.613" width="148.944" height="35.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#52566B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="256.977" y="307.821">09 Mon</tspan></text>
+<rect x="397.788" y="286.613" width="148.944" height="35.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#52566B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="406.776" y="307.821">10 Tue</tspan></text>
+<rect x="547.588" y="286.613" width="148.944" height="35.144" fill="#187B78"/>
+<rect x="547.588" y="286.613" width="148.944" height="35.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="556.576" y="307.821">11 Wed</tspan></text>
+<rect x="697.388" y="286.613" width="148.944" height="35.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#52566B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0em"><tspan x="706.376" y="307.821">12 Thu</tspan></text>
+</g>
+<g clip-path="url(#clip4_172_3641)">
+<rect x="59.6682" y="322.613" width="136.104" height="75.144" fill="white"/>
+<rect x="59.6682" y="322.613" width="136.104" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="68.6562" y="363.821">Theatre 1</tspan></text>
+<rect x="196.628" y="322.613" width="50.504" height="75.144" fill="white"/>
+<rect x="196.628" y="322.613" width="50.504" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="205.616" y="363.821">AM</tspan></text>
+<rect x="247.989" y="322.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="247.989" y="322.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="256.977" y="348.42">Em/Trauma List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="256.977" y="365.321">08:00 &#x2013; 14:00&#10;</tspan><tspan x="256.977" y="379.321">Arif Babel</tspan></text>
+<rect x="397.788" y="322.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="397.788" y="322.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="406.776" y="348.42">Em/Trauma List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="406.776" y="365.321">08:00 &#x2013; 14:00&#10;</tspan><tspan x="406.776" y="379.321">Arif Babel</tspan></text>
+<rect x="547.588" y="322.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="547.588" y="322.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="556.576" y="348.42">Em/Trauma List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="556.576" y="365.321">08:00 &#x2013; 14:00&#10;</tspan><tspan x="556.576" y="379.321">Arif Babel</tspan></text>
+<rect x="697.388" y="322.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="697.388" y="322.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="706.376" y="348.42">Em/Trauma List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="706.376" y="365.321">08:00 &#x2013; 14:00&#10;</tspan><tspan x="706.376" y="379.321">Arif Babel</tspan></text>
+</g>
+<g clip-path="url(#clip5_172_3641)">
+<rect x="59.6682" y="398.613" width="136.104" height="75.144" fill="white"/>
+<rect x="59.6682" y="398.613" width="136.104" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<rect x="196.628" y="398.613" width="50.504" height="75.144" fill="white"/>
+<rect x="196.628" y="398.613" width="50.504" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="205.616" y="439.821">PM</tspan></text>
+<rect x="247.989" y="398.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="247.989" y="398.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="256.977" y="424.42">Hand List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="256.977" y="441.321">13:00 &#x2013; 17:00&#10;</tspan><tspan x="256.977" y="455.321">Steph Jackson</tspan></text>
+<rect x="397.788" y="398.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="397.788" y="398.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="406.776" y="424.42">Hip List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="406.776" y="441.321">13:00 &#x2013; 17:00&#10;</tspan><tspan x="406.776" y="455.321">Steph Jackson</tspan></text>
+<rect x="547.588" y="398.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="547.588" y="398.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="556.576" y="424.42">Max Fax List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="556.576" y="441.321">13:00 &#x2013; 17:00&#10;</tspan><tspan x="556.576" y="455.321">Steph Jackson</tspan></text>
+<rect x="697.388" y="398.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="697.388" y="398.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10.272" font-weight="500" letter-spacing="0em"><tspan x="706.376" y="424.42">Knee List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="706.376" y="441.321">13:00 &#x2013; 17:00&#10;</tspan><tspan x="706.376" y="455.321">Steph Jackson</tspan></text>
+</g>
+<g clip-path="url(#clip6_172_3641)">
+<rect x="59.6682" y="474.613" width="136.104" height="75.144" fill="white"/>
+<rect x="59.6682" y="474.613" width="136.104" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="68.6562" y="515.821">Theatre 2</tspan></text>
+<rect x="196.628" y="474.613" width="50.504" height="75.144" fill="white"/>
+<rect x="196.628" y="474.613" width="50.504" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="205.616" y="515.821">AM</tspan></text>
+<rect x="247.989" y="474.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="247.989" y="474.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="256.977" y="500.321">General Surgery</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="256.977" y="517.321">08:00&#x2013;12:00&#10;</tspan><tspan x="256.977" y="531.321">A. Morgan</tspan></text>
+<rect x="397.788" y="474.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="397.788" y="474.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="406.776" y="500.321">Spinal List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="406.776" y="517.321">08:00&#x2013;12:00&#10;</tspan><tspan x="406.776" y="531.321">R. Patel</tspan></text>
+<rect x="547.588" y="474.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="547.588" y="474.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="556.576" y="500.321">Knee List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="556.576" y="517.321">08:00&#x2013;12:00&#10;</tspan><tspan x="556.576" y="531.321">S. Jackson</tspan></text>
+<rect x="697.388" y="474.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="697.388" y="474.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="706.376" y="500.321">Plastics List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="706.376" y="517.321">08:00&#x2013;12:00&#10;</tspan><tspan x="706.376" y="531.321">C. Jacob</tspan></text>
+</g>
+<g clip-path="url(#clip7_172_3641)">
+<rect x="59.6682" y="550.613" width="136.104" height="75.144" fill="white"/>
+<rect x="59.6682" y="550.613" width="136.104" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<rect x="196.628" y="550.613" width="50.504" height="75.144" fill="white"/>
+<rect x="196.628" y="550.613" width="50.504" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="205.616" y="591.821">PM</tspan></text>
+<rect x="247.989" y="550.613" width="148.944" height="75.144" fill="#FFE7DB"/>
+<rect x="247.989" y="550.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="256.977" y="576.321">Hip List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="256.977" y="593.321">13:00&#x2013;17:00&#10;</tspan><tspan x="256.977" y="607.321">L. Brown</tspan></text>
+<rect x="397.788" y="550.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="397.788" y="550.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="406.776" y="576.321">Day Surgery</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="406.776" y="593.321">13:00&#x2013;17:00&#10;</tspan><tspan x="406.776" y="607.321">J. Wilson</tspan></text>
+<rect x="547.588" y="550.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="547.588" y="550.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="556.576" y="576.321">Trauma List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="556.576" y="593.321">13:00&#x2013;17:00&#10;</tspan><tspan x="556.576" y="607.321">N. Khan</tspan></text>
+<rect x="697.388" y="550.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="697.388" y="550.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="706.376" y="576.321">Max Fax List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="706.376" y="593.321">13:00&#x2013;17:00&#10;</tspan><tspan x="706.376" y="607.321">T. Evans</tspan></text>
+</g>
+<g clip-path="url(#clip8_172_3641)">
+<rect x="59.6682" y="626.613" width="136.104" height="75.144" fill="white"/>
+<rect x="59.6682" y="626.613" width="136.104" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="68.6562" y="667.821">Theatre 3</tspan></text>
+<rect x="196.628" y="626.613" width="50.504" height="75.144" fill="white"/>
+<rect x="196.628" y="626.613" width="50.504" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="205.616" y="667.821">AM</tspan></text>
+<rect x="247.989" y="626.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="247.989" y="626.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="256.977" y="652.321">General Surgery</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="256.977" y="669.321">08:00&#x2013;12:00&#10;</tspan><tspan x="256.977" y="683.321">A. Morgan</tspan></text>
+<rect x="397.788" y="626.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="397.788" y="626.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="406.776" y="652.321">Spinal List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="406.776" y="669.321">08:00&#x2013;12:00&#10;</tspan><tspan x="406.776" y="683.321">R. Patel</tspan></text>
+<rect x="547.588" y="626.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="547.588" y="626.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="556.576" y="652.321">Knee List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="556.576" y="669.321">08:00&#x2013;12:00&#10;</tspan><tspan x="556.576" y="683.321">S. Jackson</tspan></text>
+<rect x="697.388" y="626.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="697.388" y="626.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="706.376" y="652.321">Plastics List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="706.376" y="669.321">08:00&#x2013;12:00&#10;</tspan><tspan x="706.376" y="683.321">C. Jacob</tspan></text>
+</g>
+<g clip-path="url(#clip9_172_3641)">
+<rect x="59.6682" y="702.613" width="136.104" height="75.144" fill="white"/>
+<rect x="59.6682" y="702.613" width="136.104" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<rect x="196.628" y="702.613" width="50.504" height="75.144" fill="white"/>
+<rect x="196.628" y="702.613" width="50.504" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="205.616" y="743.821">PM</tspan></text>
+<rect x="247.989" y="702.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="247.989" y="702.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="256.977" y="728.321">Hip List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="256.977" y="745.321">13:00&#x2013;17:00&#10;</tspan><tspan x="256.977" y="759.321">L. Brown</tspan></text>
+<rect x="397.788" y="702.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="397.788" y="702.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="406.776" y="728.321">Day Surgery</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="406.776" y="745.321">13:00&#x2013;17:00&#10;</tspan><tspan x="406.776" y="759.321">J. Wilson</tspan></text>
+<rect x="547.588" y="702.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="547.588" y="702.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="556.576" y="728.321">Trauma List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="556.576" y="745.321">13:00&#x2013;17:00&#10;</tspan><tspan x="556.576" y="759.321">N. Khan</tspan></text>
+<rect x="697.388" y="702.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="697.388" y="702.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="706.376" y="728.321">Max Fax List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="706.376" y="745.321">13:00&#x2013;17:00&#10;</tspan><tspan x="706.376" y="759.321">T. Evans</tspan></text>
+</g>
+<g clip-path="url(#clip10_172_3641)">
+<rect x="59.6682" y="778.613" width="136.104" height="75.144" fill="white"/>
+<rect x="59.6682" y="778.613" width="136.104" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="68.6562" y="819.821">Theatre 4</tspan></text>
+<rect x="196.628" y="778.613" width="50.504" height="75.144" fill="white"/>
+<rect x="196.628" y="778.613" width="50.504" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="205.616" y="819.821">AM</tspan></text>
+<rect x="247.989" y="778.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="247.989" y="778.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="256.977" y="804.321">General Surgery</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="256.977" y="821.321">08:00&#x2013;12:00&#10;</tspan><tspan x="256.977" y="835.321">A. Morgan</tspan></text>
+<rect x="397.788" y="778.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="397.788" y="778.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="406.776" y="804.321">Spinal List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="406.776" y="821.321">08:00&#x2013;12:00&#10;</tspan><tspan x="406.776" y="835.321">R. Patel</tspan></text>
+<rect x="547.588" y="778.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="547.588" y="778.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="556.576" y="804.321">Knee List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="556.576" y="821.321">08:00&#x2013;12:00&#10;</tspan><tspan x="556.576" y="835.321">S. Jackson</tspan></text>
+<rect x="697.388" y="778.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="697.388" y="778.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="706.376" y="804.321">Plastics List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="706.376" y="821.321">08:00&#x2013;12:00&#10;</tspan><tspan x="706.376" y="835.321">C. Jacob</tspan></text>
+</g>
+<g clip-path="url(#clip11_172_3641)">
+<rect x="59.6682" y="854.613" width="136.104" height="75.144" fill="white"/>
+<rect x="59.6682" y="854.613" width="136.104" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<rect x="196.628" y="854.613" width="50.504" height="75.144" fill="white"/>
+<rect x="196.628" y="854.613" width="50.504" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="205.616" y="895.821">PM</tspan></text>
+<rect x="247.989" y="854.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="247.989" y="854.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="256.977" y="880.321">Hip List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="256.977" y="897.321">13:00&#x2013;17:00&#10;</tspan><tspan x="256.977" y="911.321">L. Brown</tspan></text>
+<rect x="397.788" y="854.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="397.788" y="854.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="406.776" y="880.321">Day Surgery</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="406.776" y="897.321">13:00&#x2013;17:00&#10;</tspan><tspan x="406.776" y="911.321">J. Wilson</tspan></text>
+<rect x="547.588" y="854.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="547.588" y="854.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="556.576" y="880.321">Trauma List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="556.576" y="897.321">13:00&#x2013;17:00&#10;</tspan><tspan x="556.576" y="911.321">N. Khan</tspan></text>
+<rect x="697.388" y="854.613" width="148.944" height="75.144" fill="#D8F0E3"/>
+<rect x="697.388" y="854.613" width="148.944" height="75.144" stroke="#E9EDF2" stroke-width="0.856"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="706.376" y="880.321">Max Fax List</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="10" letter-spacing="0em"><tspan x="706.376" y="897.321">13:00&#x2013;17:00&#10;</tspan><tspan x="706.376" y="911.321">T. Evans</tspan></text>
+</g>
+</g>
+</g>
+<rect x="24.5" y="16.5" width="855" height="948.424" rx="18.332" stroke="#DCE5E1"/>
+</g>
+<defs>
+<filter id="filter0_d_172_3641" x="0" y="0" width="904" height="997.424" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="8"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.03 0 0 0 0 0.15 0 0 0 0 0.14 0 0 0 0.08 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_172_3641"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_172_3641" result="shape"/>
+</filter>
+<clipPath id="clip0_172_3641">
+<rect x="24" y="16" width="856" height="949.424" rx="18.832" fill="white"/>
+</clipPath>
+<clipPath id="clip1_172_3641">
+<rect width="787.52" height="34.24" fill="white" transform="translate(59.2402 181.856)"/>
+</clipPath>
+<clipPath id="clip2_172_3641">
+<rect width="787.52" height="644" fill="white" transform="translate(59.2402 286.185)"/>
+</clipPath>
+<clipPath id="clip3_172_3641">
+<rect width="787.52" height="36" fill="white" transform="translate(59.2402 286.185)"/>
+</clipPath>
+<clipPath id="clip4_172_3641">
+<rect width="787.52" height="76" fill="white" transform="translate(59.2402 322.185)"/>
+</clipPath>
+<clipPath id="clip5_172_3641">
+<rect width="787.52" height="76" fill="white" transform="translate(59.2402 398.185)"/>
+</clipPath>
+<clipPath id="clip6_172_3641">
+<rect width="787.52" height="76" fill="white" transform="translate(59.2402 474.185)"/>
+</clipPath>
+<clipPath id="clip7_172_3641">
+<rect width="787.52" height="76" fill="white" transform="translate(59.2402 550.185)"/>
+</clipPath>
+<clipPath id="clip8_172_3641">
+<rect width="787.52" height="76" fill="white" transform="translate(59.2402 626.185)"/>
+</clipPath>
+<clipPath id="clip9_172_3641">
+<rect width="787.52" height="76" fill="white" transform="translate(59.2402 702.185)"/>
+</clipPath>
+<clipPath id="clip10_172_3641">
+<rect width="787.52" height="76" fill="white" transform="translate(59.2402 778.185)"/>
+</clipPath>
+<clipPath id="clip11_172_3641">
+<rect width="787.52" height="76" fill="white" transform="translate(59.2402 854.185)"/>
+</clipPath>
+</defs>
+</svg>

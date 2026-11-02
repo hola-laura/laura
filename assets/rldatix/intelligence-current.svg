@@ -1,0 +1,211 @@
+<svg width="1264" height="1062" viewBox="0 0 1264 1062" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_158_3015)">
+<rect width="1264" height="1061.9" rx="27.808" fill="#FBFBFC"/>
+<rect width="1264" height="42.976" transform="translate(1.26367 1.26416)" fill="#002D2D"/>
+<circle cx="27.8073" cy="22.7521" r="6.32" fill="#FF5D60"/>
+<circle cx="48.0319" cy="22.7521" r="6.32" fill="#FFD948"/>
+<circle cx="68.2555" cy="22.7521" r="6.32" fill="#19C877"/>
+<rect width="1264" height="74.392" transform="translate(1.26367 44.2402)" fill="#187B78"/>
+<text fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="27.808" font-weight="500" letter-spacing="0em"><tspan x="31.5996" y="91.548">RLD Intelligence</tspan></text>
+<text fill="#D4E5E3" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="17.696" letter-spacing="0em"><tspan x="365.296" y="80.8709">All     Workforce     Safety</tspan></text>
+<g clip-path="url(#clip1_158_3015)">
+<rect width="1264" height="942" transform="translate(1.26367 118.632)" fill="#FBFBFC"/>
+<rect width="202.24" height="564.048" transform="translate(1.26367 118.632)" fill="#E5EDEE"/>
+<rect x="12.008" y="134.432" width="180.752" height="49.296" rx="4.424" fill="#DCEFEA"/>
+<rect x="12.008" y="134.432" width="180.752" height="49.296" rx="4.424" stroke="#A7CEC5" stroke-width="1.264"/>
+<text fill="#187B78" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" font-weight="600" letter-spacing="0em"><tspan x="25.2803" y="162.76">Overview</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="24.0156" y="217.112">Unit Leaderboard</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="24.0156" y="272.728">Unit Performance</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12.64" font-weight="600" letter-spacing="0em"><tspan x="24.0156" y="326.883">Workforce</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="24.0156" y="376.679">Safety</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="24.0156" y="432.295">Unavailability</tspan></text>
+<rect width="1061.76" height="942" transform="translate(203.504 118.632)" fill="#FBFBFC"/>
+<g clip-path="url(#clip2_158_3015)">
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="32.864" font-weight="500" letter-spacing="0em"><tspan x="241.424" y="191.502">Overview</tspan></text>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="17.696" letter-spacing="0em"><tspan x="241.424" y="226.542">Performance summary across all metrics for the given month</tspan></text>
+<rect x="899.336" y="157.184" width="180.752" height="49.296" rx="5.688" fill="white"/>
+<rect x="899.336" y="157.184" width="180.752" height="49.296" rx="5.688" stroke="#E2E8EE" stroke-width="1.264"/>
+<path d="M921.877 180.146C921.411 180.146 921.034 180.524 921.034 180.989C921.034 181.455 921.411 181.832 921.877 181.832H928.618C929.084 181.832 929.461 181.455 929.461 180.989C929.461 180.524 929.084 180.146 928.618 180.146H921.877Z" fill="#0F4146"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M920.192 174.248C918.796 174.248 917.664 175.38 917.664 176.776V186.888C917.664 188.284 918.796 189.416 920.192 189.416H930.304C931.7 189.416 932.832 188.284 932.832 186.888V176.776C932.832 175.38 931.7 174.248 930.304 174.248H920.192ZM919.349 186.888V178.461H931.147V186.888C931.147 187.353 930.769 187.731 930.304 187.731H920.192C919.727 187.731 919.349 187.353 919.349 186.888Z" fill="#0F4146"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15.168" font-weight="500" letter-spacing="0em"><tspan x="945.472" y="187.348">May 2026</tspan></text>
+<path d="M1052.53 178.852C1052.2 178.523 1051.67 178.523 1051.34 178.852C1051.01 179.181 1051.01 179.715 1051.34 180.044L1056.7 185.407L1062.07 180.044C1062.4 179.715 1062.4 179.181 1062.07 178.852C1061.74 178.523 1061.2 178.523 1060.88 178.852L1056.7 183.023L1052.53 178.852Z" fill="#0F4146"/>
+<rect x="1106.63" y="157.184" width="120.08" height="49.296" rx="5.688" fill="white"/>
+<rect x="1106.63" y="157.184" width="120.08" height="49.296" rx="5.688" stroke="#E2E8EE" stroke-width="1.264"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15.168" font-weight="500" letter-spacing="0em"><tspan x="1122.43" y="187.348">Filter</tspan></text>
+<g clip-path="url(#clip3_158_3015)">
+<path d="M1213.44 171.72H1193.22V191.944H1213.44V171.72Z" fill="white" fill-opacity="0.01"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1199.11 182.674H1207.54L1208.38 180.989H1198.27L1199.11 182.674ZM1196.58 176.775C1196.12 176.775 1195.91 177.117 1196.12 177.53L1196.59 178.461H1210.07L1210.53 177.53C1210.74 177.112 1210.54 176.775 1210.07 176.775H1196.58ZM1202.3 186.513C1202.36 186.623 1202.45 186.715 1202.55 186.78C1202.66 186.846 1202.78 186.883 1202.91 186.887H1203.74C1203.98 186.887 1204.25 186.719 1204.36 186.513L1205.01 185.202H1201.64L1202.3 186.513Z" fill="#42526E"/>
+</g>
+</g>
+<g clip-path="url(#clip4_158_3015)">
+<text fill="#64748B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15.168" font-weight="500" letter-spacing="0em"><tspan x="254.063" y="297.155">Oversight</tspan></text>
+<rect x="367.192" y="268.632" width="104.912" height="49.296" rx="4.424" fill="#E6F2EF"/>
+<rect x="367.192" y="268.632" width="104.912" height="49.296" rx="4.424" stroke="#A7CEC5" stroke-width="1.264"/>
+<text fill="#187B78" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15.168" font-weight="600" letter-spacing="0em"><tspan x="380.464" y="298.42">Discover</tspan></text>
+</g>
+<rect x="242.056" y="354.584" width="984.656" height="92.272" rx="9.48" fill="#EFF1F5"/>
+<rect x="242.056" y="354.584" width="984.656" height="92.272" rx="9.48" stroke="#E9EDF2" stroke-width="1.264"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="17.696" font-weight="500" letter-spacing="0em"><tspan x="262.912" y="394.375">Organisation Unit</tspan></text>
+<rect x="483.48" y="376.072" width="251.536" height="49.296" rx="5.688" fill="white"/>
+<rect x="483.48" y="376.072" width="251.536" height="49.296" rx="5.688" stroke="#E2E8EE" stroke-width="1.264"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15.168" font-weight="500" letter-spacing="0em"><tspan x="499.279" y="406.236">130 Adult Directorate</tspan></text>
+<path d="M707.461 397.741C707.132 397.412 706.598 397.412 706.269 397.741C705.94 398.07 705.94 398.604 706.269 398.933L711.632 404.295L716.995 398.933C717.324 398.604 717.324 398.07 716.995 397.741C716.666 397.412 716.132 397.412 715.803 397.741L711.632 401.912L707.461 397.741Z" fill="#0F4146"/>
+<g clip-path="url(#clip5_158_3015)">
+<rect x="242.056" y="483.512" width="226.256" height="286.928" rx="14.536" fill="white"/>
+<rect x="242.056" y="483.512" width="226.256" height="286.928" rx="14.536" stroke="#DFE7E9" stroke-width="1.264"/>
+<g clip-path="url(#clip6_158_3015)">
+<circle cx="267.968" cy="515.869" r="5.056" fill="#C84853"/>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16.432" font-weight="600" letter-spacing="0em"><tspan x="283.136" y="521.843">Red</tspan></text>
+</g>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="42.976" font-weight="600" letter-spacing="0em"><tspan x="262.912" y="590.691">0</tspan></text>
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="334.96" y="590.619">metrics</tspan></text>
+<rect x="262.912" y="622.76" width="187.072" height="1.264" fill="#E6ECEE"/>
+<g clip-path="url(#clip7_158_3015)">
+<g clip-path="url(#clip8_158_3015)">
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="262.912" y="656.276">No red metrics</tspan></text>
+</g>
+</g>
+<rect x="494.856" y="483.512" width="226.256" height="286.928" rx="14.536" fill="white"/>
+<rect x="494.856" y="483.512" width="226.256" height="286.928" rx="14.536" stroke="#DFE7E9" stroke-width="1.264"/>
+<g clip-path="url(#clip9_158_3015)">
+<circle cx="520.768" cy="515.869" r="5.056" fill="#A07108"/>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16.432" font-weight="600" letter-spacing="0em"><tspan x="535.936" y="521.843">Yellow</tspan></text>
+</g>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="42.976" font-weight="600" letter-spacing="0em"><tspan x="515.712" y="590.691">15</tspan></text>
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="587.76" y="590.619">metrics</tspan></text>
+<rect x="515.712" y="622.76" width="187.072" height="1.264" fill="#E6ECEE"/>
+<g clip-path="url(#clip10_158_3015)">
+<g clip-path="url(#clip11_158_3015)">
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="515.712" y="656.276">4th quartile</tspan></text>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" font-weight="600" letter-spacing="0em"><tspan x="686.844" y="656.276">14</tspan></text>
+</g>
+<g clip-path="url(#clip12_158_3015)">
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="515.712" y="682.86">3rd quartile</tspan></text>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" font-weight="600" letter-spacing="0em"><tspan x="696.104" y="682.86">1</tspan></text>
+</g>
+</g>
+<rect x="747.655" y="483.512" width="226.256" height="286.928" rx="14.536" fill="white"/>
+<rect x="747.655" y="483.512" width="226.256" height="286.928" rx="14.536" stroke="#DFE7E9" stroke-width="1.264"/>
+<g clip-path="url(#clip13_158_3015)">
+<circle cx="773.568" cy="515.869" r="5.056" fill="#62737F"/>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16.432" font-weight="600" letter-spacing="0em"><tspan x="788.735" y="521.843">Typical</tspan></text>
+</g>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="42.976" font-weight="600" letter-spacing="0em"><tspan x="768.512" y="590.691">19</tspan></text>
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="840.56" y="590.619">metrics</tspan></text>
+<rect x="768.512" y="622.76" width="187.072" height="1.264" fill="#E6ECEE"/>
+<g clip-path="url(#clip14_158_3015)">
+<g clip-path="url(#clip15_158_3015)">
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="768.512" y="656.276">4th quartile</tspan></text>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" font-weight="600" letter-spacing="0em"><tspan x="946.568" y="656.276">9</tspan></text>
+</g>
+<g clip-path="url(#clip16_158_3015)">
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="768.512" y="682.86">3rd quartile</tspan></text>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" font-weight="600" letter-spacing="0em"><tspan x="946.568" y="682.86">9</tspan></text>
+</g>
+<g clip-path="url(#clip17_158_3015)">
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="768.512" y="709.444">2nd quartile</tspan></text>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" font-weight="600" letter-spacing="0em"><tspan x="948.904" y="709.444">1</tspan></text>
+</g>
+</g>
+<rect x="1000.46" y="483.512" width="226.256" height="286.928" rx="14.536" fill="white"/>
+<rect x="1000.46" y="483.512" width="226.256" height="286.928" rx="14.536" stroke="#DFE7E9" stroke-width="1.264"/>
+<g clip-path="url(#clip18_158_3015)">
+<circle cx="1026.37" cy="515.869" r="5.056" fill="#316FD0"/>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16.432" font-weight="600" letter-spacing="0em"><tspan x="1041.54" y="521.843">Leading</tspan></text>
+</g>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="42.976" font-weight="600" letter-spacing="0em"><tspan x="1021.31" y="590.691">3</tspan></text>
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="1093.36" y="590.619">metrics</tspan></text>
+<rect x="1021.31" y="622.76" width="187.072" height="1.264" fill="#E6ECEE"/>
+<g clip-path="url(#clip19_158_3015)">
+<g clip-path="url(#clip20_158_3015)">
+<text fill="#64767B" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="1021.31" y="656.276">1st quartile</tspan></text>
+<text fill="#173F46" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" font-weight="600" letter-spacing="0em"><tspan x="1199.33" y="656.276">3</tspan></text>
+</g>
+</g>
+</g>
+<g clip-path="url(#clip21_158_3015)">
+<rect x="241.424" y="806.464" width="311.778" height="159.368" rx="12.64" fill="#EFF1F5"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="17.696" font-weight="500" letter-spacing="0em"><tspan x="261.647" y="845.622">Selected Unit</tspan></text>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="261.647" y="885.203">Clinical directorate</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="26.544" font-weight="500" letter-spacing="0em"><tspan x="261.647" y="936.76">130 Adult Directorate</tspan></text>
+<rect x="578.482" y="806.464" width="311.778" height="159.368" rx="12.64" fill="#EFF1F5"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="17.696" font-weight="500" letter-spacing="0em"><tspan x="598.706" y="845.622">National Benchmark</tspan></text>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="598.706" y="885.203">Organisations in benchmark</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="26.544" font-weight="500" letter-spacing="0em"><tspan x="598.706" y="936.76">258</tspan></text>
+<rect x="915.54" y="806.464" width="311.778" height="159.368" rx="12.64" fill="#EFF1F5"/>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="17.696" font-weight="500" letter-spacing="0em"><tspan x="935.764" y="845.622">Unit Count</tspan></text>
+<text fill="#80859D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="13.904" letter-spacing="0em"><tspan x="935.764" y="885.203">Units in selected group</tspan></text>
+<text fill="#0F4146" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="26.544" font-weight="500" letter-spacing="0em"><tspan x="935.764" y="936.76">19</tspan></text>
+</g>
+</g>
+</g>
+<rect x="0.632" y="0.632" width="1262.74" height="1060.63" rx="27.176" stroke="#E9EDF2" stroke-width="1.264"/>
+<defs>
+<clipPath id="clip0_158_3015">
+<rect width="1264" height="1061.9" rx="27.808" fill="white"/>
+</clipPath>
+<clipPath id="clip1_158_3015">
+<rect width="1264" height="942" fill="white" transform="translate(1.26367 118.632)"/>
+</clipPath>
+<clipPath id="clip2_158_3015">
+<rect width="985.92" height="76.056" fill="white" transform="translate(241.424 156.552)"/>
+</clipPath>
+<clipPath id="clip3_158_3015">
+<rect width="20.224" height="20.224" fill="white" transform="translate(1193.22 171.72)"/>
+</clipPath>
+<clipPath id="clip4_158_3015">
+<rect width="985.92" height="50.56" fill="white" transform="translate(241.424 268)"/>
+</clipPath>
+<clipPath id="clip5_158_3015">
+<rect width="985.92" height="288.192" fill="white" transform="translate(241.424 482.88)"/>
+</clipPath>
+<clipPath id="clip6_158_3015">
+<rect width="187.072" height="23" fill="white" transform="translate(262.912 504.368)"/>
+</clipPath>
+<clipPath id="clip7_158_3015">
+<rect width="187.072" height="19" fill="white" transform="translate(262.912 641.72)"/>
+</clipPath>
+<clipPath id="clip8_158_3015">
+<rect width="187.072" height="19" fill="white" transform="translate(262.912 641.72)"/>
+</clipPath>
+<clipPath id="clip9_158_3015">
+<rect width="187.072" height="23" fill="white" transform="translate(515.712 504.368)"/>
+</clipPath>
+<clipPath id="clip10_158_3015">
+<rect width="187.072" height="45.584" fill="white" transform="translate(515.712 641.72)"/>
+</clipPath>
+<clipPath id="clip11_158_3015">
+<rect width="187.072" height="19" fill="white" transform="translate(515.712 641.72)"/>
+</clipPath>
+<clipPath id="clip12_158_3015">
+<rect width="187.072" height="19" fill="white" transform="translate(515.712 668.304)"/>
+</clipPath>
+<clipPath id="clip13_158_3015">
+<rect width="187.072" height="23" fill="white" transform="translate(768.512 504.368)"/>
+</clipPath>
+<clipPath id="clip14_158_3015">
+<rect width="187.072" height="72.168" fill="white" transform="translate(768.512 641.72)"/>
+</clipPath>
+<clipPath id="clip15_158_3015">
+<rect width="187.072" height="19" fill="white" transform="translate(768.512 641.72)"/>
+</clipPath>
+<clipPath id="clip16_158_3015">
+<rect width="187.072" height="19" fill="white" transform="translate(768.512 668.304)"/>
+</clipPath>
+<clipPath id="clip17_158_3015">
+<rect width="187.072" height="19" fill="white" transform="translate(768.512 694.888)"/>
+</clipPath>
+<clipPath id="clip18_158_3015">
+<rect width="187.072" height="23" fill="white" transform="translate(1021.31 504.368)"/>
+</clipPath>
+<clipPath id="clip19_158_3015">
+<rect width="187.072" height="19" fill="white" transform="translate(1021.31 641.72)"/>
+</clipPath>
+<clipPath id="clip20_158_3015">
+<rect width="187.072" height="19" fill="white" transform="translate(1021.31 641.72)"/>
+</clipPath>
+<clipPath id="clip21_158_3015">
+<rect width="985.92" height="159.368" fill="white" transform="translate(241.424 806.464)"/>
+</clipPath>
+</defs>
+</svg>
