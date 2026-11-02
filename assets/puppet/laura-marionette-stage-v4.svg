@@ -21,22 +21,22 @@
 <g id="puppet-body" transform="translate(0 400)">
 <g id="puppet-upper-arm-left" class="puppet-grab" role="group" tabindex="0" aria-label="Move left upper arm from the shoulder" data-pivot="262,388">
 <use href="#armUpperL" />
-<g id="puppet-arm-left" class="puppet-grab" role="group" tabindex="0" aria-label="Bend left forearm at the elbow" data-pivot="160,394"><use href="#armLowerL" />
+<g id="puppet-arm-left" class="puppet-grab" role="group" tabindex="0" aria-label="Move the left hand; shoulder and elbow follow" data-pivot="160,394"><use href="#armLowerL" />
 <path d="M 98 378 C 94 392 94 404 98 416 L 110 416 C 106 404 106 392 110 378Z" fill="#9DB07A" stroke="#FFF3E6" stroke-width="1.5" />
 <circle cx="103" cy="389" r="1.6" fill="#fff" /><circle cx="103" cy="398" r="1.6" fill="#fff" /><circle cx="103" cy="407" r="1.6" fill="#fff" />
 </g>
 </g>
-<g id="puppet-upper-arm-right" class="puppet-grab" role="group" tabindex="0" aria-label="Move right upper arm from the shoulder" data-pivot="418,386">
+<g id="puppet-upper-arm-right" class="puppet-grab" role="group" tabindex="0" aria-label="Move right upper arm from the shoulder" data-pivot="418,388">
 <use href="#armUpperL" transform="translate(680,0) scale(-1,1) rotate(6 262 386)" />
-<g id="puppet-arm-right" class="puppet-grab" role="group" tabindex="0" aria-label="Bend right forearm at the elbow" data-pivot="520,383"><use href="#armLowerL" transform="translate(680,0) scale(-1,1) rotate(6 262 386)" /></g>
+<g id="puppet-arm-right" class="puppet-grab" role="group" tabindex="0" aria-label="Move the right hand; shoulder and elbow follow" data-pivot="520,383"><use href="#armLowerL" transform="translate(680,0) scale(-1,1) rotate(6 262 386)" /></g>
 </g>
 <g id="puppet-upper-leg-left" class="puppet-grab" role="group" tabindex="0" aria-label="Move left thigh from the hip" data-pivot="300,573">
 <use href="#legUpperL" />
-<g id="puppet-leg-left" class="puppet-grab" role="group" tabindex="0" aria-label="Bend left lower leg at the knee" data-pivot="300,695"><use href="#legLowerL" /></g>
+<g id="puppet-leg-left" class="puppet-grab" role="group" tabindex="0" aria-label="Move the left foot; hip and knee follow" data-pivot="300,695"><use href="#legLowerL" /></g>
 </g>
 <g id="puppet-upper-leg-right" class="puppet-grab" role="group" tabindex="0" aria-label="Move right thigh from the hip" data-pivot="380,573">
 <use href="#legUpperL" transform="translate(680,0) scale(-1,1)" />
-<g id="puppet-leg-right" class="puppet-grab" role="group" tabindex="0" aria-label="Bend right lower leg at the knee" data-pivot="380,695"><use href="#legLowerL" transform="translate(680,0) scale(-1,1)" /></g>
+<g id="puppet-leg-right" class="puppet-grab" role="group" tabindex="0" aria-label="Move the right foot; hip and knee follow" data-pivot="380,695"><use href="#legLowerL" transform="translate(680,0) scale(-1,1)" /></g>
 </g>
 <g id="puppet-torso"><use href="#torso" fill="#E0508A" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" />
 <g clip-path="url(#cT)">
