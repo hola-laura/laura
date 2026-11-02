@@ -109,3 +109,33 @@
 @media(prefers-reduced-motion:reduce){.fv-zoom,.fv-toggle button{transition:none}}
 
 @media(max-width:760px){.fv-metrics{grid-template-columns:1fr 1.3fr .8fr;gap:12px}.fv-metrics strong{font-size:clamp(24px,7vw,38px)}}
+
+/* Outcome panel: align the headline and metrics as one clear unit. */
+.flex-case .fv-impact{
+  display:grid;
+  grid-template-columns:minmax(230px,.78fr) minmax(0,1.62fr);
+  grid-template-areas:"head metrics" "note note";
+  gap:28px 40px;
+  align-items:center;
+  padding:36px;
+}
+.flex-case .fv-impact-head{grid-area:head;display:block}
+.flex-case .fv-impact-head .mono-label{display:block;margin-bottom:16px}
+.flex-case .fv-impact h2{max-width:15ch;margin:0;font-size:clamp(26px,2.4vw,36px);line-height:1.12}
+.flex-case .fv-metrics{grid-area:metrics;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0}
+.flex-case .fv-metrics>div{min-width:0;min-height:152px;display:flex;flex-direction:column;justify-content:center;padding:20px;background:rgba(255,255,255,.72);border:1px solid rgba(75,98,86,.12);border-radius:18px}
+.flex-case .fv-metrics strong{font-size:clamp(34px,4vw,54px);white-space:nowrap}
+.flex-case .fv-metrics span{margin-top:12px;font-size:13px;line-height:1.4}
+.flex-case .fv-source-note{grid-area:note;max-width:none;padding-top:18px;border-top:1px solid rgba(75,98,86,.18)}
+@media(max-width:1024px){
+  .flex-case .fv-impact{grid-template-columns:1fr;grid-template-areas:"head" "metrics" "note";gap:24px;padding:32px}
+  .flex-case .fv-impact h2{max-width:24ch}
+}
+@media(max-width:760px){
+  .flex-case .fv-impact{padding:24px;gap:20px}
+  .flex-case .fv-metrics{grid-template-columns:1fr;gap:10px}
+  .flex-case .fv-metrics>div{min-height:0;display:grid;grid-template-columns:minmax(110px,.75fr) 1fr;align-items:center;gap:16px;padding:16px 18px}
+  .flex-case .fv-metrics strong{font-size:clamp(32px,9vw,42px)}
+  .flex-case .fv-metrics span{margin:0;font-size:13px}
+  .flex-case .fv-source-note{padding-top:14px}
+}
