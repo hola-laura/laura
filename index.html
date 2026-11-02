@@ -14,7 +14,7 @@
 
 </head>
 <body class="portfolio-home" id="top">
-<a class="skip-link" href="#work">Skip to selected work</a>
+<a class="skip-link" href="#case-studies">Skip to selected work</a>
 <div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
 <img class="dotted-field" src="assets/home/imgDottedFieldSubtleInteractiveTexture.svg" alt="" aria-hidden="true">
 <div class="page">
@@ -23,9 +23,10 @@
             <g class="flower-bloom"><image href="assets/home/imgDrawing.svg" width="106.146" height="119.423"/></g>
           </svg>
         </button>
-</div><ul class="nav-links"><li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-<header class="hero">
+</div><ul class="nav-links"><li><a href="#case-studies">Work</a></li><li><a href="#summary">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<header class="hero" id="about">
 <div class="hero-copy">
+<span class="mono-label hero-section-label">01 / About me</span>
 <div class="status"><img src="assets/home/imgAvailabilityDot.svg" alt="" width="8" height="8"><span>Always up for a good conversation</span></div>
 <h1 class="hero-title" data-reveal>I lead product design through <span class="hero-accent">complexity.</span></h1>
 <p class="hero-sub">I align customer needs, business priorities and delivery teams to set a clear direction for complex journeys.</p>
@@ -41,13 +42,23 @@
 </div></div>
 </header>
 <main>
-<section class="work" id="work"><div class="section-head"><span class="mono-label">01 / Selected work</span><h2>Case studies</h2></div>
+<section class="work" id="case-studies"><div class="section-head"><span class="mono-label">02 / Case studies</span><h2>Case studies</h2></div>
 <div class="cards">
 <a class="card card-featured flex-home-card" href="case-study-flex.html" data-reveal data-tilt><div class="card-media"><img src="assets/flex/flex-focus-view.jpg" alt="The redesigned Monzo Flex account overview and physical card" width="1920" height="1281" loading="lazy"></div><div class="card-meta"><span class="mono-label">Monzo Flex · Design across two squads · 2023</span><h3>Turning Flex into an everyday credit card</h3><p>I connected research, product direction and phased delivery to help customers understand and manage their credit account.</p><p class="case-result">Two squads · 20 interviews · 50k rollout cohorts · 870k A/B audience</p><span class="flex-card-action">Read the case study →</span></div></a>
 <a class="card card-featured flex-home-card" href="case-study-spending-block.html" data-reveal data-tilt><div class="card-media spending-home-media"><div class="sb-phone"><img src="assets/spending-block/intro.png" alt="Spending Block introduction" width="375" height="812" loading="lazy"></div><div class="sb-phone"><img src="assets/spending-block/reconsider.png" alt="Personal reminder before unblocking a merchant" width="375" height="812" loading="lazy"></div></div><div class="card-meta"><span class="mono-label">Monzo · Senior Product Designer · 2023</span><h3>A little friction. More control.</h3><p>I led discovery and designed Spending Block to help customers interrupt unwanted spending, on their own terms.</p><p class="case-result">10,000+ adopters · Two-week release</p><span class="flex-card-action">Read the case study →</span></div></a>
 
-</div></section>
-<section class="services" id="how-i-lead" aria-labelledby="how-i-lead-title"><div class="section-head"><span class="mono-label">02 / How I lead</span><h2 id="how-i-lead-title">Help teams move from ambiguity to a clear next step.</h2></div>
+</div>
+<div class="earlier other-projects" id="other-work"><div class="section-head"><span class="mono-label">Other projects</span><h2>More of my work</h2></div>
+<div class="earlier-grid">
+<a class="card earlier-card" href="case-study-mortgages.html" data-reveal data-tilt><span class="mono-label">Homeownership · Monzo · 2024</span><h3>A clearer way to remortgage</h3><p>Led the remortgage journey from discovery to launch. Deal-end date collection in new connections rose from 38% to 88% as a team outcome.</p></a>
+<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Financial Health · Monzo</span><h3>Self-serve support in the app</h3><p>Shaped a product vision to bring Financial Health into the app and make support easier to access, with lower operational cost as a strategic target.</p></article>
+<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Spain · Monzo</span><h3>Making the case for Bizum</h3><p>Used local market knowledge to secure customer testing for Bizum after UK teams questioned its importance in Spain.</p></article>
+<a class="card earlier-card" href="case-study-rldatix.html" data-reveal data-tilt><span class="mono-label">Healthcare · RLDatix · 2020</span><h3>Clearer risk reporting</h3><p>Redesigned a complex healthcare risk workflow. 96% of participants completed key tasks unaided in testing.</p></a>
+<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Retail &amp; property · Intu · 2019</span><h3>Design system for risk tools</h3><p>Created Intu’s first design system and redesigned risk-management tools for use across company platforms.</p></article>
+<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Food delivery · Just Eat · 2014–19</span><h3>Family Club journeys</h3><p>Redesigned sign-up and platform experiences for Family Club members and non-members.</p></article>
+</div></div>
+</section>
+<section class="services" id="how-i-lead" aria-labelledby="how-i-lead-title"><div class="section-head"><span class="mono-label">03 / How I work</span><h2 id="how-i-lead-title">Help teams move from ambiguity to a clear next step.</h2></div>
 <p class="leadership-intro" data-reveal>I connect customer needs, business goals and delivery realities so teams can make confident decisions and move forward together.</p>
 <ul class="services-list" data-stagger>
 <li><span class="service-num">01</span><div><h3>Build shared understanding</h3><p>I bring customer evidence, business context and operational constraints into the same conversation, so we agree on the problem before choosing a solution.</p></div><span class="practice-proof">Problem framing</span></li>
@@ -55,18 +66,7 @@
 <li><span class="service-num">03</span><div><h3>Keep the plan responsive</h3><p>I surface assumptions early, test the riskiest parts and adapt the direction when new evidence or delivery constraints change what makes sense.</p></div><span class="practice-proof">Decision-making</span></li>
 </ul>
 </section>
-<section class="work more-work" aria-labelledby="more-work-title"><div class="section-head"><span class="mono-label">03 / More selected work</span><h2 id="more-work-title">Setting direction across different challenges</h2></div>
-<div class="cards">
-<a class="card card-featured flex-home-card mortgage-home-card" href="case-study-mortgages.html" data-reveal data-tilt><div class="card-media mortgage-home-media"><img src="assets/mortgages/referral-journey.webp" alt="The original Monzo mortgage referral journey, connecting customers to expert help from Better.co.uk" width="2400" height="1839" loading="lazy"></div><div class="card-meta"><span class="mono-label">Monzo · Lead Product Designer · 2024</span><h3>A clearer way to remortgage</h3><p>I connected research, a shared vision and phased delivery to help homeowners plan ahead, explore their options and get human help.</p><p class="case-result">38% → 88% deal-end date collection in new connections</p><span class="case-note">Team outcome · Jan 2024 → Jan 2025</span><span class="flex-card-action">Read the case study →</span></div></a>
-<article class="card card-project" data-reveal data-tilt><div class="card-media evidence evidence-vision"><p class="evidence-label">Product vision · Financial Health</p>
-<div class="evidence-steps connected"><div class="evidence-step"><span class="step-num">01</span><strong>In-app</strong><small>Financial Health</small></div><div class="evidence-step"><span class="step-num">02</span><strong>Self-serve</strong><small>Guided support</small></div><div class="evidence-step"><span class="step-num">03</span><strong>Operations</strong><small>Lower-cost service model</small></div></div>
-<p class="evidence-footnote">Strategic target · reduce operational cost</p></div>
-<div class="card-meta"><span class="mono-label">Monzo · Product vision · Financial Health</span><h3>Bringing Financial Health into the app</h3><p>I shaped a self-serve direction to make Financial Health easier to access in-app, with lower operational cost as a strategic target.</p></div></article>
-<article class="card card-project" data-reveal data-tilt><div class="card-media evidence evidence-bizum"><p class="evidence-label">Local market insight · Spain</p>
-<div class="evidence-steps connected"><div class="evidence-step"><span class="step-num">01</span><strong>UK teams</strong><small>Questioned local priority</small></div><div class="evidence-step"><span class="step-num">02</span><strong>Local context</strong><small>Made the case</small></div><div class="evidence-step"><span class="step-num">03</span><strong>Customer test</strong><small>Validated the need</small></div></div>
-<div class="bizum-outcome"><strong>Testing confirmed the importance to local customers</strong><span>Spain · Product discovery</span></div></div>
-<div class="card-meta"><span class="mono-label">Monzo · Spain · Product advocacy &amp; testing</span><h3>Making the case for Bizum in Spain</h3><p>UK teams questioned Bizum’s local importance. I used my market knowledge to secure a test in Spain; customer testing confirmed the need.</p></div></article>
-</div></section>
+
 <section class="independent-work" id="things-i-build" aria-labelledby="independent-title">
 <div class="section-head"><span class="mono-label">04 / Independent product</span><h2 id="independent-title">Things I build</h2></div>
 <article class="card drivo-card" data-reveal>
@@ -95,13 +95,8 @@
 </div>
 </article>
 </section>
-<section class="earlier" id="earlier-work"><div class="section-head"><span class="mono-label">05 / Earlier work</span><h2>Earlier work</h2></div>
-<div class="earlier-grid">
-<a class="card earlier-card" href="case-study-rldatix.html" data-reveal data-tilt><span class="mono-label">Healthcare · RLDatix · 2020</span><h3>Clearer risk reporting</h3><p>Redesigned a complex healthcare risk workflow. 96% completed tasks unaided in testing; the project was not released after business priorities changed.</p></a>
-<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Retail &amp; property · Intu · 2019</span><h3>Design system for risk tools</h3><p>Created Intu’s first design system and redesigned its risk-management experience for use across company platforms.</p></article>
-<article class="card earlier-card" data-reveal data-tilt><span class="mono-label">Food delivery · Just Eat · 2014–19</span><h3>Family Club journeys</h3><p>Redesigned sign-up and platform experiences for Family Club members and non-members.</p></article>
-</div></section>
-<section class="about" id="about"><span class="mono-label">06 / About</span><p class="about-lead" data-reveal>I’ve designed products across fintech, healthcare, retail and food delivery. Each industry has different constraints; I focus on the customer decision that matters and help teams make the next step clear.</p><h2 class="about-statement" data-reveal>I design the rules, not just the surfaces.</h2></section>
+
+<section class="about" id="summary"><span class="mono-label">05 / Summary</span><p class="about-lead" data-reveal>I’ve designed products across fintech, healthcare, retail and food delivery. Each industry has different constraints; I focus on the customer decision that matters and help teams make the next step clear.</p><h2 class="about-statement" data-reveal>I design the rules, not just the surfaces.</h2></section>
 
 </main>
 <footer class="footer" id="contact"><div class="footer-inner"><h2 class="footer-title" data-reveal>Let’s make products feel clear and useful.</h2><div class="footer-actions"><a class="pill-button" href="mailto:lrsmpdr@gmail.com" target="_blank" rel="noopener noreferrer">Email me ↗</a><a href="https://www.linkedin.com/in/laura-sampedro/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div><div class="footer-row"><span class="mono-label">© 2026 Laura Sampedro de la Rosa</span><a class="mono-label" href="#top">Back to top ↑</a></div></div></footer>
