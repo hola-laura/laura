@@ -1,0 +1,64 @@
+(() => {
+  const root = document.querySelector('[data-laptop-tour]');
+  if (!root) return;
+  const screen = root.querySelector('[data-laptop-screen]');
+  const play = root.querySelector('[data-laptop-play]');
+  const reset = root.querySelector('[data-laptop-reset]');
+  const slider = root.querySelector('[data-laptop-position]');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let frame = 0;
+  let playing = false;
+  const maxScroll = () => Math.max(0, screen.scrollHeight - screen.clientHeight);
+  const sync = () => {
+    const percent = maxScroll() ? Math.round(screen.scrollTop / maxScroll() * 100) : 0;
+    slider.value = String(percent);
+    slider.setAttribute('aria-valuetext', percent + '% through the dashboard');
+    if (!playing) play.textContent = percent >= 99 ? 'Replay tour' : 'Play tour';
+  };
+  const stop = () => {
+    cancelAnimationFrame(frame);
+    playing = false;
+    play.setAttribute('aria-pressed', 'false');
+    sync();
+  };
+  play.addEventListener('click', () => {
+    if (playing) { stop(); return; }
+    if (screen.scrollTop >= maxScroll() - 2) screen.scrollTop = 0;
+    if (reduced.matches) { screen.scrollTop = maxScroll(); sync(); return; }
+    const start = screen.scrollTop;
+    const distance = maxScroll() - start;
+    if (distance <= 0) return;
+    playing = true;
+    play.textContent = 'Pause tour';
+    play.setAttribute('aria-pressed', 'true');
+    const duration = Math.max(2400, 8000 * distance / maxScroll());
+    let started;
+    const tick = now => {
+      if (!playing) return;
+      if (started === undefined) started = now;
+      const t = Math.min(1, (now - started) / duration);
+      const eased = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      screen.scrollTop = start + distance * eased;
+      sync();
+      if (t < 1) frame = requestAnimationFrame(tick); else stop();
+    };
+    frame = requestAnimationFrame(tick);
+  });
+  reset.addEventListener('click', () => { stop(); screen.scrollTop = 0; sync(); });
+  slider.addEventListener('input', () => {
+    const percent = Number(slider.value);
+    stop();
+    screen.scrollTop = maxScroll() * percent / 100;
+    sync();
+  });
+  screen.addEventListener('scroll', sync, {passive:true});
+  ['wheel', 'pointerdown', 'touchstart'].forEach(type => screen.addEventListener(type, stop, {passive:true}));
+  screen.addEventListener('keydown', event => {
+    if (['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(event.key)) stop();
+  });
+  new IntersectionObserver(entries => { if (!entries[0].isIntersecting) stop(); }).observe(root);
+  screen.querySelector('img').addEventListener('load', sync);
+  addEventListener('resize', () => { stop(); sync(); });
+  reduced.addEventListener('change', stop);
+  sync();
+})();
