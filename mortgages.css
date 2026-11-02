@@ -52,3 +52,95 @@
 .mg-bar{display:grid;grid-template-columns:1fr 58px;gap:12px}
 .mg-bar>span,.mg-bar-after>span{width:var(--bar);min-width:50px}
 @media(max-width:760px){#direction .mg-wide img{height:280px}#direction .mg-wide .fv-zoom{padding:8px}.mg-bar{grid-template-columns:1fr 52px;gap:8px}}
+
+/* Homeownership shares some building blocks with the Flex case study. Keep
+   the impact panel scoped to its own layout so Flex's split impact slide
+   cannot remove the Homeownership panel padding or force it into columns. */
+.mortgage-case .fv-impact{
+  display:block;
+  width:100%;
+  min-width:0;
+  padding:36px 40px;
+  overflow:visible;
+  background:#e3eee8;
+  border-radius:24px;
+}
+.mortgage-case .fv-impact-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:start;
+  gap:24px;
+  margin:0;
+}
+.mortgage-case .fv-impact-head .mono-label{display:block;margin:0;color:#57635e}
+.mortgage-case .fv-impact h2{
+  max-width:20ch;
+  margin:0;
+  font-size:clamp(24px,2.6vw,34px);
+  line-height:1.15;
+  letter-spacing:-.025em;
+}
+.mortgage-case .fv-impact .fv-metrics{
+  display:grid;
+  min-width:0;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:28px;
+  margin:36px 0 24px;
+}
+.mortgage-case .fv-impact .fv-metrics>div{
+  display:block;
+  min-width:0;
+  min-height:0;
+  padding:0;
+  background:transparent;
+  border:0;
+  border-radius:0;
+}
+.mortgage-case .fv-impact .fv-metrics strong{
+  display:block;
+  color:#29242f;
+  font-size:clamp(30px,3.7vw,48px);
+  line-height:1;
+  letter-spacing:-.05em;
+  font-weight:500;
+  white-space:nowrap;
+}
+.mortgage-case .fv-impact .fv-metrics span{
+  display:block;
+  max-width:29ch;
+  margin-top:12px;
+  font-size:14px;
+  line-height:1.5;
+}
+.mortgage-case .fv-impact .fv-source-note{
+  max-width:85ch;
+  margin:0;
+  padding:0;
+  border:0;
+  color:#57635e;
+  font-size:11px;
+  line-height:1.5;
+}
+@media(max-width:1024px){
+  .mortgage-case .fv-impact{padding:32px}
+  .mortgage-case .fv-impact-head{display:block}
+  .mortgage-case .fv-impact h2{margin-top:16px}
+  .mortgage-case .fv-impact .fv-metrics{gap:16px}
+}
+@media(max-width:760px){
+  .mortgage-case .fv-impact{padding:24px}
+  .mortgage-case .fv-impact .fv-metrics{grid-template-columns:1fr;gap:10px;margin:28px 0 20px}
+  .mortgage-case .fv-impact .fv-metrics>div{
+    display:grid;
+    grid-template-columns:minmax(110px,.75fr) minmax(0,1fr);
+    align-items:center;
+    gap:16px;
+    padding:16px 18px;
+    border:1px solid rgba(75,98,86,.12);
+    border-radius:14px;
+    background:rgba(255,255,255,.55);
+  }
+  .mortgage-case .fv-impact .fv-metrics strong{font-size:clamp(28px,8vw,40px)}
+  .mortgage-case .fv-impact .fv-metrics span{max-width:none;margin:0;font-size:13px}
+  .mortgage-case .fv-impact .fv-source-note{padding-top:14px;border-top:1px solid rgba(75,98,86,.18)}
+}
