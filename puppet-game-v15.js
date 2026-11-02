@@ -117,8 +117,14 @@
       };
       const release=()=>{
         if(!active)return;
-        const part=active;active=null;stage.classList.remove("is-dragging");
+        const part=active;
         if(moveFrame){cancelAnimationFrame(moveFrame);moveFrame=0;}
+        if(part.chain)solveChain(part.chain,[part.desired[0]+part.tipOffset[0],part.desired[1]+part.tipOffset[1]]);
+        else if(part.desired){
+          const delta=normalize(angleAt({x:part.desired[0],y:part.desired[1]},part.pivot)-part.startAngle);
+          setAngle(part.spec,part.startValue+delta);
+        }
+        active=null;stage.classList.remove("is-dragging");
         if(part.chain)springChainHome(part.chain,part.chain.upper.angle||0,part.chain.lower.angle||0);
         else springHome(part.spec,part.spec.angle||0);
         try{stage.releasePointerCapture(part.pointerId)}catch(_){}
