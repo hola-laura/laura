@@ -158,3 +158,25 @@
 .flex-case #payments .fv-edit{
   margin:0;
 }
+
+/* Keep the two repayment panels together on wide screens. */
+@media(min-width:1100px){
+  .flex-case #payments>div:last-child{
+    grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+    align-items:stretch;
+    gap:24px;
+  }
+  .flex-case #payments .fv-edit{
+    grid-template-columns:minmax(0,1fr) minmax(0,.72fr);
+    gap:16px;
+    margin:0;
+    padding:32px 24px;
+    align-content:start;
+  }
+  .flex-case #payments .fv-edit figure .fv-zoom{
+    max-width:220px;
+  }
+  .flex-case #payments .fv-edit figcaption{
+    max-width:30ch;
+  }
+}
