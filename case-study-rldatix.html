@@ -62,6 +62,17 @@
 .rld-app-mock:before{background-color:#003532;background-image:radial-gradient(circle,#ff5f57 0 4px,transparent 4.5px),radial-gradient(circle,#febc2e 0 4px,transparent 4.5px),radial-gradient(circle,#28c840 0 4px,transparent 4.5px);background-repeat:no-repeat;background-size:9px 9px;background-position:12px 5px,26px 5px,40px 5px}
 @media(max-width:680px){.rld-mock-top{gap:10px;padding:0 10px}.rld-mock-tabs{gap:12px}.rld-mock-tabs span{font-size:8px}}
 
+
+/* Keep all four dashboard destinations visible in narrow mock screens. */
+.rld-app-mock{container-type:inline-size}
+@container(max-width:380px){
+  .rld-mock-top{gap:7px;padding:0 8px}
+  .rld-mock-top b{font-size:14px;flex:0 0 auto}
+  .rld-mock-tabs{gap:clamp(5px,2cqw,10px)}
+  .rld-mock-tabs span{font-size:clamp(7px,2cqw,8px);white-space:nowrap}
+  .rld-mock-top i{flex:0 0 21px;width:21px;height:21px;font-size:7px}
+}
+
 </style><link rel="stylesheet" href="rldatix-laptop.css?v=3"><style>
 .rld-audit-gallery{display:grid;grid-template-columns:1.55fr 1fr;grid-template-rows:auto auto;gap:16px 24px;margin:36px 0 0}
 #v3-section-1 .rld-audit-card{margin:0;min-width:0}
