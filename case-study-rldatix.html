@@ -85,6 +85,23 @@
 .rld-compare-scroll .rld-compare-divider>span{top:30%}
 .rld-compare-scroll .rld-compare-range{touch-action:pan-y}
 @media print{.rld-print-comparison{display:block!important}}
+</style><style>
+.rld-system-exhibit .rld-parts-icons .rld-system-icons{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.rld-library-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 28px}
+.rld-library-card{min-width:0;background:white;border:1px solid #dce7e1;border-radius:16px;padding:26px;color:#0f4146}
+.rld-library-card>.mono-label{display:block;font-size:9px;color:#60756f;margin-bottom:24px}
+.rld-library-table{grid-column:span 2}.rld-library-table-scroll{overflow-x:auto}
+.rld-library-table table{width:100%;border-collapse:collapse;font-size:12px;text-align:left;white-space:nowrap}
+.rld-library-table th{font-size:10px;font-weight:500;background:#eef1f5;color:#68738a}
+.rld-library-table th,.rld-library-table td{padding:15px 12px;border-bottom:1px solid #e5eaee}
+.rld-library-table .rld-status-pill{font-size:10px;display:inline-block}
+.rld-simple-list{border:1px solid #e5eaee;border-radius:6px;overflow:hidden}.rld-simple-list>div{display:flex;justify-content:space-between;padding:13px 14px;font-size:13px;border-bottom:1px solid #e5eaee}.rld-simple-list>div:last-child{border:0}.rld-simple-list>.is-selected{background:#e3f1ee;border-left:3px solid #187b78}
+.rld-rich-item{display:flex;gap:12px;align-items:flex-start;padding:16px 0;border-bottom:1px solid #e5eaee}.rld-rich-item:last-child{border:0;padding-bottom:0}.rld-rich-item>div{flex:1}.rld-rich-item strong{display:block;font-size:13px;font-weight:500;line-height:1.5}.rld-rich-item small{display:block;font-size:10px;color:#7d819a;margin:5px 0 12px}.rld-rich-item .rld-status-pill{display:inline-block;font-size:9px;padding:5px 9px}.rld-rich-symbol{display:grid;place-items:center;width:28px;height:28px;flex-shrink:0;border-radius:6px;background:#eef5f2;color:#187b78}
+.rld-button-samples{display:flex;flex-wrap:wrap;gap:12px}.rld-button-samples>span{display:inline-block;padding:11px 16px;border-radius:4px;font-size:12px;text-align:center}.rld-button-samples>.is-primary{background:#187b78;color:white}.rld-button-samples>.is-secondary{border:1px solid #187b78}.rld-button-samples>.is-text{color:#187b78}.rld-button-samples>.is-disabled{background:#eef1f5;color:#9ba3ad}
+.rld-select-label{display:block;font-size:12px;margin:0 0 18px}.rld-select-label select{display:block;box-sizing:border-box;margin-top:8px;padding:12px 10px;width:100%;border:1px solid #dce3e5;border-radius:4px;background:#fff;color:#0f4146;font:12px 'DM Sans',sans-serif}.rld-select-label select:focus-visible{outline:2px solid #187b78;outline-offset:2px}
+.rld-pill-samples{display:flex;flex-wrap:wrap;gap:10px}.rld-pill-samples>span{padding:8px 12px;font-size:11px;border:1px solid #dce3e5;border-radius:20px}.rld-pill-samples>.is-picked{background:#e3f1ee;border-color:#c4dfd8}.rld-pill-samples b{font-weight:400;margin-left:10px}
+@media(max-width:1000px){.rld-library-details{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.rld-library-details{grid-template-columns:1fr}.rld-library-table{grid-column:auto}.rld-library-card{padding:22px}.rld-system-exhibit .rld-parts-icons .rld-system-icons{grid-template-columns:repeat(6,minmax(0,1fr))}}
 </style></head><body class="flex-case" id="top"><a class="skip-link" href="#v3-section-0">Skip to case study</a><div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div><div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
 <div class="page case-page"><nav class="nav" aria-label="Main navigation"><a class="nav-logo nav-logo-back" href="index.html" aria-label="Laura — home"><span aria-hidden="true">←</span><img class="nav-wordmark" src="assets/laura-wordmark.svg" alt="" width="90" height="28"></a><ul class="nav-links"><li><a href="index.html#work">All work</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav>
 
@@ -117,31 +134,60 @@
 <div class="rld-parts-canvas" aria-label="RLDatix reusable interface components">
 <div class="rld-parts-panel rld-parts-controls"><span class="mono-label">INPUTS & ACTIONS</span><span class="rld-parts-label">Organisation unit</span><div class="rld-parts-select">Adult Directorate <span aria-hidden="true">⌄</span></div><img src="assets/rldatix/system-actions-outlined.svg" width="344" height="39" alt="Save changes and Cancel button components" loading="lazy"></div>
 <div class="rld-parts-panel rld-parts-status"><span class="mono-label">STATUS & FEEDBACK</span><div><span class="rld-status-pill" style="background:#d8efdf">Approved</span><span class="rld-status-pill" style="background:#fff0d8">In progress</span><span class="rld-status-pill" style="background:#fbdde0">Overdue</span></div><span class="rld-parts-confirm">✓ Changes saved</span></div>
-<div class="rld-parts-panel rld-parts-icons"><span class="mono-label">SHARED ICONS</span><div class="rld-system-icons" aria-label="Navigation and action icons"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.8688 15.4575C19.3126 12.319 19.0918 7.77832 16.2067 4.89313C13.0825 1.76894 8.01714 1.76894 4.89295 4.89313C1.76876 8.01733 1.76876 13.0826 4.89295 16.2068C7.77813 19.092 12.3188 19.3128 15.4573 16.869C15.4708 16.8843 15.4849 16.8993 15.4996 16.9139L19.7422 21.1566C20.1327 21.5471 20.7659 21.5471 21.1564 21.1566C21.5469 20.7661 21.5469 20.1329 21.1564 19.7424L16.9138 15.4997C16.8991 15.4851 16.8841 15.471 16.8688 15.4575ZM14.7924 6.30735C17.1356 8.65049 17.1356 12.4495 14.7924 14.7926C12.4493 17.1358 8.65031 17.1358 6.30716 14.7926C3.96402 12.4495 3.96402 8.65049 6.30716 6.30735C8.65031 3.9642 12.4493 3.9642 14.7924 6.30735Z" fill="#0F4146"/>
+<div class="rld-parts-panel rld-parts-icons"><span class="mono-label">SHARED ICONS</span><div class="rld-system-icons" aria-label="Shared RLDatix icons"><svg aria-label="user" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="black"/>
+<path d="M17 15C17 14.4477 16.5523 14 16 14H8C7.44772 14 7 14.4477 7 15V21H5V15C5 13.3431 6.34315 12 8 12H16C17.6569 12 19 13.3431 19 15V21H17V15Z" fill="black"/>
 </svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12H16C16.5523 12 17 11.5523 17 11C17 10.4477 16.5523 10 16 10H8Z" fill="#0F4146"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM5 18V8H19V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18Z" fill="#0F4146"/>
+<svg aria-label="time" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 7H12V12H17V14H10V7Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="black"/>
 </svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="#0F4146"/>
-<path d="M17 15C17 14.4477 16.5523 14 16 14H8C7.44772 14 7 14.4477 7 15V21H5V15C5 13.3431 6.34315 12 8 12H16C17.6569 12 19 13.3431 19 15V21H17V15Z" fill="#0F4146"/>
+<svg aria-label="search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.8688 15.4575C19.3126 12.319 19.0918 7.77832 16.2067 4.89313C13.0825 1.76894 8.01714 1.76894 4.89295 4.89313C1.76876 8.01733 1.76876 13.0826 4.89295 16.2068C7.77813 19.092 12.3188 19.3128 15.4573 16.869C15.4708 16.8843 15.4849 16.8993 15.4996 16.9139L19.7422 21.1566C20.1327 21.5471 20.7659 21.5471 21.1564 21.1566C21.5469 20.7661 21.5469 20.1329 21.1564 19.7424L16.9138 15.4997C16.8991 15.4851 16.8841 15.471 16.8688 15.4575ZM14.7924 6.30735C17.1356 8.65049 17.1356 12.4495 14.7924 14.7926C12.4493 17.1358 8.65031 17.1358 6.30716 14.7926C3.96402 12.4495 3.96402 8.65049 6.30716 6.30735C8.65031 3.9642 12.4493 3.9642 14.7924 6.30735Z" fill="black"/>
 </svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg aria-label="pin" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.2721 10.2721C16.2721 12.4813 14.4813 14.2721 12.2721 14.2721C10.063 14.2721 8.27213 12.4813 8.27213 10.2721C8.27213 8.06298 10.063 6.27212 12.2721 6.27212C14.4813 6.27212 16.2721 8.06298 16.2721 10.2721ZM14.2721 10.2721C14.2721 11.3767 13.3767 12.2721 12.2721 12.2721C11.1676 12.2721 10.2721 11.3767 10.2721 10.2721C10.2721 9.16755 11.1676 8.27212 12.2721 8.27212C13.3767 8.27212 14.2721 9.16755 14.2721 10.2721Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.79415 16.5183C2.19423 13.0909 2.05437 7.39409 5.48176 3.79417C8.90916 0.194243 14.6059 0.054383 18.2059 3.48178C21.8058 6.90918 21.9456 12.6059 18.5182 16.2059L12.3124 22.7241L5.79415 16.5183ZM17.0697 14.8268L12.243 19.8965L7.17323 15.0698C4.37329 12.404 4.26451 7.97318 6.93026 5.17324C9.59601 2.3733 14.0268 2.26452 16.8268 4.93028C19.6267 7.59603 19.7355 12.0268 17.0697 14.8268Z" fill="black"/>
+</svg>
+<svg aria-label="math-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z" fill="black"/>
+</svg>
+<svg aria-label="chevron-up" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.9498 15.5355C17.3403 15.926 17.9735 15.926 18.364 15.5355C18.7545 15.145 18.7545 14.5118 18.364 14.1213L12 7.75732L5.63603 14.1213C5.24551 14.5118 5.24551 15.145 5.63603 15.5355C6.02656 15.9261 6.65972 15.9261 7.05024 15.5355L12 10.5857L16.9498 15.5355Z" fill="black"/>
+</svg>
+<svg aria-label="chevron-left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.4853 6.34317L15.0711 4.92896L8.00006 12L15.0711 19.0711L16.4853 17.6569L10.8285 12L16.4853 6.34317Z" fill="black"/>
+</svg>
+<svg aria-label="chevron-down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.05028 8.46443C6.65975 8.07391 6.02659 8.07391 5.63606 8.46443C5.24554 8.85496 5.24554 9.48812 5.63606 9.87865L12 16.2426L18.364 9.87867C18.7545 9.48815 18.7545 8.85498 18.364 8.46446C17.9734 8.07394 17.3403 8.07394 16.9498 8.46446L12 13.4142L7.05028 8.46443Z" fill="black"/>
+</svg>
+<svg aria-label="more-vertical" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13ZM12 21C12.5523 21 13 20.5523 13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21ZM15 4C15 5.65685 13.6569 7 12 7C10.3431 7 9 5.65685 9 4C9 2.34315 10.3431 1 12 1C13.6569 1 15 2.34315 15 4ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12ZM12 23C13.6569 23 15 21.6569 15 20C15 18.3431 13.6569 17 12 17C10.3431 17 9 18.3431 9 20C9 21.6569 10.3431 23 12 23Z" fill="black"/>
+</svg>
+<svg aria-label="menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="black"/>
+<path d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z" fill="black"/>
+<path d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z" fill="black"/>
+</svg>
+<svg aria-label="calendar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12H16C16.5523 12 17 11.5523 17 11C17 10.4477 16.5523 10 16 10H8Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM5 18V8H19V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18Z" fill="black"/>
+</svg>
+<svg aria-label="filter" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="24" height="24" fill="white" fill-opacity="0.01"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.99999 13H17L18 11H5.99999L6.99999 13ZM3.99299 6C3.44499 6 3.20299 6.405 3.44699 6.895L3.99999 8H20L20.553 6.895C20.8 6.4 20.555 6 20.007 6H3.99299ZM10.778 17.556C10.8509 17.6861 10.9561 17.7953 11.0834 17.8731C11.2107 17.9508 11.3559 17.9945 11.505 18H12.495C12.774 18 13.1 17.8 13.222 17.556L14 16H9.99999L10.778 17.556Z" fill="#42526E"/>
-</svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10 7H12V12H17V14H10V7Z" fill="#0F4146"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="#0F4146"/>
-</svg>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13ZM12 21C12.5523 21 13 20.5523 13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21ZM15 4C15 5.65685 13.6569 7 12 7C10.3431 7 9 5.65685 9 4C9 2.34315 10.3431 1 12 1C13.6569 1 15 2.34315 15 4ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12ZM12 23C13.6569 23 15 21.6569 15 20C15 18.3431 13.6569 17 12 17C10.3431 17 9 18.3431 9 20C9 21.6569 10.3431 23 12 23Z" fill="#0F4146"/>
 </svg>
 </div></div>
 <article class="rld-parts-panel rld-system-field" data-field-states><span class="mono-label">Interaction states</span><div class="rld-state-controls" role="group" aria-label="Explore field states"><button type="button" data-field-state="default" aria-pressed="true">Default</button><button type="button" data-field-state="focus" aria-pressed="false">Focus</button><button type="button" data-field-state="error" aria-pressed="false">Error</button></div><label class="rld-field-label">Risk title<input class="rld-demo-field" value="Clinical handover consistency" readonly aria-label="Risk title state example"></label><span class="rld-field-message" aria-live="polite">Clear labels and predictable feedback.</span></article>
 </div></div>
+</div>
+<div class="rld-library-details">
+<article class="rld-library-card rld-library-table"><span class="mono-label">TABLES / OWNERSHIP & ACTIONS</span><div class="rld-library-table-scroll"><table><thead><tr><th>Risk</th><th>Owner</th><th>Status</th><th>Next action</th></tr></thead><tbody><tr><td>Clinical handover</td><td>Governance team</td><td><span class="rld-status-pill" style="background:#fff0d8">In review</span></td><td>Review controls</td></tr><tr><td>Reporting guidance</td><td>Quality team</td><td><span class="rld-status-pill" style="background:#d8efdf">Approved</span></td><td>Publish update</td></tr><tr><td>Staffing escalation</td><td>Ward lead</td><td><span class="rld-status-pill" style="background:#fbdde0">Overdue</span></td><td>Confirm owner</td></tr></tbody></table></div></article>
+<article class="rld-library-card"><span class="mono-label">LIST ITEMS / NAVIGATION</span><div class="rld-simple-list"><div class="is-selected">Overview<span>›</span></div><div>Risk registers<span>›</span></div><div>Risk trackers<span>›</span></div><div>Reports<span>›</span></div></div></article>
+<article class="rld-library-card"><span class="mono-label">RICH LIST ITEMS / CONTEXT</span><div class="rld-rich-item"><span class="rld-rich-symbol">!</span><div><strong>Review handover controls</strong><small>Clinical safety · Governance team</small><span class="rld-status-pill" style="background:#fbdde0">Overdue</span></div><span>›</span></div><div class="rld-rich-item"><span class="rld-rich-symbol">✓</span><div><strong>Update reporting guidance</strong><small>Quality improvement · Quality team</small><span class="rld-status-pill" style="background:#d8efdf">Approved</span></div><span>›</span></div></article>
+<article class="rld-library-card"><span class="mono-label">BUTTONS / ACTION HIERARCHY</span><div class="rld-button-samples"><span class="is-primary">Save changes</span><span class="is-secondary">Cancel</span><span class="is-text">View details →</span><span class="is-disabled">Save changes</span></div></article>
+<article class="rld-library-card"><span class="mono-label">DROPDOWNS / FILTERS</span><label class="rld-select-label">Status<select aria-label="Example status filter"><option>All statuses</option><option>In review</option><option>Approved</option><option>Overdue</option></select></label><label class="rld-select-label">Organisation unit<select aria-label="Example organisation unit"><option>Adult Directorate</option><option>Emergency Department</option><option>Critical Care</option></select></label></article>
+<article class="rld-library-card"><span class="mono-label">PILLS / CATEGORIES & SELECTION</span><div class="rld-pill-samples"><span>Clinical safety</span><span>Workforce</span><span>Quality</span><span class="is-picked">Adult Directorate <b>×</b></span><span class="is-picked">In review <b>×</b></span></div></article>
 </div>
 <p><a href="https://www.figma.com/design/nyUSBxEraZceGj87gg5Tuz/design-system" target="_blank" rel="noopener noreferrer">Explore the original design system ↗</a></p>
 </section>
