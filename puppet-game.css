@@ -40,3 +40,5 @@
 @media(prefers-reduced-motion:reduce){
  .puppet-stage .puppet-grab,.puppet-stage .puppet-string{transition:none}
 }
+
+.puppet-stage:focus-visible{outline:3px solid #6d4b8d;outline-offset:4px}
