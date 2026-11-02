@@ -60,17 +60,18 @@
       stage.addEventListener("pointerup",(event)=>{if(event.pointerType!=="mouse")settle()});
       stage.addEventListener("focusin",()=>{target.head=-3;if(!frame)frame=requestAnimationFrame(animate)});
       stage.addEventListener("focusout",settle);
-      // A soft idle motion keeps the marionette alive without a play button.
-      if(!prefersReduced){
-        const idle=()=>{
-          if(!stage.matches(":hover")&&!stage.matches(":focus-within")){
-            const drift=Math.sin(performance.now()/1800)*.55;
-            if(head)head.style.transform=`rotate(${drift}deg)`;
-          }
-          requestAnimationFrame(idle);
-        };
-        requestAnimationFrame(idle);
-      }
+      stage.addEventListener("keydown",(event)=>{
+        const directions={ArrowLeft:[-.55,0],ArrowRight:[.55,0],ArrowUp:[0,-.55],ArrowDown:[0,.55]};
+        const direction=directions[event.key];
+        if(!direction)return;
+        event.preventDefault();
+        const rect=stage.getBoundingClientRect();
+        const fakeEvent={clientX:rect.left+rect.width*(.5+direction[0]),clientY:rect.top+rect.height*(.5+direction[1])};
+        pointerTarget(fakeEvent);
+      });
+      stage.addEventListener("keyup",(event)=>{
+        if(event.key.startsWith("Arrow"))settle();
+      });
     })
     .catch(()=>{mount.innerHTML='<p class="mono-label">The marionette is backstage for a moment.</p>'});
 })();
