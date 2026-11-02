@@ -180,3 +180,114 @@
     max-width:30ch;
   }
 }
+
+/* Final impact slide: concise outcome list paired with a real Flex-in-use photo. */
+.flex-case .fv-impact{
+  display:grid;
+  grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  gap:0;
+  align-items:stretch;
+  padding:0;
+  overflow:hidden;
+  background:#e8e1f1;
+}
+.flex-case .fv-impact-copy{
+  background:#fff;
+  padding:52px 48px;
+}
+.flex-case .fv-impact-head{
+  display:block;
+  margin:0 0 22px;
+}
+.flex-case .fv-impact-head .mono-label{
+  display:block;
+  margin:0 0 14px;
+  color:#6d4793;
+}
+.flex-case .fv-impact h2{
+  max-width:none;
+  margin:0;
+  font-size:clamp(34px,4vw,54px);
+  line-height:1.05;
+  letter-spacing:-.04em;
+}
+.flex-case .fv-impact .fv-metrics{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+  margin:0;
+}
+.flex-case .fv-impact .fv-metrics>div{
+  display:grid;
+  grid-template-columns:minmax(100px,.42fr) 1fr;
+  align-items:baseline;
+  gap:12px;
+  min-height:0;
+  padding:10px 0;
+  background:transparent;
+  border:0;
+  border-bottom:1px solid #e4dfea;
+  border-radius:0;
+}
+.flex-case .fv-impact .fv-metrics strong{
+  color:#29242f;
+  font-size:clamp(21px,2.1vw,27px);
+  line-height:1.2;
+  letter-spacing:-.03em;
+  font-weight:700;
+}
+.flex-case .fv-impact .fv-metrics span{
+  margin:0;
+  font-size:15px;
+  line-height:1.35;
+}
+.flex-case .fv-impact-visual{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:44px;
+  min-width:0;
+  background:#e8e1f1;
+}
+.flex-case .fv-impact-visual figure{margin:0}
+.flex-case .fv-impact-visual img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:3/2;
+  object-fit:cover;
+  border-radius:20px;
+}
+.flex-case .fv-impact-visual figcaption{
+  margin-top:12px;
+  color:#605969;
+  font-size:12px;
+  line-height:1.5;
+}
+.flex-case .fv-impact-signals{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+  margin-top:20px;
+}
+.flex-case .fv-impact-signals span{
+  padding:14px 16px;
+  border-radius:14px;
+  background:rgba(255,255,255,.86);
+  color:#49365e;
+  font-size:13px;
+  line-height:1.4;
+}
+@media(max-width:1024px){
+  .flex-case .fv-impact{grid-template-columns:1fr 1fr}
+  .flex-case .fv-impact-copy{padding:36px 30px}
+  .flex-case .fv-impact-visual{padding:30px}
+}
+@media(max-width:760px){
+  .flex-case .fv-impact{grid-template-columns:1fr}
+  .flex-case .fv-impact-copy{padding:32px 24px}
+  .flex-case .fv-impact .fv-metrics>div{grid-template-columns:minmax(100px,.55fr) 1fr}
+  .flex-case .fv-impact .fv-metrics strong{font-size:24px}
+  .flex-case .fv-impact-visual{padding:24px}
+  .flex-case .fv-impact-signals{grid-template-columns:1fr}
+}
