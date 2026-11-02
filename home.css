@@ -180,3 +180,4 @@ body:has(.gallery-card:hover) .cursor,body:has(.gallery-card:hover) .cursor-dot,
 body.gallery-dragging,body.gallery-dragging * { cursor:grabbing !important; }
 
 @media(prefers-reduced-motion:reduce) { .gallery-card { transition:none; } }
+\n/* Keep the lead statement prominent before its supporting examples. */\n.portfolio-home .leadership-intro { max-width:900px; margin:-10px 0 12px; font-size:20px; line-height:29px; color:var(--ink-soft); }\n@media (max-width:760px) { .portfolio-home .leadership-intro { margin:-4px 0 8px; font-size:18px; line-height:27px; } }\n
