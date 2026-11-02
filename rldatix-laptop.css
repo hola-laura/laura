@@ -1,19 +1,42 @@
-
-/* RLDatix hero: an explorable product screen, inside a laptop. */
-.rld-laptop{margin:40px auto 0;width:94%;max-width:1160px;color:#605969}
-.rld-laptop-shell{position:relative;margin:0 4%;padding:24px 12px 12px;border-radius:22px 22px 7px 7px;background:linear-gradient(135deg,#38333d,#17151b 65%);box-shadow:0 22px 50px #29242f20}
-.rld-laptop-shell::before{content:"";position:absolute;top:10px;left:calc(50% - 3px);width:6px;height:6px;border-radius:50%;background:#625d69;box-shadow:inset 0 0 0 2px #25212b}
-.rld-laptop-screen{aspect-ratio:16/10;overflow:auto;overscroll-behavior-y:contain;background:#fafafb;border-radius:8px;scrollbar-width:thin;scrollbar-color:#98909f #edf0f1;outline-offset:5px}
+/* Sculpted product laptop; the portfolio typography and palette are unchanged. */
+.rld-laptop{margin:44px auto 0;width:94%;max-width:1160px;color:#605969;isolation:isolate}
+.rld-laptop-hardware{position:relative;padding-bottom:14px}
+.rld-laptop-hardware::after{content:"";position:absolute;z-index:-1;bottom:0;left:7%;width:86%;height:30px;border-radius:50%;background:#29242f28;filter:blur(18px)}
+.rld-laptop-shell{position:relative;margin:0 5%;padding:22px 10px 12px;border:1px solid #716879;border-radius:22px 22px 7px 7px;background:linear-gradient(125deg,#38333d,#17151b 35%,#29242f 80%,#38333d);box-shadow:inset 0 0 0 2px #17151b,inset 0 0 0 3px #ffffff0a}
+.rld-laptop-shell::before{content:"";position:absolute;top:8px;left:calc(50% - 3px);width:6px;height:6px;border-radius:50%;background:#17151b;box-shadow:inset 0 0 0 1px #605969,0 0 0 3px #17151b}
+.rld-laptop-shell::after{content:"";pointer-events:none;position:absolute;inset:1px;border-radius:21px 21px 7px 7px;background:linear-gradient(115deg,#ffffff05,transparent 45%,#ffffff02)}
+.rld-laptop-screen{position:relative;aspect-ratio:16/10;overflow:auto;overscroll-behavior-y:contain;background:#fafafb;border-radius:11px 11px 3px 3px;scrollbar-width:none;outline-offset:5px}
+.rld-laptop-screen::-webkit-scrollbar{display:none}
 .rld-laptop-screen:focus-visible{outline:3px solid #b59bd1}
 .rld-laptop-screen img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:auto;user-select:none;-webkit-user-drag:none}
-.rld-laptop-base{position:relative;height:20px;background:linear-gradient(#dfdbe3 0%,#b7b1bf 60%,#8f879b 100%);border-radius:2px 2px 50% 50% / 2px 2px 14px 14px;box-shadow:0 18px 28px #29242f12}
-.rld-laptop-base::before{content:"";display:block;margin:auto;width:16%;height:7px;background:#a9a1b3;border-radius:0 0 8px 8px}
-.rld-laptop-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px;margin:24px 4% 0;font:13px/1.5 'DM Sans',sans-serif}
-.rld-laptop-controls button{min-height:44px;border:1px solid #cfc4da;border-radius:24px;background:#eee7f4;color:#49365e;padding:10px 18px;font:inherit;cursor:pointer;transition:background .18s,transform .18s}
-.rld-laptop-controls button:hover{background:#e4d8ef;transform:translateY(-1px)}
+.rld-app-bar{position:sticky;top:0;z-index:2;aspect-ratio:1261.472/74.392;overflow:hidden;background:#187b78}
+.rld-laptop-screen .rld-app-content{margin-top:-5.89724%}
+.rld-laptop-hinge{height:5px;margin:0 5%;background:linear-gradient(90deg,#605969,#17151b 12%,#38333d 50%,#17151b 88%,#605969)}
+.rld-laptop-deck{position:relative;height:clamp(57px,8.4vw,106px);perspective:700px;overflow:hidden;clip-path:polygon(5% 0,95% 0,100% 100%,0 100%);background:linear-gradient(105deg,#38333d,#605969 42%,#38333d 80%)}
+.rld-laptop-deck-plane{position:absolute;top:0;left:5%;width:90%;height:145%;transform-origin:top center;transform:rotateX(54deg);border-radius:0 0 15px 15px;background:linear-gradient(105deg,#38333d,#605969 42%,#38333d 80%);box-shadow:inset 0 1px 0 #ffffff25,inset 0 -1px 1px #17151b,0 2px 0 #17151b;overflow:hidden}
+.rld-laptop-deck-plane::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 0,#187b7833,transparent 65%);opacity:.3;transition:opacity 1.2s}
+.rld-laptop.is-playing .rld-laptop-deck-plane::after{opacity:.8}
+.rld-keyboard{position:absolute;left:12%;top:8%;width:76%;height:48%;display:grid;grid-template-rows:repeat(5,1fr);gap:5%;padding:1.2% 1.5%;border-radius:5px;background:#17151b;box-shadow:0 1px 1px #ffffff18}
+.rld-key-row{display:flex;gap:.6%;min-height:0}
+.rld-key{flex:1;min-width:0;border-radius:2px;background:linear-gradient(#38333d,#29242f);box-shadow:inset 0 1px 0 #ffffff12,0 1px 0 #17151b}
+.rld-key.is-wide{flex:1.6}.rld-key.is-space{flex:7}
+.rld-speaker{position:absolute;top:12%;width:4.5%;height:44%;background-image:radial-gradient(#17151b 28%,transparent 30%);background-size:3px 3px;opacity:.75}
+.rld-speaker-left{left:5%}.rld-speaker-right{right:5%}
+.rld-trackpad{position:absolute;left:35%;top:64%;width:30%;height:29%;border:1px solid #29242f88;border-radius:5px;box-shadow:0 1px 0 #ffffff20}
+.rld-laptop-base{position:relative;height:10px;margin-top:-2px;border-radius:2px 2px 45% 45% / 2px 2px 8px 8px;background:linear-gradient(#605969,#38333d 45%,#17151b);box-shadow:0 2px 1px #17151b40}
+.rld-laptop-base::before{content:"";display:block;margin:auto;width:15%;height:4px;border-radius:0 0 6px 6px;background:#29242f}
+.rld-laptop-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px;margin:26px 5% 0;font:13px/1.5 'DM Sans',sans-serif}
+.rld-laptop-controls button{min-height:44px;border:1px solid #cfc4da;border-radius:24px;background:#eee7f4;color:#49365e;padding:10px 18px;font:inherit;cursor:pointer;transition:background .2s,transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .2s}
+.rld-laptop-controls button:hover{background:#e4d8ef;transform:translateY(-2px);box-shadow:0 5px 14px #6d479310}
+.rld-laptop-controls button:active{transform:scale(.97)}
 .rld-laptop-controls button:focus-visible,.rld-laptop-controls input:focus-visible{outline:3px solid #6d4793;outline-offset:4px}
 .rld-laptop-controls label{display:flex;align-items:center;gap:12px;flex:1;min-width:180px}
 .rld-laptop-controls input{width:100%;min-width:80px;min-height:44px;accent-color:#6d4793;cursor:pointer}
-.rld-laptop-hint{font-size:12px!important;max-width:none!important;margin:12px 4% 0!important;color:#716879!important}
-@media(max-width:600px){.rld-laptop{width:100%}.rld-laptop-shell{margin:0 2%;padding:19px 7px 7px;border-radius:15px 15px 5px 5px}.rld-laptop-shell::before{top:7px;width:5px;height:5px}.rld-laptop-screen{aspect-ratio:4/3;border-radius:5px}.rld-laptop-base{height:13px}.rld-laptop-controls{gap:8px 12px;margin:18px 2% 0}.rld-laptop-controls label{flex-basis:100%}.rld-laptop-hint{margin-inline:2%!important}}
-@media(prefers-reduced-motion:reduce){.rld-laptop-controls button{transition:none}.rld-laptop-controls button:hover{transform:none}}
+.rld-laptop-hint{font-size:12px!important;max-width:none!important;margin:12px 5% 0!important;color:#716879!important}
+.rld-motion-ready .rld-reveal{transition:opacity .8s cubic-bezier(.2,.7,.2,1),translate .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
+.rld-motion-ready .rld-reveal:not(.is-visible){opacity:0;translate:0 24px}
+.rld-motion-ready .rld-reveal.is-visible{opacity:1;translate:0 0}
+#v3-section-0 .fv-lead-grid article{transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s}
+#v3-section-0 .fv-lead-grid article:hover{transform:translateY(-4px);box-shadow:0 14px 30px #29242f09}
+@media(max-width:600px){.rld-laptop{width:100%;margin-top:32px}.rld-laptop-shell{padding:15px 6px 8px;border-radius:14px 14px 4px 4px}.rld-laptop-shell::before{top:5px;width:4px;height:4px}.rld-laptop-shell::after{border-radius:13px 13px 4px 4px}.rld-laptop-screen{border-radius:7px 7px 2px 2px}.rld-laptop-deck{height:48px}.rld-laptop-deck-plane{transform:rotateX(50deg)}.rld-laptop-base{height:7px}.rld-laptop-controls{gap:8px 12px;margin:18px 2% 0}.rld-laptop-controls label{flex-basis:100%}.rld-laptop-hint{margin-inline:2%!important}.rld-speaker{background-size:2px 2px}}
+@media(prefers-reduced-motion:reduce){.rld-laptop-controls button,.rld-laptop-deck-plane::after,#v3-section-0 .fv-lead-grid article,.rld-motion-ready .rld-reveal{transition:none;transform:none;translate:none}.rld-motion-ready .rld-reveal{opacity:1}}

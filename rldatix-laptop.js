@@ -18,6 +18,7 @@
   const stop = () => {
     cancelAnimationFrame(frame);
     playing = false;
+    root.classList.remove('is-playing');
     play.setAttribute('aria-pressed', 'false');
     sync();
   };
@@ -29,6 +30,7 @@
     const distance = maxScroll() - start;
     if (distance <= 0) return;
     playing = true;
+    root.classList.add('is-playing');
     play.textContent = 'Pause tour';
     play.setAttribute('aria-pressed', 'true');
     const duration = Math.max(2400, 8000 * distance / maxScroll());
@@ -57,8 +59,29 @@
     if (['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(event.key)) stop();
   });
   new IntersectionObserver(entries => { if (!entries[0].isIntersecting) stop(); }).observe(root);
-  screen.querySelector('img').addEventListener('load', sync);
+  screen.querySelectorAll('img').forEach(image => image.addEventListener('load', sync));
   addEventListener('resize', () => { stop(); sync(); });
   reduced.addEventListener('change', stop);
   sync();
+
+  if (!reduced.matches) {
+    const targets = [...document.querySelectorAll('main > section, #v3-section-0 .fv-lead-grid article, .rld-laptop')];
+    document.documentElement.classList.add('rld-motion-ready');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: .06, rootMargin:'0px 0px -24px 0px'});
+    targets.forEach((target, index) => {
+      target.classList.add('rld-reveal');
+      if (target.matches('#v3-section-0 .fv-lead-grid article')) target.style.setProperty('--reveal-delay', (index % 3 * 75) + 'ms');
+      observer.observe(target);
+    });
+    reduced.addEventListener('change', () => {
+      if (reduced.matches) document.documentElement.classList.remove('rld-motion-ready');
+    });
+  }
 })();
