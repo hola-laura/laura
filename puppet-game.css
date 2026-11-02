@@ -1,46 +1,42 @@
-/* Interactive marionette for projects whose full stories are coming soon. */
-.coming-soon-card{position:relative;padding-bottom:58px!important}
-.coming-soon-card .coming-soon-tag{display:inline-flex;align-items:center;gap:8px;margin-top:18px;color:var(--accent);font:500 12px/1 var(--font-mono);letter-spacing:.04em;text-transform:uppercase}
-.coming-soon-tag::after{content:"↗";font:16px/1 var(--font-body);transition:transform .2s ease}
-.coming-soon-card:hover .coming-soon-tag::after,.coming-soon-card:focus-visible .coming-soon-tag::after{transform:translate(3px,-3px)}
-.puppet-game{display:grid;grid-template-columns:minmax(0,.9fr) minmax(300px,1fr);align-items:center;gap:clamp(28px,5vw,72px);margin-top:48px;padding:clamp(22px,4vw,48px);overflow:hidden;border:1px solid rgba(108,75,74,.14);border-radius:30px;background:#f4e4d4;color:#332b3e}
-.puppet-game-copy{position:relative;z-index:1;max-width:430px}
-.puppet-game-copy h3{margin:16px 0 14px;font:500 clamp(26px,3vw,38px)/1.08 var(--font-display);letter-spacing:-.045em}
-.puppet-game-copy>p{margin:0;color:#62534d;font-size:16px;line-height:1.65}
-.puppet-projects{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 14px}
-.puppet-project-choice{min-height:40px;padding:9px 13px;border:1px solid rgba(96,67,56,.22);border-radius:999px;background:rgba(255,255,255,.46);color:#51423b;font:12px/1.2 var(--font-mono);cursor:pointer;transition:background .18s ease,color .18s ease,transform .18s ease,border-color .18s ease}
-.puppet-project-choice:hover{transform:translateY(-2px);border-color:#9c6f59}
-.puppet-project-choice[aria-pressed="true"]{border-color:#6d4b8d;background:#6d4b8d;color:#fff}
-.puppet-story-note{min-height:54px;color:#51423b!important;font-size:14px!important;line-height:1.55!important}
-.puppet-controls{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-top:20px}
-.puppet-play{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 17px;border:0;border-radius:999px;background:#6d4b8d;color:#fff;font:500 14px/1 var(--font-body);cursor:pointer;transition:transform .18s ease,background .18s ease}
-.puppet-play:hover{transform:translateY(-2px);background:#563876}
-.puppet-hint{color:#6b5e57;font:11px/1.5 var(--font-mono)}
-.puppet-art{position:relative;min-width:0;max-width:470px;margin-inline:auto;filter:drop-shadow(0 16px 22px rgba(77,51,36,.12))}
-.puppet-art svg{display:block;width:100%;height:auto;overflow:visible}
-.puppet-grab{transform-box:view-box;transition:transform .56s cubic-bezier(.2,.85,.25,1.2);cursor:grab;touch-action:none}
-.puppet-grab:active{cursor:grabbing}
-.puppet-grab:focus-visible{outline:none;filter:drop-shadow(0 0 5px rgba(105,72,143,.8))}
+/* Project-page marionette. The puppet is shown only after opening a Coming soon project. */
+.puppet-case-page .page{max-width:1180px}
+.puppet-case-header{padding:42px 0 36px;border-top:0;border-bottom:1px solid var(--line)}
+.puppet-case-back{display:inline-flex;align-items:center;gap:10px;margin-bottom:38px;color:var(--accent);font:12px/1.4 var(--font-mono)}
+.puppet-case-back:hover{text-decoration:underline;text-underline-offset:4px}
+.puppet-case-meta{display:block;margin-bottom:16px}
+.puppet-case-header h1{max-width:18ch;margin:0 0 18px;font:500 clamp(42px,6.3vw,76px)/1.02 var(--font-display);letter-spacing:-.045em}
+.puppet-case-header>p{max-width:55ch;margin:0;color:var(--ink-soft);font-size:clamp(18px,2vw,22px);line-height:1.5}
+.puppet-case-header .coming-soon-tag{display:inline-flex;align-items:center;margin-top:26px;padding:9px 13px;border-radius:999px;background:var(--lavender-soft);color:var(--accent);font:11px/1 var(--font-mono);letter-spacing:.04em;text-transform:uppercase}
+.puppet-showcase{display:grid;grid-template-columns:minmax(0,.78fr) minmax(340px,1.22fr);align-items:center;gap:clamp(24px,5vw,72px);margin:44px 0 70px;padding:clamp(24px,4.5vw,54px);overflow:hidden;border:1px solid rgba(108,75,74,.14);border-radius:30px;background:#f4e4d4;color:#332b3e}
+.puppet-story-copy{position:relative;z-index:1;max-width:400px}
+.puppet-story-copy h2{margin:14px 0 14px;font:500 clamp(26px,3.4vw,40px)/1.08 var(--font-display);letter-spacing:-.045em}
+.puppet-story-copy p{margin:0;color:#62534d;font-size:16px;line-height:1.65}
+.puppet-mouse-hint{display:flex;align-items:center;gap:10px;margin-top:24px!important;color:#6d4b8d!important;font:12px/1.5 var(--font-mono)!important}
+.puppet-mouse-hint::before{content:"";width:8px;height:8px;flex:none;border-radius:50%;background:#6d4b8d;box-shadow:0 0 0 5px rgba(109,75,141,.12)}
+.puppet-stage{position:relative;min-width:0;width:100%;max-width:520px;margin:0 auto;overflow:hidden;border-radius:20px;background:rgba(255,255,255,.16);cursor:crosshair;touch-action:pan-y}
+.puppet-stage svg{display:block;width:100%;height:auto;overflow:visible;user-select:none;-webkit-user-select:none}
+.puppet-stage .puppet-grab{transform-box:view-box;transition:filter .2s ease;pointer-events:none}
 #puppet-arm-left{transform-origin:262px 388px}
 #puppet-arm-right{transform-origin:418px 388px}
 #puppet-leg-left{transform-origin:300px 573px}
 #puppet-leg-right{transform-origin:380px 573px}
-#puppet-torso{transform-origin:340px 388px;animation:puppet-sway 4.8s ease-in-out infinite}
-#puppet-head{transform-origin:340px 250px;animation:puppet-head-bob 4.8s ease-in-out infinite}
-.puppet-string{transform-box:fill-box;transform-origin:50% 0;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
-.puppet-art.is-playing .puppet-string:nth-of-type(1){transform:rotate(2deg)}
-.puppet-art.is-playing .puppet-string:nth-of-type(2){transform:rotate(-3deg)}
-.puppet-art.is-playing .puppet-string:nth-of-type(3){transform:rotate(3deg)}
-.puppet-art.is-dancing #puppet-arm-left{animation:puppet-wave-left .72s ease-in-out 2}
-.puppet-art.is-dancing #puppet-arm-right{animation:puppet-wave-right .72s ease-in-out 2}
-.puppet-art.is-dancing #puppet-leg-left{animation:puppet-kick-left .55s ease-in-out 2}
-.puppet-art.is-dancing #puppet-leg-right{animation:puppet-kick-right .55s ease-in-out 2}
-.puppet-game.is-dragging .puppet-grab{transition:none}
-@keyframes puppet-sway{0%,100%{transform:rotate(-.4deg)}50%{transform:rotate(.55deg)}}
-@keyframes puppet-head-bob{0%,100%{transform:rotate(-.6deg)}50%{transform:rotate(.8deg)}}
-@keyframes puppet-wave-left{0%,100%{transform:rotate(0)}45%{transform:rotate(-24deg)}}
-@keyframes puppet-wave-right{0%,100%{transform:rotate(0)}45%{transform:rotate(24deg)}}
-@keyframes puppet-kick-left{0%,100%{transform:rotate(0)}50%{transform:rotate(-8deg)}}
-@keyframes puppet-kick-right{0%,100%{transform:rotate(0)}50%{transform:rotate(8deg)}}
-@media(max-width:760px){.puppet-game{grid-template-columns:1fr;gap:18px;margin-top:32px}.puppet-game-copy{max-width:none}.puppet-art{width:min(100%,400px);grid-row:1}.puppet-game-copy h3{font-size:30px}}
-@media(prefers-reduced-motion:reduce){.puppet-grab,.puppet-string,.puppet-project-choice,.puppet-play,.coming-soon-tag::after{transition:none!important}#puppet-torso,#puppet-head,.puppet-art.is-dancing #puppet-arm-left,.puppet-art.is-dancing #puppet-arm-right,.puppet-art.is-dancing #puppet-leg-left,.puppet-art.is-dancing #puppet-leg-right{animation:none!important}}
+#puppet-torso{transform-origin:340px 388px}
+#puppet-head{transform-origin:340px 250px}
+.puppet-stage .puppet-string{transform-box:fill-box;transform-origin:50% 0;transition:transform .15s ease-out}
+.puppet-stage-caption{position:absolute;right:14px;bottom:13px;padding:7px 10px;border-radius:999px;background:rgba(250,249,246,.84);color:#62534d;font:10px/1.3 var(--font-mono);pointer-events:none}
+.puppet-stage.is-awake .puppet-stage-caption{color:#6d4b8d}
+.puppet-case-footer{display:flex;justify-content:space-between;gap:20px;align-items:center;padding-top:22px;border-top:1px solid var(--line)}
+.puppet-case-footer .mono-label{font-size:11px}
+.puppet-case-footer a{color:var(--accent);font-size:14px}
+.puppet-case-footer a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){
+ .puppet-case-header{padding:24px 0 30px}
+ .puppet-case-back{margin-bottom:28px}
+ .puppet-showcase{grid-template-columns:1fr;gap:14px;margin:28px 0 48px;padding:22px;border-radius:24px}
+ .puppet-stage{grid-row:1;max-width:430px}
+ .puppet-story-copy{max-width:none}
+ .puppet-case-footer{align-items:flex-start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+ .puppet-stage .puppet-grab,.puppet-stage .puppet-string{transition:none}
+}
