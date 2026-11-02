@@ -24,12 +24,12 @@
         const rect=stage.getBoundingClientRect();
         const nx=clamp(((event.clientX-rect.left)/rect.width)*2-1,-1,1);
         const ny=clamp(((event.clientY-rect.top)/rect.height)*2-1,-1,1);
-        target.head=nx*8-ny*1.5;
-        target.torso=nx*2.5;
-        target.leftArm=clamp(-ny*13-nx*9,-24,24);
-        target.rightArm=clamp(-ny*13+nx*9,-24,24);
-        target.leftLeg=clamp(nx*5+ny*2,-10,10);
-        target.rightLeg=clamp(-nx*5+ny*2,-10,10);
+        target.head=nx*13-ny*3;
+        target.torso=nx*4;
+        target.leftArm=clamp(-ny*25-nx*18,-38,38);
+        target.rightArm=clamp(ny*25-nx*18,-38,38);
+        target.leftLeg=clamp(-nx*8+ny*4,-16,16);
+        target.rightLeg=clamp(nx*8+ny*4,-16,16);
         target.leftString=clamp(nx*1.8-ny*1.2,-4,4);
         target.rightString=clamp(nx*1.8+ny*1.2,-4,4);
         stage.classList.add("is-awake");
