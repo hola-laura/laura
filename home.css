@@ -181,3 +181,45 @@ body.gallery-dragging,body.gallery-dragging * { cursor:grabbing !important; }
 
 @media(prefers-reduced-motion:reduce) { .gallery-card { transition:none; } }
 \n/* Keep the lead statement prominent before its supporting examples. */\n.portfolio-home .leadership-intro { max-width:900px; margin:-10px 0 12px; font-size:20px; line-height:29px; color:var(--ink-soft); }\n@media (max-width:760px) { .portfolio-home .leadership-intro { margin:-4px 0 8px; font-size:18px; line-height:27px; } }\n
+
+/* Coming-soon links on the Other projects cards */
+.portfolio-home .coming-soon-card .coming-soon-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin-top: 22px;
+  padding: 10px 14px;
+  border: 1px solid rgba(109, 71, 147, 0.18);
+  border-radius: 999px;
+  background: #f1eaf7;
+  color: #68458c;
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.02em;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.portfolio-home .coming-soon-card .coming-soon-tag::after {
+  content: "↗";
+  font: 600 14px/0.8 var(--font-display);
+  transition: transform 180ms ease;
+}
+
+.portfolio-home .coming-soon-card:hover .coming-soon-tag,
+.portfolio-home .coming-soon-card:focus-visible .coming-soon-tag {
+  transform: translateY(-1px);
+  border-color: rgba(109, 71, 147, 0.34);
+  background: #e9ddf2;
+}
+
+.portfolio-home .coming-soon-card:hover .coming-soon-tag::after,
+.portfolio-home .coming-soon-card:focus-visible .coming-soon-tag::after {
+  transform: translate(2px, -2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-home .coming-soon-card .coming-soon-tag,
+  .portfolio-home .coming-soon-card .coming-soon-tag::after {
+    transition: none;
+  }
+}
