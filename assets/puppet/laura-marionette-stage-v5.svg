@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 690 1280" role="group" aria-labelledby="puppet-title" aria-describedby="puppet-description"><title id="puppet-title">Laura’s interactive marionette</title><desc id="puppet-description">A hand-drawn vector marionette. Drag her limbs or strings with a mouse, or focus a limb and use the arrow keys.</desc><defs>
+<path id="torso" d="M 262 362 C 284 348 312 346 340 350 C 368 346 396 348 418 362 C 436 400 438 460 428 500 C 430 530 424 556 404 566 C 380 574 300 574 276 566 C 256 556 250 530 252 500 C 242 460 244 400 262 362 Z" />
+<path id="thL" d="M 286 548 C 270 552 262 576 262 612 C 262 640 266 664 272 682 C 294 688 322 688 334 682 C 338 658 338 618 334 592 C 330 562 310 546 286 548Z" />
+<path id="shL" d="M 274 702 C 272 730 270 760 268 792 L 332 792 C 330 760 328 730 326 702 C 310 706 290 706 274 702Z" />
+<clipPath id="cT"><use href="#torso" /></clipPath>
+<clipPath id="cTh"><use href="#thL" /></clipPath>
+<clipPath id="cSh"><use href="#shL" /></clipPath>
+<g id="fl"><path d="M0 0 C4 -10 6 -22 4 -34" stroke="#A9C487" stroke-width="5" stroke-linecap="round" fill="none" /><path d="M4 -16 C16 -20 22 -14 20 -8 C12 -8 6 -10 4 -16Z" fill="#7FA060" /><path d="M-2 -6 C-12 -10 -16 -4 -14 2 C-8 2 -3 0 -2 -6Z" fill="#7FA060" /><path d="M-8 -24 C-18 -30 -8 -42 2 -36 C8 -30 4 -22 -8 -24Z" fill="#fff" /><circle cx="8" cy="-26" r="3" fill="#7B2F3B" /><circle cx="12" cy="-18" r="2.4" fill="#7B2F3B" /></g>
+<g id="lf"><path d="M 0 0 C -30 -30 -34 -80 0 -120 C 34 -80 30 -30 0 0Z" fill="#B9B592" /><path d="M 0 -4 L 0 -108 M 0 -36 L -14 -54 M 0 -36 L 14 -54 M 0 -60 L -12 -76 M 0 -60 L 12 -76 M 0 -82 L -7 -94 M 0 -82 L 7 -94" stroke="#F4E4D4" stroke-width="1.6" opacity="0.7" fill="none" stroke-linecap="round" /></g>
+<pattern id="gr" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r="0.6" fill="#5A4030" opacity="0.5" /><circle cx="8" cy="1" r="0.5" fill="#5A4030" opacity="0.4" /><circle cx="11" cy="7" r="0.6" fill="#5A4030" opacity="0.5" /><circle cx="5" cy="9" r="0.5" fill="#fff" opacity="0.6" /><circle cx="1" cy="12" r="0.5" fill="#5A4030" opacity="0.4" /><circle cx="9" cy="11" r="0.5" fill="#fff" opacity="0.6" /></pattern>
+<g id="armUpperL"><path d="M 270 366 C 240 362 202 364 172 372 C 164 388 164 402 172 414 C 202 420 240 418 270 408Z" fill="#C98F68" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" /><path d="M 250 372 C 222 372 196 376 176 382" stroke="#E0AD88" stroke-width="3" opacity="0.6" fill="none" stroke-linecap="round" /></g>\n<g id="armLowerL"><circle cx="160" cy="394" r="9" fill="#C9A04B" stroke="#8C6A2E" stroke-width="1.5" /><circle cx="157" cy="391" r="2.5" fill="#F1D894" /><path d="M 150 376 C 128 374 106 376 86 382 C 80 394 80 404 86 414 C 106 418 128 418 150 414 C 154 402 154 388 150 376Z" fill="#C98F68" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" /><path d="M 140 382 C 122 381 106 383 92 388" stroke="#E0AD88" stroke-width="3" opacity="0.6" fill="none" stroke-linecap="round" /><path d="M 84 382 C 70 377 54 381 44 391 C 38 397 40 405 48 405 C 44 411 48 417 56 415 C 54 421 62 425 70 419 C 74 417 80 415 84 413 Z" fill="#C98F68" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" /><path d="M 50 396 C 58 398 70 400 80 400 M 52 407 C 60 408 70 408 80 407 M 58 416 C 64 415 72 414 80 413" stroke="#A9694A" stroke-width="1" opacity="0.7" fill="none" stroke-linecap="round" /></g>
+<g id="legUpperL"><use href="#thL" fill="#34466B" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" /><g clip-path="url(#cTh)"><g stroke="#7F93C4" stroke-width="1" opacity="0.6"><path d="M 270 578 V 690 M 279 578 V 690 M 288 578 V 690 M 297 578 V 690 M 306 578 V 690 M 315 578 V 690 M 324 578 V 690 M 332 578 V 690" /></g><path d="M 322 580 C 336 600 338 650 332 690 L 345 690 L 345 580Z" fill="#1F2C4A" opacity="0.35" /><path d="M 300 590 C 296 620 300 650 296 680 M 276 600 C 274 630 278 656 280 676" stroke="#FFF3E6" stroke-width="1.3" opacity="0.7" fill="none" stroke-linecap="round" /></g></g>\n<g id="legLowerL"><circle cx="300" cy="695" r="8" fill="#C9A04B" stroke="#8C6A2E" stroke-width="1.5" /><circle cx="297.5" cy="692.5" r="2.2" fill="#F1D894" /><use href="#shL" fill="#34466B" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" /><g clip-path="url(#cSh)"><g stroke="#7F93C4" stroke-width="1" opacity="0.6"><path d="M 276 700 V 792 M 285 700 V 792 M 294 700 V 792 M 303 700 V 792 M 312 700 V 792 M 321 700 V 792 M 330 700 V 792" /></g><path d="M 318 704 C 326 730 328 760 330 792 L 340 792 L 340 704Z" fill="#1F2C4A" opacity="0.35" /><path d="M 296 712 C 292 736 294 760 292 784" stroke="#FFF3E6" stroke-width="1.3" opacity="0.7" fill="none" stroke-linecap="round" /></g><path d="M 268 776 C 290 780 310 780 332 776" stroke="#FFF3E6" stroke-width="1.6" stroke-dasharray="4 3" fill="none" /><path d="M 262 836 C 262 843 268 847 278 847 L 336 847 C 348 847 354 843 352 836Z" fill="#3E2A22" /><path d="M 272 794 L 328 794 C 330 806 336 814 348 824 C 354 832 348 840 336 840 L 278 840 C 264 840 258 830 264 822 C 270 814 272 804 272 794Z" fill="#C4553B" stroke="#FFF3E6" stroke-width="2" stroke-linejoin="round" /><path d="M 276 808 L 326 808" stroke="#FFF3E6" stroke-width="2.2" /><rect x="318" y="803" width="9" height="10" rx="2" fill="#C9A04B" stroke="#8C6A2E" stroke-width="1" /><path d="M 284 822 C 298 818 318 820 332 826" stroke="#E88A70" stroke-width="2" opacity="0.8" fill="none" stroke-linecap="round" /></g>
+</defs>
+
+<ellipse cx="340" cy="1258" rx="100" ry="9" fill="#C9AE94" opacity="0.6" />
+
+<path id="puppet-string-head" d="M 340 0 L 340 504" stroke="#B8523E" stroke-width="1.4" fill="none" class="puppet-string" />
+<path id="puppet-string-left" d="M 150 0 L 62 778" stroke="#B8523E" stroke-width="1.4" fill="none" class="puppet-string" />
+<path id="puppet-string-right" d="M 530 0 L 617 756" stroke="#B8523E" stroke-width="1.4" fill="none" class="puppet-string" />
+
+<g id="puppet-body" transform="translate(0 400)">
+<g id="puppet-upper-arm-left" class="puppet-grab" role="group" tabindex="0" aria-label="Move left upper arm from the shoulder" data-pivot="262,388">
+<use href="#armUpperL" />
+<g id="puppet-arm-left" class="puppet-grab" role="group" tabindex="0" aria-label="Move the left hand; shoulder and elbow follow" data-pivot="160,394"><use href="#armLowerL" />
+<path d="M 98 378 C 94 392 94 404 98 416 L 110 416 C 106 404 106 392 110 378Z" fill="#9DB07A" stroke="#FFF3E6" stroke-width="1.5" />
+<circle cx="103" cy="389" r="1.6" fill="#fff" /><circle cx="103" cy="398" r="1.6" fill="#fff" /><circle cx="103" cy="407" r="1.6" fill="#fff" />
+</g>
+</g>
+<g id="puppet-upper-arm-right" class="puppet-grab" role="group" tabindex="0" aria-label="Move right upper arm from the shoulder" data-pivot="418,388">
+<use href="#armUpperL" transform="translate(680,0) scale(-1,1) rotate(6 262 386)" />
+<g id="puppet-arm-right" class="puppet-grab" role="group" tabindex="0" aria-label="Move the right hand; shoulder and elbow follow" data-pivot="520,383"><use href="#armLowerL" transform="translate(680,0) scale(-1,1) rotate(6 262 386)" /></g>
+</g>
+<g id="puppet-upper-leg-left" class="puppet-grab" role="group" tabindex="0" aria-label="Move left thigh from the hip" data-pivot="300,573">
+<use href="#legUpperL" />
+<g id="puppet-leg-left" class="puppet-grab" role="group" tabindex="0" aria-label="Move the left foot; hip and knee follow" data-pivot="300,695"><use href="#legLowerL" /></g>
+</g>
+<g id="puppet-upper-leg-right" class="puppet-grab" role="group" tabindex="0" aria-label="Move right thigh from the hip" data-pivot="380,573">
+<use href="#legUpperL" transform="translate(680,0) scale(-1,1)" />
+<g id="puppet-leg-right" class="puppet-grab" role="group" tabindex="0" aria-label="Move the right foot; hip and knee follow" data-pivot="380,695"><use href="#legLowerL" transform="translate(680,0) scale(-1,1)" /></g>
+</g>
+<g id="puppet-torso"><use href="#torso" fill="#E0508A" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" />
+<g clip-path="url(#cT)">
+<path d="M 400 360 C 440 420 440 520 410 580 L 460 580 L 460 360Z" fill="#B5316A" opacity="0.4" />
+<use href="#fl" transform="translate(284,424) rotate(-10)" />
+<use href="#fl" transform="translate(272,486) rotate(8)" />
+<use href="#fl" transform="translate(290,540) rotate(-14) scale(0.9)" />
+<use href="#fl" transform="translate(404,422) rotate(14) scale(-1,1)" />
+<use href="#fl" transform="translate(414,486) rotate(-6) scale(-1,1)" />
+<use href="#fl" transform="translate(396,544) rotate(12) scale(-0.9,0.9)" />
+<use href="#fl" transform="translate(326,512) rotate(-6)" />
+<use href="#fl" transform="translate(366,530) rotate(10) scale(-1,1)" />
+<use href="#fl" transform="translate(340,566) rotate(0) scale(0.8)" />
+<path d="M 268 440 C 276 470 272 500 262 530 M 304 490 C 310 520 308 548 300 572 M 392 480 C 388 512 392 542 402 570" stroke="#FFF3E6" stroke-width="1.4" opacity="0.8" fill="none" stroke-linecap="round" />
+<path d="M 252 538 C 300 552 380 552 428 538" stroke="#FFF3E6" stroke-width="1.6" stroke-dasharray="4 3" fill="none" />
+</g>
+<path d="M 304 350 C 320 349 330 350 340 350 C 350 350 360 349 376 350 L 340 466 Z" fill="#C98F68" stroke="#FFF3E6" stroke-width="2" stroke-linejoin="round" />
+<path d="M 318 350 L 362 350 C 356 366 348 374 340 378 C 332 374 324 366 318 350Z" fill="#9E6140" opacity="0.45" />
+<path d="M 318 380 C 326 388 334 386 340 380 C 346 386 354 388 362 380" stroke="#A9694A" stroke-width="1.5" opacity="0.5" fill="none" stroke-linecap="round" />
+<circle cx="262" cy="388" r="5" fill="#C9A04B" stroke="#8C6A2E" stroke-width="1.3" />
+<circle cx="418" cy="388" r="5" fill="#C9A04B" stroke="#8C6A2E" stroke-width="1.3" />
+<circle cx="300" cy="573" r="4" fill="#C9A04B" stroke="#8C6A2E" stroke-width="1" />
+<circle cx="380" cy="573" r="4" fill="#C9A04B" stroke="#8C6A2E" stroke-width="1" />
+
+
+
+
+</g><g id="puppet-head" class="puppet-grab" role="button" tabindex="0" aria-label="Drag the head and neck together" data-pivot="340,350">\n<path d="M 322 302 L 358 302 L 361 338 C 350 346 330 346 319 338 Z" fill="#B77C58" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" />\n<path d="M 322 303 L 358 303 L 359 316 C 348 322 332 322 321 316Z" fill="#9E6140" opacity="0.6" /><path d="M 340 108 C 262 108 234 168 236 236 C 237 286 232 330 250 366 C 270 370 288 350 290 322 L 290 240 L 390 240 L 390 322 C 392 350 410 370 430 366 C 448 330 443 286 444 236 C 446 168 418 108 340 108Z" fill="#8A6B55" opacity="0.94" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" />
+<path d="M 246 300 C 242 330 244 350 252 364 C 266 366 278 356 284 340 C 270 336 256 322 246 300Z" fill="#5E4333" opacity="0.4" />
+
+<path d="M 340 126 C 292 126 272 168 276 212 C 280 256 306 292 340 292 C 374 292 400 256 404 212 C 408 168 388 126 340 126 Z" fill="#C98F68" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" />
+<ellipse cx="306" cy="240" rx="15" ry="9" fill="#C96F5A" opacity="0.28" />
+<ellipse cx="374" cy="240" rx="15" ry="9" fill="#C96F5A" opacity="0.28" />
+<path d="M 316 252 C 326 246 334 248 340 251 C 346 248 354 246 364 252 C 358 264 348 270 340 270 C 332 270 322 264 316 252 Z" fill="#B3261E" />
+<path d="M 316 252 C 328 256 352 256 364 252" stroke="#7E1812" stroke-width="1.2" fill="none" stroke-linecap="round" />
+<path d="M 330 262 C 336 265 344 265 350 262" stroke="#D9594C" stroke-width="1.4" opacity="0.8" fill="none" stroke-linecap="round" />
+
+<path d="M 322 112 C 286 122 266 164 268 214 C 269 240 266 270 258 298 C 282 296 296 276 298 246 C 300 206 306 176 328 150 C 326 136 324 124 322 112Z" fill="#8A6B55" opacity="0.94" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" />
+<path d="M 328 110 C 330 124 334 140 344 154 C 372 166 392 190 396 222 C 398 244 400 278 412 300 C 432 296 440 270 440 236 C 440 170 400 112 328 110Z" fill="#8A6B55" opacity="0.94" stroke="#FFF3E6" stroke-width="2.5" stroke-linejoin="round" />
+<path d="M 398 236 C 400 262 404 284 414 302 C 432 298 440 270 440 240 C 428 244 410 242 398 236Z" fill="#5E4333" opacity="0.45" />
+<path d="M 336 126 C 372 136 408 170 424 230 M 342 132 C 380 148 414 190 428 250 M 316 124 C 290 140 276 180 276 230 M 308 134 C 284 156 272 196 272 244" stroke="#FFF3E6" stroke-width="1.2" opacity="0.3" fill="none" stroke-linecap="round" />
+
+<path d="M 398 198 C 418 190 428 214 416 238 C 410 246 401 242 398 236Z" fill="#A9694A" stroke="#FFF3E6" stroke-width="1.5" />
+<path d="M 406 206 C 416 206 419 220 413 231" stroke="#8E5238" stroke-width="2" fill="none" stroke-linecap="round" />
+
+<g transform="translate(409,245)"><circle cx="0" cy="-2" r="2.6" fill="#C9A04B" /><path d="M -3 6 C -16 4 -24 10 -22 16 C -26 20 -20 28 -14 26 C -12 32 -6 34 -2 28 Z" fill="#BCD6E6" /><path d="M 3 6 C 16 4 24 10 22 16 C 26 20 20 28 14 26 C 12 32 6 34 2 28 Z" fill="#BCD6E6" /><path d="M 0 2 C 8 12 8 28 0 40 C -8 28 -8 12 0 2Z" fill="#C0392B" /><path d="M -4 16 L 0 24 L 4 16" stroke="#FBE9E0" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><path d="M -3 34 L 0 38 L 3 34" stroke="#BCD6E6" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round" /></g>
+
+<path d="M 264 218 L 264 226" stroke="#C9A04B" stroke-width="1.2" />
+<circle cx="264" cy="217" r="3" fill="#C9A04B" />
+<g fill="#EEE6DC" stroke="#D2C5B6" stroke-width="0.8"><circle cx="264" cy="230" r="5.6" /><circle cx="264" cy="242" r="4" /><circle cx="264" cy="252" r="3.6" /><circle cx="264" cy="262" r="3.6" /><circle cx="264" cy="271" r="3.2" /><circle cx="264" cy="279" r="3" /><circle cx="264" cy="287" r="3" /><circle cx="264" cy="295" r="2.8" /></g>
+
+</g><circle id="puppet-anchor-head" cx="340" cy="104" r="4" fill="none" stroke="#8C6A2E" stroke-width="1.6" />
+<circle id="puppet-anchor-left" cx="62" cy="378" r="3.5" fill="none" stroke="#8C6A2E" stroke-width="1.6" />
+<circle id="puppet-anchor-right" cx="617" cy="356" r="3.5" fill="none" stroke="#8C6A2E" stroke-width="1.6" />
+</g>
+<path class="puppet-string-hit" data-puppet-part="puppet-head" d="M 340 0 L 340 404" />
+<path class="puppet-string-hit" data-puppet-part="puppet-arm-left" d="M 150 0 L 62 678" />
+<path class="puppet-string-hit" data-puppet-part="puppet-arm-right" d="M 530 0 L 617 656" />
+
+</svg>
