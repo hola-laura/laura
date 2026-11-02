@@ -10,7 +10,27 @@
 :is(#v3-section-0,#v3-section-1) .fv-lead-grid p{margin:0;max-width:none;font-size:17px;line-height:1.55;color:#493f52}
 @media(max-width:760px){:is(#v3-section-0,#v3-section-1) .fv-lead-grid{grid-template-columns:1fr;gap:12px}:is(#v3-section-0,#v3-section-1) .fv-lead-grid article{padding:22px 24px}}
 #v3-section-1 .fv-lead-grid h3{margin:0 0 14px;font-size:21px;line-height:1.3}
-</style><link rel="stylesheet" href="rldatix-laptop.css?v=3"></head><body class="flex-case" id="top"><a class="skip-link" href="#v3-section-0">Skip to case study</a><div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div><div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+</style><link rel="stylesheet" href="rldatix-laptop.css?v=3"><style>
+.rld-audit-gallery{display:grid;grid-template-columns:1.55fr 1fr;gap:24px;margin:36px 0 0}
+#v3-section-1 .rld-audit-card{margin:0;min-width:0}
+.rld-audit-stage{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;padding:10%;box-sizing:border-box;width:100%;background:#f1f0f3;border-radius:24px;overflow:hidden;border:1px solid #e9e5ed;isolation:isolate}
+.rld-audit-card-backlog .rld-audit-stage{aspect-ratio:auto;height:100%}
+.rld-audit-paper{position:relative;display:block;flex:none;width:100%;overflow:hidden;background:white;border-radius:7px;box-shadow:0 12px 26px #29242f14,0 1px 4px #29242f08;transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s}
+.rld-audit-map{aspect-ratio:1310/878}
+.rld-audit-backlog{aspect-ratio:733/744}
+#v3-section-1 .rld-audit-paper img{position:absolute;display:block;height:auto;max-height:none;max-width:none;aspect-ratio:auto;margin:0;border-radius:0}
+#v3-section-1 .rld-audit-map img{width:167.93893%;left:-5.57252%;top:-8.31435%}
+#v3-section-1 .rld-audit-backlog img{width:300.13643%;left:-190.04093%;top:-56.45161%}
+.rld-audit-stage:hover .rld-audit-paper,.rld-audit-stage:focus-visible .rld-audit-paper{transform:translateY(-4px) scale(1.015);box-shadow:0 20px 36px #29242f1c,0 2px 6px #29242f08}
+.rld-audit-open{position:absolute;right:16px;bottom:14px;background:#fff;color:#605969;border:1px solid #e3dce9;border-radius:20px;padding:7px 11px;font:11px/1.4 'DM Sans',sans-serif;opacity:0;translate:0 4px;transition:opacity .25s,translate .25s}
+.rld-audit-stage:hover .rld-audit-open,.rld-audit-stage:focus-visible .rld-audit-open{opacity:1;translate:0 0}
+.rld-audit-card figcaption{margin:16px 2px 0;line-height:1.5}
+.rld-audit-card figcaption strong{display:block;font-size:16px;font-weight:700;color:#29242f}
+.rld-audit-card figcaption>span{display:block;margin-top:4px;font-size:13px;color:#605969}
+.rld-audit-card{display:grid;grid-template-rows:1fr auto;min-width:0}
+@media(max-width:760px){.rld-audit-gallery{grid-template-columns:1fr;gap:28px}.rld-audit-card-backlog .rld-audit-stage{aspect-ratio:4/3;height:auto}.rld-audit-backlog{width:64%}.rld-audit-open{opacity:1;translate:0 0}}
+@media(prefers-reduced-motion:reduce){.rld-audit-paper,.rld-audit-open{transition:none}.rld-audit-stage:hover .rld-audit-paper,.rld-audit-stage:focus-visible .rld-audit-paper{transform:none}}
+</style></head><body class="flex-case" id="top"><a class="skip-link" href="#v3-section-0">Skip to case study</a><div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div><div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
 <div class="page case-page"><nav class="nav" aria-label="Main navigation"><a class="nav-logo nav-logo-back" href="index.html" aria-label="Laura — home"><span aria-hidden="true">←</span><img class="nav-wordmark" src="assets/laura-wordmark.svg" alt="" width="90" height="28"></a><ul class="nav-links"><li><a href="index.html#work">All work</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav>
 
 <main>
@@ -27,7 +47,10 @@
 <section class="cx-full" id="v3-section-1"><span class="mono-label">THE CHALLENGE</span>
 <h2>Every product had its own way of doing things</h2>
 <p>Navigation changed from screen to screen. Menus disappeared mid-task. Search behaved differently depending on where you were. For people working through a pandemic, that meant spending effort on the software instead of the job.</p>
-<div class="fv-lead-grid"><article><h3>Getting lost</h3><p>Similar screens and mixed navigation levels made it hard to know where you were.</p></article><article><h3>Not trusting it</h3><p>Unclear feedback and vanishing menus interrupted tasks and left people unsure what had happened.</p></article><article><h3>Solving it twice</h3><p>Without a shared foundation, teams fixed the same design problems separately.</p></article></div><figure class="cx-figure"><button class="fv-zoom" type="button" aria-label="Enlarge: Original audit of the legacy risk-management journey"><img src="assets/rldatix/risk-audit.webp" alt="Original risk-management journey map with annotated legacy screens and an enhancement backlog" loading="lazy" width="2200" height="1238"></button><figcaption>Mapping the legacy journey with the team: navigation problems, interrupted tasks and the changes to prioritise.</figcaption></figure>
+<div class="fv-lead-grid"><article><h3>Getting lost</h3><p>Similar screens and mixed navigation levels made it hard to know where you were.</p></article><article><h3>Not trusting it</h3><p>Unclear feedback and vanishing menus interrupted tasks and left people unsure what had happened.</p></article><article><h3>Solving it twice</h3><p>Without a shared foundation, teams fixed the same design problems separately.</p></article></div><div class="rld-audit-gallery" aria-label="Original research artefacts">
+<figure class="cx-figure rld-audit-card"><button class="fv-zoom rld-audit-stage" type="button" aria-label="Enlarge the complete original journey audit"><span class="rld-audit-paper rld-audit-map"><img src="assets/rldatix/risk-audit.webp" alt="Original annotated risk-management journey audit" width="2200" height="1238" loading="lazy"></span><span class="rld-audit-open" aria-hidden="true">View original ↗</span></button><figcaption><strong>Mapping the existing journey</strong><span>Legacy screens, navigation and points of friction.</span></figcaption></figure>
+<figure class="cx-figure rld-audit-card rld-audit-card-backlog"><button class="fv-zoom rld-audit-stage" type="button" aria-label="Enlarge the complete original audit and issue backlog"><span class="rld-audit-paper rld-audit-backlog"><img src="assets/rldatix/risk-audit.webp" alt="Enhancement backlog from the original risk-management audit" width="2200" height="1238" loading="lazy"></span><span class="rld-audit-open" aria-hidden="true">View original ↗</span></button><figcaption><strong>Turning findings into priorities</strong><span>The issues and enhancements captured with the team.</span></figcaption></figure>
+</div>
 </section>
 <section class="cx-full" id="v3-section-2"><span class="mono-label">BEFORE / AFTER</span>
 <h2>Make the next step easier to see</h2>
