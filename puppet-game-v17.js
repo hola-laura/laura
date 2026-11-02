@@ -168,17 +168,31 @@
       mount.querySelectorAll(".puppet-grab").forEach((element)=>{
         element.addEventListener("keydown",(event)=>{
           const spec=specs[element.id];if(!spec)return;
+          const chain=chains[element.id];
           if(event.key==="Enter"||event.key===" "){
-            event.preventDefault();const angle=setAngle(spec,spec.max>50?22:spec.max>35?18:12);
+            event.preventDefault();
+            if(chain){
+              const target=currentTip(chain);target[0]+=16;
+              solveChain(chain,target);springChainHome(chain,chain.upper.angle||0,chain.lower.angle||0);
+              event.stopPropagation();return;
+            }
+            const angle=setAngle(spec,spec.max>50?22:spec.max>35?18:12);
             springHome(spec,angle);return;
           }
           if(event.key==="ArrowLeft"||event.key==="ArrowRight"){
-            event.preventDefault();setAngle(spec,event.key==="ArrowLeft"?-14:14);
+            event.preventDefault();
+            if(chain){
+              const target=currentTip(chain);target[0]+=(event.key==="ArrowLeft"?-12:12);
+              solveChain(chain,target);event.stopPropagation();return;
+            }
+            setAngle(spec,event.key==="ArrowLeft"?-14:14);
           }
         });
         element.addEventListener("keyup",(event)=>{
           if(event.key.indexOf("Arrow")!==0)return;
-          const spec=specs[element.id];if(spec)springHome(spec,spec.angle||0);
+          const chain=chains[element.id],spec=specs[element.id];
+          if(chain){springChainHome(chain,chain.upper.angle||0,chain.lower.angle||0);event.stopPropagation();}
+          else if(spec)springHome(spec,spec.angle||0);
         });
       });
     })
