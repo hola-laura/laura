@@ -1,0 +1,42 @@
+/* Mountain guide project card. Reuses the Drivo card layout with an interface composition drawn in CSS. */
+.independent-work .mattern-card { margin-top:24px; }
+.mattern-visual { --m-deep:#2f4a3a; --m-mid:#456853; --m-mint:#c8e3c1; --m-bg:#f4f7f1; --m-ink:#2f434d; --m-line:#d5e0e1; position:relative; border-radius:18px; overflow:hidden; background:var(--lavender-soft); min-height:570px; padding:30px 24px; display:grid; align-content:center; container-type:inline-size; }
+.mattern-stack { position:relative; aspect-ratio:1 / .96; font-family:"DM Sans",system-ui,sans-serif; color:var(--m-ink); }
+.m-window { position:absolute; overflow:hidden; border-radius:10px; background:#fff; border:1px solid #2f434d1f; box-shadow:0 18px 30px -16px #332b3e70; }
+.m-bar { display:flex; gap:4px; align-items:center; height:3.6cqw; min-height:14px; padding-inline:2.2cqw; background:#eef0ec; }
+.m-bar i { width:1.1cqw; height:1.1cqw; min-width:5px; min-height:5px; border-radius:50%; background:#c9cec9; }
+.m-site { top:0; left:0; width:80%; }
+.m-site-head { display:flex; justify-content:space-between; align-items:center; padding:1.5cqw 2.6cqw; background:var(--m-deep); color:#f6f9f8; font:800 2.1cqw/1 "Sofia Sans Extra Condensed","Arial Narrow",sans-serif; text-transform:uppercase; letter-spacing:.02em; }
+.m-site-head span { padding:.7cqw 1.1cqw; border-radius:2px; background:var(--m-mint); color:var(--m-ink); font:700 1.25cqw/1 "DM Sans",sans-serif; text-transform:none; letter-spacing:0; }
+.m-hero { position:relative; overflow:hidden; aspect-ratio:1 / .62; padding:4cqw 3cqw; background:linear-gradient(170deg,#8fb7bd 0%,#c9dbd2 56%,#e8ece0 100%); color:#f6f9f8; }
+.m-hero::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg,#2f4a3ae0 8%,#45685388 62%,#45685322); }
+.m-hero svg { position:absolute; left:0; right:0; bottom:0; width:100%; height:62%; }
+.m-hero p { position:relative; margin:0; font:800 6.4cqw/.92 "Sofia Sans Extra Condensed","Arial Narrow",sans-serif; text-transform:uppercase; }
+.m-hero em { display:block; font-style:normal; color:var(--m-mint); }
+.m-panel { display:grid; grid-template-columns:29% 1fr; right:0; top:39%; width:70%; }
+.m-side { display:grid; align-content:start; gap:1.1cqw; padding:2cqw 1.5cqw; background:var(--m-deep); color:#e0e9ea; font-size:1.45cqw; line-height:1.2; }
+.m-side b { margin-bottom:.7cqw; color:#f6f9f8; font:800 1.9cqw/1 "Sofia Sans Extra Condensed","Arial Narrow",sans-serif; text-transform:uppercase; }
+.m-side span:nth-of-type(2) { margin-inline:-.6cqw; padding:.6cqw; border-radius:3px; background:var(--m-mid); color:#fff; font-weight:700; }
+.m-main { display:grid; align-content:start; gap:1cqw; padding:2.2cqw; background:var(--m-bg); }
+.m-main strong { font:800 3.4cqw/1 "Sofia Sans Extra Condensed","Arial Narrow",sans-serif; text-transform:uppercase; }
+.m-row { display:grid; grid-template-columns:auto 1fr auto; gap:1.3cqw; align-items:center; padding:1.1cqw; border:1px solid var(--m-line); border-radius:3px; background:#fff; font-size:1.45cqw; line-height:1.15; }
+.m-row small { font:inherit; color:#5a6f79; font-family:var(--font-mono); font-size:1.2cqw; }
+.m-row i { padding:.3cqw .8cqw; border-radius:99px; background:#dde8d8; font-style:normal; font-family:var(--font-mono); font-size:1.1cqw; }
+.m-save { justify-self:end; padding:.8cqw 1.3cqw; border-radius:2px; background:var(--m-mint); font-size:1.4cqw; font-weight:700; }
+.m-flow { position:absolute; left:0; bottom:0; display:flex; align-items:center; gap:.9cqw; padding:1.5cqw; border-radius:8px; background:#fff; border:1px solid #2f434d1f; box-shadow:0 14px 24px -14px #332b3e70; font-size:1.55cqw; font-weight:700; }
+.m-flow span:not(.m-arrow) { padding:.8cqw 1.1cqw; border-radius:4px; background:#dde8d8; white-space:nowrap; }
+.m-arrow { color:#456853; }
+@media(max-width:1100px) { .mattern-visual { min-height:540px; } }
+@media(max-width:760px) {
+ .mattern-visual { min-height:0; padding:20px 14px; }
+ .m-site-head { font-size:3.2cqw; }
+ .m-site-head span { font-size:2cqw; }
+ .m-hero p { font-size:8.4cqw; }
+ .m-side { font-size:2.1cqw; }
+ .m-side b { font-size:2.6cqw; }
+ .m-main strong { font-size:4.4cqw; }
+ .m-row { font-size:2.1cqw; }
+ .m-row small,.m-row i { font-size:1.7cqw; }
+ .m-save { font-size:2.1cqw; }
+ .m-flow { font-size:2.5cqw; }
+}
