@@ -1,3 +1,5 @@
+/* spending-block.css
+   Styles for the Spending Block project card on the homepage and for its case study (.sb-* classes). */
 
 .sb-hero-art{background:#dfeae4;border-radius:28px;padding:28px 28px 34px;overflow:hidden}
 .sb-hero-art>.mono-label{font-size:10px;display:block;margin-bottom:30px}

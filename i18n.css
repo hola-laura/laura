@@ -1,3 +1,5 @@
+/* i18n.css
+   Style for the EN/ES language pill in the homepage navigation. Behaviour lives in i18n.js. */
 .nav-links:has(.lang-pill){align-items:center}
 .lang-pill{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:4px 14px 4px 4px;border:0;border-radius:999px;background:#eeeae3;color:var(--ink);font:13px/1 var(--font-mono);cursor:pointer;transition:background .2s,box-shadow .2s,transform .28s cubic-bezier(.34,1.56,.64,1);perspective:200px}
 .lang-pill:hover{background:#e3ddd3;transform:translateY(-1px);box-shadow:0 6px 16px rgba(41,36,47,.1)}

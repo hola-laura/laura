@@ -1,3 +1,5 @@
+/* rldatix-showcase.js
+   RLDatix case study: before/after comparison sliders ([data-comparison]). */
 (() => {
  document.querySelectorAll('[data-comparison]').forEach(root => {
   const screen=root.querySelector('[data-compare-screen]');

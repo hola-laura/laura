@@ -1,1 +1,3 @@
+/* case-media.js
+   Case-study lightbox: clicking a .fv-zoom image opens it enlarged in a <dialog>. Used by most case studies. */
 (()=>{const dialog=document.querySelector('.fv-lightbox');if(!dialog)return;let opener;document.querySelectorAll('.fv-zoom').forEach(button=>button.addEventListener('click',()=>{opener=button;const source=button.querySelector('img'),image=dialog.querySelector('img');image.src=source.src;image.alt=source.alt;dialog.classList.toggle('is-landscape',source.naturalWidth>source.naturalHeight);dialog.showModal();}));dialog.querySelector('.fv-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});dialog.addEventListener('close',()=>opener?.focus());})();

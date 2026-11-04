@@ -48,8 +48,26 @@ Navigation and footers are currently plain HTML repeated across pages. For a sit
 5. Check keyboard navigation and the system’s reduced-motion setting when changing animation code.
 6. Run `git diff --check` and `node --check` on any edited JavaScript file before committing.
 
+## Coming-soon projects (UX tarot)
+
+Project cards marked `coming-soon-card` on the homepage open `case-study-financial-health.html` or `case-study-bizum.html`. Those pages show the UX tarot instead of a case study.
+
+- `ux-tarot.js`: the game (situation, draw three cards, read). It draws the geometric card art and follows the site language through `I18n.lang`.
+- `ux-tarot-cards.js`: the deck. Each card has a suit, English and Spanish text (name, advice, warning, something to try this week) and its art. To add a card, add one entry; the card count updates by itself.
+- `ux-tarot.css`: styles, using the portfolio tokens from `styles.css`.
+
+When a project gets its full case study, point its homepage card to the real page and remove `coming-soon-card`.
+
+## What is in the folder
+
+- `index.html`: the homepage. Comments mark each section.
+- `case-study-*.html`: one page per project. `case-study.html` only redirects the old Accepting Recs link.
+- `styles.css`, `case-study.css`, `case-layout.css`, `headings.css`: shared styles. Other `.css` files belong to one page or project; the first lines of each file say which.
+- `script.js`, `i18n.js`, `i18n-es.js`: shared behaviour and the Spanish text.
+- `assets/`: images. Before adding images, resize and use `.webp` where possible; unused images are not removed automatically, so delete the ones a page stops using.
+
 ## Fonts and publishing
 
 The portfolio uses Google Fonts with system fallbacks. Monzo Sans is used by some product mockups, with a fallback when the files are unavailable. Its proprietary files are intentionally ignored by Git; keep them out of commits.
 
-The repository is `hola-laura/work`. Local edits become part of the GitHub version only after committing and pushing them. Project-level Codex preferences live separately in `.codex/config.toml`; they do not affect the website.
+The repository is `hola-laura/laura`. Local edits become part of the GitHub version only after committing and pushing them. Project-level Codex preferences live separately in `.codex/config.toml`; they do not affect the website.

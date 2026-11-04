@@ -1,3 +1,5 @@
+/* flex.css
+   Flex case-study styles (.flex-*), plus the shared case-study components (.fv-*) that most case studies reuse: hero, stats, screens, lightbox. Loaded on the homepage for the Flex card. */
 
 .flex-home-card{display:grid;text-decoration:none;color:inherit}
 .flex-home-card .card-media{padding:0;background:#e8f0eb;overflow:hidden;min-height:360px}

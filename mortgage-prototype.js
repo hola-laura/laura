@@ -1,3 +1,5 @@
+/* mortgage-prototype.js
+   Interactive mortgage prototype on the Homeownership case study: tabs switch between Figma screens, hotspots navigate between them. English and Spanish copy sit side by side through c(en, es). */
 (() => {
   const root = document.querySelector('[data-prototype-gallery]');
   if (!root) return;

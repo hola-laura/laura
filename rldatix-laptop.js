@@ -1,3 +1,5 @@
+/* rldatix-laptop.js
+   RLDatix case study: the scrolling laptop tour ([data-laptop-tour]) with play, reset and a position slider. Respects reduced motion. */
 (() => {
   const root = document.querySelector('[data-laptop-tour]');
   if (!root) return;
