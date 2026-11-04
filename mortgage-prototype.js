@@ -32,8 +32,7 @@
     +spot(73,78.3,19,4.5,c('Open adviser chat','Abrir chat del asesor'),'chat')
     +spot(3.5,6.2,13,5.3,c('Go back','Volver'),'tracker-back'));
   const recommendationDetail = () => frame('recommendation-redacted.png',c('Figma mortgage recommendation with lender and figures anonymised','Recomendación hipotecaria Figma con entidad y cifras anonimizadas'),
-    spot(7.8,92.9,84,4.1,c('Continue to next step','Continuar'),'recommendation-ready')
-    +spot(3.5,4.1,13,5,c('Go back to recommendation','Volver a la recomendación'),'recommendation-ready'));
+    spot(3.5,4.1,13,5,c('Go back to recommendation','Volver a la recomendación'),'recommendation-ready'));
   const intercom = () => frame('intercom-redacted.png',c('Figma in-app mortgage chat with adviser anonymised','Chat hipotecario de Figma con el asesor anonimizado'),
     spot(15,30.5,80,7,c('Review mortgage recommendations','Revisar recomendaciones'),'recommendation-detail')
     +spot(3.5,5,13,5.5,c('Go back','Volver'),'chat-back'));
@@ -88,10 +87,5 @@
     const button=event.target.closest('[data-proto-action]');if(button)return navigate(button.dataset.protoAction);
     if(event.target.classList.contains('mg-figma-cover')&&event.target.closest('.mg-figma-adviser-redaction'))return navigate('chat');
   });
-  root.querySelectorAll('[data-audience]').forEach(button=>button.addEventListener('click',()=>{
-    const connected=button.dataset.audience==='connected';
-    root.querySelectorAll('[data-audience]').forEach(item=>{const selected=item===button;item.classList.toggle('is-selected',selected);item.setAttribute('aria-pressed',String(selected));});
-    root.querySelector('[data-audience-outcome]').textContent=c(connected?'Prioritise connected customers and keep improving their in-app journey.':'Keep the broader Homeownership open-market route paused while the connected journey has the stronger conversion.',connected?'Priorizar a los clientes conectados y seguir mejorando su experiencia en la app.':'Mantener en pausa la vía abierta de Homeownership mientras la conversión sea mayor entre los clientes conectados.');
-  }));
   render();
 })();

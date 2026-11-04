@@ -144,3 +144,35 @@
   .mortgage-case .fv-impact .fv-metrics span{max-width:none;margin:0;font-size:13px}
   .mortgage-case .fv-impact .fv-source-note{padding-top:14px;border-top:1px solid rgba(75,98,86,.18)}
 }
+
+/* Extended remortgage timeline and staged Habito integration. */
+.mg-timeline{margin:26px 0 48px;padding:clamp(24px,5vw,54px);border-radius:28px;background:#f3f0f6}
+.mg-timeline-heading{display:grid;grid-template-columns:minmax(210px,.65fr) 1fr;gap:24px;align-items:start;margin-bottom:34px}
+.mg-timeline-heading .mono-label{color:#69527f}
+.mg-timeline-heading h2{font-size:clamp(27px,4vw,46px);line-height:1.08;letter-spacing:-.04em;margin:0;max-width:22ch}
+.mg-timeline ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;list-style:none;margin:0;padding:0;border-top:1px solid #d7cddd}
+.mg-timeline li{position:relative;padding:24px 26px 0 0}
+.mg-timeline li:before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:#17a8bd;box-shadow:0 0 0 5px #f3f0f6}
+.mg-timeline li>span{font:11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.03em;color:#65566f}
+.mg-timeline li h3{font-size:19px;line-height:1.25;margin:14px 0 8px;letter-spacing:-.02em}
+.mg-timeline li p{max-width:34ch;margin:0;color:#605969;font-size:14px;line-height:1.55}
+.mg-growth{scroll-margin-top:24px}
+.mg-growth-steps{margin-bottom:8px}
+.mg-integration{margin-top:74px}
+.mg-integration-notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-self:center}
+.mg-integration-notes article{height:100%;padding:22px;background:#f3f0f6;border-radius:20px}
+.mg-integration-notes .mono-label{font-size:10px;color:#69527f}
+.mg-integration-notes h3{font-size:18px;line-height:1.2;margin:16px 0 9px;letter-spacing:-.02em}
+.mg-integration-notes p{font-size:14px;line-height:1.55;color:#605969;margin:0}
+@media(max-width:760px){
+ .mg-timeline{padding:24px;margin:20px 0 38px}
+ .mg-timeline-heading{grid-template-columns:1fr;gap:12px;margin-bottom:24px}
+ .mg-timeline ol{grid-template-columns:1fr;border-top:0;border-left:1px solid #d7cddd;margin-left:5px}
+ .mg-timeline li{padding:0 0 25px 23px}
+ .mg-timeline li:before{top:4px;left:-5px}
+ .mg-timeline li h3{margin-top:9px}
+ .mg-integration-notes{grid-template-columns:1fr}
+ .mg-integration{margin-top:52px}
+}
+
+@media(max-width:980px){.mg-integration-notes{grid-template-columns:1fr}}

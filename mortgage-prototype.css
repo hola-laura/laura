@@ -175,17 +175,7 @@
 .mg-f-education button{display:flex;flex-direction:column;justify-content:space-between;gap:8px;flex:none;width:42%;min-height:112px;border:0;border-radius:14px;background:#f0f7f2;padding:11px;text-align:left;color:#687780;font:10px/1.35 'DM Sans',Arial,sans-serif}
 .mg-f-education button span{font-size:32px;color:#00889f}
 .mg-proto-phone-caption{font:10px/1.5 var(--font-mono);color:#68736e;text-align:center}
-.mg-open-decision{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0 0;padding:28px;background:#eee8f4;border-radius:22px}
-.mg-open-decision h3{font-size:23px;line-height:1.2;letter-spacing:-.025em;margin:14px 0 10px}
-.mg-open-decision p{font-size:14px;line-height:1.55;color:#605969;margin:0;max-width:58ch}
-.mg-audience-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-self:center}
-.mg-audience-options button{display:flex;flex-direction:column;gap:8px;text-align:left;min-height:126px;padding:16px;border:1px solid #d0c7d8;border-radius:16px;background:#fff;color:#43394a;cursor:pointer}
-.mg-audience-options button.is-selected{border:2px solid #64487f;background:#faf8fc;padding:15px}
-.mg-audience-options span{font-size:11px;line-height:1.4}
-.mg-audience-options strong{font-size:18px}
-.mg-audience-options small{font-size:10px;color:#6f6874}
-.mg-audience-outcome{grid-column:1/-1;padding-top:16px;border-top:1px solid #d9d1df}
-@media(max-width:760px){.mg-prototypes{padding-top:48px}.mg-proto-panel{grid-template-columns:1fr;gap:24px;padding:20px;min-height:0}.mg-proto-copy h3{font-size:30px}.mg-phone{width:min(100%,360px)}.mg-open-decision{grid-template-columns:1fr;padding:22px}.mg-audience-options{grid-template-columns:1fr 1fr}.mg-proto-tabs{gap:6px}.mg-proto-tabs button{font-size:11px;padding:10px 12px}}
+@media(max-width:760px){.mg-prototypes{padding-top:48px}.mg-proto-panel{grid-template-columns:1fr;gap:24px;padding:20px;min-height:0}.mg-proto-copy h3{font-size:30px}.mg-phone{width:min(100%,360px)}.mg-proto-tabs{gap:6px}.mg-proto-tabs button{font-size:11px;padding:10px 12px}}
 @media(prefers-reduced-motion:reduce){.mg-proto-tabs button{transition:none}}
 
 /* The prototype uses the actual exported Figma frames; only personal and financial details are masked. */
