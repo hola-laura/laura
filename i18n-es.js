@@ -293,6 +293,7 @@ window.I18N_ES = {
 "A customer using the Monzo Flex account on a phone, with a Monzo card nearby": "Una clienta usa la cuenta Monzo Flex en el móvil, con una tarjeta Monzo al lado",
 "Before: Try Flex, a better way to pay later": "Antes: Prueba Flex, una forma mejor de pagar más tarde",
 "After: A credit card with Monzo magic": "Después: Una tarjeta de crédito con la magia de Monzo",
+"Before: Try Flex, a better way to pay later": "Antes: Prueba Flex, una forma mejor de pagar después",
 "Original Manage tab with separate payment and purchase-plan actions": "Pestaña Gestionar original con acciones separadas para pagos y planes de compra",
 "An explanation that an extra payment will not reduce the next scheduled payment": "Explicación de que un pago extra no reducirá el siguiente pago programado",
 "Repayment defaults: pay in full, pay the monthly minimum, or choose each time": "Opciones de pago por defecto: pagar el total, pagar el mínimo mensual o elegir cada vez",
