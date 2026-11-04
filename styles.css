@@ -134,6 +134,7 @@
 
   /* The portfolio has its own type; product mockups retain their brand fonts. */
   --font-display: "DM Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-heading: "Libre Baskerville", Georgia, "Times New Roman", serif;
   --font-body:    "DM Sans", system-ui, -apple-system, Segoe UI, sans-serif;
   --font-mono:    "Fragment Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
