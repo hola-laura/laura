@@ -1,7 +1,10 @@
 (() => {
   const root = document.querySelector('[data-prototype-gallery]');
   if (!root) return;
-  const t = (copy, values = {}) => window.t ? window.t(copy, values) : copy;
+
+  const es = () => window.I18n?.lang === 'es';
+  const c = (en, esText) => es() ? esText : en;
+  const esc = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const tabs = [...root.querySelectorAll('[data-prototype-tab]')];
   const panel = root.querySelector('[data-prototype-screen]');
   const heading = root.querySelector('[data-prototype-heading]');
@@ -11,140 +14,105 @@
   const dots = root.querySelector('[data-prototype-dots]');
   const previous = root.querySelector('[data-prototype-prev]');
   const next = root.querySelector('[data-prototype-next]');
-  const state = { active: 'tracker', index: 0, ftbQuestion: 0, ftbChoice: '', chatQuestion: '', chatAnswer: '', supportRoute: false };
+  const base = 'assets/mortgages/prototypes/';
+  const state = {active:'tracker', view:'main', factfindExpanded:false, returnTo:'recommendation'};
 
-  const shell = (title, content, kicker = 'Home') => `
-    <div class="mg-phone-screen">
-      <div class="mg-phone-statusbar"><span>9:41</span><span aria-hidden="true">● ● ▰</span></div>
-      <div class="mg-phone-topbar"><button type="button" data-phone-back aria-label="${t('Back to previous screen')}">‹</button><strong>${t(title)}</strong><span></span></div>
-      <div class="mg-phone-kicker">${t(kicker)}</div>
-      ${content}
-    </div>`;
+  const cover = (x,y,w,h,text,bg='#f1f8f3',extra='') => `<span class="mg-figma-cover" style="--x:${x}%;--y:${y}%;--w:${w}%;--h:${h}%;--cover:${bg}" aria-label="${esc(text)}" ${extra}>${text}</span>`;
+  const spot = (x,y,w,h,label,action) => `<button class="mg-figma-spot" type="button" style="--x:${x}%;--y:${y}%;--w:${w}%;--h:${h}%" aria-label="${esc(label)}" data-proto-action="${action}"></button>`;
+  const frame = (src,alt,layers='') => `<div class="mg-phone mg-phone-figma"><img class="mg-figma-image" src="${base}${src}" alt="${esc(alt)}" loading="eager">${layers}</div>`;
 
-  const renderTracker = () => {
-    const timeline = `<section class="mg-phone-card"><span class="mg-phone-pill">● ${t('In progress')}</span><h5>${t('Your application is moving forward')}</h5><p>${t('Your adviser has sent your application to the lender. We’ll show the next update here.')}</p><div class="mg-phone-progress"><span></span></div><p>${t('Next update expected soon')}</p><ul class="mg-phone-milestones"><li><i>✓</i><span>${t('Fact-find complete')}</span><small>${t('Done')}</small></li><li><i>✓</i><span>${t('Recommendation reviewed')}</span><small>${t('Done')}</small></li><li class="is-current"><i>•</i><span>${t('Application submitted')}</span><small>${t('Now')}</small></li></ul></section><div class="mg-phone-adviser"><span class="mg-phone-avatar">A</span><span>${t('Your mortgage adviser')}<small>${t('Ask a question about your application')}</small></span><button type="button" data-go-chat>${t('Chat')}</button></div><button class="mg-phone-secondary" type="button" data-go-recommendation>${t('Review recommendation')}</button>`;
-    const detail = `<section class="mg-phone-card"><span class="mg-phone-pill">● ${t('Your timeline')}</span><h5>${t('A clear view of the steps ahead')}</h5><p>${t('We’ll keep your progress up to date as your adviser works with the lender.')}</p><ul class="mg-phone-milestones"><li><i>✓</i><span>${t('Tell us about your mortgage')}</span><small>${t('Complete')}</small></li><li><i>✓</i><span>${t('Review your recommendation')}</span><small>${t('Complete')}</small></li><li class="is-current"><i>•</i><span>${t('Application with the lender')}</span><small>${t('In progress')}</small></li><li><i>4</i><span>${t('Receive the lender’s decision')}</span><small>${t('Next')}</small></li></ul></section><button class="mg-phone-cta" type="button" data-phone-prev>${t('Back to progress')}</button>`;
-    return state.index === 0 ? shell('Mortgage progress', timeline) : shell('Mortgage progress', detail);
+  const tracker = () => frame('tracker.png',c('Original Figma remortgage progress screen','Pantalla original de progreso de Figma'),
+    cover(19.5,42.6,23,2.5,'Example lender')
+    +cover(19.5,56.7,14,2.5,'Lender')
+    +`<span class="mg-figma-cover mg-figma-deal-redaction" aria-label="${c('Mortgage details anonymised','Datos hipotecarios anonimizados')}"><b>${c('Example lender','Entidad de ejemplo')}</b><small>${c('Mortgage details anonymised','Datos hipotecarios anonimizados')}</small><strong>—</strong></span>`
+    +spot(7.5,26.8,35,2.6,c('Open the original timeline','Abrir la cronología original'),'tracker-timeline')
+    +spot(3.5,4.1,13,5,c('Go back','Volver'),'tracker-back'));
+  const trackerTimeline = () => frame('tracker-timeline.png',c('Original Figma timeline sheet with eight remortgage stages','Hoja de cronología original de Figma con ocho etapas'),' '+spot(4.5,27.5,14,5.2,c('Close timeline','Cerrar cronología'),'tracker'));
+  const recommendationReady = () => frame('recommendation-ready.png',c('Original Figma screen showing a mortgage recommendation ready for review','Pantalla original de Figma con una recomendación hipotecaria lista para revisar'),
+    cover(7.7,59.6,84,5.1,c('Your adviser found a deal from 90+ lenders.','Tu asesor encontró una oferta entre más de 90 entidades.'),'#fff')
+    +spot(7.7,66.5,84,5.5,c('Review recommendation','Revisar recomendación'),'recommendation-detail')
+    +spot(69,43,23,3.5,c('See the timeline','Ver cronología'),'tracker-timeline')
+    +spot(73,78.3,19,4.5,c('Open adviser chat','Abrir chat del asesor'),'chat')
+    +spot(3.5,6.2,13,5.3,c('Go back','Volver'),'tracker-back'));
+  const recommendationDetail = () => frame('recommendation.png',c('Original Figma mortgage recommendation detail screen','Pantalla original de detalle de recomendación hipotecaria de Figma'),
+    `<span class="mg-figma-cover mg-figma-bank-redaction" aria-label="${c('Lender logo anonymised','Logotipo de la entidad anonimizado')}">E</span>`
+    +cover(23,17,29,3.1,'£—','#fff')
+    +cover(23.7,20.1,43,1.9,c('Example lender · fixed term','Entidad de ejemplo · tipo fijo'),'#fff')
+    +cover(8,26.4,25,1.8,'—','#fff')
+    +cover(39,26.4,23,1.8,'—','#fff')
+    +cover(62,38.3,26,3.4,c('Included','Incluido'),'#fff')
+    +`<span class="mg-figma-cover mg-figma-adviser-redaction" aria-label="${c('Adviser name and portrait anonymised','Nombre y foto del asesor anonimizados')}"><b>H</b><span>${c('Mortgage expert','Experto hipotecario')}</span></span>`
+    +spot(7.8,92.9,84,4.1,c('Continue to next step','Continuar'),'recommendation-ready')
+    +spot(3.5,4.1,13,5,c('Go back to recommendation','Volver a la recomendación'),'recommendation-ready'));
+  const intercom = () => frame('intercom.png',c('Original Figma in-app mortgage expert conversation','Conversación original de Figma con experto hipotecario en la app'),
+    cover(31,7.1,39,2.4,c('Mortgage expert chat','Chat con experto hipotecario'),'#fff')
+    +`<span class="mg-figma-cover mg-figma-chat-avatar" aria-label="${c('Expert portrait anonymised','Foto del experto anonimizada')}"></span>`
+    +spot(15,30.5,80,7,c('Review mortgage recommendations','Revisar recomendaciones'),'recommendation-detail')
+    +spot(3.5,5,13,5.5,c('Go back','Volver'),'chat-back'));
+  const buyer = () => frame('first-buyer.png',c('Original Figma first-time buyer homeownership dashboard','Panel original de Figma para compradores de primera vivienda'),
+    `<span class="mg-figma-cover mg-figma-buyer-avatar" aria-label="${c('Profile photo anonymised','Foto de perfil anonimizada')}"></span>`
+    +cover(7.8,62.1,33,2.5,c('Your adviser','Tu asesor'),'#fff')
+    +`<span class="mg-figma-cover mg-figma-adviser-avatar" aria-label="${c('Adviser photo anonymised','Foto del asesor anonimizada')}"></span>`
+    +spot(43,38,31,14,c('Open the mortgage fact-find','Abrir el formulario hipotecario'),'factfind-ready')
+    +spot(7.7,67,30,4.7,c('Ask your adviser','Preguntar al asesor'),'chat')
+    +spot(3.5,5.5,13,5.3,c('Go back','Volver'),'tracker-back'));
+  const factfindReady = () => frame('factfind-ready.png',c('Original Figma fact-find preparation screen','Pantalla original de preparación del formulario de Figma'),spot(7.5,90,85,5.5,c('I’m ready','Estoy lista'),'factfind-timeline')+spot(3.5,7,13,5.2,c('Go back to the buyer profile','Volver al perfil de compra'),'buyer'));
+  const factfindTimeline = () => frame(state.factfindExpanded?'factfind-timeline.png':'factfind-timeline-collapsed.png',c('Original Figma remortgage application timeline','Cronología original de la solicitud de cambio de hipoteca de Figma'),
+    state.factfindExpanded
+      ? spot(19,57,33,4.5,c('Hide the three extra steps','Ocultar los tres pasos adicionales'),'factfind-collapse')
+      : spot(18,50.5,34,4.5,c('Show three more steps','Mostrar tres pasos más'),'factfind-expand')
+    +spot(3.5,7,13,5.2,c('Go back to preparation','Volver a la preparación'),'factfind-ready'));
+
+  const screens = {
+    tracker:{status:['Implementation in progress when I left','En implementación cuando dejé el equipo'],heading:['Remortgage progress','Seguimiento del cambio de hipoteca'],description:['The screen and timeline sheet are the original Figma frames. Select “Learn more” inside the tracker to open the eight-step sheet.','La pantalla y la hoja de cronología son los frames originales de Figma. Pulsa «Learn more» en el tracker para abrir las ocho etapas.'],render:()=>state.view==='timeline'?trackerTimeline():tracker()},
+    recommendation:{status:['Design exploration','Exploración de diseño'],heading:['Recommendation ready, then the full offer','Recomendación lista y detalle de la oferta'],description:['Follow the original Figma flow from “Needs action” to the offer details. Personal names and mortgage figures are covered.','Sigue el flujo original de Figma desde «Needs action» hasta el detalle de la oferta. Los nombres y las cifras están cubiertos.'],render:()=>state.view==='detail'?recommendationDetail():recommendationReady()},
+    chat:{status:['Implementation in progress when I left','En implementación cuando dejé el equipo'],heading:['Mortgage help in the right chat','Ayuda hipotecaria en el chat adecuado'],description:['This is the original Intercom screen. Its recommendation button opens the matching offer design.','Esta es la pantalla original de Intercom. El botón de recomendación abre el diseño de la oferta.'],render:intercom},
+    ftb:{status:['Strategy in progress when I left','Estrategia en curso cuando dejé el equipo'],heading:['A homeownership dashboard for first-time buyers','Una vista de compra para quienes compran su primera vivienda'],description:['The original Home-buying vision frame: buyer profile, journey tiles, adviser support and education.','El frame original de la visión Home-buying: perfil, etapas, ayuda del asesor y guías.'],render:buyer},
+    factfind:{status:['Fact-find exploration','Exploración del formulario'],heading:['Prepare before the mortgage fact-find','Prepararse para el formulario hipotecario'],description:['The original Fact-find frames show what to prepare and an expandable Habito application timeline.','Los frames originales de Fact-find muestran qué preparar y una cronología desplegable de la solicitud con Habito.'],render:()=>state.view==='timeline'?factfindTimeline():factfindReady()}
   };
 
-  const renderRecommendation = () => {
-    if (state.index === 0) {
-      const card = `<section class="mg-phone-card"><span class="mg-phone-pill">● ${t('Ready to review')}</span><div style="height:34px"></div><h4>${t('Your recommendation is ready')}</h4><p>${t('Your adviser has found an option for you. Review the details and ask questions before deciding.')}</p><div class="mg-phone-progress"><span style="width:72%;background:#e69b38"></span></div><button class="mg-phone-cta" type="button" data-proto-next>${t('Review recommendation')}</button></section><div class="mg-phone-adviser"><span class="mg-phone-avatar">A</span><span>${t('Your mortgage adviser')}<small>${t('Here to help you decide')}</small></span><button type="button" data-go-chat>${t('Chat')}</button></div>`;
-      return shell('Mortgage', card);
-    }
-    const detail = `<section class="mg-phone-card"><span class="mg-phone-pill">${t('Illustrative example')}</span><h4>${t('Your recommended option')}</h4><p>${t('A summary of the key terms, with the full recommendation available to read.')}</p><div class="mg-phone-summary"><div><strong>${t('Fixed')}</strong><small>${t('Rate type')}</small></div><div><strong>${t('2 years')}</strong><small>${t('Initial period')}</small></div><div><strong>${t('No fee')}</strong><small>${t('Product fee')}</small></div></div><div class="mg-phone-option"><span>${t('Monthly payment')}</span><strong>${t('See full details')}</strong></div><div class="mg-phone-option"><span>${t('Early repayment charge')}</span><strong>${t('View terms')}</strong></div><p>${t('This concept uses sample content. Your adviser would explain how each term applies to you.')}</p><button class="mg-phone-cta" type="button" data-go-chat>${t('Ask my adviser')}</button><button class="mg-phone-secondary" type="button" data-proto-prev>${t('Back to recommendation')}</button></section>`;
-    return shell('Recommendation details', detail);
-  };
-
-  const renderChat = () => {
-    const response = state.chatQuestion ? `<div class="mg-chat-bubble is-customer">${t(state.chatQuestion)}</div><div class="mg-chat-bubble is-adviser">${t(state.chatAnswer)}</div>` : `<div class="mg-chat-bubble is-adviser">${t('Hi, I’m your mortgage adviser. What can I help you with today?')}</div>`;
-    const choices = state.supportRoute
-      ? `<div class="mg-phone-card"><h5>${t('You need bank support')}</h5><p>${t('Mortgage advisers can help with your home loan. For account, card or payment questions, continue to the bank support team.')}</p><button class="mg-phone-cta" type="button" data-support-reset>${t('Return to mortgage chat')}</button></div>`
-      : `<div class="mg-chat-choices"><button type="button" data-chat-question="When will my recommendation be ready?">${t('When will my recommendation be ready?')}</button><button type="button" data-chat-question="What documents will I need?">${t('What documents will I need?')}</button><button type="button" data-support-route>${t('I have a bank account question')}</button></div>`;
-    return shell(state.supportRoute ? 'Bank support' : 'Mortgage chat', `<div class="mg-chat-thread">${response}</div>${choices}`);
-  };
-
-  const renderFtb = () => {
-    if (state.ftbQuestion > 1) {
-      const choice = state.ftbChoice || 'Still exploring';
-      return shell('Your starting point', `<section class="mg-phone-card"><span class="mg-phone-pill">${t('Your journey')}</span><h4>${t('Let’s make the next step clearer')}</h4><p>${t('We’ll tailor guidance to your stage: {stage}. This concept starts with practical prompts before the mortgage advice journey.', {stage:t(choice)})}</p><ul class="mg-phone-milestones"><li class="is-current"><i>1</i><span>${t('Understand your budget')}</span><small>${t('Next')}</small></li><li><i>2</i><span>${t('Prepare for advice')}</span><small>${t('Later')}</small></li><li><i>3</i><span>${t('Track your home purchase')}</span><small>${t('Later')}</small></li></ul><button class="mg-phone-secondary" type="button" data-ftb-reset>${t('Change my answers')}</button></section>`);
-    }
-    const questions = state.ftbQuestion === 0
-      ? {title:'About your situation',question:'Where are you living now?',options:['Renting','Living with family','Tied to a lease agreement']}
-      : {title:'Your home-buying stage',question:'Where are you in your home-buying journey?',options:['I have an offer accepted','I’ve found a property','I’m still exploring']};
-    const selected = state.ftbChoice;
-    const form = `<section class="mg-phone-card"><h5>${t(questions.question)}</h5>${questions.options.map((option,i)=>`<label class="mg-phone-choice"><input type="radio" name="ftb-answer" value="${t(option)}" ${selected===option?'checked':''}><span>${t(option)}</span></label>`).join('')}</section><div class="mg-phone-stepper"><button type="button" data-ftb-next ${selected?'':'disabled'}>${t(state.ftbQuestion===0?'Continue':'See my next steps')}</button></div>`;
-    return shell(questions.title, form);
-  };
-
-  const prototypes = {
-    tracker: {status:'Implementation in progress when I left',heading:'Know what happens next',description:'The next tracker iteration turns brokerage updates into clearer milestones, with a useful action and a route back to the adviser.',steps:[renderTracker,renderTracker]},
-    recommendation: {status:'Design exploration',heading:'Make a complex recommendation easier to act on',description:'Bring the adviser’s recommended option into the app, then give customers a clear route to review the terms and ask for help.',steps:[renderRecommendation,renderRecommendation]},
-    chat: {status:'Implementation in progress when I left',heading:'Put the right human in reach',description:'Mortgage advice and bank support sit close together. Clear context helps customers reach the right team and recover quickly if they choose the wrong route.',steps:[renderChat]},
-    ftb: {status:'Strategy in progress when I left',heading:'Start with the buyer’s stage',description:'An early fact-find concept adapts the next step to the buyer’s situation and readiness, rather than assuming everyone is at the same point.',steps:[renderFtb,renderFtb,renderFtb]}
-  };
-
-  const render = () => {
-    const current = prototypes[state.active];
-    const total = current.steps.length;
-    const index = Math.max(0, Math.min(state.index, total - 1));
-    state.index = index;
-    root.querySelector('#prototype-panel').setAttribute('aria-labelledby', `tab-${state.active}`);
-    tabs.forEach(tab => tab.setAttribute('aria-selected', String(tab.dataset.prototypeTab === state.active)));
-    status.textContent = t(current.status);
-    heading.textContent = t(current.heading);
-    description.textContent = t(current.description);
-    count.textContent = t('Screen {n} of {total}', {n:index + 1, total});
-    previous.disabled = index === 0;
-    next.disabled = index === total - 1;
-    previous.hidden = next.hidden = dots.hidden = state.active === 'ftb';
-    panel.innerHTML = current.steps[index]();
-    dots.innerHTML = current.steps.map((_, i) => `<button type="button" aria-label="${t('Go to screen {n}', {n:i+1})}" aria-current="${i===index}" data-prototype-dot="${i}"></button>`).join('');
-  };
-
-  const setPrototype = (name, screen = 0) => {
-    state.active = name;
-    state.index = screen;
-    if (name === 'chat') {state.chatQuestion = ''; state.chatAnswer = ''; state.supportRoute = false;}
+  function render(){
+    const current=screens[state.active];
+    tabs.forEach(tab=>tab.setAttribute('aria-selected',String(tab.dataset.prototypeTab===state.active)));
+    root.querySelector('#prototype-panel').setAttribute('aria-labelledby',`tab-${state.active}`);
+    status.textContent=c(...current.status);heading.textContent=c(...current.heading);description.textContent=c(...current.description);
+    count.textContent=c('Original Figma frame','Frame original de Figma');
+    previous.hidden=next.hidden=dots.hidden=true;
+    panel.innerHTML=current.render();
+  }
+  function setPrototype(name){state.active=name;state.view='main';state.factfindExpanded=false;render();}
+  function navigate(action){
+    if(action==='tracker-timeline'){state.returnTo=state.active;state.active='tracker';state.view='timeline';}
+    else if(action==='tracker'){state.active='tracker';state.view='main';}
+    else if(action==='tracker-back'){state.active='tracker';state.view='main';}
+    else if(action==='buyer'){state.active='ftb';state.view='main';}
+    else if(action==='chat-back'){state.active=state.returnTo||'recommendation';state.view='main';}
+    else if(action==='recommendation-detail'){state.active='recommendation';state.view='detail';}
+    else if(action==='recommendation-ready'){state.active='recommendation';state.view='main';}
+    else if(action==='chat'){state.returnTo=state.active;state.active='chat';state.view='main';}
+    else if(action==='factfind-ready'){state.active='factfind';state.view='main';}
+    else if(action==='factfind-timeline'){state.active='factfind';state.view='timeline';state.factfindExpanded=false;}
+    else if(action==='factfind-expand'){state.factfindExpanded=true;}
+    else if(action==='factfind-collapse'){state.factfindExpanded=false;}
+    else if(action==='cost'){state.view='cost';}
     render();
-  };
-  const go = delta => {state.index = Math.max(0, Math.min(prototypes[state.active].steps.length - 1, state.index + delta));render();};
-
-  tabs.forEach((tab, i) => {
-    tab.addEventListener('click', () => setPrototype(tab.dataset.prototypeTab));
-    tab.addEventListener('keydown', event => {
-      if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
-      event.preventDefault();
-      const nextIndex = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (i + (event.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length;
-      tabs[nextIndex].focus();
-      tabs[nextIndex].click();
+  }
+  tabs.forEach((tab,index)=>{
+    tab.addEventListener('click',()=>setPrototype(tab.dataset.prototypeTab));
+    tab.addEventListener('keydown',event=>{
+      if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+      event.preventDefault();const i=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:tabs.length-1))%tabs.length;
+      tabs[i].focus();tabs[i].click();
     });
   });
-  previous.addEventListener('click', () => go(-1));
-  next.addEventListener('click', () => go(1));
-  dots.addEventListener('click', event => {const dot=event.target.closest('[data-prototype-dot]');if(dot){state.index=Number(dot.dataset.prototypeDot);render();}});
-
-  panel.addEventListener('click', event => {
-    if (event.target.closest('[data-proto-next]')) return go(1);
-    if (event.target.closest('[data-proto-prev],[data-phone-back]')) return go(-1);
-    if (event.target.closest('[data-go-chat]')) return setPrototype('chat');
-    if (event.target.closest('[data-go-recommendation]')) return setPrototype('recommendation');
-    const question = event.target.closest('[data-chat-question]');
-    if (question) {
-      state.chatQuestion = question.dataset.chatQuestion;
-      state.chatAnswer = /^(When|¿Cuándo)/.test(state.chatQuestion) ? 'Your adviser will update your timeline when the recommendation is ready.' : 'Your adviser will confirm the documents for your circumstances here.';
-      return render();
-    }
-    if (event.target.closest('[data-support-route]')) {state.supportRoute=true;return render();}
-    if (event.target.closest('[data-support-reset]')) {state.supportRoute=false;state.chatQuestion='';state.chatAnswer='';return render();}
-    if (event.target.closest('[data-ftb-reset]')) {state.ftbQuestion=0;state.ftbChoice='';state.index=0;return render();}
-    if (event.target.closest('[data-ftb-next]')) {
-      const selected = panel.querySelector('input[name="ftb-answer"]:checked');
-      if (!selected) return;
-      state.ftbChoice = selected.value;
-      state.ftbQuestion += 1;
-      state.index = state.ftbQuestion;
-      return render();
-    }
+  panel.addEventListener('click',event=>{
+    const button=event.target.closest('[data-proto-action]');if(button)return navigate(button.dataset.protoAction);
+    if(event.target.classList.contains('mg-figma-cover')&&event.target.closest('.mg-figma-adviser-redaction'))return navigate('chat');
   });
-  panel.addEventListener('change', event => {
-    if (event.target.matches('input[name="ftb-answer"]')) {
-      state.ftbChoice = event.target.value;
-      const continueButton = panel.querySelector('[data-ftb-next]');
-      if (continueButton) continueButton.disabled = false;
-    }
-  });
-
-  root.querySelectorAll('[data-audience]').forEach(button => button.addEventListener('click', () => {
-    const connected = button.dataset.audience === 'connected';
-    root.querySelectorAll('[data-audience]').forEach(item => {
-      const selected = item === button;
-      item.classList.toggle('is-selected', selected);
-      item.setAttribute('aria-pressed', String(selected));
-    });
-    root.querySelector('[data-audience-outcome]').textContent = t(connected
-      ? 'Prioritise connected customers and keep improving their in-app journey.'
-      : 'Keep the broader Homeownership open-market route paused while the connected journey has the stronger conversion.');
+  root.querySelectorAll('[data-audience]').forEach(button=>button.addEventListener('click',()=>{
+    const connected=button.dataset.audience==='connected';
+    root.querySelectorAll('[data-audience]').forEach(item=>{const selected=item===button;item.classList.toggle('is-selected',selected);item.setAttribute('aria-pressed',String(selected));});
+    root.querySelector('[data-audience-outcome]').textContent=c(connected?'Prioritise connected customers and keep improving their in-app journey.':'Keep the broader Homeownership open-market route paused while the connected journey has the stronger conversion.',connected?'Priorizar a los clientes conectados y seguir mejorando su experiencia en la app.':'Mantener en pausa la vía abierta de Homeownership mientras la conversión sea mayor entre los clientes conectados.');
   }));
   render();
 })();
