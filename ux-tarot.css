@@ -1,0 +1,109 @@
+/* UX Tarot on the coming-soon pages. Uses the portfolio's own tokens from styles.css (paper, lavender, ink, Libre Baskerville, DM Sans, Fragment Mono). */
+.tarot-page{margin:0;min-height:100vh;overflow-x:hidden;background:var(--bg);color:var(--ink)}
+.tarot-page .page{width:100%;max-width:none;margin:0;padding:0}
+.tarot-main{--t-terra:#c0694c;--t-sage:#8c9e7e;--t-mustard:#d3a64f;
+  position:relative;min-height:100svh;padding:clamp(96px,12vh,140px) clamp(16px,3vw,52px) clamp(48px,8vh,96px);background:var(--bg)}
+.tarot-back{position:absolute;z-index:3;top:34px;left:clamp(20px,3vw,52px);display:inline-flex;align-items:center;gap:10px;color:var(--ink);font:italic 28px/1.2 var(--font-display);letter-spacing:-.04em;text-decoration:none}
+.tarot-back:hover{color:var(--accent)}
+.tarot-title{margin:0 auto;max-width:1100px;text-align:center;font:700 clamp(38px,4.15vw,66px)/1.06 var(--font-display);letter-spacing:-.052em;color:var(--ink)}
+.tarot-title span,.tarot-title em{display:block}
+.tarot-title em{margin-top:2px;color:var(--accent);font-weight:400}
+
+.tarot{position:relative;margin:clamp(28px,5vh,56px) auto 0;max-width:1080px;min-height:600px;display:flex;flex-direction:column;
+  background:var(--lavender-soft);border-radius:var(--radius-lg);padding:clamp(20px,3vw,40px);color:var(--ink);overflow:hidden}
+.tarot-head{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:28px}
+.tarot-step,.tarot-link,.tarot-btn,.slot-label,.tag,.tarot-opt strong,.tarot-count,.try b,.cl{font-family:var(--font-mono);text-transform:uppercase}
+.tarot-step{font-size:12px;letter-spacing:.06em;color:var(--ink-soft)}
+.tarot-link{background:none;border:0;padding:4px 0;cursor:pointer;font-size:12px;letter-spacing:.06em;color:var(--accent);border-bottom:1px solid currentColor}
+.tarot-link:hover{color:var(--ink)}
+.tarot button:focus-visible,.tarot-back:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.tarot-body{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:26px;padding-block:18px;min-width:0}
+.tarot h2{margin:0;font-family:var(--font-heading);font-weight:400;font-size:clamp(26px,2.8vw,38px);line-height:1.15;letter-spacing:-.015em;text-align:center;text-wrap:balance}
+.tarot h2:focus,.tarot h3:focus{outline:none}
+.tarot-txt{margin:0;max-width:52ch;text-align:center;color:var(--ink-soft);font-size:16px;line-height:1.6}
+.tarot-txt.left{text-align:left;max-width:none;margin-top:-14px}
+
+.tarot-btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 24px;border-radius:999px;border:1px solid rgba(105,72,143,.35);background:transparent;color:var(--accent);font-size:12px;line-height:1;letter-spacing:.04em;cursor:pointer;transition:background .18s,color .18s,border-color .18s,transform .18s}
+.tarot-btn:hover{background:#e9ddf2;transform:translateY(-1px)}
+.tarot-btn.primary{background:var(--ink-block);border-color:var(--ink-block);color:#faf9f6}
+.tarot-btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+.tarot-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+/* card art tokens: portfolio palette plus two warm notes from the illustrations */
+.tarot{--a-T:var(--t-terra);--a-I:var(--accent);--a-N:var(--ink-block);--a-O:var(--t-sage);--a-S:var(--lavender);--a-C:#faf6ee;--a-K:var(--ink);--a-M:var(--t-mustard);--a-L:var(--lavender-mid);--card-line:rgba(39,35,44,.28)}
+.fT{fill:var(--a-T)}.fI{fill:var(--a-I)}.fN{fill:var(--a-N)}.fO{fill:var(--a-O)}.fS{fill:var(--a-S)}.fC{fill:var(--a-C)}.fK{fill:var(--a-K)}.fM{fill:var(--a-M)}.fL{fill:var(--a-L)}
+.sT{stroke:var(--a-T)}.sI{stroke:var(--a-I)}.sN{stroke:var(--a-N)}.sO{stroke:var(--a-O)}.sS{stroke:var(--a-S)}.sC{stroke:var(--a-C)}.sK{stroke:var(--a-K)}.sM{stroke:var(--a-M)}.sL{stroke:var(--a-L)}
+.nf{fill:none}.mx{mix-blend-mode:multiply}
+.cs{font-family:var(--font-heading);fill:var(--a-K);text-anchor:middle;letter-spacing:.06em}
+.cn{font-family:var(--font-mono);fill:var(--a-K);text-anchor:middle}
+.cl{font-family:var(--font-mono);fill:var(--a-K);text-anchor:middle;letter-spacing:.2em;opacity:.65}
+
+.tcard{display:block;position:relative;padding:0;border:0;background:none;cursor:pointer;perspective:900px;aspect-ratio:200/310;-webkit-tap-highlight-color:transparent}
+.tcard-inner{position:relative;display:block;width:100%;height:100%;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(calc(var(--flip,0)*180deg + var(--ry,0deg)));transition:transform .85s cubic-bezier(.2,.7,.2,1)}
+.tcard[data-state="up"]{--flip:1;cursor:default}
+.tcard.tilting .tcard-inner{transition:transform .14s ease-out}
+.tface{position:absolute;inset:0;display:block;border-radius:8px;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:0 14px 26px -18px rgba(51,43,62,.65)}
+.tface.front{transform:rotateY(180deg)}
+.tcard.rev .tface.front{transform:rotateY(180deg) rotate(180deg)}
+.tface svg{display:block;width:100%;height:100%;isolation:isolate}
+
+.tarot-deck{position:relative;width:clamp(110px,13vw,150px);aspect-ratio:200/310;margin-bottom:8px}
+.tarot-deck .tcard{position:absolute;inset:0;width:100%;pointer-events:none}
+.tarot-deck .tcard:nth-child(1){transform:rotate(-7deg) translate(-16%,2%)}
+.tarot-deck .tcard:nth-child(2){transform:rotate(5deg) translate(15%,0)}
+
+.tarot-opts{display:grid;gap:10px;width:min(100%,560px)}
+.tarot-opt{display:grid;grid-template-columns:34px 1fr;gap:18px;align-items:center;text-align:left;padding:16px 20px;border:1px solid rgba(105,72,143,.22);border-radius:var(--radius-md);background:var(--surface);color:var(--ink);cursor:pointer;font:inherit;transition:background .18s,border-color .18s,transform .18s}
+.tarot-opt:hover{border-color:var(--accent);background:#fff;transform:translateY(-1px)}
+.tarot-opt strong{display:block;font-weight:500;font-size:12px;line-height:1.4;letter-spacing:.05em;color:var(--accent)}
+.tarot-opt .d{display:block;font-family:var(--font-body);font-size:15px;color:var(--ink-soft)}
+.tarot-opt svg{width:28px;height:28px;fill:var(--accent)}
+
+.tarot-fan{position:relative;width:100%;height:calc(var(--cw)*1.55 + 78px);--cw:clamp(84px,9vw,118px)}
+.pcard{position:absolute;left:50%;top:34px;width:var(--cw);margin-left:calc(var(--cw)/-2);padding:0;border:0;background:none;cursor:pointer;z-index:var(--i);transform-origin:50% 100%;transform:translate(0,0) rotate(0deg);transition:transform .45s cubic-bezier(.2,.7,.2,1);-webkit-tap-highlight-color:transparent}
+.tarot-fan.in .pcard{transform:translate(var(--tx),var(--ty)) rotate(var(--rot)) translateY(var(--lift,0px));transition-delay:calc(var(--i)*22ms)}
+.tarot-fan.in .pcard:hover,.tarot-fan.in .pcard:focus-visible{--lift:-14px;transition-delay:0s;z-index:30}
+.tarot-fan.in .pcard.sel{--lift:-32px;transition-delay:0s;z-index:31}
+.pcard .tface{position:relative;aspect-ratio:200/310}
+.badge{position:absolute;left:50%;bottom:10px;transform:translateX(-50%) scale(0);width:26px;height:26px;border-radius:50%;background:var(--surface);color:var(--ink);display:grid;place-items:center;font:500 13px/1 var(--font-mono);transition:transform .25s;z-index:2}
+.pcard.sel .badge{transform:translateX(-50%) scale(1)}
+.tarot-count{font-size:12px;letter-spacing:.06em;min-height:1.4em;text-align:center;color:var(--ink-soft)}
+
+.tarot-read{width:100%;display:flex;flex-direction:column;gap:26px}
+.read-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.read-top h2{text-align:left}
+.tarot-slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.6vw,40px)}
+.tslot{display:flex;flex-direction:column;gap:12px;min-width:0}
+.slot-label{margin:0;font-size:11px;letter-spacing:.06em;text-align:center;color:var(--ink-soft)}
+.tslot .tcard{width:min(100%,178px);margin-inline:auto}
+.slot-text{visibility:hidden;opacity:0;transform:translateY(8px);transition:opacity .6s .45s,transform .6s .45s,visibility 0s .45s;display:flex;flex-direction:column;gap:8px;text-align:left;margin-top:10px}
+.tslot.on .slot-text{visibility:visible;opacity:1;transform:none}
+.tarot h3{margin:0;font-family:var(--font-heading);font-weight:400;font-size:22px;line-height:1.2;letter-spacing:-.015em}
+.tag{align-self:flex-start;border:1px solid rgba(105,72,143,.3);border-radius:999px;background:#f1eaf7;color:var(--accent);padding:5px 10px;font-size:10px;letter-spacing:.05em}
+.meaning{margin:0;color:var(--ink);font-size:15px;line-height:1.55}
+.try{margin:0;color:var(--ink-soft);font-size:14px;line-height:1.5;border-top:1px solid var(--line);padding-top:8px}
+.try b{display:block;font-weight:400;font-size:10px;letter-spacing:.06em;margin-bottom:3px;color:var(--accent)}
+.tarot-summary{visibility:hidden;opacity:0;transition:opacity .7s .2s;display:flex;flex-direction:column;align-items:center;gap:22px;border-top:1px solid rgba(105,72,143,.22);padding-top:24px;text-align:center}
+.tarot-summary.on{visibility:visible;opacity:1}
+.lead{margin:0;font-family:var(--font-heading);font-style:italic;font-size:clamp(19px,2vw,25px);line-height:1.4;max-width:46ch;text-wrap:balance;color:var(--ink)}
+.tarot-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tarot-page .skip-link:not(:focus){position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.tarot-page .skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;z-index:10;padding:12px;background:var(--bg);color:var(--ink)}
+
+@media(max-width:820px){
+ .tarot-back{top:22px;left:20px;font-size:24px}
+ .tarot-main{padding-top:92px}
+ .tarot-title{font-size:clamp(30px,7.2vw,46px);line-height:1.1}
+ .tarot{min-height:520px;padding:20px 16px 26px}
+ .tarot-fan{height:auto;--cw:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+ .pcard{position:static;width:auto;margin:0;transform:none!important;z-index:auto;border-radius:8px}
+ .pcard.sel{outline:2px solid var(--accent);outline-offset:2px}
+ .tarot-slots{grid-template-columns:minmax(0,1fr);gap:26px}
+ .tslot{display:grid;grid-template-columns:minmax(96px,34%) minmax(0,1fr);column-gap:16px;row-gap:10px;align-items:start}
+ .slot-label{grid-column:1/-1;text-align:left}
+ .tslot .tcard{width:100%;margin:0}
+ .slot-text{margin-top:0}
+ .tarot-opt{padding:14px;gap:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ .tarot *,.tarot *::before{transition-duration:0s!important;transition-delay:0s!important}
+}

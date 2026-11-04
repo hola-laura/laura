@@ -156,6 +156,7 @@ window.I18N_ES = {
 "Understanding mortgage recommendations · Product design case study by Laura Sampedro.": "Entender las recomendaciones hipotecarias · Caso de estudio de diseño de producto de Laura Sampedro.",
 "Skip to project preview": "Saltar a la vista previa del proyecto",
 "<span>Coming soon.</span><em>In the meantime... Make me dance.</em>": "<span>Próximamente.</span><em>Mientras tanto... ¿me haces bailar?</em>",
+"<span>Coming soon.</span><em>In the meantime... play the UX tarot.</em>": "<span>Próximamente.</span><em>Mientras tanto... juega al tarot de UX.</em>",
 "Click and drag the marionette’s strings or limbs with your mouse. Release to let her settle back. You can also focus a limb and use the arrow keys.": "Haz clic y arrastra los hilos o las extremidades de la marioneta con el ratón. Suelta para que vuelva a su sitio. También puedes seleccionar una extremidad y usar las flechas.",
 "<span class=\"puppet-sr-only\">Loading the marionette…</span>": "<span class=\"puppet-sr-only\">Cargando la marioneta…</span>",
 "Bizum project preview": "Vista previa del proyecto Bizum",
