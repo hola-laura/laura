@@ -591,6 +591,8 @@ window.I18N_ES = {
 "The first version asked for altitudes as a list. I replaced it with a chart where he can drag a point, add one, or import a GPX file from his watch.": "La primera versión pedía las altitudes en una lista. La sustituí por un gráfico donde puede arrastrar un punto, añadir uno o importar un archivo GPX de su reloj.",
 "Before": "Antes",
 "After": "Después",
+"Drag a point": "Arrastra un punto",
+"Altitude, point {n} of {total}": "Altitud, punto {n} de {total}",
 "Save with confidence": "Guardar con confianza",
 "Success messages offer a clear choice: keep editing or go back to the list.": "Los mensajes de éxito ofrecen una elección clara: seguir editando o volver a la lista.",
 "Hard to lose work": "Difícil perder trabajo",
