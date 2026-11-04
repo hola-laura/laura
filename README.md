@@ -27,6 +27,10 @@ Open http://127.0.0.1:8765/ and refresh after saving changes. Use the local serv
 - **Occasional doodle visitors:** `doodle-surprises.js`, with appearance styles in `styles.css`.
 - **Shared cursor, scroll reveals and card tilt:** `script.js`.
 
+## Languages
+
+English is the text in the HTML. Spanish lives in `i18n-es.js`, keyed by the English it replaces, and `i18n.js` swaps it in across every page. If you change English copy, update the matching key there or that text stays in English. The switch is the `.lang-pill` on the homepage, styled in `i18n.css`. Product mockups stay in English on purpose.
+
 ## Case studies
 
 Each `case-study*.html` file contains its own story. They load `styles.css`, then `case-study.css`, and a matching page-specific stylesheet where needed. `case-study.js` handles their interactive demonstrations.

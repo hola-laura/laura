@@ -12,8 +12,8 @@
   const sync = () => {
     const percent = maxScroll() ? Math.round(screen.scrollTop / maxScroll() * 100) : 0;
     slider.value = String(percent);
-    slider.setAttribute('aria-valuetext', percent + '% through the dashboard');
-    if (!playing) play.textContent = percent >= 99 ? 'Replay tour' : 'Play tour';
+    slider.setAttribute('aria-valuetext', t('{percent}% through the dashboard',{percent}));
+    if (!playing) play.textContent = percent >= 99 ? t('Replay tour') : t('Play tour');
   };
   const stop = () => {
     cancelAnimationFrame(frame);
@@ -31,7 +31,7 @@
     if (distance <= 0) return;
     playing = true;
     root.classList.add('is-playing');
-    play.textContent = 'Pause tour';
+    play.textContent = t('Pause tour');
     play.setAttribute('aria-pressed', 'true');
     const duration = Math.max(2400, 8000 * distance / maxScroll());
     let started;

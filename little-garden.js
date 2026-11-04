@@ -38,16 +38,16 @@
     if (seed.classList.contains('is-grown')) return;
     seed.classList.add('is-grown');
     seed.setAttribute('aria-disabled', 'true');
-    seed.setAttribute('aria-label', `${seed.dataset.flower}, grown by you`);
+    seed.setAttribute('aria-label', t('{flower}, grown by you',{flower:seed.dataset.flower}));
     grown++;
-    count.textContent = `${seed.dataset.flower} is blooming. ${grown} of ${total} in bloom`;
+    count.textContent = t('{flower} is blooming. {grown} of {total} in bloom',{flower:seed.dataset.flower,grown,total});
     dialog.classList.add('has-started');
     if (grown === total) {
       dialog.classList.add('is-complete');
-      title.textContent = 'Look what you grew.';
-      instruction.textContent = 'A little garden, just for you.';
-      note.textContent = 'Take a breath. Enjoy your little patch of good.';
-      count.textContent = `${total} of ${total} in bloom. Your garden is complete.`;
+      title.textContent = t('Look what you grew.');
+      instruction.textContent = t('A little garden, just for you.');
+      note.textContent = t('Take a breath. Enjoy your little patch of good.');
+      count.textContent = t('{total} of {total} in bloom. Your garden is complete.',{total});
       restart.hidden = false;
     }
   });
@@ -56,9 +56,9 @@
     dialog.classList.remove('is-complete', 'has-started');
     for (const seed of seeds) {
       seed.classList.remove('is-grown'); seed.removeAttribute('aria-disabled');
-      seed.setAttribute('aria-label', `Plant seed ${seed.dataset.seed} of ${total}`);
+      seed.setAttribute('aria-label', t('Plant seed {seed} of {total}',{seed:seed.dataset.seed,total}));
     }
-    count.textContent = `0 of ${total} in bloom`;
+    count.textContent = t('0 of {total} in bloom',{total});
     for (const [element, text] of initialCopy) element.textContent = text;
     restart.hidden = true; seeds[0].focus();
   });

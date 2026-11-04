@@ -7,7 +7,7 @@
    const percent=Math.max(0,Math.min(100,Number(value)));
    screen.style.setProperty('--split',percent+'%');
    range.value=String(percent);
-   range.setAttribute('aria-valuetext',percent+'% legacy and '+(100-percent)+'% current');
+   range.setAttribute('aria-valuetext',t('{a}% legacy and {b}% current',{a:percent,b:100-percent}));
    buttons.forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.compareValue)===percent)));
   };
   range.addEventListener('input',()=>update(range.value));
@@ -28,7 +28,7 @@
    field.setAttribute('aria-invalid',String(state==='error'));
    field.value=state==='error'?'':'Clinical handover consistency';
    field.placeholder='Enter a risk title';
-   message.textContent=state==='error'?'Enter a risk title before saving.':state==='focus'?'A visible focus state keeps the active field clear.':'Clear labels and predictable feedback.';
+   message.textContent=state==='error'?t('Enter a risk title before saving.'):state==='focus'?t('A visible focus state keeps the active field clear.'):t('Clear labels and predictable feedback.');
   }));
  });
  const iconRoot=document.querySelector('.rld-iconwall');
@@ -42,7 +42,7 @@
    const showIcons=button.dataset.iconView==='icons';
    buttons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
    icons.hidden=!showIcons;ui.hidden=showIcons;
-   caption.textContent=showIcons?'Part of the original clinical icon library.':'Original reporting and template-configuration designs.';
+   caption.textContent=showIcons?t('Part of the original clinical icon library.'):t('Original reporting and template-configuration designs.');
   }));
  }
 })();

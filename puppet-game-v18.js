@@ -207,5 +207,5 @@
         });
       });
     })
-    .catch(()=>{mount.innerHTML='<p class="puppet-sr-only">The marionette is backstage for a moment.</p>'});
+    .catch(()=>{mount.innerHTML='<p class="puppet-sr-only">'+t('The marionette is backstage for a moment.')+'</p>'});
 })();

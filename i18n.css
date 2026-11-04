@@ -1,0 +1,7 @@
+.nav-links:has(.lang-pill){align-items:center}
+.lang-pill{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:4px 14px 4px 4px;border:0;border-radius:999px;background:#eeeae3;color:var(--ink);font:13px/1 var(--font-mono);cursor:pointer;transition:background .2s}
+.lang-pill:hover{background:#e3ddd3}
+.lang-pill:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.lang-flag{display:block;width:28px;height:28px;border-radius:50%;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(41,36,47,.12)}
+.lang-flag[hidden]{display:none}
+@media(max-width:760px){.lang-pill{min-height:32px;padding:3px 11px 3px 3px;font-size:12px;gap:6px}.lang-flag{width:26px;height:26px}}

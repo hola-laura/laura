@@ -57,7 +57,7 @@
     order = order.filter(item => item !== card);
     if (top) order.unshift(card); else order.push(card);
     layout();
-    announcement.textContent = 'Photo ' + (cards.indexOf(order[order.length - 1]) + 1) + ' is at the front.';
+    announcement.textContent = t('Photo {n} is at the front.',{n:cards.indexOf(order[order.length - 1]) + 1});
   }
   async function shuffle(card, x = 0, y = 0, angle = 0) {
     if (busy) return;
