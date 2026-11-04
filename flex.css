@@ -291,3 +291,4 @@
   .flex-case .fv-impact-visual{padding:24px}
   .flex-case .fv-impact-signals{grid-template-columns:1fr}
 }
+.page.case-page main>:last-child{border-bottom:0}
