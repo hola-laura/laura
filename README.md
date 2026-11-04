@@ -16,6 +16,7 @@ Open http://127.0.0.1:8765/ and refresh after saving changes. Use the local serv
 
 - **Homepage copy, project cards and contact details:** `index.html`.
 - **Colours, typography, navigation and shared layout:** the `:root` tokens and relevant sections in `styles.css`. Change existing rules instead of adding competing overrides at the bottom.
+- **Title typeface:** `headings.css`, loaded last on every page. It applies Libre Baskerville to all titles from one rule; the font itself is requested in each page's Google Fonts link.
 - **Laura wordmark:** `assets/laura-wordmark.svg`.
 - **Illustrations:** `assets/doodles/`. The navigation and hero reuse the same `flower.svg#drawing`, so one artwork edit updates both. These SVGs also work as standalone images; their `--doodle-*` properties let inline `<use>` instances inherit the site palette.
 - **Garden appearance:** `garden.css`. Only the homepage loads this stylesheet.
