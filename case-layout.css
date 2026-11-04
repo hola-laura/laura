@@ -1,0 +1,28 @@
+/* Shared spacing for every case study. Loads last, so one scale covers all pages:
+   32px inside cards, 72px between sections (48px on phones). */
+.nav-back{display:inline-flex;align-items:center;gap:10px;min-height:44px;font:13px/1.4 var(--font-mono);color:var(--ink)}
+.nav-back:hover{color:var(--accent)}
+
+/* Sections */
+.flex-case main>:is(.fv-story,.cx-full,.mg-section,.sb-workshop,.sb-tradeoffs),.flex-case main>section.fv-story{padding-top:72px;padding-bottom:72px}
+.flex-case .fv-hero{padding-top:48px;padding-bottom:48px}
+.flex-case main>.fv-jump{margin:0;padding:24px 0}
+.flex-case main>.fv-edit{margin-top:0;margin-bottom:72px}
+
+/* Results cards: text never touches the edge, numbers never collide with labels */
+.flex-case .fv-impact:not(:has(.fv-impact-copy)){display:block;padding:40px;overflow:visible;border:0}
+.flex-case .fv-impact:not(:has(.fv-impact-copy)) .fv-impact-head{margin:0 0 28px}
+.flex-case .fv-impact:not(:has(.fv-impact-copy)) .fv-metrics{display:grid;height:auto;min-height:0;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));grid-template-rows:none;grid-auto-rows:auto;align-content:start;gap:12px;margin:0 0 24px}
+.flex-case .fv-impact:not(:has(.fv-impact-copy)) .fv-metrics>div{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:8px;height:auto;min-height:0;padding:20px;text-align:left;background:rgba(255,255,255,.6);border:0;border-radius:16px}
+.flex-case .fv-impact:not(:has(.fv-impact-copy)) .fv-metrics strong{min-width:0;font-size:clamp(28px,3vw,40px);line-height:1.1;letter-spacing:-.03em;font-weight:500;white-space:nowrap}
+.flex-case .fv-impact:not(:has(.fv-impact-copy)) .fv-metrics span{max-width:none;margin:0;font-size:14px;line-height:1.45}
+.flex-case .fv-impact:not(:has(.fv-impact-copy)) .fv-source-note{margin:0;padding:16px 0 0}
+.fv-impact-signals a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+
+@media(max-width:760px){
+  .flex-case main>:is(.fv-story,.cx-full,.mg-section,.sb-workshop,.sb-tradeoffs),.flex-case main>section.fv-story{padding-top:48px;padding-bottom:48px}
+  .flex-case .fv-hero{padding-top:24px;padding-bottom:32px}
+  .flex-case main>.fv-edit{margin-bottom:48px}
+  .flex-case .fv-impact:not(:has(.fv-impact-copy)){padding:24px}
+  .flex-case .fv-impact:not(:has(.fv-impact-copy)) .fv-metrics>div{padding:14px 16px}
+}
