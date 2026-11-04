@@ -13,38 +13,38 @@
       step: ['The deck', 'Step 1 of 3 · Situation', 'Step 2 of 3 · Draw', 'Step 3 of 3 · Read'],
       reset: 'Start over',
       introT: 'The UX Tarot',
-      introP: n => `${n} cards about making products well, drawn from the workshop habits I use with teams. Pick a situation, draw three cards and take one thing to try this week.`,
+      introP: n => `${n} cards about making good products. Pick a situation, draw three cards and take away one thing to try this week.`,
       begin: 'Begin the reading',
       askT: 'What are you working on?',
       sits: [['Starting something', 'A blank page and a hunch'], ['Stuck halfway', 'Moving, but not getting anywhere'], ['Out of sync', 'The team pulls in different directions'], ['Launch is close', 'Almost ready, and a little nervous']],
       leads: ['For the start of something new:', 'For something stalled halfway:', 'For a team out of sync:', 'For a launch that is close:'],
       pickT: 'Choose three cards',
-      pick: n => (n >= 3 ? 'Preparing your reading' : n === 2 ? 'Pick one more' : n === 1 ? 'Pick two more' : 'Pick three cards'),
+      pick: n => (n >= 3 ? 'Preparing your reading' : n === 2 ? 'Pick one more' : n === 1 ? 'Pick two more' : 'Tap a card to choose it'),
       slots: ['Where you stand', 'What to watch', 'Your next move'],
-      hint: 'Turn each card over', turnAll: 'Turn all',
-      up: 'Upright', rev: 'Reversed', tryL: 'Try this week',
+      hint: 'Turn each card over', turnAll: 'Reveal all',
+      up: 'Advice', rev: 'Watch out', tryL: 'Try this week',
       suits: { wild: 'Wild', sun: 'Understand', mtn: 'Direct', sq: 'Make', dia: 'Review', hex: 'Team' },
       readT: 'Your reading', copy: 'Copy reading', copied: 'Copied', again: 'Draw again',
-      sum: (lead, a, b, c) => `${lead} start from ${a}, watch for ${b} and move with ${c}.`,
+      sum: (lead, a, b, c) => `Start with ${a}. Watch out for ${b}. Then try ${c}.`,
       cardN: (i, n) => `Card ${i} of ${n}, face down`, turnN: i => `Turn card ${i} over`, chosen: (i, k) => `Card ${i}, chosen as number ${k}`
     },
     es: {
       step: ['La baraja', 'Paso 1 de 3 · Situación', 'Paso 2 de 3 · Elegir', 'Paso 3 de 3 · Leer'],
       reset: 'Empezar de nuevo',
       introT: 'El Tarot de UX',
-      introP: n => `${n} cartas sobre cómo hacer buenos productos, sacadas de las dinámicas de taller que uso con equipos. Elige una situación, saca tres cartas y llévate algo que probar esta semana.`,
+      introP: n => `${n} cartas sobre cómo hacer buenos productos. Elige una situación, saca tres cartas y llévate algo que probar esta semana.`,
       begin: 'Empezar la lectura',
       askT: '¿En qué estás trabajando?',
       sits: [['Empezando algo', 'Una hoja en blanco y una corazonada'], ['Algo atascado', 'Hay movimiento, pero no se avanza'], ['Sin sintonía', 'El equipo tira en direcciones distintas'], ['Lanzamiento cerca', 'Casi listo y con algo de nervios']],
       leads: ['Para el comienzo de algo nuevo:', 'Para algo atascado a medio camino:', 'Para un equipo que no conecta:', 'Para un lanzamiento cercano:'],
       pickT: 'Elige tres cartas',
-      pick: n => (n >= 3 ? 'Preparando tu lectura' : n === 2 ? 'Elige una más' : n === 1 ? 'Elige dos más' : 'Elige tres cartas'),
+      pick: n => (n >= 3 ? 'Preparando tu lectura' : n === 2 ? 'Elige una más' : n === 1 ? 'Elige dos más' : 'Toca una carta para elegirla'),
       slots: ['Dónde estás', 'Qué vigilar', 'Tu próximo paso'],
-      hint: 'Da la vuelta a cada carta', turnAll: 'Girar todas',
-      up: 'Al derecho', rev: 'Invertida', tryL: 'Prueba esta semana',
+      hint: 'Da la vuelta a cada carta', turnAll: 'Descubrir todas',
+      up: 'Consejo', rev: 'Ojo', tryL: 'Prueba esta semana',
       suits: { wild: 'Comodín', sun: 'Entender', mtn: 'Orientar', sq: 'Hacer', dia: 'Revisar', hex: 'Equipo' },
       readT: 'Tu lectura', copy: 'Copiar lectura', copied: 'Copiada', again: 'Sacar de nuevo',
-      sum: (lead, a, b, c) => `${lead} empieza por ${a}, vigila ${b} y avanza con ${c}.`,
+      sum: (lead, a, b, c) => `Empieza con ${a}. Ojo con ${b}. Después, prueba ${c}.`,
       cardN: (i, n) => `Carta ${i} de ${n}, boca abajo`, turnN: i => `Dar la vuelta a la carta ${i}`, chosen: (i, k) => `Carta ${i}, elegida como número ${k}`
     }
   };
@@ -321,7 +321,7 @@ ${lines.map((l, i) => `<text x="100" y="${ty + i * 15}" font-size="${fs.toFixed(
   }
   function untilt(e) { const c = e.currentTarget; c.style.setProperty('--rx', '0deg'); c.style.setProperty('--ry', '0deg'); setTimeout(() => c.classList.remove('tilting'), 160); }
   function summaryText() {
-    const n = S.read.map(r => txt(r.id)[0] + (r.rev ? ` (${L.rev.toLowerCase()})` : ''));
+    const n = S.read.map(r => txt(r.id)[0]);
     return L.sum(L.leads[S.sit], n[0], n[1], n[2]);
   }
   function fillSummary() {
