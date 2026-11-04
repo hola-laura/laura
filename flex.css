@@ -36,7 +36,7 @@
 .flex-outcomes{display:grid;gap:20px;margin:32px 0}
 .flex-outcomes article{background:#e5eee9;padding:28px;border-radius:20px}
 .flex-outcomes .mono-label{display:block;margin-bottom:16px;font-size:11px}
-.flex-next{margin-top:72px;padding:64px 0;border-top:1px solid #ddd7e4}
+.flex-next{padding:64px 0}
 .flex-next h2{font-size:clamp(28px,4vw,44px);max-width:24ch;margin:20px 0 32px}
 @media(max-width:760px){.flex-home-card .card-media,.flex-home-card .card-media img{min-height:240px}.flex-model{grid-template-columns:1fr}.flex-model-arrow{transform:rotate(90deg);justify-self:center}.flex-callout,.flex-insights article,.flex-outcomes article{padding:22px}.flex-case .cs-meta{gap:24px}.flex-case .cs-hero{padding-bottom:24px}.flex-case .cs-title{font-size:clamp(38px,9vw,64px)}}
 
