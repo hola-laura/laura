@@ -4,3 +4,4 @@
 @media(prefers-reduced-motion:reduce){.cx-chart.is-seen .cx-track>span{animation:none}html{scroll-behavior:auto}}
 
 .fv-hero>.cx-visual{padding:28px;background:#e5ddf0;border-radius:24px}.cx-story>.cx-figure img{max-height:580px}.cx-story>.cx-figure .fv-zoom{max-width:300px;margin:auto}.fv-story-reverse>.cx-visual{grid-column:1;grid-row:1}.cx-story.is-wide .cx-story-figure img{max-height:none}@media(max-width:760px){.fv-story-reverse>.cx-visual{grid-column:auto;grid-row:auto}.fv-hero>.cx-visual{padding:24px}}
+.cx-story.is-tall .fv-zoom{max-width:100%}.cx-story.is-tall .cx-story-figure img{height:620px;max-height:none;object-fit:cover;object-position:top;border-radius:12px;background:#fff}@media(max-width:760px){.cx-story.is-tall .cx-story-figure img{height:440px}}
