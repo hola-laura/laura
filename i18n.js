@@ -87,11 +87,19 @@
       button.setAttribute('aria-label', next === 'es' ? 'Ver la web en español' : 'View this site in English');
       button.lang = lang;
       button.addEventListener('click', () => {
+        if (button.classList.contains('is-switching')) return;
         write(next);
         const url = new URL(location.href);
         url.searchParams.delete('lang');
         history.replaceState(null, '', url);
-        location.reload();
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) { location.reload(); return; }
+        button.classList.add('is-switching');
+        setTimeout(() => {
+          button.querySelector('.lang-flag-es').toggleAttribute('hidden', next !== 'es');
+          button.querySelector('.lang-flag-en').toggleAttribute('hidden', next !== 'en');
+          button.querySelector('.lang-name').textContent = next === 'es' ? 'Español' : 'English';
+        }, 180);
+        setTimeout(() => location.reload(), 400);
       });
     }
   };
