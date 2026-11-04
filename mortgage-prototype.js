@@ -20,22 +20,22 @@
   const spot = (x,y,w,h,label,action) => `<button class="mg-figma-spot" type="button" style="--x:${x}%;--y:${y}%;--w:${w}%;--h:${h}%" aria-label="${esc(label)}" data-proto-action="${action}"></button>`;
   const frame = (src,alt,layers='') => `<div class="mg-phone mg-phone-figma"><img class="mg-figma-image" src="${base}${src}" alt="${esc(alt)}" loading="eager">${layers}</div>`;
 
-  const tracker = () => frame('tracker-anonymised.jpg',c('Figma remortgage progress screen, details anonymised','Pantalla Figma de progreso hipotecario, datos anonimizados'),
+  const tracker = () => frame('tracker-redacted.png',c('Figma remortgage progress screen, details anonymised','Pantalla Figma de progreso hipotecario, datos anonimizados'),
     spot(7.5,26.8,35,2.6,c('Open the original timeline','Abrir la cronología original'),'tracker-timeline')
     +spot(3.5,4.1,13,5,c('Go back','Volver'),'tracker-back'));
   const trackerTimeline = () => frame('tracker-timeline.png',c('Original Figma timeline sheet with eight remortgage stages','Hoja de cronología original de Figma con ocho etapas'),spot(4.5,27.5,14,5.2,c('Close timeline','Cerrar cronología'),'tracker'));
-  const recommendationReady = () => frame('recommendation-ready-anonymised.jpg',c('Figma needs-action screen, adviser name anonymised','Pantalla Figma con nombre del asesor anonimizado'),
+  const recommendationReady = () => frame('recommendation-ready-redacted.png',c('Figma needs-action screen, adviser name anonymised','Pantalla Figma con nombre del asesor anonimizado'),
     spot(7.7,66.5,84,5.5,c('Review recommendation','Revisar recomendación'),'recommendation-detail')
     +spot(69,43,23,3.5,c('See the timeline','Ver cronología'),'tracker-timeline')
     +spot(73,78.3,19,4.5,c('Open adviser chat','Abrir chat del asesor'),'chat')
     +spot(3.5,6.2,13,5.3,c('Go back','Volver'),'tracker-back'));
-  const recommendationDetail = () => frame('recommendation-anonymised.jpg',c('Figma mortgage recommendation with lender and figures anonymised','Recomendación hipotecaria Figma con entidad y cifras anonimizadas'),
+  const recommendationDetail = () => frame('recommendation-redacted.png',c('Figma mortgage recommendation with lender and figures anonymised','Recomendación hipotecaria Figma con entidad y cifras anonimizadas'),
     spot(7.8,92.9,84,4.1,c('Continue to next step','Continuar'),'recommendation-ready')
     +spot(3.5,4.1,13,5,c('Go back to recommendation','Volver a la recomendación'),'recommendation-ready'));
-  const intercom = () => frame('intercom-anonymised.jpg',c('Figma in-app mortgage chat with adviser anonymised','Chat hipotecario de Figma con el asesor anonimizado'),
+  const intercom = () => frame('intercom-redacted.png',c('Figma in-app mortgage chat with adviser anonymised','Chat hipotecario de Figma con el asesor anonimizado'),
     spot(15,30.5,80,7,c('Review mortgage recommendations','Revisar recomendaciones'),'recommendation-detail')
     +spot(3.5,5,13,5.5,c('Go back','Volver'),'chat-back'));
-  const buyer = () => frame('first-buyer-anonymised.jpg',c('Figma first-time buyer dashboard with profile details anonymised','Panel Figma de primeros compradores con datos anonimizados'),
+  const buyer = () => frame('first-buyer-redacted.png',c('Figma first-time buyer dashboard with profile details anonymised','Panel Figma de primeros compradores con datos anonimizados'),
     spot(43,38,31,14,c('Open the mortgage fact-find','Abrir el formulario hipotecario'),'factfind-ready')
     +spot(7.7,67,30,4.7,c('Ask your adviser','Preguntar al asesor'),'chat')
     +spot(3.5,5.5,13,5.3,c('Go back','Volver'),'tracker-back'));
