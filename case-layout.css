@@ -26,3 +26,8 @@
   .flex-case .fv-impact:not(:has(.fv-impact-copy)){padding:24px}
   .flex-case .fv-impact:not(:has(.fv-impact-copy)) .fv-metrics>div{padding:14px 16px}
 }
+
+/* Go back and Contact stay on screen, on a translucent glass bar */
+body:is(.flex-case,.dt-case) .page>.nav{position:sticky;top:12px;z-index:60;margin:0 0 32px;padding:6px 20px;border:1px solid rgba(255,255,255,.65);border-radius:999px;background:rgba(250,248,244,.5);-webkit-backdrop-filter:blur(16px) saturate(170%);backdrop-filter:blur(16px) saturate(170%);box-shadow:0 8px 28px rgba(41,36,47,.08),inset 0 1px 0 rgba(255,255,255,.7)}
+body:is(.flex-case,.dt-case) .nav-links a{color:var(--ink)}
+@media(max-width:760px){body:is(.flex-case,.dt-case) .page>.nav{top:8px;margin-bottom:20px;padding:4px 16px}}
