@@ -71,3 +71,8 @@ When a project gets its full case study, point its homepage card to the real pag
 The portfolio uses Google Fonts with system fallbacks. Monzo Sans is used by some product mockups, with a fallback when the files are unavailable. Its proprietary files are intentionally ignored by Git; keep them out of commits.
 
 The repository is `hola-laura/laura`. Local edits become part of the GitHub version only after committing and pushing them. Project-level Codex preferences live separately in `.codex/config.toml`; they do not affect the website.
+
+## Mortgage case study: iPhone frame and motion
+- `mortgage-device.css`: the iPhone 16 Pro frame (`.mg-bz`) used by every app screen, plus the small animations (all behind `prefers-reduced-motion`).
+- `mortgage-motion.js`: scroll reveals, count-up numbers, phone tilt. Pure decoration; the page works without it.
+- `assets/mortgages/*-screen.png`: screens cropped without their old phone frame.

@@ -20,7 +20,9 @@
   const state = {active:'tracker', view:'main', factfindExpanded:false, returnTo:'recommendation'};
 
   const spot = (x,y,w,h,label,action) => `<button class="mg-figma-spot" type="button" style="--x:${x}%;--y:${y}%;--w:${w}%;--h:${h}%" aria-label="${esc(label)}" data-proto-action="${action}"></button>`;
-  const frame = (src,alt,layers='') => `<div class="mg-phone mg-phone-figma"><img class="mg-figma-image" src="${base}${src}" alt="${esc(alt)}" loading="eager">${layers}</div>`;
+  /* Every screen sits inside an iPhone 16 Pro frame (styles in mortgage-device.css).
+     .mg-bz-screen scrolls when the Figma frame is taller than the phone display. */
+  const frame = (src,alt,layers='') => `<div class="mg-bz"><div class="mg-bz-screen"><div class="mg-phone mg-phone-figma"><img class="mg-figma-image" src="${base}${src}" alt="${esc(alt)}" loading="eager">${layers}</div></div><span class="mg-bz-hint" aria-hidden="true">${c('Scroll','Desplaza')}</span></div>`;
 
   const tracker = () => frame('tracker-redacted.png',c('Figma remortgage progress screen, details anonymised','Pantalla Figma de progreso hipotecario, datos anonimizados'),
     spot(7.5,26.8,35,2.6,c('Open the original timeline','Abrir la cronología original'),'tracker-timeline')
@@ -58,7 +60,18 @@
     count.textContent=c('Original Figma frame','Frame original de Figma');
     previous.hidden=next.hidden=dots.hidden=true;
     panel.innerHTML=current.render();
+    watchScroll();
   }
+  /* Show the "Scroll" hint only when the screen is taller than the phone, and hide it after the first scroll. */
+  function watchScroll(){
+    const bz=panel.querySelector('.mg-bz'),screen=panel.querySelector('.mg-bz-screen'),image=panel.querySelector('.mg-figma-image');
+    if(!bz||!screen||!image)return;
+    const check=()=>bz.classList.toggle('has-more',screen.scrollHeight-screen.clientHeight>60);
+    image.complete?check():image.addEventListener('load',check,{once:true});
+    screen.addEventListener('scroll',()=>bz.classList.add('is-scrolled'),{passive:true,once:true});
+  }
+  /* After the first tap, the pulsing "tap here" rings on the hotspots stop. */
+  const markTouched=()=>root.querySelector('.mg-proto-panel')?.classList.add('is-touched');
   function setPrototype(name){state.active=name;state.view='main';state.factfindExpanded=false;render();}
   function navigate(action){
     if(action==='tracker-timeline'){state.returnTo=state.active;state.active='tracker';state.view='timeline';}
@@ -76,7 +89,7 @@
     render();
   }
   tabs.forEach((tab,index)=>{
-    tab.addEventListener('click',()=>setPrototype(tab.dataset.prototypeTab));
+    tab.addEventListener('click',()=>{markTouched();setPrototype(tab.dataset.prototypeTab);});
     tab.addEventListener('keydown',event=>{
       if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
       event.preventDefault();const i=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:tabs.length-1))%tabs.length;
@@ -84,7 +97,7 @@
     });
   });
   panel.addEventListener('click',event=>{
-    const button=event.target.closest('[data-proto-action]');if(button)return navigate(button.dataset.protoAction);
+    const button=event.target.closest('[data-proto-action]');if(button){markTouched();return navigate(button.dataset.protoAction);}
     if(event.target.classList.contains('mg-figma-cover')&&event.target.closest('.mg-figma-adviser-redaction'))return navigate('chat');
   });
   render();
