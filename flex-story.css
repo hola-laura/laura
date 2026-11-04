@@ -364,7 +364,7 @@
 .fx-mini .fx-sim-ends{font-size:.8em}
 .fx-scr{position:absolute;inset:0;opacity:0;visibility:hidden;transform:translateX(4%);transition:opacity .22s,transform .28s,visibility 0s .22s}
 .fx-scr.is-on{opacity:1;visibility:visible;transform:none;transition:opacity .22s,transform .28s}
-.fx-scr>img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.05);transform-origin:left center}
+.fx-scr>img{display:block;width:100%;height:100%;object-fit:cover}
 .fx-hot-plan{top:39%;height:21%}
 .fx-hot-review{top:87.5%;height:8%;left:3%;right:3%}
 .fx-mini-note{display:flex;flex-direction:column;padding:3.4em 1.1em 1.4em;background:#f2f8f4}
