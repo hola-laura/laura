@@ -1028,4 +1028,5 @@ window.I18N_ES = {
 "Continue": "Continuar",
 "<span>Connected mortgage</span><strong>Prioritised</strong><small>Higher observed conversion</small>": "<span>Hipoteca conectada</span><strong>Prioridad</strong><small>Mayor conversión observada</small>",
 "<span>Open-market audience</span><strong>Paused</strong><small>Lower observed conversion</small>": "<span>Público abierto</span><strong>En pausa</strong><small>Menor conversión observada</small>"
+"Original Figma frame · personal details anonymised": "Frame original de Figma · datos personales anonimizados"
 };
