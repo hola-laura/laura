@@ -37,11 +37,7 @@
   const intercom = () => frame('intercom-redacted.png',c('Figma in-app mortgage chat with adviser anonymised','Chat hipotecario de Figma con el asesor anonimizado'),
     spot(15,30.5,80,7,c('Review mortgage recommendations','Revisar recomendaciones'),'recommendation-detail')
     +spot(3.5,5,13,5.5,c('Go back','Volver'),'chat-back'));
-  const buyer = () => frame('first-buyer-redacted.png',c('Figma first-time buyer dashboard with profile details anonymised','Panel Figma de primeros compradores con datos anonimizados'),
-    spot(43,38,31,14,c('Open the mortgage fact-find','Abrir el formulario hipotecario'),'factfind-ready')
-    +spot(7.7,67,30,4.7,c('Ask your adviser','Preguntar al asesor'),'chat')
-    +spot(3.5,5.5,13,5.3,c('Go back','Volver'),'tracker-back'));
-  const factfindReady = () => frame('factfind-ready.png',c('Original Figma fact-find preparation screen','Pantalla original de preparación del formulario de Figma'),spot(7.5,90,85,5.5,c('I’m ready','Estoy lista'),'factfind-timeline')+spot(3.5,7,13,5.2,c('Go back to the buyer profile','Volver al perfil de compra'),'buyer'));
+  const factfindReady = () => frame('factfind-ready.png',c('Original Figma fact-find preparation screen','Pantalla original de preparación del formulario de Figma'),spot(7.5,90,85,5.5,c('I’m ready','Estoy lista'),'factfind-timeline')+spot(3.5,7,13,5.2,c('Go back','Volver'),'tracker-back'));
   const factfindTimeline = () => frame(state.factfindExpanded?'factfind-timeline.png':'factfind-timeline-collapsed.png',c('Original Figma remortgage application timeline','Cronología original de la solicitud de cambio de hipoteca de Figma'),
     (state.factfindExpanded
       ? spot(19,57,33,4.5,c('Hide the three extra steps','Ocultar los tres pasos adicionales'),'factfind-collapse')
@@ -52,7 +48,6 @@
     tracker:{status:['Implementation in progress when I left','En implementación cuando dejé el equipo'],heading:['Remortgage progress','Seguimiento del cambio de hipoteca'],description:['The screen and timeline sheet are the original Figma frames. Select “Learn more” inside the tracker to open the eight-step sheet.','La pantalla y la hoja de cronología son los frames originales de Figma. Pulsa «Learn more» en el tracker para abrir las ocho etapas.'],render:()=>state.view==='timeline'?trackerTimeline():tracker()},
     recommendation:{status:['Design exploration','Exploración de diseño'],heading:['Recommendation ready, then the full offer','Recomendación lista y detalle de la oferta'],description:['Follow the original Figma flow from “Needs action” to the offer details. Personal names and mortgage figures are covered.','Sigue el flujo original de Figma desde «Needs action» hasta el detalle de la oferta. Los nombres y las cifras están cubiertos.'],render:()=>state.view==='detail'?recommendationDetail():recommendationReady()},
     chat:{status:['Implementation in progress when I left','En implementación cuando dejé el equipo'],heading:['Mortgage help in the right chat','Ayuda hipotecaria en el chat adecuado'],description:['This is the original Intercom screen. Its recommendation button opens the matching offer design.','Esta es la pantalla original de Intercom. El botón de recomendación abre el diseño de la oferta.'],render:intercom},
-    ftb:{status:['Strategy in progress when I left','Estrategia en curso cuando dejé el equipo'],heading:['A homeownership dashboard for first-time buyers','Una vista de compra para quienes compran su primera vivienda'],description:['The original Home-buying vision frame: buyer profile, journey tiles, adviser support and education.','El frame original de la visión Home-buying: perfil, etapas, ayuda del asesor y guías.'],render:buyer},
     factfind:{status:['Fact-find exploration','Exploración del formulario'],heading:['Prepare before the mortgage fact-find','Prepararse para el formulario hipotecario'],description:['The original Fact-find frames show what to prepare and an expandable Habito application timeline.','Los frames originales de Fact-find muestran qué preparar y una cronología desplegable de la solicitud con Habito.'],render:()=>state.view==='timeline'?factfindTimeline():factfindReady()}
   };
 
@@ -70,7 +65,6 @@
     if(action==='tracker-timeline'){state.returnTo=state.active;state.active='tracker';state.view='timeline';}
     else if(action==='tracker'){state.active='tracker';state.view='main';}
     else if(action==='tracker-back'){state.active='tracker';state.view='main';}
-    else if(action==='buyer'){state.active='ftb';state.view='main';}
     else if(action==='chat-back'){state.active=state.returnTo||'recommendation';state.view='main';}
     else if(action==='recommendation-detail'){state.active='recommendation';state.view='detail';}
     else if(action==='recommendation-ready'){state.active='recommendation';state.view='main';}
