@@ -81,12 +81,18 @@
       const button = document.querySelector('.lang-pill');
       if (!button) return;
       const next = lang === 'es' ? 'en' : 'es';
-      button.querySelector('.lang-flag-es').toggleAttribute('hidden', next !== 'es');
-      button.querySelector('.lang-flag-en').toggleAttribute('hidden', next !== 'en');
-      button.querySelector('.lang-name').textContent = next === 'es' ? 'Español' : 'English';
+      button.querySelector('.lang-flag-es').toggleAttribute('hidden', lang !== 'es');
+      button.querySelector('.lang-flag-en').toggleAttribute('hidden', lang !== 'en');
+      button.querySelector('.lang-name').textContent = lang === 'es' ? 'Español' : 'English';
       button.setAttribute('aria-label', next === 'es' ? 'Ver la web en español' : 'View this site in English');
-      button.lang = next;
-      button.addEventListener('click', () => { write(next); location.href = location.pathname + location.hash; });
+      button.lang = lang;
+      button.addEventListener('click', () => {
+        write(next);
+        const url = new URL(location.href);
+        url.searchParams.delete('lang');
+        history.replaceState(null, '', url);
+        location.reload();
+      });
     }
   };
   /* For text that scripts write at runtime: t('{n} of {total}', {n: 1, total: 5}) */
