@@ -20,9 +20,12 @@
   const state = {active:'tracker', view:'main', factfindExpanded:false, returnTo:'recommendation'};
 
   const spot = (x,y,w,h,label,action) => `<button class="mg-figma-spot" type="button" style="--x:${x}%;--y:${y}%;--w:${w}%;--h:${h}%" aria-label="${esc(label)}" data-proto-action="${action}"></button>`;
+  /* Fixed status bar that fades in over the content once the screen is scrolled, like on a real iPhone.
+     At the top of the screen the status bar baked into the Figma image is used instead. */
+  const statusBar = src => `<div class="mg-bz-glass" aria-hidden="true" style="--glass:${src.startsWith('intercom')?'#ffffff':'#f1f8f3'}"><div class="mg-bz-status"><b>9:41</b><svg viewBox="0 0 66 12" width="66" height="12" fill="#091723"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/><path d="M29 2.4c2.6 0 5 1 6.800 2.700l-1.400 1.400a7.500 7.500 0 0 0-10.800 0l-1.400-1.400A9.800 9.800 0 0 1 29 2.400zm0 4a5 5 0 0 1 3.400 1.400L29 11.200l-3.400-3.400A5 5 0 0 1 29 6.400z"/><rect x="40" y="0.500" width="22" height="11" rx="3.500" fill="none" stroke="#091723" stroke-opacity=".4"/><rect x="42" y="2.500" width="18" height="7" rx="2"/><rect x="63" y="4" width="2" height="4" rx="1" fill-opacity=".4"/></svg></div></div>`;
   /* Every screen sits inside an iPhone 16 Pro frame (styles in mortgage-device.css).
      .mg-bz-screen scrolls when the Figma frame is taller than the phone display. */
-  const frame = (src,alt,layers='') => `<div class="mg-bz"><div class="mg-bz-screen"><div class="mg-phone mg-phone-figma"><img class="mg-figma-image" src="${base}${src}" alt="${esc(alt)}" loading="eager">${layers}</div></div><span class="mg-bz-hint" aria-hidden="true">${c('Scroll','Desplaza')}</span></div>`;
+  const frame = (src,alt,layers='') => `<div class="mg-bz"><div class="mg-bz-screen"><div class="mg-phone mg-phone-figma"><img class="mg-figma-image" src="${base}${src}" alt="${esc(alt)}" loading="eager">${layers}</div></div>${statusBar(src)}<span class="mg-bz-hint" aria-hidden="true">${c('Scroll','Desplaza')}</span></div>`;
 
   const tracker = () => frame('tracker-redacted.png',c('Figma remortgage progress screen, details anonymised','Pantalla Figma de progreso hipotecario, datos anonimizados'),
     spot(7.5,26.8,35,2.6,c('Open the original timeline','Abrir la cronología original'),'tracker-timeline')
@@ -62,13 +65,13 @@
     panel.innerHTML=current.render();
     watchScroll();
   }
-  /* Show the "Scroll" hint only when the screen is taller than the phone, and hide it after the first scroll. */
+  /* Show the "Scroll" hint only when the screen is taller than the phone, and hide it once scrolled. */
   function watchScroll(){
     const bz=panel.querySelector('.mg-bz'),screen=panel.querySelector('.mg-bz-screen'),image=panel.querySelector('.mg-figma-image');
     if(!bz||!screen||!image)return;
     const check=()=>bz.classList.toggle('has-more',screen.scrollHeight-screen.clientHeight>60);
     image.complete?check():image.addEventListener('load',check,{once:true});
-    screen.addEventListener('scroll',()=>bz.classList.add('is-scrolled'),{passive:true,once:true});
+    screen.addEventListener('scroll',()=>bz.classList.toggle('is-scrolled',screen.scrollTop>6),{passive:true});
   }
   /* After the first tap, the pulsing "tap here" rings on the hotspots stop. */
   const markTouched=()=>root.querySelector('.mg-proto-panel')?.classList.add('is-touched');

@@ -112,3 +112,15 @@
 
 /* Stops "38% → 88%" from jittering while it counts up */
 .mortgage-case .mg-metrics strong{font-variant-numeric:tabular-nums}
+
+/* Fixed status bar: when the prototype screen is scrolled, content slides under a frosted status bar
+   instead of running behind the Dynamic Island. Hidden at the top, where the Figma image has its own. */
+.mg-bz-glass{position:absolute;z-index:2;inset:1.23% 2.6%;border-radius:12.5%/5.75%;overflow:hidden;pointer-events:none;container-type:inline-size}
+.mg-bz-status{
+  display:flex;align-items:center;justify-content:space-between;height:6.4%;min-height:0;padding:0 7.5% 0 9%;box-sizing:border-box;
+  background:color-mix(in srgb,var(--glass,#f1f8f3) 86%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  opacity:0;transition:opacity .2s ease;
+}
+.mg-bz.is-scrolled .mg-bz-status{opacity:1}
+.mg-bz-status b{font:600 4.1cqw/1 'DM Sans',sans-serif;color:#091723}
+.mg-bz-status svg{width:16.5cqw;height:auto}
