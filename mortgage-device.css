@@ -73,10 +73,6 @@
   from{opacity:0;transform:translateY(14px) scale(.985)}
   to{opacity:1;transform:none}
 }
-@keyframes mgSpot{          /* tappable areas "breathe" until the visitor first taps */
-  0%{box-shadow:0 0 0 0 #009bbc66}
-  70%,100%{box-shadow:0 0 0 12px #009bbc00}
-}
 @keyframes mgHintBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
 @keyframes mgDotRing{0%{box-shadow:0 0 0 5px #f3f0f6,0 0 0 5px #17a8bd88}100%{box-shadow:0 0 0 5px #f3f0f6,0 0 0 16px #17a8bd00}}
 
@@ -84,7 +80,6 @@
   /* Prototype */
   .mg-proto-screen .mg-bz::before{animation:mgIsland .9s .08s ease-in-out}
   .mg-bz-screen>.mg-phone{animation:mgScreenIn .42s cubic-bezier(.2,.8,.2,1)}
-  .mg-proto-panel:not(.is-touched) .mg-figma-spot{animation:mgSpot 2.2s ease-out infinite}
   .mg-bz.has-more:not(.is-scrolled) .mg-bz-hint::after{animation:mgHintBounce 1.2s ease-in-out infinite}
   .mg-proto-tabs button:hover{transform:translateY(-1px)}
 
