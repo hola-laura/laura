@@ -6,24 +6,7 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduced) return;
 
-  /* 1. Phones lean gently towards the pointer (mouse and trackpad only, not touch) */
-  if (matchMedia('(hover:hover) and (pointer:fine)').matches) {
-    let current = null;
-    const reset = () => { if (current) current.style.transform = ''; current = null; };
-    document.addEventListener('pointermove', event => {
-      const phone = event.target.closest && event.target.closest('.mg-bz');
-      if (phone !== current) reset();
-      if (!phone) return;
-      current = phone;
-      const box = phone.getBoundingClientRect();
-      const x = (event.clientX - box.left) / box.width - 0.5;
-      const y = (event.clientY - box.top) / box.height - 0.5;
-      phone.style.transform = `perspective(1100px) rotateX(${(-y * 5).toFixed(2)}deg) rotateY(${(x * 7).toFixed(2)}deg)`;
-    });
-    document.documentElement.addEventListener('pointerleave', reset);
-  }
-
-  /* 2. Things appear as they scroll into view. Adding .mg-motion is what hides them first. */
+  /* 1. Things appear as they scroll into view. Adding .mg-motion is what hides them first. */
   if (!('IntersectionObserver' in window)) return;
   document.documentElement.classList.add('mg-motion');
 

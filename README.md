@@ -74,5 +74,5 @@ The repository is `hola-laura/laura`. Local edits become part of the GitHub vers
 
 ## Mortgage case study: iPhone frame and motion
 - `mortgage-device.css`: the iPhone 16 Pro frame (`.mg-bz`) used by every app screen, plus the small animations (all behind `prefers-reduced-motion`).
-- `mortgage-motion.js`: scroll reveals, count-up numbers, phone tilt. Pure decoration; the page works without it.
+- `mortgage-motion.js`: scroll reveals, count-up numbers. Pure decoration; the page works without it.
 - `assets/mortgages/*-screen.png`: screens cropped without their old phone frame.

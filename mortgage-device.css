@@ -13,7 +13,7 @@
   position:relative;isolation:isolate;display:block;box-sizing:border-box;width:100%;
   padding:2.6%;background:#0d0e10;border-radius:15%/7.1%;
   box-shadow:inset 0 0 0 1.5px var(--edge),inset 0 0 0 3px #2b2c30,0 28px 48px -26px #12263a8c;
-  transition:transform .35s cubic-bezier(.2,.8,.2,1),translate .8s cubic-bezier(.2,.8,.2,1),opacity .8s ease;
+  transition:translate .8s cubic-bezier(.2,.8,.2,1),opacity .8s ease;
 }
 /* Dynamic Island, with a tiny camera dot */
 .mg-bz::before{
@@ -108,7 +108,6 @@
   .mg-motion .mg-bars.is-in .mg-bar>span{clip-path:inset(0 0 0 0 round 5px)}
 }
 
-/* Phones are heavy to tilt on small screens and touch devices, so the tilt is only set by JS for fine pointers */
 @media (max-width:760px){.mg-proto-screen .mg-bz{max-width:300px}}
 
 /* Stops "38% → 88%" from jittering while it counts up */
