@@ -1,0 +1,174 @@
+/* Flower wardrobe, opened from the signature flower (flower-wardrobe.js). Homepage only. */
+body.wardrobe-open { overflow: hidden; }
+
+.wardrobe-dialog {
+  width: min(820px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  box-shadow: 0 28px 100px #332b3e30;
+  overscroll-behavior: contain;
+}
+.wardrobe-dialog::backdrop { background: #332b3e35; backdrop-filter: blur(6px); }
+.wardrobe-dialog button { font: inherit; }
+.wardrobe-dialog :is(button, input):focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.wardrobe-close {
+  position: absolute; right: 13px; top: 12px; z-index: 2;
+  width: 40px; height: 40px; border: 0; border-radius: 50%;
+  background: transparent; color: var(--ink-muted); font-size: 27px !important;
+}
+.wardrobe-close:hover { background: var(--bg-raised); }
+
+.wardrobe-eyebrow { font-size: 10px; letter-spacing: .1em; }
+.wardrobe-dialog h2 {
+  font-size: 34px; font-weight: 500; line-height: 1.1; letter-spacing: -.04em;
+  margin: 14px 0 10px;
+}
+.wardrobe-intro { color: var(--ink-muted); font-size: 14px; line-height: 1.5; margin: 0; max-width: 46ch; }
+
+.wardrobe-body {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) 1fr;
+  gap: 20px;
+  margin-top: 24px;
+  align-items: start;
+}
+
+/* Preview */
+.wardrobe-preview {
+  position: sticky; top: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+  padding: 22px 18px 18px;
+  border-radius: 20px;
+  background: var(--bg-raised);
+}
+.wardrobe-stage {
+  --stage: var(--lavender);
+  position: relative;
+  display: grid; place-items: center;
+  width: 100%; aspect-ratio: 1;
+  border-radius: 22px;
+  background: color-mix(in srgb, var(--stage) 38%, var(--surface));
+  border: 1px solid var(--line);
+  transition: background 260ms ease;
+}
+.wardrobe-stage::after { /* soft paper shadow under the flower */
+  content: ''; position: absolute; bottom: 13%; width: 38%; height: 5%;
+  border-radius: 50%; background: #332b3e14;
+}
+.wardrobe-stage svg { position: relative; z-index: 1; width: 62%; overflow: visible; }
+.wardrobe-stage.is-bouncing svg { animation: wardrobe-bounce 520ms cubic-bezier(.2,.7,.2,1); transform-origin: 50% 90%; }
+@keyframes wardrobe-bounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.06, .93) rotate(-2deg); }
+  60% { transform: scale(.97, 1.04) rotate(1.5deg); }
+  100% { transform: scale(1); }
+}
+.wardrobe-name { font-family: var(--font-heading); font-size: 18px; line-height: 1.3; margin: 0; text-align: center; }
+.wardrobe-status { min-height: 18px; margin: -6px 0 0; font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); text-align: center; }
+
+/* Options */
+.wardrobe-panel {
+  padding: 22px 22px 18px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.wardrobe-options { display: grid; gap: 18px; }
+.wardrobe-group { border: 0; margin: 0; padding: 0; min-width: 0; }
+.wardrobe-group legend {
+  padding: 0; margin-bottom: 9px;
+  font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft);
+}
+.wardrobe-choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.wardrobe-choice {
+  position: relative;
+  display: grid; place-items: center;
+  width: 48px; height: 48px;
+  border-radius: 14px;
+  background: var(--bg-raised);
+  transition: background 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+.wardrobe-choice input {
+  position: absolute; inset: 0; margin: 0; opacity: 0; border-radius: inherit;
+}
+.wardrobe-choice svg { width: 30px; height: 30px; pointer-events: none; overflow: visible; }
+.wardrobe-group-face .wardrobe-choice svg { width: 34px; }
+.wardrobe-choice:hover { background: var(--lavender-soft); transform: translateY(-2px); }
+.wardrobe-choice:has(input:checked) { background: var(--surface); box-shadow: inset 0 0 0 2px var(--accent); }
+.wardrobe-choice:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 3px; }
+.wardrobe-choice input:focus-visible { outline: none; }
+
+.wardrobe-group-color .wardrobe-choice { width: 40px; height: 40px; border-radius: 50%; background: transparent; }
+.wardrobe-swatch {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--swatch); box-shadow: inset 0 0 0 1px var(--line);
+  pointer-events: none;
+}
+.wardrobe-group-color .wardrobe-choice:has(input:checked) { background: transparent; box-shadow: 0 0 0 2px var(--accent); }
+
+/* Actions */
+.wardrobe-actions {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line);
+}
+.wardrobe-remix {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 44px; padding: 0 20px;
+  border: 1px solid var(--line); border-radius: 24px;
+  background: var(--surface); color: var(--ink); font-size: 14px !important; font-weight: 500;
+  transition: transform 200ms ease, border-color 200ms ease;
+}
+.wardrobe-remix:hover { transform: translateY(-2px); border-color: var(--ink-muted); }
+.wardrobe-remix svg { width: 17px; height: 17px; }
+.wardrobe-reset {
+  border: 0; border-bottom: 1px solid var(--ink-muted);
+  background: transparent; padding: 8px 0; margin-left: 6px;
+  font-size: 13px !important; color: var(--ink-soft);
+}
+.wardrobe-done {
+  margin-left: auto;
+  min-height: 44px; padding: 0 25px; border: 0; border-radius: 24px;
+  background: var(--accent); color: #fff; font-size: 14px !important; font-weight: 500;
+  transition: transform 220ms ease, background 220ms ease;
+}
+.wardrobe-done:hover { background: var(--ink-block); transform: translateY(-2px); }
+
+@media (hover: hover) and (pointer: fine) {
+  /* The site cursor sits behind the modal, so show the native one here. */
+  .wardrobe-dialog, .wardrobe-dialog * { cursor: auto !important; }
+  .wardrobe-dialog :is(button, label, input) { cursor: pointer !important; }
+}
+
+@media (max-width: 680px) {
+  .wardrobe-dialog { padding: 26px 18px 20px; }
+  .wardrobe-dialog h2 { font-size: 30px; }
+  .wardrobe-body { grid-template-columns: 1fr; gap: 14px; margin-top: 18px; }
+  .wardrobe-preview {
+    position: sticky; top: -26px; z-index: 3;
+    flex-direction: row; gap: 14px; padding: 12px; justify-content: flex-start;
+    box-shadow: 0 10px 20px -16px #332b3e66;
+  }
+  .wardrobe-stage { width: 104px; flex: 0 0 104px; border-radius: 16px; }
+  .wardrobe-preview-copy { text-align: left; }
+  .wardrobe-name { text-align: left; font-size: 16px; }
+  .wardrobe-status { text-align: left; margin-top: 4px; }
+  .wardrobe-panel { padding: 18px 14px 14px; }
+  .wardrobe-choices { display: grid; grid-template-columns: repeat(7, minmax(0, 44px)); gap: 5px; }
+  .wardrobe-choice { width: 100%; height: auto; aspect-ratio: 1; border-radius: 12px; }
+  .wardrobe-choice svg { width: 26px; height: 26px; }
+  .wardrobe-group-face .wardrobe-choice svg { width: 30px; }
+  .wardrobe-group-color .wardrobe-choice { width: 100%; height: auto; }
+  .wardrobe-swatch { width: 28px; height: 28px; }
+  .wardrobe-done { margin-left: 0; flex: 1 0 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wardrobe-dialog *, .wardrobe-stage { transition: none !important; animation: none !important; }
+}

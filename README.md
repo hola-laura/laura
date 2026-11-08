@@ -19,10 +19,9 @@ Open http://127.0.0.1:8765/ and refresh after saving changes. Use the local serv
 - **Title typeface:** `headings.css`, loaded last on every page. It applies Libre Baskerville to all titles from one rule; the font itself is requested in each page's Google Fonts link.
 - **Laura wordmark:** `assets/laura-wordmark.svg`.
 - **Illustrations:** `assets/doodles/`. The navigation and hero reuse the same `flower.svg#drawing`, so one artwork edit updates both. These SVGs also work as standalone images; their `--doodle-*` properties let inline `<use>` instances inherit the site palette.
-- **Garden appearance:** `garden.css`. Only the homepage loads this stylesheet.
-- **Garden artwork:** `assets/garden-flowers.svg`. Each `plant-*` symbol contains a full plant and reuses a `garden-*` flower head plus shared glass gradients.
-- **Garden species and placement:** the five `.garden-seed` buttons in `index.html`. Each button holds the flower name, SVG reference, position, height and lean. Keep `data-flower` and the visible flower name in sync. When adding seeds, also update the introductory copy, accessible labels and spacing.
-- **Garden interaction:** `little-garden.js`. Counts come from the seed buttons; reset copy comes from the original HTML. Completion messages live in this script.
+- **Flower wardrobe appearance:** `wardrobe.css`. Only the homepage loads this stylesheet.
+- **Flower wardrobe artwork and options:** `flower-wardrobe.js`. The `PARTS` lists hold every colour, expression, hat, pair of glasses and handheld item as small inline SVG, drawn in the flower’s own coordinates. Add an option by adding one entry; give it a `name` (and a Spanish key in `i18n-es.js`), a `vb` crop for its thumbnail and, for handheld items, a `grip` point for the little hand.
+- **Flower wardrobe saving:** the chosen look is stored on the visitor’s device under `laura-flower-look` and redrawn in the navigation on load and when returning with the back button.
 - **Flower wobble:** `flower-motion.js`, attached to `.signature-flower`. Colour changes are CSS; movement uses a short spring animation and respects reduced motion.
 - **Occasional doodle visitors:** `doodle-surprises.js`, with appearance styles in `styles.css`.
 - **Shared cursor, scroll reveals and card tilt:** `script.js`.
@@ -42,7 +41,7 @@ Navigation and footers are currently plain HTML repeated across pages. For a sit
 ## Before sharing an update
 
 1. Check the homepage at desktop and phone widths, including project cards and contact links.
-2. Open the flower’s garden; grow every seed, plant again, and close with Escape. Check that focus returns to the flower.
+2. Open the flower’s wardrobe; change every group, try Remix and Start over, close with Escape and check that focus returns to the flower. Open a case study, go back, and check the flower keeps its look.
 3. Try flower hover and a project-image hover; doodles should disappear and never block links.
 4. Open the case studies and check their navigation and relevant interactive examples.
 5. Check keyboard navigation and the system’s reduced-motion setting when changing animation code.

@@ -6,7 +6,7 @@
 <meta name="description" content="Lead Product Designer. I align customer needs, business priorities and delivery teams to set a clear direction for complex journeys across industries.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Fragment+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="garden.css"><link rel="stylesheet" href="home.css?v=coming-soon-pill-1">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="wardrobe.css?v=1"><link rel="stylesheet" href="home.css?v=coming-soon-pill-1">
 <link rel="stylesheet" href="flex.css?v=1"><link rel="stylesheet" href="drivo.css?v=iphone-frames-1"><link rel="stylesheet" href="mattern.css?v=3"><link rel="stylesheet" href="header-dots.css?v=1">
 <link rel="stylesheet" href="spending-block.css?v=1"><link rel="stylesheet" href="mortgages.css?v=3"><link rel="stylesheet" href="coming-soon.css?v=2"><link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=flower-2">
 <link rel="shortcut icon" href="favicon.ico?v=flower-2">
@@ -18,8 +18,8 @@
 <div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
 <img class="dotted-field" src="assets/home/imgDottedFieldSubtleInteractiveTexture.svg" alt="" aria-hidden="true">
 <div class="page">
-<!-- Navigation: flower signature (opens the little garden), language pill, contact link -->
-<nav class="nav" aria-label="Main navigation"><div class="nav-signature">        <button class="signature-flower" type="button" aria-label="Open a little garden" aria-haspopup="dialog" aria-controls="little-garden" title="A little break">
+<!-- Navigation: flower signature (opens the flower wardrobe), language pill, contact link -->
+<nav class="nav" aria-label="Main navigation"><div class="nav-signature">        <button class="signature-flower" type="button" aria-label="Dress up the flower" aria-haspopup="dialog" aria-controls="flower-wardrobe" title="Dress me up">
           <svg class="flower-art" viewBox="-6 -5 118 131" aria-hidden="true" focusable="false">
             <g class="flower-bloom"><image href="assets/home/imgDrawing.svg" width="106.146" height="119.423"/></g>
           </svg>
@@ -121,59 +121,30 @@
 <!-- Footer and contact -->
 <footer class="footer" id="contact"><div class="footer-inner"><h2 class="footer-title" data-reveal>Let’s make products feel clear and useful.</h2><div class="footer-actions"><a class="pill-button" href="mailto:lrsmpdr@gmail.com" target="_blank" rel="noopener noreferrer">Email me ↗</a><a href="https://www.linkedin.com/in/laura-sampedro/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div><div class="footer-row"><span class="mono-label">© 2026 Laura Sampedro de la Rosa</span><a class="mono-label" href="#top">Back to top ↑</a></div></div></footer>
 </div>
-  <!-- Little garden: opened from the flower in the navigation (little-garden.js) -->
-<dialog class="garden-dialog" id="little-garden" aria-labelledby="garden-title" aria-describedby="garden-instruction">
-    <div class="garden-dot" aria-hidden="true"></div>
-    <button class="garden-close" type="button" aria-label="Close garden">×</button>
-    <span class="mono-label garden-eyebrow">A little break</span>
-    <h2 id="garden-title">Grow a little good.</h2>
-    <p id="garden-instruction">Five seeds. Five different flowers. A little care.</p>
-    <div class="garden-bed" role="group" aria-label="Five seeds to grow">
-      <span class="garden-sun" aria-hidden="true"></span>
-      <span class="garden-hint" aria-hidden="true">tap a seed, grow something lovely</span>
-      <svg class="garden-ground" viewBox="0 0 400 72" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30Q80 5 175 27T400 18V72H0Z" fill="#ddd4eb"/><path d="M0 46Q120 27 221 47T400 35V72H0Z" fill="#c9bddc"/></svg>
-      <button class="garden-seed" type="button" data-seed="1" aria-label="Plant seed 1 of 5" style="--x:13%;--plant-height:142px;--lean:-5deg" data-flower="Poppy">
-        <span class="seed-pebble" aria-hidden="true"></span>
-        <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
-          <use href="assets/garden-flowers.svg#plant-poppy" width="96" height="190"/>
-        </svg>
-        <span class="garden-flower-name" aria-hidden="true">Poppy</span>
-      </button>
-      <button class="garden-seed" type="button" data-seed="2" aria-label="Plant seed 2 of 5" style="--x:32%;--plant-height:173px;--lean:2deg" data-flower="Daisy">
-        <span class="seed-pebble" aria-hidden="true"></span>
-        <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
-          <use href="assets/garden-flowers.svg#plant-daisy" width="96" height="190"/>
-        </svg>
-        <span class="garden-flower-name" aria-hidden="true">Daisy</span>
-      </button>
-      <button class="garden-seed" type="button" data-seed="3" aria-label="Plant seed 3 of 5" style="--x:51%;--plant-height:145px;--lean:-3deg" data-flower="Tulip">
-        <span class="seed-pebble" aria-hidden="true"></span>
-        <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
-          <use href="assets/garden-flowers.svg#plant-tulip" width="96" height="190"/>
-        </svg>
-        <span class="garden-flower-name" aria-hidden="true">Tulip</span>
-      </button>
-      <button class="garden-seed" type="button" data-seed="4" aria-label="Plant seed 4 of 5" style="--x:70%;--plant-height:183px;--lean:0deg" data-flower="Iris">
-        <span class="seed-pebble" aria-hidden="true"></span>
-        <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
-          <use href="assets/garden-flowers.svg#plant-iris" width="96" height="190"/>
-        </svg>
-        <span class="garden-flower-name" aria-hidden="true">Iris</span>
-      </button>
-      <button class="garden-seed" type="button" data-seed="5" aria-label="Plant seed 5 of 5" style="--x:87%;--plant-height:150px;--lean:5deg" data-flower="Cosmos">
-        <span class="seed-pebble" aria-hidden="true"></span>
-        <svg class="garden-plant" viewBox="0 0 96 190" aria-hidden="true" focusable="false">
-          <use href="assets/garden-flowers.svg#plant-cosmos" width="96" height="190"/>
-        </svg>
-        <span class="garden-flower-name" aria-hidden="true">Cosmos</span>
-      </button>
+  <!-- Flower wardrobe: opened from the flower in the navigation (flower-wardrobe.js). Options are built by the script. -->
+<dialog class="wardrobe-dialog" id="flower-wardrobe" aria-labelledby="wardrobe-title" aria-describedby="wardrobe-intro">
+    <button class="wardrobe-close" type="button" aria-label="Close wardrobe">×</button>
+    <span class="mono-label wardrobe-eyebrow">A little break</span>
+    <h2 id="wardrobe-title">Dress me up.</h2>
+    <p class="wardrobe-intro" id="wardrobe-intro">Pick a colour, a mood and something to hold. I’ll keep the look while you explore.</p>
+    <div class="wardrobe-body">
+      <div class="wardrobe-preview">
+        <div class="wardrobe-stage"><svg class="wardrobe-flower" viewBox="0 0 106.146 119.423" role="img" aria-label="Your dressed-up flower"></svg></div>
+        <div class="wardrobe-preview-copy">
+          <p class="wardrobe-name">Your little flower</p>
+          <p class="wardrobe-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="wardrobe-panel">
+        <form class="wardrobe-options" onsubmit="return false"></form>
+        <div class="wardrobe-actions">
+          <button class="wardrobe-remix" type="button"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="8.5" cy="8.5" r="1.1" fill="currentColor"/><circle cx="15.5" cy="15.5" r="1.1" fill="currentColor"/><circle cx="12" cy="12" r="1.1" fill="currentColor"/></svg>Remix</button>
+          <button class="wardrobe-reset" type="button">Start over</button>
+          <button class="wardrobe-done" type="button">Wear it →</button>
+        </div>
+      </div>
     </div>
-    <div class="garden-footer">
-      <p class="garden-count" role="status" aria-live="polite">0 of 5 in bloom</p>
-      <button class="garden-restart" type="button" hidden>Plant again ↗</button>
-    </div>
-    <p class="garden-note">No rush. Good things take a little care.</p>
-  </dialog>
+</dialog>
 
-<script>if(I18n.lang==="es")document.write('<script src="i18n-es.js?v=10"><\/script>')</script><script>I18n.run()</script><script src="header-dots.js?v=1"></script><script src="script.js"></script><script src="gallery-cards.js?v=laura-four-photo-1"></script><script src="flower-motion.js"></script><script src="little-garden.js"></script><script src="doodle-surprises.js"></script>
+<script>if(I18n.lang==="es")document.write('<script src="i18n-es.js?v=10"><\/script>')</script><script>I18n.run()</script><script src="header-dots.js?v=1"></script><script src="script.js"></script><script src="gallery-cards.js?v=laura-four-photo-1"></script><script src="flower-motion.js"></script><script src="flower-wardrobe.js?v=1"></script><script src="doodle-surprises.js"></script>
 </body></html>
