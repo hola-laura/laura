@@ -1200,4 +1200,5 @@ window.I18N_ES = {
 "Explore two screens: a legacy risk register and the dashboard redesigned in the shared system. Drag to compare.": "Explora dos pantallas: un registro de riesgos antiguo y el dashboard rediseñado con el sistema compartido. Arrastra para comparar.",
 "Explore a legacy risk register and my redesigned risk dashboard. Scroll vertically to view both screens.": "Explora un registro de riesgos antiguo y mi dashboard de riesgos rediseñado. Desplázate en vertical para ver ambas pantallas.",
 "Explore the legacy risk register and the redesigned dashboard": "Explorar el registro de riesgos antiguo y el dashboard rediseñado",
+"Illustrative reconstruction of a usability test, with the redesigned risk dashboard on the laptop": "Reconstrucción ilustrativa de un test de usabilidad, con el dashboard de riesgos rediseñado en el portátil",
 };

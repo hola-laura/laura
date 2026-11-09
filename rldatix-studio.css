@@ -332,3 +332,4 @@
 .hd-table td:last-child{text-align:right;padding-right:0}.hd-table th:last-child{text-align:right}
 .hd-table td.mono{font:400 11.5px/1 var(--font-mono);color:var(--u-mute)}
 .rld-compare-scroll{scrollbar-color:#a1a1aa #f4f4f5!important}
+.hd-table td.mono{white-space:nowrap}.hd-table td:nth-child(2){padding-right:14px}
