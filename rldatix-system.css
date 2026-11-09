@@ -161,3 +161,15 @@ body.flex-case .rld-overdue-item>span{text-transform:none!important}
   .st-ba>div>span:last-child{grid-column:1/-1}
   .st-result{flex-direction:column;gap:4px}
 }
+
+/* ================= Big numbers in the opening ================= */
+.st-stats{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:12px;margin:24px 0 8px}
+.st-stats>div{display:flex;flex-direction:column;gap:10px;padding:22px;border-radius:20px;background:#ece6f5;min-width:0}
+.st-stats>div:first-child{background:#29242f;color:#fff}
+.st-stats strong{display:flex;align-items:baseline;gap:6px;font:400 clamp(36px,4vw,56px)/1 var(--font-heading);letter-spacing:-.03em;color:#29242f;white-space:nowrap}
+.st-stats>div:first-child strong{color:#fff}
+.st-stats strong i{font-style:normal;font-size:.6em;color:#b49bd3}
+.st-stats strong small{font:400 14px/1 var(--font-mono);letter-spacing:0;color:inherit;opacity:.7}
+.st-stats span{font-size:13.5px;line-height:1.45;color:#514b59}
+.st-stats>div:first-child span{color:#d9cfe6}
+@media(max-width:900px){.st-stats{grid-template-columns:1fr 1fr}.st-stats>div:first-child,.st-stats>div:last-child{grid-column:1/-1}.st-stats>div:last-child{flex-direction:row;align-items:center;gap:16px}}
