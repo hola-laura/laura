@@ -1182,9 +1182,9 @@ window.I18N_ES = {
 "Mar 2024 to Jun 2024": "Marzo de 2024 a junio de 2024",
 "It worked as a standalone tool, even without a connected mortgage, and the team reported strong uptake. We also opened the referral journey to homeowners without a mortgage connected to Monzo. That increased volume, but the commercial goal remained out of reach.": "Funcionaba como herramienta independiente, incluso sin una hipoteca conectada, y el equipo observó un uso alto. También abrimos el proceso de recomendación a propietarios sin hipoteca conectada a Monzo. Aumentó el volumen, pero no bastó para alcanzar el objetivo comercial.",
 "THE WORK, UP CLOSE": "EL TRABAJO, DE CERCA",
-"Five moments from the platform": "Cinco momentos de la plataforma",
+"Six moments from the platform": "Seis momentos de la plataforma",
 "Small, everyday interactions decide whether a busy clinician trusts a tool. These are the ones I spent the most time on.": "Las pequeñas interacciones del día a día deciden si un profesional sanitario con prisa confía en una herramienta. Estas son en las que más tiempo invertí.",
-"Rebuilt in code for this case study. Try them.": "Recreadas en código para este caso. Pruébalas.",
+"Redesigned in code for this case study. Try them.": "Rediseñadas en código para este caso. Pruébalas.",
 "<b>Overview</b><span>Pick a cell in the matrix to see the risks behind the number.</span>": "<b>Resumen</b><span>Elige una celda de la matriz para ver los riesgos que hay detrás del número.</span>",
 "<b>Record</b><span>Tick off a control and the residual score updates with it.</span>": "<b>Ficha</b><span>Marca un control y la puntuación residual se actualiza al momento.</span>",
 "<b>Icon Wall</b><span>Three admin flows became one. Change the tile and see exactly what staff will tap.</span>": "<b>Icon Wall</b><span>Tres flujos de administración pasaron a ser uno. Cambia la tarjeta y mira exactamente lo que tocará el personal.</span>",
@@ -1194,4 +1194,5 @@ window.I18N_ES = {
 "Shared pattern": "Patrón compartido",
 "<b>Feedback</b><span>Press Save in both versions. Clear confirmation was one of the first shared patterns.</span>": "<b>Feedback</b><span>Pulsa Guardar en las dos versiones. Una confirmación clara fue uno de los primeros patrones compartidos.</span>",
 "Compare save feedback": "Comparar la confirmación al guardar",
+"<b>System</b><span>One status language across the platform, so teams stopped solving the same problem twice.</span>": "<b>Sistema</b><span>Un mismo lenguaje de estados en toda la plataforma, para que los equipos dejaran de resolver dos veces el mismo problema.</span>",
 };
