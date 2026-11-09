@@ -305,3 +305,30 @@
   .rs-motion .rs-card:not(.is-in){opacity:1;translate:none}
   .rs-live::before{animation:none}
 }
+
+/* ---------- Hero: redesigned dashboard inside the comparison laptop ---------- */
+.rld-compare .hd-wrap{position:absolute;inset:0;overflow:hidden;background:#fff}
+.rld-compare .hd{width:1260px;height:1253px;max-width:none;border-radius:0;box-shadow:none!important;transform-origin:0 0;transform:scale(var(--k,.8));grid-template-columns:220px minmax(0,1fr)}
+.rld-compare .hd .rs-side{padding:22px 14px}
+.rld-compare .hd .rs-main{padding:30px 34px}
+.rld-compare .hd .rs-main-top h4{font-size:24px}
+.rld-compare .hd .rs-kpis strong{font-size:28px}
+.hd-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hd-grid .rs-pane{padding:18px 20px}
+.hd-grid .rs-pane>header strong{font-size:14px}
+.hd-obj{padding:10px 0}
+.hd-obj>div{display:flex;justify-content:space-between;font-size:13px;color:var(--u-ink2)}
+.hd-obj b{font-weight:600;color:var(--u-ink)}
+.hd-obj .rs-bar{height:8px;margin-top:9px}
+.hd .rs-matrix{grid-template-columns:96px repeat(5,minmax(0,1fr))}
+.hd .rs-cell{display:grid;place-items:center;aspect-ratio:1.9;cursor:default;font-size:13px}
+.hd .rs-cell[data-count="0"]{color:transparent}
+.hd .rs-matrix .ax{font-size:11.5px}.hd .rs-matrix .ax.col{font-size:10.5px}
+.hd-legend{display:flex;gap:6px;margin-top:14px}
+.hd-table{width:100%;border-collapse:collapse;font-size:12.5px}
+.hd-table th{padding:8px 0;text-align:left;font-weight:500;font-size:11.5px;color:var(--u-mute);border-bottom:1px solid var(--u-line)}
+.hd-table td{padding:11px 10px 11px 0;border-bottom:1px solid var(--u-line);vertical-align:middle}
+.hd-table tr:last-child td{border-bottom:0}
+.hd-table td:last-child{text-align:right;padding-right:0}.hd-table th:last-child{text-align:right}
+.hd-table td.mono{font:400 11.5px/1 var(--font-mono);color:var(--u-mute)}
+.rld-compare-scroll{scrollbar-color:#a1a1aa #f4f4f5!important}

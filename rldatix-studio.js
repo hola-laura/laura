@@ -22,7 +22,7 @@
     null,
     ['Settings', '<circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/>']
   ];
-  $$('[data-rs-side]').forEach(side => {
+  document.querySelectorAll('[data-rs-side]').forEach(side => {
     const on = side.dataset.rsSide;
     side.innerHTML = '<div class="rs-org"><i>D</i><span>DCIQ</span><small>⌄</small></div>' +
       NAV.map(n => n ? `<div class="rs-nav${n[0] === on ? ' on' : ''}">${icon(n[1])}<span>${n[0]}</span>${n[2] ? `<em>${n[2]}</em>` : ''}</div>` : '<hr>').join('') +
@@ -222,6 +222,12 @@
       stage.classList.toggle('is-on', b.dataset.rsRed === 'on');
     }));
   }
+
+  /* ---------- Hero dashboard scale ---------- */
+  document.querySelectorAll('.rld-compare .hd-wrap').forEach(wrap => {
+    const hd = wrap.querySelector('.hd');
+    new ResizeObserver(() => hd.style.setProperty('--k', wrap.clientWidth / 1260)).observe(wrap);
+  });
 
   /* ---------- Reveal on scroll ---------- */
   if (!reduced && 'IntersectionObserver' in window) {

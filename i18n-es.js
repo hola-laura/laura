@@ -1195,4 +1195,9 @@ window.I18N_ES = {
 "<b>Feedback</b><span>Press Save in both versions. Clear confirmation was one of the first shared patterns.</span>": "<b>Feedback</b><span>Pulsa Guardar en las dos versiones. Una confirmación clara fue uno de los primeros patrones compartidos.</span>",
 "Compare save feedback": "Comparar la confirmación al guardar",
 "<b>System</b><span>One status language across the platform, so teams stopped solving the same problem twice.</span>": "<b>Sistema</b><span>Un mismo lenguaje de estados en toda la plataforma, para que los equipos dejaran de resolver dos veces el mismo problema.</span>",
+"<span>Legacy risk register</span><span>Redesigned dashboard</span>": "<span>Registro de riesgos antiguo</span><span>Dashboard rediseñado</span>",
+"Redesign": "Rediseño",
+"Explore two screens: a legacy risk register and the dashboard redesigned in the shared system. Drag to compare.": "Explora dos pantallas: un registro de riesgos antiguo y el dashboard rediseñado con el sistema compartido. Arrastra para comparar.",
+"Explore a legacy risk register and my redesigned risk dashboard. Scroll vertically to view both screens.": "Explora un registro de riesgos antiguo y mi dashboard de riesgos rediseñado. Desplázate en vertical para ver ambas pantallas.",
+"Explore the legacy risk register and the redesigned dashboard": "Explorar el registro de riesgos antiguo y el dashboard rediseñado",
 };
