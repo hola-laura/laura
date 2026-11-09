@@ -1,7 +1,7 @@
 /* Titles across the site use Libre Baskerville. This file loads last on every page so one rule covers them all.
    font-size-adjust scales the serif to the x-height the layouts were sized for (it runs wider than DM Sans).
    Excluded: RLDatix interface mockups (they keep the product type) and its small mono labels. */
-:is(h1, h2, h3, h4):not(.rld-mock-body *, .rld-report-dialog *, #v3-section-0 .fv-lead-grid h3) {
+:is(h1, h2, h3, h4):not(.rld-mock-body *, .rld-report-dialog *, #rs-studio [data-no-i18n] *, #v3-section-0 .fv-lead-grid h3) {
   font-family: var(--font-heading);
   font-size-adjust: .47;
   font-weight: 400;
