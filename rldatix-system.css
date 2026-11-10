@@ -173,3 +173,36 @@ body.flex-case .rld-overdue-item>span{text-transform:none!important}
 .st-stats span{font-size:13.5px;line-height:1.45;color:#514b59}
 .st-stats>div:first-child span{color:#d9cfe6}
 @media(max-width:900px){.st-stats{grid-template-columns:1fr 1fr}.st-stats>div:first-child,.st-stats>div:last-child{grid-column:1/-1}.st-stats>div:last-child{flex-direction:row;align-items:center;gap:16px}}
+
+/* ================= Spacing rhythm (8px scale: 16 / 24 / 40 / 64) ================= */
+/* Opening */
+#v3-section-0 .st-short{margin:40px 0 0}
+#v3-section-0 .st-stats{margin:24px 0 0}
+#v3-section-0 .fv-lead-grid{margin-top:16px}
+#v3-section-0 .rld-compare-laptop.rs-surface{margin-top:64px}
+/* Challenge */
+#v3-section-1 .fv-lead-grid{margin-top:40px}
+#v3-section-1 .rld-audit-gallery{margin-top:64px}
+#v3-section-1 .rld-audit-card figcaption{margin-top:16px}
+#v3-section-1 .rld-audit-gallery+p{margin-top:40px}
+#v3-section-1 .rld-user-needs{margin-top:24px}
+#v3-section-1 .st-plan{margin-top:64px}
+/* Every chapter closes the same way */
+.st-result{margin-top:64px!important}
+/* Shared library: last card fills its row instead of leaving a hole */
+#v3-section-3 .rld-library-card:last-child{grid-column:1/-1}
+#v3-section-3 .rld-library-card:last-child .rld-pill-samples{flex-wrap:wrap}
+/* Icon Wall: side cards share the height evenly */
+#v3-section-4 .rld-icon-audiences{display:grid;grid-template-rows:1fr 1fr;gap:16px}
+#v3-section-4 .rld-icon-audiences article{display:flex;flex-direction:column;justify-content:center;margin:0}
+#v3-section-4 .rld-icon-steps{margin-top:24px}
+/* Testing */
+#v3-section-5 .rld-research-takeaway,#v3-section-5 .rld-research-findings{margin-top:64px}
+/* Result */
+#v3-section-7 .st-ba{margin:40px 0 24px}
+#v3-section-7 .rld-outcome-grid{margin:0 0 24px}
+#v3-section-7 .st-learned{margin-top:0}
+@media(max-width:820px){
+  #v3-section-0 .rld-compare-laptop.rs-surface,#v3-section-1 .rld-audit-gallery,#v3-section-1 .st-plan,.st-result,#v3-section-5 .rld-research-takeaway,#v3-section-5 .rld-research-findings{margin-top:40px!important}
+  #v3-section-0 .st-short{margin-top:32px}
+}

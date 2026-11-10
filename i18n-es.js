@@ -1259,4 +1259,7 @@ window.I18N_ES = {
 "Configuration journey": "Recorrido de configuración",
 "Three separate admin flows became one connected experience, tested with four major clients.": "Tres flujos de administración separados pasaron a ser una experiencia conectada, probada con cuatro grandes clientes.",
 "Setup": "Configuración",
+"Usability test with the redesigned risk dashboard on a laptop": "Test de usabilidad con el dashboard de riesgos rediseñado en un portátil",
+"During COVID-19, I led research and design to turn RLDatix’s older risk tools into one consistent system, from a shared UI library to faster incident reporting.": "Durante la COVID-19, lideré la investigación y el diseño para convertir las herramientas de riesgos antiguas de RLDatix en un sistema coherente, desde una librería de UI compartida hasta un reporte de incidentes más rápido.",
+"20–30 → 5 min report drafts · 0 navigation or saving tickets · 3 → 1 admin flows": "Borradores de 20–30 → 5 min · 0 incidencias de navegación o guardado · 3 → 1 flujos de administración",
 };
