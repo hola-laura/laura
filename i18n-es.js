@@ -1374,4 +1374,5 @@ window.I18N_ES = {
 "The Flex account screen, from balance and payment actions down to activity, credit limit and purchase protection": "La pantalla de la cuenta Flex, desde el saldo y los pagos hasta la actividad, el límite de crédito y la protección de compras",
 "Project summary": "Resumen del proyecto",
 "Record": "Grabar",
+"+37% retention · −15% customers missing payments · Best Credit Card Provider award": "+37% de retención · −15% de clientes con pagos fallidos · Premio a mejor tarjeta de crédito",
 };
