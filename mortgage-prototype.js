@@ -17,7 +17,7 @@
   const previous = root.querySelector('[data-prototype-prev]');
   const next = root.querySelector('[data-prototype-next]');
   const base = 'assets/mortgages/prototypes/';
-  const state = {active:'tracker', view:'main', factfindExpanded:false, returnTo:'recommendation'};
+  const state = {active:'recommendation', view:'main', factfindExpanded:false, returnTo:'recommendation'};
 
   const spot = (x,y,w,h,label,action) => `<button class="mg-figma-spot" type="button" style="--x:${x}%;--y:${y}%;--w:${w}%;--h:${h}%" aria-label="${esc(label)}" data-proto-action="${action}"></button>`;
   /* Fixed status bar that fades in over the content once the screen is scrolled, like on a real iPhone.
@@ -33,7 +33,6 @@
   const trackerTimeline = () => frame('tracker-timeline.png',c('Original Figma timeline sheet with eight remortgage stages','Hoja de cronología original de Figma con ocho etapas'),spot(4.5,27.5,14,5.2,c('Close timeline','Cerrar cronología'),'tracker'));
   const recommendationReady = () => frame('recommendation-ready-redacted.png',c('Figma needs-action screen, adviser name anonymised','Pantalla Figma con nombre del asesor anonimizado'),
     spot(7.7,66.5,84,5.5,c('Review recommendation','Revisar recomendación'),'recommendation-detail')
-    +spot(69,43,23,3.5,c('See the timeline','Ver cronología'),'tracker-timeline')
     +spot(73,78.3,19,4.5,c('Open adviser chat','Abrir chat del asesor'),'chat')
     +spot(3.5,6.2,13,5.3,c('Go back','Volver'),'tracker-back'));
   const recommendationDetail = () => frame('recommendation-redacted.png',c('Figma mortgage recommendation with lender and figures anonymised','Recomendación hipotecaria Figma con entidad y cifras anonimizadas'),
@@ -50,7 +49,7 @@
 
   const screens = {
     tracker:{status:['Implementation in progress when I left','En implementación cuando dejé el equipo'],heading:['Remortgage progress','Seguimiento del cambio de hipoteca'],description:['The screen and timeline sheet are the original Figma frames. Select “Learn more” inside the tracker to open the eight-step sheet.','La pantalla y la hoja de cronología son los frames originales de Figma. Pulsa «Learn more» en el tracker para abrir las ocho etapas.'],render:()=>state.view==='timeline'?trackerTimeline():tracker()},
-    recommendation:{status:['Design exploration','Exploración de diseño'],heading:['Recommendation ready, then the full offer','Recomendación lista y detalle de la oferta'],description:['Follow the original Figma flow from “Needs action” to the offer details. Personal names and mortgage figures are covered.','Sigue el flujo original de Figma desde «Needs action» hasta el detalle de la oferta. Los nombres y las cifras están cubiertos.'],render:()=>state.view==='detail'?recommendationDetail():recommendationReady()},
+    recommendation:{status:['Design exploration','Exploración de diseño'],heading:['Recommendation ready, then the full offer','Recomendación lista y detalle de la oferta'],description:['Start where the tracker asks for action, then open the full offer. Names and mortgage figures are hidden.','Empieza donde el seguimiento pide una acción y abre la oferta completa. Los nombres y las cifras están ocultos.'],render:()=>state.view==='detail'?recommendationDetail():recommendationReady()},
     chat:{status:['Implementation in progress when I left','En implementación cuando dejé el equipo'],heading:['Mortgage help in the right chat','Ayuda hipotecaria en el chat adecuado'],description:['This is the original Intercom screen. Its recommendation button opens the matching offer design.','Esta es la pantalla original de Intercom. El botón de recomendación abre el diseño de la oferta.'],render:intercom},
     factfind:{status:['Fact-find exploration','Exploración del formulario'],heading:['Prepare before the mortgage fact-find','Prepararse para el formulario hipotecario'],description:['The original Fact-find frames show what to prepare and an expandable Habito application timeline.','Los frames originales de Fact-find muestran qué preparar y una cronología desplegable de la solicitud con Habito.'],render:()=>state.view==='timeline'?factfindTimeline():factfindReady()}
   };
@@ -77,9 +76,9 @@
   const markTouched=()=>root.querySelector('.mg-proto-panel')?.classList.add('is-touched');
   function setPrototype(name){state.active=name;state.view='main';state.factfindExpanded=false;render();}
   function navigate(action){
-    if(action==='tracker-timeline'){state.returnTo=state.active;state.active='tracker';state.view='timeline';}
-    else if(action==='tracker'){state.active='tracker';state.view='main';}
-    else if(action==='tracker-back'){state.active='tracker';state.view='main';}
+    if(action==='tracker-timeline'){state.view='main';}
+    else if(action==='tracker'){state.active=state.returnTo||'recommendation';state.view='main';}
+    else if(action==='tracker-back'){state.view='main';}
     else if(action==='chat-back'){state.active=state.returnTo||'recommendation';state.view='main';}
     else if(action==='recommendation-detail'){state.active='recommendation';state.view='detail';}
     else if(action==='recommendation-ready'){state.active='recommendation';state.view='main';}

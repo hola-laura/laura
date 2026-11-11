@@ -151,3 +151,5 @@
 /* Match Figma: Monzo Sans Display Bold titles */
 .ob-frame h3{font-weight:700!important;letter-spacing:-.4px!important}
 .ob-intro h3{font-size:30px!important;line-height:36px!important;max-width:320px;margin-left:auto!important;margin-right:auto!important}
+/* Section jump list: keep on one line on desktop */
+@media(min-width:1100px){.mortgage-case .fv-jump,.fv-jump{gap:18px}}
