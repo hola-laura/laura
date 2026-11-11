@@ -126,3 +126,4 @@
 .fx-tile-awards .mono-label{color:#fff;opacity:.85}
 .fx-tile-awards .fx-tile-art{object-position:35% 15%}
 .fx-tile-awards li{grid-template-columns:148px minmax(0,1fr)}
+@media (max-width:640px){.fx-tile-awards li{grid-template-columns:1fr;gap:2px}}
