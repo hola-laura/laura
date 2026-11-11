@@ -1382,3 +1382,6 @@
 
   .compare        { height: 600px; }
 }
+
+/* Footer links on case study pages: keep the email and LinkedIn links apart. */
+.footer-actions{display:flex;flex-wrap:wrap;align-items:center;gap:28px}

@@ -45,3 +45,14 @@
 .fx-rank-line circle{fill:var(--fx-lilac-soft)}
 @media (max-width:1100px){.fx-rank-grid{grid-template-columns:minmax(0,1fr) 280px;gap:64px}}
 @media (max-width:820px){.fx-rank-grid{grid-template-columns:1fr;gap:16px}.fx-rank-line{display:none}.fx-rank .fx-rank-item{padding:12px 14px}}
+
+/* Spacing pass */
+.fx-calls{margin:64px 0}
+.fx-call-grid h3{max-width:22ch}
+@media (max-width:560px){
+  .fx-calls{padding:40px 18px;margin:40px 0}
+  .fx-call-grid{gap:14px;margin-top:28px}
+  .fx-call-grid>li{padding:20px 18px}
+  .fx-call-grid h3{margin:8px 0 14px}
+  .fx-facts{padding-top:28px}
+}
