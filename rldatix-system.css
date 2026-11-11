@@ -206,3 +206,78 @@ body.flex-case .rld-overdue-item>span{text-transform:none!important}
   #v3-section-0 .rld-compare-laptop.rs-surface,#v3-section-1 .rld-audit-gallery,#v3-section-1 .st-plan,.st-result,#v3-section-5 .rld-research-takeaway,#v3-section-5 .rld-research-findings{margin-top:40px!important}
   #v3-section-0 .st-short{margin-top:32px}
 }
+
+/* ================= New chapters: behaviour, experts, decisions ================= */
+.xp>p{max-width:62ch}
+.xp .rs-surface{margin-top:40px}
+.xp-callouts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:40px}
+.xp-callouts article{display:grid;gap:6px;align-content:start}
+.xp-callouts h3{margin:0;font:500 16px/1.35 var(--font-body)!important;letter-spacing:0!important;color:#27232c}
+.xp-callouts p{margin:0!important;font-size:14.5px!important;line-height:1.55!important;color:#605969!important}
+.xp-caption{margin:14px 4px 0!important;font-size:14px!important;color:#605969!important}
+.xp-app-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid var(--u-line)}
+.xp .rs-window h4{margin:2px 0 0}
+
+/* Behaviour */
+.xp-states{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:32px;align-items:center}
+.xp-states-copy{display:grid;gap:14px;min-width:0}
+.xp-tabs{display:flex;flex-wrap:wrap;gap:6px}
+.xp-tabs button{min-height:34px;padding:0 14px;border:0;border-radius:20px;background:#ffffffb8;color:#49365e;font:500 13px/1 var(--font-body);cursor:pointer;box-shadow:0 1px 3px #3a2a1a14}
+.xp-tabs button[aria-selected=true]{background:#29242f;color:#fff}
+.xp-tabs button:focus-visible{outline:2px solid #6d4793;outline-offset:2px}
+.xp-states-copy h3{margin:4px 0 0;font-size:24px!important;line-height:1.25}
+.xp-states-copy dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:0;font-size:14.5px;line-height:1.5}
+.xp-states-copy dt{font:400 11px/1.9 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#6d4793}
+.xp-states-copy dd{margin:0;color:#3d3446}
+.xp-flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font:400 11.5px/1.4 var(--font-mono);color:#605969}
+.xp-flow span{padding:4px 9px;border-radius:6px;background:#ffffffa6}
+.xp-flow span.on{background:#29242f;color:#fff}
+.xp-form-win{width:100%!important}
+.xp-form{display:grid;gap:14px;padding:18px 20px 20px;min-height:270px;align-content:start}
+.xp-form .rs-fake-input em{font-style:normal;font-weight:400;font-size:11px;color:var(--r-ext-t)}
+.xp-form .rs-fake-input.is-err span{border-color:#e5484d;box-shadow:0 0 0 3px #e5484d1f}
+.xp-row{display:flex;flex-wrap:wrap;gap:8px}
+.xp-banner{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:10px;font:400 12px/1.45 var(--ui)}
+.xp-banner b{flex:0 0 18px;height:18px;display:grid;place-items:center;border-radius:50%;color:#fff;font-size:10px}
+.xp-banner.ok{background:var(--u-ink);color:#fff}.xp-banner.ok b{background:#22a565}
+.xp-banner.bad{background:var(--r-ext);color:#7a1a1f}.xp-banner.bad b{background:var(--r-ext-t)}
+
+/* Experts: register */
+.xp-reg-stage{display:block!important}
+.xp-reg{width:100%!important;max-width:none}
+.xp-views{display:flex;flex-wrap:wrap;gap:6px}
+.xp-views button{min-height:28px;padding:0 10px;border:1px solid var(--u-line2);border-radius:8px;background:#fff;color:var(--u-ink2);font:500 11.5px/1 var(--ui);cursor:pointer}
+.xp-views button[aria-pressed=true]{background:var(--u-ink);color:#fff;border-color:var(--u-ink)}
+.xp-views button:focus-visible{outline:2px solid var(--u-accent);outline-offset:2px}
+.xp-bulk{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 18px;background:var(--u-side);border-bottom:1px solid var(--u-line);font:400 12px/1.4 var(--ui);color:var(--u-ink2)}
+.xp-bulk[hidden]{display:none!important}
+.xp-bulk b{font-weight:600;color:var(--u-ink);margin-right:4px}
+.xp-table-scroll{overflow-x:auto}
+.xp-reg table{width:100%;min-width:780px;border-collapse:collapse;font:400 12.5px/1.4 var(--ui);font-variant-numeric:tabular-nums}
+.xp-reg th{padding:9px 12px;text-align:left;font-weight:500;font-size:11px;color:var(--u-mute);background:var(--u-side);border-bottom:1px solid var(--u-line);white-space:nowrap}
+.xp-reg td{padding:11px 12px;border-bottom:1px solid var(--u-line);white-space:nowrap;vertical-align:middle}
+.xp-reg tr:last-child td{border-bottom:0}
+.xp-reg tr.is-sel td{background:#f5f5ff}
+.xp-reg td.id{font:400 11px/1 var(--font-mono);color:var(--u-mute)}
+.xp-reg td.t{white-space:normal;min-width:200px;font-weight:500}
+.xp-reg td.tr{font-size:11.5px}.xp-reg td.tr.up{color:var(--r-ext-t)}.xp-reg td.tr.dn{color:var(--r-low-t)}.xp-reg td.tr.eq{color:var(--u-faint)}
+.xp-reg td.over{color:var(--r-ext-t);font-weight:500}
+.xp-reg input[type=checkbox]{width:15px;height:15px;margin:0;accent-color:#18181b;cursor:pointer}
+.xp-reg-foot{display:flex;justify-content:space-between;gap:10px;padding:10px 18px;border-top:1px solid var(--u-line);font:400 11px/1.4 var(--ui);color:var(--u-mute)}
+
+/* Decisions */
+.xp-decs{display:grid;gap:14px;margin-top:40px}
+.xp-dec{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,1fr) minmax(0,.9fr);gap:24px;padding:24px 26px;border-radius:20px;background:#fff;border:1px solid #e6e0ec}
+.xp-dec h3{margin:0;font-size:19px!important;line-height:1.35}
+.xp-k{display:block;margin-bottom:6px;font:400 11px/1.5 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#726b7a}
+.xp-dec p{margin:0!important;font-size:14.5px!important;line-height:1.55!important;color:#605969!important}
+.xp-dec .xp-res{color:#1f7a45!important;font-weight:500}
+.xp-who{display:inline-flex;margin-bottom:12px;padding:2px 8px;border-radius:6px;font:400 11px/1.5 var(--font-mono);letter-spacing:.03em}
+.xp-who.me{background:#6d4793;color:#fff}.xp-who.team{background:#ece6f5;color:#3d3446}
+
+@media(max-width:900px){
+  .xp-states{grid-template-columns:1fr}
+  .xp-callouts{grid-template-columns:1fr;gap:18px}
+  .xp-dec{grid-template-columns:1fr;gap:12px}
+}
+.xp-form-win .xp-app-top{flex-direction:column;align-items:flex-start;gap:0}
