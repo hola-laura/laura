@@ -1327,4 +1327,8 @@ window.I18N_ES = {
 "<b>03–04</b><span>Use it for overviews and expert workflows</span>": "<b>03–04</b><span>Usarla en resúmenes y flujos para expertos</span>",
 "<b>05</b><span>Make reporting an incident faster to start</span>": "<b>05</b><span>Hacer que empezar un reporte sea más rápido</span>",
 "<b>06</b><span>Test every decision with the people using it</span>": "<b>06</b><span>Probar cada decisión con quienes la usan</span>",
+"Let staff speak a first draft of a report": "Permitir que el personal dicte un primer borrador del reporte",
+"Cutting fields from the form to make it shorter.": "Quitar campos del formulario para hacerlo más corto.",
+"Governance teams needed those fields. Typing them at the end of a shift was the hard part, so voice removed the typing, and staff reviewed the draft before sending.": "Los equipos de gobernanza necesitaban esos campos. Lo difícil era escribirlos al final de un turno, así que la voz eliminó la escritura, y el personal revisaba el borrador antes de enviarlo.",
+"First draft in about 5 minutes, down from 20–30.": "Primer borrador en unos 5 minutos, frente a 20–30.",
 };
