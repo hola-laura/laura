@@ -18,12 +18,12 @@
   </style>
   <style>
     /* Real screenshots, presented inside an iPhone 16 Pro frame. */
-    .iphone16{position:relative;isolation:isolate;display:block;aspect-ratio:402/874;width:min(100%,236px);flex:0 0 auto;padding:2.2%;border:1px solid #aaa9a7;border-radius:15.7%/7.2%;background:linear-gradient(105deg,#dedddb 0%,#a4a3a1 3%,#55545a 6%,#17171b 10%,#0b0b0f 17%,#17171b 84%,#4c4b50 91%,#d1d0cd 97%,#8b8986 100%);box-shadow:0 24px 48px #27232c3b,inset 0 0 0 1px #ffffff65}
+    .iphone16{position:relative;isolation:isolate;display:block;aspect-ratio:715/1496;width:min(100%,236px);flex:0 0 auto;padding:0;border:1px solid #aaa9a7;border-radius:15.7%/7.2%;background:linear-gradient(105deg,#dedddb 0%,#a4a3a1 3%,#55545a 6%,#17171b 10%,#0b0b0f 17%,#17171b 84%,#4c4b50 91%,#d1d0cd 97%,#8b8986 100%);box-shadow:0 24px 48px #27232c3b,inset 0 0 0 1px #ffffff65}
     .iphone16::before{content:"";position:absolute;z-index:3;top:25%;left:-4px;width:3px;height:8%;border-radius:4px;background:#6c6b72;box-shadow:0 64px 0 #5b5962}
     .iphone16::after{content:"";position:absolute;z-index:3;top:31%;right:-4px;width:3px;height:14%;border-radius:4px;background:#6c6b72}
-    .device-screen{position:relative;width:100%;height:100%;overflow:hidden;border:1px solid #07070a;border-radius:14.4%/6.6%;background:#dce9f7}
+    .device-screen{position:absolute;inset:1% 2.8%;width:auto;height:auto;overflow:hidden;border:1px solid #07070a;border-radius:14.4%/6.6%;background:#dce9f7}
     .device-screen img{display:block;width:100%;height:100%;object-fit:cover}
-    .dynamic-island{position:absolute;z-index:2;top:2.2%;left:50%;width:31.5%;height:3.8%;transform:translateX(-50%);border-radius:99px;background:#050507;box-shadow:0 1px 2px #0008}
+    .dynamic-island{position:absolute;z-index:2;top:2.7%;left:50%;width:30%;height:3.7%;transform:translateX(-50%);border-radius:99px;background:#050507;box-shadow:0 1px 2px #0008}
     .hero-visual{gap:24px;min-height:520px}
     .hero-visual .iphone16{width:46%;max-width:236px;transform:none!important;margin-top:0!important}
     .screens{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;max-width:840px;margin:30px auto 0}
@@ -53,7 +53,7 @@
     .concept-toast.is-visible{min-height:38px;margin-bottom:9px;padding-top:7px;padding-bottom:7px;opacity:1;transform:translateY(0)}
         .concept-footnote{display:block;margin-top:14px;color:var(--muted);font:9px/1.5 var(--mono);text-align:center;text-transform:uppercase;letter-spacing:.03em}
     @media(max-width:800px){.hero-visual{min-height:440px}.screens{grid-template-columns:repeat(2,minmax(0,1fr))}.concept{grid-template-columns:1fr;gap:22px}.concept-stage{order:-1}.concept-device{width:min(100%,270px)}}
-    @media(max-width:520px){.hero-visual{min-height:360px;gap:12px;padding:16px}.hero-visual .iphone16{width:44%;padding:2.2%;border-radius:15.7%/7.2%}.hero-visual .device-screen{border-radius:14.4%/6.6%}.hero-visual .iphone16:nth-child(2){margin-top:0}.screens{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.screen{padding:10px 6px 7px}.screen-device{width:min(100%,175px)}.device-screen{border-radius:14.4%/6.6%}.iphone16{padding:2.2%;border-radius:15.7%/7.2%}.concept-stage{padding:18px}.concept-device{width:min(100%,260px)}}
+    @media(max-width:520px){.hero-visual{min-height:360px;gap:12px;padding:16px}.hero-visual .iphone16{width:44%;padding:0;border-radius:15.7%/7.2%}.hero-visual .device-screen{border-radius:14.4%/6.6%}.hero-visual .iphone16:nth-child(2){margin-top:0}.screens{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.screen{padding:10px 6px 7px}.screen-device{width:min(100%,175px)}.device-screen{border-radius:14.4%/6.6%}.iphone16{padding:0;border-radius:15.7%/7.2%}.concept-stage{padding:18px}.concept-device{width:min(100%,260px)}}
     @media(prefers-reduced-motion:reduce){.concept-progress span,.concept-button,.concept-toast{transition:none}}
   </style>
   <style>
