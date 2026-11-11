@@ -1,3 +1,8 @@
+/* Onest (SIL OFL): the closest free match to Monzo Sans, used for recreated Monzo screens */
+@font-face{font-family:"Onest";src:url("assets/fonts/onest/onest-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Onest";src:url("assets/fonts/onest/onest-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Onest";src:url("assets/fonts/onest/onest-latin-600-normal.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Onest";src:url("assets/fonts/onest/onest-latin-700-normal.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
 /* =====================================================================
    case-study.css
    ---------------------------------------------------------------------
@@ -35,7 +40,7 @@
 
   /* Monzo Sans is private (see styles.css for @font-face declarations);
      fall back to DM Sans if the font files are missing. */
-  --font-monzo: "Monzo Sans Text", "DM Sans", system-ui, sans-serif;
+  --font-monzo: "Monzo Sans Text", "Onest", "DM Sans", system-ui, sans-serif;
 }
 
 
