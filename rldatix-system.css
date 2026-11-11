@@ -311,3 +311,20 @@ body.flex-case .rld-voice .rld-voice-ico svg{width:16px;height:16px;fill:none;st
 body.flex-case .rld-voice button.rld-voice-rec{display:inline-flex;align-items:center;gap:6px;width:auto;height:auto;min-height:28px;padding:0 11px;border:1px solid var(--u-line2);border-radius:20px;background:#fff;color:var(--u-ink);font:500 10.5px/1 var(--ui);box-shadow:0 1px 2px #18181b0d;cursor:pointer}
 body.flex-case .rld-voice button.rld-voice-rec i{width:7px;height:7px;border-radius:50%;background:#e5484d}
 body.flex-case .rld-voice button.rld-voice-rec:hover{background:var(--u-side)}
+
+/* ================= Opening fact sheet: one 4-column grid for numbers and credits ================= */
+.st-facts{display:grid;gap:32px;margin-top:56px;padding-top:32px;border-top:1px solid #e6e0ec}
+.st-facts dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 32px;margin:0}
+.st-facts dl>div{display:flex;flex-direction:column;gap:10px;min-width:0}
+.st-facts dd{margin:0}
+.st-nums dt{display:flex;align-items:center;gap:10px;font:400 clamp(34px,3.4vw,46px)/1 var(--font-heading);letter-spacing:-.03em;color:#27232c;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.st-nums dt i{font-style:normal;font-family:var(--font-body);font-size:.5em;letter-spacing:0;color:#b49bd3}
+.st-nums dd{font-size:14px;line-height:1.5;color:#605969;max-width:26ch}
+.st-credits{padding-top:24px;border-top:1px solid #efeaf3}
+.st-credits dt{font:400 11px/1.5 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#6d4793}
+.st-credits dd{font-size:14px;line-height:1.5;color:#3d3446}
+.st-credits .wide{grid-column:span 2}
+@media(max-width:900px){
+  .st-facts dl{grid-template-columns:1fr 1fr}
+  .st-credits .wide{grid-column:1/-1;order:3}
+}

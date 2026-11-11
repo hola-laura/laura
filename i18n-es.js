@@ -1402,4 +1402,12 @@ window.I18N_ES = {
 "03 · Apr–Oct 2026": "03 · Abr.–oct. de 2026",
 "Customers tracking their mortgage, from Monzo’s public announcements (Apr 2025, Dec 2025, Mar 2026). This is the audience for the work, not an outcome of it. The line joins published figures.": "Clientes que siguen su hipoteca, según anuncios públicos de Monzo (abr. 2025, dic. 2025, mar. 2026). Es la audiencia del trabajo, no un resultado suyo. La línea une las cifras publicadas.",
 "<strong>87%</strong><span>of UK mortgage seekers used a broker in 2024, the figure Monzo cited when it announced the deal. It matched what we had heard since 2024: people wanted a real person to help them switch, not just more information.</span>": "<strong>87%</strong><span>de quienes buscaron hipoteca en Reino Unido en 2024 usaron un bróker, la cifra que citó Monzo al anunciar la compra. Coincidía con lo que oíamos desde 2024: la gente quería una persona real que le ayudara a cambiar, no solo más información.</span>",
+"Minutes to a first report draft, now spoken by voice": "Minutos para un primer borrador de reporte, ahora dictado por voz",
+"Admin flows to set up reporting": "Flujos de administración para configurar los reportes",
+"Role": "Rol",
+"One of two designers, with my design manager": "Una de las dos diseñadoras, junto a mi design manager",
+"I owned": "Fue mío",
+"Worked with": "Trabajé con",
+"Support tickets about navigation or saving after the redesign": "Incidencias de soporte sobre navegación o guardado tras el rediseño",
+"Major client organisations tested the new setup": "Grandes organizaciones clientes probaron la nueva configuración",
 };
