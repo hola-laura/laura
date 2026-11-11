@@ -304,3 +304,10 @@ body.flex-case .rld-overdue-item>span{text-transform:none!important}
 #v3-section-0 .fv-lead-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:24px}
 #v3-section-0 .fv-lead-grid article{flex-direction:column;gap:4px}
 @media(max-width:700px){#v3-section-0 .fv-lead-grid{grid-template-columns:1fr;gap:14px}}
+
+/* Voice note: microphone + a plain Record button */
+body.flex-case .rld-voice .rld-voice-ico{display:grid;place-items:center;width:30px;height:30px;flex:0 0 30px;border-radius:8px;background:#fff;color:var(--u-ink);box-shadow:0 0 0 1px var(--u-line2)}
+body.flex-case .rld-voice .rld-voice-ico svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+body.flex-case .rld-voice button.rld-voice-rec{display:inline-flex;align-items:center;gap:6px;width:auto;height:auto;min-height:28px;padding:0 11px;border:1px solid var(--u-line2);border-radius:20px;background:#fff;color:var(--u-ink);font:500 10.5px/1 var(--ui);box-shadow:0 1px 2px #18181b0d;cursor:pointer}
+body.flex-case .rld-voice button.rld-voice-rec i{width:7px;height:7px;border-radius:50%;background:#e5484d}
+body.flex-case .rld-voice button.rld-voice-rec:hover{background:var(--u-side)}

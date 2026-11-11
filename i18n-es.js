@@ -1373,4 +1373,5 @@ window.I18N_ES = {
 "No surprises: fair notice, a plain reason and a real choice. Raising is an offer you can refuse; a reduction cancels itself if you use Flex again.": "Sin sorpresas: aviso con tiempo, un motivo claro y una elección real. Subirlo es una oferta que puedes rechazar; una bajada se cancela sola si vuelves a usar Flex.",
 "The Flex account screen, from balance and payment actions down to activity, credit limit and purchase protection": "La pantalla de la cuenta Flex, desde el saldo y los pagos hasta la actividad, el límite de crédito y la protección de compras",
 "Project summary": "Resumen del proyecto",
+"Record": "Grabar",
 };
