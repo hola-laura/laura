@@ -1375,4 +1375,5 @@ window.I18N_ES = {
 "Project summary": "Resumen del proyecto",
 "Record": "Grabar",
 "+37% retention · −15% customers missing payments · Best Credit Card Provider award": "+37% de retención · −15% de clientes con pagos fallidos · Premio a mejor tarjeta de crédito",
+"<b>1M+</b> Flex customers by March 2025, as Flex grew into one of Monzo’s main lending products. <span>Monzo FY2025 (Apr 2024 – Mar 2025)</span>": "<b>+1M</b> clientes de Flex en marzo de 2025, cuando Flex ya era uno de los principales productos de crédito de Monzo. <span>Monzo, año fiscal 2025 (abr 2024 – mar 2025)</span>",
 };
