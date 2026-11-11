@@ -328,3 +328,10 @@ body.flex-case .rld-voice button.rld-voice-rec:hover{background:var(--u-side)}
   .st-facts dl{grid-template-columns:1fr 1fr}
   .st-credits .wide{grid-column:1/-1;order:3}
 }
+
+/* ================= Rounded corners on every product screen ================= */
+body.flex-case .rld-app-mock,
+body.flex-case .rs :is(.rs-app,.rs-window,.rs-panel,.rs-doc),
+body.flex-case #v3-section-3 :is(.rld-parts-panel,.rld-library-card),
+body.flex-case .rld-report-dialog{border-radius:16px!important;overflow:hidden}
+body.flex-case .rld-mock-top{border-radius:16px 16px 0 0}
