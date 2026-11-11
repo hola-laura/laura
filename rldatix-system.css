@@ -335,3 +335,7 @@ body.flex-case .rs :is(.rs-app,.rs-window,.rs-panel,.rs-doc),
 body.flex-case #v3-section-3 :is(.rld-parts-panel,.rld-library-card),
 body.flex-case .rld-report-dialog{border-radius:16px!important;overflow:hidden}
 body.flex-case .rld-mock-top{border-radius:16px 16px 0 0}
+body.flex-case .rld-app-mock,
+body.flex-case .rs :is(.rs-app,.rs-window,.rs-panel,.rs-doc),
+body.flex-case #v3-section-3 :is(.rld-parts-panel,.rld-library-card),
+body.flex-case .rld-report-dialog{overflow:hidden!important}
