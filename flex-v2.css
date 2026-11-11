@@ -61,3 +61,13 @@
 .fx-market{margin:20px 0 0;padding:14px 16px;border-radius:12px;background:#6d479314;font-size:15px;line-height:1.5;color:var(--fx-ink);max-width:52ch}
 .fx-market b{font:400 22px/1 var(--font-heading);color:var(--fx-lilac);margin-right:4px}
 .fx-market span{display:block;margin-top:4px;font:11px/1.4 var(--font-mono);color:var(--fx-muted)}
+
+/* Awards under the outcomes photo */
+.fx-award-list{display:block}
+.fx-award-list ul{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+.fx-award-list li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;align-items:baseline;padding-top:8px;border-top:1px solid var(--fx-line);font-size:14px;line-height:1.45}
+.fx-award-list li:first-child{border-top:0;padding-top:0}
+.fx-award-list b{font:11px/1.6 var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--fx-lilac)}
+.fx-award-list a,.fx-award-list span{color:var(--fx-ink);text-decoration:none}
+.fx-award-list a:hover{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:560px){.fx-award-list li{grid-template-columns:1fr;gap:2px}}
