@@ -11,6 +11,7 @@
   document.documentElement.classList.add('mg-motion');
 
   document.querySelectorAll('.mg-timeline li').forEach((item, index) => item.style.setProperty('--i', index));
+  document.querySelectorAll('.mg-chart-dot').forEach((dot, index) => dot.style.setProperty('--i', index));
 
   /* Numbers like "38% → 88%" count up from the first value to the second */
   const countUp = element => {
@@ -41,8 +42,8 @@
     if (element.matches('.mg-metrics')) element.querySelectorAll('strong').forEach(countUp);
   }), { threshold: 0.25 });
 
-  document.querySelectorAll('.mg-bz[data-mg-phone], .mg-timeline, .mg-bars, .mg-metrics').forEach(element => observer.observe(element));
+  document.querySelectorAll('.mg-bz[data-mg-phone], .mg-timeline, .mg-bars, .mg-metrics, .mg-scale').forEach(element => observer.observe(element));
 
   /* Printing or saving as PDF should never catch things half-hidden */
-  addEventListener('beforeprint', () => document.querySelectorAll('.mg-bz, .mg-timeline, .mg-bars').forEach(element => element.classList.add('is-in')));
+  addEventListener('beforeprint', () => document.querySelectorAll('.mg-bz, .mg-timeline, .mg-bars, .mg-scale').forEach(element => element.classList.add('is-in')));
 })();

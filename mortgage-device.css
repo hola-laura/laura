@@ -119,3 +119,12 @@
 .mg-bz.is-scrolled .mg-bz-status{opacity:1}
 .mg-bz-status b{font:600 4.1cqw/1 'DM Sans',sans-serif;color:#091723}
 .mg-bz-status svg{width:16.5cqw;height:auto}
+
+/* The context chart draws itself once, then the dots and labels settle in. */
+@media (prefers-reduced-motion: no-preference){
+  .mg-motion .mg-chart-plot svg{clip-path:inset(-10px 100% -10px -10px);transition:clip-path 1.6s cubic-bezier(.4,0,.2,1)}
+  .mg-motion .mg-chart-dot,.mg-motion .mg-chart-mine{opacity:0;transition:opacity .6s ease}
+  .mg-motion .mg-chart-dot{transition-delay:calc(var(--i,0)*.35s + .3s)}
+  .mg-motion .mg-scale.is-in .mg-chart-plot svg{clip-path:inset(-10px -10px -10px -10px)}
+  .mg-motion .mg-scale.is-in .mg-chart-dot,.mg-motion .mg-scale.is-in .mg-chart-mine{opacity:1}
+}
