@@ -108,3 +108,17 @@
   .mg-tk-phone{order:4}.mg-tk-bar{order:5;margin-top:0}.mg-tk-steps{order:6}.mg-tracker .mg-small{order:7}
   .mg-tracker{gap:20px}
 }
+
+/* Spacing pass */
+.mg-tracker{margin:48px 0 72px;padding:clamp(28px,5vw,64px);align-items:start}
+.mg-tracker h2{margin:14px 0 18px}
+.mg-tracker-copy>p{margin-bottom:32px}
+.mg-tk-steps{max-width:600px;gap:2px 24px}
+.mg-tk-bar{margin-top:24px}
+.mg-tracker .mg-tk-note{margin-top:40px;max-width:52ch}
+.mg-tk-phone{margin-top:4px}
+.mg-tk-phone figcaption{margin-top:14px}
+@media(max-width:900px){.mg-tracker{margin:32px 0 48px}.mg-tracker .mg-tk-note{margin-top:4px}}
+.mg-tracker-copy>p.mg-tk-note{font-size:13px;line-height:1.55;color:#7b7085;margin:40px 0 0;max-width:56ch}
+@media(max-width:900px){.mg-tracker-copy>p.mg-tk-note{margin-top:4px}}
+@media(max-width:900px){.mg-tracker{gap:16px}.mg-tracker h2{margin:4px 0 0}.mg-tracker-copy>p:not(.mg-tk-note){margin-top:0}.mg-tk-phone{margin:12px auto 8px}}
