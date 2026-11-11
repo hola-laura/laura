@@ -108,3 +108,33 @@
 
 @media (prefers-reduced-motion:reduce){.ob-frame *,.ob-bars i::after{transition:none!important;animation:none!important}}
 @media(max-width:900px){.mg-onboarding .mg-tk-phone{order:4}.ob-stat{order:3}}
+
+/* In production: shipped screens from monzo.com */
+.mg-live{margin:48px 0 72px;padding:clamp(28px,5vw,64px) 0 clamp(28px,5vw,48px);border-radius:28px;background:#f3f0f6;overflow:hidden}
+.mg-live-head{display:grid;grid-template-columns:minmax(210px,.65fr) 1fr;gap:12px 24px;padding:0 clamp(28px,5vw,64px);margin-bottom:40px}
+.mg-live-head .mono-label{color:#69527f}
+.mg-live-head h2{font-size:clamp(27px,3.6vw,42px);line-height:1.08;letter-spacing:-.04em;margin:0}
+.mg-live-head p{grid-column:2;margin:0;max-width:52ch;color:#605969;font-size:16px;line-height:1.6}
+.mg-live-strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(10px,1.6vw,22px);padding:0 clamp(28px,5vw,64px)}
+.mg-live figure{margin:0}
+.mg-live img{display:block;width:100%;height:auto;filter:drop-shadow(0 18px 24px rgba(43,36,48,.16))}
+.mg-live figure:nth-child(even){margin-top:36px}
+.mg-live figcaption{margin-top:14px;display:grid;gap:2px;font-size:14px;line-height:1.35;color:#2b2430}
+.mg-live figcaption b{font-weight:600}
+.mg-live figcaption span{font:11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.03em;color:#7b7085}
+.mg-live .mg-small{margin:32px clamp(28px,5vw,64px) 0}
+.mg-live .mg-small a{color:#69527f}
+@media (prefers-reduced-motion:no-preference){
+  .mg-live figure{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i)*.09s)}
+  .mg-live.is-in figure{opacity:1;transform:none}
+}
+@media(max-width:900px){
+  .mg-live{margin:32px 0 48px}
+  .mg-live-head{grid-template-columns:1fr;margin-bottom:28px}.mg-live-head p{grid-column:1}
+  .mg-live-strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none}
+  .mg-live-strip::-webkit-scrollbar{display:none}
+  .mg-live figure{flex:0 0 46%;scroll-snap-align:start}
+  .mg-live figure:nth-child(even){margin-top:0}
+}
+.mg-live img{aspect-ratio:600/1192;object-fit:contain;object-position:bottom}
+@media(max-width:900px){.mg-live-strip{scroll-padding-inline:28px;padding-inline:28px}.mg-live figure:last-child{margin-right:28px}}

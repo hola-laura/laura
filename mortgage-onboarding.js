@@ -126,3 +126,12 @@
     }), {threshold: 0.35}).observe(root);
   } else root.classList.add('is-in');
 })();
+
+// "In production" strip: reveal once in view
+(() => {
+  const live = document.querySelector('.mg-live');
+  if (!live) return;
+  if (!('IntersectionObserver' in window)) { live.classList.add('is-in'); return; }
+  const io = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { live.classList.add('is-in'); io.disconnect(); } }), {threshold: 0.2});
+  io.observe(live);
+})();
