@@ -1,10 +1,256 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Drivo Test — Laura Sampedro</title><meta name="description" content="Designing, building and launching Drivo Test: an independent driving theory app for learners in Spain."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Fragment+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="case-study-drivo.css?v=iphone-3"><link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=flower-2">
-<link rel="shortcut icon" href="favicon.ico?v=flower-2">
-<link rel="icon" type="image/svg+xml" href="favicon.svg?v=flower-2">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="How I designed and built Drivo Test, an independent iPhone and web app for driving theory learners in Spain.">
+  <title>Drivo Test — Laura Sampedro | Product design case study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Fragment+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#faf9f6;--ink:#27232c;--soft:#514b59;--muted:#726b7a;--line:#27232c20;--accent:#69488f;--lav:#ece6f5;--white:#fff;--warn:#fff1d5;--warn-ink:#704b0b;--serif:"Libre Baskerville",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif;--mono:"Fragment Mono",monospace}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.page{max-width:1160px;margin:auto;padding:22px 32px 72px}.draft{position:sticky;top:0;z-index:5;margin:-22px calc((min(100vw,1160px) - 100vw)/2) 0;padding:10px 24px;background:#332b3e;color:#fff;text-align:center;font:11px/1.4 var(--mono);letter-spacing:.07em;text-transform:uppercase}.draft b{color:#eadbff}.nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0 64px;color:var(--soft);font:12px var(--mono)}.nav a:hover,.jump a:hover{color:var(--accent)}.eyebrow,.label{font:11px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.hero{display:grid;grid-template-columns:1fr .8fr;gap:36px;align-items:center;padding:0 0 72px}.hero h1{font-size:clamp(54px,7vw,92px);line-height:.98;letter-spacing:-.055em;font-weight:500;margin:22px 0 24px;max-width:760px}.hero h1 em{font-family:var(--serif);font-weight:400;color:var(--accent)}.lead{max-width:670px;font-size:21px;line-height:1.45;color:var(--soft);margin:0}.hero-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;padding-top:20px;border-top:1px solid var(--line)}.hero-meta dt{font:10px var(--mono);text-transform:uppercase;color:var(--muted);margin-bottom:7px}.hero-meta dd{margin:0;font-size:13px;line-height:1.5}.hero-visual{min-height:460px;border-radius:30px;background:var(--lav);display:flex;justify-content:center;align-items:center;gap:12px;padding:28px;overflow:hidden}.phone{width:43%;max-width:230px;padding:6px;border:1px solid #9d958f;border-radius:34px;background:linear-gradient(125deg,#e4ddd6,#968f87 45%,#c8c2b9);box-shadow:0 18px 40px #27232c33;transform:rotate(-5deg)}.phone:nth-child(2){margin-top:68px;transform:rotate(5deg)}.phone img{width:100%;display:block;border-radius:28px}.intro-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px;align-items:start;padding:56px 0;border-top:1px solid var(--line)}h2{font-size:clamp(34px,4.6vw,58px);line-height:1.08;letter-spacing:-.04em;font-weight:500;margin:14px 0 20px}h2 em{font-family:var(--serif);font-weight:400}.section-copy{font-size:18px;color:var(--soft);max-width:700px}.section-copy p{margin:0 0 16px}.signals{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.signal{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:20px}.signal strong{display:block;font-size:19px;font-weight:500;margin:12px 0 6px}.signal p{font-size:14px;line-height:1.55;color:var(--muted);margin:0}.signal .term{font:12px var(--mono);color:var(--accent)}.decision{padding:64px 0;border-top:1px solid var(--line)}.decision-head{display:grid;grid-template-columns:.55fr 1.45fr;gap:36px;align-items:start}.decision-head h2{max-width:760px;margin-top:4px}.decision-body{margin-left:calc(27.5% + 18px);max-width:800px;color:var(--soft);font-size:17px}.decision-body p{margin:0 0 18px}.screens{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.screen{margin:0;background:var(--white);border:1px solid var(--line);border-radius:20px;padding:12px}.screen img{width:100%;display:block;border-radius:12px;background:var(--lav)}.screen figcaption{padding:12px 4px 4px;font-size:13px;color:var(--muted)}.screen figcaption b{display:block;color:var(--ink);font-size:15px;font-weight:500;margin-bottom:3px}.system{margin:24px 0 0;padding:22px 24px;border-radius:18px;background:#332b3e;color:#fff}.system .label{color:#d7c9ea}.system p{color:#f5f1fa;margin:8px 0 0!important}.steps{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}.steps span{border:1px solid #ffffff55;border-radius:99px;padding:7px 11px;color:#fff;font:10px var(--mono)}.build{padding:64px 0;border-top:1px solid var(--line)}.build-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}.build-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:24px}.build-card h3{font-size:23px;line-height:1.2;font-weight:500;letter-spacing:-.025em;margin:12px 0}.build-card p{color:var(--soft);margin:0}.metrics{padding:64px 0;border-top:1px solid var(--line)}.fiction{display:flex;align-items:flex-start;gap:14px;margin:20px 0 26px;padding:16px 18px;background:var(--warn);border:1px solid #d7a944;border-radius:14px;color:var(--warn-ink);font-size:13px}.fiction b{font:11px var(--mono);letter-spacing:.04em;text-transform:uppercase}.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.metric{background:var(--white);border:1px dashed #bc9b58;border-radius:18px;padding:22px}.metric strong{font:500 clamp(35px,5vw,58px)/1 var(--sans);letter-spacing:-.05em;color:var(--accent)}.metric p{margin:12px 0 0;color:var(--soft);font-size:14px}.metric small{display:block;margin-top:12px;color:var(--warn-ink);font:9px var(--mono);text-transform:uppercase}.validation{padding:64px 0;border-top:1px solid var(--line)}.validation-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.validation-card{padding:22px;border-radius:18px;background:var(--lav)}.validation-card .label{color:var(--accent)}.validation-card h3{font-size:20px;font-weight:500;margin:12px 0 6px}.validation-card p{font-size:14px;color:var(--soft);margin:0}.closing{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:34px 0;border-top:1px solid var(--line)}.closing h2{font-size:32px;margin:0}.button{display:inline-block;background:var(--accent);color:white;padding:13px 18px;border-radius:99px;font-size:13px}.closing-links{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.footer{display:flex;justify-content:space-between;gap:14px;padding:22px 0;border-top:1px solid var(--line);font:10px var(--mono);color:var(--muted)}
+    @media(max-width:800px){.page{padding:18px 20px 54px}.draft{margin:-18px -20px 0}.nav{padding:24px 0 48px}.hero{grid-template-columns:1fr;gap:26px;padding-bottom:48px}.hero-visual{min-height:390px}.intro-grid,.decision-head{grid-template-columns:1fr;gap:14px}.decision-body{margin:0}.signals,.validation-grid{grid-template-columns:1fr}.screens{grid-template-columns:repeat(2,1fr)}.hero-meta{gap:10px}.build-grid{grid-template-columns:1fr}.metric-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){.hero h1{font-size:56px}.lead{font-size:18px}.hero-visual{min-height:320px;padding:20px}.hero-meta{grid-template-columns:1fr}.screens{grid-template-columns:1fr 1fr;gap:8px}.screen{padding:7px}.screen figcaption{font-size:11px}.metric-grid{grid-template-columns:1fr}.closing,.footer{align-items:flex-start;flex-direction:column}.closing-links{gap:14px}.closing h2{font-size:27px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+  <style>
+    /* Real screenshots, presented inside an iPhone 16 Pro frame. */
+    .iphone16{position:relative;isolation:isolate;display:block;aspect-ratio:402/874;width:min(100%,236px);flex:0 0 auto;padding:7px;border:1px solid #77747c;border-radius:49px;background:linear-gradient(125deg,#5a5961 0%,#111116 16%,#34333a 52%,#09090d 100%);box-shadow:0 24px 48px #27232c3b,inset 0 0 0 2px #ffffff28}
+    .iphone16::before{content:"";position:absolute;z-index:3;top:25%;left:-4px;width:3px;height:8%;border-radius:4px;background:#6c6b72;box-shadow:0 64px 0 #5b5962}
+    .iphone16::after{content:"";position:absolute;z-index:3;top:31%;right:-4px;width:3px;height:14%;border-radius:4px;background:#6c6b72}
+    .device-screen{position:relative;width:100%;height:100%;overflow:hidden;border-radius:41px;background:#dce9f7}
+    .device-screen img{display:block;width:100%;height:100%;object-fit:cover}
+    .dynamic-island{position:absolute;z-index:2;top:2.25%;left:50%;width:27%;height:2.25%;transform:translateX(-50%);border-radius:99px;background:#050507;box-shadow:0 1px 2px #0008}
+    .hero-visual{gap:24px;min-height:520px}
+    .hero-visual .iphone16{width:46%;max-width:236px;transform:none!important;margin-top:0!important}
+    .screens{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+    .screen{padding:16px 12px 12px;text-align:center}
+    .screen-device{width:min(100%,205px);margin:0 auto}
+    .screen figcaption{text-align:left}
+    .screen figcaption small{display:block;margin-top:8px;font:9px/1.45 var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
+    .concept{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:64px 0;border-top:1px solid var(--line)}
+    .concept-copy h2{max-width:580px}
+    .concept-copy p{max-width:560px;color:var(--soft);font-size:17px}
+    .concept-tag{display:inline-block;padding:7px 10px;border:1px solid #d2c2e5;border-radius:99px;background:#f4eff9;color:var(--accent);font:9px var(--mono);letter-spacing:.04em;text-transform:uppercase}
+    .concept-stage{display:flex;justify-content:center;padding:26px;border-radius:28px;background:var(--lav)}
+    .concept-device{width:min(100%,286px);transform:rotate(2deg)}
+    .concept-ui{position:absolute;inset:0;overflow:hidden;border-radius:41px;background:#dce9f7;padding:42px 14px 18px;display:flex;flex-direction:column}
+    .concept-status{display:flex;justify-content:space-between;color:#41384f;font-size:9px;margin:2px 5px 18px}
+    .concept-top{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#54466d;margin:0 3px 14px}
+    .concept-progress{height:5px;border-radius:99px;background:#c8b8e2;margin-bottom:22px;overflow:hidden}
+    .concept-progress span{display:block;width:34%;height:100%;border-radius:99px;background:#7c5aa3;transition:width .45s cubic-bezier(.2,.8,.2,1)}
+    .concept-question{font-size:16px;line-height:1.25;letter-spacing:-.025em;font-weight:600;color:#302744;margin:0 2px 15px}
+    .concept-option{padding:12px 11px;border:1px solid #ffffff;border-radius:13px;background:#fff;color:#383149;font-size:11px;line-height:1.35;margin:0 0 8px;box-shadow:0 3px 10px #3b31520a}
+    .concept-option.is-answer{border-color:#31c97a;background:#ecfff4}
+    .concept-hint{margin:auto 0 9px;text-align:center;font-size:10px;color:#405364}
+    .concept-button{border:0;border-radius:99px;padding:12px 10px;background:#151927;color:white;font:500 11px var(--sans);cursor:pointer;transition:transform .18s ease,background .18s ease}
+    .concept-button:hover{transform:translateY(-2px)}.concept-button:focus-visible{outline:3px solid #7d5ba6;outline-offset:3px}
+    .concept-button[aria-pressed="true"]{background:#6b4e8b}
+    .concept-toast{display:flex;align-items:center;gap:8px;min-height:0;margin:0 0 0;padding:0 10px;overflow:hidden;opacity:0;transform:translateY(8px);border-radius:13px;background:#fff;color:#46375d;font-size:10px;transition:all .3s ease}
+    .concept-toast.is-visible{min-height:38px;margin-bottom:9px;padding-top:7px;padding-bottom:7px;opacity:1;transform:translateY(0)}
+        .concept-footnote{display:block;margin-top:14px;color:var(--muted);font:9px/1.5 var(--mono);text-align:center;text-transform:uppercase;letter-spacing:.03em}
+    @media(max-width:800px){.hero-visual{min-height:440px}.screens{grid-template-columns:repeat(2,minmax(0,1fr))}.concept{grid-template-columns:1fr;gap:22px}.concept-stage{order:-1}.concept-device{width:min(100%,270px)}}
+    @media(max-width:520px){.hero-visual{min-height:360px;gap:12px;padding:16px}.hero-visual .iphone16{width:44%;padding:5px;border-radius:34px}.hero-visual .device-screen{border-radius:29px}.hero-visual .iphone16:nth-child(2){margin-top:0}.screens{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.screen{padding:10px 6px 7px}.screen-device{width:min(100%,175px)}.device-screen{border-radius:33px}.iphone16{padding:5px;border-radius:40px}.concept-stage{padding:18px}.concept-device{width:min(100%,260px)}}
+    @media(prefers-reduced-motion:reduce){.concept-progress span,.concept-button,.concept-toast{transition:none}}
+  </style>
+  <style>
+    /* iOS status bar: time on the left, cellular, Wi-Fi and battery on the right. */
+    .device-screen{container-type:inline-size}
+    .device-screen::before{content:"9:41";position:absolute;z-index:3;inset:0 0 auto;height:5.6%;display:flex;align-items:flex-end;padding:0 0 1.15% 13%;background:#eff7ff;color:#171622;font:600 4.3cqw/1 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;letter-spacing:-.025em}
+    .device-screen::after{content:"";position:absolute;z-index:3;top:3%;right:8.2%;width:19%;height:1.5%;background-repeat:no-repeat;background-size:100% 100%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cg fill='%23171622'%3E%3Crect x='6' y='13' width='4' height='6' rx='1'/%3E%3Crect x='12' y='10' width='4' height='9' rx='1'/%3E%3Crect x='18' y='6' width='4' height='13' rx='1'/%3E%3Crect x='24' y='2' width='4' height='17' rx='1'/%3E%3C/g%3E%3Cpath d='M35 7c5-5 14-5 19 0M38.5 11c3.2-3 8.8-3 12 0M43 15c.8-.7 1.2-.7 2 0' fill='none' stroke='%23171622' stroke-width='2.2' stroke-linecap='round'/%3E%3Crect x='65' y='3' width='31' height='14' rx='4' fill='%23171622'/%3E%3Crect x='97' y='7' width='3' height='6' rx='1.2' fill='%23171622'/%3E%3C/svg%3E")}
+    .dynamic-island{z-index:4}
+    .concept{padding-top:48px;padding-bottom:52px}
+    .concept-instructions{display:flex;align-items:center;gap:9px;margin:18px 0 0;color:var(--accent);font:10px var(--mono);letter-spacing:.03em;text-transform:uppercase}
+    .tap-dot{width:9px;height:9px;border-radius:50%;background:#8c69b0;box-shadow:0 0 0 0 #8c69b04d;animation:tap-pulse 1.8s ease-out infinite}
+    @keyframes tap-pulse{70%{box-shadow:0 0 0 8px #8c69b000}100%{box-shadow:0 0 0 0 #8c69b000}}
+    .concept-ui{padding:48px 15px 16px}
+    .concept-status{display:flex;justify-content:space-between;align-items:center;margin:0 3.5% 13px 9%;color:#171622;font:600 4.3cqw/1 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;letter-spacing:-.025em}
+    .concept-status span:last-child{display:block;width:23%;height:13px;background-repeat:no-repeat;background-size:100% 100%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cg fill='%23171622'%3E%3Crect x='6' y='13' width='4' height='6' rx='1'/%3E%3Crect x='12' y='10' width='4' height='9' rx='1'/%3E%3Crect x='18' y='6' width='4' height='13' rx='1'/%3E%3Crect x='24' y='2' width='4' height='17' rx='1'/%3E%3C/g%3E%3Cpath d='M35 7c5-5 14-5 19 0M38.5 11c3.2-3 8.8-3 12 0M43 15c.8-.7 1.2-.7 2 0' fill='none' stroke='%23171622' stroke-width='2.2' stroke-linecap='round'/%3E%3Crect x='65' y='3' width='31' height='14' rx='4' fill='%23171622'/%3E%3Crect x='97' y='7' width='3' height='6' rx='1.2' fill='%23171622'/%3E%3C/svg%3E")}
+    .concept-top{margin-bottom:11px}
+    .concept-question{margin-bottom:12px;font-size:15px}
+    .concept-option{width:100%;text-align:left;cursor:pointer;transition:transform .16s ease,border-color .22s ease,background .22s ease,box-shadow .22s ease}
+    .concept-option:hover{transform:translateY(-1px)}
+    .concept-option:focus-visible,.concept-button:focus-visible{outline:3px solid #8c69b0;outline-offset:2px}
+    .concept-option.is-wrong{border-color:#ef6562;background:#fff0ef;animation:answer-nudge .28s ease}
+    .concept-option.is-correct{border-color:#22ba70;background:#eafff2;box-shadow:0 0 0 2px #22ba7020}
+    @keyframes answer-nudge{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+    .concept-feedback{min-height:18px;margin:0 0 4px;color:#5c4c70;text-align:center;font-size:9px}
+    .concept-explanation{max-height:0;overflow:hidden;opacity:0;margin:0;padding:0 10px;border-radius:12px;background:#f9f7fc;color:#504760;font-size:9px;line-height:1.4;transition:max-height .35s ease,opacity .25s ease,padding .25s ease,margin .25s ease}
+    .concept-explanation.is-visible{max-height:90px;opacity:1;margin:0 0 8px;padding:9px 10px}
+    .concept-hint{margin:7px 0 8px}
+    .concept-road{position:relative;height:13px;margin:0 2px 8px;border-radius:99px;background:#93b9d6;overflow:hidden}
+    .concept-road-progress{position:absolute;z-index:1;inset:0 auto 0 0;width:0;border-radius:inherit;background:#76539a;transition:width .85s cubic-bezier(.2,.8,.2,1)}
+    .concept-road::before{content:"";position:absolute;z-index:2;left:8px;right:8px;top:6px;border-top:1px dashed #fff;opacity:.9}
+    .concept-road.is-moving .concept-road-progress{filter:brightness(1.06)}
+    .concept-toast{font-size:9px}
+    .concept-controls{display:grid;grid-template-columns:1fr auto;gap:7px}
+    .concept-button{font-size:10px;padding:11px 8px}
+    .concept-reset{border:1px solid #c6b5d9;border-radius:99px;padding:9px 10px;background:transparent;color:#5d4777;font:9px var(--mono);cursor:pointer}
+    .concept-reset:hover{background:#f6f1fa}
+    .concept-device .device-screen::before,.concept-device .device-screen::after{display:none}
+    @media(max-width:800px){.concept{padding-top:38px}.concept-instructions{margin-bottom:2px}}
+    @media(prefers-reduced-motion:reduce){.tap-dot,.concept-option.is-wrong{animation:none}.concept-option,.concept-explanation,.concept-road-progress{transition:none}}
+  </style>
+  <style>
+    .impact{margin:30px 0 0;padding:24px;border-radius:22px;background:var(--lav)}
+    .impact-heading{display:flex;align-items:baseline;gap:16px;margin-bottom:18px}
+    .impact-heading h3{margin:0;font-size:25px;line-height:1.2;font-weight:500;letter-spacing:-.03em}
+    .impact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .impact-card{min-height:112px;padding:17px;border:1px solid #27232c15;border-radius:16px;background:#fff}
+    .impact-card strong{display:block;font-size:clamp(34px,5vw,54px);line-height:1;letter-spacing:-.05em;color:var(--accent)}
+    .impact-card strong small{font-size:17px;color:var(--muted);letter-spacing:0}
+    .impact-card span{display:block;margin-top:8px;color:var(--muted);font:10px/1.4 var(--mono);letter-spacing:.03em;text-transform:uppercase}
+    .impact-note{max-width:820px;margin:18px 0 0;color:var(--soft);font-size:14px;line-height:1.55}
+    .impact-note b{color:var(--ink);font-weight:600}
+    @media(max-width:520px){.impact{padding:17px}.impact-grid{grid-template-columns:1fr 1fr}.impact-card:last-child{grid-column:span 2}.impact-heading{align-items:flex-start;flex-direction:column;gap:4px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="Case study navigation"><a href="index.html">← Portfolio</a><a href="#contacto">Laura Sampedro · 2026</a></nav>
+    <header class="hero">
+      <div>
+        <span class="eyebrow">Independent product · 2026 · iPhone and web</span>
+        <h1>From answering questions to <em>understanding why.</em></h1>
+        <p class="lead">I built Drivo Test to help people studying for their driving test understand the rules and return to questions they’re unsure about.</p>
+        <dl class="hero-meta">
+          <div><dt>My role</dt><dd>Product, design and AI-assisted development</dd></div>
+          <div><dt>End to end</dt><dd>Web → iPhone → App Store</dd></div>
+          <div><dt>Status</dt><dd>Live product</dd></div>
+        </dl>
+      </div>
+      <div class="hero-visual" aria-label="Drivo Test screens on iPhone">
+        <div class="iphone16"><span class="dynamic-island" aria-hidden="true"></span><div class="device-screen"><img src="assets/drivo-captures/home.jpg" alt="Drivo Test home screen with progress, study modes and navigation"></div></div>
+        <div class="iphone16"><span class="dynamic-island" aria-hidden="true"></span><div class="device-screen"><img src="assets/drivo-captures/library.jpg" alt="Drivo Test question library with search"></div></div>
+      </div>
+    </header>
 
-<link rel="stylesheet" href="headings.css?v=2"><link rel="stylesheet" href="case-layout.css?v=2"><script src="i18n.js?v=3"></script></head><body class="dt-case" id="top"><a class="skip-link" href="#discover">Skip to case study</a><div class="page"><nav class="nav" aria-label="Main navigation"><a class="nav-back" href="index.html"><span aria-hidden="true">←</span> Go back</a><ul class="nav-links"><li><a href="index.html#contact">Contact</a></li></ul></nav><main>
-<header class="dt-hero"><span class="mono-label">Independent product · 2026</span><h1>Drivo Test<span>Helping learners understand<br>the rules of the road.</span></h1><p class="dt-lead">I researched, designed and built a free app to help learners in Spain understand driving theory and practise difficult questions again.</p><dl class="dt-meta"><div><dt>My role</dt><dd>Research, product design,<br>testing & AI-assisted development</dd></div><div><dt>Platforms</dt><dd>iPhone & web</dd></div><div><dt>Status</dt><dd>Live · Improving with early feedback</dd></div></dl><div class="dt-links"><a class="pill-button" href="https://apps.apple.com/es/app/drivo-test/id6813126362" target="_blank" rel="noopener noreferrer">View on the App Store ↗</a><a class="text-link" href="https://hola-laura.github.io/carnet-conducir-app/" target="_blank" rel="noopener noreferrer">Try Drivo Test on the web ↗</a></div></header>
-<div class="dt-showcase"><div class="dt-art-copy"><span class="mono-label">From a learner need<br>to a product in their pocket</span><p>A place to practise,<br>understand,<br>and come back to.</p></div><div class="dt-iphone dt-iphone-native"><span class="dt-iphone-buttons" aria-hidden="true"></span><div class="dt-iphone-display"><img src="assets/drivo/home-ios.png" alt="Drivo Test home on iPhone, with progress, mock exam and practice modes" width="1206" height="2622"><span class="dt-iphone-island" aria-hidden="true"></span><span class="dt-iphone-home" aria-hidden="true"></span></div></div><div class="dt-iphone dt-iphone-native"><span class="dt-iphone-buttons" aria-hidden="true"></span><div class="dt-iphone-display"><img src="assets/drivo/library-ios.png" alt="Drivo Test searchable question library on iPhone" width="1206" height="2622"><span class="dt-iphone-island" aria-hidden="true"></span><span class="dt-iphone-home" aria-hidden="true"></span></div></div></div>
-<nav class="dt-jump" aria-label="Case study sections"><a href="#discover">01 / Why I started</a><a href="#design">02 / What I built</a><a href="#build">03 / How I built it</a><a href="#next">04 / What comes next</a></nav>
-<section class="dt-section" id="discover"><span class="mono-label">01 / Why I started</span><h2>The tools helped people take tests.<br>I wanted to help them learn.</h2><p class="dt-intro">Practice tests helped people test themselves, not understand the rules. Learner interviews and early testing pointed to three needs.</p><div class="dt-signals"><article><span class="mono-label">01 / Understand</span><div class="dt-signal-art"><span>Detención</span><span>Parada</span><span>Estacionamiento</span></div><h3>Help explain difficult terms</h3><p>Similar road terms were hard to tell apart. I added explanations and a visual glossary to help learners understand the difference.</p></article><article><span class="mono-label">02 / Fit the moment</span><div class="dt-signal-art dt-time"><b>10</b><span>minutes to practise</span></div><h3>Work in short sessions</h3><p>Learners studied in short breaks. I offered flexible practice alongside full mock exams, so they could choose what fit their time.</p></article><article><span class="mono-label">03 / Build confidence</span><div class="dt-signal-art"><span>Answer</span><span>Reflect ↓</span><span>Review</span></div><h3>Bring difficult questions back</h3><p>A lucky guess can hide a gap. I added a way to save doubts and bring those questions back into review.</p></article></div></section>
-<section class="dt-section" id="design"><span class="mono-label">03 / What I built & why</span><h2>The decisions,<br>shown in the app.</h2><article class="dt-challenge"><div class="dt-challenge-head"><span class="mono-label">Decision 01</span><h3>Help learners understand the answer.</h3></div><p class="dt-rationale">Learners could recognise an answer without knowing why it was right. I added immediate explanations and a visual glossary to help them connect each answer to a rule.</p><div class="dt-screen-grid"><figure><div class="dt-iphone"><span class="dt-iphone-buttons" aria-hidden="true"></span><div class="dt-iphone-display"><span class="dt-iphone-status" aria-hidden="true">9:41 <span>▮▮▮ &nbsp; ▰</span></span><img src="assets/drivo/web-question.png" alt="One question at a time, with clear answer choices." width="390" height="844" loading="lazy"><span class="dt-iphone-island" aria-hidden="true"></span><span class="dt-iphone-home" aria-hidden="true"></span></div></div><figcaption><h4>Try a question</h4><p>One question at a time, with clear answer choices.</p></figcaption></figure><figure><div class="dt-iphone"><span class="dt-iphone-buttons" aria-hidden="true"></span><div class="dt-iphone-display"><span class="dt-iphone-status" aria-hidden="true">9:41 <span>▮▮▮ &nbsp; ▰</span></span><img src="assets/drivo/web-review.png" alt="Feedback explains the rule after an answer." width="390" height="844" loading="lazy"><span class="dt-iphone-island" aria-hidden="true"></span><span class="dt-iphone-home" aria-hidden="true"></span></div></div><figcaption><h4>See why it was wrong</h4><p>Feedback explains the rule after an answer.</p></figcaption></figure><figure><div class="dt-iphone"><span class="dt-iphone-buttons" aria-hidden="true"></span><div class="dt-iphone-display"><span class="dt-iphone-status" aria-hidden="true">9:41 <span>▮▮▮ &nbsp; ▰</span></span><img src="assets/drivo/web-glossary.png" alt="Pictures and short definitions make unfamiliar terms easier to explore." width="390" height="844" loading="lazy"><span class="dt-iphone-island" aria-hidden="true"></span><span class="dt-iphone-home" aria-hidden="true"></span></div></div><figcaption><h4>Look up a road term</h4><p>Pictures and short definitions make unfamiliar terms easier to explore.</p></figcaption></figure></div></article><article class="dt-challenge"><div class="dt-challenge-head"><span class="mono-label">Decision 02</span><h3>Make the next step easy to find.</h3></div><p class="dt-rationale">A short study break and a full mock exam need different kinds of support. I separated the modes so learners could choose between learning with feedback, testing themselves and looking up a topic.</p><div class="dt-screen-grid"><figure><div class="dt-iphone"><span class="dt-iphone-buttons" aria-hidden="true"></span><div class="dt-iphone-display"><span class="dt-iphone-status" aria-hidden="true">9:41 <span>▮▮▮ &nbsp; ▰</span></span><img src="assets/drivo/web-home.png" alt="Practice gives feedback. Mock exams offer 30 questions without hints." width="390" height="844" loading="lazy"><span class="dt-iphone-island" aria-hidden="true"></span><span class="dt-iphone-home" aria-hidden="true"></span></div></div><figcaption><h4>Choose how to study</h4><p>Practice gives feedback. Mock exams offer 30 questions without hints.</p></figcaption></figure><figure><div class="dt-iphone dt-iphone-native"><span class="dt-iphone-buttons" aria-hidden="true"></span><div class="dt-iphone-display"><img src="assets/drivo/library-ios.png" alt="Search and filters help learners find the questions they want to understand." width="390" height="844" loading="lazy"><span class="dt-iphone-island" aria-hidden="true"></span><span class="dt-iphone-home" aria-hidden="true"></span></div></div><figcaption><h4>Explore a topic</h4><p>Search and filters help learners find the questions they want to understand.</p></figcaption></figure></div></article><article class="dt-challenge"><div class="dt-challenge-head"><span class="mono-label">Decision 03</span><h3>Bring doubts back into practice.</h3></div><p class="dt-rationale">A correct answer can still be a guess. I added “Unsure” so learners could save that doubt. Answer history helps bring difficult questions back, with the aim of closing gaps that scores alone can miss.</p><div class="dt-screen-grid"><figure><div class="dt-iphone"><span class="dt-iphone-buttons" aria-hidden="true"></span><div class="dt-iphone-display"><span class="dt-iphone-status" aria-hidden="true">9:41 <span>▮▮▮ &nbsp; ▰</span></span><img src="assets/drivo/web-review.png" alt="“Marked for review” confirms that a question has been saved." width="390" height="844" loading="lazy"><span class="dt-iphone-island" aria-hidden="true"></span><span class="dt-iphone-home" aria-hidden="true"></span></div></div><figcaption><h4>Save a doubt</h4><p>“Marked for review” confirms that a question has been saved.</p></figcaption></figure><figure><div class="dt-iphone"><span class="dt-iphone-buttons" aria-hidden="true"></span><div class="dt-iphone-display"><span class="dt-iphone-status" aria-hidden="true">9:41 <span>▮▮▮ &nbsp; ▰</span></span><img src="assets/drivo/web-report.png" alt="Learners can report unclear wording, an answer or an explanation that needs checking." width="390" height="844" loading="lazy"><span class="dt-iphone-island" aria-hidden="true"></span><span class="dt-iphone-home" aria-hidden="true"></span></div></div><figcaption><h4>Flag a problem</h4><p>Learners can report unclear wording, an answer or an explanation that needs checking.</p></figcaption></figure></div></article><p class="dt-note">Review uses answer history to bring difficult questions back. I still need to test whether it helps learners remember more over time.</p></section><section class="dt-section dt-ai" id="build"><span class="mono-label">How I built it · AI as a development partner</span><h2>From design decisions<br>to a working product.</h2><p class="dt-intro">I used AI as a coding partner to turn my design decisions into a working app. I built the web version first, then adapted it for iPhone.</p><div class="dt-next-grid"><div><span class="mono-label">01 / Interface</span><h3>Turn the designs into code.</h3><p>AI helped build the screens and interactions in HTML, CSS and JavaScript.</p></div><div><span class="mono-label">02 / Learning logic</span><h3>Connect answers to review.</h3><p>The app records mistakes and doubts on the device and uses that history to choose questions for review.</p></div><div><span class="mono-label">03 / Feedback</span><h3>Make issues easy to report.</h3><p>In-app reports identify the question and the type of problem, giving me something specific to investigate.</p></div></div></section><section class="dt-section dt-delivery" id="next"><span class="mono-label">04 / What comes next</span><h2>Built, launched.<br>Now learning from use.</h2><p class="dt-intro">Next I’ll test whether learners understand the rules, build a study habit and remember what they learn. These are planned measures, not results.</p><div class="dt-next-grid"><div><span class="mono-label">Next / Understanding</span><h3>Understand the rule.</h3><p>In learner sessions, ask people to explain a rule after answering. Revisit the same concept later and record repeat mistakes.</p></div><div><span class="mono-label">Next / Study habits</span><h3>Build a study habit.</h3><p>Run a seven-day learner pilot. Record session length, completed sessions and days people return to study.</p></div><div><span class="mono-label">Next / Recall</span><h3>Remember it later.</h3><p>Re-test saved doubts after seven days. Check both the answer and the learner’s explanation of the rule.</p></div></div><div class="dt-closing"><h3>Try Drivo Test.</h3><div class="dt-links"><a class="pill-button" href="https://hola-laura.github.io/carnet-conducir-app/" target="_blank" rel="noopener noreferrer">Try the web app ↗</a><a class="text-link" href="https://apps.apple.com/es/app/drivo-test/id6813126362" target="_blank" rel="noopener noreferrer">View on the App Store ↗</a></div></div></section></main><footer class="dt-footer"><a href="index.html#things-i-build">← Back to all work</a><a href="#top">Back to top ↑</a><span class="mono-label">Laura Sampedro · 2026</span></footer></div><script>if(I18n.lang==="es")document.write('<script src="i18n-es.js?v=10"><\/script>')</script><script>I18n.run()</script></body></html>
+    <section class="concept" aria-labelledby="concept-title">
+      <div class="concept-copy">
+        <span class="concept-tag">Mini prototype · try the interaction</span>
+        <h2 id="concept-title">An answer can become a <em>learning habit.</em></h2>
+        <p>Choose an answer, read the explanation and save a question to revisit.</p>
+        <div class="concept-instructions"><span class="tap-dot" aria-hidden="true"></span><span>Tap an answer on the iPhone to begin</span></div>
+      </div>
+      <div>
+        <div class="concept-stage">
+          <div class="iphone16 concept-device"><span class="dynamic-island" aria-hidden="true"></span><div class="device-screen">
+            <div class="concept-ui">
+              <div class="concept-status"><span>9:41</span><span aria-hidden="true"></span></div>
+              <div class="concept-top"><span>‹　PRACTICE</span><span>02 / 30</span></div>
+              <div class="concept-progress" aria-hidden="true"><span id="concept-progress-fill"></span></div>
+              <p class="concept-question">What types of traffic lights are recognised by Spain’s traffic code?</p>
+              <div class="concept-answers" role="group" aria-label="Choose an answer">
+                <button class="concept-option" type="button" data-correct="false">For vehicles only</button>
+                <button class="concept-option" type="button" data-correct="false">For pedestrians only</button>
+                <button class="concept-option" type="button" data-correct="true">For pedestrians and vehicles</button>
+              </div>
+              <p class="concept-feedback" id="concept-feedback" role="status" aria-live="polite">Choose an answer to see feedback.</p>
+              <div class="concept-explanation" id="concept-explanation">Traffic lights can be for pedestrians or vehicles. Vehicle lights include several types, depending on the road and its markings.</div>
+              <p class="concept-hint">Want to come back to this question?</p>
+              <div class="concept-road" id="concept-road"><span class="concept-road-progress" id="concept-road-progress" aria-hidden="true"></span></div>
+              <div class="concept-toast" id="concept-toast" role="status" aria-live="polite"><span>Saved to review. Come back to it later!</span></div>
+              <div class="concept-controls"><button class="concept-button" id="concept-save" type="button" aria-pressed="false">Save for later　♡</button><button class="concept-reset" id="concept-reset" type="button">Reset</button></div>
+            </div>
+          </div></div>
+        </div>
+        <span class="concept-footnote">Case study prototype · Not a screen from the live app</span>
+      </div>
+    </section>
+
+    <section class="decision" id="problema">
+      <div class="decision-head"><span class="label">01 / The challenge</span><h2>Getting it right doesn’t always mean understanding.</h2></div>
+      <div class="decision-body">
+        <p>Studying for a driving test can become a series of quizzes. I designed Drivo to bridge the gap: explain the rule in context and make it easy to revisit uncertain answers.</p>
+        <div class="signals">
+          <article class="signal"><span class="term">UNDERSTAND</span><strong>Clarify concepts</strong><p>Explanations and a visual glossary help distinguish similar rules.</p></article>
+          <article class="signal"><span class="term">PRACTISE</span><strong>Choose the right mode</strong><p>Flexible practice or a mock test without hints.</p></article>
+          <article class="signal"><span class="term">REMEMBER</span><strong>Return to questions</strong><p>Save questions to review, even after a correct answer.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="decision" id="decisiones">
+      <div class="decision-head"><span class="label">02 / The experience</span><h2>Practice, feedback and review in one flow.</h2></div>
+      <div class="decision-body">
+        <p>Answering is only the start. Learners can understand the rule, look up a term or save the question for later.</p>
+        <div class="screens">
+          <figure class="screen"><div class="iphone16 screen-device"><span class="dynamic-island" aria-hidden="true"></span><div class="device-screen"><img src="assets/drivo-captures/question.jpg" alt="Practice question before an answer is selected"></div></div><figcaption><b>Answer</b>Choose from three options.<small>iPhone 16 Pro · real app screen</small></figcaption></figure>
+          <figure class="screen"><div class="iphone16 screen-device"><span class="dynamic-island" aria-hidden="true"></span><div class="device-screen"><img src="assets/drivo-captures/answer-explanation.jpg" alt="An incorrect answer with its explanation"></div></div><figcaption><b>Understand</b>Read an explanation in context.<small>iPhone 16 Pro · real app screen</small></figcaption></figure>
+          <figure class="screen"><div class="iphone16 screen-device"><span class="dynamic-island" aria-hidden="true"></span><div class="device-screen"><img loading="lazy" src="assets/drivo-captures/correct-marked-review.jpg" alt="An answered question saved for review"></div></div><figcaption><b>Save a question</b>Return to it later.<small>iPhone 16 Pro · real app screen</small></figcaption></figure>
+          <figure class="screen"><div class="iphone16 screen-device"><span class="dynamic-island" aria-hidden="true"></span><div class="device-screen"><img loading="lazy" src="assets/drivo-captures/glossary.jpg" alt="Drivo Test visual glossary"></div></div><figcaption><b>Explore</b>Look up terms with visual support.<small>iPhone 16 Pro · real app screen</small></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="build" id="construccion">
+      <span class="label">03 / From idea to product</span><h2>I designed, built and launched Drivo.</h2>
+      <p class="section-copy">I defined the learning modes and states, built the web experience with HTML, CSS and JavaScript, and adapted it for iPhone. I used AI to support implementation and added a way to report question errors.</p>
+      <div class="screens">
+        <figure class="screen"><div class="iphone16 screen-device"><span class="dynamic-island" aria-hidden="true"></span><div class="device-screen"><img loading="lazy" src="assets/drivo-captures/sign-question.jpg" alt="Mock exam question with a progress count and error limit"></div></div><figcaption><b>Take a mock test</b>30 questions, no hints.<small>iPhone 16 Pro · real app screen</small></figcaption></figure>
+        <figure class="screen"><div class="iphone16 screen-device"><span class="dynamic-island" aria-hidden="true"></span><div class="device-screen"><img loading="lazy" src="assets/drivo-captures/report-menu.jpg" alt="Menu for reporting an issue with a question"></div></div><figcaption><b>Report content</b>Flag what needs a review.<small>iPhone 16 Pro · real app screen</small></figcaption></figure>
+      </div>
+      <div class="impact" id="impacto" aria-labelledby="impact-title">
+        <div class="impact-heading"><span class="label">04 / Impact</span><h3 id="impact-title">An encouraging first signal</h3></div>
+        <div class="impact-grid" aria-label="Resultados de Drivo Test">
+          <article class="impact-card"><strong>40</strong><span>people in user testing</span></article>
+          <article class="impact-card"><strong>4.7<small>/5</small></strong><span>App Store · average</span></article>
+          <article class="impact-card"><strong>9</strong><span>App Store ratings</span></article>
+        </div>
+        <p class="impact-note">I tested Drivo with 40 people and the feedback was positive. The clearest request was a personal account to keep progress in sync across iOS and web. Drivo is live on both platforms. <b>I’m now working on accounts and sync.</b></p>
+      </div>
+    </section>
+
+    <section class="closing" id="contacto"><h2>Try Drivo.</h2><div class="closing-links"><a class="button" href="https://apps.apple.com/es/app/drivo-test/id6813126362" target="_blank" rel="noopener noreferrer">View on the App Store ↗</a><a class="text-link" href="https://hola-laura.github.io/carnet-conducir-app/" target="_blank" rel="noopener noreferrer">Try the web app ↗</a></div></section>
+    <footer class="footer"><a href="https://hola-laura.github.io/laura/index.html">← Back to portfolio</a><span>Drivo Test · Independent product</span></footer>
+  </main>
+  <script>
+    const answerButtons = [...document.querySelectorAll(".concept-option")];
+    const feedback = document.getElementById("concept-feedback");
+    const explanation = document.getElementById("concept-explanation");
+    const saveButton = document.getElementById("concept-save");
+    const resetButton = document.getElementById("concept-reset");
+    const toast = document.getElementById("concept-toast");
+    const progress = document.getElementById("concept-progress-fill");
+    const roadProgress = document.getElementById("concept-road-progress");
+    const road = document.getElementById("concept-road");
+    let hasAnswered = false;
+    answerButtons.forEach((button) => button.addEventListener("click", () => {
+      answerButtons.forEach((option) => option.classList.remove("is-correct", "is-wrong"));
+      const correct = button.dataset.correct === "true";
+      button.classList.add(correct ? "is-correct" : "is-wrong");
+      hasAnswered = true;
+      feedback.textContent = correct ? "That’s right!" : "Not quite. Here’s why another answer is correct.";
+      explanation.classList.add("is-visible");
+      progress.style.width = correct ? "100%" : "72%";
+      roadProgress.style.width = correct ? "55%" : "28%";
+      if (correct) road.classList.add("is-moving");
+    }));
+    saveButton.addEventListener("click", () => {
+      const saved = saveButton.getAttribute("aria-pressed") !== "true";
+      saveButton.setAttribute("aria-pressed", String(saved));
+      saveButton.textContent = saved ? "Saved to review　✓" : "Save for later　♡";
+      toast.classList.toggle("is-visible", saved);
+      road.classList.toggle("is-moving", saved || hasAnswered);
+      roadProgress.style.width = saved ? "88%" : hasAnswered ? "55%" : "0%";
+      if (saved) progress.style.width = "100%";
+      if (saved) feedback.textContent = "Saved to your review questions.";
+    });
+    resetButton.addEventListener("click", () => {
+      answerButtons.forEach((option) => option.classList.remove("is-correct", "is-wrong"));
+      saveButton.setAttribute("aria-pressed", "false");
+      saveButton.textContent = "Save for later　♡";
+      toast.classList.remove("is-visible");
+      explanation.classList.remove("is-visible");
+      feedback.textContent = "Choose an answer to see feedback.";
+      progress.style.width = "34%";
+      roadProgress.style.width = "0%";
+      road.classList.remove("is-moving");
+      hasAnswered = false;
+    });
+  </script>
+</body>
+</html>
