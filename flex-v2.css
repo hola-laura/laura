@@ -127,3 +127,21 @@
 .fx-tile-awards .fx-tile-art{object-position:35% 15%}
 .fx-tile-awards li{grid-template-columns:148px minmax(0,1fr)}
 @media (max-width:640px){.fx-tile-awards li{grid-template-columns:1fr;gap:2px}}
+
+/* Awards tile v2: readable text on a light tint; the coral lives only in the artwork. */
+.fx-tile-awards{background:#fff1ee;color:var(--fx-ink)}
+.fx-tile-awards .mono-label{color:#b8261d;opacity:1}
+.fx-tile-awards h3{color:var(--fx-ink)}
+.fx-tile-awards li{border-top-color:#2a1c1a1f}
+.fx-tile-awards li b{color:#b8261d;opacity:1}
+.fx-tile-awards li a,.fx-tile-awards li span{color:var(--fx-ink)}
+.fx-tile-art-wrap{position:relative;overflow:hidden;background:#ff3831}
+.fx-tile-awards .fx-tile-art{position:absolute;inset:0;width:100%;height:118%;object-fit:cover;object-position:40% 0}
+/* Tiles in a row share the row's height */
+.fx-bento{align-items:stretch}
+.fx-tile-video{aspect-ratio:auto;min-height:100%}
+.fx-tile-video video{position:absolute;inset:0}
+@media (max-width:640px){
+  .fx-tile-art-wrap{aspect-ratio:16/11}
+  .fx-tile-video{aspect-ratio:1;min-height:0}
+}
