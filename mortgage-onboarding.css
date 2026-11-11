@@ -1,0 +1,110 @@
+/* mortgage-onboarding.css — onboarding walkthrough with the deal-end steps (section 03).
+   Shares the layout of .mg-tracker (mortgage-tracker.css) and flips the phone to the left. */
+@media(min-width:901px){.mg-onboarding{grid-template-columns:minmax(260px,340px) minmax(0,1fr)}.mg-onboarding .mg-tk-phone{order:-1}}
+.mg-tk-who.is-base{background:#ece8ef;color:#605969}
+.mg-tk-who.is-new{background:#e9e1f2;color:#5b3f78}
+.mg-onboarding .mg-tk-legend span::before{background:#b8adc2}
+.mg-onboarding .mg-tk-legend span+span::before{background:#69527f}
+
+/* The outcome, drawn as two bars */
+.ob-stat{margin:0 0 28px;padding:20px 22px;border-radius:18px;background:#fff;max-width:600px}
+.ob-stat-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.ob-stat-head strong{font-size:clamp(30px,3.6vw,40px);line-height:1;letter-spacing:-.04em;color:#2b2430}
+.ob-stat-head span{font-size:14px;line-height:1.45;color:#605969;max-width:34ch}
+.ob-bars{display:grid;gap:8px}
+.ob-bars div{display:grid;grid-template-columns:76px 1fr 38px;align-items:center;gap:10px;font:11px/1.3 var(--font-mono);color:#7b7085;text-transform:uppercase;letter-spacing:.03em}
+.ob-bars i{display:block;height:10px;border-radius:99px;background:#efeaf3;overflow:hidden;position:relative}
+.ob-bars i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--v);border-radius:inherit;background:#b8adc2;transition:width 1.2s cubic-bezier(.3,.7,.2,1)}
+.ob-bars div+div i::after{background:#69527f;transition-delay:.35s}
+.ob-bars b{font:600 14px/1 var(--font-body,inherit);color:#2b2430;text-align:right;letter-spacing:0;text-transform:none}
+@media (prefers-reduced-motion:no-preference){.mg-onboarding:not(.is-in) .ob-bars i::after{width:0}}
+
+/* ---------- Screens: 402px frames scaled to the phone ---------- */
+.ob-frame{position:absolute;top:0;left:0;width:402px;height:874px;transform:scale(var(--tk-scale,.8));transform-origin:0 0;overflow:hidden;background:#f2f8f3;color:#091723;font-family:var(--font-monzo,"DM Sans",system-ui,sans-serif);font-size:16px;line-height:22px;--acc:#218fb7;--sub:rgba(9,23,35,.6)}
+.ob-frame img{display:block}
+.ob-screen{position:absolute;inset:0;padding:0 16px;background:#f2f8f3;transform:translateX(100%);transition:transform .55s cubic-bezier(.3,.7,.2,1),opacity .55s;opacity:1}
+.ob-screen.is-past{transform:translateX(-30%);opacity:0}
+.ob-screen.is-active{transform:none;z-index:1}
+.ob-frame h3{margin:0;font-family:inherit!important;color:#091723!important;font-weight:600!important;letter-spacing:-.2px!important}
+.ob-frame p{margin:0}
+.ob-back{position:absolute;top:62px;left:16px;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.9);box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.ob-cta{position:absolute;left:16px;right:16px;bottom:44px;display:block;padding:13px;border-radius:99px;background:var(--acc);color:#fff;text-align:center;font-weight:600}
+
+/* Intro carousel */
+.ob-intro{text-align:center}
+.ob-art{height:300px;margin-top:126px;display:grid;place-items:center}
+.ob-art img{max-width:330px;max-height:290px;width:auto;height:auto}
+.ob-intro h3{font-size:28px!important;line-height:34px!important;margin:18px 6px 18px}
+.ob-intro p{color:var(--sub);padding:0 10px}
+.ob-intro .ob-muted{margin-top:22px;font-weight:600;color:rgba(9,23,35,.45)}
+.ob-intro .ob-small{margin-top:20px;font-size:15px}
+.ob-intro u{color:var(--acc);text-underline-offset:2px}
+.ob-dots{position:absolute;left:0;right:0;bottom:118px;display:flex;justify-content:center;gap:8px}
+.ob-dots i{width:7px;height:7px;border-radius:50%;background:rgba(9,23,35,.2)}
+.ob-dots i.is-on{background:#091723}
+
+/* Mortgage found */
+.ob-pill{position:absolute;top:58px;left:16px;padding:6px 12px;border-radius:99px;background:rgba(33,143,183,.1);color:var(--acc);font-weight:600;font-size:15px}
+.ob-found-art{margin-top:116px;width:97px;height:auto}
+.ob-found h3{font-size:30px!important;line-height:36px!important;margin:26px 0 30px;max-width:290px}
+.ob-caption{display:block;margin:0 0 8px;font-size:12px;letter-spacing:.04em;color:var(--sub)}
+.ob-card{background:#fff;border-radius:20px;padding:16px}
+.ob-card+.ob-card{margin-top:16px}
+.ob-row{display:flex;align-items:center;gap:12px}
+.ob-bank{display:grid;place-items:center;width:32px;height:32px;border-radius:8px;border:.33px solid rgba(9,23,35,.2);color:#75817e}
+.ob-amount{margin-top:12px;font-size:34px;line-height:40px;font-weight:500;letter-spacing:-.5px}
+.ob-amount small{font-size:18px}
+.ob-help b{font-weight:600}
+.ob-help p{margin:12px 0 14px;font-size:14px;line-height:20px;color:var(--sub)}
+.ob-q{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--acc);color:#fff;font-weight:700}
+.ob-ghost{display:block;padding:11px;border-radius:10px;background:#f2f8f3;color:var(--acc);text-align:center;font-weight:600}
+.ob-foot{position:absolute;left:0;right:0;bottom:0;height:auto}
+.ob-foot .ob-cta{position:static;margin:0 16px 44px}
+.ob-found .ob-foot{background:#f2f8f3}
+.ob-lock{display:flex;gap:12px;align-items:center;margin:0 16px 14px;padding:12px 14px;border-radius:12px;background:#fff;font-size:13px;line-height:18px;color:#091723}
+.ob-lock svg{flex:none;color:#4b5650}
+
+/* Deal-end steps */
+.ob-bar{position:absolute;top:0;left:0;right:0;height:112px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px;font-weight:600}
+.ob-bar .ob-back{top:auto;bottom:10px;width:36px;height:36px;background:#fff}
+.ob-bar .ob-back img{width:22px;height:22px}
+.ob-center-art{margin:208px auto 0}
+.ob-ask{text-align:center}
+.ob-ask h3{font-size:28px!important;line-height:34px!important;margin:44px 10px 18px}
+.ob-ask p{color:var(--sub);padding:0 18px}
+.ob-ask .ob-foot{padding-top:12px;background:#fff;border-radius:24px 24px 0 0}
+.ob-ask .ob-cta{margin-bottom:12px}
+.ob-ask .ob-cta+.ob-cta{margin-bottom:44px}
+.ob-cta-soft{background:#f2f8f3!important;color:var(--acc)!important}
+.ob-pick h3{font-size:28px!important;line-height:34px!important;margin:146px 0 12px}
+.ob-pick>p{color:var(--sub);font-size:15px;margin-bottom:22px}
+.ob-pick h3+.ob-wheels{margin-top:24px}
+.ob-wheels{position:relative;display:grid;grid-template-columns:1fr 1fr;height:170px;padding:0 16px;overflow:hidden}
+.ob-wheels-single{grid-template-columns:1fr}
+.ob-wheel-band{position:absolute;left:16px;right:16px;top:68px;height:34px;border-radius:8px;background:#f2f8f3}
+.ob-wheel{position:relative;height:170px;overflow:hidden;-webkit-mask:linear-gradient(transparent,#000 30%,#000 70%,transparent);mask:linear-gradient(transparent,#000 30%,#000 70%,transparent)}
+.ob-wheel span{display:block;height:34px;line-height:34px;text-align:center;font-size:20px;color:#091723}
+.ob-wheel-track{transform:translateY(var(--from));transition:transform 1.4s cubic-bezier(.3,.7,.2,1) .5s}
+.ob-months .ob-wheel-track{--from:0px;--to:-102px}
+.ob-years .ob-wheel-track{--from:-68px;--to:0px}
+.ob-lead .ob-wheel-track{--from:0px;--to:-102px}
+.ob-screen.is-active .ob-wheel-track{transform:translateY(var(--to))}
+.ob-pick .ob-caption{margin-top:26px}
+.ob-timeline{padding:6px 16px}
+.ob-timeline div{position:relative;display:flex;align-items:center;gap:16px;height:58px}
+.ob-timeline div+div::before{content:"";position:absolute;left:11px;top:-18px;height:24px;border-left:1.5px dashed rgba(9,23,35,.2)}
+.ob-timeline i{width:24px;height:24px;border-radius:50%;border:1.5px solid rgba(9,23,35,.3);flex:none;transition:background .4s 1.6s,border-color .4s 1.6s}
+.ob-timeline span{flex:1}
+.ob-timeline b{font-weight:400}
+.ob-timeline .is-done i{background:#34c759;border-color:#34c759;box-shadow:inset 0 0 0 5px #34c759}
+.ob-timeline .is-done i,.ob-screen.is-active .ob-remind i{background:#34c759 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m7 12.5 3.2 3L17 9' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100%;border-color:#34c759;box-shadow:none}
+.ob-pick .ob-foot,.ob-done .ob-foot{padding-top:12px;background:#f2f8f3}
+.ob-done{text-align:center}
+.ob-check{margin:300px auto 0}
+.ob-done h3{font-size:30px!important;line-height:36px!important;margin:56px 0 14px}
+.ob-done p{color:var(--sub)}
+.ob-done.is-active .ob-check{animation:obPop .7s cubic-bezier(.3,1.6,.5,1) .25s both}
+@keyframes obPop{from{transform:scale(.5) rotate(-8deg);opacity:0}}
+
+@media (prefers-reduced-motion:reduce){.ob-frame *,.ob-bars i::after{transition:none!important;animation:none!important}}
+@media(max-width:900px){.mg-onboarding .mg-tk-phone{order:4}.ob-stat{order:3}}
