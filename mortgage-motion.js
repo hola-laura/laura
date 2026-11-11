@@ -11,6 +11,7 @@
   document.documentElement.classList.add('mg-motion');
 
   document.querySelectorAll('.mg-timeline li').forEach((item, index) => item.style.setProperty('--i', index));
+  document.querySelectorAll('.mg-chart-dot').forEach((dot, index) => dot.style.setProperty('--i', index));
 
   /* Numbers like "38% → 88%" count up from the first value to the second */
   const countUp = element => {

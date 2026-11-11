@@ -176,3 +176,37 @@
 }
 
 @media(max-width:980px){.mg-integration-notes{grid-template-columns:1fr}}
+
+/* The work: phases drawn on the tracker audience curve */
+.mg-arc .mg-timeline-heading>div{display:grid;gap:18px}
+.mg-arc-lede{max-width:54ch;margin:0;color:#605969;font-size:16px;line-height:1.6}
+.mg-chart{margin:0 0 34px}
+.mg-chart-plot{position:relative;height:clamp(190px,26vw,280px);margin:34px 0 0 44px;border-bottom:1px solid #d7cddd}
+.mg-chart-plot svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.mg-chart-area{fill:#17a8bd;opacity:.1}
+.mg-chart-line{fill:none;stroke:#17a8bd;stroke-width:3;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
+.mg-chart-band{position:absolute;top:-30px;bottom:0;left:var(--from);width:calc(var(--to) - var(--from));background:rgba(105,82,127,.07);border-left:1px solid #d2c6dc}
+.mg-chart-band:nth-child(2){background:rgba(105,82,127,.04)}
+.mg-chart-band small{position:absolute;top:6px;left:8px;font:11px/1.4 var(--font-mono);color:#69527f}
+.mg-chart-grid{position:absolute;left:0;right:0;top:var(--y);border-top:1px dashed #ddd4e3}
+.mg-chart-grid small{position:absolute;right:calc(100% + 10px);top:-8px;font:10px/1.4 var(--font-mono);color:#7b7085}
+.mg-chart-mark{position:absolute;left:var(--x);top:25%;bottom:0;border-left:1px dashed #69527f}
+.mg-chart-mark small{position:absolute;right:8px;bottom:8px;font:10px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.03em;color:#69527f;white-space:nowrap}
+.mg-chart-dot{position:absolute;left:var(--x);top:var(--y);width:11px;height:11px;margin:-5.5px 0 0 -5.5px;border-radius:50%;background:#f3f0f6;border:3px solid #17a8bd;box-sizing:border-box;z-index:1}
+.mg-chart-dot b{position:absolute;bottom:14px;left:50%;translate:-50% 0;font-size:15px;font-weight:600;letter-spacing:-.02em;color:#2b2430;white-space:nowrap}
+.mg-chart-dot-start b{bottom:auto;top:-30px;left:0;translate:none;font:10px/1.4 var(--font-mono);text-transform:uppercase;color:#7b7085}
+.mg-chart-dot-last{background:#17a8bd}
+.mg-chart-dot-last b{font-size:clamp(20px,2.4vw,28px);left:auto;right:16px;bottom:-12px;translate:none}
+.mg-chart-axis{position:relative;height:22px;margin-left:44px}
+.mg-chart-axis span{position:absolute;left:var(--x);top:8px;font:10px/1.4 var(--font-mono);color:#7b7085}
+.mg-arc .mg-small{margin:26px 0 0;max-width:80ch}
+.mg-stat{display:flex;gap:16px;align-items:baseline;margin:22px 0;padding:18px 20px;border-radius:16px;background:#f3f0f6}
+.mg-stat strong{font-size:clamp(34px,4vw,46px);line-height:1;letter-spacing:-.04em;flex:none}
+.mg-stat span{font-size:14px;line-height:1.5;color:#605969}
+@media(max-width:760px){
+ .mg-chart-plot{margin-left:36px;height:220px}.mg-chart-axis{margin-left:36px}
+ .mg-chart-dot b{font-size:12px}.mg-chart-dot-last b{font-size:18px;bottom:-8px}
+ .mg-chart-mark small{display:none}
+ .mg-chart-band small{left:3px;font-size:9px}
+}
+.mg-chart-dot-mid b{bottom:auto;top:10px;left:12px;translate:none}
