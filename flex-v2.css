@@ -169,3 +169,9 @@
 }
 .fx-tile-awards{background:radial-gradient(90% 120% at 100% 0%,#ff383140 0%,#ff383100 60%),linear-gradient(165deg,#fff5f2 0%,#ffe3dd 100%)}
 .fx-aw-tag{white-space:nowrap}
+
+/* Awards tile: the BBA badge animation sits beside the heading */
+.fx-aw-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,260px);gap:28px;align-items:start}
+.fx-aw-anim{margin:0;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 1px 0 #a8231b14,0 12px 32px -18px #a8231b55;aspect-ratio:3/2}
+.fx-aw-anim video{display:block;width:100%;height:100%;object-fit:cover}
+@media (max-width:640px){.fx-aw-head{grid-template-columns:1fr;gap:20px}}

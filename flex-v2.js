@@ -27,7 +27,7 @@
 
 /* Outcome videos: respect reduced motion (show the poster), and only play while on screen. */
 (() => {
-  const vids = [...document.querySelectorAll('.fx-tile-video video')];
+  const vids = [...document.querySelectorAll('.fx-tile-video video, .fx-aw-anim video')];
   if (!vids.length) return;
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
     vids.forEach(v => { v.removeAttribute('autoplay'); v.pause(); });

@@ -1450,4 +1450,5 @@ window.I18N_ES = {
 "Mortgage rates screen in the Monzo app": "Pantalla de tipos hipotecarios en la app de Monzo",
 "Rate impact screen in the Monzo app": "Pantalla de impacto del tipo en la app de Monzo",
 "Habito by Monzo screen in the Monzo app": "Pantalla de Habito by Monzo en la app de Monzo",
+"The Flex card receiving its Best Credit Card Provider 2023 badge": "La tarjeta Flex recibiendo su sello de Mejor proveedor de tarjetas de crédito 2023",
 };
