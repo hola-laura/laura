@@ -145,3 +145,25 @@
   .fx-tile-art-wrap{aspect-ratio:16/11}
   .fx-tile-video{aspect-ratio:1;min-height:0}
 }
+
+/* Awards tile v3: typographic, three award columns, no artwork */
+.fx-tile-awards{display:flex;flex-direction:column;padding:40px;background:#fff1ee;color:var(--fx-ink)}
+.fx-aw-head .mono-label{color:#a8231b}
+.fx-aw-head h3{margin:12px 0 0;font:400 clamp(26px,2.6vw,38px)/1.12 var(--font-heading);font-size-adjust:.47;max-width:20ch}
+.fx-aw-list{list-style:none;margin:auto 0 0;padding:32px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.fx-aw-list li+li{border-left:1px solid #a8231b33}
+.fx-aw-list a{display:flex;flex-direction:column;align-items:flex-start;gap:8px;height:100%;padding:0 20px;color:inherit;text-decoration:none}
+.fx-aw-list li:first-child a{padding-left:0}
+.fx-aw-year{font:400 clamp(44px,4.4vw,64px)/.9 var(--font-heading);font-size-adjust:.47;color:#a8231b;letter-spacing:-.02em}
+.fx-aw-tag{margin-top:6px;padding:4px 10px;border-radius:99px;background:#ffd9d3;color:#8a1c15;font:11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.04em}
+.fx-aw-name{font-size:16px;font-weight:500;line-height:1.35}
+.fx-aw-org{margin-top:auto;font:11px/1.4 var(--font-mono);color:var(--fx-muted)}
+.fx-aw-list a:hover .fx-aw-name{text-decoration:underline;text-underline-offset:3px}
+.fx-aw-note{margin:24px 0 0;padding-top:16px;border-top:1px solid #a8231b26;font-size:13px;color:var(--fx-muted)}
+@media (max-width:640px){
+  .fx-tile-awards{padding:28px 22px}
+  .fx-aw-list{grid-template-columns:1fr;padding-top:20px}
+  .fx-aw-list li+li{border-left:0;border-top:1px solid #a8231b33}
+  .fx-aw-list a,.fx-aw-list li:first-child a{padding:16px 0}
+  .fx-aw-org{margin-top:0}
+}
