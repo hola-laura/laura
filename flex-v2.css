@@ -1,0 +1,30 @@
+/* Flex case study v2: fact sheet and visible decisions. Only loaded on case-study-flex-v2.html. */
+.fx-facts{padding:40px 0 0}
+.fx-facts dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:0}
+.fx-facts dl>div{padding-top:14px;border-top:2px solid var(--fx-lilac)}
+.fx-facts dt{font:11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--fx-lilac)}
+.fx-facts dd{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--fx-ink)}
+.fx-intro{padding-bottom:24px}
+.fx-intro h2{max-width:22ch}
+
+.fx-calls{padding:72px 56px;margin:48px 0}
+.fx-calls h2{font-size:clamp(32px,4.4vw,60px);line-height:1.08;margin:18px 0 0;max-width:20ch}
+.fx-call-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;list-style:none;margin:40px 0 0;padding:0}
+.fx-call-grid>li{padding:28px;border:1px solid #ffffff26;border-radius:20px;background:#ffffff08}
+.fx-call-grid>li>span{font:11px var(--font-mono);color:var(--fx-lilac-soft)}
+.fx-call-grid h3{margin:10px 0 18px;font:400 clamp(21px,2.2vw,28px)/1.2 var(--font-heading);font-size-adjust:.47}
+.fx-call-grid dl{display:grid;gap:12px;margin:0}
+.fx-call-grid dl>div{display:grid;grid-template-columns:84px minmax(0,1fr);gap:12px;padding-top:12px;border-top:1px solid #ffffff1f}
+.fx-call-grid dt{font:11px/1.6 var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--fx-lilac-soft)}
+.fx-call-grid dd{margin:0;font-size:15px;line-height:1.5;color:#d6dee6}
+.fx-call-grid dd b{color:#fff}
+
+@media (max-width:900px){
+  .fx-facts dl{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fx-call-grid{grid-template-columns:1fr}
+  .fx-calls{padding:48px 24px}
+}
+@media (max-width:560px){
+  .fx-facts dl{grid-template-columns:1fr;gap:16px}
+  .fx-call-grid dl>div{grid-template-columns:1fr;gap:2px}
+}
