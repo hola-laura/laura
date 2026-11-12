@@ -271,3 +271,20 @@
 .fx-evidence svg{flex:none;width:20px;height:20px;margin-top:2px;color:var(--fx-lilac)}
 .fx-evidence a{color:var(--fx-lilac);text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
 .fx-case .fx-evidence{margin-top:16px;font-size:14px}
+
+/* Awards: four awards in a 2x2 grid */
+.fx-aw-list{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:0}
+.fx-aw-list li{padding:18px 0;border-top:1px solid #a8231b26}
+.fx-aw-list li+li{border-left:0}
+.fx-aw-list li:nth-child(even){border-left:1px solid #a8231b33}
+.fx-aw-list li:nth-child(even) a{padding-left:20px}
+.fx-aw-list li:nth-child(odd) a{padding-left:0}
+.fx-aw-list a{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:14px;row-gap:4px;align-items:center}
+.fx-aw-year{grid-row:span 3;font-size:clamp(40px,3.6vw,52px)}
+.fx-aw-tag{justify-self:start;margin-top:0}
+.fx-aw-org{margin-top:0}
+@media (max-width:640px){.fx-aw-list{grid-template-columns:1fr}.fx-aw-list li:nth-child(even){border-left:0}.fx-aw-list li:nth-child(even) a{padding-left:0}}
+/* Timeline: the month after my time, still part of the story */
+.fx-timeline li.is-mine-tail{border-left-color:#ff383199}
+.fx-timeline li.is-mine-tail::before{background:#ff3831}
+.fx-tl-txt a{color:inherit;text-decoration:underline;text-underline-offset:3px}
