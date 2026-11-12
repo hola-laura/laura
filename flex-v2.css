@@ -288,3 +288,11 @@
 .fx-timeline li.is-mine-tail{border-left-color:#ff383199}
 .fx-timeline li.is-mine-tail::before{background:#ff3831}
 .fx-tl-txt a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+
+/* Timeline v2: my whole time on Flex is one coral run */
+.fx-timeline li.is-mine{border-left-color:#ff3831}
+.fx-timeline li.is-mine::before{background:#ff3831;box-shadow:none}
+.fx-timeline li.is-first::before{box-shadow:0 0 0 4px #ff383140}
+.fx-timeline li.is-last::before{box-shadow:0 0 0 4px #ff383140}
+.fx-timeline li.is-first em{order:-1}
+.fx-timeline li.is-mine-tail{border-left-color:#ff3831}
