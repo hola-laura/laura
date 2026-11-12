@@ -1489,4 +1489,7 @@ window.I18N_ES = {
 "Customers missing payments": "Clientes con pagos fallidos",
 "Best Credit Card Provider · British Bank Awards": "Mejor proveedor de tarjetas de crédito · British Bank Awards",
 "Retail Finance Provider · Moneyfacts": "Financiación al consumo del año · Moneyfacts",
+"Flex customers in 2026": "clientes de Flex en 2026",
+"in Flex balances by March 2026, up 49% in a year. That year Flex added 0.5m customers and earned £93.7m in interest.": "en saldo de Flex en marzo de 2026, un 49% más en un año. Ese año Flex sumó 0,5 millones de clientes y generó 93,7 M£ en intereses.",
+"<a href=\"https://monzo.com/annual-report/2026/Monzo-Annual-Report-2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Monzo Annual Report FY2026 ↗</a>": "<a href=\"https://monzo.com/annual-report/2026/Monzo-Annual-Report-2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Informe anual de Monzo, año fiscal 2026 ↗</a>",
 };
