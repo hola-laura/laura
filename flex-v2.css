@@ -251,3 +251,17 @@
 }
 
 .fx-tile-market small a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+
+/* Market tile: growth timeline from when I joined */
+.fx-tile-market .fx-tile-copy{justify-content:flex-start;gap:0}
+.fx-timeline{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:0}
+.fx-timeline li{position:relative;display:grid;grid-template-columns:76px auto minmax(0,1fr);align-items:baseline;gap:4px 14px;padding:12px 0 12px 18px;border-left:1px solid #ffffff2e}
+.fx-timeline li::before{content:"";position:absolute;left:-4px;top:20px;width:7px;height:7px;border-radius:50%;background:#a9b7c5}
+.fx-tl-date{font:11px/1.4 var(--font-mono);color:#a9b7c5;text-transform:uppercase;letter-spacing:.04em}
+.fx-timeline b{font:400 clamp(26px,2.4vw,34px)/1 var(--font-heading);font-size-adjust:.47;color:#fff;white-space:nowrap}
+.fx-tl-txt{font-size:14px;line-height:1.4;color:#d6dee6}
+.fx-timeline em{grid-column:2/-1;justify-self:start;margin-top:6px;padding:3px 10px;border-radius:99px;background:#ff3831;color:#fff;font:normal 11px/1.5 var(--font-mono);text-transform:uppercase;letter-spacing:.04em}
+.fx-timeline li.is-mine{border-left-color:#ff3831}
+.fx-timeline li.is-mine::before{background:#ff3831;box-shadow:0 0 0 4px #ff383140}
+.fx-tile-market .fx-tile-copy>small{margin-top:auto;padding-top:18px}
+@media (max-width:640px){.fx-timeline li{grid-template-columns:auto minmax(0,1fr)}.fx-tl-date{grid-column:1/-1}}
