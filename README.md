@@ -34,6 +34,8 @@ English is the text in the HTML. Spanish lives in `i18n-es.js`, keyed by the Eng
 
 Each `case-study*.html` file contains its own story. They load `styles.css`, then `case-study.css`, and a matching page-specific stylesheet where needed. `case-study.js` handles their interactive demonstrations.
 
+Flex, RLDatix, Spending Block and Remortgage share one format: a dark hero, a fact sheet (role, team, timeline, what I did), big outcomes, short numbered sections and the decisions in a dark grid (situation, call, result). RLDatix, Spending Block and Remortgage get it from `case-format.css` and `case-format.js` (hero wall loop and pause), loaded after their own stylesheets; Flex keeps its own copies in `flex-story.css` and `flex-v2.css`. `spending-block.js` runs the reminder prototype on the Spending Block page.
+
 `case-study.html` is the original Accepting Recs story. `case-study-accepting-recs.html` is its separate research-to-delivery version; both are linked from the homepage.
 
 Navigation and footers are currently plain HTML repeated across pages. For a site this size, keep that arrangement and update shared copy consistently. If the portfolio grows substantially, extracting these into templates would be a useful next step.

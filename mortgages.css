@@ -221,3 +221,15 @@
  .mg-chart-dot-start b{display:none}
  .mg-stat{flex-direction:column;align-items:flex-start;gap:8px}
 }
+
+/* Flex format (case-format.css): outcomes, learning list and Habito stat */
+.mortgage-case .fx-big.mg-metrics{grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.mortgage-case .fx-big.mg-metrics strong{font-size:clamp(38px,4.4vw,64px)}
+.mortgage-case .fx-big a{color:inherit}
+.mg-learn{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:64px;align-items:center}
+.mg-learn-list{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--fx-line)}
+.mg-learn-list li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--fx-line);font-size:15px;line-height:1.5;color:var(--fx-muted)}
+.mg-learn-list b{font:11px/1.9 var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--fx-lilac)}
+.mortgage-case #integration{padding-bottom:24px}
+.mortgage-case #integration .mg-stat{max-width:720px}
+@media(max-width:900px){.mortgage-case .fx-big.mg-metrics{grid-template-columns:1fr}.mortgage-case .fx-big.mg-metrics>div{padding-left:0;border-left:0}.mg-learn{grid-template-columns:1fr;gap:32px}}
