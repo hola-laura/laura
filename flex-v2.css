@@ -177,8 +177,8 @@
 @media (max-width:640px){.fx-aw-head{grid-template-columns:1fr;gap:20px}}
 
 /* Proof strip under the hero: soft chips, floating hearts on the customers chip */
-.fx-proof{padding:28px 0 0}
-.fx-proof-row{list-style:none;margin:0;padding:8px 0 4px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.fx-glance{padding:28px 0 0}
+.fx-glance-row{list-style:none;margin:0;padding:8px 0 4px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
 .fx-chip{display:flex;align-items:center;gap:12px;min-height:72px;padding:10px 20px;border-radius:18px;background:#f1ecf7;color:var(--fx-ink)}
 .fx-chip-num{font:400 34px/1 var(--font-heading);font-size-adjust:.47;color:var(--fx-ink);letter-spacing:-.01em}
 .fx-chip-txt{display:flex;flex-direction:column;gap:2px}
@@ -210,9 +210,16 @@
 @keyframes fx-heart-r{0%{opacity:.55}70%{opacity:.45}100%{transform:translate(calc(-50% + 12px),calc(-50% - var(--fly)));opacity:0}}
 @keyframes fx-heart-c{0%{opacity:.55}70%{opacity:.45}100%{transform:translate(calc(-50% + 6px),calc(-50% - var(--fly)));opacity:0}}
 @media (max-width:820px){
-  .fx-proof-row{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;padding:56px 4px 8px;margin-top:-48px;scrollbar-width:none}
-  .fx-proof-row::-webkit-scrollbar{display:none}
+  .fx-glance-row{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;padding:56px 4px 8px;margin-top:-48px;scrollbar-width:none}
+  .fx-glance-row::-webkit-scrollbar{display:none}
   .fx-chip{flex:none;scroll-snap-align:start}
   .fx-hearts{--fly:56px}
   .fx-hearts-fly svg:nth-child(5){display:none}
 }
+
+.fx-glance .fx-chip span{max-width:none}
+.fx-hearts svg path{fill:#ff3831}
+.fx-chip-trophy{color:#ff3831}
+.fx-chip-trophy svg{width:26px;height:26px}
+.fx-chip-trophy svg path:first-child{fill:#ff3831}
+.fx-glance .fx-chip{padding:10px 18px 10px 14px}
