@@ -265,3 +265,9 @@
 .fx-timeline li.is-mine::before{background:#ff3831;box-shadow:0 0 0 4px #ff383140}
 .fx-tile-market .fx-tile-copy>small{margin-top:auto;padding-top:18px}
 @media (max-width:640px){.fx-timeline li{grid-template-columns:auto minmax(0,1fr)}.fx-tl-date{grid-column:1/-1}}
+
+/* Evidence notes: public proof from Monzo's annual reports */
+.fx-evidence{display:flex;align-items:flex-start;gap:10px;max-width:60ch;margin:24px 0 0;padding:12px 16px;border-radius:14px;background:#f1ecf7;color:var(--fx-ink);font-size:15px;line-height:1.5}
+.fx-evidence svg{flex:none;width:20px;height:20px;margin-top:2px;color:var(--fx-lilac)}
+.fx-evidence a{color:var(--fx-lilac);text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.fx-case .fx-evidence{margin-top:16px;font-size:14px}
