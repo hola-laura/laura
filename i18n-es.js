@@ -1485,4 +1485,8 @@ window.I18N_ES = {
 "<strong>Retail Finance Provider</strong><small>Winner 2026</small>": "<strong>Financiación al consumo</strong><small>Ganador 2026</small>",
 "<small>Missed payments</small>": "<small>Pagos fallidos</small>",
 "<strong>1M+ customers</strong><small>by March 2025</small>": "<strong>+1M de clientes</strong><small>en marzo de 2025</small>",
+"Flex customers by March 2025": "clientes de Flex en marzo de 2025",
+"Customers missing payments": "Clientes con pagos fallidos",
+"Best Credit Card Provider · British Bank Awards": "Mejor proveedor de tarjetas de crédito · British Bank Awards",
+"Retail Finance Provider · Moneyfacts": "Financiación al consumo del año · Moneyfacts",
 };

@@ -228,3 +228,23 @@
 .fx-glance .fx-chip-txt strong{font-size:15px}
 .fx-glance .fx-chip-txt small{font-size:14px}
 .fx-glance .fx-chip-num{font-size:32px}
+
+/* Glance strip v2: one bar, five equal cells, same anatomy in every cell */
+.fx-glance{padding:40px 0 8px}
+.fx-g-row{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));background:#f1ecf7;border-radius:20px}
+.fx-g-row>li{display:flex;flex-direction:column;gap:6px;padding:22px 24px;min-width:0}
+.fx-g-row>li+li{border-left:1px solid #6d479326}
+.fx-g-val{display:flex;align-items:center;gap:10px;font:400 34px/1 var(--font-heading);font-size-adjust:.47;color:var(--fx-ink);letter-spacing:-.01em;white-space:nowrap}
+.fx-g-label{font-size:14px;line-height:1.4;color:var(--fx-muted);max-width:none}
+.fx-g-trophy{width:26px;height:26px;color:#ff3831;flex:none}
+.fx-g-trophy path:first-child{fill:#ff3831}
+.fx-glance .fx-hearts{width:28px;height:28px;--fly:46px}
+.fx-glance .fx-hearts-base svg{width:26px;height:26px}
+@media (max-width:1100px){
+  .fx-g-row{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(210px,1fr);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-top:48px;margin-top:-48px;background:none}
+  .fx-g-row::-webkit-scrollbar{display:none}
+  .fx-g-row>li{scroll-snap-align:start;background:#f1ecf7}
+  .fx-g-row>li:first-child{border-radius:20px 0 0 20px}
+  .fx-g-row>li:last-child{border-radius:0 20px 20px 0}
+  .fx-glance .fx-hearts{--fly:40px}
+}
