@@ -1476,4 +1476,10 @@ window.I18N_ES = {
 "A later version from my Figma files. Try the + and − in the filters: the LTV and monthly repayment update as you go. The lender is anonymised; figures are examples from the designs, not an offer.": "Una versión posterior, de mis archivos de Figma. Prueba el + y el − de los filtros: el LTV y la cuota mensual se actualizan al momento. La entidad está anonimizada; las cifras son ejemplos de los diseños, no una oferta.",
 "Animated estimated mortgage rates: change your details and see the monthly repayment update": "Tipos hipotecarios estimados animados: cambia tus datos y mira cómo se actualiza la cuota mensual",
 "Prototype stages": "Etapas del prototipo",
+"Flex at a glance": "Flex de un vistazo",
+"<strong>1M+ customers</strong><small>using Flex by March 2025</small>": "<strong>+1M de clientes</strong><small>usaban Flex en marzo de 2025</small>",
+"<small>Retention</small>": "<small>Retención</small>",
+"<small>Customers missing payments</small>": "<small>Clientes con pagos fallidos</small>",
+"<strong>Best Credit Card Provider</strong><small>Winner 2023</small>": "<strong>Mejor proveedor de tarjetas de crédito</strong><small>Ganador 2023</small>",
+"<strong>Retail Finance Provider of the Year</strong><small>Winner 2026</small>": "<strong>Proveedor de financiación al consumo del año</strong><small>Ganador 2026</small>",
 };
