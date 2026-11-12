@@ -194,3 +194,7 @@ body.gallery-dragging,body.gallery-dragging * { cursor:grabbing !important; }
 .testimonial figcaption small { display:block; font:11px/1.5 var(--font-mono); text-transform:uppercase; color:var(--ink-muted); }
 .testimonials-more { display:inline-block; margin-top:28px; }
 @media (max-width:1024px) { .testimonial-grid { grid-template-columns:1fr; } .testimonial blockquote p { max-width:720px; } }
+
+/* Hero proof line: three results from different industries, readable at a glance. */
+.portfolio-home .hero-proof { color:var(--ink); font:500 14px/1.6 var(--font-body); max-width:620px; }
+@media (max-width:760px) { .portfolio-home .hero-proof { font-size:13px; } }
