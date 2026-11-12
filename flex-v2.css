@@ -241,10 +241,12 @@
 .fx-glance .fx-hearts{width:28px;height:28px;--fly:46px}
 .fx-glance .fx-hearts-base svg{width:26px;height:26px}
 @media (max-width:1100px){
-  .fx-g-row{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(210px,1fr);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-top:48px;margin-top:-48px;background:none}
-  .fx-g-row::-webkit-scrollbar{display:none}
-  .fx-g-row>li{scroll-snap-align:start;background:#f1ecf7}
-  .fx-g-row>li:first-child{border-radius:20px 0 0 20px}
-  .fx-g-row>li:last-child{border-radius:0 20px 20px 0}
-  .fx-glance .fx-hearts{--fly:40px}
+  .fx-g-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fx-g-row>li:first-child{grid-column:1/-1}
+  .fx-g-row>li+li{border-left:0}
+  .fx-g-row>li:nth-child(n+2){border-top:1px solid #6d479326}
+  .fx-g-row>li:nth-child(odd):not(:first-child){border-left:1px solid #6d479326}
+  .fx-g-row>li{padding:18px 20px}
+  .fx-g-val{font-size:30px}
 }
+
