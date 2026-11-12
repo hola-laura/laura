@@ -1483,4 +1483,6 @@ window.I18N_ES = {
 "<strong>Best Credit Card Provider</strong><small>Winner 2023</small>": "<strong>Mejor proveedor de tarjetas de crédito</strong><small>Ganador 2023</small>",
 "<strong>Retail Finance Provider of the Year</strong><small>Winner 2026</small>": "<strong>Proveedor de financiación al consumo del año</strong><small>Ganador 2026</small>",
 "<strong>Retail Finance Provider</strong><small>Winner 2026</small>": "<strong>Financiación al consumo</strong><small>Ganador 2026</small>",
+"<small>Missed payments</small>": "<small>Pagos fallidos</small>",
+"<strong>1M+ customers</strong><small>by March 2025</small>": "<strong>+1M de clientes</strong><small>en marzo de 2025</small>",
 };
