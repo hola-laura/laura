@@ -296,3 +296,8 @@
 .fx-timeline li.is-last::before{box-shadow:0 0 0 4px #ff383140}
 .fx-timeline li.is-first em{order:-1}
 .fx-timeline li.is-mine-tail{border-left-color:#ff3831}
+/* Awards 2x2: stack each award vertically so text has room */
+.fx-aw-list a{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.fx-aw-year{grid-row:auto}
+.fx-aw-name{max-width:24ch}
+.fx-timeline em{white-space:nowrap}
