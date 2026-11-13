@@ -1718,4 +1718,6 @@ window.I18N_ES = {
 "No support tickets about navigation in the 3 months after launch.": "Ninguna incidencia de soporte sobre navegación en los 3 meses tras el lanzamiento.",
 "A first draft in about <b>5 minutes</b>, based on team estimates and conversations with healthcare professionals.": "Un primer borrador en unos <b>5 minutos</b>, según estimaciones del equipo y conversaciones con profesionales sanitarios.",
 "Report times are team estimates, checked in conversations with healthcare professionals. Support tickets were tracked for 3 months after launch.": "Los tiempos de reporte son estimaciones del equipo, contrastadas en conversaciones con profesionales sanitarios. Las incidencias de soporte se siguieron durante 3 meses tras el lanzamiento.",
+"Redesigned risk overview: key numbers, objectives, a likelihood by consequence matrix, staff recommendations and overdue actions": "Resumen de riesgos rediseñado: cifras clave, objetivos, una matriz de probabilidad por consecuencia, recomendaciones del personal y acciones vencidas",
+"The redesigned risk overview, recreated for this case study with sample data. Numbers match the three ideas below.": "El resumen de riesgos rediseñado, recreado para este caso con datos de ejemplo. Los números coinciden con las tres ideas de abajo.",
 };
