@@ -8,6 +8,8 @@
 .spending-home-media .sb-phone{max-width:180px;width:40%;border-width:5px;flex-shrink:0}
 .spending-home-media .sb-phone img{height:auto!important;min-height:0!important;width:100%;object-fit:contain!important}
 .spending-home-media .sb-phone:nth-child(2){transform:translateY(20px)}
+.mortgage-home-media{background:#f3e9dc!important}
+.mortgage-home-media .sb-phone img{aspect-ratio:auto}
 
 /* Demo film */
 .sb-film{margin:8px 0 0}

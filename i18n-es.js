@@ -1727,4 +1727,8 @@ window.I18N_ES = {
 "Three admin flows, one journey": "Tres flujos de administración, un solo recorrido",
 "Speak it, don’t cut it": "Dictarlo, no recortarlo",
 "A shared library, built with Engineering": "Una librería compartida, construida con Ingeniería",
+"I led design from a broker pilot to integrating Habito, so customers can plan ahead and get a real person to help.": "Lideré el diseño desde un piloto con un bróker hasta la integración de Habito, para que la gente pueda planificar con tiempo y contar con una persona real.",
+"38% → 88% deal-end dates · 4.6/5 11:FS Pulse": "38% → 88% fechas de fin de oferta · 4,6/5 en 11:FS Pulse",
+"Remortgage progress card in the Monzo app": "Tarjeta de progreso del cambio de hipoteca en la app de Monzo",
+"Remortgage tracker showing each stage of the journey": "Seguimiento del cambio de hipoteca con cada etapa del recorrido",
 };
