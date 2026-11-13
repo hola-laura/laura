@@ -157,3 +157,5 @@
 .fig-link{display:inline-block;margin-top:18px;background:var(--navy);color:#fff;text-decoration:none;border-radius:999px;padding:14px 22px;font-size:18px;font-weight:700}
 .fig-link:hover{background:var(--coral)}
 .tags a.tag-link{background:#fff;color:var(--navy);border-radius:999px;padding:12px 20px;font-size:20px;font-weight:700;text-decoration:none}
+.fig-link.small-link{font-size:15px;padding:10px 16px;margin-top:10px}
+.card.coral .fig-link.small-link{background:#fff;color:var(--navy)}
