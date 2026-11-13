@@ -148,3 +148,7 @@
 .slide[data-n="17"] .card p,.slide[data-n="18"] .card p{font-size:21px}
 .slide[data-n="17"] .grid.four>.card,.slide[data-n="18"] .grid.four>.card{min-height:380px}
 .slide[data-n="12"] .grid.three>.card{min-height:250px}
+.card .themes li:before{width:auto;height:auto;background:none;border-radius:0;top:0;font-size:20px}
+.chart .target{bottom:96px}
+.chart .target span{bottom:-30px}
+.hl-note{margin-top:46px!important}
