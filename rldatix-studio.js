@@ -39,14 +39,13 @@
   // Same sample data as the risk overview in 02 / Overviews: 67 risks, 19 extreme.
   const MATRIX = [[4, 8, 5, 7, 2], [3, 0, 5, 2, 2], [1, 3, 10, 5, 1], [0, 1, 3, 1, 0], [6, 0, 1, 0, 1]]; // rows: Almost certain → Rare
   const NAMED = {
-    '5,5': [['Sepsis screening missed in ED', 'Critical care'], ['Staffing escalation out of hours', 'Ward lead']],
-    '5,4': [['Medication dose transcription', 'Pharmacy'], ['Bed capacity in ED', 'Emergency dept'], ['Lab results not acknowledged', 'Pathology']],
-    '5,3': [['Agency staff induction', 'Workforce']],
-    '4,5': [['Delayed escalation of deteriorating patients', 'Critical care']],
-    '4,4': [['Falls on Ward 3 at night', 'Ward lead']],
-    '4,3': [['Clinical handover between shifts', 'Governance team'], ['PPE supply for isolation bays', 'Estates']],
-    '3,3': [['Equipment checks overdue', 'Estates'], ['Pressure ulcer assessments', 'Tissue viability']],
-    '3,2': [['Interpreter booking delays', 'Patient experience']],
+    '5,5': [['Sepsis screening missed in ED', 'Critical care'], ['Delayed escalation of deteriorating patients', 'Critical care']],
+    '5,4': [['Staffing escalation out of hours', 'Ward lead'], ['Medication dose transcription', 'Pharmacy'], ['Bed capacity in ED', 'Emergency dept'], ['Lab results not acknowledged', 'Pathology']],
+    '5,2': [['Falls on Ward 3 at night', 'Ward lead']],
+    '5,1': [['Interpreter booking delays', 'Patient experience']],
+    '4,3': [['Clinical handover between shifts', 'Governance team'], ['Agency staff induction', 'Workforce'], ['PPE supply for isolation bays', 'Estates']],
+    '3,3': [['Pressure ulcer assessments', 'Tissue viability']],
+    '3,2': [['Equipment checks overdue', 'Estates']],
     '1,1': [['Parking signage', 'Facilities']]
   };
   const TOPICS = ['Discharge letters delayed', 'Training records incomplete', 'Fire door checks', 'Patient ID wristbands', 'Visitor guidance unclear', 'Theatre list overruns', 'Consent forms incomplete', 'Infusion pump servicing', 'Night staffing ratios', 'Referral backlog', 'Hand hygiene audits', 'Allergy status missing'];
@@ -107,7 +106,7 @@
     const score = $('[data-rs-score]', panel), note = $('[data-rs-score-note]', panel);
     const chip = $('[data-rs-band]', panel), hist = $('[data-rs-history]', panel);
     const boxes = $$('input[type=checkbox]', panel);
-    const PAST = [['May', 20], ['Jun', 20], ['Jul', 16], ['Aug', 16], ['Sep', 16], ['Oct', 12], ['Nov', 12]];
+    const PAST = [['May', 20], ['Jun', 20], ['Jul', 16], ['Aug', 16], ['Sep', 16], ['Oct', 16], ['Nov', 12]];
     hist.innerHTML = PAST.map(([m, s]) => `<span style="--h:${s / 25 * 100}%"><small>${m}</small></span>`).join('') + '<span class="now" data-rs-now><small>Now</small></span>';
     const now = $('[data-rs-now]', hist);
     const C = 3;

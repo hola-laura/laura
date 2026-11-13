@@ -739,7 +739,7 @@ window.I18N_ES = {
 "Familiar language mattered more than a simpler label.": "El lenguaje conocido importó más que una etiqueta más simple.",
 "01 / HYPOTHESIS": "01 / HIPÓTESIS",
 "Try a clearer name": "Probar un nombre más claro",
-"Could “Grouped Risks” make “Risk trackers” easier to understand?": "¿Podía “Grouped Risks” hacer que “Risk trackers” fuera más fácil de entender?",
+"Could “Grouped risks” make “Risk trackers” easier to understand?": "¿Podía “Grouped risks” hacer que “Risk trackers” fuera más fácil de entender?",
 "02 / FINDING": "02 / HALLAZGO",
 "Familiarity was clearer": "Lo conocido era más claro",
 "Clinicians already understood “Risk trackers”. A new label added confusion.": "El personal clínico ya entendía “Risk trackers”. Una etiqueta nueva añadía confusión.",

@@ -9,7 +9,7 @@
       ['RSK-0118', 'Staffing escalation out of hours', 'Ward lead', 'ext', 'Extreme', 'up', '▲ 4', 1, 3, '3 days overdue', true, true],
       ['RSK-0142', 'Clinical handover between shifts', 'Governance team', 'high', 'High', 'dn', '▼ 4', 1, 3, 'Today', false, true],
       ['RSK-0097', 'Sepsis screening missed in ED', 'Critical care', 'ext', 'Extreme', 'eq', '—', 2, 4, '12 Nov', false, false],
-      ['RSK-0156', 'Medication dose transcription', 'Pharmacy', 'ext', 'Extreme', 'up', '▲ 2', 1, 2, '2 days overdue', true, false],
+      ['RSK-0156', 'Medication dose transcription', 'Pharmacy', 'ext', 'Extreme', 'up', '▲ 4', 1, 2, '2 days overdue', true, false],
       ['RSK-0131', 'Falls on Ward 3 at night', 'Ward lead', 'high', 'High', 'dn', '▼ 2', 3, 4, '18 Nov', false, true],
       ['RSK-0102', 'Equipment checks overdue', 'Estates', 'mod', 'Moderate', 'eq', '—', 2, 2, '21 Nov', false, false],
       ['RSK-0164', 'Agency staff induction', 'Workforce', 'high', 'High', 'up', '▲ 3', 0, 2, '1 day overdue', true, false],
