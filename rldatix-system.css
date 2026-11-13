@@ -348,3 +348,4 @@ body.flex-case .rld-report-dialog{overflow:hidden!important}
 .ov-pin{position:absolute;transform:translate(-120%,-50%);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#29242f;color:#fff;font:400 11px/1 var(--font-mono);box-shadow:0 0 0 4px #ffffffcc,0 6px 14px #18181b40}
 .ov-stage figcaption{max-width:1100px;width:100%;margin:0 auto;font-size:13.5px;color:#4d5a4a}
 @media(max-width:700px){.ov-pin{width:22px;height:22px;font-size:9px;box-shadow:0 0 0 3px #ffffffcc}}
+.ov-pin{transform:translate(-50%,-50%)!important}

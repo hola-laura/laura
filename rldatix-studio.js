@@ -36,17 +36,32 @@
   const BAND_NAME = { low: 'Low', mod: 'Moderate', high: 'High', ext: 'Extreme' };
 
   /* ---------- 1. Matrix ---------- */
-  const RISKS = [
-    ['Staffing escalation out of hours', 'Ward lead', 5, 4], ['Sepsis screening missed', 'Critical care', 4, 5],
-    ['Medication dose transcription', 'Pharmacy', 4, 4], ['Clinical handover between shifts', 'Governance team', 4, 3],
-    ['Delayed discharge letters', 'Quality team', 4, 2], ['Falls on Ward 3 at night', 'Ward lead', 3, 4],
-    ['PPE supply for isolation bays', 'Estates', 3, 4], ['Equipment checks overdue', 'Estates', 3, 3],
-    ['Bed capacity in ED', 'Emergency dept', 5, 3], ['Patient ID wristbands', 'Nursing', 2, 4],
-    ['Pressure ulcer assessments', 'Tissue viability', 3, 3], ['Visitor guidance unclear', 'Comms', 3, 1],
-    ['Lab results not acknowledged', 'Pathology', 2, 5], ['Fire door wedged open', 'Estates', 2, 3],
-    ['Training records incomplete', 'Education', 2, 2], ['Parking signage', 'Facilities', 1, 1],
-    ['Interpreter booking delays', 'Patient experience', 3, 2], ['Agency staff induction', 'Workforce', 4, 3]
-  ].map(([title, owner, l, c]) => ({ title, owner, l, c, s: l * c }));
+  // Same sample data as the risk overview in 02 / Overviews: 67 risks, 19 extreme.
+  const MATRIX = [[4, 8, 5, 7, 2], [3, 0, 5, 2, 2], [1, 3, 10, 5, 1], [0, 1, 3, 1, 0], [6, 0, 1, 0, 1]]; // rows: Almost certain → Rare
+  const NAMED = {
+    '5,5': [['Sepsis screening missed in ED', 'Critical care'], ['Staffing escalation out of hours', 'Ward lead']],
+    '5,4': [['Medication dose transcription', 'Pharmacy'], ['Bed capacity in ED', 'Emergency dept'], ['Lab results not acknowledged', 'Pathology']],
+    '5,3': [['Agency staff induction', 'Workforce']],
+    '4,5': [['Delayed escalation of deteriorating patients', 'Critical care']],
+    '4,4': [['Falls on Ward 3 at night', 'Ward lead']],
+    '4,3': [['Clinical handover between shifts', 'Governance team'], ['PPE supply for isolation bays', 'Estates']],
+    '3,3': [['Equipment checks overdue', 'Estates'], ['Pressure ulcer assessments', 'Tissue viability']],
+    '3,2': [['Interpreter booking delays', 'Patient experience']],
+    '1,1': [['Parking signage', 'Facilities']]
+  };
+  const TOPICS = ['Discharge letters delayed', 'Training records incomplete', 'Fire door checks', 'Patient ID wristbands', 'Visitor guidance unclear', 'Theatre list overruns', 'Consent forms incomplete', 'Infusion pump servicing', 'Night staffing ratios', 'Referral backlog', 'Hand hygiene audits', 'Allergy status missing'];
+  const UNITS = ['Ward 1', 'Ward 2', 'Ward 4', 'Maternity', 'Outpatients', 'Theatres'];
+  const OWNERS = ['Ward lead', 'Quality team', 'Governance team', 'Estates', 'Nursing', 'Workforce'];
+  let n = 0;
+  const RISKS = [];
+  MATRIX.forEach((row, i) => row.forEach((count, j) => {
+    const l = 5 - i, c = j + 1, named = NAMED[`${l},${c}`] || [];
+    for (let k = 0; k < count; k++) {
+      const [title, owner] = named[k] || [`${TOPICS[n % TOPICS.length]}, ${UNITS[n % UNITS.length]}`, OWNERS[n % OWNERS.length]];
+      if (!named[k]) n++;
+      RISKS.push({ title, owner, l, c, s: l * c });
+    }
+  }));
 
   const matrix = $('[data-rs-matrix]');
   if (matrix) {
