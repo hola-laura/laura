@@ -16,7 +16,8 @@
     ['Inbox', '<path d="M4 13h4l2 3h4l2-3h4"/><path d="M5 6h14l1 7v5H4v-5z"/>', '3'],
     ['Overview', '<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>'],
     ['Incidents', '<path d="M12 4 3 20h18z"/><path d="M12 10v4M12 17h.01"/>'],
-    ['Risks', '<path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/>'],
+    ['Risk registers', '<path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/>'],
+    ['Risk trackers', '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.5"/>'],
     ['Actions', '<path d="m5 12 4 4 10-10"/>', '6'],
     ['Reports', '<path d="M5 20V10M12 20V4M19 20v-7"/>'],
     null,
@@ -40,7 +41,7 @@
   const MATRIX = [[4, 8, 5, 7, 2], [3, 0, 5, 2, 2], [1, 3, 10, 5, 1], [0, 1, 3, 1, 0], [6, 0, 1, 0, 1]]; // rows: Almost certain → Rare
   const NAMED = {
     '5,5': [['Sepsis screening missed in ED', 'Critical care'], ['Delayed escalation of deteriorating patients', 'Critical care']],
-    '5,4': [['Staffing escalation out of hours', 'Ward lead'], ['Medication dose transcription', 'Pharmacy'], ['Bed capacity in ED', 'Emergency dept'], ['Lab results not acknowledged', 'Pathology']],
+    '5,4': [['Staffing escalation out of hours', 'Ward lead'], ['Medication dose transcription', 'Pharmacy'], ['Bed capacity in ED', 'Emergency department'], ['Lab results not acknowledged', 'Pathology']],
     '5,2': [['Falls on Ward 3 at night', 'Ward lead']],
     '5,1': [['Interpreter booking delays', 'Patient experience']],
     '4,3': [['Clinical handover between shifts', 'Governance team'], ['Agency staff induction', 'Workforce'], ['PPE supply for isolation bays', 'Estates']],

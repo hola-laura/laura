@@ -1720,4 +1720,11 @@ window.I18N_ES = {
 "Report times are team estimates, checked in conversations with healthcare professionals. Support tickets were tracked for 3 months after launch.": "Los tiempos de reporte son estimaciones del equipo, contrastadas en conversaciones con profesionales sanitarios. Las incidencias de soporte se siguieron durante 3 meses tras el lanzamiento.",
 "Redesigned risk overview: key numbers, objectives, a likelihood by consequence matrix, staff recommendations and overdue actions": "Resumen de riesgos rediseñado: cifras clave, objetivos, una matriz de probabilidad por consecuencia, recomendaciones del personal y acciones vencidas",
 "The redesigned risk overview, recreated for this case study with sample data. Numbers match the three ideas below.": "El resumen de riesgos rediseñado, recreado para este caso con datos de ejemplo. Los números coinciden con las tres ideas de abajo.",
+"What I decided, and what it changed": "Lo que decidí, y lo que cambió",
+"Configure it in one place": "Configurarlo en un solo lugar",
+"Familiar language mattered more than a simpler label": "El lenguaje conocido importó más que una etiqueta más simple",
+"Keep the word clinicians knew": "Mantener la palabra que el personal clínico conocía",
+"Three admin flows, one journey": "Tres flujos de administración, un solo recorrido",
+"Speak it, don’t cut it": "Dictarlo, no recortarlo",
+"A shared library, built with Engineering": "Una librería compartida, construida con Ingeniería",
 };
