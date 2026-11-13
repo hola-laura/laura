@@ -339,3 +339,4 @@ body.flex-case .rld-app-mock,
 body.flex-case .rs :is(.rs-app,.rs-window,.rs-panel,.rs-doc),
 body.flex-case #v3-section-3 :is(.rld-parts-panel,.rld-library-card),
 body.flex-case .rld-report-dialog{overflow:hidden!important}
+.fx-out .fx-source{margin:20px 0 0!important;font-size:13px!important;line-height:1.5!important;color:#8a8292!important;max-width:70ch!important}
