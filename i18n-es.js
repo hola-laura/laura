@@ -1688,4 +1688,5 @@ window.I18N_ES = {
 "Rebuilt from the real flow.": "Reconstruido a partir del flujo real.",
 "03 / The calls": "03 / Las decisiones",
 "A first release we could trust, small enough to ship fast.": "Una primera versión fiable, lo bastante pequeña para lanzarla rápido.",
+"From a patchwork to <em>one product.</em>": "De un mosaico a <em>un solo producto.</em>",
 };
