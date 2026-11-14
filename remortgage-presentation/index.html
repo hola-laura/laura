@@ -10,34 +10,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Fragment+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="deck.css?v=17">
+<link rel="stylesheet" href="deck.css?v=20">
 <link rel="preconnect" href="https://images.ctfassets.net">
-<script src="slides.js?v=17" defer></script>
+<script src="slides.js?v=20" defer></script>
 </head>
 <body>
 <header class="topbar">
   <div class="identity"><span class="monogram" aria-hidden="true">LS</span><div><strong>Laura Sampedro</strong><span>Product design · Case study</span></div></div>
-  <div class="deck-label"><span class="eyebrow">MONZO · HOMEOWNERSHIP</span><span class="divider" aria-hidden="true"></span><span id="slide-count" aria-live="polite">01 / 19</span></div>
+  <div class="deck-label"><span class="eyebrow">MONZO · HOMEOWNERSHIP</span><span class="divider" aria-hidden="true"></span><span id="slide-count" aria-live="polite">01 / 22</span></div>
   <button class="notes-trigger" id="open-notes" type="button" aria-haspopup="dialog" aria-controls="notes-sheet"><span class="notes-icon" aria-hidden="true">▤</span><span>Speaker notes</span></button>
 </header>
 <main class="presentation" aria-label="Case study presentation">
   <div class="stage">
     <button class="arrow arrow-prev" id="previous-slide" type="button" aria-label="Previous slide"><span aria-hidden="true">←</span></button>
     <figure class="slide-figure"><div class="deck"><div class="canvas">
-<section class="slide dark" data-n="1">
+<section class="slide dark" data-n="01" data-k="cover">
 <div class="cover-photo a" style="background-image:url('https://images.ctfassets.net/ro61k101ee59/5zCoCJjnfklhsYlUOxEnGV/469ca8ed0852520eb2717e1d1268337e/HO_header.avif?w=1400&fm=webp&q=80')"></div>
 <div class="cover-text">
   <div class="eyebrow a">Monzo Homeownership · 2025–26 case study</div>
   <h1 class="xl a" style="--d:1">Remortgaging<br>at Monzo</h1>
   <p class="sub a" style="--d:2">From a referral link to a journey inside Monzo</p>
   <div class="who a" style="--d:3"><b>Laura Sampedro</b><span>Senior Product Designer · design lead for remortgaging</span></div>
+  <div class="meta a" style="--d:4"><div><b>When</b>2025 – 2026</div><div><b>Team</b>PM, engineers, data scientist, user researcher, Habito, Ops and Compliance</div><div><b>My role</b>Vision, research synthesis, UX and UI, experiments, AI tooling</div></div>
 </div>
 <div class="pill-stack">
   <span class="pill a" style="--d:4">Find it in Monzo.</span>
   <span class="pill a" style="--d:5">Choose how.</span>
   <span class="pill coral a" style="--d:6">Finish it.</span>
-</div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>01 / 19</span></div></section>
-<section class="slide light" data-n="2"><div class="eyebrow a">Context</div><h1 class="a" style="--d:1">Monzo customers loved seeing their mortgage in the app — but it didn’t make money</h1>
+</div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>01 / 22</span></div></section>
+<section class="slide light" data-n="02" data-k="context"><div class="eyebrow a">Context</div><h1 class="a" style="--d:1">Monzo customers loved seeing their mortgage in the app — but it didn’t make money</h1>
 <div class="phones-row" style="margin-top:26px">
   <img class="phone a float" style="width:190px;--d:2" src="https://images.ctfassets.net/ro61k101ee59/6kRpew48Jv2TKBJwMVjePL/83d07b19cf035d06c159f642f6166c4b/Connect_your_mortgage_homepage.avif?w=700&fm=webp&q=80" alt=""><img class="phone a float" style="width:190px;--d:3" src="https://images.ctfassets.net/ro61k101ee59/5MxaLEJOr8ioeEgRcxL7mJ/7181ad3654558a953dc7a28e5cce97ac/Find_out_what_you_can_save.avif?w=700&fm=webp&q=80" alt=""><img class="phone a float" style="width:190px;--d:4" src="https://images.ctfassets.net/ro61k101ee59/5a3qXRBFEG793soNaFQtlC/dc22bad23370230357a66ab1f97e1f8c/See_your_progress.avif?w=700&fm=webp&q=80" alt=""><img class="phone a float" style="width:190px;--d:5" src="https://images.ctfassets.net/ro61k101ee59/4Y5Yn5NPKxOXrd18V0clnS/53ce6d5239e4c36eb79129bfddd1879f/Get_remortgage_ready.avif?w=700&fm=webp&q=80" alt="">
   <div class="col" style="flex:1;gap:18px;margin-left:16px">
@@ -46,28 +47,37 @@
     <div class="card pink a" style="--d:7;"><div class="label">The catch</div><p class="strong">An engagement product, with no revenue</p></div>
     <a class="fig-link a" style="--d:8;align-self:flex-start;margin-top:0" href="https://www.figma.com/design/vYurN7sfZ4L5LvqTpkaTpy/Homeownership-Master-file?node-id=8571-128380&t=kHX24gDhcGquarU5-1" target="_blank" rel="noopener">See all Homeownership journeys ↗</a>
   </div>
-</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>02 / 19</span></div></section>
-<section class="slide light" data-n="3"><div class="eyebrow a">2024 · Our first bet</div><h1 class="a" style="--d:1">To make money, we launched remortgaging with Better.co.uk — it worked, but not enough</h1>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>02 / 22</span></div></section>
+<section class="slide light" data-n="03" data-k="better"><div class="eyebrow a">2024 · Our first bet</div><h1 class="a" style="--d:1">To make money, we launched remortgaging with Better.co.uk — it worked, but not enough</h1>
 <div class="grid" style="grid-template-columns:690px 1fr;margin-top:28px">
   <div><img class="shot a" style="--d:3;width:690px" src="assets/img/pilot-screens.png" alt="2024 referral journey screens"><p class="note a" style="--d:4">The first click-out journey I designed, 2024 · <a href="https://www.figma.com/design/NwhbipMQweUXoMUHMmp8y8/Better.co.uk-experiments--Copy-?node-id=0-1&t=YT4ojF8qBhr7goSK-1" target="_blank" rel="noopener" style="color:var(--coral);font-weight:700">See the experiments we ran with Better ↗</a></p></div>
   <div class="col">
     <div class="card mint a" style="--d:4;"><div class="label">It proved the model</div><p class="strong">~5,000 customers · ~£1.5m revenue</p></div>
     <div class="card pink a" style="--d:5;"><div class="label">But not enough</div><p class="strong">We missed our revenue goals, and by late 2024 growth had stalled</p></div>
-    <div class="label a" style="--d:6;margin:6px 0 0">And customers had to leave Monzo to finish</div>
-    <div class="flow a" style="--d:7"><span class="node">Monzo</span><span class="arrow-break"></span><span class="node ghost">Better’s website</span></div>
+    <div class="flow a" style="--d:6"><span class="node">Monzo</span><span class="arrow-break"></span><span class="node ghost">Better’s website</span></div>
+    <div class="card lime a" style="--d:7;"><div class="label">What I learned</div><p class="strong">Our success ended at the referral. Once people left Monzo, we were blind to everything after it.</p></div>
   </div>
-</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>03 / 19</span></div></section>
-<section class="slide light" data-n="4"><div class="eyebrow a">What I’ll focus on · 2025–26</div><h1 class="a" style="--d:1">In 2025 and 2026, I led design for remortgaging through a strategy reset and an acquisition</h1>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>03 / 22</span></div></section>
+<section class="slide light" data-n="04" data-k="role"><div class="eyebrow a">What I’ll focus on · 2025–26</div><h1 class="a" style="--d:1">In 2025 and 2026, I led design for remortgaging through a strategy reset and an acquisition</h1>
 <div class="grid three" style="margin-top:40px">
   <div class="card navy a" style="--d:3;"><div class="label">2025</div><h3>Vision and growth</h3><ul><li>Led the design vision for an integrated remortgage journey</li><li>Designed the growth experiments and new entry points</li><li>Led the value-proposition workshop</li></ul></div>
   <div class="card mint a" style="--d:4;"><div class="label">2026</div><h3>Habito integration</h3><ul><li>Service reframing and consent for Day 1</li><li>Recommendations in the app</li><li>Adviser chat in the app</li><li>The application inside Monzo</li><li>Then: first-time buyers</li></ul></div>
   <div class="card  a" style="--d:5;"><div class="label">The team</div><h3>One squad</h3><ul><li>Product manager · engineers · data scientist</li><li>User researcher (Layla)</li><li>Habito, Operations and Compliance</li><li>Me: design lead, IC</li></ul></div>
 </div>
-<p class="note a" style="--d:6">Monzo’s Product Director names me as the designer who led the remortgage vision — Monzo blog, June 2026</p><div class="foot"><span>Monzo Homeownership · design case study</span><span>04 / 19</span></div></section>
-<section class="slide dark" data-n="5">
+<p class="note a" style="--d:6">Monzo’s Product Director names me as the designer who led the remortgage vision — Monzo blog, June 2026</p><div class="foot"><span>Monzo Homeownership · design case study</span><span>04 / 22</span></div></section>
+<section class="slide dark" data-n="05" data-k="journey"><div class="eyebrow a">The journey</div><h1 class="a" style="--d:1">Five chapters, five decisions</h1><p class="sub a" style="--d:2">This is how I’ll walk you through it</p>
+<div class="timeline a" style="--d:2">
+  <div class="tl-line"><span></span></div>
+  <div class="tl-step a" style="--d:3"><b>01</b><h3>The reset</h3><p>Early 2025 · we paused to listen</p></div>
+  <div class="tl-step a" style="--d:4"><b>02</b><h3>The vision</h3><p>Spring 2025 · one journey, inside Monzo</p></div>
+  <div class="tl-step a" style="--d:5"><b>03</b><h3>Reach</h3><p>H2 2025 · Decision 1</p></div>
+  <div class="tl-step a hot" style="--d:6"><b>04</b><h3>Habito</h3><p>2026 · Decisions 2–5</p></div>
+  <div class="tl-step a" style="--d:7"><b>05</b><h3>How I work</h3><p>AI, results, learnings</p></div>
+</div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>05 / 22</span></div></section>
+<section class="slide dark" data-n="06" data-k="pause">
 <div class="split">
   <div>
-    <div class="eyebrow a">Early 2025 · Strategy reset</div><h1 class="a" style="--d:1">We lent our engineers for two months — and used the time to listen</h1>
+    <div class="eyebrow a">01 · The reset · early 2025</div><h1 class="a" style="--d:1">We lent our engineers for two months — and used the time to listen</h1>
     <div class="grid two" style="margin-top:34px">
       <div class="card  a" style="--d:3;"><div class="label">Why</div><h3>Financial Health needed engineers</h3><p>And our experiments weren’t moving the numbers</p></div>
       <div class="card  a" style="--d:4;"><div class="label">How</div><h3>A discovery sprint</h3><p>Seven workstreams. Research led by Layla: customers who remortgaged, and customers who dropped out.</p></div>
@@ -77,16 +87,25 @@
     <div class="giant a" style="--d:2"><span class="count" data-to="2">2</span><small>months</small></div>
     <div class="gif a" style="background:#112231;width:440px;margin-top:10px"><img src="assets/anim/watch.gif" alt="" style="width:420px"></div>
   </div>
-</div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>05 / 19</span></div></section>
-<section class="slide light" data-n="6"><div class="eyebrow a">2025 · What customers told us</div><h1 class="a" style="--d:1">Customers wanted one journey — but not the same one</h1>
-<img class="shot a comic" style="--d:2" src="https://images.ctfassets.net/ro61k101ee59/3YYXrc8ROFsNIHk5xhHYTK/bb95db66949cc82ae8acd34e0113c9b1/Image__6_.png?w=1600&fm=webp&q=80" alt="Research comic strip">
-<div class="grid four" style="margin-top:22px">
-  <div class="card coral a" style="--d:3;"><h3>“Don’t send me out”</h3><p>Find and get the new deal inside Monzo</p></div>
-  <div class="card  a" style="--d:4;"><h3>“Use what you know”</h3><p>Reuse Monzo’s data. Let me send statements from the app</p></div>
-  <div class="card mint a" style="--d:5;"><h3>“Let me choose”</h3><p>A call for reassurance, or self-serve with a human on hand</p></div>
-  <div class="card navy a" style="--d:6;"><h3>“Tell me what’s happening”</h3><p>The wait was the most stressful part</p></div>
-</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>06 / 19</span></div></section>
-<section class="slide light" data-n="7"><div class="eyebrow a">2025 · The vision I led</div><h1 class="a" style="--d:1">One journey, inside Monzo, that flexes to you</h1>
+</div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>06 / 22</span></div></section>
+<section class="slide light" data-n="07" data-k="research">
+<div class="halfpanel pinkp"></div>
+<div style="position:relative;width:860px">
+  <div class="eyebrow a">01 · The reset · what customers told us</div><h1 class="a" style="--d:1">Customers wanted one journey — but not the same one</h1>
+  <ul class="findings">
+    <li class="a" style="--d:3"><b>“Don’t send me out.”</b> They expected to <mark>get the new deal inside Monzo</mark>, not on another website.</li>
+    <li class="a" style="--d:4"><b>“Use what you know.”</b> <mark>Reuse the data Monzo already holds</mark>, instead of asking again.</li>
+    <li class="a" style="--d:5"><b>“Let me choose.”</b> Some wanted a call for reassurance; others wanted to <mark>self-serve, with a human on hand</mark>.</li>
+    <li class="a" style="--d:6"><b>“Tell me what’s happening.”</b> <mark>The wait</mark> was the most stressful part.</li>
+  </ul>
+</div>
+<div class="bubbles">
+  <img class="shot a" style="--d:3;width:520px;height:190px;object-fit:cover;border-radius:20px" src="https://images.ctfassets.net/ro61k101ee59/3YYXrc8ROFsNIHk5xhHYTK/bb95db66949cc82ae8acd34e0113c9b1/Image__6_.png?w=1600&fm=webp&q=80" alt="Research comic strip">
+  <div class="bubble a" style="--d:5">“It looks like it’s sending me to [the partner], which I don’t trust as much as Monzo.”</div>
+  <div class="bubble alt a" style="--d:6">“Once it went into the hands of [the partner], I didn’t really think about Monzo anymore… palming you off to another organisation.”</div>
+  <p class="note a" style="--d:7">Monzo customer research · interviews and drop-off calls</p>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>07 / 22</span></div></section>
+<section class="slide light" data-n="08" data-k="vision"><div class="eyebrow a">02 · The vision · 2025</div><h1 class="a" style="--d:1">One journey, inside Monzo, that flexes to you</h1>
 <img class="shot a vision" style="--d:2" src="https://images.ctfassets.net/ro61k101ee59/3BHDsEKnEa8ggBT0LpxwTx/4eaf94f22b09f435057c6e35e5b1a03f/2Image.png?w=1600&fm=webp&q=80" alt="Vision designs: an end-to-end in-app remortgage journey">
 <div class="grid four tight" style="margin-top:20px">
   <div class="card chip a" style="--d:3;"><b>01</b> Bring the application into the app</div>
@@ -94,15 +113,15 @@
   <div class="card chip a" style="--d:5;"><b>03</b> Take the pain out of paperwork</div>
   <div class="card chip a" style="--d:6;"><b>04</b> Always know what’s next</div>
 </div>
-<p class="note a" style="--d:7">My vision designs, published on the Monzo blog · It became the team’s North Star and part of the case for a new partnership model</p><div class="foot"><span>Monzo Homeownership · design case study</span><span>07 / 19</span></div></section>
-<section class="slide light" data-n="8"><div class="eyebrow a">2025 · From vision to plan</div><h1 class="a" style="--d:1">I turned the vision into bets the team could ship</h1>
+<p class="note a" style="--d:7">My vision designs, published on the Monzo blog · It became the team’s North Star and part of the case for a new partnership model</p><div class="foot"><span>Monzo Homeownership · design case study</span><span>08 / 22</span></div></section>
+<section class="slide light" data-n="09" data-k="plan"><div class="eyebrow a">02 · The vision · June 2025</div><h1 class="a" style="--d:1">I turned the vision into bets the team could ship</h1>
 <div class="grid three" style="margin-top:34px">
   <div class="card mint a" style="--d:3;"><div class="label">Now</div><ul><li>No-brainers, like a progress tracker closer to real time</li><li>Pre-fill with data we already hold</li><li>Test: adviser first vs. deals first <i>(parked when Habito arrived)</i></li></ul><a class="fig-link small-link" href="https://www.figma.com/design/KloUkvWZLDZs4fsEtSi86e/State-Tracker?node-id=0-1&t=HsHNN10cyweQWXVI-1" target="_blank" rel="noopener">See the progress tracker ↗</a></div>
   <div class="card  a" style="--d:4;"><div class="label">Next</div><ul><li>Our own application form</li><li>Market deals up front</li><li>Joint applicants</li></ul></div>
   <div class="card navy a" style="--d:5;"><div class="label">Later</div><ul><li>Recommendations in Monzo <span class="tag">my 2026 work</span></li><li>Adviser chat <span class="tag">my 2026 work</span></li><li>Document upload</li></ul></div>
 </div>
-<div class="card coral a" style="--d:6;margin-top:22px"><div class="label">Value-proposition workshop · 26 June 2025</div><p class="strong">Two profiles: <b>comparers</b> and <b>delegators</b>. Differentiators: personalised insights, forms filled in for you, flexible contact.</p></div><div class="foot"><span>Monzo Homeownership · design case study</span><span>08 / 19</span></div></section>
-<section class="slide light" data-n="9"><div class="eyebrow a">Decision 1 · Reach · 2025–early 2026</div><h1 class="a" style="--d:1">Reach people before they’re ready to remortgage</h1>
+<div class="card coral a" style="--d:6;margin-top:22px"><div class="label">Value-proposition workshop · 26 June 2025</div><p class="strong">Two profiles: <b>comparers</b> and <b>delegators</b>. Differentiators: personalised insights, forms filled in for you, flexible contact.</p></div><div class="foot"><span>Monzo Homeownership · design case study</span><span>09 / 22</span></div></section>
+<section class="slide light" data-n="10" data-k="d1"><div class="eyebrow a">03 · Reach · Decision 1 · 2025–early 2026</div><h1 class="a" style="--d:1">Reach people before they’re ready to remortgage</h1>
 <div class="grid" style="grid-template-columns:1fr 1fr 400px;margin-top:30px;align-items:stretch">
   <div class="col">
     <div class="card  a" style="--d:3;"><div class="label">Problem</div><p class="strong">Only customers with a connected mortgage and a known deal end could enter. Most were invisible to us.</p></div>
@@ -111,8 +130,8 @@
   </div>
   <div class="card navy a" style="--d:4;"><div class="label">What I decided</div><ul><li>“Add your deal end” without a connected mortgage</li><li>Indicative rates and estimated deals</li><li>Focus View: home changes with your moment</li><li>Homeownership moved into the Grow tab</li><li>An experiment file linking every design to its data</li></ul></div>
   <div class="col center"><img class="phone a float" style="width:240px;--d:7" src="https://images.ctfassets.net/ro61k101ee59/11yeERGYbXI7xjH38asZ9L/555706448adfcacac521a5d2a87cc975/Frame__17_.avif?w=700&fm=webp&q=80" alt=""><a class="fig-link a" style="--d:8" href="https://www.figma.com/design/vYurN7sfZ4L5LvqTpkaTpy/Homeownership-Master-file?node-id=9222-95141&t=kHX24gDhcGquarU5-1" target="_blank" rel="noopener">Grow tab and growth experiments ↗</a><a class="fig-link a" style="--d:9;margin-top:10px" href="https://www.figma.com/design/vYurN7sfZ4L5LvqTpkaTpy/Homeownership-Master-file?node-id=8571-128380&t=kHX24gDhcGquarU5-1" target="_blank" rel="noopener">Focus View and entry points ↗</a></div>
-</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>09 / 19</span></div></section>
-<section class="slide light" data-n="10"><div class="eyebrow a">2026 · The new problem</div><h1 class="a" style="--d:1">More referrals didn’t mean more mortgages</h1><p class="sub a" style="--d:2">Each stage of the Habito funnel, compared with its 2026 target</p>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>10 / 22</span></div></section>
+<section class="slide light" data-n="11" data-k="funnel"><div class="eyebrow a">04 · Habito · the new problem · 2026</div><h1 class="a" style="--d:1">More referrals didn’t mean more mortgages</h1><p class="sub a" style="--d:2">Each stage of the Habito funnel, compared with its 2026 target</p>
 <div class="grid" style="grid-template-columns:1fr 520px;margin-top:26px">
   <div class="card a chart" style="--d:3">
     <div class="target"><span>Target</span></div>
@@ -121,19 +140,28 @@
     <div class="bar-row hl"><div class="bl"><b>Recommendation → submitted to lender</b></div><div class="track"><div class="bar coralb" style="--w:22%"><span>44%</span></div></div></div>
     <p class="hl-note">The biggest drop came after the fact-find, when intent should be highest.</p>
   </div>
-  <div class="card navy a" style="--d:4">
-    <div class="label">What the insight workshop found</div><p class="small">Co-led with Layla and Hayley</p>
-    <ol class="themes">
-      <li>Low confidence at the decision<em>→ Decision 3 · recommendations</em></li>
-      <li>Not clearly better than my lender<em>→ Decision 2 · why a broker</em></li>
-      <li>Fragmented, off-app journey<em>→ Decision 5 · application in Monzo</em></li>
-      <li>One rigid path for everyone<em>→ Decision 4 · adviser in the app</em></li>
-      <li>Hard to pick up again<em>→ Decisions 4–5 · tracker and chat</em></li>
-    </ol>
+  <div class="card navy a holdup" style="--d:4">
+    <div class="eyebrow">Hold up</div>
+    <h3>Before jumping to screens, I mapped why.</h3>
+    <p>With Layla and Hayley I ran an insight workshop on the drop-off. Then I turned it into an opportunity solution tree, so every idea had to answer to a cause.</p>
+    <div class="tag" style="margin:18px 0 0;font-size:15px">Next: the tree →</div>
   </div>
 </div>
-<p class="note a" style="--d:6">Early-2026 cohorts. Bars show performance as a share of target, not conversion rates.</p><div class="foot"><span>Monzo Homeownership · design case study</span><span>10 / 19</span></div></section>
-<section class="slide light" data-n="11"><div class="eyebrow a">Decision 2 · Habito’s Day 1 · 2026</div><h1 class="a" style="--d:1">Tell people what this actually is</h1>
+<p class="note a" style="--d:6">Early-2026 cohorts. Bars show performance as a share of target, not conversion rates.</p><div class="foot"><span>Monzo Homeownership · design case study</span><span>11 / 22</span></div></section>
+<section class="slide light" data-n="12" data-k="ost"><div class="eyebrow a">04 · Habito · how I framed it</div><h1 class="a" style="--d:1">One outcome, five opportunities — and who can fix each one</h1>
+<div class="ost">
+  <div class="ost-row outcome a" style="--d:2"><span>Outcome</span>More recommendations accepted · <i>issued → accepted</i></div>
+  <div class="ost-row problem a" style="--d:3"><span>Problem</span>High-intent customers don’t feel confident enough, at the moment they see the recommendation, to act</div>
+  <div class="ost-cols">
+    <div class="ost-col a" style="--d:4"><h4>Relevance</h4><p>It feels generic, with no reasoning or human behind it</p><em class="root">Root cause</em><em class="who">Mostly Habito’s hands</em><b>→ Decisions 3 · 4</b></div>
+    <div class="ost-col a" style="--d:5"><h4>Experience break</h4><p>Kicked out of Monzo, the journey feels fragmented</p><em class="amp">Amplifier</em><em class="who">In Monzo’s power</em><b>→ Decisions 2 · 5</b></div>
+    <div class="ost-col a" style="--d:6"><h4>Timing</h4><p>People are still exploring when the recommendation lands</p><em class="root">Root cause</em><em class="who">In Monzo’s power</em><b>→ Decision 3</b></div>
+    <div class="ost-col a" style="--d:7"><h4>Momentum</h4><p>Ready, but we lost them: slow, easy-to-miss follow-up</p><em class="root">Root cause</em><em class="who">In Monzo’s power</em><b>→ Push + tracker</b></div>
+    <div class="ost-col a" style="--d:8"><h4>Friction</h4><p>Long form, hard to pick back up</p><em class="amp">Amplifier</em><em class="who">In Monzo’s power</em><b>→ Decision 5</b></div>
+  </div>
+</div>
+<p class="note a" style="--d:9">The last row mattered most: root cause or amplifier, and whether it was in Monzo’s power or Habito’s · <a href=+OST+ target="_blank" rel="noopener" style="color:var(--coral);font-weight:700">See the full tree ↗</a></p><div class="foot"><span>Monzo Homeownership · design case study</span><span>12 / 22</span></div></section>
+<section class="slide light" data-n="13" data-k="d2"><div class="eyebrow a">04 · Habito · Decision 2 · Day 1</div><h1 class="a" style="--d:1">Tell people what this actually is</h1>
 <div class="grid" style="grid-template-columns:1fr 1fr 300px;margin-top:30px">
   <div class="col">
     <div class="card  a" style="--d:3;"><div class="label">Problem</div><p class="strong">People thought it was a comparison tool. When a broker asked about their finances, it felt like a bait-and-switch.</p></div>
@@ -141,29 +169,35 @@
     <div class="card pink a" style="--d:6;"><div class="label">Trade-off</div><p>Stopped the pre-fill experiment early and turned it on for everyone to make Day 1. Speed over learning, on purpose.</p></div>
   </div>
   <div class="card navy a" style="--d:5;"><div class="label">What I decided</div><ul><li>Reframe as a broker, not a comparison site</li><li>Lighter consent, commission disclosure kept</li><li>Trust signals early</li><li>A clear “what happens next”</li><li>Account creation framed as a benefit</li><li>Pre-fill on for everyone</li></ul></div>
-  <div class="col center"><img class="phone a float" style="width:280px;--d:7" src="https://images.ctfassets.net/ro61k101ee59/682Rj0ZDs9i7WyIFltWqxE/a978c870cd6757850bf88532f4fc6f1a/Get_fee_free_remortgage_advice.avif?w=700&fm=webp&q=80" alt=""><p class="note center">Habito by Monzo, in the app today</p></div>
-</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>11 / 19</span></div></section>
-<section class="slide light" data-n="12"><div class="eyebrow a">Decision 3 · Recommendations · 2026</div><h1 class="a" style="--d:1">Make the recommendation something you can trust, not just accept</h1>
-<div class="grid" style="grid-template-columns:380px 1fr;margin-top:28px">
+  <div class="col center"><div class="scrollshot a" style="--d:7"><img src="assets/img/day1-broker.jpg" alt="Day 1 entry screen: Find a mortgage with free expert help"></div><p class="note center">My Day 1 entry screen</p></div>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>13 / 22</span></div></section>
+<section class="slide light" data-n="14" data-k="recprob"><div class="eyebrow a">04 · Habito · Decision 3 · the moment of decision</div><h1 class="a" style="--d:1">“Do I trust this recommendation enough to go ahead?”</h1>
+<div class="grid" style="grid-template-columns:660px 1fr;margin-top:26px;align-items:start">
+  <img class="shot a" style="--d:2;width:660px;height:495px;object-fit:cover" src="assets/img/rec-concept.jpg" alt="A customer looking at his recommendation, unsure whether to trust it">
   <div class="col">
-    <div class="card pink a" style="--d:3;"><div class="label">Before</div><p class="strong">A document-style summary outside the app: rate, APRC, fees. Accept or don’t.</p></div>
-    <div class="gif a" style="background:#0c1720;height:190px"><img src="assets/anim/magnifying-money.gif" alt="" style="width:360px"></div>
-    <a class="fig-link a" style="--d:9;align-self:flex-start" href="https://www.figma.com/design/62SgDTlCUyF0iAsrGe1SMJ/Recommendations-in-app--Copy-?node-id=15-8444&t=9AbXpzaUboFwne2Q-1" target="_blank" rel="noopener">See the recommendation designs ↗</a>
+    <div class="card navy a holdup" style="--d:3"><div class="eyebrow">Hold up</div><h3>I scored today’s screen against what confidence actually needs.</h3><p><b style="color:var(--lime)">Verdict:</b> they could see the deal. They couldn’t really decide.</p></div>
+    <img class="shot a" style="--d:4;width:100%" src="assets/img/rec-audit.jpg" alt="Audit: current recommendation screen vs confidence">
+  </div>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>14 / 22</span></div></section>
+<section class="slide light" data-n="15" data-k="rec"><div class="eyebrow a">04 · Habito · Decision 3 · recommendations</div><h1 class="a" style="--d:1">Make the recommendation something you can trust, not just accept</h1>
+<div class="grid" style="grid-template-columns:400px 1fr 420px;margin-top:26px;align-items:start">
+  <div class="col">
+    <img class="shot a" style="--d:2;width:400px;background:#fbf9f3;padding:10px" src="assets/img/rec-wire.jpg" alt="Sketch: your recommendation, then take it">
+    <a class="fig-link a" style="--d:8;align-self:flex-start;margin-top:0" href="https://www.figma.com/design/62SgDTlCUyF0iAsrGe1SMJ/Recommendations-in-app--Copy-?node-id=15-8444&t=9AbXpzaUboFwne2Q-1" target="_blank" rel="noopener">See the recommendation designs ↗</a>
   </div>
   <div class="col">
-    <div class="label a" style="--d:3;margin:0 0 4px">After · my design, in Monzo — three questions customers kept asking</div>
-    <div class="grid three">
-      <div class="card navy a" style="--d:4;"><div class="qnum">01</div><h3>Why this deal, for me?</h3></div>
-      <div class="card navy a" style="--d:5;"><div class="qnum">02</div><h3>What does it really cost vs. the alternatives?</h3></div>
-      <div class="card navy a" style="--d:6;"><div class="qnum">03</div><h3>What happens if I say yes, and who will I talk to?</h3></div>
-    </div>
-    <div class="grid two">
-      <div class="card  a" style="--d:7;"><div class="label">Experiment</div><p>“Your recommendation is ready”: immediate notification vs. a follow-up after 3 days</p></div>
-      <div class="card mint a" style="--d:8;"><div class="label">Measured on</div><p class="strong">Accepted recommendations, the team’s main metric for 2026</p></div>
-    </div>
+    <div class="label a" style="--d:3;margin:0">Built around three questions customers kept asking</div>
+    <div class="card navy a" style="--d:3;"><div class="qnum">01</div><h3>Why this deal, for me?</h3></div>
+    <div class="card navy a" style="--d:4;"><div class="qnum">02</div><h3>What does it really cost vs. the alternatives?</h3></div>
+    <div class="card navy a" style="--d:5;"><div class="qnum">03</div><h3>What happens if I say yes?</h3><p>“You’re not signing today” · chat with your adviser</p></div>
   </div>
-</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>12 / 19</span></div></section>
-<section class="slide light" data-n="13"><div class="eyebrow a">Decision 4 · Adviser chat · 2026</div><h1 class="a" style="--d:1">Bring the adviser into the app — fast, with guardrails</h1>
+  <div class="col">
+    <div class="label a" style="--d:6;margin:0">Momentum · experiment launched</div>
+    <div class="duo a" style="--d:6"><img src="assets/img/push.jpg" alt="Push: your recommendation is ready"><img src="assets/img/tracker.jpg" alt="Progress tracker with review your recommendations"></div>
+    <div class="card mint a" style="--d:7;"><p><b>Push on day 0 and day 3</b>, vs day 3 only, landing on the progress tracker. Measured on accepted recommendations.</p></div>
+  </div>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>15 / 22</span></div></section>
+<section class="slide light" data-n="16" data-k="d4"><div class="eyebrow a">04 · Habito · Decision 4 · adviser chat</div><h1 class="a" style="--d:1">Bring the adviser into the app — fast, with guardrails</h1>
 <div class="grid" style="grid-template-columns:1fr 1fr 1.25fr;margin-top:28px">
   <div class="card  a" style="--d:3;"><div class="label">Option A</div><h3>Wait for Monzo’s own chat</h3><div class="mid muted">~9 months</div></div>
   <div class="card teal a" style="--d:4;"><div class="label">Option B · chosen</div><h3>Ship Habito’s chat inside Monzo</h3><div class="mid lime">~1 month</div></div>
@@ -175,8 +209,8 @@
   <div class="card navy a" style="--d:8;"><div class="label">3 · Recover</div><p>Saved replies and deep links if someone lands in the wrong chat</p></div>
   <div class="gif a" style="background:#112231;height:190px"><img src="assets/anim/warning-alarm.gif" alt="" style="width:300px"></div>
 </div>
-<div class="card coral a" style="--d:9;margin-top:20px"><p class="strong"><b>Kill switch agreed up front:</b> investigate at 2% misrouted chats, roll back at 5% · pilot at 10%, then a 50/50 test</p><p class="strong" style="margin-top:6px">The chat lives inside the progress tracker · when I left, chat still opened in Habito; the in-app version was designed for the pilot</p><a class="fig-link small-link" href="https://www.figma.com/design/KloUkvWZLDZs4fsEtSi86e/State-Tracker?node-id=0-1&t=HsHNN10cyweQWXVI-1" target="_blank" rel="noopener">See the progress tracker ↗</a></div><div class="foot"><span>Monzo Homeownership · design case study</span><span>13 / 19</span></div></section>
-<section class="slide light" data-n="14"><div class="eyebrow a">Decision 5 · The application · 2026</div><h1 class="a" style="--d:1">Move the application into Monzo, pre-filled</h1>
+<div class="card coral a" style="--d:9;margin-top:20px"><p class="strong"><b>Kill switch agreed up front:</b> investigate at 2% misrouted chats, roll back at 5% · pilot at 10%, then a 50/50 test</p><p class="strong" style="margin-top:6px">The chat lives inside the progress tracker · when I left, chat still opened in Habito; the in-app version was designed for the pilot</p><a class="fig-link small-link" href="https://www.figma.com/design/KloUkvWZLDZs4fsEtSi86e/State-Tracker?node-id=0-1&t=HsHNN10cyweQWXVI-1" target="_blank" rel="noopener">See the progress tracker ↗</a></div><div class="foot"><span>Monzo Homeownership · design case study</span><span>16 / 22</span></div></section>
+<section class="slide light" data-n="17" data-k="d5"><div class="eyebrow a">04 · Habito · Decision 5 · the application</div><h1 class="a" style="--d:1">Move the application into Monzo, pre-filled</h1>
 <div class="grid" style="grid-template-columns:1fr 1fr 400px;margin-top:30px;align-items:stretch">
   <div class="col">
     <div class="card  a" style="--d:3;"><div class="label">Problem</div><p class="strong">The application lived on Habito’s website, outside Monzo, and it was long: in 2025 almost half of people dropped out there. Two thirds were applying with a partner.</p></div>
@@ -185,8 +219,8 @@
   </div>
   <div class="card navy a" style="--d:4;"><div class="label">What I decided</div><ul><li>The application inside Monzo, not on a partner site</li><li>Pre-filled: you confirm what Monzo already knows instead of typing it</li><li>Save it and come back later</li><li>Instrumented step by step to see where people stop</li><li>Next: voice, and Open Banking to bring in data from other banks, shown to the FCA as part of our Open Finance vision</li></ul></div>
   <div class="col center"><div class="gif a" style="background:#112231;height:270px"><img src="assets/anim/pencil-paper.gif" alt="" style="width:380px"></div><a class="fig-link a" style="--d:8" href="https://www.figma.com/design/XWHwXNdVjU4EdBf8xnQsZC/open-finance-vision?node-id=5047-39361&t=CbIbTMZ8surcEIg6-1" target="_blank" rel="noopener">See the Open Finance vision ↗</a></div>
-</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>14 / 19</span></div></section>
-<section class="slide light" data-n="15"><div class="eyebrow a">AI in how I work</div><h1 class="a" style="--d:1">I built a tool to get regulated designs approved faster</h1>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>17 / 22</span></div></section>
+<section class="slide light" data-n="18" data-k="ai"><div class="eyebrow a">05 · How I work · AI</div><h1 class="a" style="--d:1">I built a tool to get regulated designs approved faster</h1>
 <div class="grid" style="grid-template-columns:360px 1fr 400px;margin-top:30px">
   <div class="col">
     <div class="card pink a" style="--d:3;"><div class="label">Problem</div><p class="strong">Every screen about rates, deals or recommendations went back and forth with Compliance.</p></div>
@@ -194,11 +228,11 @@
   </div>
   <div class="card navy a" style="--d:4;"><div class="label">The checker · used inside Monzo</div><ul><li>Teams upload their own rules</li><li>Paste copy or drop in Figma screens</li><li>It flags lines that may break a rule and drafts a fix</li><li>Missing information, like the APRC, is flagged, never invented</li><li>Loans, Overdrafts and Wealth asked for access</li></ul><div class="demo-pill">Live demo · a copy rebuilt for this case study, no Monzo data</div></div>
   <div class="card mint a" style="--d:5;"><div class="label">Also</div><ul><li>AI analysis of support conversations: why customers disconnected their mortgage</li><li>Layout variations and quick prototypes, once research set the direction</li></ul><p class="small" style="margin-top:14px">It flags risk. Compliance still approves.</p></div>
-</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>15 / 19</span></div></section>
-<section class="slide dark" data-n="16">
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>18 / 22</span></div></section>
+<section class="slide dark" data-n="19" data-k="results">
 <div class="split" style="grid-template-columns:1fr 420px">
   <div>
-    <div class="eyebrow a">Results</div><h1 class="a" style="--d:1">What moved, and what’s still being measured</h1>
+    <div class="eyebrow a">05 · Results</div><h1 class="a" style="--d:1">What moved, and what’s still being measured</h1>
     <div class="grid three" style="margin-top:30px">
       <div class="card teal a" style="--d:3;"><div class="label">2025–26 · Moved</div><div class="big lime"><span class="count" data-to="75" data-prefix="~" data-suffix="%">~75%</span></div><p>above the referral goal · team result</p><p style="margin-top:12px">The vision became the North Star and part of the case for a new partnership model</p></div>
       <div class="card light a" style="--d:4;"><div class="label">2026 · In progress</div><ul><li>Day 1 reframing launched, 1 May 2026</li><li>Recommendations, adviser chat and in-app application designed and in test</li><li>Document upload still to come</li></ul></div>
@@ -206,41 +240,41 @@
     </div>
   </div>
   <div class="col center"><div class="gif a" style="background:#0c1720;height:300px;margin-top:120px"><img src="assets/anim/trumpet-confetti.gif" alt="" style="width:420px"></div></div>
-</div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>16 / 19</span></div></section>
-<section class="slide light" data-n="17"><div class="eyebrow a">What I learned</div><h1 class="a" style="--d:1">What I’d take to the next problem</h1>
+</div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>19 / 22</span></div></section>
+<section class="slide light" data-n="20" data-k="learn"><div class="eyebrow a">05 · What I learned</div><h1 class="a" style="--d:1">What I’d take to the next problem</h1>
 <div class="grid four" style="margin-top:40px">
   <div class="card coral a" style="--d:3;"><div class="qnum">01</div><h3>Growth at the top isn’t growth</h3><p>Design the middle of the funnel as carefully as the entry point</p></div>
   <div class="card  a" style="--d:4;"><div class="qnum">02</div><h3>The integration is part of the design</h3><p>Routing, consent and who-you’re-talking-to are UX, not plumbing</p></div>
   <div class="card mint a" style="--d:5;"><div class="qnum">03</div><h3>Speed needs a kill switch</h3><p>Agree the guardrails and the rollback before you ship</p></div>
   <div class="card navy a" style="--d:6;"><div class="qnum">04</div><h3>Name the problem first</h3><p>“Compare” vs. “broker”: one word changed what people expected</p></div>
-</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>17 / 19</span></div></section>
-<section class="slide light" data-n="18"><div class="eyebrow a">Why Deel</div><h1 class="a" style="--d:1">Why this matters for Benefits</h1>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>20 / 22</span></div></section>
+<section class="slide light" data-n="21" data-k="deel"><div class="eyebrow a">Why Deel</div><h1 class="a" style="--d:1">Why this matters for Benefits</h1>
 <div class="grid four" style="margin-top:40px">
   <div class="card navy a" style="--d:3;"><h3>Partners whose systems you don’t own</h3><p>Monzo + Habito + lenders → Deel + providers</p></div>
   <div class="card navy a" style="--d:4;"><h3>Status and support people can trust</h3><p>Who am I talking to, and what happens next?</p></div>
   <div class="card navy a" style="--d:5;"><h3>Rules that change by market</h3><p>Regulated wording, checked early</p></div>
   <div class="card navy a" style="--d:6;"><h3>Decisions that matter a lot</h3><p>To the people making them</p></div>
 </div>
-<div class="gif a" style="background:#112231;height:200px;position:absolute;right:84px;bottom:90px"><img src="assets/anim/rocket-target.gif" alt="" style="width:300px"></div><div class="foot"><span>Monzo Homeownership · design case study</span><span>18 / 19</span></div></section>
-<section class="slide dark" data-n="19">
+<div class="gif a" style="background:#112231;height:200px;position:absolute;right:84px;bottom:90px"><img src="assets/anim/rocket-target.gif" alt="" style="width:300px"></div><div class="foot"><span>Monzo Homeownership · design case study</span><span>21 / 22</span></div></section>
+<section class="slide dark" data-n="22" data-k="qa">
 <div class="eyebrow a">Thank you</div>
 <h1 class="xl a" style="--d:1;margin-top:130px;max-width:1000px">Where would you like to go deeper?</h1>
 <div class="tags a" style="--d:3">
   <span>Adviser chat guardrails</span><a class="tag-link" href="https://www.figma.com/design/vYurN7sfZ4L5LvqTpkaTpy/Homeownership-Master-file?node-id=9222-95141&t=kHX24gDhcGquarU5-1" target="_blank" rel="noopener">Growth experiments ↗</a><a class="tag-link" href="https://www.figma.com/design/vYurN7sfZ4L5LvqTpkaTpy/Homeownership-Master-file?node-id=8571-128380&t=kHX24gDhcGquarU5-1" target="_blank" rel="noopener">All Homeownership journeys ↗</a><a class="tag-link" href="https://www.figma.com/design/62SgDTlCUyF0iAsrGe1SMJ/Recommendations-in-app--Copy-?node-id=15-8444&t=9AbXpzaUboFwne2Q-1" target="_blank" rel="noopener">Recommendation design ↗</a><span>The AI checker, live</span><a class="tag-link" href="https://www.figma.com/design/KloUkvWZLDZs4fsEtSi86e/State-Tracker?node-id=0-1&t=HsHNN10cyweQWXVI-1" target="_blank" rel="noopener">Progress tracker ↗</a><a class="tag-link" href="https://www.figma.com/design/NwhbipMQweUXoMUHMmp8y8/Better.co.uk-experiments--Copy-?node-id=0-1&t=YT4ojF8qBhr7goSK-1" target="_blank" rel="noopener">Better experiments ↗</a><a class="tag-link" href="https://www.figma.com/design/XWHwXNdVjU4EdBf8xnQsZC/open-finance-vision?node-id=5047-39361&t=CbIbTMZ8surcEIg6-1" target="_blank" rel="noopener">Open Finance vision ↗</a><span class="alt">Monzo Flex: launched, mature results</span>
 </div>
-<div class="gif a" style="background:#102230;position:absolute;right:84px;bottom:100px;height:290px"><img src="assets/anim/paper-plane-tree.gif" alt="" style="width:420px"></div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>19 / 19</span></div></section>
+<div class="gif a" style="background:#102230;position:absolute;right:84px;bottom:100px;height:290px"><img src="assets/anim/paper-plane-tree.gif" alt="" style="width:420px"></div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>22 / 22</span></div></section>
 </div></div></figure>
     <button class="arrow arrow-next" id="next-slide" type="button" aria-label="Next slide"><span aria-hidden="true">→</span></button>
   </div>
   <div class="slide-caption"><span class="caption-number" id="caption-number">01</span><span id="slide-title">Remortgaging at Monzo, 2025–26</span></div>
 </main>
 <footer class="bottombar">
-  <div class="progress-track" role="progressbar" aria-label="Presentation progress" aria-valuemin="1" aria-valuemax="19" aria-valuenow="1"><span id="progress-fill"></span></div>
+  <div class="progress-track" role="progressbar" aria-label="Presentation progress" aria-valuemin="1" aria-valuemax="22" aria-valuenow="1"><span id="progress-fill"></span></div>
   <div class="control-row">
     <span class="keyboard-hint"><kbd>←</kbd><kbd>→</kbd> to move between slides</span>
     <div class="slide-controls">
       <button class="small-arrow" id="previous-bottom" type="button" aria-label="Previous slide">←</button>
-      <span id="bottom-count">01 <i>/</i> 19</span>
+      <span id="bottom-count">01 <i>/</i> 22</span>
       <button class="small-arrow" id="next-bottom" type="button" aria-label="Next slide">→</button>
       <button class="notes-bottom" id="open-notes-bottom" type="button">Open notes <span aria-hidden="true">↗</span></button>
     </div>
@@ -253,7 +287,7 @@
       <div><span class="eyebrow">PRESENTER NOTES · DRAFT</span><h2 id="notes-heading">Slide 1</h2></div>
       <button class="close-notes" id="close-notes" type="button" aria-label="Close speaker notes">×</button>
     </div>
-    <div class="sheet-progress"><span id="sheet-count">01 / 19</span><span>Use the arrows to change slides</span></div>
+    <div class="sheet-progress"><span id="sheet-count">01 / 22</span><span>Use the arrows to change slides</span></div>
     <div class="notes-content" id="notes-content" tabindex="0"></div>
   </div>
 </dialog>
