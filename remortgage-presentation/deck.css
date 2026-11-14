@@ -208,3 +208,18 @@
 .slide[data-k="learn"] .card h3,.slide[data-k="deel"] .card h3{font-size:32px}
 .slide[data-k="learn"] .card p,.slide[data-k="deel"] .card p{font-size:21px}
 .slide[data-k="learn"] .grid.four>.card,.slide[data-k="deel"] .grid.four>.card{min-height:380px}
+
+/* v5 design slides */
+.design{display:grid;grid-template-columns:520px 1fr;gap:52px;height:776px;align-items:center}
+.design-copy{align-self:center}
+.slide .design h1{font-size:46px;line-height:1.08;margin-top:16px;max-width:520px}
+.design-points{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:18px}
+.design-points li{font-size:21px;line-height:1.4;color:#c5d2d8;padding-left:22px;border-left:3px solid var(--lime)}
+.design-points li b{color:#fff;font-weight:700}
+.design-status{display:inline-block;margin-top:30px;padding:9px 16px;border-radius:999px;border:1.5px solid rgba(255,255,255,.28);font-size:15px;font-weight:600;color:#d7e2e6;line-height:1.35}
+.design .fig-link.small-link{display:block;width:max-content;margin-top:16px;background:var(--lime);color:var(--navy)}
+.design .fig-link.small-link:hover{background:#fff}
+.design-stage{height:720px;display:flex;align-items:center;justify-content:flex-end}
+.design-stage iframe{height:720px;border:0;background:transparent;color-scheme:normal}
+.mini-proto{width:300px;height:470px;border:0;background:transparent;color-scheme:normal}
+.bubble b{font-weight:800}

@@ -70,3 +70,12 @@ kbd{font:11px var(--mono);color:#e5e8dc;border:1px solid var(--line);border-radi
  .sheet-inner{padding-left:22px;padding-right:22px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* speaker notes: what to say + prepared answers */
+.notes-content{white-space:normal}
+.notes-content p{margin:0}
+.notes-say{white-space:pre-wrap}
+.notes-ask{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16)}
+.notes-ask h3{margin:0 0 8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--lime,#d8f16a);font-weight:700}
+.notes-ask .q{font-weight:700;color:#fff;margin-top:10px}
+.notes-ask .ans{color:#cfd9d3}
