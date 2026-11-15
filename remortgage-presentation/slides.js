@@ -62,7 +62,7 @@ const slides=[
  },
  {
   "title": "We lent our engineers for two months — and used the time to listen",
-  "notes": "The reset started in a slightly unexpected way. In February 2025, Monzo needed engineers in Financial Health; there was a real business need there. Homeownership wasn't going the way we wanted, so we agreed they could borrow our engineers for two months. And we used that time on purpose: we ran a discovery sprint to understand why our experiments weren't moving the numbers. Layla, our user researcher, interviewed two groups: people who had remortgaged with us, and people who had started and given up. That sprint is what changed the strategy.",
+  "notes": "The reset started in a slightly unexpected way. In February 2025, Monzo needed engineers in Financial Health; there was a real business need there. Homeownership wasn't going the way we wanted, so we agreed they could borrow our engineers for two months. And we used that time on purpose: we ran a discovery sprint to understand why our experiments weren't moving the numbers. Our user researcher interviewed two groups: people who had remortgaged with us, and people who had started and given up. That sprint is what changed the strategy.",
   "ask": [
    [
     "Whose decision was the pause?",
@@ -70,17 +70,17 @@ const slides=[
    ],
    [
     "How was the sprint organised?",
-    "In workstreams, each with an owner and a deliverable. The three that mattered most for this story were customer research, which Layla led, the vision, which was mine, and checking how feasible each idea was. The rest were outside design, and I wasn't close to them."
+    "In workstreams, each with an owner and a deliverable. The three that mattered most for this story were customer research, which our user researcher led, the vision, which was mine, and checking how feasible each idea was. The rest were outside design, and I wasn't close to them."
    ]
   ]
  },
  {
   "title": "Customers wanted one journey — but not the same one",
-  "notes": "Customers told us four things. First: don't send me out. People expected to get their new deal inside Monzo, not on another website. You can see it in the two personas Layla built from the interviews. George remortgaged with us, and was frustrated at being sent to a partner's website. Carla started and gave up, when she hit the friction of doing it all outside the app. Second: use what you already know about me, instead of asking me again. Third: let me choose. Some people wanted a phone call for reassurance; others wanted to do it themselves, as long as a person was there if they needed one. And fourth: tell me what's happening, because the waiting was the most stressful part.",
+  "notes": "Customers told us four things. First: don't send me out. People expected to get their new deal inside Monzo, not on another website. You can see it in the two personas our researcher built from the interviews. George remortgaged with us, and was frustrated at being sent to a partner's website. Carla started and gave up, when she hit the friction of doing it all outside the app. Second: use what you already know about me, instead of asking me again. Third: let me choose. Some people wanted a phone call for reassurance; others wanted to do it themselves, as long as a person was there if they needed one. And fourth: tell me what's happening, because the waiting was the most stressful part.",
   "ask": [
    [
     "What was your part in the research?",
-    "Layla led the interviews: one-to-one, with people who had remortgaged with us and people who had dropped out. I worked with her on the synthesis and turned the themes into the vision."
+    "Our user researcher led the interviews: one-to-one, with people who had remortgaged with us and people who had dropped out. I worked with the researcher on the synthesis and turned the themes into the vision."
    ]
   ]
  },
@@ -130,7 +130,7 @@ const slides=[
  },
  {
   "title": "More referrals didn't mean more mortgages",
-  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. But more referrals didn't mean more mortgages. One thing about how this is measured: Habito is paid by the lender when a mortgage completes, and that can be months after the referral. So the team steered by accepted recommendations, a signal we could read in weeks. Far fewer people went on to submit an application to a lender than we expected: about 6 to 6.5 percent, against 9 to 10 percent with Better. And the team's goal for the first half was to take accepted recommendations from about 400 to 1,000. And the surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. This is where I stopped myself from jumping straight into screens. With Layla, our researcher, and my colleague Hayley, I co-led an insight workshop on the drop-off, and then I turned what we learned into an opportunity solution tree.",
+  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. But more referrals didn't mean more mortgages. One thing about how this is measured: Habito is paid by the lender when a mortgage completes, and that can be months after the referral. So the team steered by accepted recommendations, a signal we could read in weeks. Far fewer people went on to submit an application to a lender than we expected: about 6 to 6.5 percent, against 9 to 10 percent with Better. And the team's goal for the first half was to take accepted recommendations from about 400 to 1,000. And the surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. This is where I stopped myself from jumping straight into screens. With two colleagues, I co-led an insight workshop on the drop-off, and then I turned what we learned into an opportunity solution tree.",
   "ask": [
    [
     "Why accepted recommendations and not revenue?",
@@ -152,7 +152,7 @@ const slides=[
   "ask": [
    [
     "Why do it yourself, and not rely on research?",
-    "Research tells you what people say. Going through it tells you what the journey asks of them, step by step. I needed both: Layla's interviews for the why, and my own run for the where."
+    "Research tells you what people say. Going through it tells you what the journey asks of them, step by step. I needed both: the research interviews for the why, and my own run for the where."
    ]
   ]
  },
