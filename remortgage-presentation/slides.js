@@ -56,7 +56,7 @@ const slides=[
  },
  {
   "title": "In 2025 and 2026, I led design for remortgaging through a strategy reset and an acquisition",
-  "notes": "This is the part of the story I want to focus on. In 2025 and 2026, I led design for remortgaging through two big changes: a strategy reset, and then an acquisition. In 2025 I led the vision, which is the first screen here, and designed the growth experiments that followed. In 2026 Monzo bought a mortgage broker, Habito, and I designed how its journey came into the app. The second screen is from that. The team was one squad: a product manager, six engineers, a data scientist and me on design, working with Operations and Compliance. We had a user researcher until the vision was done.",
+  "notes": "This is the part of the story I want to focus on. In 2025 and 2026, I led design for remortgaging through two big changes: a strategy reset, and then an acquisition. In 2025 I led the vision, which is the first screen here, and designed the growth experiments that followed. In 2026 Monzo bought a mortgage broker, Habito, and I designed how its journey came into the app. The second screen is from that. The team was one squad: a product manager, six engineers, a data scientist and me on design, working with Operations and Compliance. We had a user researcher until the vision was done. After that, I did the research myself.",
   "ask": []
  },
  {
@@ -202,8 +202,12 @@ const slides=[
  },
  {
   "title": "People thought we were a comparison site",
-  "notes": "The first bet tackled the experience break, and we knew two things. From research: people thought they were using a comparison site. And that was on us. Look at the screen on the left: we led with 'compare deals from over 100 lenders'. So when a broker then started asking about their finances, it felt like a bait-and-switch. And from data: in the pre-fill experiment, the wording of the data-sharing consent was costing us about 15 percent of referrals. So I proposed two changes. First, change what we lead with. Not the number of lenders, but the help of a mortgage expert. That's my design on the right: 'Find a mortgage with free expert help'. It says who Habito is, that a real person will handle your remortgage, and that the advice is free. Second, a simpler consent, keeping the commission disclosure that Compliance needed, but in plain words. The reframe went live on the 1st of May 2026, when the journey relaunched under the Habito by Monzo brand. We called that Day 1. After the change, fewer people dropped off at this step. But it launched together with the new brand, so I can't separate the two effects, and I don't have the exact figure.",
+  "notes": "The first bet tackled the experience break, and we knew two things. From research, which by then I was doing myself, from our in-house surveys and customer support conversations: people thought they were using a comparison site. And that was on us. Look at the screen on the left: we led with 'compare deals from over 100 lenders'. So when a broker then started asking about their finances, it felt like a bait-and-switch. And from data: in the pre-fill experiment, the wording of the data-sharing consent was costing us about 15 percent of referrals. So I proposed two changes. First, change what we lead with. Not the number of lenders, but the help of a mortgage expert. That's my design on the right: 'Find a mortgage with free expert help'. It says who Habito is, that a real person will handle your remortgage, and that the advice is free. Second, a simpler consent, keeping the commission disclosure that Compliance needed, but in plain words. The reframe went live on the 1st of May 2026, when the journey relaunched under the Habito by Monzo brand. We called that Day 1. After the change, fewer people dropped off at this step. But it launched together with the new brand, so I can't separate the two effects, and I don't have the exact figure.",
   "ask": [
+   [
+    "Who did the research in 2026, without a researcher?",
+    "I did. I worked from the answers to our in-house surveys and from customer support conversations."
+   ],
    [
     "Did the reframe move conversion?",
     "Drop-off at that step went down, but I don't have the exact figure. It launched together with the Habito by Monzo brand, so I can't separate the two effects cleanly. For scale: in March, about 22,000 people started and about 3,700 were referred, so every extra point there is around 200 referrals a month."
