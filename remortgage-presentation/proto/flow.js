@@ -25,7 +25,7 @@
       ]
     },
     chat: {
-      steps: ['The adviser lives in the tracker', 'An intro before the chat', 'A mortgage-only chat', 'A real person joins', 'Off-topic? One tap to Monzo support', 'The recommendation arrives in the chat', 'And it opens in the app'],
+      steps: ['The adviser lives in the tracker', 'An intro, the first time only', 'A mortgage-only chat', 'A real person joins', 'Off-topic? One tap to Monzo support', 'The recommendation arrives in the chat', 'And it opens in the app'],
       beats: [
         {img: 'ic-tracker2.png', step: 0, hold: 2600, tap: [200, 624], go: 'push'},
         {img: 'ic-intro.png', step: 1, hold: 3600, scroll: 75, scrollMs: 900, tap: [201, 820], go: 'push'},
@@ -49,7 +49,7 @@
     },
     focus: {
       steps: ['First visit', 'Returning · saw rates', 'In market, not connected', 'Just connected', 'Stable · deal far away', 'Approaching · 7–12 months', 'In market · under 6 months', 'Remortgaging', 'Remortgage complete', 'Data unavailable', 'Variable rate · no deal end'],
-      beats: Array.from({length: 11}, (_, i) => ({img: `fv-${String(i + 1).padStart(2, '0')}.png`, step: i, hold: 2500, go: 'fade'}))
+      beats: Array.from({length: 11}, (_, i) => ({img: `fvr-${String(i + 1).padStart(2, '0')}.png`, step: i, hold: 2800, go: 'fade'}))
     },
     vision: {
       steps: ['Your deal is ending: example deals, inside Monzo', 'Choose: an adviser first, or deals first', 'Pre-filled with what Monzo already knows', 'Recommendations, with your adviser one tap away', 'Every detail of the deal', 'Documents, straight from your phone', 'Always know what’s next'],
