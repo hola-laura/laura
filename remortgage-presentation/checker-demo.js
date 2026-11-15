@@ -12,6 +12,8 @@
       const box = doc.getElementById('text'), check = doc.getElementById('check');
       if (!box || !check) return;
       const copy = box.value;
+      doc.documentElement.style.zoom = '1.3';
+      const style = doc.createElement('style'); style.textContent = '::-webkit-scrollbar{display:none}'; doc.head.appendChild(style);
       const scroll = (to, ms) => new Promise(done => {
         const from = win.scrollY, t0 = performance.now();
         const step = now => {
@@ -28,17 +30,17 @@
         if (results) results.innerHTML = '';
         box.value = '';
         await wait(900);
-        await scroll(Math.max(0, box.getBoundingClientRect().top + win.scrollY - 150), 900);
-        for (const ch of copy) { if (!alive()) return; box.value += ch; await wait(16); }
+        await scroll(Math.max(0, box.getBoundingClientRect().top + win.scrollY - 70), 900);
+        for (const ch of copy) { if (!alive()) return; box.value += ch; await wait(22); }
         box.dispatchEvent(new Event('input', {bubbles: true}));
         await wait(600);
         check.click();
         await wait(900);
-        const end = doc.documentElement.scrollHeight - win.innerHeight;
-        await scroll(Math.min(end, check.getBoundingClientRect().top + win.scrollY - 40), 1200);
-        await wait(1400);
-        await scroll(end, 9000);
-        await wait(2200);
+        const top = check.getBoundingClientRect().top + win.scrollY + 60;
+        await scroll(top, 1200);
+        await wait(2600);
+        await scroll(top + 520, 6000);
+        await wait(3000);
       }
     } catch (error) { /* shown from another origin (local preview): the tool simply stays as it is */ }
   });
