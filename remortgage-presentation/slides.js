@@ -47,6 +47,10 @@ const slides=[
    [
     "What did you try with Better?",
     "Experiments on their side of the journey: letting people schedule the adviser call, a path without a call, and choosing between deals first or adviser first. We could propose changes to their site, but we couldn't ship them ourselves."
+   ],
+   [
+    "If you couldn't see what happened after the referral, where do the Better figures come from?",
+    "From Better. They told us, for example, how many people dropped out at the application form. What we didn't have was our own data, step by step, or a way to change their journey."
    ]
   ]
  },
@@ -318,7 +322,7 @@ const slides=[
  },
  {
   "title": "Move the application into Monzo, pre-filled",
-  "notes": "And finally, the application form, which was the most fragmented part of the journey. It lived outside Monzo, on the broker's website, and it was long: around 200 questions. With Better, in 2025, almost half of people dropped out there. With Habito, it was still on a separate website. So I designed the application inside Monzo, with two decisions I care about. First, pre-fill: instead of typing everything, you confirm what Monzo already knows about you. That answers 'use what you already know about me'. Second, save and come back later, because nobody has all their mortgage details at hand in one go. And it's measured step by step, so the team can see exactly where people stop. I designed it to five principles. Set clear expectations: this is a marathon. Give a real sense of progress. Keep it to one flow. Don't ask what we can answer for you. And make it easy to leave and come back. On the right you can see two versions. The first one is a simple form. It went live this November, a month after I left Monzo. So I designed it, but I can't claim any uplift from it. The next one breaks the form into five sections, tells you how long it takes, and keeps your progress.",
+  "notes": "And finally, the application form, which was the most fragmented part of the journey. It lived outside Monzo, on the broker's website, and it was long: around 200 questions. With Better, in 2025, almost half of people dropped out there. That figure came from Better, because we couldn't see that part of the journey ourselves. With Habito, it was still on a separate website. So I designed the application inside Monzo, with two decisions I care about. First, pre-fill: instead of typing everything, you confirm what Monzo already knows about you. That answers 'use what you already know about me'. Second, save and come back later, because nobody has all their mortgage details at hand in one go. And it's measured step by step, so the team can see exactly where people stop. I designed it to five principles. Set clear expectations: this is a marathon. Give a real sense of progress. Keep it to one flow. Don't ask what we can answer for you. And make it easy to leave and come back. On the right you can see two versions. The first one is a simple form. It went live this November, a month after I left Monzo. So I designed it, but I can't claim any uplift from it. The next one breaks the form into five sections, tells you how long it takes, and keeps your progress.",
   "ask": [
    [
     "Is the application live?",
@@ -360,11 +364,19 @@ const slides=[
  },
  {
   "title": "I built a tool to get regulated designs approved faster",
-  "notes": "There's one more thing I want to show you, because it ran through all of this work and changed how I worked: AI. AI didn't set the direction. The research did. Where it helped was speed and risk. One of the slowest parts of the project wasn't design or engineering, it was approval. Every screen about rates, deals or recommendations went back and forth with Compliance. So I built a checker that we used inside Monzo. A team uploads the rules it has to follow, pastes its copy or drops in Figma screens, and it flags lines that might break a rule and drafts a fix. If something required is missing, like the APRC, which is the full yearly cost of the mortgage, it says so instead of making it up. It doesn't approve anything, Compliance still does, but the review can focus on the hard calls. Loans, Overdrafts and Wealth asked to use it too. I also used AI to analyse support conversations, and found that people were disconnecting their mortgage because the data was wrong. You can see it running on the right: you paste the copy, it flags what could break a rule, and it suggests a fix. This is a copy I rebuilt for this case study, with no Monzo data.",
+  "notes": "There's one more thing I want to show you, because it ran through all of this work and changed how I worked: AI. AI didn't set the direction. The research did. Where it helped was speed and risk. One of the slowest parts of the project wasn't design or engineering, it was approval. Every screen about rates, deals or recommendations went back and forth with Compliance. So I built a checker that we used inside Monzo. I built it myself with Cursor, an AI coding tool, working from the documents with the rules. A team uploads the rules it has to follow, pastes its copy or drops in Figma screens, and it flags lines that might break a rule and drafts a fix. If something required is missing, like the APRC, which is the full yearly cost of the mortgage, it says so instead of making it up. It doesn't approve anything, Compliance still does, but the review can focus on the hard calls. Loans, Overdrafts and Wealth asked to use it too. I also used AI to analyse support conversations, and found that people were disconnecting their mortgage because the data was wrong. You can see it running on the right: you paste the copy, it flags what could break a rule, and it suggests a fix. This is a copy I rebuilt for this case study, with no Monzo data.",
   "ask": [
    [
     "Does it replace Compliance?",
     "No. It flags and suggests; Compliance approves. It means the review starts from a cleaner draft and can focus on the hard calls."
+   ],
+   [
+    "How did you build it?",
+    "With Cursor, an AI coding tool. I gave it the documents with the rules and built it by describing what I needed and iterating, what people call vibe coding. I'm a designer, so that was the fastest way to get a working tool in front of the team."
+   ],
+   [
+    "Who used it?",
+    "My own team first. Then Loans, Overdrafts and Wealth asked to use it too."
    ]
   ]
  },
@@ -380,7 +392,7 @@ const slides=[
  },
  {
   "title": "What moved, and where each customer ask stands today",
-  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. I won't read every row. Three things are live: pre-fill, the push when your recommendation is ready, and, since this November, the application inside Monzo. The recommendation inside Monzo and the 'I need more time' option are designed. The new tracker was in build in October. And the adviser chat is paused for this year. On the numbers: referrals ended about 75 percent above our goal. As I said, that's a leading indicator, and I'd rather tell you that than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
+  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. I won't read every row. Three things are live: pre-fill, the push when your recommendation is ready, and, since this November, the application inside Monzo. The recommendation inside Monzo and the 'I need more time' option are designed. The new tracker was in build in October. And the adviser chat is paused for this year. On the numbers: referrals ended about 75 percent above our goal. As I said, that's a leading indicator, and I'd rather tell you that than claim an uplift I can't prove. And first-time buyers launched on the 11th of November. I did the vision and the design of that first release.",
   "ask": [
    [
     "What would you measure next?",
@@ -389,6 +401,10 @@ const slides=[
    [
     "What would you do differently?",
     "Research the decision earlier. We spent a long time improving the way in before learning that the real barrier was the decision itself."
+   ],
+   [
+    "What did you do on first-time buyers?",
+    "The vision, and the design of the first release, which launched on the 11th of November."
    ]
   ]
  },
@@ -405,7 +421,12 @@ const slides=[
  {
   "title": "Thank you. Where would you like to go deeper?",
   "notes": "That's the story. Thank you. I'm happy to go deeper on any of these. And if it's useful, I can also show Monzo Flex, a credit card I redesigned, which has more mature results.",
-  "ask": []
+  "ask": [
+   [
+    "Why did you leave Monzo?",
+    "After more than five years at Monzo, and two on the same product, it was my moment to change. The business was putting its energy into opening new lines, which is a fair call. But it meant the plan for remortgaging would stay half-built for a long time, and it started to feel like a project I wouldn't see finished. So I decided to take what I'd learned to a new problem."
+   ]
+  ]
  },
  {
   "title": "First version: decide inside Monzo",
