@@ -69,8 +69,8 @@ const slides=[
     "Our Product Director's, with leadership behind it. Leadership confirmed the long-term commitment to Homeownership and we agreed a return date. So it was a pause with an end, not a wind-down."
    ],
    [
-    "What were the seven workstreams?",
-    "Each had an owner and a deliverable. Customer research was Layla's and the vision was mine. Others covered things like how feasible each idea was."
+    "How was the sprint organised?",
+    "In workstreams, each with an owner and a deliverable. The three that mattered most for this story were customer research, which Layla led, the vision, which was mine, and checking how feasible each idea was."
    ]
   ]
  },
