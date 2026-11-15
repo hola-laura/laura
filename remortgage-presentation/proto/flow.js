@@ -62,13 +62,12 @@
       ]
     },
     day1: {
-      steps: ['From the screen you just saw', 'One account, with your Monzo email', 'On your own, or with someone else', 'The hand-off, said out loud', 'Then the form, on Habito’s website'],
+      steps: ['One account, with your Monzo email', 'On your own, or with someone else', 'The hand-off, said out loud', 'Then the form, on Habito’s website'],
       beats: [
-        {img: 'd1-entry.png', step: 0, from: 720, scroll: 720, hold: 1500, tap: [201, 818], go: 'up'},
-        {img: 'd1-account.png', step: 1, hold: 2800, tap: [201, 800], go: 'push'},
-        {img: 'd1-joint.png', step: 2, hold: 2600, tap: [200, 456], go: 'push'},
-        {img: 'd1-allset.png', step: 3, hold: 2800, tap: [201, 800], go: 'fade'},
-        {img: 'd1-habito.png', step: 4, hold: 4000}
+        {img: 'd1-account.png', step: 0, hold: 3200, tap: [201, 800], go: 'push'},
+        {img: 'd1-joint.png', step: 1, hold: 2800, tap: [200, 456], go: 'push'},
+        {img: 'd1-allset.png', step: 2, hold: 3000, tap: [201, 800], go: 'fade'},
+        {img: 'd1-habito.png', step: 3, hold: 4200}
       ]
     },
     app: {
