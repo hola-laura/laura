@@ -50,7 +50,7 @@
     vision: {
       steps: ['Your deal is ending: example deals, inside Monzo', 'Choose: an adviser first, or deals first', 'Pre-filled with what Monzo already knows', 'Recommendations, with your adviser one tap away', 'Every detail of the deal', 'Documents, straight from your phone', 'Always know what’s next'],
       beats: [
-        {img: 'vz-deals.png', anim: {src: 'remortgage-presentation/assets/anim/house-light.webp', left: 86, top: 150, width: 230}, step: 0, hold: 3000, tap: [201, 838], go: 'push'},
+        {img: 'vz-deals.png', anim: {src: 'remortgage-presentation/assets/anim/house-light.webp', left: 51, top: 132, width: 300}, step: 0, hold: 3000, tap: [201, 838], go: 'push'},
         {img: 'vz-choose.png', step: 1, hold: 2800, tap: [133, 740], go: 'push'},
         {img: 'vz-look.png', step: 2, hold: 2400, tap: [184, 373], go: 'push'},
         {img: 'vz-review.png', step: 2, hold: 3600, scroll: 751, scrollMs: 2600, tap: [201, 805], go: 'push'},
