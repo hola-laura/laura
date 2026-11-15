@@ -281,11 +281,13 @@
 .bz-screen{display:block;aspect-ratio:402/874;overflow:hidden;border-radius:32px;background:#f1f8f3}
 .slide .bz-screen img:not(.bz-anim){display:block;width:100%!important;height:auto!important;max-width:none}
 .phones-row.ctx{gap:26px}
-.slide[data-k="context"] .card{padding:20px 24px}
-.slide[data-k="context"] .big{font-size:52px;line-height:1}
-.slide[data-k="context"] .card p{font-size:17px;line-height:1.35}
-.slide[data-k="context"] .card p.strong{font-size:19px;line-height:1.35}
+.slide[data-k="context"] .card,.slide[data-k="better"] .card{padding:20px 24px}
+.slide[data-k="context"] .big,.slide[data-k="better"] .big{font-size:52px;line-height:1}
+.slide[data-k="context"] .card p,.slide[data-k="better"] .card p{font-size:17px;line-height:1.35}
+.slide[data-k="context"] .card p.strong,.slide[data-k="better"] .card p.strong{font-size:19px;line-height:1.35}
 .bz-screen{position:relative}
 .slide .bz-screen img.bz-anim{position:absolute;height:auto!important}
 .fig-link.ghost{background:none;color:var(--navy);border:1.5px solid rgba(17,34,49,.28);font-size:15px;font-weight:600;padding:9px 16px}
 .fig-link.ghost:hover{background:rgba(17,34,49,.06);color:var(--navy)}
+.bz-screen.bz-393{aspect-ratio:393/852}
+.slide[data-k="better"] .flow .node{font-size:17px;padding:9px 18px}
