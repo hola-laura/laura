@@ -1,7 +1,7 @@
 const slides=[
  {
   "title": "Remortgaging at Monzo, 2025–26",
-  "notes": "Hi, I'm Laura. I joined Monzo's Homeownership team when the product didn't make any money yet, so I've seen it go from an engagement feature to a revenue line. Today I'll focus on 2025 and 2026: the moment we reset the strategy, and everything that happened from there. I worked as the design lead, and for most of that time I was the only designer, in one squad with a PM, engineers, a data scientist and a user researcher, and partners in Habito, Operations and Compliance. But first, two minutes of context, so the reset makes sense.",
+  "notes": "Hi, I'm Laura. I joined Monzo's Homeownership team when the product didn't make any money yet, so I've seen it go from an engagement feature to a revenue line. Today I'll focus on 2025 and 2026: the moment we reset the strategy, and everything that happened from there. I was the design lead, and for most of that time the only designer. But first, two minutes of context, so the reset makes sense.",
   "ask": []
  },
  {
@@ -57,7 +57,7 @@ const slides=[
  },
  {
   "title": "How I’ll walk you through it",
-  "notes": "So here's how I'll walk you through it: six chapters, in the order they happened. First, the reset, when we paused to listen to customers. Second, the vision that came out of it: one journey, inside Monzo. Third, reach: the experiments we ran to get to people earlier. Fourth, and this is the biggest part, Habito: bringing the journey into the app. Fifth, what's next: an audit of the whole product, and where I'd take it. And finally, how I work with AI, the results, and what I learned.",
+  "notes": "Here's the order: six chapters, as they happened. The reset. The vision. Reach. Then Habito, which is the biggest part. What's next. And how I work. Let's start with the reset.",
   "ask": []
  },
  {
@@ -86,7 +86,7 @@ const slides=[
  },
  {
   "title": "One journey, inside Monzo, that flexes to you",
-  "notes": "I turned that into a design vision: one journey, inside Monzo, that flexes to the person. Bring the application into the app, pre-filled with what we already know. Let people choose whether to talk to an adviser first or see deals first. Take the pain out of paperwork. And always show what happens next. What's playing here is the vision, straight from my Figma frames. Monzo later published these designs on its blog, in a post about why and how we got to the new vision. The post and the full vision file in Figma are both linked here, so if you want to talk about the vision, I'm happy to open it and go deeper. It wasn't a list of promises, it was a direction. And it made something very clear: the experience customers wanted meant owning much more of the journey than a referral partner allowed. With Better, customers left the app, we couldn't change their flow, and we couldn't see where people dropped out. The vision became part of the case for changing our partnership model, and Monzo later bought Habito, which made it buildable. I wasn't part of the acquisition decision, but the vision is still what the team refers back to.",
+  "notes": "I turned that into a design vision: one journey, inside Monzo, that flexes to the person. Bring the application into the app, pre-filled with what we already know. Let people choose whether to talk to an adviser first or see deals first. Take the pain out of paperwork. And always show what happens next. What's playing here is the vision, straight from my Figma frames. Monzo later published these designs on its blog, in a post about why and how we got to the new vision. The post and the full vision file in Figma are both linked here, so if you want to talk about the vision, I'm happy to open it and go deeper. It wasn't a list of promises, it was a direction. And it made something very clear: the experience customers wanted meant owning much more of the journey than a referral partner allowed. The vision became part of the case for changing our partnership model, and Monzo later bought Habito, which made it buildable. I wasn't part of the acquisition decision, but the vision is still what the team refers back to.",
   "ask": [
    [
     "So your vision made Monzo buy Habito?",
@@ -96,7 +96,7 @@ const slides=[
  },
  {
   "title": "I turned the vision into bets the team could ship",
-  "notes": "But a vision only matters if it changes what you ship. So we broke it down into now, next and later. Some things were no-brainers that didn't need a test. One of them was mine: I improved the progress tracker so customers saw their status closer to real time. You'll see where that tracker ended up later. Others were experiments on the riskiest assumptions, like letting people choose between talking to an adviser first or seeing deals first. That one we had to park when Habito arrived, and I'll come back to it when we get to the adviser chat. One more thing from 2025. In research we saw that people thought we were a comparison site. We were leading with 'more than 100 lenders', instead of the help of a mortgage expert. I proposed changing that, and drop-off went down. I don't have the exact number. I also led a value-proposition workshop in June, built around two kinds of customers: comparers, who want to look at deals themselves, and delegators, who want an expert to handle it. And keep an eye on the 'later' column: two of those became my work in 2026.",
+  "notes": "But a vision only matters if it changes what you ship. So we broke it down into now, next and later. Some things were no-brainers that didn't need a test. One of them was mine: I improved the progress tracker so customers saw their status closer to real time. You'll see where that tracker ended up later. Others were experiments on the riskiest assumptions, like letting people choose between talking to an adviser first or seeing deals first. That one we had to park when Habito arrived, and I'll come back to it when we get to the adviser chat. One more thing from 2025. I led a value-proposition workshop in June, built around two kinds of customers: comparers, who want to look at deals themselves, and delegators, who want an expert to handle it. And keep an eye on the 'later' column: two of those became my work in 2026.",
   "ask": [
    [
     "What happened to the adviser-first test?",
@@ -106,7 +106,7 @@ const slides=[
  },
  {
   "title": "Reach people before they're ready to remortgage",
-  "notes": "Now, reach. While the move to a new partner was being worked out, we still had a revenue target with Better. So from the second half of 2025, we focused on what we could control: reach. Our hypothesis was simple: growth was limited by how many people we could reach. Most people who were about to remortgage hadn't connected their mortgage, so we simply couldn't see them. To give you the scale: about 600,000 customers had connected a mortgage, and about two and a half million had one that we couldn't see. I designed ways in that didn't need a connection: adding your deal-end date, indicative rates and estimated deals. I also designed Focus View, where your home screen changes depending on where you are in the journey, and the move of Homeownership into the Grow tab. We ran all of this as a fast series of experiments. The hypotheses and the designs were mine, the team built them, and the data told us what was working. and I kept an experiment file in Figma linking every design to its hypothesis and its result. It became the team's source of truth, so we stopped repeating failed tests. It's linked here on the slide, together with the Grow tab work. Between late 2025 and spring 2026 we beat our referral goal by about 75 percent: around 7,500 referrals against a goal of 4,300. So the hypothesis held. But keep one thing in mind: referrals are a leading indicator, not the result. That matters in the next chapter. The catch was that indicative rates are regulated, so every word mattered. I'll come back to that when I talk about AI.",
+  "notes": "Now, reach. While the move to a new partner was being worked out, we still had a revenue target with Better. So from the second half of 2025, we focused on what we could control: reach. Our hypothesis was simple: growth was limited by how many people we could reach. Most people who were about to remortgage hadn't connected their mortgage, so we simply couldn't see them. To give you the scale: about 600,000 customers had connected a mortgage, and about two and a half million had one that we couldn't see. I designed ways in that didn't need a connection: adding your deal-end date, indicative rates and estimated deals. I also designed Focus View, where your home screen changes depending on where you are in the journey, and the move of Homeownership into the Grow tab. We ran all of this as a fast series of experiments. The hypotheses and the designs were mine, the team built them, and the data told us what was working. I kept an experiment file in Figma linking every design to its hypothesis and its result. It became the team's source of truth, so we stopped repeating failed tests. It's linked here on the slide, together with the Grow tab work. Between late 2025 and spring 2026 we beat our referral goal by about 75 percent: around 7,500 referrals against a goal of 4,300. So the hypothesis held. But keep one thing in mind: referrals are a leading indicator, not the result. That matters in the next chapter. The catch was that indicative rates are regulated, so every word mattered. I'll come back to that when I talk about AI.",
   "ask": [
    [
     "Which experiment worked best?",
@@ -130,7 +130,7 @@ const slides=[
  },
  {
   "title": "More referrals didn't mean more mortgages",
-  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. But more referrals didn't mean more mortgages. One thing about how this is measured: Habito is paid by the lender when a mortgage completes, and that can be months after the referral. So the team steered by accepted recommendations, a signal we could read in weeks. Far fewer people went on to submit an application to a lender than we expected: about 6 to 6.5 percent, against 9 to 10 percent with Better. The team's goal for the first half was to take accepted recommendations from about 400 to 1,000. But the surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. This is where I stopped myself from jumping straight into screens. With two colleagues, I co-led an insight workshop on the drop-off, and then I turned what we learned into an opportunity solution tree.",
+  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. But more referrals didn't mean more mortgages. One thing about how this is measured: Habito is paid by the lender when a mortgage completes, and that can be months after the referral. So the team steered by accepted recommendations, a signal we could read in weeks. Far fewer people went on to submit an application to a lender than we expected: about 6 to 6.5 percent, against 9 to 10 percent with Better. The team's goal for the first half was to take accepted recommendations from about 400 to 1,000. But the surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. So I went to find out why, in two steps.",
   "ask": [
    [
     "Why accepted recommendations and not revenue?",
@@ -148,7 +148,7 @@ const slides=[
  },
  {
   "title": "First, I became the customer",
-  "notes": "Before I show you the tree, one step back. When the numbers dropped, the first thing I did wasn't to open Figma and design. I went through the journey myself. On the 17th of April I applied through Habito as a real customer, from the first tap in Monzo to the mortgage illustration, and I kept every screen, every email and every document in one page. That's the wall you see here. It made three things obvious that no dashboard showed. Halfway through, you get a second account and a second brand. You fill in a long form before you get any value back. And the recommendation and the messages live on Habito's website, not in Monzo. It gave the team one shared picture of the journey as it really was. And it's what I brought into the workshop.",
+  "notes": "Step one: I went through the journey myself. On the 17th of April I applied through Habito as a real customer, from the first tap in Monzo to the mortgage illustration, and I kept every screen, every email and every document in one page. That's the wall you see here. It made three things obvious that no dashboard showed. Halfway through, you get a second account and a second brand. You fill in a long form before you get any value back. And the recommendation and the messages live on Habito's website, not in Monzo. It gave the team one shared picture of the journey as it really was. And it's what I brought into the workshop.",
   "ask": [
    [
     "Why do it yourself, and not rely on research?",
@@ -158,7 +158,7 @@ const slides=[
  },
  {
   "title": "One outcome, five opportunities — and who can fix each one",
-  "notes": "This is the tree, simplified. At the top, one outcome: more recommendations accepted. Under it, the problem: high-intent customers don't feel confident enough, at the moment they see the recommendation, to act. Then five opportunity areas. Relevance: the recommendation feels generic, with no reasoning or human behind it. Experience break: being kicked out of Monzo. One customer described it as being palmed off to another organisation. Timing: people are still exploring when the recommendation lands. Momentum: they were ready, but our follow-up was slow and easy to miss. And friction: a long form that's hard to pick back up. The part I found most useful was the last row. For each area I asked two questions: is it a root cause, or something that makes it worse? And is it in Monzo's power, or in Habito's? Relevance, for example, was mostly in Habito's hands, because they write the recommendation. That told us where design in Monzo could make the biggest difference, and the four bets I'll show you next map straight onto it.",
+  "notes": "Step two, with the team. With two colleagues, I co-led an insight workshop on the drop-off, and I turned what we learned into this: an opportunity solution tree. This is a simplified version. At the top, one outcome: more recommendations accepted. Under it, the problem: high-intent customers don't feel confident enough, at the moment they see the recommendation, to act. Then five opportunity areas. Relevance: the recommendation feels generic, with no reasoning or human behind it. Experience break: being kicked out of Monzo. One customer described it as being palmed off to another organisation. Timing: people are still exploring when the recommendation lands. Momentum: they were ready, but our follow-up was slow and easy to miss. And friction: a long form that's hard to pick back up. The part I found most useful was the last row. For each area I asked two questions: is it a root cause, or something that makes it worse? And is it in Monzo's power, or in Habito's? Relevance, for example, was mostly in Habito's hands, because they write the recommendation. That told us where design in Monzo could make the biggest difference, and the four bets I'll show you next map straight onto it.",
   "ask": [
    [
     "What did you decide not to do?",
@@ -176,7 +176,7 @@ const slides=[
  },
  {
   "title": "Four bets — and how each one could be wrong",
-  "notes": "Before the designs, one slide on how I thought about them. Each decision was a bet, not a certainty. So for each one I wrote down three things: what we believed and where that came from, how we'd know it was working, and what would make me change course. Two examples. For the recommendation: if people read every reason and still don't accept, then the problem is the deal itself, not how we explain it, and that sits with Habito. And for the application: if more people finish the form but accepted recommendations don't move, then the form wasn't the real constraint. That is exactly what happened with referrals, and I didn't want to repeat it.",
+  "notes": "Before the designs, one slide on how I thought about them. Each decision was a bet, not a certainty. So for each one I wrote down three things: what we believed and where that came from, how we'd know it was working, and what would make me change course. Two examples. For the recommendation: if people read every reason and still don't accept, then the problem is the deal itself, not how we explain it, and that sits with Habito. And for the application: if more people finish the form but accepted recommendations don't move, then the form wasn't the real constraint.",
   "ask": [
    [
     "Did the team define these, or you?",
@@ -189,22 +189,36 @@ const slides=[
   ]
  },
  {
-  "title": "Tell people what this actually is",
-  "notes": "The first bet tackled the experience break, and it was simple, but it mattered a lot: tell people what this actually is. People thought they were using a comparison site. So when a broker started asking about their finances, it felt like a bait-and-switch. For Habito's first day as part of Monzo, I reframed the journey from 'compare mortgages' to 'get a mortgage with a broker'. I cut the consent screens down while keeping the commission disclosure Compliance needed, added trust signals early, and a clear 'what happens next'. The hard call was the pre-fill experiment, which was still running. We stopped it early and turned pre-fill on for everyone, because it had little downside and the launch date was fixed. We traded some learning for speed, on purpose. It launched on the 1st of May 2026, together with the Habito by Monzo brand. This is the entry screen I designed for Day 1: it says plainly that Habito is now part of Monzo, that a real expert will help you, and that it's fee-free.",
+  "title": "People thought we were a comparison site",
+  "notes": "The first bet tackled the experience break, and it came straight from research. People thought they were using a comparison site. And that was on us: look at the screen on the left. We led with 'compare deals from over 100 lenders'. So when a broker then started asking about their finances, it felt like a bait-and-switch. I proposed changing what we lead with. Not the number of lenders, but the help of a mortgage expert. That's the screen on the right: 'Find a mortgage with free expert help'. It says who Habito is, that a real person will handle your remortgage, and that the advice is free. I kept the commission disclosure that Compliance needed, but in plain words. It launched on the 1st of May 2026, together with the Habito by Monzo brand. After the change, fewer people dropped off at this step. I don't have the exact figure, so I won't give you one.",
   "ask": [
    [
     "Did the reframe move conversion?",
-    "I don't have a clean number for it. It launched together with the Habito by Monzo brand, so the two effects can't be separated, and mortgage cohorts take months to mature."
+    "Drop-off at that step went down. I don't have the exact figure, and it launched together with the Habito by Monzo brand, so I can't separate the two effects cleanly."
    ],
+   [
+    "Why not just remove the lenders?",
+    "Choice still matters, so the number is still there, in the second line. What changed is the order: first the expert, then the lenders."
+   ]
+  ]
+ },
+ {
+  "title": "Day 1 with Habito, from start to hand-off",
+  "notes": "And this is the rest of the Day 1 journey, as it went live. I'll let it play. After that first screen comes account creation. Nobody wants another account, so I framed it as a benefit: you can check your progress here or on Habito's website, and it uses the email Monzo already has. Then one question: are you remortgaging on your own, or with someone else? And then the hand-off, said out loud: 'we'll now take you to Habito to fill in a few details'. A hand-off you announce feels very different from one that just happens to you. The hard call here was the pre-fill experiment, which was still running. We stopped it early and turned pre-fill on for everyone, because it had little downside and the launch date was fixed. We traded some learning for speed, on purpose. And notice where this ends: on Habito's website. Day 1 was honest about what this is, but it still sent people out of Monzo. The next three bets go after that.",
+  "ask": [
    [
     "Why stop an experiment early?",
     "The launch date was fixed and pre-fill had almost no downside. Waiting for significance would have meant launching Day 1 with an inconsistent experience."
+   ],
+   [
+    "Are these your designs?",
+    "Yes. These are captures of the live app from June 2026, with the test data removed."
    ]
   ]
  },
  {
   "title": "Do I trust this recommendation enough to go ahead?",
-  "notes": "The next bet is about the moment of decision itself, and this is the question customers were really asking themselves: do I trust this recommendation enough to go ahead? In my design proposal I wrote down what stops people at this point. A trust gap: is Habito legitimate? Effort: will this take ages? Switching context: I'm comfortable in Monzo, so why am I being sent somewhere else? And the classic one: I'll look at this later, and then they forget. So before designing anything, I scored the screen we had against what confidence actually needs: understanding, feeling it's for me, alternatives, trade-offs, the real cost, and being ready to act. Nothing was fully covered. My verdict was: they could see the deal, but they couldn't really decide. The screen showed a product, and confidence needs a decision.",
+  "notes": "The next bet is about the moment of decision itself, and this is the question customers were really asking themselves: do I trust this recommendation enough to go ahead? So I scored the screen we had against what confidence actually needs: understanding, feeling it's for me, alternatives, trade-offs, the real cost, and being ready to act. Nothing was fully covered. My verdict was: they could see the deal, but they couldn't really decide. The screen showed a product, and confidence needs a decision.",
   "ask": [
    [
     "Who were you really competing with?",
@@ -227,28 +241,8 @@ const slides=[
   ]
  },
  {
-  "title": "First version: decide inside Monzo",
-  "notes": "Then the recommendation itself. This is the first version in the app, from June. The goal was written at the top of my file: increase the acceptance rate by helping people decide confidently when they're ready, or defer on purpose, without dropping off. Three decisions here. First, it's framed through the adviser, not an algorithm: 'Will's top pick for you', 'a note from Will'. A person does the heavy lifting for trust. Second, there's a top pick, but the alternatives sit beside it, with the reasoning, so it never feels pushy. And third, we couldn't avoid the hand-off to Habito yet, so we say it out loud: 'Taking you back to Habito to continue. You can always come back to Monzo to check your progress.' A hand-off you announce feels very different from one that just happens to you.",
-  "ask": [
-   [
-    "Why keep the hand-off at all?",
-    "At that point the application still lived on Habito's side. Hiding that would have broken trust the moment the brand changed. Saying it was the honest version, until the in-app application moved the form."
-   ]
-  ]
- },
- {
-  "title": "Decision support, not decision pressure",
-  "notes": "The part I'm most proud of is not the happy path. It's the two ways this goes wrong. The first one is: I'm interested, but I'm not ready. A screen with only accept and reject loses all of those people. So I added a third button, 'I need more time'. You choose when you want to be reminded, and the recommendation waits for you in the tracker. In my file I called this section 'fear of commitment'. The second is when the lender withdraws the rate, which happens all the time. Instead of an error, the adviser speaks first: 'I'm already looking at alternatives for you', and other options are right there. I called the principle 'decision support, not decision pressure'. The design protects the relationship with people who aren't ready, instead of forcing a yes or a no.",
-  "ask": [
-   [
-    "Doesn't 'I need more time' just lower conversion?",
-    "It lowers same-day conversion and protects total conversion. A mortgage is decided over weeks. A reminder the customer chose is a way back. A rejected offer isn't."
-   ]
-  ]
- },
- {
   "title": "Four rounds before the version you're about to see",
-  "notes": "And it didn't stay there. This went through four rounds in about four months, and each round answered a gap the previous one left. In June, the top pick with alternatives. Then I reviewed my own design against the research and wrote down what it didn't cover: you couldn't reach the adviser from that screen, and there was no honest sense of urgency. The second round, in low fidelity, led with the total cost instead of the monthly rate, and it compared staying with your lender against switching, in pounds. The third went to a design crit on the 17th of September: a hub with tools, like stress-testing the deal. The feedback was that it showed too much at once, so I moved to more progressive disclosure. And that became version 2.1, which is the one I'll show you now.",
+  "notes": "Then the recommendation itself. I wrote the goal at the top of my file: help people decide confidently when they're ready, or defer on purpose, without dropping off. It took four rounds in about four months, and each round answered a gap the one before had left. In June, the first version. It's framed through the adviser, not an algorithm: 'Will's top pick for you'. A person does the heavy lifting for trust. And the alternatives sit beside the top pick, so it never feels pushy. Then I reviewed my own design against the research and wrote down what it didn't cover: you couldn't reach the adviser from that screen, and there was no honest sense of urgency. The second round, in low fidelity, led with the total cost instead of the monthly rate, and it compared staying with your lender against switching, in pounds. The third went to a design crit on the 17th of September: a hub with tools, like stress-testing the deal. The feedback was that it showed too much at once, so I moved to more progressive disclosure. And that became version 2.1, which is the one I'll show you now.",
   "ask": [
    [
     "What did the crit change?",
@@ -271,8 +265,18 @@ const slides=[
   ]
  },
  {
+  "title": "Decision support, not decision pressure",
+  "notes": "The part I'm most proud of is not that happy path. It's the two ways this goes wrong. The first one is: I'm interested, but I'm not ready. A screen with only accept and reject loses all of those people. So I added a third button, 'I need more time'. You choose when you want to be reminded, and the recommendation waits for you in the tracker. In my file I called this section 'fear of commitment'. The second is when the lender withdraws the rate, which happens all the time. Instead of an error, the adviser speaks first: 'I'm already looking at alternatives for you', and other options are right there. I called the principle 'decision support, not decision pressure'. The design protects the relationship with people who aren't ready, instead of forcing a yes or a no.",
+  "ask": [
+   [
+    "Doesn't 'I need more time' just lower conversion?",
+    "It lowers same-day conversion and protects total conversion. A mortgage is decided over weeks. A reminder the customer chose is a way back. A rejected offer isn't."
+   ]
+  ]
+ },
+ {
   "title": "Always clear whose turn it is",
-  "notes": "And this is what ties it all together: the progress tracker. Remember the fourth thing customers told us: tell me what's happening. A remortgage has around ten stages, and the next step can sit with you, with the adviser or with the lender. So I designed one card that changes with the journey: orange when it's your turn, green when someone else is working on it. The push from the experiment lands here. And it's where the adviser chat was designed to live, which is the next bet. This version was being built when I left.",
+  "notes": "And this is what ties it all together: the progress tracker. This answers the fourth thing customers told us: tell me what's happening. A remortgage has around ten stages, and the next step can sit with you, with the adviser or with the lender. So I designed one card that changes with the journey: orange when it's your turn, green when someone else is working on it. The push from the experiment lands here. And it's where the adviser chat was designed to live, which is the next bet. This version was being built when I left.",
   "ask": [
    [
     "Is this live?",
@@ -286,7 +290,7 @@ const slides=[
  },
  {
   "title": "The adviser in the app: designed with guardrails, then paused",
-  "notes": "Then the adviser. This bet tackles relevance, and that one rigid path. Remember the comparers and the delegators, and the adviser-first test we had to park? The vision said people should choose how they talk to an adviser. The reality was that Habito's advisers worked by chat, in a separate tool, and at the time the chat opened in Habito, outside Monzo. We could wait about nine months for Monzo's own chat, or put Habito's chat inside the app in about a month. I proposed the faster route, because every month we waited we kept losing people at the decision. But a second chat inside Monzo is risky: people might ask their adviser about a blocked card, or ask Monzo support about their mortgage. So I designed three guardrails. Gate: only show it during an active remortgage. Signpost: make it obvious who you're talking to and when they'll reply. Recover: if you land in the wrong place, get you to the right one in one tap. The main place for the chat is the progress tracker, so you can see where you are and ask about it in the same place. We also agreed a kill switch up front: above 2 percent misrouted chats we investigate, above 5 percent we roll back. The plan was a small pilot first, and then a proper 50/50 test. In the end, we paused it. After the analysis, the team decided this integration wasn't the best use of our resources this year, and put them into other problems, like first-time buyers. So for now, the chat keeps living in Habito. It's one of those decisions that is never quite final. But that was the call for this year.",
+  "notes": "Then the adviser. This bet tackles relevance, and that one rigid path. Remember the comparers and the delegators, and the adviser-first test we had to park? The vision said people should choose how they talk to an adviser. The reality was that Habito's advisers worked by chat, in a separate tool, and at the time the chat opened in Habito, outside Monzo. We could wait about nine months for Monzo's own chat, or put Habito's chat inside the app in about a month. I proposed the faster route, because every month we waited we kept losing people at the decision. But a second chat inside Monzo is risky: people might ask their adviser about a blocked card, or ask Monzo support about their mortgage. So I designed three guardrails. Gate: only show it during an active remortgage. Signpost: make it obvious who you're talking to and when they'll reply. Recover: if you land in the wrong place, get you to the right one in one tap. We also agreed a kill switch up front: above 2 percent misrouted chats we investigate, above 5 percent we roll back. The plan was a small pilot first, and then a proper 50/50 test. In the end, we paused it. After the analysis, the team decided this integration wasn't the best use of our resources this year, and put them into other problems, like first-time buyers. So for now, the chat keeps living in Habito. It's one of those decisions that is never quite final. But that was the call for this year.",
   "ask": [
    [
     "How big was the risk, really?",
@@ -338,7 +342,7 @@ const slides=[
  },
  {
   "title": "Where I'd take it next",
-  "notes": "And this is where I'd take it next. I'll keep it short, because none of this has been built or tested yet. The first idea is a home screen that adapts. Today everyone sees the same mortgage screen. In this proposal, what you see depends on where you are: not connected, deal far away, deal about to end, or in the middle of a remortgage. You can see it changing on the right. It's low fidelity on purpose, because the next step would be to validate it. The second idea is better data. With Open Banking, people could connect their lender directly, and Monzo could give advice before you ask. That concept was shared with the FCA as part of Monzo's Open Finance work. If you'd like to see either of these in detail, they're in the appendix.",
+  "notes": "And this is where I'd take it next. I'll keep it short, because none of this has been built or tested yet. The first idea takes Focus View, the home screen from the reach chapter, further. In this proposal, what you see depends on where you are: not connected, deal far away, deal about to end, or in the middle of a remortgage. You can see it changing on the right. It's low fidelity on purpose, because the next step would be to validate it. The second idea is better data. With Open Banking, people could connect their lender directly, and Monzo could give advice before you ask. That concept was shared with the FCA as part of Monzo's Open Finance work. If you'd like to see either of these in detail, they're in the appendix.",
   "ask": []
  },
  {
@@ -353,7 +357,7 @@ const slides=[
  },
  {
   "title": "What moved, and where each customer ask stands today",
-  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. Don't send me out: the application inside Monzo went live this November, after I left, and the recommendation inside Monzo is designed. Use what you know: pre-fill went live for everyone on the 1st of May, with the Day 1 launch. Let me choose: the 'I need more time' option is designed, and the adviser chat in the app was designed and then paused for this year. Tell me what's happening: the push on day zero and day three launched in May, and the new progress tracker was being built when I left in October. And on the numbers: between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent, around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
+  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. I won't read every row. Three things are live: pre-fill, the push when your recommendation is ready, and, since this November, the application inside Monzo. The recommendation inside Monzo and the 'I need more time' option are designed. The new tracker was being built when I left in October. And the adviser chat is paused for this year. On the numbers: referrals ended about 75 percent above our goal. As I said, that's a leading indicator, and I'd rather tell you that than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
   "ask": [
    [
     "What would you measure next?",
@@ -379,6 +383,16 @@ const slides=[
   "title": "Thank you. Where would you like to go deeper?",
   "notes": "That's the story. Thank you. I'm happy to go deeper on any of these. And if it's useful, I can also show Monzo Flex, a credit card I redesigned, which has more mature results.",
   "ask": []
+ },
+ {
+  "title": "First version: decide inside Monzo",
+  "notes": "This is the first version of the recommendation in the app, from June, playing in full. The goal was written at the top of my file: increase the acceptance rate by helping people decide confidently when they're ready, or defer on purpose, without dropping off. Three decisions here. First, it's framed through the adviser, not an algorithm: 'Will's top pick for you', 'a note from Will'. A person does the heavy lifting for trust. Second, there's a top pick, but the alternatives sit beside it, with the reasoning, so it never feels pushy. And third, we couldn't avoid the hand-off to Habito yet, so we say it out loud: 'Taking you back to Habito to continue. You can always come back to Monzo to check your progress.' A hand-off you announce feels very different from one that just happens to you.",
+  "ask": [
+   [
+    "Why keep the hand-off at all?",
+    "At that point the application still lived on Habito's side. Hiding that would have broken trust the moment the brand changed. Saying it was the honest version, until the in-app application moved the form."
+   ]
+  ]
  },
  {
   "title": "Where should we invest next? I audited the whole product",

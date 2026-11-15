@@ -341,7 +341,7 @@
 .slide[data-k="plan"] .grid.three>.card{min-height:400px}
 .slide[data-k="learn"] .grid.four>.card,.slide[data-k="deel"] .grid.four>.card{min-height:470px}
 .slide.active .bz-screen.scrolling img{animation:bzscroll 14s ease-in-out 1.2s infinite alternate}
-@keyframes bzscroll{0%,10%{transform:translateY(0)}90%,100%{transform:translateY(calc(-100% + 555px))}}
+@keyframes bzscroll{0%,10%{transform:translateY(0)}90%,100%{transform:translateY(calc(-100% + var(--vh,555px)))}}
 .steps-strip{display:flex;align-items:stretch;gap:14px;margin-top:22px}
 .steps-strip>div{flex:1;background:#fff;border-radius:20px;padding:18px 20px;font-size:19px;line-height:1.3;font-weight:600;color:var(--navy);display:flex;align-items:center;gap:14px}
 .steps-strip>div b{flex:none;width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--lime);display:flex;align-items:center;justify-content:center;font-size:17px}
@@ -421,3 +421,8 @@
 .slide[data-k="results"] .big{font-size:104px;line-height:1}
 .slide[data-k="rec"] .reach-col .card p.strong{font-size:19px}
 .slide[data-k="rec"] .reach-col .card li{font-size:17.5px}
+
+/* v14 day 1 */
+.optcol.wide{width:270px}
+.optcol.before{background:rgba(255,92,74,.10)}
+.opttag i{display:block;font-style:normal;font-weight:500;font-size:12.5px;color:var(--ink2);margin-top:2px}

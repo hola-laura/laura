@@ -1,5 +1,5 @@
 /* flow.js — plays a sequence of real Figma frames inside the phone, like a recorded prototype.
-   flow.html?f=rec | chat | app   (&bare hides the step list)
+   flow.html?f=rec | chat | app | day1   (&bare hides the step list)
    Each beat shows one frame. `scroll` scrolls a long frame, `tap` shows where the finger goes,
    `go` is how the next frame arrives: push (from the right), pop (back), up (sheet), down (close sheet). */
 (() => {
@@ -59,6 +59,16 @@
         {img: 'vz-docs.png', step: 5, hold: 2400, tap: [194, 497], go: 'push'},
         {img: 'vz-idkind.png', step: 5, hold: 2000, tap: [102, 300], go: 'fade'},
         {img: 'vz-tracker.png', step: 6, hold: 4200, scroll: 300, scrollMs: 1800}
+      ]
+    },
+    day1: {
+      steps: ['From the screen you just saw', 'One account, with your Monzo email', 'On your own, or with someone else', 'The hand-off, said out loud', 'Then the form, on Habito’s website'],
+      beats: [
+        {img: 'd1-entry.png', step: 0, from: 720, scroll: 720, hold: 1500, tap: [201, 818], go: 'up'},
+        {img: 'd1-account.png', step: 1, hold: 2800, tap: [201, 800], go: 'push'},
+        {img: 'd1-joint.png', step: 2, hold: 2600, tap: [200, 456], go: 'push'},
+        {img: 'd1-allset.png', step: 3, hold: 2800, tap: [201, 800], go: 'fade'},
+        {img: 'd1-habito.png', step: 4, hold: 4000}
       ]
     },
     app: {
