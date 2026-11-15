@@ -33,6 +33,10 @@ const slides=[
   "notes": "So we wanted to prove a revenue stream, and remortgaging was the obvious one: everyone with a mortgage needs a new deal every few years, and we often knew when. We found a partner, the broker Better.co.uk. Monzo spotted the right moment, and Better gave the advice and handled the application. I designed that first journey, and it was a click-out experience: customers left Monzo and finished on Better's website. It proved there was a business, around 5,000 customers and about 1.5 million pounds over time. But it didn't go the way we wanted. We missed our revenue goals, growth stalled, and once customers left the app we couldn't see where or why they dropped out. And that was my main learning from that first chapter: our success ended at the referral. Once people left Monzo, we were blind to everything that happened next.",
   "ask": [
    [
+    "How does Monzo make money from this?",
+    "The broker is paid by the lender when a mortgage completes, and the customer pays nothing. With Better, Monzo earned a share for each customer it referred who completed. So revenue depends on completed mortgages, not on referrals."
+   ],
+   [
     "Why did it miss the goals?",
     "Reach and visibility. We could only prompt people whose deal-end date we knew, and our data stopped at the referral. So we kept improving the way in, without seeing where people dropped out afterwards."
    ],
@@ -102,7 +106,7 @@ const slides=[
  },
  {
   "title": "Decision 1 · Reach people before they're ready to remortgage",
-  "notes": "Now, the decisions. While the move to a new partner was being worked out, we still had a revenue target with Better. So from the second half of 2025, we focused on what we could control: reach. Most people who were about to remortgage hadn't connected their mortgage, so we simply couldn't see them. I designed ways in that didn't need a connection: adding your deal-end date, indicative rates and estimated deals. I also designed Focus View, where your home screen changes depending on where you are in the journey, and the move of Homeownership into the Grow tab. We ran all of this as a fast series of experiments, and I kept an experiment file in Figma linking every design to its hypothesis and its result. It became the team's source of truth, so we stopped repeating failed tests. It's linked here on the slide, together with the Grow tab work. Between late 2025 and spring 2026 we beat our referral goal by about 75 percent. The catch was that indicative rates are regulated, so every word mattered. I'll come back to that when I talk about AI.",
+  "notes": "Now, the decisions. While the move to a new partner was being worked out, we still had a revenue target with Better. So from the second half of 2025, we focused on what we could control: reach. Our hypothesis was simple: growth was limited by how many people we could reach. Most people who were about to remortgage hadn't connected their mortgage, so we simply couldn't see them. I designed ways in that didn't need a connection: adding your deal-end date, indicative rates and estimated deals. I also designed Focus View, where your home screen changes depending on where you are in the journey, and the move of Homeownership into the Grow tab. We ran all of this as a fast series of experiments, and I kept an experiment file in Figma linking every design to its hypothesis and its result. It became the team's source of truth, so we stopped repeating failed tests. It's linked here on the slide, together with the Grow tab work. Between late 2025 and spring 2026 we beat our referral goal by about 75 percent. So the hypothesis held. But keep one thing in mind: referrals are a leading indicator, not the result. That matters in the next chapter. The catch was that indicative rates are regulated, so every word mattered. I'll come back to that when I talk about AI.",
   "ask": [
    [
     "Which experiment worked best?",
@@ -126,8 +130,12 @@ const slides=[
  },
  {
   "title": "More referrals didn't mean more mortgages",
-  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. But more referrals didn't mean more mortgages. Far fewer people went on to submit an application to a lender than we expected. And the surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. This is where I stopped myself from jumping straight into screens. With Layla, our researcher, and my colleague Hayley, I co-led an insight workshop on the drop-off, and then I turned what we learned into an opportunity solution tree.",
+  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. But more referrals didn't mean more mortgages. One thing about how this is measured: Habito is paid by the lender when a mortgage completes, and that can be months after the referral. So the team steered by accepted recommendations, a signal we could read in weeks. Far fewer people went on to submit an application to a lender than we expected. And the surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. This is where I stopped myself from jumping straight into screens. With Layla, our researcher, and my colleague Hayley, I co-led an insight workshop on the drop-off, and then I turned what we learned into an opportunity solution tree.",
   "ask": [
+   [
+    "Why accepted recommendations and not revenue?",
+    "Revenue arrives when the mortgage completes, months later. Accepting a recommendation is the earliest point where a customer commits, so we could learn in weeks. The risk is optimising the proxy, which is why the chart also follows submissions to the lender."
+   ],
    [
     "Was Habito converting worse than Better?",
     "It's not like-for-like. With Habito you can reach a recommendation without a call; Better put a call first, so different people got that far. And a mortgage takes months, so the cohorts were still maturing. But the gap was real enough to act on."
@@ -143,12 +151,30 @@ const slides=[
   "notes": "This is the tree, simplified. At the top, one outcome: more recommendations accepted. Under it, the problem: high-intent customers don't feel confident enough, at the moment they see the recommendation, to act. Then five opportunity areas. Relevance: the recommendation feels generic, with no reasoning or human behind it. Experience break: being kicked out of Monzo. One customer described it as being palmed off to another organisation. Timing: people are still exploring when the recommendation lands. Momentum: they were ready, but our follow-up was slow and easy to miss. And friction: a long form that's hard to pick back up. The part I found most useful was the last row. For each area I asked two questions: is it a root cause, or something that makes it worse? And is it in Monzo's power, or in Habito's? Relevance, for example, was mostly in Habito's hands, because they write the recommendation. That told us where design in Monzo could make the biggest difference, and the next decisions map straight onto it.",
   "ask": [
    [
+    "What did you decide not to do?",
+    "Three things. The quality of the advice itself, because that's Habito's side. Joint applications, because Habito's operations allow one account per application. And letting people lock a rate six months ahead, which stayed as an exploration. Saying no to those let us focus on the moment of decision."
+   ],
+   [
     "Why is relevance in Habito's hands?",
     "Because the adviser writes the recommendation. What Monzo could change was how it's presented and explained, and that's decision 3."
    ],
    [
     "Why a tree and not a list of ideas?",
     "Because the team had many ideas and one metric. The tree made every idea answer to a cause, and showed which causes we could actually fix from Monzo."
+   ]
+  ]
+ },
+ {
+  "title": "Four bets — and how each one could be wrong",
+  "notes": "Before the designs, one slide on how I thought about them. Each decision was a bet, not a certainty. So for each one I wrote down three things: what we believed and where that came from, how we'd know it was working, and what would make me change course. Two examples. For the recommendation: if people read every reason and still don't accept, then the problem is the deal itself, not how we explain it, and that sits with Habito. And for the application: if more people finish the form but accepted recommendations don't move, then the form wasn't the real constraint. That is exactly what happened with referrals, and I didn't want to repeat it.",
+  "ask": [
+   [
+    "Did the team define these, or you?",
+    "The main metric and the kill switch were agreed as a team. The early signals for each design are how I framed them, so that every design had a way to be proven wrong."
+   ],
+   [
+    "Which bet were you least sure about?",
+    "The recommendation. Explaining a deal better only helps if the deal is good for that person, and that part wasn't ours to change."
    ]
   ]
  },
@@ -169,7 +195,12 @@ const slides=[
  {
   "title": "Do I trust this recommendation enough to go ahead?",
   "notes": "The next decision is about the moment of decision itself, and this is the question customers were really asking themselves: do I trust this recommendation enough to go ahead? Before designing anything, I scored the screen we had against what confidence actually needs: understanding, feeling it's for me, alternatives, trade-offs, the real cost, and being ready to act. Nothing was fully covered. My verdict was: they could see the deal, but they couldn't really decide. The screen showed a product, and confidence needs a decision.",
-  "ask": []
+  "ask": [
+   [
+    "Who were you really competing with?",
+    "Mostly the customer's current lender. Staying with the same lender takes a few clicks, with no adviser and no paperwork. Our research showed people used us to sense-check and then some finished elsewhere. So the recommendation had to earn the switch: the reasons, the real cost and what was ruled out."
+   ]
+  ]
  },
  {
   "title": "Decision 3 · Make the recommendation something you can trust",
@@ -254,7 +285,7 @@ const slides=[
  },
  {
   "title": "What moved, and what's still being measured",
-  "notes": "So, what came out of it? Between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent, and the vision became the team's North Star and part of the case for a new partnership model. In 2026 the work was about conversion. The Day 1 reframing and the push experiment launched in May. The progress tracker and the adviser chat were being built when I left in October. And the recommendation and the in-app application were designed, but not live yet. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
+  "notes": "So, what came out of it? Between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent. That's a leading indicator, and I call it that on purpose. The vision became the team's North Star and part of the case for a new partnership model. In 2026 the work was about conversion. The Day 1 reframing and the push experiment launched in May. The progress tracker and the adviser chat were being built when I left in October. And the recommendation and the in-app application were designed, but not live yet. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
   "ask": [
    [
     "What would you measure next?",
