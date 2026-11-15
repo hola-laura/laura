@@ -292,3 +292,8 @@
 .bz-screen.bz-393{aspect-ratio:393/852}
 .slide[data-k="better"] .flow .node{font-size:17px;padding:9px 18px}
 .bz-screen.bz-375{aspect-ratio:375/812}
+.role-cards{gap:14px}
+.grid.three.role-cards>.card{min-height:0;padding:22px 22px 14px}
+.role-cards .card h3{font-size:22px;margin-bottom:12px}
+.role-cards .card li{font-size:16.5px;line-height:1.35;margin-bottom:9px;padding-left:18px}
+.role-cards .card li:before{top:7px;width:7px;height:7px}
