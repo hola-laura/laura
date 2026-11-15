@@ -50,7 +50,7 @@
     focus: {
       groups: {0: 'Not connected', 3: 'Connected', 7: 'Remortgaging', 9: 'When things go differently'},
       steps: ['First visit', 'Came back after seeing rates', 'Deal may end soon', 'Just connected', 'Deal far away', 'Deal ends in 7–12 months', 'Deal ends in under 6 months', 'In progress', 'Complete', 'Data unavailable', 'Variable rate, no deal end'],
-      beats: Array.from({length: 11}, (_, i) => ({img: `fvc-${String(i + 1).padStart(2, '0')}.png`, step: i, hold: 2800, go: 'fade'}))
+      beats: Array.from({length: 11}, (_, i) => ({img: `fvd-${String(i + 1).padStart(2, '0')}.png`, step: i, hold: 2800, go: 'fade'}))
     },
     vision: {
       steps: ['Your deal is ending: example deals, inside Monzo', 'Choose: an adviser first, or deals first', 'Pre-filled with what Monzo already knows', 'Recommendations, with your adviser one tap away', 'Every detail of the deal', 'Documents, straight from your phone', 'Always know what’s next'],
