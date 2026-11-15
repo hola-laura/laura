@@ -106,7 +106,7 @@ const slides=[
  },
  {
   "title": "Decision 1 · Reach people before they're ready to remortgage",
-  "notes": "Now, the decisions. While the move to a new partner was being worked out, we still had a revenue target with Better. So from the second half of 2025, we focused on what we could control: reach. Our hypothesis was simple: growth was limited by how many people we could reach. Most people who were about to remortgage hadn't connected their mortgage, so we simply couldn't see them. I designed ways in that didn't need a connection: adding your deal-end date, indicative rates and estimated deals. I also designed Focus View, where your home screen changes depending on where you are in the journey, and the move of Homeownership into the Grow tab. We ran all of this as a fast series of experiments, and I kept an experiment file in Figma linking every design to its hypothesis and its result. It became the team's source of truth, so we stopped repeating failed tests. It's linked here on the slide, together with the Grow tab work. Between late 2025 and spring 2026 we beat our referral goal by about 75 percent. So the hypothesis held. But keep one thing in mind: referrals are a leading indicator, not the result. That matters in the next chapter. The catch was that indicative rates are regulated, so every word mattered. I'll come back to that when I talk about AI.",
+  "notes": "Now, the decisions. While the move to a new partner was being worked out, we still had a revenue target with Better. So from the second half of 2025, we focused on what we could control: reach. Our hypothesis was simple: growth was limited by how many people we could reach. Most people who were about to remortgage hadn't connected their mortgage, so we simply couldn't see them. To give you the scale: about 600,000 customers had connected a mortgage, and about two and a half million had one that we couldn't see. I designed ways in that didn't need a connection: adding your deal-end date, indicative rates and estimated deals. I also designed Focus View, where your home screen changes depending on where you are in the journey, and the move of Homeownership into the Grow tab. We ran all of this as a fast series of experiments, and I kept an experiment file in Figma linking every design to its hypothesis and its result. It became the team's source of truth, so we stopped repeating failed tests. It's linked here on the slide, together with the Grow tab work. Between late 2025 and spring 2026 we beat our referral goal by about 75 percent: around 7,500 referrals against a goal of 4,300. So the hypothesis held. But keep one thing in mind: referrals are a leading indicator, not the result. That matters in the next chapter. The catch was that indicative rates are regulated, so every word mattered. I'll come back to that when I talk about AI.",
   "ask": [
    [
     "Which experiment worked best?",
@@ -130,7 +130,7 @@ const slides=[
  },
  {
   "title": "More referrals didn't mean more mortgages",
-  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. But more referrals didn't mean more mortgages. One thing about how this is measured: Habito is paid by the lender when a mortgage completes, and that can be months after the referral. So the team steered by accepted recommendations, a signal we could read in weeks. Far fewer people went on to submit an application to a lender than we expected. And the surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. This is where I stopped myself from jumping straight into screens. With Layla, our researcher, and my colleague Hayley, I co-led an insight workshop on the drop-off, and then I turned what we learned into an opportunity solution tree.",
+  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. But more referrals didn't mean more mortgages. One thing about how this is measured: Habito is paid by the lender when a mortgage completes, and that can be months after the referral. So the team steered by accepted recommendations, a signal we could read in weeks. Far fewer people went on to submit an application to a lender than we expected: about 6 to 6.5 percent, against 9 to 10 percent with Better. And the team's goal for the first half was to take accepted recommendations from about 400 to 1,000. And the surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. This is where I stopped myself from jumping straight into screens. With Layla, our researcher, and my colleague Hayley, I co-led an insight workshop on the drop-off, and then I turned what we learned into an opportunity solution tree.",
   "ask": [
    [
     "Why accepted recommendations and not revenue?",
@@ -141,8 +141,8 @@ const slides=[
     "It's not like-for-like. With Habito you can reach a recommendation without a call; Better put a call first, so different people got that far. And a mortgage takes months, so the cohorts were still maturing. But the gap was real enough to act on."
    ],
    [
-    "Can you share the real numbers?",
-    "Not the absolute ones, they're confidential. That's why the chart shows each stage against its target."
+    "What were the real numbers?",
+    "From referral to submission we were at about 6 to 6.5 percent with Habito, against 9 to 10 percent with Better. And the goal for the first half was to take accepted recommendations from about 400 to 1,000."
    ]
   ]
  },
@@ -290,7 +290,7 @@ const slides=[
   "ask": [
    [
     "How big was the risk, really?",
-    "Small in volume: a few thousand people are in a remortgage at any time, against millions of Monzo customers. But landing in the wrong chat is a compliance problem, not only a UX one, so we treated it seriously."
+    "Small in volume: at most about 7,000 people use the product in a month, against 15 million Monzo customers. But landing in the wrong chat is a compliance problem, not only a UX one, so we treated it seriously."
    ],
    [
     "Why not wait for Monzo's own chat?",
@@ -330,7 +330,7 @@ const slides=[
  },
  {
   "title": "Where should we invest next? I audited the whole product",
-  "notes": "By the summer of 2026, I'd been designing one journey at a time for a long while. And three things were changing at once. Homeownership was moving from a feature for existing customers to an acquisition bet. First-time buyers were the growth focus for the second half. And Habito was bringing more capability, and more traffic, into our flows. So I asked a different question: before we scale all of this, where should we invest first? I audited every journey that was live in production, ten of them, end to end. Not concepts, not experiments: what customers really see. I scored each one on seven lenses, things like how clear the user's job is, the risk when volume grows, and how confident we are in the evidence. And I was open about it: the scores are assumptions. They're there to compare like for like, not to decide for us.",
+  "notes": "By the summer of 2026, I'd been designing one journey at a time for a long while. And three things were changing at once. Homeownership was moving from a feature for existing customers to an acquisition bet. First-time buyers were the growth focus for the second half. And Habito was bringing more capability, and more traffic, into our flows. And the scale was about to change: about 600,000 customers had connected a mortgage, and about two and a half million hadn't. A small audience today, a big one tomorrow. So I asked a different question: before we scale all of this, where should we invest first? I audited every journey that was live in production, ten of them, end to end. Not concepts, not experiments: what customers really see. I scored each one on seven lenses, things like how clear the user's job is, the risk when volume grows, and how confident we are in the evidence. And I was open about it: the scores are assumptions. They're there to compare like for like, not to decide for us.",
   "ask": [
    [
     "Why score, if the scores are assumptions?",
@@ -369,7 +369,7 @@ const slides=[
  },
  {
   "title": "Four decisions I'd defend",
-  "notes": "Four decisions inside it that I'd defend. One: value without connecting. Most people haven't connected a mortgage, and before this they had no home here at all. If you only looked at rates, your saved rates are the first thing you see when you come back. Your earlier visit counts. Two: make the cost concrete. Not 'your deal ends soon', but what you pay now and what you'll pay if you do nothing. That's urgency the customer can check. Three: the remortgage tracker lives in the home screen, not on a separate one. The home is the hub for everything about your mortgage. And four: never a dead end. If the data doesn't load, we show the last numbers we had, with the date. And the whole thing is resolved each time the screen opens, with three questions: are you connected, are you remortgaging, and how many months until your deal ends.",
+  "notes": "Four decisions inside it that I'd defend. One: value without connecting. About two and a half million customers haven't connected a mortgage, and before this they had no home here at all. If you only looked at rates, your saved rates are the first thing you see when you come back. Your earlier visit counts. Two: make the cost concrete. Not 'your deal ends soon', but what you pay now and what you'll pay if you do nothing. That's urgency the customer can check. Three: the remortgage tracker lives in the home screen, not on a separate one. The home is the hub for everything about your mortgage. And four: never a dead end. If the data doesn't load, we show the last numbers we had, with the date. And the whole thing is resolved each time the screen opens, with three questions: are you connected, are you remortgaging, and how many months until your deal ends.",
   "ask": []
  },
  {
@@ -394,7 +394,7 @@ const slides=[
  },
  {
   "title": "What moved, and what's still being measured",
-  "notes": "So, what came out of it? Between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent. That's a leading indicator, and I call it that on purpose. The vision became the team's North Star and part of the case for a new partnership model. In 2026 the work was about conversion. The Day 1 reframing and the push experiment launched in May. The progress tracker and the adviser chat were being built when I left in October. And the recommendation and the in-app application were designed, but not live yet. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
+  "notes": "So, what came out of it? Between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent: around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. The vision became the team's North Star and part of the case for a new partnership model. In 2026 the work was about conversion. The Day 1 reframing and the push experiment launched in May. The progress tracker and the adviser chat were being built when I left in October. And the recommendation and the in-app application were designed, but not live yet. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
   "ask": [
    [
     "What would you measure next?",
