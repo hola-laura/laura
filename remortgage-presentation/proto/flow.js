@@ -109,7 +109,7 @@
     }
   };
   FLOWS.focus4 = {
-    steps: ['Not connected yet', 'Connected, deal far away', 'Deal ends in under 6 months', 'Remortgage in progress'],
+    steps: ['Not connected yet|One action: connect, or just see rates', 'Connected, deal far away|Calm: your equity, nothing to do', 'Deal ends in under 6 months|Urgent: what doing nothing costs', 'Remortgage in progress|The tracker lives on the home screen'],
     beats: [0, 4, 6, 7].map((b, i) => ({...FLOWS.focus.beats[b], step: i, hold: 4200}))
   };
   const flow = FLOWS[new URLSearchParams(location.search).get('f')] || FLOWS.rec;
@@ -119,7 +119,7 @@
   const toggle = root.querySelector('[data-flow-toggle]');
 
   if (flow.groups) list.classList.add('is-grouped');
-  list.innerHTML = flow.steps.map((label, i) => `${flow.groups && flow.groups[i] ? `<li class="fl-group">${flow.groups[i]}</li>` : ''}<li><button type="button" data-step="${i}"><span class="mg-tk-num">${String(i + 1).padStart(2, '0')}</span><span>${label}</span></button></li>`).join('');
+  list.innerHTML = flow.steps.map((label, i) => `${flow.groups && flow.groups[i] ? `<li class="fl-group">${flow.groups[i]}</li>` : ''}<li><button type="button" data-step="${i}"><span class="mg-tk-num">${String(i + 1).padStart(2, '0')}</span><span>${label.split('|')[0]}${label.includes('|') ? `<small>${label.split('|')[1]}</small>` : ''}</span></button></li>`).join('');
   const buttons = [...list.querySelectorAll('button')];
   screen.innerHTML = '<div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><i class="fl-tap"></i>';
   const layers = [...screen.querySelectorAll('.fl-layer')];

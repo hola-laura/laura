@@ -103,3 +103,7 @@ body.proto-embed.is-bare .mg-tracker .mg-tracker-copy{display:none!important}
 @keyframes flIn{from{opacity:0;transform:translateY(12px) scale(.94)}to{opacity:1;transform:none}}
 @keyframes flFloat{0%,100%{transform:none}50%{transform:translateY(-7px) rotate(1.1deg)}}
 @media (prefers-reduced-motion:reduce){.fl-layer img.fl-anim,.fl-layer img.fl-anim.is-float{animation:none}}
+
+/* step with a second line */
+.proto-embed .mg-tk-steps button small{display:block;font-size:14.5px;line-height:1.3;font-weight:400;color:#8fa3ae;margin-top:3px}
+.proto-embed .mg-tk-steps button[aria-current] small{color:#4b5d68}
