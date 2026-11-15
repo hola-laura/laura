@@ -55,7 +55,7 @@
         {img: 'fve-02.png', anim: {src: 'remortgage-presentation/assets/anim/calculator-light.webp', left: 35.3, top: 99.9, width: 295.6, keep: true}, step: 1, hold: 3200, go: 'fade'},
         {img: 'fve-03.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 2, hold: 3200, go: 'fade'},
         {img: 'fve-04.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-confetti.png', left: 99.9, top: 110.0, width: 202.2, float: true}, step: 3, hold: 3200, go: 'fade'},
-        {img: 'fve-05.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-plant.png', left: 126.3, top: 110.0, width: 149.4, float: true}, step: 4, hold: 3200, go: 'fade'},
+        {img: 'fve-05b.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-plant.png', left: 126.3, top: 110.0, width: 149.4, float: true}, step: 4, hold: 3200, go: 'fade'},
         {img: 'fve-06.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 5, hold: 3200, go: 'fade'},
         {img: 'fve-07.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 6, hold: 3200, go: 'fade'},
         {img: 'fve-08.png', anim: {src: 'assets/mortgages/tracker/hourglass.webp', left: -16.5, top: 2.3, width: 422.4, keep: true}, step: 7, hold: 3200, go: 'fade'},
@@ -107,6 +107,10 @@
         {img: 'factfind-timeline.png', step: 1, hold: 3600, scroll: 185, tap: [163, 632]}
       ]
     }
+  };
+  FLOWS.focus4 = {
+    steps: ['Not connected yet', 'Connected, deal far away', 'Deal ends in under 6 months', 'Remortgage in progress'],
+    beats: [0, 4, 6, 7].map((b, i) => ({...FLOWS.focus.beats[b], step: i, hold: 4200}))
   };
   const flow = FLOWS[new URLSearchParams(location.search).get('f')] || FLOWS.rec;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -345,9 +345,18 @@ const slides=[
   ]
  },
  {
-  "title": "Where I'd take it next",
-  "notes": "And this is where I'd take it next. I'll keep it short, because none of this has been built or tested yet. The first idea takes Focus View, the home screen from the reach chapter, further. Today only the top card changes, and people who haven't connected a mortgage have no home screen at all. In this proposal, the whole screen depends on where you are: not connected, deal far away, deal about to end, or in the middle of a remortgage. You can see it changing on the right. It's a proposal, so the next step would be to validate it before rebuilding anything. The second idea is better data. With Open Banking, people could connect their lender directly, and Monzo could give advice before you ask. That concept was shared with the FCA as part of Monzo's Open Finance work. If you'd like to see either of these in detail, they're in the appendix.",
-  "ask": []
+  "title": "One home screen that changes with your mortgage",
+  "notes": "And this is where I'd take it next. I'll keep it short, because it's a proposal. It hasn't been built or tested. It starts from the audit. Today the mortgage home screen is the same for everyone who's connected. Only the top card changes. And the two and a half million customers whose mortgage we can't see have no home screen at all. So my proposal is one home screen that follows where you are. On the right you can see four moments. Before you connect, it shows what you'd get. When your deal is far away, it's calm: your equity, and nothing to do. When your deal is about to end, it tells you what doing nothing would cost, and gives you one way forward. And while you're remortgaging, the tracker lives here. Each moment has one message and one next step. How would I validate it? I wouldn't rebuild everything. I'd start with one state, the one where your deal ends in under six months. I'd test it against today's screen, and measure how many people start a remortgage. There are eleven states in total, with the edge cases. They're in the appendix, together with a second idea: getting mortgage data straight from your lender.",
+  "ask": [
+   [
+    "Why start with that state?",
+    "Because it's the closest to the outcome we care about, people starting a remortgage, and it's the moment where doing nothing costs the customer most. If the idea doesn't work there, I wouldn't build the rest."
+   ],
+   [
+    "What was the second idea?",
+    "Better data. With Open Banking, people could connect their lender directly, and Monzo could give advice before you ask. That concept was shared with the FCA as part of Monzo's Open Finance work."
+   ]
+  ]
  },
  {
   "title": "I built a tool to get regulated designs approved faster",
@@ -526,6 +535,7 @@ document.addEventListener("keydown",event=>{
  if(event.key==="ArrowRight"||event.key===" "){event.preventDefault();go(1)}
 });
 addEventListener('message',e=>{const k=e.data&&e.data.deckKey;if(k==='ArrowLeft')go(-1);else if(k==='ArrowRight')go(1)});
+document.addEventListener('click',e=>{const a=e.target.closest('a[data-go]');if(!a)return;e.preventDefault();const n=parseInt(a.dataset.go);if(n>=1&&n<=slides.length){current=n-1;render()}});
 let sx=null;figure.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
 figure.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)go(dx<0?1:-1);sx=null});
 const h=parseInt(location.hash.slice(1));if(h>=1&&h<=slides.length)current=h-1;
