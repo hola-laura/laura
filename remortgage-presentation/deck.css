@@ -352,3 +352,5 @@
 .res-gif{position:absolute;right:0;top:-10px}
 .res-grid>.card{min-height:420px!important}
 .res-grid .big{font-size:120px;line-height:1}
+.audit-cards .card{padding:22px 26px;min-height:0}
+.audit-cards .card p.strong{font-size:21px;line-height:1.35}

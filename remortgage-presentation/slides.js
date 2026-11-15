@@ -319,14 +319,62 @@ const slides=[
   ]
  },
  {
-  "title": "Where it goes next: your mortgage data, straight from your lender",
-  "notes": "One more piece before I step back, because it shows where this could go. Early in 2026 I worked on a concept for Monzo's Open Finance vision. Today we read your mortgage from your credit file, which updates slowly and has little detail. With Open Banking, you connect your lender directly, with consent you control: you choose the accounts, and you renew every ninety days. And with better data, Monzo can give you advice before you ask. 'You'll reach the next loan-to-value band before your deal ends.' 'You'd be better off overpaying than saving.' Or the honest one: 'switching now would cost you 2,900 pounds in early repayment charges.' This was shared with the FCA as part of Monzo's Open Finance work, and it landed really well.",
+  "title": "Before scaling, I audited the whole product",
+  "notes": "By the summer of 2026, things were about to scale. First-time buyers were the growth focus, and Habito was bringing more traffic into our flows. So before designing the next journey, I asked a different question: where should we invest first? I audited every journey that was live, ten of them, end to end, and I scored each one on seven lenses. I expected to find one or two broken journeys. Instead I found the same seven problems repeating everywhere. A small example: the same action had three different names, depending on where you opened it. So we didn't have one broken journey. We had a product that had grown piece by piece. My recommendation was to fix the cheap basics now, and to test the big structural change before rebuilding anything. I took that to the team as a first draft, with one rule: every row leaves with an owner.",
   "ask": [
    [
-    "Is this live?",
-    "No, it's a concept. Its job was to show the regulator and the business what better mortgage data would make possible."
+    "How did you score the journeys?",
+    "Seven lenses, from 1 to 5: things like how clear the user's job is, the risk when volume grows, and how confident we are in the evidence. I said out loud that the scores were assumptions. They were there to compare like for like, not to decide for us."
+   ],
+   [
+    "What were the seven problems?",
+    "Unclear user jobs, fragmented journeys, inconsistent entry points, weak recovery when something breaks, user states we didn't serve well, low evidence, and plain bugs."
    ]
   ]
+ },
+ {
+  "title": "Where I'd take it next",
+  "notes": "And this is where I'd take it next. I'll keep it short, because none of this has been built or tested yet. The first idea is a home screen that adapts. Today everyone sees the same mortgage screen. In this proposal, what you see depends on where you are: not connected, deal far away, deal about to end, or in the middle of a remortgage. You can see it changing on the right. It's low fidelity on purpose, because the next step would be to validate it. The second idea is better data. With Open Banking, people could connect their lender directly, and Monzo could give advice before you ask. That concept was shared with the FCA as part of Monzo's Open Finance work. If you'd like to see either of these in detail, they're in the appendix.",
+  "ask": []
+ },
+ {
+  "title": "I built a tool to get regulated designs approved faster",
+  "notes": "There's one more thing I want to show you, because it ran through all of this work and changed how I worked: AI. AI didn't set the direction. The research did. Where it helped was speed and risk. One of the slowest parts of the project wasn't design or engineering, it was approval. Every screen about rates, deals or recommendations went back and forth with Compliance. So I built a checker that we used inside Monzo. A team uploads the rules it has to follow, pastes its copy or drops in Figma screens, and it flags lines that might break a rule and drafts a fix. If something required is missing, like the APRC, which is the full yearly cost of the mortgage, it says so instead of making it up. It doesn't approve anything, Compliance still does, but the review can focus on the hard calls. Loans, Overdrafts and Wealth asked to use it too. I also used AI to analyse support conversations, and found that people were disconnecting their mortgage because the data was wrong. Let me show you the checker. This is a copy I rebuilt for this case study, with no Monzo data.",
+  "ask": [
+   [
+    "Does it replace Compliance?",
+    "No. It flags and suggests; Compliance approves. It means the review starts from a cleaner draft and can focus on the hard calls."
+   ]
+  ]
+ },
+ {
+  "title": "What moved, and what's still being measured",
+  "notes": "So, what came out of it? Between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent: around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. The vision became the team's North Star and part of the case for a new partnership model. In 2026 the work was about conversion. The Day 1 reframing and the push experiment launched in May. The progress tracker and the adviser chat were being built when I left in October. And the recommendation and the in-app application were designed, but not live yet. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
+  "ask": [
+   [
+    "What would you measure next?",
+    "Accepted recommendations first. Then whether people understand what they accepted: wrong turns, questions to the adviser, and how many come back after leaving."
+   ],
+   [
+    "What would you do differently?",
+    "Research the decision earlier. We spent a long time improving the way in before learning that the real barrier was the decision itself."
+   ]
+  ]
+ },
+ {
+  "title": "What I'd take to the next problem",
+  "notes": "Looking back, there are four things I'd take with me. One: growth at the top isn't growth. More referrals didn't help until we designed the middle of the funnel. Two: when two companies' systems meet, routing, consent and who you're talking to are design problems, not plumbing. Three: shipping fast is fine, as long as you agree the guardrails and the rollback before you start. And four: name the problem first. One word, compare versus broker, changed what people expected from the whole journey.",
+  "ask": []
+ },
+ {
+  "title": "Why this matters for Benefits",
+  "notes": "And I think that's why this is relevant for Benefits. From what I understand, Benefits works across international products, integrations and partners: providers whose systems you don't own, decisions that matter a lot to employees, and rules that change by country. That's the shape of the work I've been doing: making a service that spans several companies feel like one, being honest about what we know, and keeping people moving.",
+  "ask": []
+ },
+ {
+  "title": "Thank you. Where would you like to go deeper?",
+  "notes": "That's the story. Thank you. I'm happy to go deeper on any of these. And if it's useful, I can also show Monzo Flex, a credit card I redesigned, which has more mature results.",
+  "ask": []
  },
  {
   "title": "Where should we invest next? I audited the whole product",
@@ -383,43 +431,14 @@ const slides=[
   ]
  },
  {
-  "title": "I built a tool to get regulated designs approved faster",
-  "notes": "There's one more thing I want to show you, because it ran through all of this work and changed how I worked: AI. AI didn't set the direction. The research did. Where it helped was speed and risk. One of the slowest parts of the project wasn't design or engineering, it was approval. Every screen about rates, deals or recommendations went back and forth with Compliance. So I built a checker that we used inside Monzo. A team uploads the rules it has to follow, pastes its copy or drops in Figma screens, and it flags lines that might break a rule and drafts a fix. If something required is missing, like the APRC, which is the full yearly cost of the mortgage, it says so instead of making it up. It doesn't approve anything, Compliance still does, but the review can focus on the hard calls. Loans, Overdrafts and Wealth asked to use it too. I also used AI to analyse support conversations, and found that people were disconnecting their mortgage because the data was wrong. Let me show you the checker. This is a copy I rebuilt for this case study, with no Monzo data.",
+  "title": "Where it goes next: your mortgage data, straight from your lender",
+  "notes": "One more piece before I step back, because it shows where this could go. Early in 2026 I worked on a concept for Monzo's Open Finance vision. Today we read your mortgage from your credit file, which updates slowly and has little detail. With Open Banking, you connect your lender directly, with consent you control: you choose the accounts, and you renew every ninety days. And with better data, Monzo can give you advice before you ask. 'You'll reach the next loan-to-value band before your deal ends.' 'You'd be better off overpaying than saving.' Or the honest one: 'switching now would cost you 2,900 pounds in early repayment charges.' This was shared with the FCA as part of Monzo's Open Finance work, and it landed really well.",
   "ask": [
    [
-    "Does it replace Compliance?",
-    "No. It flags and suggests; Compliance approves. It means the review starts from a cleaner draft and can focus on the hard calls."
+    "Is this live?",
+    "No, it's a concept. Its job was to show the regulator and the business what better mortgage data would make possible."
    ]
   ]
- },
- {
-  "title": "What moved, and what's still being measured",
-  "notes": "So, what came out of it? Between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent: around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. The vision became the team's North Star and part of the case for a new partnership model. In 2026 the work was about conversion. The Day 1 reframing and the push experiment launched in May. The progress tracker and the adviser chat were being built when I left in October. And the recommendation and the in-app application were designed, but not live yet. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
-  "ask": [
-   [
-    "What would you measure next?",
-    "Accepted recommendations first. Then whether people understand what they accepted: wrong turns, questions to the adviser, and how many come back after leaving."
-   ],
-   [
-    "What would you do differently?",
-    "Research the decision earlier. We spent a long time improving the way in before learning that the real barrier was the decision itself."
-   ]
-  ]
- },
- {
-  "title": "What I'd take to the next problem",
-  "notes": "Looking back, there are four things I'd take with me. One: growth at the top isn't growth. More referrals didn't help until we designed the middle of the funnel. Two: when two companies' systems meet, routing, consent and who you're talking to are design problems, not plumbing. Three: shipping fast is fine, as long as you agree the guardrails and the rollback before you start. And four: name the problem first. One word, compare versus broker, changed what people expected from the whole journey.",
-  "ask": []
- },
- {
-  "title": "Why this matters for Benefits",
-  "notes": "And I think that's why this is relevant for Benefits. From what I understand, Benefits works across international products, integrations and partners: providers whose systems you don't own, decisions that matter a lot to employees, and rules that change by country. That's the shape of the work I've been doing: making a service that spans several companies feel like one, being honest about what we know, and keeping people moving.",
-  "ask": []
- },
- {
-  "title": "Thank you. Where would you like to go deeper?",
-  "notes": "That's the story. Thank you. I'm happy to go deeper on any of these. And if it's useful, I can also show Monzo Flex, a credit card I redesigned, which has more mature results.",
-  "ask": []
  }
 ];
 let current=0;
