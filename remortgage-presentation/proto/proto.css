@@ -53,6 +53,7 @@ body.proto-embed.is-bare .mg-tracker .mg-tracker-copy{display:none!important}
 .fl-layer.is-right{transform:translateX(100%)}
 .fl-layer.is-left{transform:translateX(-28%);opacity:.6}
 .fl-layer.is-down{transform:translateY(100%)}
+.fl-layer.is-clear{opacity:0}
 .fl-layer.is-back{transform:scale(.96);opacity:.75}
 .fl-layer.no-anim,.fl-layer.no-anim img{transition:none!important}
 .fl-tap{position:absolute;z-index:9;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:rgba(17,34,49,.28);border:2px solid rgba(255,255,255,.9);opacity:0;transform:scale(.4);pointer-events:none}

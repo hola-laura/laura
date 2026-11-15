@@ -57,7 +57,7 @@ const slides=[
  },
  {
   "title": "Five chapters, five decisions",
-  "notes": "So here's how I'll walk you through it, in five chapters. First, the reset, when we paused to listen. Second, the vision that came out of it. Third, reach: getting to people before they were ready. Fourth, and this is the biggest part, what happened after Monzo bought Habito, where I'll go through four decisions. And finally, how I work with AI, the results, and what I learned.",
+  "notes": "So here's how I'll walk you through it, in six chapters. First, the reset, when we paused to listen. Second, the vision that came out of it. Third, reach: getting to people before they were ready. Fourth, and this is the biggest part, what happened after Monzo bought Habito, where I'll go through four decisions. Fifth, a moment where I stepped back and audited the whole product. And finally, how I work with AI, the results, and what I learned.",
   "ask": []
  },
  {
@@ -147,6 +147,16 @@ const slides=[
   ]
  },
  {
+  "title": "First, I became the customer",
+  "notes": "Before I show you the tree, one step back. When the numbers dropped, the first thing I did wasn't to open Figma and design. I went through the journey myself. On the 17th of April I applied through Habito as a real customer, from the first tap in Monzo to the mortgage illustration, and I kept every screen, every email and every document in one page. That's the wall you see here. It made three things obvious that no dashboard showed. Halfway through, you get a second account and a second brand. You fill in a long form before you get any value back. And the recommendation and the messages live on Habito's website, not in Monzo. It gave the team one shared picture of the journey as it really was. And it's what I brought into the workshop.",
+  "ask": [
+   [
+    "Why do it yourself, and not rely on research?",
+    "Research tells you what people say. Going through it tells you what the journey asks of them, step by step. I needed both: Layla's interviews for the why, and my own run for the where."
+   ]
+  ]
+ },
+ {
   "title": "One outcome, five opportunities — and who can fix each one",
   "notes": "This is the tree, simplified. At the top, one outcome: more recommendations accepted. Under it, the problem: high-intent customers don't feel confident enough, at the moment they see the recommendation, to act. Then five opportunity areas. Relevance: the recommendation feels generic, with no reasoning or human behind it. Experience break: being kicked out of Monzo. One customer described it as being palmed off to another organisation. Timing: people are still exploring when the recommendation lands. Momentum: they were ready, but our follow-up was slow and easy to miss. And friction: a long form that's hard to pick back up. The part I found most useful was the last row. For each area I asked two questions: is it a root cause, or something that makes it worse? And is it in Monzo's power, or in Habito's? Relevance, for example, was mostly in Habito's hands, because they write the recommendation. That told us where design in Monzo could make the biggest difference, and the next decisions map straight onto it.",
   "ask": [
@@ -204,7 +214,7 @@ const slides=[
  },
  {
   "title": "Decision 3 · Make the recommendation something you can trust",
-  "notes": "So I designed the recommendation inside Monzo around the three questions people kept asking: why this deal for me, what does it really cost compared to the alternatives, and what happens if I say yes. That last one matters for timing: we tell people they're not signing today, and that they can chat with their adviser first. Every line here is regulated, so I worked through it closely with Compliance. And for momentum, we launched an experiment: a push notification the moment the recommendation is ready, on day zero and day three, instead of only on day three, landing on the progress tracker. All of it was measured on accepted recommendations, the team's main metric for the year. The recommendation itself was at its second version, with the team's feedback in, when I left. Let me show you the flow.",
+  "notes": "So I designed the recommendation inside Monzo around the three questions people kept asking: why this deal for me, what does it really cost compared to the alternatives, and what happens if I say yes. That last one matters for timing: we tell people they're not signing today, and that they can chat with their adviser first. Every line here is regulated, so I worked through it closely with Compliance. And for momentum, we launched an experiment: a push notification the moment the recommendation is ready, on day zero and day three, instead of only on day three, landing on the progress tracker. All of it was measured on accepted recommendations, the team's main metric for the year. Let me show you how the recommendation itself took shape.",
   "ask": [
    [
     "Why a push on day zero?",
@@ -217,8 +227,38 @@ const slides=[
   ]
  },
  {
+  "title": "First version: decide inside Monzo",
+  "notes": "So this is the first version of the recommendation in the app, from June. The goal was written at the top of my file: increase the acceptance rate by helping people decide confidently when they're ready, or defer on purpose, without dropping off. Three decisions here. First, it's framed through the adviser, not an algorithm: 'Will's top pick for you', 'a note from Will'. A person does the heavy lifting for trust. Second, there's a top pick, but the alternatives sit beside it, with the reasoning, so it never feels pushy. And third, we couldn't avoid the hand-off to Habito yet, so we say it out loud: 'Taking you back to Habito to continue. You can always come back to Monzo to check your progress.' A hand-off you announce feels very different from one that just happens to you.",
+  "ask": [
+   [
+    "Why keep the hand-off at all?",
+    "At that point the application still lived on Habito's side. Hiding that would have broken trust the moment the brand changed. Saying it was the honest version, until decision 5 moved the form."
+   ]
+  ]
+ },
+ {
+  "title": "Decision support, not decision pressure",
+  "notes": "The part I'm most proud of is not the happy path. It's the two ways this goes wrong. The first one is: I'm interested, but I'm not ready. A screen with only accept and reject loses all of those people. So I added a third button, 'I need more time'. You choose when you want to be reminded, and the recommendation waits for you in the tracker. In my file I called this section 'fear of commitment'. The second is when the lender withdraws the rate, which happens all the time. Instead of an error, the adviser speaks first: 'I'm already looking at alternatives for you', and other options are right there. I called the principle 'decision support, not decision pressure'. The design protects the relationship with people who aren't ready, instead of forcing a yes or a no.",
+  "ask": [
+   [
+    "Doesn't 'I need more time' just lower conversion?",
+    "It lowers same-day conversion and protects total conversion. A mortgage is decided over weeks. A reminder the customer chose is a way back. A rejected offer isn't."
+   ]
+  ]
+ },
+ {
+  "title": "Four rounds before the version you're about to see",
+  "notes": "And it didn't stay there. This went through four rounds in about four months, and each round answered a gap the previous one left. In June, the top pick with alternatives. Then I reviewed my own design against the research and wrote down what it didn't cover: you couldn't reach the adviser from that screen, and there was no honest sense of urgency. The second round, in low fidelity, led with the total cost instead of the monthly rate, and it compared staying with your lender against switching, in pounds. The third went to a design crit on the 17th of September: a hub with tools, like stress-testing the deal. The feedback was that it showed too much at once, so I moved to more progressive disclosure. And that became version 2.1, which is the one I'll show you now.",
+  "ask": [
+   [
+    "What did the crit change?",
+    "How much was on the first screen. Before, reasons, tools and timeline all competed. After, one recommendation and its reasons, and the rest behind a tap."
+   ]
+  ]
+ },
+ {
   "title": "The recommendation, inside Monzo",
-  "notes": "Here's the flow, built from my Figma frames. It starts in the tracker: your recommendation is ready. Then one screen with the deal and what you pay each month. 'Why this is your best deal' gives the adviser's reasons. 'How this deal was calculated' shows the real cost over the whole deal, not just the monthly payment. And you can see the deals we ruled out. Before you commit, you see every detail, and you can accept, reject, or chat with your adviser. And the last screen tells you what happens next. The figures and some of the copy are placeholders.",
+  "notes": "And this is version 2.1, built from my Figma frames. It starts in the tracker: your recommendation is ready. Then one screen with the deal and what you pay each month. 'Why this is your best deal' gives the adviser's reasons. 'How this deal was calculated' shows the real cost over the whole deal, not just the monthly payment. And you can see the deals we ruled out. Before you commit, you see every detail, and you can accept, reject, or chat with your adviser. And the last screen tells you what happens next. The figures and some of the copy are placeholders.",
   "ask": [
    [
     "Was this built?",
@@ -261,15 +301,84 @@ const slides=[
  {
   "title": "Your adviser, one tap away",
   "notes": "Here's how it looks. The adviser has a permanent place in the tracker, with a label that says who it is and what it's for. One tap, and you're in a chat that is clearly about your mortgage. And when the adviser sends your recommendation, it opens in the app, not on another website. One honest detail: the label here still says 'Chatting on Habito.com', because that's what was live. The in-app version replaces it.",
-  "ask": []
+  "ask": [
+   [
+    "What if the adviser still sends the old link to Habito's site?",
+    "We planned for that. For a Monzo customer, a message that only links to the recommendation on the web is hidden, so there aren't two doors to the same thing."
+   ]
+  ]
  },
  {
   "title": "Decision 5 · Move the application into Monzo, pre-filled",
-  "notes": "And finally, the application form, which was the most fragmented part of the journey. It lived on Habito's website, outside Monzo, and it was long. In 2025 almost half of people dropped out there, and two thirds were applying with a partner. So I designed the application inside Monzo, with two decisions I care about. First, pre-fill: instead of typing everything, you confirm what Monzo already knows about you, which answers 'use what you already know about me'. Second, save and come back later, because nobody has all their mortgage details at hand in one go. And it's measured step by step, so the team can see exactly where people stop. What you see on the right is the start: what you'll need and how long it takes, before the first question. We also wanted your partner to be able to join and fill in their part. Habito's operations only allow one account per application, so that's still an open topic with them. Looking further ahead, we want people to fill it in by voice, and to bring in data from other banks through Open Banking. We took that vision to the FCA as part of our Open Finance work, and it landed really well. I'm happy to show it if you're interested; the link is right here on the slide. The in-app application wasn't live when I left, so I won't claim it lifted conversion.",
+  "notes": "And finally, the application form, which was the most fragmented part of the journey. It lived on Habito's website, outside Monzo, and it was long. In 2025 almost half of people dropped out there, and two thirds were applying with a partner. So I designed the application inside Monzo, with two decisions I care about. First, pre-fill: instead of typing everything, you confirm what Monzo already knows about you, which answers 'use what you already know about me'. Second, save and come back later, because nobody has all their mortgage details at hand in one go. And it's measured step by step, so the team can see exactly where people stop. What you see on the right is the start: what you'll need and how long it takes, before the first question. We also wanted your partner to be able to join and fill in their part. Habito's operations only allow one account per application, so that's still an open topic with them. Looking further ahead, we want people to fill it in by voice, and to bring in data from other banks through Open Banking. We took that vision to the FCA as part of our Open Finance work, and it landed really well. You'll see a glimpse of it on the next slide. The in-app application wasn't live when I left, so I won't claim it lifted conversion.",
   "ask": [
    [
     "Why can't a partner join the application?",
     "Habito's operations work with one account per application. Changing that is an operational change on their side, not a design one. So I designed for one person filling in both parts, and we kept the conversation open."
+   ]
+  ]
+ },
+ {
+  "title": "Where it goes next: your mortgage data, straight from your lender",
+  "notes": "One more piece before I step back, because it shows where this could go. Early in 2026 I worked on a concept for Monzo's Open Finance vision. Today we read your mortgage from your credit file, which updates slowly and has little detail. With Open Banking, you connect your lender directly, with consent you control: you choose the accounts, and you renew every ninety days. And with better data, Monzo can give you advice before you ask. 'You'll reach the next loan-to-value band before your deal ends.' 'You'd be better off overpaying than saving.' Or the honest one: 'switching now would cost you 2,900 pounds in early repayment charges.' This was shared with the FCA as part of Monzo's Open Finance work, and it landed really well.",
+  "ask": [
+   [
+    "Is this live?",
+    "No, it's a concept. Its job was to show the regulator and the business what better mortgage data would make possible."
+   ]
+  ]
+ },
+ {
+  "title": "Where should we invest next? I audited the whole product",
+  "notes": "By the summer of 2026, I'd been designing one journey at a time for a long while. And three things were changing at once. Homeownership was moving from a feature for existing customers to an acquisition bet. First-time buyers were the growth focus for the second half. And Habito was bringing more capability, and more traffic, into our flows. So I asked a different question: before we scale all of this, where should we invest first? I audited every journey that was live in production, ten of them, end to end. Not concepts, not experiments: what customers really see. I scored each one on seven lenses, things like how clear the user's job is, the risk when volume grows, and how confident we are in the evidence. And I was open about it: the scores are assumptions. They're there to compare like for like, not to decide for us.",
+  "ask": [
+   [
+    "Why score, if the scores are assumptions?",
+    "To look at ten journeys with the same eyes. The framework made the comparison consistent. Strategy made the final call."
+   ]
+  ]
+ },
+ {
+  "title": "Not one broken journey. A product that grew piece by piece.",
+  "notes": "Here's what I found, and it wasn't what I expected. I expected one or two journeys to stand out as the broken ones. Instead I found good improvements everywhere, and the same seven problems repeating: unclear user jobs, fragmented journeys, inconsistent entry points, weak recovery when something breaks, user states we don't serve well, low evidence, and plain bugs. A small example: the same action had three names. 'Track your mortgage' in the Home tab, 'Home equity' in the Grow tab, 'See mortgage' in the plus menu. So the conclusion was that we didn't have one broken journey. We had a product that had grown piece by piece. And that changes the decision: fixing journeys one by one wouldn't solve it. The biggest return was in the foundations they all rely on.",
+  "ask": []
+ },
+ {
+  "title": "A strawman, a workshop, and an owner for every row",
+  "notes": "An audit is only useful if it changes what the team does. So I didn't present a list of problems. I presented a strawman, and I said the word out loud: this is my first pass, please pull it apart. Four buckets. Fix now: the cheap, high-impact basics. Validate first: the Focus View, which is a big structural bet, so test it before rebuilding. Decision needed: two questions that are product calls, not design ones, like whether connecting a mortgage should be the gateway at all. And park, which I left empty on purpose, so the room would decide what we choose not to do. Then I designed a sixty-minute workshop with Design, Product, Engineering and Data, each with their own lens, and one rule: every row leaves with an owner. The trade-off I recommended was to wait on the Focus View rebuild until it was validated. Slower to visible change, but it stops us scaling the wrong structure.",
+  "ask": [
+   [
+    "Why a strawman?",
+    "Agreeing with a blank page is easy and useless. A concrete position gives people something to push against, and the disagreement is where the value is."
+   ],
+   [
+    "Why are some of these not design decisions?",
+    "Whether connecting a mortgage is the gateway changes the whole funnel and the business case. Design can show the options and the cost of each. Product has to own the call."
+   ]
+  ]
+ },
+ {
+  "title": "One home screen, eleven states",
+  "notes": "The audit pointed at one place to start: the Focus View. It's the home screen for your mortgage, the room every other journey opens into. And it had one design for everyone. So my proposal was a state machine: what you see depends on where you are in your mortgage. Watch it change. First visit, not connected: one clear action. Returning after looking at rates. Just connected: we celebrate first, we don't dump data. Deal far away: calm, equity and timeline. Then, as the deal end gets closer, the tone shifts from calm to urgent, and remortgaging becomes the main action. While you're remortgaging, the tracker is the hero. And there's a state for when the data fails, and one for variable-rate mortgages, where there's no deal end at all. The first principle is the important one: state-driven, not feature-driven. It's low fidelity on purpose. The decision was to validate it before rebuilding.",
+  "ask": [
+   [
+    "Eleven states. Isn't that too many?",
+    "For the customer it's always one screen with one main action. The states are for the team: they make every case explicit, so nobody finds out in production that a joint mortgage breaks the layout."
+   ]
+  ]
+ },
+ {
+  "title": "Four decisions I'd defend",
+  "notes": "Four decisions inside it that I'd defend. One: value without connecting. Most people haven't connected a mortgage, and before this they had no home here at all. If you only looked at rates, your saved rates are the first thing you see when you come back. Your earlier visit counts. Two: make the cost concrete. Not 'your deal ends soon', but what you pay now and what you'll pay if you do nothing. That's urgency the customer can check. Three: the remortgage tracker lives in the home screen, not on a separate one. The home is the hub for everything about your mortgage. And four: never a dead end. If the data doesn't load, we show the last numbers we had, with the date. And the whole thing is resolved each time the screen opens, with three questions: are you connected, are you remortgaging, and how many months until your deal ends.",
+  "ask": []
+ },
+ {
+  "title": "Two mortgages, one home: four ways to show it",
+  "notes": "The last piece of this chapter is an edge case that turned out to be a foundation. Our tools were built for one person with one mortgage. But people have two mortgages on one home, or a couple shares one, and then the numbers got confusing: one deal-end date for two products, or two partners seeing a different value for the same house. For our UX days I explored four ways to show it: a property overview, stacked sections, a switcher, and combining both into one deal, which could even save money. The useful part was the insight underneath. The data already added up at the level of the property. The screen didn't. So the answer to every case was the same: show the property first, then its mortgages. And I'd start with the cheapest fix: the case where both mortgages were already on screen and simply rendered badly.",
+  "ask": [
+   [
+    "Which one would you ship?",
+    "The property overview as the structure, because it works for one mortgage or five. Combining into one deal is the commercial idea I'd test next, with care about early repayment charges."
    ]
   ]
  },

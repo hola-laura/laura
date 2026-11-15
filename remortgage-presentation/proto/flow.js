@@ -32,6 +32,21 @@
         {img: 'rec-main.png', step: 2, hold: 3400}
       ]
     },
+    apply: {
+      steps: ['A push when it’s ready', 'The adviser’s top pick, and the alternatives', 'Every detail of the deal', 'What happens next, before you leave', 'The hand-off, said out loud', 'Back to your progress'],
+      beats: [
+        {img: 'ap-push.png', step: 0, hold: 2000, tap: [150, 726], go: 'fade'},
+        {img: 'ap-main.png', step: 1, hold: 3400, scroll: 420, scrollMs: 1900, tap: [100, 270], go: 'push'},
+        {img: 'ap-drill.png', step: 2, hold: 4200, scroll: 1634, scrollMs: 3200, tap: [201, 770], go: 'push'},
+        {img: 'ap-steps.png', step: 3, hold: 2800, tap: [201, 820], go: 'fade'},
+        {img: 'ap-handoff.png', step: 4, hold: 2000, go: 'fade'},
+        {img: 'ap-tracker.png', step: 5, hold: 3400, scroll: 259}
+      ]
+    },
+    focus: {
+      steps: ['First visit', 'Returning · saw rates', 'In market, not connected', 'Just connected', 'Stable · deal far away', 'Approaching · 7–12 months', 'In market · under 6 months', 'Remortgaging', 'Remortgage complete', 'Data unavailable', 'Variable rate · no deal end'],
+      beats: Array.from({length: 11}, (_, i) => ({img: `fv-${String(i + 1).padStart(2, '0')}.png`, step: i, hold: 2500, go: 'fade'}))
+    },
     app: {
       steps: ['Before you start', 'What happens next'],
       beats: [
@@ -68,6 +83,9 @@
     setScroll(img, beat.from || 0, 0);
     if (!how || reduced) {
       incoming.className = 'fl-layer no-anim'; incoming.style.zIndex = 2; outgoing.style.zIndex = 1;
+    } else if (how === 'fade') {
+      place(incoming, 'is-clear'); incoming.style.zIndex = 2; outgoing.style.zIndex = 1;
+      incoming.className = 'fl-layer';
     } else if (how === 'push') {
       place(incoming, 'is-right'); incoming.style.zIndex = 2; outgoing.style.zIndex = 1;
       incoming.className = 'fl-layer'; outgoing.className = 'fl-layer is-left';

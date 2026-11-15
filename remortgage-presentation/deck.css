@@ -244,3 +244,32 @@
 .slide .bet p{font-size:17px;line-height:1.4;margin:0;color:#31444f}
 .bet p small{display:block;margin-top:5px;font-size:13px;color:#7d8a93;font-weight:600}
 .bet p:last-child{color:#a8322a}
+
+/* v7 designs */
+.slide img.shot{border-radius:18px;box-shadow:0 14px 30px rgba(17,34,49,.2);object-fit:cover!important;object-position:top!important;flex:none;max-width:none;background:#f2f8f3}
+.shots{display:flex;gap:14px;margin:14px 0 16px}
+.pathcard p{font-size:18px!important;line-height:1.4}
+.pathcard p.small{font-size:15px!important;color:#6b7a84!important;margin-top:8px}
+.rounds{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:22px}
+.rounds.five{grid-template-columns:repeat(4,190px) 1fr;gap:20px}
+.round{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.round em{font-style:normal;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+.round.hot em{color:var(--coral)}
+.round h3{font-size:21px;margin:8px 0 0;line-height:1.2}
+.slide .round p{font-size:16px;line-height:1.4;margin:0;color:#44555f}
+.wall{height:640px;border-radius:26px;overflow:hidden;background:#16233f;box-shadow:0 20px 40px rgba(17,34,49,.25);align-self:center}
+.wall img{width:100%;display:block}
+.slide.active .wall img{animation:wallpan 26s ease-in-out infinite alternate}
+@keyframes wallpan{from{transform:translateY(0)}to{transform:translateY(calc(-100% + 640px))}}
+.pan{margin-top:26px;height:330px;border-radius:24px;overflow:hidden;background:#0c1720}
+.slide .pan img{height:330px!important;width:auto!important;display:block;max-width:none!important}
+.slide[data-k="openfin"] .grid{align-items:start}
+.slide[data-k="openfin"] .card{min-height:0!important;height:auto!important}
+.slide.active .pan img{animation:pan 44s linear infinite alternate}
+@keyframes pan{from{transform:translateX(0)}to{transform:translateX(calc(-100% + 1432px))}}
+.thumbs{align-self:center;display:flex;flex-direction:column}
+.thumbs img{width:100%;border-radius:18px;box-shadow:0 16px 34px rgba(17,34,49,.22);display:block}
+.thumbs span{font-size:14px;color:#7d8a93;margin-top:10px}
+.thumbs.two{flex-direction:row;gap:14px;align-items:center}
+.thumbs.two img{width:calc(50% - 7px)}
+@media (prefers-reduced-motion:reduce){.wall img,.pan img{animation:none!important}}
