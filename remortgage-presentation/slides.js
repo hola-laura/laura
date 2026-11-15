@@ -1,7 +1,7 @@
 const slides=[
  {
   "title": "Remortgaging at Monzo, 2025–26",
-  "notes": "Hi, I'm Laura. I joined Monzo's Homeownership team when the product didn't make any money yet, so I've seen it go from an engagement feature to a revenue line. Today I'll focus on 2025 and 2026: the moment we reset the strategy, and everything that happened from there. My title was Senior Product Designer. For most of that time I was the only designer in the squad, so I led the design. But first, two minutes of context, so the reset makes sense.",
+  "notes": "Hi, I'm Laura. I joined Monzo's Homeownership team when the product didn't make any money yet, so I've seen it go from an engagement feature to a revenue line. Today I'll focus on 2025 and 2026: the moment we reset the strategy, and everything that happened from there. My title was Senior Product Designer. For most of that time I was the only designer in the squad, so I led the design. If you remember one thing from this talk, make it this: we beat our referral goal by 75 percent, and the mortgages didn't follow. Most of what I'll show you is how I found out why, and what I designed to fix it. But first, two minutes of context, so the reset makes sense.",
   "ask": []
  },
  {
@@ -134,7 +134,7 @@ const slides=[
  },
  {
   "title": "More referrals didn't mean more mortgages",
-  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, another mortgage broker, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. This chart only covers the first months with Habito, so the figure is different from the one on the reach slide: here, 53 percent above plan. But more referrals didn't mean more mortgages. Remember, the money only arrives when a mortgage completes, and that can be months after the referral. So the team steered by an earlier signal, one we could read in weeks: accepted recommendations. A recommendation is the deal the adviser proposes, and accepting it is the first moment a customer commits. Far fewer people went on to submit an application to a lender than we expected: about 6 to 6.5 percent, against 9 to 10 percent with Better. It isn't a like-for-like comparison, because Better put a phone call first and Habito doesn't. But the gap was real enough to act on. The team's goal for the first half was to take accepted recommendations from about 400 to 1,000. But the surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. So I went to find out why, in two steps.",
+  "notes": "Then the partner changed. At the end of 2025 Monzo agreed to buy Habito, another mortgage broker, and from December our customers started going to Habito instead of Better. The reach work kept paying off: referrals were well above plan. But more referrals didn't mean more mortgages. Remember, the money only arrives when a mortgage completes, and that can be months after the referral. So the team steered by an earlier signal, one we could read in weeks: accepted recommendations. A recommendation is the deal the adviser proposes, and accepting it is the first moment a customer commits. And fewer people were getting to the end than before: roughly six in a hundred went on to submit an application to a lender, against nine or ten with Better. It isn't a like-for-like comparison, because Better put a phone call first and Habito doesn't. But the gap was real enough to act on. The surprising part was where they dropped. It wasn't at the start. It was after the recommendation: people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then didn't go ahead. That's when intent should be highest, so it couldn't just be the quality of the traffic. So I went to find out why, in two steps.",
   "ask": [
    [
     "Why accepted recommendations and not revenue?",
@@ -147,6 +147,10 @@ const slides=[
    [
     "What were the real numbers?",
     "From referral to submission we were at about 6 to 6.5 percent with Habito, against 9 to 10 percent with Better. And the goal for the first half was to take accepted recommendations from about 400 to 1,000."
+   ],
+   [
+    "This chart says 153 percent of plan, but earlier you said 75 percent above goal?",
+    "They're different periods. The 75 percent is the whole reach period, from late 2025 to spring 2026. This chart only covers the first months with Habito."
    ]
   ]
  },
@@ -236,7 +240,7 @@ const slides=[
  },
  {
   "title": "The quick win: tell people the moment it’s ready",
-  "notes": "Before redesigning the recommendation itself, there was a quicker win. Remember the tree: people were ready, but our follow-up was slow. At that point, the only push notification we sent came three days after the recommendation was issued. So the first experiment was simple: send it on day zero as well, the moment the recommendation is ready, when people care most. The design question was where that push should land. I explored two options. Option A was a short screen in between. It tells you your recommendation is ready, shows that Habito is regulated and fee-free, and then takes you there. Two taps, and a whole screen to build trust, but it was a new screen to build. Option B opened the progress tracker, a screen people already knew, with the button on the current step. Three taps, and more on the screen to distract you, but nothing new to build. A was the cleaner test. B was faster. What launched, in May, was B: the tracker already existed, so we could test momentum quickly. It was measured on accepted recommendations.",
+  "notes": "Before redesigning the recommendation itself, there was a quicker win. Remember the tree: people were ready, but our follow-up was slow. At that point, the only push notification we sent came three days after the recommendation was issued. So the first experiment was simple: send it on day zero as well, the moment the recommendation is ready, when people care most. The design question was where that push should land. I explored two options. Option A was a short screen in between. It tells you your recommendation is ready, shows that Habito is regulated and fee-free, and then takes you there. Two taps, and a whole screen to build trust, but it was a new screen to build. Option B opened the progress tracker, a screen people already knew, with the button on the current step. Three taps, and more on the screen to distract you, but nothing new to build. On paper I preferred A: it was the cleaner test. But the tracker already existed, so B let us test momentum quickly, and that's what launched in May. It was the right trade. Learning fast mattered more than my cleaner test. It was measured on accepted recommendations.",
   "ask": [
    [
     "What did you measure?",
@@ -392,7 +396,7 @@ const slides=[
  },
  {
   "title": "What moved, and where each customer ask stands today",
-  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. I won't read every row. Three things are live: pre-fill, the push when your recommendation is ready, and, since this November, the application inside Monzo. The recommendation inside Monzo and the 'I need more time' option are designed. The new tracker was in build in October. And the adviser chat is paused for this year. On the numbers: referrals ended about 75 percent above our goal. As I said, that's a leading indicator, and I'd rather tell you that than claim an uplift I can't prove. And first-time buyers launched on the 11th of November. I did the vision and the design of that first release.",
+  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. I won't read every row. Three things are live: pre-fill, the push when your recommendation is ready, and, since this November, the application inside Monzo. The recommendation inside Monzo and the 'I need more time' option are designed. The new tracker was in build in October. And the adviser chat is paused for this year. On the numbers: referrals ended about 75 percent above our goal. As I said, that's a leading indicator, and I'd rather tell you that than claim an uplift I can't prove. And I want to be straight about 2026: by October, most of what I designed for Habito was in build or waiting its turn. So from that year I can show you the diagnosis, the decisions and the designs, but not yet the uplift. And first-time buyers launched on the 11th of November. I did the vision and the design of that first release.",
   "ask": [
    [
     "What would you measure next?",
