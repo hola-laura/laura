@@ -96,7 +96,7 @@ const slides=[
  },
  {
   "title": "I turned the vision into bets the team could ship",
-  "notes": "But a vision only matters if it changes what you ship. So we broke it down into now, next and later. Some things were no-brainers that didn't need a test. One of them was mine: I improved the progress tracker so customers saw their status closer to real time. You'll see where that tracker ended up later. Others were experiments on the riskiest assumptions, like letting people choose between talking to an adviser first or seeing deals first. That one we had to park when Habito arrived, and I'll come back to it when we get to the adviser chat. In June I led a value-proposition workshop with Product Marketing, Research and our Product Director, built around two kinds of customers: comparers, who want to look at deals themselves, and delegators, who want an expert to handle it. That gave us the differentiators to design for: personalised insights, forms filled in for you, and flexible contact. And keep an eye on the 'later' column: two of those became my work in 2026.",
+  "notes": "But a vision only matters if it changes what you ship. So we broke it down into now, next and later. Some things were no-brainers that didn't need a test. One of them was mine: I improved the progress tracker so customers saw their status closer to real time. You'll see where that tracker ended up later. Others were experiments on the riskiest assumptions, like letting people choose between talking to an adviser first or seeing deals first. That one we had to park when Habito arrived, and I'll come back to it when we get to the adviser chat. One more thing from 2025. In research we saw that people thought we were a comparison site. We were leading with 'more than 100 lenders', instead of the help of a mortgage expert. I proposed changing that, and drop-off went down. I don't have the exact number. I also led a value-proposition workshop in June, built around two kinds of customers: comparers, who want to look at deals themselves, and delegators, who want an expert to handle it. And keep an eye on the 'later' column: two of those became my work in 2026.",
   "ask": [
    [
     "What happened to the adviser-first test?",
@@ -106,7 +106,7 @@ const slides=[
  },
  {
   "title": "Reach people before they're ready to remortgage",
-  "notes": "Now, reach. While the move to a new partner was being worked out, we still had a revenue target with Better. So from the second half of 2025, we focused on what we could control: reach. Our hypothesis was simple: growth was limited by how many people we could reach. Most people who were about to remortgage hadn't connected their mortgage, so we simply couldn't see them. To give you the scale: about 600,000 customers had connected a mortgage, and about two and a half million had one that we couldn't see. I designed ways in that didn't need a connection: adding your deal-end date, indicative rates and estimated deals. I also designed Focus View, where your home screen changes depending on where you are in the journey, and the move of Homeownership into the Grow tab. We ran all of this as a fast series of experiments, and I kept an experiment file in Figma linking every design to its hypothesis and its result. It became the team's source of truth, so we stopped repeating failed tests. It's linked here on the slide, together with the Grow tab work. Between late 2025 and spring 2026 we beat our referral goal by about 75 percent: around 7,500 referrals against a goal of 4,300. So the hypothesis held. But keep one thing in mind: referrals are a leading indicator, not the result. That matters in the next chapter. The catch was that indicative rates are regulated, so every word mattered. I'll come back to that when I talk about AI.",
+  "notes": "Now, reach. While the move to a new partner was being worked out, we still had a revenue target with Better. So from the second half of 2025, we focused on what we could control: reach. Our hypothesis was simple: growth was limited by how many people we could reach. Most people who were about to remortgage hadn't connected their mortgage, so we simply couldn't see them. To give you the scale: about 600,000 customers had connected a mortgage, and about two and a half million had one that we couldn't see. I designed ways in that didn't need a connection: adding your deal-end date, indicative rates and estimated deals. I also designed Focus View, where your home screen changes depending on where you are in the journey, and the move of Homeownership into the Grow tab. We ran all of this as a fast series of experiments. The hypotheses and the designs were mine, the team built them, and the data told us what was working. and I kept an experiment file in Figma linking every design to its hypothesis and its result. It became the team's source of truth, so we stopped repeating failed tests. It's linked here on the slide, together with the Grow tab work. Between late 2025 and spring 2026 we beat our referral goal by about 75 percent: around 7,500 referrals against a goal of 4,300. So the hypothesis held. But keep one thing in mind: referrals are a leading indicator, not the result. That matters in the next chapter. The catch was that indicative rates are regulated, so every word mattered. I'll come back to that when I talk about AI.",
   "ask": [
    [
     "Which experiment worked best?",
@@ -114,7 +114,7 @@ const slides=[
    ],
    [
     "Is the 75 percent your result?",
-    "It's a team number: design, CRM and optimisation together. My part was the entry points and the design of each experiment."
+    "The hypotheses and the design of each experiment were mine. Engineering built them, and the data told us what was working and what wasn't."
    ]
   ]
  },
@@ -310,11 +310,15 @@ const slides=[
  },
  {
   "title": "Move the application into Monzo, pre-filled",
-  "notes": "And finally, the application form, which was the most fragmented part of the journey. It lived outside Monzo, on the broker's website, and it was long. With Better, in 2025, almost half of people dropped out there, and two thirds were applying with a partner. With Habito, it was still on a separate website. So I designed the application inside Monzo, with two decisions I care about. First, pre-fill: instead of typing everything, you confirm what Monzo already knows about you, which answers 'use what you already know about me'. Second, save and come back later, because nobody has all their mortgage details at hand in one go. And it's measured step by step, so the team can see exactly where people stop. What you see on the right is the start: what you'll need and how long it takes, before the first question. We also wanted your partner to be able to join and fill in their part. Habito's operations only allow one account per application, so that's still an open topic with them. Looking further ahead, we want people to fill it in by voice, and to bring in data from other banks through Open Banking. We took that vision to the FCA as part of our Open Finance work, and it landed really well. You'll see a glimpse of it on the next slide. The in-app application wasn't live when I left, so I won't claim it lifted conversion.",
+  "notes": "And finally, the application form, which was the most fragmented part of the journey. It lived outside Monzo, on the broker's website, and it was long. With Better, in 2025, almost half of people dropped out there. With Habito, it was still on a separate website. So I designed the application inside Monzo, with two decisions I care about. First, pre-fill: instead of typing everything, you confirm what Monzo already knows about you. That answers 'use what you already know about me'. Second, save and come back later, because nobody has all their mortgage details at hand in one go. And it's measured step by step, so the team can see exactly where people stop. On the right you can see two versions. The first one is a simple form, and it went live this November, after I left. The next one breaks the form into five sections, tells you how long it takes, and keeps your progress. I never saw it live, so I won't claim it lifted conversion.",
   "ask": [
    [
     "Why can't a partner join the application?",
     "Habito's operations work with one account per application. Changing that is an operational change on their side, not a design one. So I designed for one person filling in both parts, and we kept the conversation open."
+   ],
+   [
+    "Is the application live?",
+    "The first version, a simple form, went live in November 2026, after I left. I designed it, but I never saw it live, so I don't have its numbers."
    ]
   ]
  },
@@ -348,8 +352,8 @@ const slides=[
   ]
  },
  {
-  "title": "What moved, and where each customer ask stood when I left",
-  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. Don't send me out: the recommendation and the application inside Monzo are designed, but not live yet. Use what you know: pre-fill went live for everyone on the 1st of May, with the Day 1 launch. Let me choose: the 'I need more time' option is designed, and the adviser chat in the app was designed and then paused for this year. Tell me what's happening: the push on day zero and day three launched in May, and the new progress tracker was being built when I left in October. And on the numbers: between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent, around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
+  "title": "What moved, and where each customer ask stands today",
+  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. Don't send me out: the application inside Monzo went live this November, after I left, and the recommendation inside Monzo is designed. Use what you know: pre-fill went live for everyone on the 1st of May, with the Day 1 launch. Let me choose: the 'I need more time' option is designed, and the adviser chat in the app was designed and then paused for this year. Tell me what's happening: the push on day zero and day three launched in May, and the new progress tracker was being built when I left in October. And on the numbers: between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent, around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
   "ask": [
    [
     "What would you measure next?",
