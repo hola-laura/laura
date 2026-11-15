@@ -56,8 +56,8 @@ const slides=[
   "ask": []
  },
  {
-  "title": "Five chapters, five decisions",
-  "notes": "So here's how I'll walk you through it, in six chapters. First, the reset, when we paused to listen. Second, the vision that came out of it. Third, reach: getting to people before they were ready. Fourth, and this is the biggest part, what happened after Monzo bought Habito, where I'll go through four decisions. Fifth, a moment where I stepped back and audited the whole product. And finally, how I work with AI, the results, and what I learned.",
+  "title": "How I’ll walk you through it",
+  "notes": "So here's how I'll walk you through it: six chapters, in the order they happened. First, the reset, when we paused to listen to customers. Second, the vision that came out of it: one journey, inside Monzo. Third, reach: the experiments we ran to get to people earlier. Fourth, and this is the biggest part, Habito: bringing the journey into the app. Fifth, what's next: an audit of the whole product, and first-time buyers. And finally, how I work with AI, the results, and what I learned.",
   "ask": []
  },
  {
