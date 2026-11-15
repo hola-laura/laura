@@ -285,22 +285,22 @@ const slides=[
   ]
  },
  {
-  "title": "Bring the adviser into the app — fast, with guardrails",
-  "notes": "Then the adviser. This bet tackles relevance, and that one rigid path. Remember the comparers and the delegators, and the adviser-first test we had to park? The vision said people should choose how they talk to an adviser. The reality was that Habito's advisers worked by chat, in a separate tool, and at the time the chat opened in Habito, outside Monzo. We could wait about nine months for Monzo's own chat, or put Habito's chat inside the app in about a month. I proposed shipping in about a month, and the team agreed, because every month we waited we kept losing people at the decision. But a second chat inside Monzo is risky: people might ask their adviser about a blocked card, or ask Monzo support about their mortgage. So I designed three guardrails. Gate: only show it during an active remortgage. Signpost: make it obvious who you're talking to and when they'll reply. Recover: if you land in the wrong place, get you to the right one in one tap. The main place for the chat is the progress tracker, so you can see where you are and ask about it in the same place. We also agreed a kill switch up front: above 2 percent misrouted chats we investigate, above 5 percent we roll back. Then a small pilot before a proper 50/50 test. When I left, the in-app chat was being built for that pilot.",
+  "title": "The adviser in the app: designed with guardrails, then paused",
+  "notes": "Then the adviser. This bet tackles relevance, and that one rigid path. Remember the comparers and the delegators, and the adviser-first test we had to park? The vision said people should choose how they talk to an adviser. The reality was that Habito's advisers worked by chat, in a separate tool, and at the time the chat opened in Habito, outside Monzo. We could wait about nine months for Monzo's own chat, or put Habito's chat inside the app in about a month. I proposed the faster route, because every month we waited we kept losing people at the decision. But a second chat inside Monzo is risky: people might ask their adviser about a blocked card, or ask Monzo support about their mortgage. So I designed three guardrails. Gate: only show it during an active remortgage. Signpost: make it obvious who you're talking to and when they'll reply. Recover: if you land in the wrong place, get you to the right one in one tap. The main place for the chat is the progress tracker, so you can see where you are and ask about it in the same place. We also agreed a kill switch up front: above 2 percent misrouted chats we investigate, above 5 percent we roll back. Then a small pilot before a proper 50/50 test. In the end, we paused it. After the analysis, the team decided this integration wasn't the best use of our resources this year, and put them into other problems, like first-time buyers. So for now, the chat keeps living in Habito. It's one of those decisions that is never quite final. But that was the call for this year.",
   "ask": [
    [
     "How big was the risk, really?",
     "Small in volume: at most about 7,000 people use the product in a month, against 15 million Monzo customers. But landing in the wrong chat is a compliance problem, not only a UX one, so we treated it seriously."
    ],
    [
-    "Why not wait for Monzo's own chat?",
-    "Nine more months of losing people at the moment of decision. And the first version would teach us what the final one needs."
+    "Why was it paused?",
+    "It came down to priorities. The integration was possible, but after the analysis the team decided to put its resources into other problems this year, like first-time buyers. The chat keeps working in Habito in the meantime. It isn't a final decision, and the design and the guardrails are ready for when it comes back."
    ]
   ]
  },
  {
   "title": "Your adviser, one tap away",
-  "notes": "Here's how it looks. The adviser has a permanent place in the tracker, with a label that says who it is and what it's for. One tap, and you're in a chat that is clearly about your mortgage. And when the adviser sends your recommendation, it opens in the app, not on another website. One honest detail: the label here still says 'Chatting on Habito.com', because that's what was live. The in-app version replaces it.",
+  "notes": "Here's how it looks. The adviser has a permanent place in the tracker, with a label that says who it is and what it's for. One tap, and you're in a chat that is clearly about your mortgage. And when the adviser sends your recommendation, it opens in the app, not on another website. One honest detail: the label here still says 'Chatting on Habito.com', because that's what stayed live. What you're seeing is the design we paused.",
   "ask": [
    [
     "What if the adviser still sends the old link to Habito's site?",
@@ -349,7 +349,7 @@ const slides=[
  },
  {
   "title": "What moved, and what's still being measured",
-  "notes": "So, what came out of it? Between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent: around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. The vision became the team's North Star and part of the case for a new partnership model. In 2026 the work was about conversion. The Day 1 reframing and the push experiment launched in May. The progress tracker and the adviser chat were being built when I left in October. And the recommendation and the in-app application were designed, but not live yet. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
+  "notes": "So, what came out of it? Between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent: around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. The vision became the team's North Star and part of the case for a new partnership model. In 2026 the work was about conversion. The Day 1 reframing and the push experiment launched in May. The progress tracker was being built when I left in October. The adviser chat in the app was designed, and then paused for this year. And the recommendation and the in-app application were designed, but not live yet. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
   "ask": [
    [
     "What would you measure next?",
