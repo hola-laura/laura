@@ -50,7 +50,19 @@
     focus: {
       groups: {0: 'Not connected', 3: 'Connected', 7: 'Remortgaging', 9: 'When things go differently'},
       steps: ['First visit', 'Came back after seeing rates', 'Deal may end soon', 'Just connected', 'Deal far away', 'Deal ends in 7–12 months', 'Deal ends in under 6 months', 'In progress', 'Complete', 'Data unavailable', 'Variable rate, no deal end'],
-      beats: Array.from({length: 11}, (_, i) => ({img: `fvd-${String(i + 1).padStart(2, '0')}.png`, step: i, hold: 2800, go: 'fade'}))
+      beats: [
+        {img: 'fve-01.png', anim: {src: 'remortgage-presentation/assets/anim/house-light.webp', left: 75.9, top: 85.1, width: 248.2, keep: true}, step: 0, hold: 3200, go: 'fade'},
+        {img: 'fve-02.png', anim: {src: 'remortgage-presentation/assets/anim/calculator-light.webp', left: 35.3, top: 99.9, width: 295.6, keep: true}, step: 1, hold: 3200, go: 'fade'},
+        {img: 'fve-03.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 2, hold: 3200, go: 'fade'},
+        {img: 'fve-04.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-confetti.png', left: 99.9, top: 110.0, width: 202.2, float: true}, step: 3, hold: 3200, go: 'fade'},
+        {img: 'fve-05.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-plant.png', left: 126.3, top: 110.0, width: 149.4, float: true}, step: 4, hold: 3200, go: 'fade'},
+        {img: 'fve-06.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 5, hold: 3200, go: 'fade'},
+        {img: 'fve-07.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 6, hold: 3200, go: 'fade'},
+        {img: 'fve-08.png', anim: {src: 'assets/mortgages/tracker/hourglass.webp', left: -16.5, top: 2.3, width: 422.4, keep: true}, step: 7, hold: 3200, go: 'fade'},
+        {img: 'fve-09.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-confetti.png', left: 99.9, top: 110.0, width: 202.2, float: true}, step: 8, hold: 3200, go: 'fade'},
+        {img: 'fve-10.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-umbrella.png', left: 117.0, top: 110.0, width: 167.9, float: true}, step: 9, hold: 3200, go: 'fade'},
+        {img: 'fve-11.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-balloon.png', left: 118.2, top: 110.0, width: 165.7, float: true}, step: 10, hold: 3200, go: 'fade'}
+      ]
     },
     vision: {
       steps: ['Your deal is ending: example deals, inside Monzo', 'Choose: an adviser first, or deals first', 'Pre-filled with what Monzo already knows', 'Recommendations, with your adviser one tap away', 'Every detail of the deal', 'Documents, straight from your phone', 'Always know what’s next'],
@@ -108,7 +120,7 @@
   screen.innerHTML = '<div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><i class="fl-tap"></i>';
   const layers = [...screen.querySelectorAll('.fl-layer')];
   const tapDot = screen.querySelector('.fl-tap');
-  flow.beats.forEach(beat => { new Image().src = A + beat.img; });
+  flow.beats.forEach(beat => { new Image().src = A + beat.img; if (beat.anim && (beat.anim.float || beat.anim.keep)) new Image().src = beat.anim.src; });
 
   let current = 0, front = 0, playing = false, timers = [];
   const later = (fn, ms) => timers.push(setTimeout(fn, ms));
@@ -123,7 +135,7 @@
     incoming.classList.add('no-anim');
     img.src = A + beat.img;
     const anim = incoming.querySelector('.fl-anim');
-    if (beat.anim) { anim.src = beat.anim.src + '?r=' + Date.now() % 1e6; anim.style.cssText = `left:${beat.anim.left}px;top:${beat.anim.top}px;width:${beat.anim.width}px`; anim.hidden = false; }
+    if (beat.anim) { anim.hidden = true; anim.classList.toggle('is-float', !!beat.anim.float); const src = beat.anim.float || beat.anim.keep ? beat.anim.src : beat.anim.src + '?r=' + Date.now() % 1e6; if (anim.getAttribute('src') !== src) anim.src = src; void anim.offsetWidth; anim.style.cssText = `left:${beat.anim.left}px;top:${beat.anim.top}px;width:${beat.anim.width}px`; anim.hidden = false; }
     else { anim.hidden = true; anim.removeAttribute('src'); }
     setScroll(img, beat.from || 0, 0);
     if (!how || reduced) {

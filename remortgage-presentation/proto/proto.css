@@ -96,3 +96,10 @@ body.proto-embed.is-bare .mg-tracker .mg-tracker-copy{display:none!important}
 .proto-embed .mg-tk-steps .fl-group{font:12px/1 "Fragment Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:#d8f16a;padding:14px 14px 6px}
 .proto-embed .mg-tk-steps .fl-group:first-child{padding-top:0}
 .proto-embed .mg-tk-steps.is-grouped + .mg-tk-bar{margin-top:16px!important}
+
+/* illustration that sits on top of a frame: arrives softly, then floats */
+.fl-layer img.fl-anim{animation:flIn .7s cubic-bezier(.2,.8,.2,1) both;transform-origin:50% 100%}
+.fl-layer img.fl-anim.is-float{animation:flIn .7s cubic-bezier(.2,.8,.2,1) both,flFloat 5.2s ease-in-out .7s infinite}
+@keyframes flIn{from{opacity:0;transform:translateY(12px) scale(.94)}to{opacity:1;transform:none}}
+@keyframes flFloat{0%,100%{transform:none}50%{transform:translateY(-7px) rotate(1.1deg)}}
+@media (prefers-reduced-motion:reduce){.fl-layer img.fl-anim,.fl-layer img.fl-anim.is-float{animation:none}}
