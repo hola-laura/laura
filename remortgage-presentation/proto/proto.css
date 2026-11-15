@@ -89,3 +89,10 @@ body.proto-embed.is-bare .mg-tracker .mg-tracker-copy{display:none!important}
 
 .fl-layer img.fl-anim{position:absolute;height:auto;transition:none}
 .fl-layer img.fl-anim[hidden]{display:none}
+
+/* grouped step list (Focus View states) */
+.proto-embed .mg-tk-steps.is-grouped{gap:2px!important}
+.proto-embed .mg-tk-steps.is-grouped button{padding:7px 14px;font-size:17px;border-radius:12px}
+.proto-embed .mg-tk-steps .fl-group{font:12px/1 "Fragment Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:#d8f16a;padding:14px 14px 6px}
+.proto-embed .mg-tk-steps .fl-group:first-child{padding-top:0}
+.proto-embed .mg-tk-steps.is-grouped + .mg-tk-bar{margin-top:16px!important}

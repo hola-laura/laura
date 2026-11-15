@@ -48,8 +48,9 @@
       ]
     },
     focus: {
-      steps: ['First visit', 'Returning · saw rates', 'In market, not connected', 'Just connected', 'Stable · deal far away', 'Approaching · 7–12 months', 'In market · under 6 months', 'Remortgaging', 'Remortgage complete', 'Data unavailable', 'Variable rate · no deal end'],
-      beats: Array.from({length: 11}, (_, i) => ({img: `fvr-${String(i + 1).padStart(2, '0')}.png`, step: i, hold: 2800, go: 'fade'}))
+      groups: {0: 'Not connected', 3: 'Connected', 7: 'Remortgaging', 9: 'When things go differently'},
+      steps: ['First visit', 'Came back after seeing rates', 'Deal may end soon', 'Just connected', 'Deal far away', 'Deal ends in 7–12 months', 'Deal ends in under 6 months', 'In progress', 'Complete', 'Data unavailable', 'Variable rate, no deal end'],
+      beats: Array.from({length: 11}, (_, i) => ({img: `fvc-${String(i + 1).padStart(2, '0')}.png`, step: i, hold: 2800, go: 'fade'}))
     },
     vision: {
       steps: ['Your deal is ending: example deals, inside Monzo', 'Choose: an adviser first, or deals first', 'Pre-filled with what Monzo already knows', 'Recommendations, with your adviser one tap away', 'Every detail of the deal', 'Documents, straight from your phone', 'Always know what’s next'],
@@ -101,7 +102,8 @@
   const list = root.querySelector('[data-flow-steps]');
   const toggle = root.querySelector('[data-flow-toggle]');
 
-  list.innerHTML = flow.steps.map((label, i) => `<li><button type="button" data-step="${i}"><span class="mg-tk-num">${String(i + 1).padStart(2, '0')}</span><span>${label}</span></button></li>`).join('');
+  if (flow.groups) list.classList.add('is-grouped');
+  list.innerHTML = flow.steps.map((label, i) => `${flow.groups && flow.groups[i] ? `<li class="fl-group">${flow.groups[i]}</li>` : ''}<li><button type="button" data-step="${i}"><span class="mg-tk-num">${String(i + 1).padStart(2, '0')}</span><span>${label}</span></button></li>`).join('');
   const buttons = [...list.querySelectorAll('button')];
   screen.innerHTML = '<div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><i class="fl-tap"></i>';
   const layers = [...screen.querySelectorAll('.fl-layer')];
