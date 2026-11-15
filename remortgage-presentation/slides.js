@@ -70,7 +70,7 @@ const slides=[
    ],
    [
     "How was the sprint organised?",
-    "In workstreams, each with an owner and a deliverable. The three that mattered most for this story were customer research, which Layla led, the vision, which was mine, and checking how feasible each idea was."
+    "In workstreams, each with an owner and a deliverable. The three that mattered most for this story were customer research, which Layla led, the vision, which was mine, and checking how feasible each idea was. The rest were outside design, and I wasn't close to them."
    ]
   ]
  },
