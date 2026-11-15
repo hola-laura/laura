@@ -197,12 +197,12 @@ const slides=[
     "Drop-off at that step went down, but I don't have the exact figure. It launched together with the Habito by Monzo brand, so I can't separate the two effects cleanly. For scale: in March, about 22,000 people started and about 3,700 were referred, so every extra point there is around 200 referrals a month."
    ],
    [
-    "Is the screen on the right exactly what went live?",
-    "It's my design for Day 1. The headline was iterated afterwards, but the framing stayed: a broker and an expert, not a comparison site."
-   ],
-   [
     "Why not just remove the lenders?",
     "Choice still matters, so the number is still there, in the second line. What changed is the order: first the expert, then the lenders."
+   ],
+   [
+    "Is the screen on the right exactly what went live?",
+    "It's my design for Day 1. The copy kept changing after launch. In my audit that summer I flagged that the live headline could still read like a comparison site, so it's a fight you keep having."
    ]
   ]
  },
@@ -328,15 +328,19 @@ const slides=[
  },
  {
   "title": "Before scaling, I audited the whole product",
-  "notes": "By the summer of 2026, things were about to scale. First-time buyers were the growth focus, and Habito was bringing more traffic into our flows. So before designing the next journey, I asked a different question: where should we invest first? I audited every journey that was live, ten of them, end to end, and I scored each one on seven lenses. I expected to find one or two broken journeys. Instead I found the same seven problems repeating everywhere. A small example: the same action had three different names, depending on where you opened it. So we didn't have one broken journey. We had a product that had grown piece by piece. My recommendation was to fix the cheap basics now, and to test the big structural change before rebuilding anything. I took that to the team as a first draft, with one rule: every row leaves with an owner.",
+  "notes": "By the summer of 2026, things were about to scale. First-time buyers were the growth focus, and Habito was bringing more traffic into our flows. So before designing the next journey, I asked a different question: where should we invest first? I reviewed the whole live experience, ten areas of it, end to end. And I scored the main journeys against the same six criteria: things like how clear the customer's job is, the risk as volume grows, and how confident we are in the evidence. I expected to find one or two broken journeys. The insight was different. We didn't have one broken journey. We had a product that had grown piece by piece. A small example: when I counted, there were eleven different ways of saying 'connect your mortgage', and nine for remortgaging. So I recommended three initiatives for the next half: align the copy on our entry points, improve trust and clarity on the mortgage home screen, and open estimated deals to people without enough connected data. And one longer-term direction: organise the product around your property, not around a single mortgage. They went into the team's planning as candidates, to be scored with everything else. The deck and the written recommendation are both linked here, if you'd like to open them.",
   "ask": [
    [
     "How did you score the journeys?",
-    "Seven lenses, from 1 to 5: things like how clear the user's job is, the risk when volume grows, and how confident we are in the evidence. I said out loud that the scores were assumptions. They were there to compare like for like, not to decide for us."
+    "Six criteria, each scored one, three or five: customer job clarity, UX quality, strategic importance, scale risk, confidence and delivery effort. I said out loud that the scores were a map to compare journeys, not the final priority order."
    ],
    [
-    "What were the seven problems?",
-    "Unclear user jobs, fragmented journeys, inconsistent entry points, weak recovery when something breaks, user states we didn't serve well, low evidence, and plain bugs."
+    "What had growing piece by piece created?",
+    "Fragmented entry points, duplicated functionality, inconsistent user states, disconnected experiences, and foundations that get harder to scale."
+   ],
+   [
+    "What happened with it?",
+    "The three initiatives went into the team's prioritisation for the second half, scored alongside the rest of the portfolio. The property-level direction was there to guide future discovery, not as a commitment."
    ]
   ]
  },
@@ -402,36 +406,8 @@ const slides=[
     "Why keep the hand-off at all?",
     "At that point the application still lived on Habito's side. Hiding that would have broken trust the moment the brand changed. Saying it was the honest version, until the in-app application moved the form."
    ]
-  ]
- },
- {
-  "title": "Where should we invest next? I audited the whole product",
-  "notes": "By the summer of 2026, I'd been designing one journey at a time for a long while. And three things were changing at once. Homeownership was moving from a feature for existing customers to an acquisition bet. First-time buyers were the growth focus for the second half. And Habito was bringing more capability, and more traffic, into our flows. The scale was about to change too: about 600,000 customers had connected a mortgage, and about two and a half million hadn't. A small audience today, a big one tomorrow. So I asked a different question: before we scale all of this, where should we invest first? I audited every journey that was live in production, ten of them, end to end. Not concepts, not experiments: what customers really see. I scored each one on seven lenses, things like how clear the user's job is, the risk when volume grows, and how confident we are in the evidence. And I was open about it: the scores are assumptions. They're there to compare like for like, not to decide for us.",
-  "ask": [
-   [
-    "Why score, if the scores are assumptions?",
-    "To look at ten journeys with the same eyes. The framework made the comparison consistent. Strategy made the final call."
-   ]
-  ]
- },
- {
-  "title": "Not one broken journey. A product that grew piece by piece.",
-  "notes": "Here's what I found, and it wasn't what I expected. I expected one or two journeys to stand out as the broken ones. Instead I found good improvements everywhere, and the same seven problems repeating: unclear user jobs, fragmented journeys, inconsistent entry points, weak recovery when something breaks, user states we don't serve well, low evidence, and plain bugs. A small example: the same action had three names. 'Track your mortgage' in the Home tab, 'Home equity' in the Grow tab, 'See mortgage' in the plus menu. So the conclusion was that we didn't have one broken journey. We had a product that had grown piece by piece. And that changes the decision: fixing journeys one by one wouldn't solve it. The biggest return was in the foundations they all rely on.",
-  "ask": []
- },
- {
-  "title": "A first draft, a workshop, and an owner for every row",
-  "notes": "An audit is only useful if it changes what the team does. So I didn't present a list of problems. I presented a strawman, and I said the word out loud: this is my first pass, please pull it apart. Four buckets. Fix now: the cheap, high-impact basics. Validate first: the Focus View, which is a big structural bet, so test it before rebuilding. Decision needed: two questions that are product calls, not design ones, like whether connecting a mortgage should be the gateway at all. And park, which I left empty on purpose, so the room would decide what we choose not to do. Then I designed a sixty-minute workshop with Design, Product, Engineering and Data, each with their own lens, and one rule: every row leaves with an owner. The trade-off I recommended was to wait on the Focus View rebuild until it was validated. Slower to visible change, but it stops us scaling the wrong structure.",
-  "ask": [
-   [
-    "Why a strawman?",
-    "Agreeing with a blank page is easy and useless. A concrete position gives people something to push against, and the disagreement is where the value is."
-   ],
-   [
-    "Why are some of these not design decisions?",
-    "Whether connecting a mortgage is the gateway changes the whole funnel and the business case. Design can show the options and the cost of each. Product has to own the call."
-   ]
-  ]
+  ],
+  "appx": true
  },
  {
   "title": "One home screen, eleven states",
@@ -441,12 +417,14 @@ const slides=[
     "Eleven states. Isn't that too many?",
     "For the customer it's always one screen with one main action. The states are for the team: they make every case explicit, so nobody finds out in production that a joint mortgage breaks the layout."
    ]
-  ]
+  ],
+  "appx": true
  },
  {
   "title": "Four decisions I'd defend",
   "notes": "Four decisions inside it that I'd defend. One: value without connecting. About two and a half million customers haven't connected a mortgage, and before this they had no home here at all. If you only looked at rates, your saved rates are the first thing you see when you come back. Your earlier visit counts. Two: make the cost concrete. Not 'your deal ends soon', but what you pay now and what you'll pay if you do nothing. That's urgency the customer can check. Three: the remortgage tracker lives in the home screen, not on a separate one. The home is the hub for everything about your mortgage. And four: never a dead end. If the data doesn't load, we show the last numbers we had, with the date. And the whole thing is resolved each time the screen opens, with three questions: are you connected, are you remortgaging, and how many months until your deal ends.",
-  "ask": []
+  "ask": [],
+  "appx": true
  },
  {
   "title": "Two mortgages, one home: four ways to show it",
@@ -456,7 +434,8 @@ const slides=[
     "Which one would you ship?",
     "The property overview as the structure, because it works for one mortgage or five. Combining into one deal is the commercial idea I'd test next, with care about early repayment charges."
    ]
-  ]
+  ],
+  "appx": true
  },
  {
   "title": "Where it goes next: your mortgage data, straight from your lender",
@@ -466,7 +445,8 @@ const slides=[
     "Is this live?",
     "No, it's a concept. Its job was to show the regulator and the business what better mortgage data would make possible."
    ]
-  ]
+  ],
+  "appx": true
  }
 ];
 let current=0;
@@ -487,6 +467,8 @@ const prevButtons=[document.getElementById("previous-slide"),document.getElement
 const nextButtons=[document.getElementById("next-slide"),document.getElementById("next-bottom")];
 const pad=n=>String(n+1).padStart(2,"0");
 const total=String(slides.length).padStart(2,"0");
+const mainCount=slides.filter(s=>!s.appx).length;
+const label=i=>i<mainCount?pad(i)+" / "+String(mainCount).padStart(2,"0"):"Appendix "+(i-mainCount+1)+" / "+(slides.length-mainCount);
 function fit(){canvas.style.transform="scale("+(figure.clientWidth/1600)+")"}
 new ResizeObserver(fit).observe(figure);fit();
 function countUp(root){
@@ -509,11 +491,11 @@ function render(){
     else if(f.hasAttribute('src'))f.removeAttribute('src')}));
   countUp(sections[current]);
   const slide=slides[current];
-  count.textContent=pad(current)+" / "+total;
-  bottomCount.innerHTML=pad(current)+" <i>/</i> "+total;
+  count.textContent=label(current);
+  bottomCount.textContent=label(current);
   captionNumber.textContent=pad(current);
   captionTitle.textContent=slide.title;
-  progress.style.width=((current+1)/slides.length*100)+"%";
+  progress.style.width=(Math.min(1,(current+1)/mainCount)*100)+"%";
   progressBar.setAttribute("aria-valuenow",String(current+1));
   notesHeading.textContent="Slide "+(current+1)+" · "+slide.title;
   notesContent.textContent="";
@@ -525,7 +507,7 @@ function render(){
     notesContent.append(box);
   }
   notesContent.scrollTop=0;
-  sheetCount.textContent=pad(current)+" / "+total;
+  sheetCount.textContent=label(current);
   prevButtons.forEach(b=>b.disabled=current===0);
   nextButtons.forEach(b=>b.disabled=current===slides.length-1);
   history.replaceState(null,"","#"+(current+1));
