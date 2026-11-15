@@ -25,11 +25,15 @@
       ]
     },
     chat: {
-      steps: ['The adviser lives in the tracker', 'A mortgage-only chat, clearly labelled', 'One tap to the recommendation'],
+      steps: ['The adviser lives in the tracker', 'An intro before the chat', 'A mortgage-only chat', 'A real person joins', 'Off-topic? One tap to Monzo support', 'The recommendation arrives in the chat', 'And it opens in the app'],
       beats: [
-        {img: 'rec-tracker-after.png', step: 0, hold: 2400, tap: [336, 673], go: 'push'},
-        {img: 'intercom-redacted.png', step: 1, hold: 3200, tap: [159, 247], go: 'push'},
-        {img: 'rec-main.png', step: 2, hold: 3400}
+        {img: 'ic-tracker.png', step: 0, hold: 2400, tap: [200, 440], go: 'push'},
+        {img: 'ic-intro.png', step: 1, hold: 3600, scroll: 75, scrollMs: 900, tap: [201, 820], go: 'push'},
+        {img: 'ic-chat1.png', step: 2, hold: 3200, go: 'fade'},
+        {img: 'ic-chat2.png', step: 3, hold: 3800, scroll: 355, scrollMs: 2200, go: 'fade'},
+        {img: 'ic-redirect.png', step: 4, hold: 3400, go: 'fade'},
+        {img: 'ic-chat3.png', step: 5, hold: 3000, tap: [199, 304], go: 'push'},
+        {img: 'ic-recs.png', step: 6, hold: 4600, scroll: 829, scrollMs: 3200}
       ]
     },
     apply: {

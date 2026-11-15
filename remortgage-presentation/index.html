@@ -9,10 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Fragment+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=67">
-<link rel="stylesheet" href="deck.css?v=67">
+<link rel="stylesheet" href="styles.css?v=68">
+<link rel="stylesheet" href="deck.css?v=68">
 <link rel="preconnect" href="https://images.ctfassets.net">
-<script src="slides.js?v=67" defer></script>
+<script src="slides.js?v=68" defer></script>
 </head>
 <body>
 <header class="topbar">
@@ -286,11 +286,11 @@
 <section class="slide light" data-n="23" data-k="unhappy"><div class="eyebrow a">04 · Habito · Bet 2 of 4 · when it goes wrong</div><h1 class="a" style="--d:1">Decision support, not decision pressure</h1>
 <div class="grid" style="grid-template-columns:1fr 1fr;margin-top:26px">
   <div class="card a pathcard" style="--d:3"><div class="label">Path 1 · “I’m not ready yet”</div>
-    <div class="shots"><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/fc-drill.png" alt=""></span></span><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/fc-push.png" alt=""></span></span><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/fc-tracker.png" alt=""></span></span></div>
+    <div class="shots"><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/uh-decide.png" alt=""></span></span><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/uh-push-saved.png" alt=""></span></span><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/uh-tracker.png" alt=""></span></span></div>
     <p><b>Decision:</b> a third button, “I need more time”. You choose when to be reminded, and the saved recommendation waits in your tracker.</p>
     <p class="small">Why: a yes-or-no screen loses everyone who is interested but not ready.</p></div>
   <div class="card a pathcard" style="--d:4"><div class="label">Path 2 · “The rate was withdrawn”</div>
-    <div class="shots"><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/ex-push.png" alt=""></span></span><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/ex-drill.png" alt=""></span></span></div>
+    <div class="shots"><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/uh-push-gone.png" alt=""></span></span><span class="bz" style="width:152px;padding:4.0px;border-radius:23px"><span class="bz-screen" style="border-radius:19px"><img src="assets/proto/uh-gone.png" alt=""></span></span></div>
     <p><b>Decision:</b> the adviser speaks first: “I’m already looking at alternatives”, with other deals on the same screen.</p>
     <p class="small">Why: lenders pull rates all the time. That shouldn’t be a dead end.</p></div>
 </div><div class="foot"><span>Monzo Homeownership · design case study</span><span>23 / 35</span></div></section>
@@ -305,27 +305,28 @@
   <div class="design-stage a" style="--d:2"><iframe data-src="proto/tracker.html?v=1" title="Always clear whose turn it is — animated prototype" style="width:860px" allowtransparency="true"></iframe></div>
 </div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>24 / 35</span></div></section>
 <section class="slide light" data-n="25" data-k="d4"><div class="eyebrow a">04 · Habito · Bet 3 of 4 · the adviser in the app</div><h1 class="a" style="--d:1">The adviser in the app: designed with guardrails, then paused</h1>
-<div class="grid" style="grid-template-columns:1fr 1fr 1.25fr;margin-top:28px">
-  <div class="card  a" style="--d:3;"><div class="label">Option A</div><h3>Wait for Monzo’s own chat</h3><div class="mid muted">~9 months</div></div>
-  <div class="card teal a" style="--d:4;"><div class="label">Option B · what I proposed</div><h3>Ship Habito’s chat inside Monzo</h3><div class="mid lime">~1 month</div></div>
-  <div class="card pink a" style="--d:5;"><div class="label">The risk</div><p class="strong">A second chat in Monzo: people ask their adviser about a blocked card, or Monzo support about their mortgage.</p></div>
-</div>
-<div class="grid" style="grid-template-columns:1fr 1fr 1fr 300px;margin-top:20px">
-  <div class="card navy a" style="--d:6;"><div class="label">1 · Gate</div><p>Only shown during an active remortgage</p></div>
-  <div class="card navy a" style="--d:7;"><div class="label">2 · Signpost</div><p>“Mortgage questions only”, reply times, the adviser’s name in the header</p></div>
-  <div class="card navy a" style="--d:8;"><div class="label">3 · Recover</div><p>Saved replies and deep links if someone lands in the wrong chat</p></div>
-  <div class="gif a" style="background:#112231;height:190px"><img src="assets/anim/warning-alarm.gif" alt="" style="width:300px"></div>
-</div>
-<div class="card coral a" style="--d:9;margin-top:20px"><p class="strong"><b>Kill switch planned up front:</b> investigate at 2% misrouted chats, roll back at 5% · pilot at 10%, then a 50/50 test</p><p class="strong" style="margin-top:6px"><b>The outcome: paused for this year.</b> The team put its resources into first-time buyers and other priorities. For now, the chat keeps living in Habito.</p></div><div class="foot"><span>Monzo Homeownership · design case study</span><span>25 / 35</span></div></section>
+<div class="phones-row ctx" style="margin-top:22px;gap:20px;align-items:stretch">
+  <div class="col" style="flex:1;gap:12px;min-width:0">
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px;margin-top:0">
+      <div class="card  a" style="--d:3;"><div class="label">Option A</div><h3>Wait for Monzo’s own chat</h3><div class="mid muted">~9 months</div></div>
+      <div class="card teal a" style="--d:4;"><div class="label">Option B · what I proposed</div><h3>Habito’s chat inside Monzo</h3><div class="mid lime">~1 month</div></div>
+    </div>
+    <div class="card pink a" style="--d:5;"><div class="label">The risk</div><p class="strong">A second chat in Monzo: people ask their adviser about a blocked card, or Monzo support about their mortgage.</p></div>
+    <div class="card coral a" style="--d:9;"><p><b>Kill switch agreed up front:</b> investigate at 2% misrouted chats, roll back at 5%. Pilot at 10%, then a 50/50 test.</p><p style="margin-top:6px"><b>The outcome: paused for this year.</b> Resources went to first-time buyers and other priorities. For now, the chat stays in Habito.</p></div>
+  </div>
+  <div class="optcol a" style="--d:6;width:224px"><span class="opttag">1 · Gate<i>Only during an active remortgage</i></span><div class="bz" style="width:196px;padding:5.1px;border-radius:29px"><span class="bz-screen" style="border-radius:24px"><img src="assets/img/ic-gate.png" alt="Progress tracker with Chat with Annie, your advisor"></span></div></div>
+  <div class="optcol a" style="--d:7;width:224px"><span class="opttag">2 · Signpost<i>Who it is, what it’s for, when they reply</i></span><div class="bz" style="width:196px;padding:5.1px;border-radius:29px"><span class="bz-screen" style="border-radius:24px"><img src="assets/img/ic-signpost.png" alt="Chat with Annie: this chat is for your remortgage only"></span></div></div>
+  <div class="optcol a" style="--d:8;width:224px"><span class="opttag">3 · Recover<i>Wrong chat? One tap to the right one</i></span><div class="bz" style="width:196px;padding:5.1px;border-radius:29px"><span class="bz-screen" style="border-radius:24px"><img src="assets/img/ic-recover.png" alt="The adviser redirects a balance question to Monzo help chat"></span></div></div>
+</div><div class="foot"><span>Monzo Homeownership · design case study</span><span>25 / 35</span></div></section>
 <section class="slide dark" data-n="26" data-k="dchat">
 <div class="design">
   <div class="design-copy">
     <div class="eyebrow a">04 · Habito · Bet 3 of 4 · the design</div>
     <h1 class="a" style="--d:1">Your adviser, one tap away</h1>
-    <ul class="design-points"><li class="a" style="--d:3"><b>A permanent place.</b> The adviser row sits in the tracker during an active remortgage.</li><li class="a" style="--d:4"><b>Clearly labelled.</b> “Your mortgage expert”: who it is and what it’s for, before you tap.</li><li class="a" style="--d:5"><b>No dead ends.</b> The recommendation opens in the app, not on another website.</li></ul>
-    <div class="design-status a" style="--d:7">Designed · paused for 2026 · for now the chat stays on Habito.com</div>
+    <ul class="design-points"><li class="a" style="--d:3"><b>A permanent place.</b> The adviser sits in the tracker, with a name and a face.</li><li class="a" style="--d:4"><b>An intro before the chat.</b> Who Annie is, what this chat is for, and when she replies.</li><li class="a" style="--d:5"><b>Mortgage only, and it says so.</b> Off-topic questions get one tap to Monzo support.</li><li class="a" style="--d:6"><b>No dead ends.</b> The recommendation arrives in the chat and opens in the app.</li></ul>
+    <div class="design-status a" style="--d:7">Designed May 2026 · paused for 2026 · for now the chat stays on Habito.com</div>
   </div>
-  <div class="design-stage a" style="--d:2"><iframe data-src="proto/flow.html?f=chat&v=1" title="Your adviser, one tap away — animated prototype" style="width:860px" allowtransparency="true"></iframe></div>
+  <div class="design-stage a" style="--d:2"><iframe data-src="proto/flow.html?f=chat&v=2" title="Your adviser, one tap away — animated prototype" style="width:860px" allowtransparency="true"></iframe></div>
 </div><div class="foot on-dark"><span>Monzo Homeownership · design case study</span><span>26 / 35</span></div></section>
 <section class="slide light" data-n="27" data-k="d5"><div class="eyebrow a">04 · Habito · Bet 4 of 4 · the application in Monzo</div><h1 class="a" style="--d:1">Move the application into Monzo, pre-filled</h1>
 <div class="phones-row ctx" style="margin-top:24px;gap:26px;align-items:stretch">
