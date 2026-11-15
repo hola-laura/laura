@@ -429,17 +429,6 @@ const slides=[
   ]
  },
  {
-  "title": "First version: decide inside Monzo",
-  "notes": "This is the first version of the recommendation in the app, from June, playing in full. The goal was written at the top of my file: increase the acceptance rate by helping people decide confidently when they're ready, or defer on purpose, without dropping off. Three decisions here. First, it's framed through the adviser, not an algorithm: 'Will's top pick for you', 'a note from Will'. A person does the heavy lifting for trust. Second, there's a top pick, but the alternatives sit beside it, with the reasoning, so it never feels pushy. And third, we couldn't avoid the hand-off to Habito yet, so we say it out loud: 'Taking you back to Habito to continue. You can always come back to Monzo to check your progress.' A hand-off you announce feels very different from one that just happens to you.",
-  "ask": [
-   [
-    "Why keep the hand-off at all?",
-    "At that point the application still lived on Habito's side. Hiding that would have broken trust the moment the brand changed. Saying it was the honest version, until the in-app application moved the form."
-   ]
-  ],
-  "appx": true
- },
- {
   "title": "One home screen, eleven states",
   "notes": "The audit pointed at one place to start: the Focus View. It's the home screen for your mortgage, the room every other journey opens into. And it had one design for everyone. So my proposal was a screen that adapts: what you see depends on where you are in your mortgage. Watch it change. First visit, not connected: one clear action. Returning after looking at rates. Just connected: we celebrate first, we don't dump data. Deal far away: calm, equity and timeline. Then, as the deal end gets closer, the tone shifts from calm to urgent, and remortgaging becomes the main action. While you're remortgaging, the tracker is the hero. And there's a state for when the data fails, and one for variable-rate mortgages, where there's no deal end at all. The first principle is the important one: state-driven, not feature-driven. It's a proposal. The decision was to validate it before rebuilding.",
   "ask": [
