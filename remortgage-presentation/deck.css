@@ -372,3 +372,9 @@
 .road-note{display:flex;align-items:baseline;gap:18px;margin-top:20px;padding:16px 26px;border-radius:20px;background:rgba(17,34,49,.05);border-left:5px solid var(--coral);font-size:18px;line-height:1.4;color:var(--ink2)}
 .road-note>b{flex:none;color:var(--navy);font-size:15px;letter-spacing:.04em;text-transform:uppercase}
 .road-note span b{color:var(--navy)}
+.reach-col .card{padding:18px 22px;min-height:0}
+.reach-col .card p.strong{font-size:18px;line-height:1.35}
+.reach-col .card li{font-size:16.5px;line-height:1.35;margin-bottom:8px;padding-left:18px}
+.reach-col .card li:before{top:7px;width:7px;height:7px}
+.reach-col .card p.result{font-size:19px;line-height:1.3}
+.slide[data-k="d1"] .role-ph p{max-width:222px;text-align:center;line-height:1.3}
