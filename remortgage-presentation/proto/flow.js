@@ -81,9 +81,9 @@
     day1: {
       steps: ['One account, with your Monzo email', 'On your own, or with someone else', 'The hand-off, said out loud', 'Then the form, on Habito’s website'],
       beats: [
-        {img: 'd1-account.png', step: 0, hold: 3200, tap: [201, 800], go: 'push'},
-        {img: 'd1-joint.png', step: 1, hold: 2800, tap: [200, 456], go: 'push'},
-        {img: 'd1-allset.png', step: 2, hold: 3000, tap: [201, 800], go: 'fade'},
+        {img: 'd1b-account.png', step: 0, hold: 3200, tap: [201, 800], go: 'push'},
+        {img: 'd1b-joint.png', step: 1, hold: 2800, tap: [200, 456], go: 'push'},
+        {img: 'd1b-allset.png', anim: {src: 'remortgage-presentation/assets/proto/d1b-drinks.png', left: 126, top: 215.9, width: 150, float: true}, step: 2, hold: 3800, tap: [201, 800], go: 'fade'},
         {img: 'd1-habito.png', step: 3, hold: 4200}
       ]
     },
@@ -92,7 +92,7 @@
       beats: [
         {img: 'ed-home.png', step: 0, hold: 2200, tap: [188, 642], go: 'push'},
         {img: 'ed-deals.png', step: 1, hold: 2800, tap: [77, 618], go: 'up'},
-        {img: 'ed-detail.png', step: 2, hold: 4200, scroll: 485, scrollMs: 2800, go: 'down'},
+        {img: 'ed-detail-sheet2.png', back: 'ed-deals-dim.png', head: 'ed-detail-head.png', step: 2, hold: 4200, scroll: 485, scrollMs: 2800, go: 'down'},
         {img: 'ed-deals.png', step: 1, hold: 900, tap: [201, 329], go: 'up'},
         {img: 'ed-form.png', step: 3, hold: 2600, tap: [200, 661], go: 'down'},
         {img: 'ed-deals.png', step: 4, hold: 4600, scroll: 733, scrollMs: 3200, go: 'fade'},
@@ -132,18 +132,25 @@
   const setScroll = (img, y, ms) => { img.style.setProperty('--scroll-ms', ms + 'ms'); img.style.transform = `translateY(${-y}px)`; };
   const place = (layer, cls) => { layer.className = 'fl-layer no-anim ' + cls; void layer.offsetWidth; layer.classList.remove('no-anim'); };
 
+  let scrollTimer, headTimer;   /* kept apart from the play timers: schedule() clears those right after show() */
   function show(index, how) {
+    clearTimeout(scrollTimer); clearTimeout(headTimer);
     const beat = flow.beats[index];
     const incoming = layers[1 - front], outgoing = layers[front];
     const img = incoming.querySelector('img');
     incoming.classList.add('no-anim');
     img.src = A + beat.img;
+    incoming.style.background = beat.back ? `#f2f8f3 url(${A + beat.back}) top center / 402px auto no-repeat` : '';
+    incoming.dataset.back = beat.back ? '1' : '';
     const anim = incoming.querySelector('.fl-anim');
     if (beat.anim) { anim.hidden = true; anim.classList.toggle('is-float', !!beat.anim.float); const src = beat.anim.float || beat.anim.keep ? beat.anim.src : beat.anim.src + '?r=' + Date.now() % 1e6; if (anim.getAttribute('src') !== src) anim.src = src; void anim.offsetWidth; anim.style.cssText = `left:${beat.anim.left}px;top:${beat.anim.top}px;width:${beat.anim.width}px`; anim.hidden = false; }
     else { anim.hidden = true; anim.removeAttribute('src'); }
+    anim.classList.toggle('is-static', !!beat.head);
+    /* a sheet keeps its header (close button) fixed while the content scrolls under it */
+    const pinHead = () => { if (!beat.head) return; anim.src = A + beat.head; anim.style.cssText = 'left:0;top:0;width:402px'; anim.hidden = false; };
     setScroll(img, beat.from || 0, 0);
     if (!how || reduced) {
-      incoming.className = 'fl-layer no-anim'; incoming.style.zIndex = 2; outgoing.style.zIndex = 1;
+      incoming.className = 'fl-layer no-anim'; incoming.style.zIndex = 2; outgoing.style.zIndex = 1; pinHead();
     } else if (how === 'fade') {
       place(incoming, 'is-clear'); incoming.style.zIndex = 2; outgoing.style.zIndex = 1;
       incoming.className = 'fl-layer';
@@ -153,9 +160,18 @@
     } else if (how === 'pop') {
       place(incoming, 'is-left'); incoming.style.zIndex = 1; outgoing.style.zIndex = 2;
       incoming.className = 'fl-layer'; outgoing.className = 'fl-layer is-right';
+    } else if (how === 'up' && beat.back) {
+      /* a sheet over the page it came from: the page dims, the sheet slides up */
+      setScroll(img, -874, 0); place(incoming, 'is-clear'); incoming.style.zIndex = 2; outgoing.style.zIndex = 1;
+      incoming.className = 'fl-layer'; setScroll(img, beat.from || 0, 520);
+      headTimer = setTimeout(pinHead, 560);
     } else if (how === 'up') {
       place(incoming, 'is-down'); incoming.style.zIndex = 2; outgoing.style.zIndex = 1;
       incoming.className = 'fl-layer'; outgoing.className = 'fl-layer is-back';
+    } else if (how === 'down' && outgoing.dataset.back === '1') {
+      /* closing a sheet: the page under it is already there, the sheet fades away */
+      incoming.className = 'fl-layer no-anim'; incoming.style.zIndex = 1; outgoing.style.zIndex = 2;
+      outgoing.className = 'fl-layer is-down';
     } else if (how === 'down') {
       place(incoming, 'is-back'); incoming.style.zIndex = 1; outgoing.style.zIndex = 2;
       incoming.className = 'fl-layer'; outgoing.className = 'fl-layer is-down';
@@ -164,7 +180,7 @@
     buttons.forEach((button, i) => { button.toggleAttribute('aria-current', i === beat.step); button.classList.toggle('is-past', i < beat.step); });
     if (beat.scroll && beat.scroll !== (beat.from || 0)) {
       const ms = beat.scrollMs || Math.max(900, beat.hold - 1100);
-      later(() => { img.parentElement.classList.remove('no-anim'); setScroll(img, beat.scroll, ms); }, 650);
+      scrollTimer = setTimeout(() => { img.parentElement.classList.remove('no-anim'); setScroll(img, beat.scroll, ms); }, 650);
     }
   }
 

@@ -224,7 +224,7 @@ const slides=[
  },
  {
   "title": "The rest of Day 1: one account, one question, a clear hand-off",
-  "notes": "And this is the rest of the Day 1 journey, these are captures from the live app. I'll let it play. After that first screen you create an account. Nobody wants another account, so I presented it as something good for you. You can check your progress here or on Habito's website, and it uses the email Monzo already has. Then there's one question, are you remortgaging on your own or with someone else. And then the hand-off, and we say it clearly, 'we'll now take you to Habito to fill in a few details'. Because if we tell people they're about to leave Monzo, it's much less of a shock. The difficult decision here was the pre-fill experiment, which was still running. We stopped it early and turned pre-fill on for everyone. It had very little risk, and the launch date wasn't going to move. So we lost a bit of learning to gain speed, and we knew we were doing that. And look at where this ends. On Habito's website. So Day 1 was more honest about what the service is, but we were still sending people out of Monzo. The next three bets are about that.",
+  "notes": "And this is the rest of the Day 1 journey. I redrew the screens from the live app, so you can read them properly. I'll let it play. After that first screen you create an account. Nobody wants another account, so I presented it as something good for you. You can check your progress here or on Habito's website, and it uses the email Monzo already has. Then there's one question, are you remortgaging on your own or with someone else. And then the hand-off, and we say it clearly, 'we'll now take you to Habito to fill in a few details'. Because if we tell people they're about to leave Monzo, it's much less of a shock. The difficult decision here was the pre-fill experiment, which was still running. We stopped it early and turned pre-fill on for everyone. It had very little risk, and the launch date wasn't going to move. So we lost a bit of learning to gain speed, and we knew we were doing that. And look at where this ends. On Habito's website. So Day 1 was more honest about what the service is, but we were still sending people out of Monzo. The next three bets are about that.",
   "ask": [
    [
     "Why stop an experiment early?",
@@ -232,7 +232,7 @@ const slides=[
    ],
    [
     "Are these your designs?",
-    "Yes. These are captures of the live app from June 2026, with the test data removed."
+    "Yes. It's the flow that launched. I redrew the screens from the live app for this deck so they're sharp, and the last one is a capture of Habito's website."
    ]
   ]
  },
