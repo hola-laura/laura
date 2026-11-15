@@ -16,15 +16,15 @@ const slides=[
  },
  {
   "title": "Connect in a minute — and tell us when your deal ends",
-  "notes": "Here's what that looks like. I rebuilt it in code from my Figma files, so you can see it move. You connect in a few taps, with no account details, and we find your mortgage. The part I want to point out is the end: we ask one question, when does your current deal end, with an 'I don't know' way out and a reminder you choose. In one year, the share of new connections that told us their date went from 38 to 88 percent. That date matters for the rest of the story, because it's how we know when to talk to someone about remortgaging.",
+  "notes": "Here's what that looks like. I rebuilt it in code from my Figma files, so you can see it move. You connect in a few taps, with no account details, and we find your mortgage. The part I want to point out is the end: we ask one question, when does your current deal end. In one year, the share of new connections that told us their date went from 38 to 88 percent. That date matters for the rest of the story, because it's how we know when to talk to someone about remortgaging.",
   "ask": [
    [
     "Is 38 to 88 percent your result?",
-    "It's a team result: the design, plus optimisation and CRM campaigns. My part was the question, the 'I don't know' way out and the reminder."
+    "Yes. It was one of my first projects when I joined. The design is mine and engineering built it. It was a big win for everything we did in remortgaging afterwards, because the deal-end date is how we know when to talk to someone."
    ],
    [
     "Why is it rebuilt in code?",
-    "So I can show it moving without sharing internal files. The lender is anonymised and the figures are placeholders from the designs."
+    "So you can see it move, the way it does in the app. The balance and dates are the placeholder figures from my designs."
    ]
   ]
  },

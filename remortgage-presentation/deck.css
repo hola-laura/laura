@@ -273,3 +273,19 @@
 .thumbs.two{flex-direction:row;gap:14px;align-items:center}
 .thumbs.two img{width:calc(50% - 7px)}
 @media (prefers-reduced-motion:reduce){.wall img,.pan img{animation:none!important}}
+
+/* v9 context: screens in the same iPhone bezel as the case study, smaller text */
+.bz{--edge:#76777c;position:relative;isolation:isolate;display:block;box-sizing:border-box;flex:none;width:262px;padding:6.8px;background:#0d0e10;border-radius:39px/39px;box-shadow:inset 0 0 0 1.5px var(--edge),inset 0 0 0 3px #2b2c30,0 28px 48px -26px #12263a8c}
+.bz::before{content:"";position:absolute;z-index:3;top:2.46%;left:50%;width:29.7%;height:4.16%;transform:translateX(-50%);border-radius:99px;pointer-events:none;background:radial-gradient(circle at 83% 50%,#1b2438 0 7%,transparent 8%),#050506}
+.bz::after{content:"";position:absolute;z-index:-1;inset:0 -1.1%;pointer-events:none;background:linear-gradient(var(--edge),var(--edge)) left 0 top 15%/3px 3.4% no-repeat,linear-gradient(var(--edge),var(--edge)) left 0 top 22%/3px 6.4% no-repeat,linear-gradient(var(--edge),var(--edge)) left 0 top 31%/3px 6.4% no-repeat,linear-gradient(var(--edge),var(--edge)) right 0 top 26%/3px 10% no-repeat}
+.bz-screen{display:block;aspect-ratio:402/874;overflow:hidden;border-radius:32px;background:#f1f8f3}
+.slide .bz-screen img:not(.bz-anim){display:block;width:100%!important;height:auto!important;max-width:none}
+.phones-row.ctx{gap:26px}
+.slide[data-k="context"] .card{padding:20px 24px}
+.slide[data-k="context"] .big{font-size:52px;line-height:1}
+.slide[data-k="context"] .card p{font-size:17px;line-height:1.35}
+.slide[data-k="context"] .card p.strong{font-size:19px;line-height:1.35}
+.bz-screen{position:relative}
+.slide .bz-screen img.bz-anim{position:absolute;height:auto!important}
+.fig-link.ghost{background:none;color:var(--navy);border:1.5px solid rgba(17,34,49,.28);font-size:15px;font-weight:600;padding:9px 16px}
+.fig-link.ghost:hover{background:rgba(17,34,49,.06);color:var(--navy)}

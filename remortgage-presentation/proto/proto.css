@@ -60,3 +60,7 @@ body.proto-embed.is-bare .mg-tracker .mg-tracker-copy{display:none!important}
 .fl-tap.is-on{animation:fl-tap .62s ease-out forwards}
 @keyframes fl-tap{0%{opacity:0;transform:scale(.4)}35%{opacity:1;transform:scale(1)}70%{opacity:1;transform:scale(.82)}100%{opacity:0;transform:scale(1.25)}}
 @media (prefers-reduced-motion:reduce){.fl-layer,.fl-layer img{transition:none!important}}
+
+/* animations in the onboarding screens */
+.proto-embed .ob-center-art.is-anim{width:196px;height:auto;margin-top:150px}
+.proto-embed .ob-bank-logo{width:32px;height:32px;border-radius:8px;display:block}
