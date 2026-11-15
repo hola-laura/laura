@@ -333,3 +333,22 @@
 .fviz-r{display:flex;flex-wrap:wrap;align-items:center;gap:7px;min-width:0}
 .fviz .farrow{width:22px}
 .fviz .push{padding:9px 11px;font-size:14px}
+/* v10: spot illustrations in cards, step strip, results layout */
+.card.spot{display:flex;flex-direction:column}
+.slide .card img.cspot{display:block;width:172px!important;height:112px!important;border-radius:16px;margin-top:auto;align-self:flex-start}
+.card.spot>ul,.card.spot>p{margin-bottom:22px}
+.card.navy img.cspot{margin-left:-10px}
+.slide[data-k="plan"] .grid.three>.card{min-height:400px}
+.slide[data-k="learn"] .grid.four>.card,.slide[data-k="deel"] .grid.four>.card{min-height:470px}
+.slide.active .bz-screen.scrolling img{animation:bzscroll 14s ease-in-out 1.2s infinite alternate}
+@keyframes bzscroll{0%,10%{transform:translateY(0)}90%,100%{transform:translateY(calc(-100% + 555px))}}
+.steps-strip{display:flex;align-items:stretch;gap:14px;margin-top:22px}
+.steps-strip>div{flex:1;background:#fff;border-radius:20px;padding:18px 20px;font-size:19px;line-height:1.3;font-weight:600;color:var(--navy);display:flex;align-items:center;gap:14px}
+.steps-strip>div b{flex:none;width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--lime);display:flex;align-items:center;justify-content:center;font-size:17px}
+.steps-strip>div.end{background:var(--mint)}
+.steps-strip>div.end b{background:#2fb457;color:#fff}
+.steps-strip>i{flex:none;align-self:center;width:26px;border-top:3px dashed var(--coral)}
+.res-wrap{position:relative}
+.res-gif{position:absolute;right:0;top:-10px}
+.res-grid>.card{min-height:420px!important}
+.res-grid .big{font-size:120px;line-height:1}
