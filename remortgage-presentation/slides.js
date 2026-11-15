@@ -109,18 +109,18 @@ const slides=[
   "notes": "Now, reach. While the move to a new partner was being worked out, we still had a revenue target with Better. So from the second half of 2025, we focused on what we could control: reach. Our hypothesis was simple: growth was limited by how many people we could reach. Most people who were about to remortgage hadn't connected their mortgage, so we simply couldn't see them. To give you the scale: about 600,000 customers had connected a mortgage, and about two and a half million had one that we couldn't see. I designed ways in that didn't need a connection: adding your deal-end date, indicative rates and estimated deals. I also designed Focus View, where the top of your mortgage home screen shows what matters right now, like your deal ending, and the move of Homeownership into the Grow tab. We ran all of this as a fast series of experiments. The hypotheses and the designs were mine, the team built them, and the data told us what was working. I kept an experiment file in Figma linking every design to its hypothesis and its result. It became the team's source of truth, so we stopped repeating failed tests. It's linked here on the slide, together with the Grow tab work. Between late 2025 and spring 2026 we beat our referral goal by about 75 percent: around 7,500 referrals against a goal of 4,300. So the hypothesis held. But keep one thing in mind: referrals are a leading indicator, not the result. That matters in the next chapter. The catch was that indicative rates are regulated, so every word mattered. I'll come back to that when I talk about AI.",
   "ask": [
    [
-    "Which experiment worked best?",
-    "The rates calculator, which is the next slide. It gave people something useful before asking for anything. What didn't work was showing full lender offers: unfamiliar lender names made people hesitate, so we paused it."
-   ],
-   [
     "Is the 75 percent your result?",
     "The hypotheses and the design of each experiment were mine. Engineering built them, and the data told us what was working and what wasn't."
+   ],
+   [
+    "Which experiment worked best?",
+    "Rate updates: telling people when mortgage rates change. They were driving more than 30 percent of our mortgage referrals."
    ]
   ]
  },
  {
-  "title": "Value before commitment: see your rates first",
-  "notes": "This is the experiment that worked best, so let me show it. You find it on your home screen. You see estimated rates for your situation, and it also works if you haven't connected a mortgage. You can change your details, like the property value or the term, and the monthly repayment updates as you go. And because these are regulated numbers, 'how are rates estimated' is always one tap away. It gave people something useful before we asked them for anything.",
+  "title": "Value before commitment: see real deals first",
+  "notes": "Let me show you one of them: estimated deals. You find it on your mortgage home screen. Instead of a generic rate, you see deals from real lenders, estimated for your situation: the monthly repayment, the rate, the fees. 'See more' opens every cost of that deal, including what happens after it ends. You can change your details, like the property value or the term. And further down, you can see how rates have moved, and switch on rate updates, so we tell you when they change. Because these are regulated numbers, 'how are rates estimated' is always one tap away. It gave people something useful before we asked them for anything. And those rate updates mattered more than I expected: they were driving more than 30 percent of our mortgage referrals.",
   "ask": [
    [
     "How do you show rates without it being advice?",

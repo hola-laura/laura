@@ -70,6 +70,19 @@
         {img: 'd1-habito.png', step: 3, hold: 4200}
       ]
     },
+    deals: {
+      steps: ['Find it at home', 'Estimated deals, by lender', 'Every cost of a deal', 'Change your details', 'How rates have moved', 'How rates are estimated'],
+      beats: [
+        {img: 'ed-home.png', step: 0, hold: 2200, tap: [188, 642], go: 'push'},
+        {img: 'ed-deals.png', step: 1, hold: 2800, tap: [77, 618], go: 'up'},
+        {img: 'ed-detail.png', step: 2, hold: 4200, scroll: 485, scrollMs: 2800, go: 'down'},
+        {img: 'ed-deals.png', step: 1, hold: 900, tap: [201, 329], go: 'up'},
+        {img: 'ed-form.png', step: 3, hold: 2600, tap: [200, 661], go: 'down'},
+        {img: 'ed-deals.png', step: 4, hold: 4600, scroll: 733, scrollMs: 3200, go: 'fade'},
+        {img: 'ed-deals.png', step: 4, hold: 700, tap: [369, 77], go: 'up'},
+        {img: 'ed-about.png', step: 5, hold: 4200, scroll: 383, scrollMs: 2600}
+      ]
+    },
     app: {
       steps: ['Before you start', 'What happens next'],
       beats: [
