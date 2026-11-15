@@ -86,3 +86,6 @@ body.proto-embed.is-bare .mg-tracker .mg-tracker-copy{display:none!important}
 @keyframes eqDrift{from{transform:translateX(-7px)}to{transform:translateX(9px)}}
 @keyframes eqTwinkle{0%,100%{transform:scale(1) rotate(0);opacity:1}50%{transform:scale(.55) rotate(25deg);opacity:.55}}
 @media (prefers-reduced-motion:reduce){.proto-embed .eq-art,.proto-embed .eq-art *{animation:none!important}.proto-embed .eq-fill{width:58%}}
+
+.fl-layer img.fl-anim{position:absolute;height:auto;transition:none}
+.fl-layer img.fl-anim[hidden]{display:none}

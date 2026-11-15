@@ -50,7 +50,7 @@
     vision: {
       steps: ['Your deal is ending: example deals, inside Monzo', 'Choose: an adviser first, or deals first', 'Pre-filled with what Monzo already knows', 'Recommendations, with your adviser one tap away', 'Every detail of the deal', 'Documents, straight from your phone', 'Always know what’s next'],
       beats: [
-        {img: 'vz-deals.png', step: 0, hold: 2600, tap: [201, 838], go: 'push'},
+        {img: 'vz-deals.png', anim: {src: 'remortgage-presentation/assets/anim/house-light.webp', left: 86, top: 150, width: 230}, step: 0, hold: 3000, tap: [201, 838], go: 'push'},
         {img: 'vz-choose.png', step: 1, hold: 2800, tap: [133, 740], go: 'push'},
         {img: 'vz-look.png', step: 2, hold: 2400, tap: [184, 373], go: 'push'},
         {img: 'vz-review.png', step: 2, hold: 3600, scroll: 751, scrollMs: 2600, tap: [201, 805], go: 'push'},
@@ -77,7 +77,7 @@
 
   list.innerHTML = flow.steps.map((label, i) => `<li><button type="button" data-step="${i}"><span class="mg-tk-num">${String(i + 1).padStart(2, '0')}</span><span>${label}</span></button></li>`).join('');
   const buttons = [...list.querySelectorAll('button')];
-  screen.innerHTML = '<div class="fl-layer"><img alt=""></div><div class="fl-layer"><img alt=""></div><i class="fl-tap"></i>';
+  screen.innerHTML = '<div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><i class="fl-tap"></i>';
   const layers = [...screen.querySelectorAll('.fl-layer')];
   const tapDot = screen.querySelector('.fl-tap');
   flow.beats.forEach(beat => { new Image().src = A + beat.img; });
@@ -94,6 +94,9 @@
     const img = incoming.querySelector('img');
     incoming.classList.add('no-anim');
     img.src = A + beat.img;
+    const anim = incoming.querySelector('.fl-anim');
+    if (beat.anim) { anim.src = beat.anim.src + '?r=' + Date.now() % 1e6; anim.style.cssText = `left:${beat.anim.left}px;top:${beat.anim.top}px;width:${beat.anim.width}px`; anim.hidden = false; }
+    else { anim.hidden = true; anim.removeAttribute('src'); }
     setScroll(img, beat.from || 0, 0);
     if (!how || reduced) {
       incoming.className = 'fl-layer no-anim'; incoming.style.zIndex = 2; outgoing.style.zIndex = 1;
