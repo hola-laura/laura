@@ -151,6 +151,10 @@ const slides=[
    [
     "This chart says 153 percent of plan, but earlier you said 75 percent above goal?",
     "They're different periods. The 75 percent is the whole reach period, from late 2025 to spring 2026. This chart only covers the first months with Habito."
+   ],
+   [
+    "Did you reach the goal for accepted recommendations?",
+    "They went up, thanks to the push on day zero and to adding more information to the recommendation page. I don't have the final figure against the goal, so I won't quote one."
    ]
   ]
  },
@@ -400,7 +404,7 @@ const slides=[
  },
  {
   "title": "What moved, and where each customer ask stands today",
-  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. I won't read every row. Three things are live: pre-fill, the push when your recommendation is ready, and, since this November, the application inside Monzo. The recommendation inside Monzo and the 'I need more time' option are designed. The new tracker was in build in October. And the adviser chat is paused for this year. On the numbers: referrals ended about 75 percent above our goal. As I said, that's a leading indicator, and I'd rather tell you that than claim an uplift I can't prove. And I want to be straight about 2026: by October, most of what I designed for Habito was in build or waiting its turn. The one thing we did get to measure was the push on day zero, and accepted recommendations went up. For the rest, I can show you the diagnosis, the decisions and the designs, but not yet the uplift. And first-time buyers launched on the 11th of November. I did the vision and the design of that first release.",
+  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. I won't read every row. Three things are live: pre-fill, the push when your recommendation is ready, and, since this November, the application inside Monzo. The recommendation inside Monzo and the 'I need more time' option are designed. The new tracker was in build in October. And the adviser chat is paused for this year. On the numbers: referrals ended about 75 percent above our goal. As I said, that's a leading indicator, and I'd rather tell you that than claim an uplift I can't prove. And I want to be straight about 2026: by October, most of what I designed for Habito was in build or waiting its turn. What we did get to measure: accepted recommendations went up, thanks to the push on day zero and to adding more information to the recommendation page. For the rest, I can show you the diagnosis, the decisions and the designs, but not yet the uplift. And first-time buyers launched on the 11th of November. I did the vision and the design of that first release.",
   "ask": [
    [
     "What would you measure next?",
