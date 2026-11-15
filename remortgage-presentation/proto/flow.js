@@ -47,6 +47,20 @@
       steps: ['First visit', 'Returning · saw rates', 'In market, not connected', 'Just connected', 'Stable · deal far away', 'Approaching · 7–12 months', 'In market · under 6 months', 'Remortgaging', 'Remortgage complete', 'Data unavailable', 'Variable rate · no deal end'],
       beats: Array.from({length: 11}, (_, i) => ({img: `fv-${String(i + 1).padStart(2, '0')}.png`, step: i, hold: 2500, go: 'fade'}))
     },
+    vision: {
+      steps: ['Your deal is ending: example deals, inside Monzo', 'Choose: an adviser first, or deals first', 'Pre-filled with what Monzo already knows', 'Recommendations, with your adviser one tap away', 'Every detail of the deal', 'Documents, straight from your phone', 'Always know what’s next'],
+      beats: [
+        {img: 'vz-deals.png', step: 0, hold: 2600, tap: [201, 838], go: 'push'},
+        {img: 'vz-choose.png', step: 1, hold: 2800, tap: [133, 740], go: 'push'},
+        {img: 'vz-look.png', step: 2, hold: 2400, tap: [184, 373], go: 'push'},
+        {img: 'vz-review.png', step: 2, hold: 3600, scroll: 751, scrollMs: 2600, tap: [201, 805], go: 'push'},
+        {img: 'vz-recs.png', step: 3, hold: 2800, tap: [84, 692], go: 'push'},
+        {img: 'vz-deal.png', step: 4, hold: 4200, scroll: 1390, scrollMs: 3200, tap: [201, 741], go: 'push'},
+        {img: 'vz-docs.png', step: 5, hold: 2400, tap: [194, 497], go: 'push'},
+        {img: 'vz-idkind.png', step: 5, hold: 2000, tap: [102, 300], go: 'fade'},
+        {img: 'vz-tracker.png', step: 6, hold: 4200, scroll: 300, scrollMs: 1800}
+      ]
+    },
     app: {
       steps: ['Before you start', 'What happens next'],
       beats: [
