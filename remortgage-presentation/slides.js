@@ -57,7 +57,7 @@ const slides=[
  },
  {
   "title": "How I’ll walk you through it",
-  "notes": "So here's how I'll walk you through it: six chapters, in the order they happened. First, the reset, when we paused to listen to customers. Second, the vision that came out of it: one journey, inside Monzo. Third, reach: the experiments we ran to get to people earlier. Fourth, and this is the biggest part, Habito: bringing the journey into the app. Fifth, what's next: an audit of the whole product, and first-time buyers. And finally, how I work with AI, the results, and what I learned.",
+  "notes": "So here's how I'll walk you through it: six chapters, in the order they happened. First, the reset, when we paused to listen to customers. Second, the vision that came out of it: one journey, inside Monzo. Third, reach: the experiments we ran to get to people earlier. Fourth, and this is the biggest part, Habito: bringing the journey into the app. Fifth, what's next: an audit of the whole product, and where I'd take it. And finally, how I work with AI, the results, and what I learned.",
   "ask": []
  },
  {
@@ -213,12 +213,12 @@ const slides=[
   ]
  },
  {
-  "title": "Make the recommendation something you can trust",
-  "notes": "So I designed the recommendation inside Monzo around the three questions people kept asking: why this deal for me, what does it really cost compared to the alternatives, and what happens if I say yes. That last one matters for timing: we tell people they're not signing today, and that they can chat with their adviser first. Every line here is regulated, so I worked through it closely with Compliance. And for momentum, we launched an experiment: a push notification the moment the recommendation is ready, on day zero and day three, instead of only on day three, landing on the progress tracker. All of it was measured on accepted recommendations, the team's main metric for the year. Let me show you how the recommendation itself took shape.",
+  "title": "The quick win: tell people the moment it’s ready",
+  "notes": "Before redesigning the recommendation itself, there was a quicker win. Remember the tree: people were ready, but our follow-up was slow. At that point, the only push we sent came three days after the recommendation was issued. So the first experiment was simple: send it on day zero as well, the moment the recommendation is ready, when people care most. The design question was where that push should land. I explored two options. Option A was a short screen in between. It tells you your recommendation is ready, shows that Habito is regulated and fee-free, and then takes you there. Two taps, and a whole screen to build trust, but it was a new screen to build. Option B opened the progress tracker, a screen people already knew, with the button on the current step. Three taps, and more on the screen to distract you, but nothing new to build. On paper I preferred A as the cleaner test. What launched, in May, was B: the tracker already existed, so we could test momentum quickly. It was measured on accepted recommendations.",
   "ask": [
    [
-    "Why a push on day zero?",
-    "Before, the only reminder came three days later. The moment the recommendation is ready is the moment people care most."
+    "What did you measure?",
+    "How many people opened the push on day zero against day three, how many clicked through to Habito, how many dropped before getting there, how long it took them, and in the end, accepted recommendations."
    ],
    [
     "Why land on the tracker and not on the recommendation?",
@@ -228,7 +228,7 @@ const slides=[
  },
  {
   "title": "First version: decide inside Monzo",
-  "notes": "So this is the first version of the recommendation in the app, from June. The goal was written at the top of my file: increase the acceptance rate by helping people decide confidently when they're ready, or defer on purpose, without dropping off. Three decisions here. First, it's framed through the adviser, not an algorithm: 'Will's top pick for you', 'a note from Will'. A person does the heavy lifting for trust. Second, there's a top pick, but the alternatives sit beside it, with the reasoning, so it never feels pushy. And third, we couldn't avoid the hand-off to Habito yet, so we say it out loud: 'Taking you back to Habito to continue. You can always come back to Monzo to check your progress.' A hand-off you announce feels very different from one that just happens to you.",
+  "notes": "Then the recommendation itself. This is the first version in the app, from June. The goal was written at the top of my file: increase the acceptance rate by helping people decide confidently when they're ready, or defer on purpose, without dropping off. Three decisions here. First, it's framed through the adviser, not an algorithm: 'Will's top pick for you', 'a note from Will'. A person does the heavy lifting for trust. Second, there's a top pick, but the alternatives sit beside it, with the reasoning, so it never feels pushy. And third, we couldn't avoid the hand-off to Habito yet, so we say it out loud: 'Taking you back to Habito to continue. You can always come back to Monzo to check your progress.' A hand-off you announce feels very different from one that just happens to you.",
   "ask": [
    [
     "Why keep the hand-off at all?",
@@ -272,7 +272,7 @@ const slides=[
  },
  {
   "title": "Always clear whose turn it is",
-  "notes": "And this is what ties it all together: the progress tracker. Remember the fourth thing customers told us: tell me what's happening. A remortgage has around ten stages, and the next step can sit with you, with the adviser or with the lender. So I designed one card that changes with the journey: orange when it's your turn, green when someone else is working on it. The push from the experiment lands here, and so does the adviser chat, which is the next bet. This version was being built when I left.",
+  "notes": "And this is what ties it all together: the progress tracker. Remember the fourth thing customers told us: tell me what's happening. A remortgage has around ten stages, and the next step can sit with you, with the adviser or with the lender. So I designed one card that changes with the journey: orange when it's your turn, green when someone else is working on it. The push from the experiment lands here. And it's where the adviser chat was designed to live, which is the next bet. This version was being built when I left.",
   "ask": [
    [
     "Is this live?",
@@ -300,7 +300,7 @@ const slides=[
  },
  {
   "title": "Your adviser, one tap away",
-  "notes": "Here's how it looks. The adviser has a permanent place in the tracker, with a label that says who it is and what it's for. One tap, and you're in a chat that is clearly about your mortgage. And when the adviser sends your recommendation, it opens in the app, not on another website. One honest detail: the label here still says 'Chatting on Habito.com', because that's what stayed live. What you're seeing is the design we paused.",
+  "notes": "Here's how it was designed. The adviser has a permanent place in the tracker, with a label that says who it is and what it's for. One tap, and you're in a chat that is clearly about your mortgage. And when the adviser sends your recommendation, it opens in the app, not on another website. One honest detail: the label here still says 'Chatting on Habito.com', because that's what stayed live. What you're seeing is the design we paused.",
   "ask": [
    [
     "What if the adviser still sends the old link to Habito's site?",
@@ -310,7 +310,7 @@ const slides=[
  },
  {
   "title": "Move the application into Monzo, pre-filled",
-  "notes": "And finally, the application form, which was the most fragmented part of the journey. It lived on Habito's website, outside Monzo, and it was long. In 2025 almost half of people dropped out there, and two thirds were applying with a partner. So I designed the application inside Monzo, with two decisions I care about. First, pre-fill: instead of typing everything, you confirm what Monzo already knows about you, which answers 'use what you already know about me'. Second, save and come back later, because nobody has all their mortgage details at hand in one go. And it's measured step by step, so the team can see exactly where people stop. What you see on the right is the start: what you'll need and how long it takes, before the first question. We also wanted your partner to be able to join and fill in their part. Habito's operations only allow one account per application, so that's still an open topic with them. Looking further ahead, we want people to fill it in by voice, and to bring in data from other banks through Open Banking. We took that vision to the FCA as part of our Open Finance work, and it landed really well. You'll see a glimpse of it on the next slide. The in-app application wasn't live when I left, so I won't claim it lifted conversion.",
+  "notes": "And finally, the application form, which was the most fragmented part of the journey. It lived outside Monzo, on the broker's website, and it was long. With Better, in 2025, almost half of people dropped out there, and two thirds were applying with a partner. With Habito, it was still on a separate website. So I designed the application inside Monzo, with two decisions I care about. First, pre-fill: instead of typing everything, you confirm what Monzo already knows about you, which answers 'use what you already know about me'. Second, save and come back later, because nobody has all their mortgage details at hand in one go. And it's measured step by step, so the team can see exactly where people stop. What you see on the right is the start: what you'll need and how long it takes, before the first question. We also wanted your partner to be able to join and fill in their part. Habito's operations only allow one account per application, so that's still an open topic with them. Looking further ahead, we want people to fill it in by voice, and to bring in data from other banks through Open Banking. We took that vision to the FCA as part of our Open Finance work, and it landed really well. You'll see a glimpse of it on the next slide. The in-app application wasn't live when I left, so I won't claim it lifted conversion.",
   "ask": [
    [
     "Why can't a partner join the application?",
@@ -348,8 +348,8 @@ const slides=[
   ]
  },
  {
-  "title": "What moved, and what's still being measured",
-  "notes": "So, what came out of it? Between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent: around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. The vision became the team's North Star and part of the case for a new partnership model. In 2026 the work was about conversion. The Day 1 reframing and the push experiment launched in May. The progress tracker was being built when I left in October. The adviser chat in the app was designed, and then paused for this year. And the recommendation and the in-app application were designed, but not live yet. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
+  "title": "What moved, and where each customer ask stood when I left",
+  "notes": "So, what came out of it? Let me go back to the four things customers asked for at the start. Don't send me out: the recommendation and the application inside Monzo are designed, but not live yet. Use what you know: pre-fill went live for everyone on the 1st of May, with the Day 1 launch. Let me choose: the 'I need more time' option is designed, and the adviser chat in the app was designed and then paused for this year. Tell me what's happening: the push on day zero and day three launched in May, and the new progress tracker was being built when I left in October. And on the numbers: between late 2025 and spring 2026, the reach work beat our referral goal by about 75 percent, around 7,500 referrals against 4,300. That's a leading indicator, and I call it that on purpose. I'd rather tell you that honestly than claim an uplift I can't prove. And first-time buyers, the next journey I worked on, launched on the 11th of November.",
   "ask": [
    [
     "What would you measure next?",
