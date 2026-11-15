@@ -300,3 +300,9 @@
 .role-ph{flex:none;display:flex;flex-direction:column;align-items:center;gap:14px}
 .slide .role-ph p{margin:0;font-size:15px;color:#5d6b75}
 .slide .role-ph p b{color:var(--navy)}
+.slide.dark .card:not(.navy) h3{color:var(--navy)}
+.pause-num{display:flex;align-items:center;gap:26px;margin-top:34px}
+.pause-num .giant{font-size:170px;line-height:.9}
+.pause-num-t{display:flex;flex-direction:column;gap:6px}
+.pause-num-t b{font-size:44px;color:#fff;letter-spacing:-.02em;line-height:1}
+.pause-num-t span{font-size:20px;color:#b9c6cc;max-width:300px;line-height:1.35}
