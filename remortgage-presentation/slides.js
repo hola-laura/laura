@@ -16,7 +16,7 @@ const slides=[
  },
  {
   "title": "Connect in a minute, and tell us when your deal ends",
-  "notes": "This is what it looks like. I rebuilt it in code from my Figma files, so you can see it moving. You connect in a few taps and you don't need any account details. We find your mortgage through a credit reference agency, and it doesn't touch your credit score. But the part I want you to look at is the end. We ask one question, which is when your current deal ends. In one year, the new connections that gave us that date went from 38 percent to 88. And that date is important for the rest of the story, because it's how we know when to talk to someone about remortgaging.",
+  "notes": "This is how connecting your mortgage works. And if you see any font that looks a bit jumpy, it's because I rebuilt these screens with AI, so they can move in the presentation. Later, if you're interested, we can go to the Figma files. You connect in a few taps and you don't need any account details. We find your mortgage through a credit reference agency, and it doesn't touch your credit score. But the part I want you to look at is the end. We ask one question, which is when your current deal ends. In one year, the new connections that gave us that date went from 38 percent to 88. And that date is important for the rest of the story, because it's how we know when to talk to someone about remortgaging.",
   "ask": [
    [
     "Is 38 to 88 percent your result?",
