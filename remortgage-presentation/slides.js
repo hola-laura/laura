@@ -16,7 +16,7 @@ const slides=[
  },
  {
   "title": "Connect in a minute, and tell us when your deal ends",
-  "notes": "This is how connecting your mortgage works. And yes, if you see any font that looks a bit jumpy, it's because I rebuilt these screens with AI, and it's not very good with our fonts. So, apologies for that. Later, if you're interested, we can go to the Figma files. So, you connect in a few taps, and you don't need any account details. We find your mortgage through TransUnion, which is a credit reference agency. And during onboarding we ask you about your deal and your property. I added this step in 2024, to know which customers were in market. By January 2025, the new customers who connected and gave us their deal-end date had gone from 38 percent to 88. And that date matters, because it tells us when a customer is close to remortgaging. And also, it was my idea and my design.",
+  "notes": "This is how connecting your mortgage works. And yes, if you see any font that looks a bit jumpy, it's because I rebuilt these screens with AI, and it's not very good at capturing branded fonts. So, apologies for that. Later, if you're interested, we can go to the Figma files. So, you connect in a few taps, and you don't need any account details. We find your mortgage through TransUnion, which is a credit reference agency. And during onboarding we ask you about your deal and your property. I added this step in 2024, to know which customers were in market. By January 2025, the new customers who connected and gave us their deal-end date had gone from 38 percent to 88. And that date matters, because it tells us when a customer is close to remortgaging. And also, it was my idea and my design.",
   "ask": [
    [
     "Is 38 to 88 percent your result?",
