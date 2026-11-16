@@ -79,3 +79,9 @@ kbd{font:11px var(--mono);color:#e5e8dc;border:1px solid var(--line);border-radi
 .notes-ask h3{margin:0 0 8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--lime,#d8f16a);font-weight:700}
 .notes-ask .q{font-weight:700;color:#fff;margin-top:10px}
 .notes-ask .ans{color:#cfd9d3}
+
+/* speaker notes: change slide without closing the sheet */
+.sheet-nav{display:flex;gap:8px}
+.sheet-arrow{border:1px solid rgba(223,244,107,.5);background:transparent;color:var(--paper);border-radius:999px;padding:8px 14px;font:inherit;font-size:12px;letter-spacing:.02em;cursor:pointer;transition:background .2s,color .2s}
+.sheet-arrow:hover:not(:disabled),.sheet-arrow:focus-visible{background:var(--lime);color:var(--ink)}
+.sheet-arrow:disabled{opacity:.35;cursor:default}
