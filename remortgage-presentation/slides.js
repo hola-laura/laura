@@ -104,7 +104,7 @@ const slides=[
   "ask": [
    [
     "What happened to the adviser-first test?",
-    "We parked it when the partner changed, because Habito's advisers work by chat, not by phone. The idea came back in 2026 as flexible journeys: letting people choose when they talk to someone."
+    "It tested well with Better. We parked it for Habito, because they couldn't handle it operationally, their advisers work by chat. I suggested a way around it, and that became estimated deals, so people can see deals first without talking to anyone."
    ]
   ]
  },
