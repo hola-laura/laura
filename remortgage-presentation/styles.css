@@ -85,3 +85,8 @@ kbd{font:11px var(--mono);color:#e5e8dc;border:1px solid var(--line);border-radi
 .sheet-arrow{border:1px solid rgba(223,244,107,.5);background:transparent;color:var(--paper);border-radius:999px;padding:8px 14px;font:inherit;font-size:12px;letter-spacing:.02em;cursor:pointer;transition:background .2s,color .2s}
 .sheet-arrow:hover:not(:disabled),.sheet-arrow:focus-visible{background:var(--lime);color:var(--ink)}
 .sheet-arrow:disabled{opacity:.35;cursor:default}
+
+/* speaker notes as bullets */
+.notes-content ul.notes-say{margin:0;padding:0 0 0 20px;list-style:disc}
+.notes-content ul.notes-say li{margin:0 0 11px;padding-left:4px;line-height:1.5}
+.notes-content ul.notes-say li::marker{color:var(--lime,#d8f16a)}
