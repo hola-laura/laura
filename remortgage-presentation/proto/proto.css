@@ -111,3 +111,34 @@ body.proto-embed.is-bare .mg-tracker .mg-tracker-copy{display:none!important}
 /* a sheet with the page behind it: closing fades the dim and slides the sheet down */
 .fl-layer[data-back="1"].is-down{transform:none;opacity:0}
 .fl-layer img.fl-anim.is-static{animation:none}
+
+/* onboarding on slide 3: 13 steps, with the equity set-up */
+.proto-embed .mg-onboarding .mg-tk-steps{gap:1px!important}
+.proto-embed .mg-onboarding .mg-tk-steps button{padding:8px 14px;font-size:17.5px;border-radius:12px}
+.proto-embed .mg-onboarding .mg-tk-bar{margin-top:14px!important}
+.proto-embed .mg-tk-who.is-eq{background:#dff3e8;color:#1f6b45}
+.proto-embed .mg-onboarding .mg-tk-legend span.lg-eq::before{background:#5fc08a}
+.proto-embed .ob-eq h3{font-size:28px!important;line-height:33px!important;margin:22px 4px 12px}
+.proto-embed .ob-eq p{color:var(--sub);font-size:15px;line-height:20px;padding:0 4px}
+.proto-embed .ob-eq p+p{margin-top:14px}
+.proto-embed .ob-eq .ob-eq-art{display:block;height:auto}
+.proto-embed .ob-eq-c{text-align:center}
+.proto-embed .ob-eq-c .ob-eq-art{margin-left:auto;margin-right:auto}
+.proto-embed .ob-eq-c h3{margin-top:26px;margin-bottom:22px}
+.proto-embed .ob-eq-c p{padding:0 14px}
+.proto-embed .ob-eq .ob-foot{padding-top:12px;background:#f2f8f3}
+.proto-embed .ob-eq .ob-foot .ob-cta{margin-bottom:12px}
+.proto-embed .ob-eq .ob-foot .ob-cta:last-child{margin-bottom:44px}
+.proto-embed .ob-eq-addr{margin-top:22px;font-size:16px;line-height:21px}
+.proto-embed .ob-eq-rows{margin-top:22px;padding:4px 16px}
+.proto-embed .ob-eq-rows>div{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(9,23,35,.08)}
+.proto-embed .ob-eq-rows>div:last-child{border-bottom:0}
+.proto-embed .ob-eq-rows span{font-size:16px;line-height:20px}
+.proto-embed .ob-eq-rows span small{display:block;font-size:12px;line-height:15px;color:var(--sub)}
+.proto-embed .ob-eq-rows b{font-size:24px;font-weight:500;letter-spacing:-.3px}
+.proto-embed .ob-eq-rows b small{font-size:14px}
+.proto-embed .ob-eq-rows b.is-up{color:#34a853}
+.proto-embed .ob-eq-link span{color:var(--acc)}
+.proto-embed .ob-eq-link i{width:8px;height:8px;border-right:2px solid #b0b6ba;border-top:2px solid #b0b6ba;transform:rotate(45deg);margin-right:4px}
+.proto-embed .ob-screen.is-active .ob-eq-art{animation:eqIn .7s cubic-bezier(.3,1.3,.5,1) .15s both}
+@media (prefers-reduced-motion:reduce){.proto-embed .ob-screen.is-active .ob-eq-art{animation:none}}
