@@ -163,3 +163,17 @@ body.proto-embed{font-family:"Onest","DM Sans",Arial,sans-serif}
 .proto-embed .mg-tk-toggle{font-size:13px!important;padding:7px 14px 7px 12px!important}
 .proto-embed .mg-tk-legend{font-size:11.5px!important;gap:8px!important}
 .proto-embed .mg-tk-bar{margin-top:12px!important}
+
+/* Chapter box: the step menu reads as the prototype's chapters */
+.proto-embed .mg-tracker-copy{background:#1a2f42;border-radius:22px;padding:16px 12px 14px;align-self:center}
+.proto-embed .mg-tracker-copy::before{content:"Chapters";display:block;font:700 13px/1 "Onest",Arial,sans-serif;color:#ff4f40;padding:2px 10px 12px}
+.proto-embed .mg-tk-steps button,.proto-embed .mg-tk-steps.is-grouped button,.proto-embed .mg-onboarding .mg-tk-steps button{position:relative;grid-template-columns:22px 1fr auto;gap:10px;padding:7px 10px;color:#b8c4cc}
+.proto-embed .mg-tk-num{display:flex!important;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;box-sizing:border-box;border:1.5px solid rgba(242,248,243,.28);color:#b8c4cc!important;font:600 9.5px/1 "Onest",Arial,sans-serif!important;letter-spacing:-.02em;position:relative;z-index:1;background:#1a2f42}
+.proto-embed .mg-tk-steps li:not(:last-child) button::after{content:"";position:absolute;left:20.25px;top:calc(50% + 11px);height:calc(100% - 20px);width:1.5px;background:rgba(242,248,243,.16)}
+.proto-embed .mg-tk-steps button.is-past .mg-tk-num{background:#ff4f40;border-color:#ff4f40;color:#fff!important}
+.proto-embed .mg-tk-steps button[aria-current]{background:rgba(242,248,243,.09)!important;color:#fff!important;font-weight:700}
+.proto-embed .mg-tk-steps button[aria-current] .mg-tk-num{background:#fff;border-color:#fff;color:#112231!important}
+.proto-embed .mg-tk-steps button[aria-current] small{color:#b8c4cc}
+.proto-embed .mg-tk-steps .fl-group{padding:10px 10px 4px}
+.proto-embed .mg-tk-bar{margin:12px 0 0!important;padding:12px 10px 0!important;border-top:1px solid rgba(242,248,243,.1)}
+.proto-embed .mg-tracker,.proto-embed .mg-rates{grid-template-columns:minmax(0,300px) auto!important}
