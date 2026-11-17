@@ -177,3 +177,13 @@ body.proto-embed{font-family:"Onest","DM Sans",Arial,sans-serif}
 .proto-embed .mg-tk-steps .fl-group{padding:10px 10px 4px}
 .proto-embed .mg-tk-bar{margin:12px 0 0!important;padding:12px 10px 0!important;border-top:1px solid rgba(242,248,243,.1)}
 .proto-embed .mg-tracker,.proto-embed .mg-rates{grid-template-columns:minmax(0,300px) auto!important}
+
+/* chapter tags become dots (same colours as the legend) */
+.proto-embed .mg-tk-who{font-size:0!important;line-height:0!important;padding:0!important;width:8px;height:8px;border-radius:50%;justify-self:end;margin-right:4px}
+.proto-embed .mg-tk-who.is-base{background:#b8adc2!important}
+.proto-embed .mg-tk-who.is-new{background:#a98fd0!important}
+.proto-embed .mg-tk-who.is-eq{background:#5fc08a!important}
+.proto-embed .mg-tk-who.is-you{background:#ff9500!important}
+.proto-embed .mg-tk-who.is-us{background:#34c759!important}
+.proto-embed .mg-tk-who.is-done{background:#4aa8d0!important}
+.proto-embed .mg-onboarding .mg-tk-legend span+span::before{background:#a98fd0}

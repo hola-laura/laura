@@ -155,3 +155,7 @@
 .road2 .road-list li.hot{position:relative;padding-left:32px;font-weight:700;color:#fff}
 .road2 .road-list li.hot::before{content:"";position:absolute;left:0;top:50%;width:20px;height:20px;margin-top:-10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23ff4f40' d='M50 0C53 30 70 47 100 50C70 53 53 70 50 100C47 70 30 53 0 50C30 47 47 30 50 0Z'/%3E%3C/svg%3E") center/contain no-repeat}
 .road2 .road-arrow{width:46px;height:46px;border:0;margin:0 6px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46'%3E%3Cpath d='M12 23h20m-7-7 7 7-7 7' fill='none' stroke='%23ff4f40' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
+
+/* status line under the text: a caption, not a pill */
+.design-status{border:0!important;padding:0!important;border-radius:0!important;background:none!important;font-size:15px!important;font-weight:500!important;color:#8796a1!important;margin-top:26px!important}
+.design-points li{border-left-color:var(--mz-coral)!important}
