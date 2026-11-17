@@ -1,0 +1,210 @@
+/* mortgage-story.css
+   Modules for the remortgaging case study (2026 rewrite): the first business model, the four customer asks,
+   the vision, the turn, finding why, the bets, the compliance checker and where each ask stands today.
+   Uses the tokens from case-format.css. Load after it. */
+
+.mortgage-case{--ms-paper:#f0edf4;--ms-lav:#e9e3f0;--ms-warm:#ff9d7e;--ms-warm-ink:#b4492b;--ms-dash:#b9afc6}
+
+/* Shared */
+.ms-link{display:inline-flex;margin-top:22px;font-size:15px;font-weight:500;color:var(--fx-lilac);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.ms-link:hover{color:var(--fx-ink)}
+.mortgage-case .fv-zoom{display:block;padding:0;border:0;background:none;cursor:zoom-in;text-align:inherit}
+.ms-pill{display:inline-block;margin-right:10px;padding:3px 10px;border-radius:99px;background:var(--fx-lilac-soft);color:var(--fx-navy)!important;font:400 11px/1.6 var(--font-mono);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;vertical-align:1px}
+.ms-pill.is-paused{background:transparent;color:var(--fx-lilac-soft)!important;box-shadow:inset 0 0 0 1px var(--fx-lilac-soft)}
+
+/* 01 · Context */
+.ms-context{padding-bottom:24px}
+.mortgage-case .ms-tight{margin-top:0}
+
+/* The first business model */
+.ms-model{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;align-items:center;margin:40px 0 0;padding:48px;border-radius:var(--fx-radius);background:var(--ms-paper)}
+.ms-model h3{margin:14px 0 0;max-width:15ch;font-size:clamp(26px,2.6vw,36px);line-height:1.12}
+.ms-model p{margin:16px 0 0;max-width:40ch;font-size:17px;line-height:1.55;color:var(--fx-muted)}
+.ms-flow{margin:0}
+.ms-flow ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px}
+.ms-flow li{position:relative;min-height:104px;padding:18px 18px 20px;border-radius:18px;background:#fff;box-shadow:0 1px 0 #ffffff,0 18px 34px -24px #29242f59}
+.ms-flow li:not(:last-child)::after{content:"";position:absolute;top:50%;right:-29px;width:28px;border-top:2px dashed var(--ms-dash)}
+.ms-flow li span{display:block;font:11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--fx-lilac)}
+.ms-flow li b{display:block;margin-top:10px;font:400 20px/1.2 var(--font-heading);font-size-adjust:.47;color:var(--fx-ink)}
+.ms-flow li:not(.is-ours){background:transparent;box-shadow:inset 0 0 0 1.5px var(--ms-dash)}
+.ms-flow li:not(.is-ours) span,.ms-flow li:not(.is-ours) b{color:#8a8295}
+.ms-flow figcaption{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px;margin-top:16px;font:11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.05em}
+.ms-flow figcaption span{padding-top:10px;border-top:2px solid var(--fx-lilac);color:var(--fx-lilac)}
+.ms-flow figcaption .ms-flow-blind{grid-column:2/4;border-top:2px dashed var(--ms-dash);color:#8a8295}
+
+/* 02 · The reset: four asks */
+.ms-reset{padding-bottom:40px}
+.ms-asks{list-style:none;margin-left:0;margin-right:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.ms-asks li{display:flex;flex-direction:column;min-height:228px;padding:24px 22px 26px;border-radius:22px;background:#fff;border:1px solid var(--fx-line)}
+.ms-asks span{font:11px var(--font-mono);color:var(--fx-lilac)}
+.ms-asks q{display:block;margin-top:44px;font:400 clamp(21px,1.9vw,26px)/1.18 var(--font-heading);font-size-adjust:.47;color:var(--fx-ink);quotes:"“" "”"}
+.ms-asks p{margin:auto 0 0;padding-top:14px;font-size:15px;line-height:1.5;color:var(--fx-muted)}
+
+/* The vision */
+.ms-vision{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center;margin-top:24px;padding:56px 64px 0;border-radius:var(--fx-radius);background:var(--ms-lav);overflow:hidden}
+.ms-vision-phones{display:flex;justify-content:center;align-items:flex-start;gap:22px;margin-bottom:-120px}
+.ms-vision-phones .fv-zoom{width:min(232px,46%)}
+.ms-vision-phones .fv-zoom:nth-child(2){margin-top:56px}
+.ms-vision-copy{padding-bottom:56px}
+.ms-vision h3{margin:14px 0 0;max-width:15ch;font-size:clamp(26px,2.7vw,38px);line-height:1.12}
+.ms-vision p{margin:18px 0 0;max-width:40ch;font-size:17px;line-height:1.55;color:var(--fx-muted)}
+
+/* 03 · Reach */
+.ms-result{display:flex;align-items:center;gap:18px;margin:28px 0 0;padding:20px 24px;border-radius:18px;background:var(--ms-lav)}
+.ms-result strong{flex:none;font:400 46px/1 var(--font-heading);font-size-adjust:.47;letter-spacing:-.02em;color:var(--fx-lilac)}
+.ms-result span{font-size:15px;line-height:1.45;color:var(--fx-ink);max-width:36ch}
+.ms-reach .fx-line{margin-top:64px}
+
+/* 04 · The turn */
+.ms-turn{padding:80px 56px 64px;margin:16px 0 0;scroll-margin-top:24px}
+.ms-turn h2{font-size:clamp(32px,4.4vw,60px);line-height:1.08;margin:18px 0 0;max-width:16ch}
+.ms-turn .fx-lead a{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.ms-funnel{margin:64px 0 0}
+.ms-funnel ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.ms-funnel li{position:relative;display:grid;grid-template-rows:260px auto}
+.ms-funnel li::before{content:"";grid-row:1;grid-column:1;align-self:end;height:var(--was,0);border-radius:12px 12px 4px 4px;background:repeating-linear-gradient(135deg,#ff9d7e2e 0 6px,transparent 6px 12px);box-shadow:inset 0 0 0 1.5px #ff9d7e8c;border-bottom:0}
+.ms-funnel i{grid-row:1;grid-column:1;align-self:end;height:var(--h);border-radius:12px 12px 4px 4px;background:linear-gradient(180deg,#cdb8ea,#8f73b9)}
+.ms-funnel li.is-gap{--was:74%}
+.ms-funnel li.is-gap ~ li i{opacity:.72}
+.ms-funnel li.is-money i{background:linear-gradient(180deg,#cdb8ea80,#8f73b980)}
+.ms-funnel span{margin-top:14px;font:11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:#c4cfda}
+.ms-funnel em{grid-row:1;grid-column:1;align-self:end;justify-self:center;margin-bottom:calc(260px * var(--hn,0) + 12px);padding:5px 10px;border-radius:99px;font:normal 11px/1.3 var(--font-mono);text-transform:uppercase;letter-spacing:.04em;text-align:center;white-space:nowrap;z-index:1}
+.ms-funnel li.is-gap em{--hn:.74;background:var(--ms-warm);color:#2a1410}
+.ms-funnel li.is-money em{--hn:.24;background:#ffffff14;color:#d6dee6;box-shadow:inset 0 0 0 1px #ffffff33}
+.ms-funnel figcaption{margin-top:20px;font:11px var(--font-mono);color:#8fa0b0}
+.ms-shift{display:grid;grid-template-columns:180px minmax(0,1fr) minmax(0,1fr);gap:32px;margin:56px 0 0;padding-top:32px;border-top:1px solid #ffffff26;align-items:start}
+.ms-shift-label{margin:4px 0 0;font:11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--fx-lilac-soft)}
+.ms-shift span{display:block;font:11px var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:#8fa0b0}
+.ms-shift q{display:block;margin-top:12px;font:400 clamp(22px,2.4vw,32px)/1.24 var(--font-heading);font-size-adjust:.47;color:#8fa0b0;quotes:"“" "”"}
+.ms-shift div:last-child span{color:var(--ms-warm)}
+.ms-shift div:last-child q{color:#fff}
+.ms-turn-note{margin:32px 0 0 212px;max-width:52ch;font-size:16px;line-height:1.55;color:#c4cfda}
+
+/* 05 · Finding why */
+.ms-found{padding-bottom:40px}
+.ms-found h2{max-width:20ch}
+.ms-found-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:20px;align-items:stretch}
+.ms-wall{display:flex;flex-direction:column;margin:0;padding:28px;border-radius:var(--fx-radius);background:#0f1a2e}
+.ms-wall .fv-zoom{position:relative}
+.ms-wall-tag{position:absolute;top:6%;right:5%;max-width:46%;padding:12px 14px;border-radius:14px;background:#ffffff12;box-shadow:inset 0 0 0 1px #ffffff26;text-align:left;font:11px/1.5 var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--fx-lilac-soft)}
+.ms-wall-tag b{display:block;margin-top:4px;font:400 17px/1.25 var(--font-heading);font-size-adjust:.47;text-transform:none;letter-spacing:0;color:#fff}
+.ms-wall .fv-zoom img{display:block;width:100%;height:auto;aspect-ratio:auto;border-radius:12px}
+.ms-wall figcaption{margin-top:22px;font-size:15px;line-height:1.55;color:#c4cfda;max-width:58ch}
+.ms-wall figcaption b{color:#fff;font-weight:500}
+.ms-tree{padding:32px;border-radius:var(--fx-radius);background:var(--ms-paper)}
+.ms-tree>p{margin:0;font-size:16px;line-height:1.55;color:var(--fx-muted)}
+.ms-tree-root{margin-top:24px;padding:16px 18px;border-radius:16px;background:var(--fx-navy)}
+.ms-tree-root span{display:block;font:11px var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--fx-lilac-soft)}
+.ms-tree-root b{display:block;margin-top:6px;font:400 21px/1.25 var(--font-heading);font-size-adjust:.47;color:#fff}
+.ms-tree ul{list-style:none;margin:0 0 0 22px;padding:6px 0 0 18px;border-left:2px solid #d5cbe2}
+.ms-tree li{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;align-items:center;margin-top:8px;padding:12px 14px;border-radius:14px;background:#fff}
+.ms-tree li::before{content:"";position:absolute;left:-20px;top:50%;width:18px;border-top:2px solid #d5cbe2}
+.ms-tree li b{font-size:15px;font-weight:700;color:var(--fx-ink)}
+.ms-tree li span{grid-column:1;font-size:13px;line-height:1.4;color:var(--fx-muted)}
+.ms-tree li em{grid-row:1/3;grid-column:2;padding:5px 9px;border-radius:99px;background:var(--lavender-soft);font:normal 10px/1.3 var(--font-mono);text-transform:uppercase;letter-spacing:.04em;color:var(--fx-lilac);white-space:nowrap}
+.ms-tree li em.is-theirs{background:transparent;color:#8a8295;box-shadow:inset 0 0 0 1px #cfc6d9}
+
+/* The bets */
+.ms-bets{margin-top:32px}
+.ms-bets h2{max-width:18ch}
+.ms-bets .fx-call-grid dd b.ms-pill{color:var(--fx-navy)!important}
+.ms-bets .fx-call-grid dd b.ms-pill.is-paused{color:var(--fx-lilac-soft)!important}
+.ms-glimpse{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:24px 0 0;padding:40px 32px 32px;border-radius:22px;background:#ffffff0a;border:1px solid #ffffff1f}
+.ms-glimpse figure{margin:0}
+.ms-glimpse .fv-zoom{width:100%;max-width:200px;margin:0 auto}
+.ms-glimpse .fx-bz{--edge:#5a5b60}
+.ms-glimpse figcaption{margin:16px auto 0;max-width:24ch;text-align:center;font-size:13px;line-height:1.45;color:#c4cfda}
+.ms-glimpse figcaption b{display:block;margin-bottom:4px;font:400 11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--fx-lilac-soft)}
+
+/* 06 · How I work: the checker */
+.ms-work{padding-bottom:40px}
+.ms-work h2{max-width:20ch}
+.ms-checker{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center;padding:56px;border-radius:var(--fx-radius);background:var(--ms-lav)}
+.ms-checker .mono-label{color:var(--fx-lilac)}
+.ms-checker h3{margin:14px 0 0;max-width:19ch;font-size:clamp(24px,2.4vw,34px);line-height:1.16}
+.ms-checker p{margin:18px 0 0;max-width:44ch;font-size:16px;line-height:1.6;color:var(--fx-muted)}
+.ms-checker-mock{padding:22px 22px 18px;border-radius:22px;background:#fff;box-shadow:0 40px 70px -40px #29242f59,0 0 0 1px #29242f0d;transform:rotate(1.2deg)}
+.ms-mock-bar{display:flex;align-items:center;gap:6px;margin-bottom:18px}
+.ms-mock-bar i{width:9px;height:9px;border-radius:50%;background:#e4dcec}
+.ms-mock-bar small{margin-left:auto;font:10px var(--font-mono);text-transform:uppercase;letter-spacing:.05em;color:#a69eb1}
+.ms-checker-mock>p{margin:0;font-size:18px;line-height:1.6;color:var(--fx-ink);max-width:none}
+.ms-checker-mock mark{padding:1px 4px;border-radius:5px;background:#ffe6dd;color:var(--ms-warm-ink);box-shadow:inset 0 -2px 0 var(--ms-warm)}
+.ms-mock-flag,.ms-mock-fix{margin-top:14px;padding:14px 16px;border-radius:14px}
+.ms-mock-flag{background:#fff5f1;box-shadow:inset 0 0 0 1px #ffd8ca}
+.ms-mock-fix{margin-top:10px;background:#f3eef9}
+.ms-mock-flag b,.ms-mock-fix b{display:block;font:11px/1.4 var(--font-mono);text-transform:uppercase;letter-spacing:.05em}
+.ms-mock-flag b{color:var(--ms-warm-ink)}
+.ms-mock-fix b{color:var(--fx-lilac)}
+.ms-mock-flag span,.ms-mock-fix span{display:block;margin-top:6px;font-size:14px;line-height:1.5;color:var(--fx-ink)}
+
+/* 07 · Today */
+.ms-today h2{max-width:20ch}
+.ms-today-list{margin:40px 0 0;border-top:1px solid var(--fx-line)}
+.ms-today-list>div{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:32px;align-items:center;padding:24px 0;border-bottom:1px solid var(--fx-line)}
+.ms-today-list dt{font:400 clamp(21px,2vw,27px)/1.25 var(--font-heading);font-size-adjust:.47;color:var(--fx-ink)}
+.ms-today-list dd{display:grid;gap:12px;margin:0}
+.ms-today-list dd span{display:flex;align-items:center;font-size:16px;line-height:1.4;color:var(--fx-ink)}
+.ms-today .ms-pill{min-width:72px;text-align:center;background:var(--lavender-soft);color:var(--fx-lilac)!important}
+.ms-today .ms-pill.is-paused{background:transparent;color:#8a8295!important;box-shadow:inset 0 0 0 1px #cfc6d9}
+
+/* Footer invitation */
+.mortgage-case .ms-footer-kicker{display:block;margin:0 0 16px;color:var(--fx-lilac)}
+.mortgage-case .footer-title{max-width:22ch}
+
+@media (max-width:1100px){
+  .ms-asks{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ms-asks li{min-height:190px}
+}
+@media (max-width:1000px){
+  .ms-model,.ms-vision,.ms-checker{grid-template-columns:1fr;gap:36px}
+  .ms-vision{padding:48px 40px 0}
+  .ms-vision-phones{order:2;margin-bottom:-90px}
+  .ms-vision-copy{padding-bottom:0}
+  .ms-found-grid{grid-template-columns:1fr}
+  .ms-shift{grid-template-columns:1fr 1fr}
+  .ms-shift-label{grid-column:1/-1}
+  .ms-turn-note{margin-left:0}
+  .ms-glimpse{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ms-checker-mock{transform:none}
+}
+@media (max-width:820px){
+  .ms-model{padding:32px 24px;margin-top:24px}
+  .ms-turn{padding:48px 24px 40px}
+  .ms-funnel ol{gap:8px}
+  .ms-funnel li{grid-template-rows:200px auto}
+  .ms-funnel em{margin-bottom:calc(200px * var(--hn,0) + 10px)}
+  .ms-funnel span{font-size:10px;letter-spacing:.02em;overflow-wrap:anywhere}
+  .ms-checker{padding:32px 24px}
+  .ms-today-list>div{grid-template-columns:1fr;gap:14px}
+}
+@media (max-width:640px){
+  .ms-flow ol{grid-template-columns:1fr;row-gap:22px}
+  .ms-flow li{min-height:0}
+  .ms-flow li:not(:last-child)::after{top:auto;bottom:-23px;right:auto;left:28px;width:0;height:22px;border-top:0;border-left:2px dashed var(--ms-dash)}
+  .ms-flow figcaption{display:flex;flex-wrap:wrap;gap:8px 20px}
+  .ms-flow figcaption span{padding-top:8px}
+  .ms-asks{grid-template-columns:1fr}
+  .ms-asks li{min-height:0}
+  .ms-asks q{margin-top:18px}
+  .ms-asks p{padding-top:10px}
+  .ms-vision{padding:32px 20px 0}
+  .ms-vision-phones{margin-bottom:-70px}
+  .ms-funnel{margin-top:40px}
+  .ms-funnel ol{grid-template-columns:1fr;gap:12px}
+  .ms-funnel li{grid-template-columns:104px minmax(0,1fr);grid-template-rows:auto;align-items:center;column-gap:12px}
+  .ms-funnel span{grid-column:1;grid-row:1;margin:0;font-size:10px;letter-spacing:.03em}
+  .ms-funnel i,.ms-funnel li::before{grid-column:2;grid-row:1;align-self:center;justify-self:start;height:24px;border-radius:4px 10px 10px 4px}
+  .ms-funnel i{width:var(--h)}
+  .ms-funnel li::before{width:var(--was,0);height:24px}
+  .ms-funnel em,.ms-funnel li.is-gap em,.ms-funnel li.is-money em{grid-column:2;grid-row:2;justify-self:start;margin:8px 0 2px;font-size:9px;padding:4px 8px}
+  .ms-shift{grid-template-columns:1fr;gap:22px}
+  .ms-tree{padding:22px 18px}
+  .ms-tree ul{margin-left:12px;padding-left:14px}
+  .ms-tree li::before{left:-16px;width:14px}
+  .ms-tree li{grid-template-columns:1fr}
+  .ms-tree li em{grid-row:auto;grid-column:1;justify-self:start;margin-top:6px}
+  .ms-wall{padding:18px}
+  .ms-wall-tag{position:static;max-width:none;margin-top:12px}
+  .ms-glimpse{padding:24px 14px;gap:18px 12px}
+  .ms-result{flex-direction:column;align-items:flex-start;gap:8px}
+}
