@@ -160,7 +160,7 @@ const slides=[
  },
  {
   "title": "First, I became the customer",
-  "notes": "Step one, I did the journey myself. On the 17th of April I applied through Habito as a real customer, from the first tap in Monzo until I got the mortgage illustration.\nAnd I saved every screen, every email and every document in one page. That's the wall you see here. And doing that, I saw three things that no dashboard was showing us.\nHalfway through, you get a second account and a second brand. You have to fill in a long form before you get anything back. And the recommendation and the messages are on Habito's website, they're not in Monzo.\nIt gave the team one picture of the journey as it really was, that everybody could look at. And that's what I took into the workshop.",
+  "notes": "Step one, I did the journey myself. On the 17th of April I applied through Habito as a real customer, from the first tap in Monzo until I got the mortgage illustration.\nAnd I saved every screen, every email and every document in one page. That's the wall you see here. And doing that, I saw three things that no dashboard was showing us.\nHalfway through, you get a second account and a second brand. You have to fill in a long form before you get anything back.\nAnd the recommendation and the messages are on Habito's website and in emails branded Habito, they're not in Monzo. It gave the team one picture of the journey as it really was, that everybody could look at.\nAnd that's what I took into the workshop.",
   "ask": [
    [
     "Why do it yourself, and not rely on research?",
