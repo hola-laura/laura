@@ -202,7 +202,7 @@ const slides=[
  },
  {
   "title": "People thought we were a comparison site",
-  "notes": "The first bet was about the experience break. And we knew two things.\nThe first one came from research, which at that point I was doing myself, using our in-house surveys and conversations with customer support. People thought they were using a comparison site.\nAnd honestly, that was our fault. If you look at the screen on the left, the first thing we said was 'compare deals from over 100 lenders'.\nSo when a broker started asking about their finances, it felt like a trick.\nThe second thing came from data. In the pre-fill experiment, the wording of the data-sharing consent was costing us about 15 percent of referrals.\nSo I proposed two changes. One, change what we say first. We stop leading with the number of lenders, and we lead with the help of a mortgage expert.\nThat's my design on the right, 'Find a mortgage with free expert help'. And two, a simpler consent. We kept the commission disclosure that Compliance needed, but in plain words.\nThis went live on the 1st of May 2026, when the journey was relaunched with the Habito by Monzo brand. We called that Day 1. After the change, fewer people dropped off at this step.\nBut it launched together with the new brand, so I can't separate the two things, and I don't have the exact number.",
+  "notes": "The first bet was about the experience break. And we knew two things.\nThe first one came from research, which at that point I was doing myself, using our in-house surveys and conversations with customer support. People thought they were using a comparison site.\nAnd honestly, that was our fault. If you look at the screen on the left, the first thing we said was 'compare deals from over 100 lenders'.\nSo when a broker started asking about their finances, it felt like a trick.\nThe second thing came from data. In the pre-fill experiment, the wording of the data-sharing consent was costing us about 15 percent of referrals.\nSo I proposed two changes. One, change what we say first. We stop leading with the number of lenders, and we lead with the help of a mortgage expert.\nThat's my design on the right, 'Find a mortgage with free expert help'. And two, a simpler consent. We kept the commission disclosure that Compliance needed, but in plain words.\nThis went live on the 1st of May 2026, when the journey was relaunched with the Habito by Monzo brand. We called that Day 1. The numbers aren't significant yet.\nBut Ops told us they were getting fewer questions about comparing deals, which was exactly the confusion we wanted to fix.",
   "ask": [
    [
     "Who did the research in 2026, without a researcher?",
@@ -210,7 +210,7 @@ const slides=[
    ],
    [
     "Did the reframe move conversion?",
-    "Drop-off at that step went down, but I don't have the exact figure. It launched together with the Habito by Monzo brand, so I can't separate the two effects cleanly. For scale: in March, about 22,000 people started and about 3,700 were referred, so every extra point there is around 200 referrals a month."
+    "Not significantly yet, the numbers are still early. The signal so far comes from Ops: fewer questions about comparing deals, which was the confusion we wanted to fix. It also launched together with the Habito by Monzo brand, so I couldn't separate the two effects cleanly anyway."
    ],
    [
     "Why not just remove the lenders?",
