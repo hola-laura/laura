@@ -172,3 +172,12 @@
 .hbm-laptop figcaption{margin-top:12px;text-align:center;font-size:16px;color:var(--mz-soft)}
 .hbm-laptop figcaption b{color:#fff}
 .slide .road-foot{margin-top:16px!important;font-size:17px!important;color:var(--mz-soft)!important}
+
+/* slide 24: live tracker captures */
+.live-row{display:flex;gap:14px;align-items:center;margin-top:28px}
+.live-row .bz{width:150px;padding:4.6px;border-radius:25px;margin-bottom:0}
+.live-row .bz-screen{border-radius:21px}
+.live-cap{margin-left:12px}
+.live-cap .lbl{color:var(--mz-coral);font-weight:700;font-size:18px}
+.live-cap p{font-size:15px;color:#8796a1;margin-top:6px;line-height:1.4}
+.live-cap .fig-link.small-link{margin-top:14px}
