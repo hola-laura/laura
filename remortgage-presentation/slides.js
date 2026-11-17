@@ -284,7 +284,7 @@ const slides=[
  },
  {
   "title": "The recommendation, inside Monzo · live since 1 Nov 2026",
-  "notes": "So this is version 2.1, made from my Figma frames. It starts in the tracker, your recommendation is ready.\nThen you get one screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons.\n'How this deal was calculated' shows the real cost over the whole deal, so you see more than the monthly payment. And you can see the deals we ruled out.\nBefore you commit you can see every detail, and you can accept, reject, or chat with your adviser. And the last screen tells you what happens next. The numbers and some of the copy are placeholders.\nAnd this version went live on the 1st of November. I designed it, but it was built after I'd left, so I didn't get to see it live.",
+  "notes": "So this is version 2.1, made from my Figma frames. It starts in the tracker, your recommendation is ready.\nThen you get one screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons.\n'How this deal was calculated' shows the real cost over the whole deal, so you see more than the monthly payment. And you can see the deals we ruled out.\nBefore you commit you can see every detail, and you can accept, reject, or chat with your adviser, which opens Habito's chat. And the last screen tells you what happens next.\nThe numbers and some of the copy are placeholders. And this version went live on the 1st of November. I designed it, but it was built after I'd left, so I didn't get to see it live.",
   "ask": [
    [
     "Was this built?",
@@ -293,13 +293,21 @@ const slides=[
    [
     "How would you know it works?",
     "Accepted recommendations is the main metric. But I'd also look at comprehension and wrong turns: do people open the reasons, do they ask the adviser, do they come back."
+   ],
+   [
+    "Where does the chat button go?",
+    "To Habito's chat. Bringing the adviser chat inside the app was a separate project, and it's paused for this year."
    ]
   ]
  },
  {
   "title": "Decision support, not decision pressure",
-  "notes": "For me the part I'm most proud of is what happens when things don't go to plan. There are two cases.\nThe first one is when I'm interested, but I'm not ready. If the screen only has accept and reject, you lose all of those people.\nSo I added a third button, 'I need more time'. You choose when you want a reminder, and the recommendation waits for you in the tracker.\nThe second case is when the lender withdraws the rate, and that happens all the time.\nSo we don't show an error. The adviser talks first and says 'I'm already looking at alternatives for you', and the other options are right there. The principle I used was 'decision support, not decision pressure'.\nThe idea is to look after the relationship with people who aren't ready yet, and not force them to say yes or no.",
+  "notes": "For me the part I'm most proud of is what happens when things don't go to plan. There are two cases.\nThe first one is when I'm interested, but I'm not ready.\nToday you can stop your application at any time, but if you come back, you have to start again from zero. And if the screen only has accept and reject, you lose all of those people.\nSo I designed a third button, 'I need more time'. You choose when you want a reminder, and the recommendation waits for you in the tracker. This one isn't built yet.\nThe second case is when the lender withdraws the rate, and that happens all the time.\nSo we don't show an error. The adviser talks first and says 'I'm already looking at alternatives for you', and the other options are right there. The principle I used was 'decision support, not decision pressure'.\nThe idea is to look after the relationship with people who aren't ready yet, and not force them to say yes or no.",
   "ask": [
+   [
+    "Is 'I need more time' live?",
+    "Not yet, it's designed. Today you can stop your application at any time, but if you come back, you start again from zero. That's the gap this closes."
+   ],
    [
     "Doesn't 'I need more time' just lower conversion?",
     "It lowers same-day conversion and protects total conversion. A mortgage is decided over weeks. A reminder the customer chose is a way back. A rejected offer isn't."
