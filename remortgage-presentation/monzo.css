@@ -163,3 +163,11 @@
 .slide .role-ph p b{color:#fff!important}
 .slide[data-k="vision"] .design-copy{align-self:stretch;position:relative;display:flex;flex-direction:column;justify-content:center}
 .slide[data-k="vision"] .vision-links{position:absolute;left:0;bottom:33px;margin:0!important}
+
+/* slide 14: the wall, with today's Habito by Monzo site on a laptop in front */
+.walk-visual{position:relative;height:740px;align-self:center}
+.walk-visual .wall{position:absolute;right:0;top:0;width:520px;height:470px}
+.hbm-laptop{position:absolute;left:-30px;bottom:0;width:540px;margin:0;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))}
+.slide .hbm-laptop img{display:block;width:100%!important;height:auto!important}
+.hbm-laptop figcaption{margin-top:12px;text-align:center;font-size:16px;color:var(--mz-soft)}
+.hbm-laptop figcaption b{color:#fff}
