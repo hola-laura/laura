@@ -241,22 +241,8 @@ const slides=[
   ]
  },
  {
-  "title": "Do I trust this recommendation enough to go ahead?",
-  "notes": "The next bet is about the moment when people decide. My first step here was simple. I designed a version where you could see your recommendation inside Monzo, but you couldn't act on it there.\nTo accept it, you tapped a button and went to Habito's website. It was a quick way to see if just seeing it in Monzo changed behaviour. And it did, but only a little.\nAccepted recommendations went up about 5 percent. Positive, but not enough.\nSo I asked myself what was missing. And I think this is the question customers were really asking themselves. Do I trust this recommendation enough to go ahead?\nSo I took that screen and I scored it against the things you need to feel confident.\nDo I understand it, does it feel like it's for me, can I see alternatives, the trade-offs, the real cost, and am I ready to act. And none of them was fully covered.\nMy conclusion was that people could see the deal, but they couldn't really decide.",
-  "ask": [
-   [
-    "Why ship a view-only version first?",
-    "It was the quickest way to see if just showing the recommendation in Monzo changed behaviour. It did, about 5 percent more accepted. Positive, but not enough, so I started the redesign."
-   ],
-   [
-    "Who were you really competing with?",
-    "Mostly the customer's current lender. Staying with the same lender takes a few clicks, with no adviser and no paperwork. Our research showed people used us to sense-check and then some finished elsewhere. So the recommendation had to earn the switch: the reasons, the real cost and what was ruled out."
-   ]
-  ]
- },
- {
   "title": "The quick win: tell people the moment it’s ready",
-  "notes": "Before redesigning the recommendation, there was something quicker we could do. If you remember the tree, people were ready, but our follow-up was slow.\nAt that point we only sent one push notification, and it arrived three days after the recommendation was issued.\nSo the first experiment was very simple. Send it on day zero as well, the moment the recommendation is ready, which is when people care the most. The design question was where that push should take you.\nI explored two options. Option A was a short screen in the middle. It tells you your recommendation is ready, it shows that Habito is regulated and that it's free, and then it takes you there.\nTwo taps and a whole screen to build trust, but we had to build it. Option B opened the progress tracker, which already existed, with the button on the current step.\nThree taps and more distraction, but nothing new to build. On paper I preferred A, because it was the cleaner test.\nBut the tracker already existed, so with B we could test much faster, and that's what launched in May. And I think it was the right decision, because we needed to learn fast.\nWe measured it on accepted recommendations, and they went up. I don't remember the exact number, so I'm not going to give you one. And I think I know why it worked.\nThe tracker was already live, and it was working, but it wasn't easy to find. You had to know where to look: your mortgage home screen, or one specific entry point.\nThe push took people straight to it, so more people got there, and more of them accepted.",
+  "notes": "The next bet is about the moment when people decide. And the first thing we did there was the quickest one. If you remember the tree, people were ready, but our follow-up was slow.\nAt that point we only sent one push notification, and it arrived three days after the recommendation was issued.\nSo the first experiment was very simple. Send it on day zero as well, the moment the recommendation is ready, which is when people care the most. The design question was where that push should take you.\nI explored two options. Option A was a short screen in the middle. It tells you your recommendation is ready, it shows that Habito is regulated and that it's free, and then it takes you there.\nTwo taps and a whole screen to build trust, but we had to build it. Option B opened the progress tracker, which already existed, with the button on the current step.\nThree taps and more distraction, but nothing new to build. On paper I preferred A, because it was the cleaner test.\nBut the tracker already existed, so with B we could test much faster, and that's what launched in May. And I think it was the right decision, because we needed to learn fast.\nWe measured it on accepted recommendations, and they went up. I don't remember the exact number, so I'm not going to give you one. And I think I know why it worked.\nThe tracker was already live, and it was working, but it wasn't easy to find. You had to know where to look: your mortgage home screen, or one specific entry point.\nThe push took people straight to it, so more people got there, and more of them accepted.",
   "ask": [
    [
     "Did the push on day zero work?",
@@ -268,7 +254,21 @@ const slides=[
    ],
    [
     "Why land on the tracker and not on the recommendation?",
-    "The tracker already existed, so we could test quickly. And it was working, it just wasn't easy to find. The push took people straight to it."
+    "The tracker already existed, so we could test quickly. And it was working, it just wasn't easy to find. Showing the recommendation itself in Monzo came next, with the view-only version."
+   ]
+  ]
+ },
+ {
+  "title": "Do I trust this recommendation enough to go ahead?",
+  "notes": "The next step was to bring the recommendation itself into Monzo. I designed a first version where you could see your recommendation inside Monzo, but you couldn't act on it there.\nTo accept it, you tapped a button and went to Habito's website. It was a quick way to see if just seeing it in Monzo changed behaviour. And it did, but only a little.\nAccepted recommendations went up about 5 percent. Positive, but not enough.\nSo I asked myself what was missing. And I think this is the question customers were really asking themselves. Do I trust this recommendation enough to go ahead?\nSo I took that screen and I scored it against the things you need to feel confident.\nDo I understand it, does it feel like it's for me, can I see alternatives, the trade-offs, the real cost, and am I ready to act. And none of them was fully covered.\nMy conclusion was that people could see the deal, but they couldn't really decide.",
+  "ask": [
+   [
+    "Why a view-only version?",
+    "It was the quickest way to see if just showing the recommendation in Monzo changed behaviour. It did, about 5 percent more accepted. Positive, but not enough, so I started the redesign."
+   ],
+   [
+    "Who were you really competing with?",
+    "Mostly the customer's current lender. Staying with the same lender takes a few clicks, with no adviser and no paperwork. Our research showed people used us to sense-check and then some finished elsewhere. So the recommendation had to earn the switch: the reasons, the real cost and what was ruled out."
    ]
   ]
  },
@@ -283,12 +283,12 @@ const slides=[
   ]
  },
  {
-  "title": "The recommendation, inside Monzo",
-  "notes": "So this is version 2.1, made from my Figma frames. It starts in the tracker, your recommendation is ready.\nThen you get one screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons.\n'How this deal was calculated' shows the real cost over the whole deal, so you see more than the monthly payment. And you can see the deals we ruled out.\nBefore you commit you can see every detail, and you can accept, reject, or chat with your adviser. And the last screen tells you what happens next. The numbers and some of the copy are placeholders.\nAnd I want to be clear, this design hasn't been built yet. We reviewed it with the team.\nWhat shipped before it was the view-only version, and the push you just saw.",
+  "title": "The recommendation, inside Monzo · live since 1 Nov 2026",
+  "notes": "So this is version 2.1, made from my Figma frames. It starts in the tracker, your recommendation is ready.\nThen you get one screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons.\n'How this deal was calculated' shows the real cost over the whole deal, so you see more than the monthly payment. And you can see the deals we ruled out.\nBefore you commit you can see every detail, and you can accept, reject, or chat with your adviser. And the last screen tells you what happens next. The numbers and some of the copy are placeholders.\nAnd this version went live on the 1st of November. I designed it, but it was built after I'd left, so I didn't get to see it live.",
   "ask": [
    [
     "Was this built?",
-    "No. It's designed and was reviewed with the team, but it hasn't been built. What shipped before it was the view-only version, where you could see your recommendation in Monzo and accept it on Habito, and the push on day zero."
+    "Yes. It went live on the 1st of November 2026. I designed it, but it was built after I left, so I didn't see it live, and it's too early for results. Before it, the push on day zero and the view-only version had shipped."
    ],
    [
     "How would you know it works?",
@@ -420,7 +420,7 @@ const slides=[
  },
  {
   "title": "What moved, and where each customer ask stands today",
-  "notes": "So, what came out of all this? At the start I told you that we beat the referral goal and the mortgages didn't follow. Referrals ended about 75 percent above our goal.\nBut a referral is only the first step, and I prefer to tell you that than to claim an uplift I can't prove.\nSo the number that matters in this story is accepted recommendations. And that one went up. The view-only recommendation moved it a little, about 5 percent.\nAnd the push on day zero helped too, because it took people straight to the tracker.\nNow, the four things customers asked for at the beginning. I'm not going to read every row.\nFour things are live. Pre-fill, the push when your recommendation is ready, the application inside Monzo since the end of September, and since this November, the new tracker. The view-only recommendation shipped.\nAccepting it inside Monzo, and the 'I need more time' option, are designed. And the adviser chat is paused for this year.\nAnd I want to be honest about 2026. Most of what I designed for Habito shipped late in the year, so the results are only starting to arrive.\nWith the application inside Monzo, I'm told that about 40 percent more people are finishing the form and getting to a recommendation. It's early, so I wouldn't call it a result yet.\nAnd the new tracker, which is the design I expect to have the biggest impact, has only just launched.\nI'm told the first signals are very positive, but it's too soon.\nAnd first-time buyers launched on the 11th of November. I did the vision and the design of that first release.",
+  "notes": "So, what came out of all this? At the start I told you that we beat the referral goal and the mortgages didn't follow. Referrals ended about 75 percent above our goal.\nBut a referral is only the first step, and I prefer to tell you that than to claim an uplift I can't prove.\nSo the number that matters in this story is accepted recommendations. And that one went up.\nFirst with the push on day zero, because it took people straight to the tracker.\nThen the view-only recommendation moved it a little more, about 5 percent.\nNow, the four things customers asked for at the beginning. I'm not going to read every row. Five things are live.\nPre-fill, the push when your recommendation is ready, the application inside Monzo since the end of September, and since this November, the new tracker and the new recommendation, where you can accept it inside Monzo.\nThe 'I need more time' option is designed. And the adviser chat is paused for this year.\nAnd I want to be honest about 2026. Most of what I designed for Habito shipped late in the year, so the results are only starting to arrive.\nWith the application inside Monzo, I'm told that about 40 percent more people are finishing the form and getting to a recommendation. It's early, so I wouldn't call it a result yet.\nAnd the new tracker, which is the design I expect to have the biggest impact, has only just launched.\nI'm told the first signals are very positive, but it's too soon.\nAnd first-time buyers launched on the 11th of November. I did the vision and the design of that first release.",
   "ask": [
    [
     "What would you measure next?",
