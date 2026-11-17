@@ -145,8 +145,8 @@
 /* slide 10 · now, next, later */
 .road2{margin-top:40px;height:566px;align-items:stretch}
 .road2 .road-col{border-radius:28px}
-.road2 .road-art{height:200px;justify-content:flex-start;padding:30px 32px 0;background:transparent}
-.slide .road2 .road-art img{height:170px!important}
+.road2 .road-art{height:190px;justify-content:center;align-items:center;padding:28px 32px 0;background:transparent}
+.slide .road2 .road-art img{height:132px!important;margin:0 auto}
 .road2 .road-body{padding:14px 32px 32px}
 .road2 .road-step{font-size:54px;font-weight:800;letter-spacing:-.03em;color:#fff}
 .slide .road2 .road-sub{font-size:20px;color:var(--mz-soft);margin:8px 0 6px}
@@ -161,3 +161,5 @@
 .design-points li{border-left-color:var(--mz-coral)!important}
 .slide .role-ph p{color:var(--mz-soft)!important;text-align:center;font-size:16px!important}
 .slide .role-ph p b{color:#fff!important}
+.slide[data-k="vision"] .design-copy{align-self:stretch;position:relative;display:flex;flex-direction:column;justify-content:center}
+.slide[data-k="vision"] .vision-links{position:absolute;left:0;bottom:33px;margin:0!important}
