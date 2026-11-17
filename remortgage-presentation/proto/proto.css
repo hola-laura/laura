@@ -151,3 +151,15 @@ body.proto-embed{font-family:"Onest","DM Sans",Arial,sans-serif}
 .proto-embed .mg-tk-toggle{background:transparent!important;color:#f2f8f3!important;box-shadow:inset 0 0 0 1.5px #f2f8f3!important}
 .proto-embed .mg-tk-steps button.is-past .mg-tk-num,.proto-embed .mg-tk-steps .fl-group{color:#ff4f40}
 .proto-embed .mg-tk-steps .fl-group{font-family:"Onest",Arial,sans-serif;letter-spacing:0;text-transform:none;font-weight:700;font-size:14px}
+
+/* Narrow step menu: it only follows the prototype, so it gets less room than the phone */
+.proto-embed .mg-tracker,.proto-embed .mg-rates{grid-template-columns:minmax(0,290px) auto!important;gap:28px!important;justify-content:end!important}
+.proto-embed .mg-tk-steps button,.proto-embed .mg-rates-steps button,.proto-embed .mg-tk-steps.is-grouped button,.proto-embed .mg-onboarding .mg-tk-steps button{grid-template-columns:22px 1fr auto;gap:8px;padding:6px 10px;font-size:14.5px;line-height:1.3;border-radius:10px}
+.proto-embed .mg-tk-steps,.proto-embed .mg-rates-steps{gap:2px!important}
+.proto-embed .mg-tk-steps button small{font-size:12px;margin-top:2px}
+.proto-embed .mg-tk-num{font-size:11px!important}
+.proto-embed .mg-tk-steps .fl-group{font-size:12.5px;padding:10px 10px 4px}
+.proto-embed .mg-tk-who{font-size:9px!important;padding:4px 6px!important}
+.proto-embed .mg-tk-toggle{font-size:13px!important;padding:7px 14px 7px 12px!important}
+.proto-embed .mg-tk-legend{font-size:11.5px!important;gap:8px!important}
+.proto-embed .mg-tk-bar{margin-top:12px!important}

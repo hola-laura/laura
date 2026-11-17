@@ -133,3 +133,7 @@
 .cspot,.road-art img,.slide[data-k="deel"] .card img{mix-blend-mode:lighten}
 .slide .card.coral .label,.slide .card.teal .label,.slide .card.coral .mid,.slide .card.teal .mid,.slide .card.coral .big,.slide .card.teal .big{color:#fff!important}
 .slide[data-k="learn"] .card.coral .label{color:var(--mz-coral)!important}
+
+/* slides with a prototype: narrower player, more room for the text */
+.design{grid-template-columns:minmax(0,1fr) 660px!important}
+.design-stage iframe{width:660px!important}
