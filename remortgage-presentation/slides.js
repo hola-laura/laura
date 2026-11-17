@@ -224,7 +224,7 @@ const slides=[
  },
  {
   "title": "The rest of Day 1: one account, one question, a clear hand-off",
-  "notes": "And this is the rest of the Day 1 journey. I redrew the screens from the live app, so you can read them properly. I'll let it play.\nAfter that first screen you create an account. Nobody wants another account, so I presented it as something good for you.\nYou can check your progress here or on Habito's website, and it uses the email Monzo already has.\nThen there's one question, are you remortgaging on your own or with someone else.\nAnd then the hand-off, and we say it clearly, 'we'll now take you to Habito to fill in a few details'. Because if we tell people they're about to leave Monzo, it's much less of a shock.\nThe difficult decision here was the pre-fill experiment, which was still running. We stopped it early and turned pre-fill on for everyone. It had very little risk, and the launch date wasn't going to move.\nSo we lost a bit of learning to gain speed, and we knew we were doing that. And look at where this ends. On Habito's website.\nSo Day 1 was more honest about what the service is, but we were still sending people out of Monzo. The next three bets are about that.",
+  "notes": "And this is the rest of the Day 1 journey. I redrew the screens from the live app, so you can read them properly. I'll let it play.\nAfter that first screen you create an account. Nobody wants another account, so I presented it as something good for you.\nYou can check your progress here or on Habito's website, and it uses the email Monzo already has.\nThen there's one question, are you remortgaging on your own or with someone else. To be honest, that one wasn't my choice.\nHabito's system needs to know if it's one or two people before it can create the mortgage application. I proposed moving it later, into the form, but they're still working on their systems.\nSo for now it stays as UX debt, and I kept it as light as possible, one question, two options.\nAnd then the hand-off, and we say it clearly, 'we'll now take you to Habito to fill in a few details'. Because if we tell people they're about to leave Monzo, it's much less of a shock.\nThe difficult decision here was the pre-fill experiment, which was still running. We stopped it early and turned pre-fill on for everyone. It had very little risk, and the launch date wasn't going to move.\nSo we lost a bit of learning to gain speed, and we knew we were doing that. And look at where this ends. On Habito's website.\nSo Day 1 was more honest about what the service is, but we were still sending people out of Monzo. The next three bets are about that.",
   "ask": [
    [
     "Why stop an experiment early?",
@@ -233,6 +233,10 @@ const slides=[
    [
     "Are these your designs?",
     "Yes. It's the flow that launched. I redrew the screens from the live app for this deck so they're sharp, and the last one is a capture of Habito's website."
+   ],
+   [
+    "Why ask about joint applicants so early?",
+    "Habito's system needs to know if it's one or two applicants to create the mortgage application. I proposed moving it into the form. We shipped with the constraint rather than delay Day 1, and it's logged as UX debt while Habito works on their systems."
    ]
   ]
  },
