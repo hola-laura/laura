@@ -302,11 +302,11 @@ const slides=[
  },
  {
   "title": "Decision support, not decision pressure",
-  "notes": "For me the part I'm most proud of is what happens when things don't go to plan. There are two cases.\nThe first one is when I'm interested, but I'm not ready.\nToday you can stop your application at any time, but if you come back, you have to start again from zero. And if the screen only has accept and reject, you lose all of those people.\nSo I designed a third button, 'I need more time'. You choose when you want a reminder, and the recommendation waits for you in the tracker. This one isn't built yet.\nThe second case is when the lender withdraws the rate, and that happens all the time.\nSo we don't show an error. The adviser talks first and says 'I'm already looking at alternatives for you', and the other options are right there. The principle I used was 'decision support, not decision pressure'.\nThe idea is to look after the relationship with people who aren't ready yet, and not force them to say yes or no.",
+  "notes": "For me the part I'm most proud of is what happens when things don't go to plan. There are two cases.\nThe first one is when I'm interested, but I'm not ready.\nToday you can stop your application at any time, but if you come back, you have to start again from zero. And if the screen only has accept and reject, you lose all of those people.\nSo I designed a third button, 'I need more time'. You choose when you want a reminder, and the recommendation waits for you in the tracker.\nThe second case is when the lender withdraws the rate, and that happens all the time.\nSo we don't show an error. The adviser talks first and says 'I'm already looking at alternatives for you', and the other options are right there. Both of these are designed, but neither is built yet.\nThe principle I used was 'decision support, not decision pressure'. The idea is to look after the relationship with people who aren't ready yet, and not force them to say yes or no.",
   "ask": [
    [
-    "Is 'I need more time' live?",
-    "Not yet, it's designed. Today you can stop your application at any time, but if you come back, you start again from zero. That's the gap this closes."
+    "Are these two paths live?",
+    "Not yet, both are designed. Today you can stop your application at any time, but if you come back, you start again from zero. That's the gap the first one closes."
    ],
    [
     "Doesn't 'I need more time' just lower conversion?",
