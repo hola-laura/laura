@@ -159,3 +159,5 @@
 /* status line under the text: a caption, not a pill */
 .design-status{border:0!important;padding:0!important;border-radius:0!important;background:none!important;font-size:15px!important;font-weight:500!important;color:#8796a1!important;margin-top:26px!important}
 .design-points li{border-left-color:var(--mz-coral)!important}
+.slide .role-ph p{color:var(--mz-soft)!important;text-align:center;font-size:16px!important}
+.slide .role-ph p b{color:#fff!important}
