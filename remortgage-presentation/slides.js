@@ -98,7 +98,7 @@ const slides=[
  },
  {
   "title": "One journey, inside Monzo, that flexes to you",
-  "notes": "So I turned all of that into a design vision.\nOne journey, inside Monzo, that adapts to the person. The application comes into the app, already filled in with what we know. People choose if they want to talk to an adviser first, or see deals first.\nThe paperwork gets easier. And you always know what happens next. I planned the sprint for it, I ran the vision workshop together with our researcher, and in May I took it to the full design crit.\nWhat you see playing here is the vision, directly from my Figma frames. And on this slide I've attached an article about our vision work, written by our product director. You can read it later if you want.\nI should say, this was a direction for the team. We weren't promising to build everything.\nBut it made one thing very clear. To give customers the experience they wanted, we needed to own much more of the journey than a referral partner allowed us to.\nSo the vision became part of the argument for changing our partnership model. Later Monzo bought Habito, and that's what made it possible to build. I wasn't part of the acquisition decision.\nBut the team still goes back to this vision.",
+  "notes": "So I turned all of that into a design vision.\nOne journey, inside Monzo, that adapts to the person. The application comes into the app, already filled in with what we know. People choose if they want to talk to an adviser first, or see deals first.\nThe paperwork gets easier. And you always know what happens next. I planned the sprint for it, and I ran the vision workshop together with our researcher.\nWhat you see playing here is the vision, directly from my Figma frames. And on this slide I've attached an article about our vision work, written by our product director. You can read it later if you want.\nI should say, this was a direction for the team. We weren't promising to build everything.\nBut it made one thing very clear. To give customers the experience they wanted, we needed to own much more of the journey than a referral partner allowed us to.\nSo the vision became part of the argument for changing our partnership model. Later Monzo bought Habito, and that's what made it possible to build. I wasn't part of the acquisition decision.\nBut the team still goes back to this vision.",
   "ask": [
    [
     "So your vision made Monzo buy Habito?",
@@ -113,6 +113,10 @@ const slides=[
    [
     "What happened to the adviser-first test?",
     "It tested well with Better. We parked it for Habito, because they couldn't handle it operationally, their advisers work by chat. I suggested a way around it, and that became estimated deals, so people can see deals first without talking to anyone."
+   ],
+   [
+    "Did you work on the value proposition?",
+    "Yes. In June 2025 I ran a value-proposition workshop with Product Marketing. It gave us two kinds of customers, planners, who compare deals themselves, and delegators, who want someone to guide them. And it picked pre-fill and the tracker as the things that would make us different. Both are live today."
    ]
   ]
  },
