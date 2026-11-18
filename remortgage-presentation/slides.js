@@ -435,16 +435,6 @@ const slides=[
   ]
  },
  {
-  "title": "One designer in the squad, so the job was bigger than the screens",
-  "notes": "Before the results, one slide about how I worked. For most of this time I was the only designer in the squad, so the job was bigger than the screens.\nFour things, quickly. I set the direction, with the vision sprint and the workshop, and I pushed to turn it into a prioritised list when we fell behind on revenue. I wrote the case for the design.\nFor the adviser chat that was the two routes, the cost, the risk, the guardrails and the kill switch, and Operations and Compliance were aligned before anything was built. I got people into the same room.\nI co-led the workshop on the drop-off, and we went through the application form with Habito in a joint workshop.\nAnd I tried to make the whole team faster, with the checker, one file for every experiment, and AI on the support conversations.",
-  "ask": [
-   [
-    "Were you the design lead by title?",
-    "My title was Senior Product Designer. I was the only designer in the squad, so the lead work was mine: the direction, the proposals and getting people aligned."
-   ]
-  ]
- },
- {
   "title": "What moved, and where each customer ask stands today",
   "notes": "So, what came out of all this? At the start I told you that we beat the referral goal and the mortgages didn't follow. Referrals ended about 75 percent above our goal.\nBut a referral is only the first step, and I prefer to tell you that than to claim an uplift I can't prove.\nSo the number that matters in this story is accepted recommendations. And that one went up.\nFirst with the push on day zero, because it took people straight to the tracker.\nThen the view-only recommendation moved it a little more, about 5 percent.\nNow, the four things customers asked for at the beginning. I'm not going to read every row. Most of it is live.\nPre-fill, the push when your recommendation is ready, the application inside Monzo since the end of September, and since this November, the new tracker and the new recommendation, where you can accept it inside Monzo.\nThe 'I need more time' option is designed. And the adviser chat is paused for this year.\nAnd I want to be honest about 2026. Most of what I designed for Habito shipped late in the year, so the results are only starting to arrive.\nWith the application inside Monzo, I'm told that about 40 percent more people are finishing the form and getting to a recommendation. It's early, so I wouldn't call it a result yet.\nAnd the new tracker, which is the design I expect to have the biggest impact, has only just launched.\nI'm told the first signals are very positive, but it's too soon.\nAnd the whole remortgage isn't in the app yet. Document upload and the adviser chat were moved back, because the focus moved to first-time buyers.\nThat launched on the 11th of November, and I did the vision and the design of that first release.",
   "ask": [
