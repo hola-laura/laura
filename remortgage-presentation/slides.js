@@ -147,16 +147,6 @@ const slides=[
   ]
  },
  {
-  "title": "Value before commitment: see real deals first",
-  "notes": "Let me show you one of them, which is estimated deals. You find it on your mortgage home screen. And you don't see a generic rate.\nYou see deals from real lenders, estimated for your situation. The monthly repayment, the rate, the fees. If you tap 'See more', you get every cost of that deal, and also what happens after it ends.\nYou can change your details, like the property value or the term. And if you scroll down you can see how rates have moved, and you can switch on rate updates, so we tell you when they change.\nThese are regulated numbers, so 'how are rates estimated' is always one tap away. They're estimates, and we say they're estimates. The advice only starts when you talk to a broker.\nWhat I like about this one is that it gives people something useful before we ask them for anything. And those rate updates were more important than I expected.\nThey were bringing more than 30 percent of our mortgage referrals.",
-  "ask": [
-   [
-    "How do you show rates without it being advice?",
-    "They are estimates, labelled as estimates, with the assumptions one tap away. Advice only starts when you talk to a broker. Every word went through Compliance."
-   ]
-  ]
- },
- {
   "title": "More referrals didn't mean more mortgages",
   "notes": "And then the partner changed. At the end of 2025 Monzo agreed to buy Habito, which is another mortgage broker, and from December our customers started going to Habito, and no longer to Better.\nThe reach work was still paying off, referrals were well above plan.\nBut more referrals didn't mean more mortgages. Remember that the money only arrives when a mortgage completes, and that can be months after the referral.\nSo the team looked at an earlier signal, something we could read in weeks. Accepted recommendations.\nA recommendation is the deal that the adviser proposes to you, and when you accept it, that's the first moment you really commit. And fewer people were getting to the end than before.\nMore or less six in a hundred went on to submit an application to a lender.\nWith Better it was nine or ten. To be fair, you can't compare them directly, because Better put a phone call first and Habito doesn't.\nBut the gap was big enough that we had to do something.\nAnd what surprised me was where people dropped. You'd expect it to be at the start, and it was after the recommendation.\nSo these were people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then they didn't go ahead.\nAt that point people should be really motivated, so it couldn't only be the quality of the traffic. And it wasn't a new problem.\nIt's the same thing we had with Better, people dropping out after we sent them. The difference is that this time we could see exactly where, and we could change it.\nSo for me this is the turning point of the whole story.\nUntil here, the question was how do we send more people. From here, the question is why people who already have a recommendation don't go ahead.\nSo I went to find out, and I did it in two steps.",
   "ask": [
