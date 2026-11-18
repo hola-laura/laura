@@ -340,7 +340,7 @@ const slides=[
  },
  {
   "title": "Always clear whose turn it is",
-  "notes": "And this is what connects everything, the progress tracker. It answers the fourth thing customers told us, tell me what's happening.\nAnd when we assessed 17 customer needs for first-time buyers, which apply to remortgagers too, the most important and most underserved one was knowing exactly what to do at each stage.\nKnowing the best deal for you was only in the third group. A remortgage has around ten stages, and the next step can be yours, the adviser's or the lender's.\nTo design it I worked with Habito, to understand the steps they track and make them understandable for our customers.\nAnd then our engineers worked with Habito's engineers to build the bridges between the two systems.\nSo I designed one card that changes during the journey. It's orange when it's your turn, and green when someone else is working on it. The push from the experiment brings you here.\nAnd this is also where the adviser chat was going to live, which is the next bet. A simpler tracker has been live since the first journey. This version went live this November, when I had already left.\nOn the left you can see two screens from the live app, and on the right, my design. People I worked with tell me the early signals are very positive, but it's too soon to have results.",
+  "notes": "And this is what connects everything, the progress tracker. It answers the fourth thing customers told us, tell me what's happening.\nA remortgage has around ten stages, and the next step can be yours, the adviser's or the lender's. To design it I worked with Habito, to understand the steps they track and make them understandable for our customers.\nAnd then our engineers worked with Habito's engineers to build the bridges between the two systems.\nSo I designed one card that changes during the journey. It's orange when it's your turn, and green when someone else is working on it. The push from the experiment brings you here.\nAnd this is also where the adviser chat was going to live, which is the next bet. A simpler tracker has been live since the first journey. This version went live this November, when I had already left.\nOn the left you can see two screens from the live app, and on the right, my design. People I worked with tell me the early signals are very positive, but it's too soon to have results.",
   "ask": [
    [
     "Is this live?",
@@ -363,10 +363,6 @@ const slides=[
    [
     "Why was it paused?",
     "It came down to priorities. The integration was possible, but after the analysis the team decided to put its resources into other problems this year, like first-time buyers. The chat keeps working in Habito in the meantime. It isn't a final decision, and the design and the guardrails are ready for when it comes back."
-   ],
-   [
-    "Why does the tracker matter for first-time buyers too?",
-    "Because it's the same top need. When we assessed 17 customer needs for first-time buyers, the most important and most underserved one was knowing exactly what to do at each stage."
    ]
   ]
  },
