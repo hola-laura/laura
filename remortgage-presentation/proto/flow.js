@@ -81,7 +81,7 @@
     day1: {
       steps: ['One account, with your Monzo email', 'On your own, or with someone else', 'The hand-off, said out loud', 'Then the form, on Habito’s website'],
       beats: [
-        {img: 'd1b-account.png', step: 0, hold: 3200, tap: [201, 800], go: 'push'},
+        {img: 'd1c-account.png', step: 0, hold: 3200, tap: [201, 800], go: 'push'},
         {img: 'd1b-joint.png', step: 1, hold: 2800, tap: [200, 456], go: 'push'},
         {img: 'd1b-allset.png', anim: {src: 'remortgage-presentation/assets/proto/d1b-drinks.png', left: 126, top: 215.9, width: 150, float: true}, step: 2, hold: 3800, tap: [201, 800], go: 'fade'},
         {img: 'd1-habito.png', step: 3, hold: 4200}
