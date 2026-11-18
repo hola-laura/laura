@@ -187,3 +187,6 @@ body.proto-embed{font-family:"Onest","DM Sans",Arial,sans-serif}
 .proto-embed .mg-tk-who.is-us{background:#34c759!important}
 .proto-embed .mg-tk-who.is-done{background:#4aa8d0!important}
 .proto-embed .mg-onboarding .mg-tk-legend span+span::before{background:#a98fd0}
+
+/* onboarding (slide 3): no legend, no stage dots */
+.proto-embed .mg-onboarding .mg-tk-legend,.proto-embed .mg-onboarding .mg-tk-who{display:none!important}
