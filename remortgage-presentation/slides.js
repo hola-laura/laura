@@ -474,7 +474,7 @@ const slides=[
  },
  {
   "title": "Thank you. Where would you like to go deeper?",
-  "notes": "And that's the story. Thank you. I'm happy to go deeper into any of these.\nAnd if it's useful, I can also show you Monzo Flex, a credit card I redesigned, which has more mature results.",
+  "notes": "And that's the story. Thank you. I'm happy to go deeper into any part of it.\nAnd if it's useful, I can also show you Monzo Flex, a credit card I redesigned, which has more mature results.",
   "ask": [
    [
     "Why did you leave Monzo?",
