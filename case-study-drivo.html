@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#faf9f6">
   <meta name="description" content="How I designed and built Drivo Test, an independent iPhone and web app for driving theory learners in Spain.">
   <title>Drivo Test — Laura Sampedro | Product design case study</title>
+  <script src="i18n.js?v=4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Fragment+Mono&display=swap" rel="stylesheet">
@@ -195,7 +196,7 @@
       </div>
       <div class="impact" id="impacto" aria-labelledby="impact-title">
         <div class="impact-heading"><span class="label">04 / Impact</span><h3 id="impact-title">An encouraging first signal</h3></div>
-        <div class="impact-grid" aria-label="Resultados de Drivo Test">
+        <div class="impact-grid" aria-label="Drivo Test results">
           <article class="impact-card"><strong>40</strong><span>people in user testing</span></article>
           <article class="impact-card"><strong>4.7<small>/5</small></strong><span>App Store · average</span></article>
           <article class="impact-card"><strong>9</strong><span>App Store ratings</span></article>
@@ -223,7 +224,7 @@
       const correct = button.dataset.correct === "true";
       button.classList.add(correct ? "is-correct" : "is-wrong");
       hasAnswered = true;
-      feedback.textContent = correct ? "That’s right!" : "Not quite. Here’s why another answer is correct.";
+      feedback.textContent = correct ? t('That’s right!') : t('Not quite. Here’s why another answer is correct.');
       explanation.classList.add("is-visible");
       progress.style.width = correct ? "100%" : "72%";
       roadProgress.style.width = correct ? "55%" : "28%";
@@ -232,25 +233,26 @@
     saveButton.addEventListener("click", () => {
       const saved = saveButton.getAttribute("aria-pressed") !== "true";
       saveButton.setAttribute("aria-pressed", String(saved));
-      saveButton.textContent = saved ? "Saved to review　✓" : "Save for later　♡";
+      saveButton.textContent = saved ? t('Saved to review　✓') : t('Save for later　♡');
       toast.classList.toggle("is-visible", saved);
       road.classList.toggle("is-moving", saved || hasAnswered);
       roadProgress.style.width = saved ? "88%" : hasAnswered ? "55%" : "0%";
       if (saved) progress.style.width = "100%";
-      if (saved) feedback.textContent = "Saved to your review questions.";
+      if (saved) feedback.textContent = t('Saved to your review questions.');
     });
     resetButton.addEventListener("click", () => {
       answerButtons.forEach((option) => option.classList.remove("is-correct", "is-wrong"));
       saveButton.setAttribute("aria-pressed", "false");
-      saveButton.textContent = "Save for later　♡";
+      saveButton.textContent = t('Save for later　♡');
       toast.classList.remove("is-visible");
       explanation.classList.remove("is-visible");
-      feedback.textContent = "Choose an answer to see feedback.";
+      feedback.textContent = t('Choose an answer to see feedback.');
       progress.style.width = "34%";
       roadProgress.style.width = "0%";
       road.classList.remove("is-moving");
       hasAnswered = false;
     });
   </script>
+  <script>if(I18n.lang==="es")document.write('<script src="i18n-es.js?v=30"><\/script>')</script><script>I18n.run()</script>
 </body>
 </html>

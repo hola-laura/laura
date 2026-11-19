@@ -73,7 +73,11 @@
     lang,
     run() {
       if (new URLSearchParams(location.search).has('i18n-dump')) window.__keys = collect();
-      if (lang === 'es' && window.I18N_ES) apply(window.I18N_ES);
+      if (lang === 'es' && window.I18N_ES) {
+        apply(window.I18N_ES);
+        /* Markup placed after this script (lightbox, dialogs) is translated once the page has loaded. */
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => apply(window.I18N_ES));
+      }
       if (hide) hide.remove();
       this.pill();
     },

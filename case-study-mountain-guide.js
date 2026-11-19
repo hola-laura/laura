@@ -38,24 +38,24 @@
     root.querySelectorAll('.mgp-view,.mgp-page').forEach((v) => v.classList.toggle('on', v.dataset.v === n));
   };
   const plazas = (n) => {
-    $('#p-num').textContent = n; $('#s-txt').textContent = `${n} plazas de 8`;
+    $('#p-num').textContent = n; $('#s-txt').textContent = t('{n} of 8 places', { n });
     root.querySelectorAll('.mgp-seats i').forEach((d, i) => d.classList.toggle('on', i < 8 - n));
   };
   const inicial = () => {
-    vista('portada'); $('#p-tit').textContent = 'Saber cuándo avanzar.'; $('#s-tit').textContent = 'Saber cuándo avanzar.';
-    $('#p-btn').textContent = 'Ver próximas salidas'; $('#s-btn').textContent = 'Ver próximas salidas'; plazas(5);
+    vista('portada'); $('#p-tit').textContent = t('Know when to push on.'); $('#s-tit').textContent = t('Know when to push on.');
+    $('#p-btn').textContent = t('See upcoming trips'); $('#s-btn').textContent = t('See upcoming trips'); plazas(5);
   };
   const final = () => {
-    vista('salidas'); $('#p-tit').textContent = 'Cada salida, a tu ritmo.'; $('#s-tit').textContent = 'Cada salida, a tu ritmo.';
-    $('#p-btn').textContent = 'Reserva tu plaza'; $('#s-btn').textContent = 'Reserva tu plaza'; plazas(4);
+    vista('salidas'); $('#p-tit').textContent = t('Every trip, at your pace.'); $('#s-tit').textContent = t('Every trip, at your pace.');
+    $('#p-btn').textContent = t('Book your place'); $('#s-btn').textContent = t('Book your place'); plazas(4);
   };
   async function bucle() {
     if (activa) return; activa = true;
     while (true) {
       inicial(); await espera(1100);
-      await ir($('#p-tit')); await escribir($('#p-tit'), 'Cada salida, a tu ritmo.');
-      await ir($('#p-btn')); await escribir($('#p-btn'), 'Reserva tu plaza');
-      await guardar($('#save-a'), () => { $('#s-tit').textContent = 'Cada salida, a tu ritmo.'; $('#s-btn').textContent = 'Reserva tu plaza'; destacar($('#s-btn')); });
+      await ir($('#p-tit')); await escribir($('#p-tit'), t('Every trip, at your pace.'));
+      await ir($('#p-btn')); await escribir($('#p-btn'), t('Book your place'));
+      await guardar($('#save-a'), () => { $('#s-tit').textContent = t('Every trip, at your pace.'); $('#s-btn').textContent = t('Book your place'); destacar($('#s-btn')); });
       await ir($('[data-sec="salidas"]'), .5); await espera(180); vista('salidas'); await espera(900);
       await ir($('#p-num')); await escribir($('#p-num'), '4');
       await guardar($('#save-b'), () => { plazas(4); destacar($('#s-row')); });
@@ -78,7 +78,9 @@
   const quieto = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const MIN = 1700, MAX = 2500, PASO = 10, ESCALA = 198 / (MAX - MIN);
   const aY = (a) => 212 - (a - MIN) * ESCALA;
-  const metros = (a) => `${String(a).replace(/(\d)(\d{3})$/, '$1.$2')} m`;
+  const sep = document.documentElement.lang === 'es' ? '.' : ',';
+  const metros = (a) => `${String(a).replace(/(\d)(\d{3})$/, '$1' + sep + '$2')} m`;
+  svg.querySelectorAll('text:not([font-weight])').forEach((e) => { e.textContent = e.textContent.replace(/[.,]/, sep); });
   const [area, linea] = svg.querySelectorAll('path');
   const puntos = [...svg.querySelectorAll('circle')], valor = svg.querySelector('text[font-weight]');
   const xs = puntos.map((c) => Number(c.getAttribute('cx')));
