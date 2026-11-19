@@ -109,3 +109,22 @@
 @media (prefers-reduced-motion:reduce){.rt-frame *{transition:none!important;animation:none!important}.rt-line .rt-path{stroke-dashoffset:0}}
 .mg-rates>.mg-tk-phone{order:1}.mg-rates>.mg-rates-steps{order:2}.mg-rates>.mg-tk-bar{order:3}.mg-rates>.mg-small{order:4;margin:0;max-width:56ch;text-align:center}
 @media(max-width:900px){.mg-rates .mg-tk-phone{margin:0 auto}}
+
+/* Home: full "Your home" screen — lender update row, card carousel, timeline and tab bar (as in Figma). */
+.rt-li-sep{border-top:.5px solid rgba(9,23,35,.12);min-height:58px}
+.rt-info-sm{width:22px;height:22px;font-size:13px;margin:0}
+.rt-carousel{display:flex;gap:10px;margin:16px -16px 0;transform:translateX(-292px);align-items:stretch}
+.rt-carousel>.rt-card{flex:none;width:312px;margin-top:0}
+.rt-peek{padding:0;overflow:hidden;display:flex;flex-direction:column;gap:10px}
+.rt-peek-art{display:block;height:154px;background:#1f4f63;flex:none}
+.rt-peek-next .rt-peek-art{background:#bfe7dc}
+.rt-peek b{margin:6px 16px 0;font-size:18px;font-weight:600;white-space:nowrap}
+.rt-peek i{display:block;height:10px;margin:0 16px;border-radius:5px;background:rgba(9,23,35,.08)}
+.rt-peek i:first-of-type{margin-top:16px}
+.rt-peek i:last-child{width:55%}
+.rt-timeline .rt-card-head{padding-bottom:4px}
+.rt-dots{color:var(--acc);font-size:10px;letter-spacing:2px}
+.rt-check{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#30383f;color:#fff;font-size:14px;flex:none}
+.rt-tabs{position:absolute;left:20px;right:20px;bottom:24px;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);padding:6px;border-radius:99px;background:rgba(255,255,255,.88);box-shadow:0 4px 18px rgba(9,23,35,.12);backdrop-filter:blur(10px)}
+.rt-tabs span{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0 6px;border-radius:99px;font-size:11px;line-height:13px;font-weight:500;color:#091723}
+.rt-tabs span.is-on{background:rgba(33,143,183,.12);color:var(--acc)}
