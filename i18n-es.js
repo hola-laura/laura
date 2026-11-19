@@ -2014,4 +2014,5 @@ window.I18N_ES = {
 "Drivo Test results": "Resultados de Drivo Test",
 "Drivo Test — Laura Sampedro | Product design case study": "Drivo Test — Laura Sampedro | Caso de diseño de producto",
 "How I designed and built Drivo Test, an independent iPhone and web app for driving theory learners in Spain.": "Cómo diseñé y construí Drivo Test, una app independiente para iPhone y web para estudiar la teoría del carnet en España.",
+"Live screen: find a mortgage with free expert help from Habito, inside Monzo": "Pantalla en producción: encuentra hipoteca con ayuda experta gratuita de Habito, dentro de Monzo",
 };
