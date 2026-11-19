@@ -1,0 +1,27 @@
+/* mortgage-anim.css — Monzo's own animated illustrations (light mode) inside the remortgaging screens. */
+.ms-screen{position:relative;display:block}
+.ms-screen>img{display:block;width:100%;height:auto;border-radius:12.5%/5.8%}
+.ms-screen>.ms-anim{position:absolute;height:auto!important;aspect-ratio:598/471!important;border-radius:0}
+
+.ob-frame .ob-art img.is-anim{width:auto;max-width:100%;height:auto}
+.ob-frame .ob-center-art.is-anim{width:196px;height:auto;margin-top:150px}
+.ob-frame .ob-bank-logo{width:32px;height:32px;border-radius:8px;display:block}
+
+/* "Track your equity": clouds drift, the sparkle twinkles and the equity bar grows */
+.ob-frame .eq-art{position:relative;width:295px;height:208px;margin:0 auto}
+.ob-frame .eq-art img{position:absolute;max-width:none;max-height:none}
+.ob-frame .eq-base{inset:0;width:100%;height:100%}
+.ob-frame .eq-cloud-l{left:8.9%;top:14.8%;width:19.6%;height:auto;animation:eqDrift 7s ease-in-out infinite alternate}
+.ob-frame .eq-cloud-r{left:77.5%;top:2.2%;width:19.6%;height:auto;animation:eqDrift 9s ease-in-out infinite alternate-reverse}
+.ob-frame .eq-spark{left:31.3%;top:.9%;width:4.9%;height:auto;transform-origin:50% 50%;animation:eqTwinkle 1.8s ease-in-out infinite}
+.ob-frame .eq-bar{position:absolute;left:6.5%;top:79.5%;width:87%;height:11%;background:#fff}
+.ob-frame .eq-bar::before{content:"";position:absolute;left:2.4%;right:1.6%;top:50%;height:6.4px;margin-top:-3.2px;border-radius:9px;background:#d5ded9}
+.ob-frame .eq-fill{position:absolute;left:2.4%;top:50%;height:6.4px;margin-top:-3.2px;width:5%;border-radius:9px;background:#39bf5d}
+.ob-frame .eq-fill::after{content:"";position:absolute;right:-1px;top:50%;width:11px;height:15px;margin-top:-7.5px;border-radius:4px;background:#39bf5d;box-shadow:0 1px 3px rgba(9,23,35,.18)}
+.ob-frame .ob-screen.is-active .eq-art{animation:eqIn .7s cubic-bezier(.3,1.3,.5,1) .15s both}
+.ob-frame .ob-screen.is-active .eq-fill{animation:eqGrow 1.7s cubic-bezier(.3,.7,.2,1) .7s both}
+@keyframes eqIn{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes eqGrow{from{width:5%}to{width:58%}}
+@keyframes eqDrift{from{transform:translateX(-7px)}to{transform:translateX(9px)}}
+@keyframes eqTwinkle{0%,100%{transform:scale(1) rotate(0);opacity:1}50%{transform:scale(.55) rotate(25deg);opacity:.55}}
+@media (prefers-reduced-motion:reduce){.ob-frame .eq-art,.ob-frame .eq-art *{animation:none!important}.ob-frame .eq-fill{width:58%}}
