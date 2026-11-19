@@ -128,3 +128,9 @@
 .rt-tabs{position:absolute;left:20px;right:20px;bottom:24px;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);padding:6px;border-radius:99px;background:rgba(255,255,255,.88);box-shadow:0 4px 18px rgba(9,23,35,.12);backdrop-filter:blur(10px)}
 .rt-tabs span{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0 6px;border-radius:99px;font-size:11px;line-height:13px;font-weight:500;color:#091723}
 .rt-tabs span.is-on{background:rgba(33,143,183,.12);color:var(--acc)}
+/* Rates: real lenders (Barclays first, Santander peeking), as in Figma. */
+.rt-logo{width:32px;height:32px;border-radius:8px;border:.33px solid rgba(9,23,35,.2);object-fit:contain;padding:1px;background:#fff;flex:none}
+.rt-deals{display:flex;gap:10px;margin-right:-16px}
+.rt-deals>.rt-card{flex:none;width:356px}
+.rt-deal-peek{padding-left:16px;opacity:1}
+.rt-deal-peek .rt-logo{padding:0;border:0;border-radius:6px}

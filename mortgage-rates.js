@@ -3,7 +3,7 @@
    "Estimated deals connected"), rebuilt in HTML for section 03.
    The filters really recalculate: LTV = balance / property value, and the monthly repayment uses the
    standard repayment formula, which reproduces the Figma figure exactly (£125,050 at 4.73% over 21 years = £783.73).
-   The rate itself stays at the design's 4.73%: this demo doesn't invent lender pricing. Lenders are anonymised. */
+   The rate itself stays at the design's 4.73%: this demo doesn't invent lender pricing. Lenders shown as in the Figma design (Barclays, Santander). */
 (() => {
   const root = document.querySelector('[data-rates-demo]');
   if (!root) return;
@@ -53,9 +53,9 @@
     <h3>${c('Your estimated mortgage rates', 'Tus tipos hipotecarios estimados')}</h3>
     <p class="rt-lede">${c('Based on a', 'Con un valor de la vivienda de')} <b data-rt="value"></b>${c(' property value and ', ' y un saldo de ')}<b data-rt="balance"></b>${c(' mortgage balance, your LTV is ', ', tu LTV es ')}<b data-rt="ltv"></b>. ${c('Adjust the filters to change this.', 'Ajusta los filtros para cambiarlo.')}</p>
     <span class="rt-filter" data-tap="filters"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M2 4h12M4 8h8M6 12h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>${c('Your mortgage', 'Tu hipoteca')}</span>
-    <div class="rt-card rt-deal"><div class="rt-li">${bank}<span class="rt-li-text">${c('Lender A', 'Entidad A')}</span><span class="rt-tag">${c('Lowest overall cost', 'Menor coste total')}</span></div>
+    <div class="rt-deals"><div class="rt-card rt-deal"><div class="rt-li"><img class="rt-logo" src="${A}lender-barclays.png" alt="" width="32" height="32"><span class="rt-li-text">Barclays</span><span class="rt-tag">${c('Lowest overall cost', 'Menor coste total')}</span></div>
       ${row(c('Monthly repayment', 'Cuota mensual'), '', 'monthly')}${row(c('Interest rate', 'Tipo de interés'), '4.73%')}${row(c('Deal length', 'Duración de la oferta'), years(2))}${row(c('Lender fee', 'Comisión de la entidad'), '£0')}${row('APRC', '6%')}
-      <span class="rt-soft rt-soft-sm" data-tap="more">${c('See more', 'Ver más')}</span></div>
+      <span class="rt-soft rt-soft-sm" data-tap="more">${c('See more', 'Ver más')}</span></div><div class="rt-card rt-deal rt-deal-peek" aria-hidden="true"><div class="rt-li"><img class="rt-logo" src="${A}lender-santander.png" alt="" width="32" height="32"><span class="rt-li-text">Santander</span></div></div></div>
     <p class="rt-legal">${c('Your home may be repossessed if you do not keep up repayments on your mortgage.', 'Puedes perder tu vivienda si no pagas las cuotas de tu hipoteca.')}</p>
     <div class="rt-card rt-chart"><div class="rt-card-head"><b>${c('How rates have changed', 'Cómo han cambiado los tipos')}</b><span class="rt-acc">${c('2 years fixed', 'Fijo a 2 años')}</span></div>
       <div class="rt-chart-top"><b>${c('Last 11 months', 'Últimos 11 meses')}<small>${c('1 Jun 2025 – 1 May 2026', '1 jun. 2025 – 1 may. 2026')}</small></b><span class="rt-down">↓0.12%</span></div>
@@ -79,7 +79,7 @@
   </div>
   <div class="rt-sheet rt-detail" data-sheet="detail">
     <span class="rt-plus rt-plus-float">+</span>
-    <div class="rt-card"><div class="rt-li">${bank}<span class="rt-li-text">${c('Lender A', 'Entidad A')}</span></div></div>
+    <div class="rt-card"><div class="rt-li"><img class="rt-logo" src="${A}lender-barclays.png" alt="" width="32" height="32"><span class="rt-li-text">Barclays</span></div></div>
     <div class="rt-card">${row(c('You borrow', 'Te prestan'), '', 'balance')}${row(c('Monthly repayments', 'Cuotas mensuales'), '', 'monthly')}${row(c('Fixed 2 year rate', 'Tipo fijo a 2 años'), '4.73%')}${row(c('Deal period', 'Periodo de la oferta'), years(2))}</div>
     <div class="rt-card">${row(c('Term', 'Plazo'), '', 'term')}${row(c('Rate after deal ends', 'Tipo al terminar la oferta'), '6.24%')}</div>
     <div class="rt-card">${row(c('Lender incentives', 'Incentivos de la entidad'), '£300')}${row(c('Lender fee', 'Comisión de la entidad'), '£0')}</div>
