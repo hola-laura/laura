@@ -257,6 +257,7 @@
 .round.hot em{color:var(--coral)}
 .round h3{font-size:21px;margin:8px 0 0;line-height:1.2}
 .slide .round p{font-size:16px;line-height:1.4;margin:0;color:#44555f}
+.slide.dark .round p{color:var(--muted)}
 .wall{height:640px;border-radius:26px;overflow:hidden;background:#16233f;box-shadow:0 20px 40px rgba(17,34,49,.25);align-self:center}
 .wall img{width:100%;display:block}
 .slide.active .wall img{animation:wallpan 26s ease-in-out infinite alternate}
