@@ -197,3 +197,6 @@ dialog.fb-pop img{display:block;width:calc(100% - 48px);margin:0 24px;border-rad
 .live-cap .lbl{color:var(--mz-coral);font-weight:700;font-size:18px}
 .live-cap p{font-size:15px;color:#8796a1;margin-top:6px;line-height:1.4}
 .live-cap .fig-link.small-link{margin-top:14px}
+/* 19 Nov review: readable option bullets on slide 18; appendix 3 phones on one line */
+.slide.dark .optcol li{color:var(--muted)}
+.slide[data-k="multi"] .round em{min-height:2.6em;display:flex;align-items:flex-end}
