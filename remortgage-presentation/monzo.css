@@ -313,3 +313,10 @@ dialog.fb-pop .cmp img{width:auto;max-width:100%;max-height:70vh;margin:0;border
 .cyc-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 2px}
 .cyc-dots button{appearance:none;border:0;padding:0;width:8px;height:8px;border-radius:99px;background:rgba(255,255,255,.28);cursor:pointer;transition:width .35s ease,background .35s ease}
 .cyc-dots button.on{width:22px;background:#dff46b}
+
+.slide[data-k="honb"] .honb{display:flex;gap:44px;justify-content:center;align-items:flex-start;margin-top:34px}
+.slide[data-k="honb"] .role-ph{width:250px}
+
+.road2 .road-col{display:flex;flex-direction:column;justify-content:flex-start}
+.road2 .road-art{flex:0 0 170px}
+.road2 .road-list li{padding:11px 0}
