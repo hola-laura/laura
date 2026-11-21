@@ -207,3 +207,7 @@ dialog.fb-pop.cmp-pop{width:min(1000px,94vw)}
 .cmp figure{margin:0;display:grid;gap:10px;justify-items:center}
 .cmp figcaption{font-size:15px;font-weight:600;color:var(--mz-soft)}
 dialog.fb-pop .cmp img{width:auto;max-width:100%;max-height:70vh;margin:0;border-radius:22px;background:none}
+/* 21 Nov: slide 2, bigger screens (the text card went) */
+.slide[data-k="context"] .phones-row.ctx .bz{width:318px;padding:8.2px;border-radius:47px}
+.slide[data-k="context"] .phones-row.ctx .bz .bz-screen{border-radius:39px}
+.slide[data-k="context"] .phones-row.ctx > .col{max-width:380px;margin-left:12px!important}
