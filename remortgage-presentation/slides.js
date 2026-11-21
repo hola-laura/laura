@@ -72,11 +72,6 @@ const slides=[
   "ask": []
  },
  {
-  "title": "How I’ll walk you through it",
-  "notes": "This is how I'll walk you through it. Six chapters, more or less as they happened. The reset, the vision, reach, and then Habito, which is the biggest part.\nAnd Habito is where the story turns. With Better we already knew that people dropped out after we sent them, but we couldn't see why, and we couldn't change it.\nWith Habito, for the first time, we could.\nThen what's next, and a bit about how I work.\nSo let's start with the reset.",
-  "ask": []
- },
- {
   "title": "We lent our engineers for two months, and used the time to listen",
   "notes": "The reset started in a way I didn't expect, to be honest.\nIn February 2025, another team at Monzo, Financial Health, needed engineers. They had a real business need, and Homeownership wasn't going the way we wanted.\nSo we agreed they could borrow our engineers for two months. It wasn't the end of the product. Leadership confirmed the long-term commitment and we agreed a date for the engineers to come back.\nAnd we decided to use that time well. We ran a discovery sprint, to understand why our experiments weren't moving the numbers.\nOur user researcher interviewed two groups of people. I was in those interviews too, but the researcher was leading.\nOne group was people who had remortgaged with us, and the other was people who had started and then given up. And that sprint is what changed the strategy.",
   "ask": [
@@ -344,7 +339,7 @@ const slides=[
  },
  {
   "title": "The adviser in the app: designed with guardrails, then paused",
-  "notes": "OK, the adviser. This bet is about relevance, and about choice.\nRemember the adviser-first test we had to park? The vision said people should choose how they talk to an adviser.\nBut in reality Habito's advisers worked by chat, in a separate tool, and at that time the chat opened in Habito, outside Monzo. We had two options.\nWait about nine months for Monzo's own chat, or put Habito's chat inside the app in about a month. I proposed the fast one, because every month we waited we were losing people at the decision.\nThe extra cost was small, about 43 thousand dollars a year, and the product review estimated it would pay for itself in about a month.\nBut having a second chat inside Monzo is risky. People could ask their adviser about a blocked card, or ask Monzo support about their mortgage.\nSo I designed three guardrails. Gate, which means we only show it during an active remortgage.\nSignpost, so the first time you open the chat there's a short intro that shows who you're talking to, a real person and a mortgage expert, and when they'll reply.\nAnd recover, so if you end up in the wrong place, you get to the right one in one tap.\nWe also agreed a kill switch before starting, so a limit that tells you in advance when to stop. Above 2 percent of chats in the wrong place we investigate, and above 5 percent we roll back.\nThe plan was a small pilot first, and then a proper 50/50 test.\nAnd in the end we paused it. People wanted it, and we could build it.\nAfter the analysis, the team decided this integration wasn't the best use of our resources this year, and put them into other problems, like first-time buyers.\nFirst-time buyers had been our second goal since the second half of 2025.\nIn 2026 it became the first. That was a business decision. We needed to show that buying Habito had been a good decision, and as you've seen, we were sometimes missing our revenue goals.\nAnd first-time buyers are a big opportunity for Monzo, because most Monzo customers are first-time buyers.\nSo for now the chat stays in Habito.",
+  "notes": "OK, the adviser. This bet is about relevance, and about choice.\nRemember the adviser-first test we had to park? The vision said people should choose how they talk to an adviser.\nBut in reality Habito's advisers worked by chat, in a separate tool, and at that time the chat opened in Habito, outside Monzo. We had two options.\nWait about nine months for Monzo's own chat, or put Habito's chat inside the app in about a month. I proposed the fast one, because every month we waited we were losing people at the decision.\nThe extra cost was small, about 43 thousand dollars a year, and the product review estimated it would pay for itself in about a month.\nBut having a second chat inside Monzo is risky. People could ask their adviser about a blocked card, or ask Monzo support about their mortgage.\nSo I designed three guardrails. Gate, which means we only show it during an active remortgage.\nSignpost, so the first time you open the chat there's a short intro that shows who you're talking to, a real person and a mortgage expert, and when they'll reply.\nAnd recover, so if you end up in the wrong place, you get to the right one in one tap.\nWe also agreed a kill switch before starting, so a limit that tells you in advance when to stop. Above 2 percent of chats in the wrong place we investigate, and above 5 percent we roll back.\nThe plan was a small pilot first, and then a proper 50/50 test.\nAnd in the end we paused it. People wanted it, and we could build it.\nAfter the analysis, the team decided this integration wasn't the best use of our resources this year, and put them into other problems, like first-time buyers.\nFirst-time buyers had been our second goal since the second half of 2025.\nIn 2026 it became the first. That was a business decision. We needed to show that buying Habito had been a good decision, and as you've seen, we were sometimes missing our revenue goals.\nAnd first-time buyers are a big opportunity for Monzo, because most Monzo customers are first-time buyers.\nSo for now the chat stays in Habito. The design is in the appendix, if you want to see it.",
   "ask": [
    [
     "How big was the risk, really?",
@@ -353,16 +348,6 @@ const slides=[
    [
     "Why was it paused?",
     "It came down to priorities. The integration was possible, but after the analysis the team decided to put its resources into other problems this year, like first-time buyers. The chat keeps working in Habito in the meantime. It isn't a final decision, and the design and the guardrails are ready for when it comes back."
-   ]
-  ]
- },
- {
-  "title": "Your adviser, one tap away",
-  "notes": "This is how it was designed, it's playing from my Figma frames. The adviser has a fixed place in the tracker, with a name and a face.\nThe first time you open the chat you get a short intro. Who Annie is, that this chat is only for your remortgage, and when she replies. You only see it that first time.\nIt's there so you feel confident that you're talking to a real person, and to an expert.\nAfter that, the chat opens directly from the tracker. If you ask about something else, your balance for example, it sends you to Monzo support in one tap.\nAnd when the adviser sends your recommendation, it arrives in the chat and it opens in the app, so you don't go to another website. This was designed, but it was never built.",
-  "ask": [
-   [
-    "What if the adviser still sends the old link to Habito's site?",
-    "We planned for that. For a Monzo customer, a message that only links to the recommendation on the web is hidden, so there aren't two doors to the same thing."
    ]
   ]
  },
@@ -471,6 +456,17 @@ const slides=[
     "After more than five years at Monzo, and two on the same product, it was my moment to change. The business was putting its energy into opening new lines, which is a fair call. But it meant the plan for remortgaging would stay half-built for a long time, and it started to feel like a project I wouldn't see finished. So I decided to take what I'd learned to a new problem."
    ]
   ]
+ },
+ {
+  "title": "Your adviser, one tap away",
+  "notes": "This is how it was designed, it's playing from my Figma frames. The adviser has a fixed place in the tracker, with a name and a face.\nThe first time you open the chat you get a short intro. Who Annie is, that this chat is only for your remortgage, and when she replies. You only see it that first time.\nIt's there so you feel confident that you're talking to a real person, and to an expert.\nAfter that, the chat opens directly from the tracker. If you ask about something else, your balance for example, it sends you to Monzo support in one tap.\nAnd when the adviser sends your recommendation, it arrives in the chat and it opens in the app, so you don't go to another website. This was designed, but it was never built.",
+  "ask": [
+   [
+    "What if the adviser still sends the old link to Habito's site?",
+    "We planned for that. For a Monzo customer, a message that only links to the recommendation on the web is hidden, so there aren't two doors to the same thing."
+   ]
+  ],
+  "appx": true
  },
  {
   "title": "One home screen, eleven states",
