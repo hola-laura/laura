@@ -1,7 +1,7 @@
 const slides=[
  {
   "title": "Remortgaging at Monzo, 2025–26",
-  "notes": "Hi, I'm Laura. Thanks for having me. I joined Monzo's Homeownership team when the product didn't make any money at all, so I saw it grow from a nice feature into something that brings revenue.\nToday I'm going to talk about 2025 and 2026, which is when we changed the strategy, and everything that came after.\nMy title was Senior Product Designer, but for most of that time I was the only designer in the squad, so I was leading the design.\nIf you only remember one thing from today, I'd like it to be this. We beat our referral goal by 75 percent, and the mortgages didn't follow.\nSo most of what you'll see is how I found out why, and what I designed to fix it.\nBut first I need two minutes of context, otherwise the rest doesn't make much sense.",
+  "notes": "Hi, I'm Laura. Thanks for having me. I'm going to present a remortgaging case study from Monzo, but first I need to give you a bit of context, if that's OK. I joined Monzo's Homeownership team when the product didn't make any money at all, so I saw it grow from a nice feature into something that brings revenue.\nToday I'm going to talk about 2025 and 2026, which is when we changed the strategy, and everything that came after.\nMy title was Senior Product Designer, but for most of that time I was the only designer in the squad, so I was leading the design.\nIf you only remember one thing from today, I'd like it to be this. We beat our referral goal by 75 percent, and the mortgages didn't follow.\nSo most of what you'll see is how I found out why, and what I designed to fix it.\nLet me give you a bit more context, so you understand the product.",
   "ask": []
  },
  {

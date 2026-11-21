@@ -200,3 +200,10 @@ dialog.fb-pop img{display:block;width:calc(100% - 48px);margin:0 24px;border-rad
 /* 19 Nov review: readable option bullets on slide 18; appendix 3 phones on one line */
 .slide.dark .optcol li{color:var(--muted)}
 .slide[data-k="multi"] .round em{min-height:2.6em;display:flex;align-items:flex-end}
+/* 21 Nov: slide 20 September vs October pop-up */
+.cmp-row{display:flex;justify-content:flex-end;margin-top:6px}
+dialog.fb-pop.cmp-pop{width:min(1000px,94vw)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:0 24px 24px;align-items:start}
+.cmp figure{margin:0;display:grid;gap:10px;justify-items:center}
+.cmp figcaption{font-size:15px;font-weight:600;color:var(--mz-soft)}
+dialog.fb-pop .cmp img{width:auto;max-width:100%;max-height:70vh;margin:0;border-radius:22px;background:none}
