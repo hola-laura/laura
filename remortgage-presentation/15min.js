@@ -15,7 +15,7 @@ const slides=[
   ]
  },
  {
-  "title": "One journey, inside Monzo, that flexes to you",
+  "title": "The whole remortgage, without leaving Monzo",
   "notes": "In February 2025 we paused for two months to listen to customers: people who had remortgaged with us, and people who had started and given up.\nThey told us four things. Don't send me out: they expected to get their new deal inside Monzo. Use what you already know about me. Let me choose how I talk to you. And tell me what's happening.\nSo I turned all of that into a design vision.\nOne journey, inside Monzo, that adapts to the person. The application comes into the app, already filled in with what we know. People choose if they want to talk to an adviser first, or see deals first after filling the form.\nLike that, the paperwork gets easier. And you always know what happens next. I planned the sprint for it, and I ran the vision workshop together with our researcher.\nBut it made one thing very clear. To give customers the experience they wanted, we needed to own much more of the journey than a referral partner allowed us to.",
   "ask": [
    [
@@ -69,7 +69,7 @@ const slides=[
   ]
  },
  {
-  "title": "Four bets, and how each one could be wrong",
+  "title": "I treated every decision as a bet",
   "notes": "So I went to find out. First, I applied through Habito myself, as a real customer, and saved every screen. Then, with our PM, I co-led a workshop with the team about the drop-off.\nThese customers really want to remortgage. But when they see the recommendation, they don't feel confident enough to act.\nOut of that came four bets. I treated every decision as a bet, and for each one I wrote down three things.\nWhat we believed, and where that belief came from. How we would know it was working. And what would make me change direction.\nI'll give you two examples. For the recommendation, if people read every reason and they still don't accept, then the problem is the deal, and how we explain it doesn't matter. And the deal is Habito's side.\nAnd for the application, if more people finish the form but accepted recommendations don't move, then the form wasn't the real problem.\nLet me show you those two.",
   "ask": [
    [
@@ -83,7 +83,7 @@ const slides=[
   ]
  },
  {
-  "title": "The quick win: tell people the moment it’s ready",
+  "title": "A push the moment the recommendation is ready",
   "notes": "The first one is about the moment when people decide. People were ready, but our follow-up was slow.\nAt that point the only reminder was an email from Habito.\nSo the first experiment was very simple. Send a push from Monzo on day zero, the moment the recommendation is ready, which is when people care the most, and again on day three. The design question was where that push should take you.\nI explored two options: a new screen in between, or the progress tracker, which already existed. With the tracker we could test much faster, so that's what launched in May.\nWe measured it on accepted recommendations, and they went up. I don't remember the exact number, so I'm not going to give you one. And I think I know why it worked.\nThe tracker was already live, but it wasn't easy to find. The push took people straight to it, so more people got there, and more of them accepted.",
   "ask": [
    [
@@ -133,7 +133,7 @@ const slides=[
   ]
  },
  {
-  "title": "What moved, and where each customer ask stands today",
+  "title": "What changed, and what’s still to do",
   "notes": "So, what came out of all this? At the start I told you that we beat the referral goal and the mortgages didn't follow. Referrals ended about 75 percent above our goal.\nBut a referral is only the first step, and I prefer to tell you that than to claim an uplift I can't prove.\nSo the number that matters in this story is accepted recommendations. And that one went up.\nNow, the four things customers asked for. I'm not going to read every row. Most of it is live.\nAnd I want to be honest about 2026. Most of what I designed for Habito shipped late in the year, so the results are only starting to arrive.\nAnd the new tracker, which is the design I expect to have the biggest impact, has only just launched.\nI'm told the first signals are very positive, but it's too soon.",
   "ask": [
    [
@@ -151,7 +151,7 @@ const slides=[
   ]
  },
  {
-  "title": "What I'd take to the next problem",
+  "title": "What I learned",
   "notes": "Looking back, there are four things I take with me. One, more referrals aren't more mortgages. Getting more referrals didn't help us until we designed the middle of the funnel.\nTwo, when the systems of two companies meet, things like routing, consent and who you're talking to are design decisions too. Three, shipping fast is fine, but you agree the guardrails and the rollback before you start.\nAnd four, name the problem first. One word, compare or broker, changed what people expected from the whole journey.",
   "ask": []
  },
