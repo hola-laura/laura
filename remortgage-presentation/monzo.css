@@ -289,3 +289,14 @@ dialog.fb-pop .cmp img{width:auto;max-width:100%;max-height:70vh;margin:0;border
 .slide.active .bz-screen img.ir-scroll{animation:irScroll 16s ease-in-out 1.4s infinite}
 @keyframes irScroll{0%,10%{transform:translateY(0)}45%,60%{transform:translateY(var(--t))}95%,100%{transform:translateY(0)}}
 @media (prefers-reduced-motion:reduce){.slide.active .bz-screen img.ir-scroll{animation:none}}
+
+/* 21 Nov: "What a Monzonaut said" looks like someone is typing */
+.fb-btn{position:relative}
+.fb-btn .fb-dot{fill:currentColor;transform-box:fill-box;transform-origin:center;animation:fbType 2.6s ease-in-out infinite}
+.fb-btn .fb-dot:nth-of-type(2){animation-delay:.16s}
+.fb-btn .fb-dot:nth-of-type(3){animation-delay:.32s}
+@keyframes fbType{0%,38%,100%{opacity:.3;transform:translateY(0)}14%{opacity:1;transform:translateY(-1.8px)}}
+.fb-btn::after{content:"";position:absolute;inset:-2px;border-radius:999px;border:2px solid var(--mz-coral,#ff4f40);opacity:0;pointer-events:none;animation:fbRing 2.6s ease-out infinite}
+@keyframes fbRing{0%{opacity:.55;transform:scale(1)}55%,100%{opacity:0;transform:scale(1.1,1.35)}}
+.fb-btn:hover::after,.fb-btn:focus-visible::after{animation:none}
+@media (prefers-reduced-motion:reduce){.fb-btn .fb-dot,.fb-btn::after{animation:none}}
