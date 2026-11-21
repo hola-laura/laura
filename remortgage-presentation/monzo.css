@@ -300,3 +300,16 @@ dialog.fb-pop .cmp img{width:auto;max-width:100%;max-height:70vh;margin:0;border
 @keyframes fbRing{0%{opacity:.55;transform:scale(1)}55%,100%{opacity:0;transform:scale(1.1,1.35)}}
 .fb-btn:hover::after,.fb-btn:focus-visible::after{animation:none}
 @media (prefers-reduced-motion:reduce){.fb-btn .fb-dot,.fb-btn::after{animation:none}}
+
+/* 21 Nov: slide 9, the first progress tracker */
+.slide[data-k="trk1"] .trk1{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;margin-top:26px;align-items:start}
+.slide[data-k="trk1"] .trk1-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+.slide[data-k="trk1"] .trk1-cards .col{gap:16px}
+.slide[data-k="trk1"] .trk1-phones{display:flex;gap:22px}
+.slide[data-k="trk1"] .role-ph{width:236px}
+.slide[data-k="trk1"] .bz-screen.cyc{position:relative}
+.slide[data-k="trk1"] .cyc img{position:absolute!important;left:0;top:0;opacity:0;transition:opacity .7s ease}
+.slide[data-k="trk1"] .cyc img.on{opacity:1}
+.cyc-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 2px}
+.cyc-dots button{appearance:none;border:0;padding:0;width:8px;height:8px;border-radius:99px;background:rgba(255,255,255,.28);cursor:pointer;transition:width .35s ease,background .35s ease}
+.cyc-dots button.on{width:22px;background:#dff46b}
