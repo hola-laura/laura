@@ -284,3 +284,8 @@ dialog.fb-pop .cmp img{width:auto;max-width:100%;max-height:70vh;margin:0;border
 .vr-pp[aria-pressed="true"] .vr-pp-i::after{display:none}
 .slide[data-k="vision"] .vr-links{position:absolute;right:84px;bottom:24px;z-index:7;display:flex;gap:10px}
 .slide[data-k="vision"] .vr-links .fig-link{margin:0!important;color:#fff!important;border-color:rgba(255,255,255,.4)!important}
+
+/* 21 Nov: slide 9, indicative rates screens scroll slowly to show the whole page */
+.slide.active .bz-screen img.ir-scroll{animation:irScroll 16s ease-in-out 1.4s infinite}
+@keyframes irScroll{0%,10%{transform:translateY(0)}45%,60%{transform:translateY(var(--t))}95%,100%{transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){.slide.active .bz-screen img.ir-scroll{animation:none}}
