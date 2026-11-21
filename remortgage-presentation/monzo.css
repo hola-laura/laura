@@ -211,3 +211,12 @@ dialog.fb-pop .cmp img{width:auto;max-width:100%;max-height:70vh;margin:0;border
 .slide[data-k="context"] .phones-row.ctx .bz{width:318px;padding:8.2px;border-radius:47px}
 .slide[data-k="context"] .phones-row.ctx .bz .bz-screen{border-radius:39px}
 .slide[data-k="context"] .phones-row.ctx > .col{max-width:380px;margin-left:12px!important}
+/* 21 Nov: slide 7 without personas, the four asks across the slide */
+.fgrid.fgrid4{grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px}
+.fgrid4 .fcard{min-height:470px;padding:30px 28px 30px}
+.fgrid4 .fviz{order:-1;flex-direction:column;align-items:flex-start;gap:18px;margin:0 0 26px;padding-top:0}
+.slide .fgrid4 .fviz img.spot{width:170px!important;height:110px!important}
+.fgrid4 .fviz-r{min-height:86px;align-content:flex-start;align-items:center}
+.slide .fgrid4 .fcard h3{font-size:32px;line-height:1.12;margin:6px 0 12px}
+.slide .fgrid4 .fcard p{font-size:20px!important}
+.slide .fgrid4-note{margin-top:22px!important;color:var(--mz-soft)!important}
