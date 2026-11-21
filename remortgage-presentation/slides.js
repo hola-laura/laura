@@ -15,34 +15,8 @@ const slides=[
   ]
  },
  {
-  "title": "Connect in a minute, and tell us when your deal ends",
-  "notes": "This is how connecting your mortgage works.\nSo, you connect in a few taps, and you don't need any account details.\nWe find your mortgage through TransUnion. And during onboarding we ask you about your deal and your property.\nI added this step in 2024, to know which customers were in market.\nBy January 2025, the new customers who connected and gave us their deal-end date had gone from 38 percent to 88. And that date matters, because it tells us when a customer is close to remortgaging.",
-  "ask": [
-   [
-    "Is 38 to 88 percent your result?",
-    "Yes. It was one of my first projects when I joined. The design is mine and engineering built it. It was a big win for everything we did in remortgaging afterwards, because the deal-end date is how we know when to talk to someone."
-   ],
-   [
-    "Why is it rebuilt in code?",
-    "So you can see it move, the way it does in the app. The balance and dates are the placeholder figures from my designs."
-   ],
-   [
-    "Did the default date inflate the 88 percent?",
-    "When I removed the default, the number of people giving us a date didn't drop. So the share held, and the data got cleaner."
-   ],
-   [
-    "What was the impact of the fix?",
-    "I can't claim a business result from that change on its own. What I can say is that the strange data stopped, and we didn't lose dates."
-   ],
-   [
-    "Why was the goal 49 to 55 percent, if you got 88?",
-    "Because they measure different things. The 88 percent is new connections, after my change. The 49 percent was the whole base, including everyone who connected before the question existed."
-   ]
-  ]
- },
- {
   "title": "To make money, we launched remortgaging with Better.co.uk. It worked, but not enough",
-  "notes": "First, we needed to prove we could make money. Remortgaging was the obvious place to start.\nQuick context on the UK: most mortgages have a fixed deal for a few years. When it ends, your rate goes up, so people switch to a new deal. That's remortgaging.\nAnd thanks to the deal-end date, we often knew when that moment was coming.\nSo we partnered with Better.co.uk, a mortgage broker. A broker finds you a deal and does the paperwork for you.\nWhen the mortgage completes, the lender pays the broker, the customer pays nothing, and Monzo gets a share if the customer started in our app.\nEvery customer we send to a partner is a referral. I designed that first journey. It was a click-out: people left Monzo and finished on Better's website.\nIt proved there was a business: around 5,000 customers over time.\nBut it didn't go the way we wanted.\nOur goal for the first six months was about 300 applications a month, around a million pounds a year.\nBy September 2024 we had 70. We missed our revenue goals, and growth stopped.\nAnd once people left the app, we only saw the numbers Better sent us. Not why they dropped out, and we couldn't change it. That was my big learning: our success ended at the referral.",
+  "notes": "First, we needed to prove we could make money. Remortgaging was the obvious place to start.\nQuick context on the UK: most mortgages have a fixed deal for a few years. When it ends, your rate goes up, so people switch to a new deal. That's remortgaging.\nAnd thanks to the deal-end date, we often knew when that moment was coming.\nDuring onboarding, we ask about your deal end and your home, to work out your equity.\nIt's not the focus of this case study, but putting these questions in onboarding was my idea. They already existed in the product, but very few people answered them.\nBy January 2025, we'd gone from 38% to 88% of new customers giving us their deal-end date. And that date matters, because it tells us when someone is close to remortgaging.\nSo we partnered with Better.co.uk, a mortgage broker. A broker finds you a deal and does the paperwork for you.\nWhen the mortgage completes, the lender pays the broker, the customer pays nothing, and Monzo gets a share if the customer started in our app.\nEvery customer we send to a partner is a referral. I designed that first journey. It was a click-out: people left Monzo and finished on Better's website.\nIt proved there was a business: around 5,000 customers over time.\nBut it didn't go the way we wanted.\nOur goal for the first six months was about 300 applications a month, around a million pounds a year.\nBy September 2024 we had 70. We missed our revenue goals, and growth stopped.\nAnd once people left the app, we only saw the numbers Better sent us. Not why they dropped out, and we couldn't change it. That was my big learning: our success ended at the referral.",
   "ask": [
    [
     "How does Monzo make money from this?",
@@ -63,6 +37,26 @@ const slides=[
    [
     "If you couldn't see what happened after the referral, where do the Better figures come from?",
     "From Better. They told us, for example, how many people dropped out at the application form. What we didn't have was our own data, step by step, or a way to change their journey."
+   ],
+   [
+    "Is 38 to 88 percent your result?",
+    "Yes. It was one of my first projects when I joined. The design is mine and engineering built it. It was a big win for everything we did in remortgaging afterwards, because the deal-end date is how we know when to talk to someone."
+   ],
+   [
+    "Why is it rebuilt in code?",
+    "So you can see it move, the way it does in the app. The balance and dates are the placeholder figures from my designs."
+   ],
+   [
+    "Did the default date inflate the 88 percent?",
+    "When I removed the default, the number of people giving us a date didn't drop. So the share held, and the data got cleaner."
+   ],
+   [
+    "What was the impact of the fix?",
+    "I can't claim a business result from that change on its own. What I can say is that the strange data stopped, and we didn't lose dates."
+   ],
+   [
+    "Why was the goal 49 to 55 percent, if you got 88?",
+    "Because they measure different things. The 88 percent is new connections, after my change. The 49 percent was the whole base, including everyone who connected before the question existed."
    ]
   ]
  },
