@@ -49,3 +49,22 @@
  .drivo-actions .text-link { font-size:13px; }
 }
 
+
+/* Compliance checker card. Reuses the Drivo card layout; the mock is the illustration from the remortgage case study. */
+.independent-work .drivo-app-card { margin-top:24px; }
+.checker-visual { border-radius:18px; background:var(--lavender-soft); padding:44px 36px; display:grid; align-content:center; min-height:380px; }
+.checker-visual .ms-checker-mock { padding:22px 22px 18px; border-radius:22px; background:#fff; box-shadow:0 40px 70px -40px #29242f59,0 0 0 1px #29242f0d; transform:rotate(1.2deg); }
+.checker-visual .ms-mock-bar { display:flex; align-items:center; gap:6px; margin-bottom:18px; }
+.checker-visual .ms-mock-bar i { width:9px; height:9px; border-radius:50%; background:#e4dcec; }
+.checker-visual .ms-mock-bar small { margin-left:auto; font:10px var(--font-mono); text-transform:uppercase; letter-spacing:.05em; color:#a69eb1; }
+.checker-visual .ms-checker-mock > p { margin:0; font-size:18px; line-height:1.6; color:var(--ink); }
+.checker-visual mark { padding:1px 4px; border-radius:5px; background:#ffe6dd; color:#b4492b; box-shadow:inset 0 -2px 0 #ff9d7e; }
+.checker-visual .ms-mock-flag,.checker-visual .ms-mock-fix { margin-top:14px; padding:14px 16px; border-radius:14px; }
+.checker-visual .ms-mock-flag { background:#fff5f1; box-shadow:inset 0 0 0 1px #ffd8ca; }
+.checker-visual .ms-mock-fix { margin-top:10px; background:#f3eef9; }
+.checker-visual .ms-mock-flag b,.checker-visual .ms-mock-fix b { display:block; font:11px/1.4 var(--font-mono); text-transform:uppercase; letter-spacing:.05em; }
+.checker-visual .ms-mock-flag b { color:#b4492b; }
+.checker-visual .ms-mock-fix b { color:var(--accent); }
+.checker-visual .ms-mock-flag span,.checker-visual .ms-mock-fix span { display:block; margin-top:6px; font-size:14px; line-height:1.5; color:var(--ink); }
+.checker-card .drivo-copy h3 { font-size:28px; }
+@media(max-width:760px) { .checker-visual { min-height:0; padding:28px 18px; } .checker-visual .ms-checker-mock { transform:none; } }

@@ -2015,4 +2015,14 @@ window.I18N_ES = {
 "Drivo Test — Laura Sampedro | Product design case study": "Drivo Test — Laura Sampedro | Caso de diseño de producto",
 "How I designed and built Drivo Test, an independent iPhone and web app for driving theory learners in Spain.": "Cómo diseñé y construí Drivo Test, una app independiente para iPhone y web para estudiar la teoría del carnet en España.",
 "Live screen: find a mortgage with free expert help from Habito, inside Monzo": "Pantalla en producción: encuentra hipoteca con ayuda experta gratuita de Habito, dentro de Monzo",
+/* Home, 23 Nov 2026: focus pass (checker card, closing section, plainer headings). */
+"Product designer, open to Lead and Staff roles. I align customer needs, business priorities and delivery teams to set a clear direction for complex journeys across industries.": "Diseñadora de producto, abierta a roles de Lead y Staff. Pongo de acuerdo a clientes, negocio y equipos para dar una dirección clara a experiencias complejas de distintos sectores.",
+"What it’s like to work with me.": "Cómo es trabajar conmigo.",
+"04 / Things I build": "04 / Lo que construyo",
+"I build products too.": "También construyo productos.",
+"A spending block customers set for themselves": "Un bloqueo de gastos que cada cliente se pone a sí mismo",
+"A spending block customers <em>set for themselves.</em>": "Un bloqueo de gastos que cada cliente <em>se pone a sí mismo.</em>",
+"<span aria-hidden=\"true\"></span>Built at Monzo · Public demo": "<span aria-hidden=\"true\"></span>Hecho en Monzo · Demo pública",
+"<a class=\"pill-button\" href=\"https://hola-laura.github.io/checker/\" target=\"_blank\" rel=\"noopener noreferrer\">Try the public demo ↗</a><a class=\"text-link\" href=\"case-study-mortgages.html#work\">Read the case study →</a>": "<a class=\"pill-button\" href=\"https://hola-laura.github.io/checker/\" target=\"_blank\" rel=\"noopener noreferrer\">Prueba la demo pública ↗</a><a class=\"text-link\" href=\"case-study-mortgages.html#work\">Leer el caso de estudio →</a>",
+"05 / About me": "05 / Sobre mí",
 };

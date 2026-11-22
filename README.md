@@ -51,7 +51,7 @@ Navigation and footers are currently plain HTML repeated across pages. For a sit
 
 ## Coming-soon projects (UX tarot)
 
-Project cards marked `coming-soon-card` on the homepage open `case-study-financial-health.html` or `case-study-bizum.html`. Those pages show the UX tarot instead of a case study.
+`case-study-financial-health.html` and `case-study-bizum.html` show the UX tarot instead of a case study. Their homepage cards were removed on 23 Nov 2026 until the real case studies are written; add them back to "More of my work" then.
 
 - `ux-tarot.js`: the game (situation, draw three cards, read). It draws the geometric card art and follows the site language through `I18n.lang`.
 - `ux-tarot-cards.js`: the deck. Each card has a suit, English and Spanish text (name, advice, warning, something to try this week) and its art. To add a card, add one entry; the card count updates by itself.
