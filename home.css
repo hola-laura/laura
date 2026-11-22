@@ -207,3 +207,12 @@ body.gallery-dragging,body.gallery-dragging * { cursor:grabbing !important; }
  .portfolio-home .about-closing { grid-template-columns:1fr; gap:32px; }
  .about-closing .gallery-stage { max-width:320px; justify-self:center; }
 }
+
+/* Card videos: loops recorded from the case-study prototypes (home-videos.js), with a small "rebuilt" tag. */
+.portfolio-home .card-media { position:relative; }
+.card-video { display:block; width:100%; height:auto; }
+.card-media-tag { position:absolute; left:12px; bottom:10px; font:10px/1.4 var(--font-mono); text-transform:uppercase; letter-spacing:.04em; color:var(--ink-soft); opacity:.8; pointer-events:none; }
+.rld-home-media { background:#ece6dc!important; display:grid; align-content:center; padding:36px 32px 44px!important; }
+.rld-home-media .card-video { border-radius:10px; box-shadow:0 24px 40px -22px #332b3e70,0 0 0 1px #29242f14; }
+.portfolio-home .card-media.flex-home-media { background:#f8e4dc!important; }
+@media (max-width:760px) { .rld-home-media { padding:24px 16px 36px!important; } .card-media-tag { font-size:9px; left:10px; bottom:8px; } }

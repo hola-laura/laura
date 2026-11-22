@@ -68,3 +68,9 @@
 .checker-visual .ms-mock-flag span,.checker-visual .ms-mock-fix span { display:block; margin-top:6px; font-size:14px; line-height:1.5; color:var(--ink); }
 .checker-card .drivo-copy h3 { font-size:28px; }
 @media(max-width:760px) { .checker-visual { min-height:0; padding:28px 18px; } .checker-visual .ms-checker-mock { transform:none; } }
+
+/* UX tarot card: a recorded reading on the game's own lavender. */
+.independent-work .tarot-card { margin-top:24px; }
+.tarot-visual { border-radius:18px; background:#ece6f5; padding:36px 28px; display:grid; align-content:center; min-height:320px; }
+.tarot-visual .card-video { border-radius:8px; }
+@media(max-width:760px) { .tarot-visual { min-height:0; padding:24px 14px; } }

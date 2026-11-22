@@ -25,6 +25,8 @@ Open http://127.0.0.1:8765/ and refresh after saving changes. Use the local serv
 - **Flower wobble:** `flower-motion.js`, attached to `.signature-flower`. Colour changes are CSS; movement uses a short spring animation and respects reduced motion.
 - **Occasional doodle visitors:** `doodle-surprises.js`, with appearance styles in `styles.css`.
 - **Shared cursor, scroll reveals and card tilt:** `script.js`.
+- **Homepage card videos:** `assets/home/cards/` holds one short loop per case study (plus the UX tarot), recorded from the coded prototypes on each case-study page, with a poster image each. `home-videos.js` plays them only while on screen and never autoplays with reduced motion. To re-record one, capture the prototype on its case-study page and export an H.264 `.mp4` at 480 px wide (phones) or 900 px (RLDatix).
+- **UX tarot page:** `ux-tarot.html`, linked from the tarot card in "Things I build". It uses the same game files as the coming-soon pages.
 
 ## Languages
 
