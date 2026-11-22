@@ -236,24 +236,6 @@ const slides=[
   ]
  },
  {
-  "title": "The rest of Day 1, up to the hand-off to Habito",
-  "notes": "And this is the rest of the Day 1 journey. I'll let it play.\nAfter that first screen you create an account. Nobody wants another account, so I presented it as something good for you.\nYou can check your progress here or on Habito's website, and it uses the email Monzo already has.\nThen there's one question, are you remortgaging on your own or with someone else. To be honest, that one wasn't my choice.\nHabito's system needs to know if it's one or two people before it can create the mortgage application. I proposed moving it later, into the form, but they're still working on their systems.\nSo for now it stays as UX debt, and I kept it as light as possible, one question, two options.\nAnd then the hand-off, and we say it clearly, 'we'll now take you to Habito to fill in a few details'. Because if we tell people they're about to leave Monzo, it's much less of a shock.\nThe difficult decision here was the pre-fill experiment, which was still running. We stopped it early and turned pre-fill on for everyone. It had very little risk, and the launch date wasn't going to move.\nSo we lost a bit of learning to gain speed, and we knew we were doing that. And look at where this ends. On Habito's website.\nSo Day 1 was more honest about what the service is, but we were still sending people out of Monzo. The next three bets are about that.",
-  "ask": [
-   [
-    "Why stop an experiment early?",
-    "The launch date was fixed and pre-fill had almost no downside. Waiting for significance would have meant launching Day 1 with an inconsistent experience."
-   ],
-   [
-    "Are these your designs?",
-    "Yes. It's the flow that launched. I redrew the screens from the live app for this deck so they're sharp, and the last one is a capture of Habito's website."
-   ],
-   [
-    "Why ask about joint applicants so early?",
-    "Habito's system needs to know if it's one or two applicants to create the mortgage application. I proposed moving it into the form. We shipped with the constraint rather than delay Day 1, and it's logged as UX debt while Habito works on their systems."
-   ]
-  ]
- },
- {
   "title": "A push the moment the recommendation is ready",
   "notes": "The next bet is about the moment when people decide. And the first thing we did there was the quickest one. If you remember the tree, people were ready, but our follow-up was slow.\nAt that point the only reminder was an email from Habito.\nThe first experiment was very simple. Send a push from Monzo on day zero, the moment the recommendation is ready, which is when people care the most, and again on day three. The design question was where that push should take you.\nI explored two options. Option A was a short screen in the middle. It tells you your recommendation is ready, it shows that Habito is regulated and that it's free, and then it takes you there.\nTwo taps and a whole screen to build trust, but we had to build it. Option B opened the progress tracker, which already existed, with the button on the current step.\nThree taps and more distraction, but nothing new to build. On paper I preferred A, because it was the cleaner test.\nBut the tracker already existed, so with B we could test much faster, and that's what launched in May. And I think it was the right decision, because we needed to learn fast.\nWe measured it on accepted recommendations, and they went up. I don't remember the exact number, so I'm not going to give you one. And I think I know why it worked.\nThe tracker was already live, and it was working, but it wasn't easy to find. You had to know where to look: your mortgage home screen, or one specific entry point.\nThe push took people straight to it, so more people got there, and more of them accepted.",
   "ask": [
@@ -384,20 +366,6 @@ const slides=[
    [
     "What happened with it?",
     "The three initiatives went into the team's prioritisation for the second half, scored alongside the rest of the portfolio. The property-level direction was there to guide future discovery, not as a commitment."
-   ]
-  ]
- },
- {
-  "title": "One home screen that changes with your mortgage",
-  "notes": "And this is where I'd take it next. I'll be quick, because it's a proposal. It hasn't been built or tested.\nIt comes from the audit. Today the mortgage home screen is the same for everyone who's connected, only the top card changes.\nAnd the millions of customers whose mortgage we can't see don't have a home screen at all.\nSo my proposal is one home screen that follows where you are. On the right you can see four moments. Before you connect, it shows you what you'd get.\nWhen your deal is far away, it's calm. Your equity, and nothing to do. When your deal is about to end, it tells you what it costs to do nothing, and gives you one way forward.\nAnd while you're remortgaging, the tracker lives here. Every moment has one message and one next step. And how would I validate it?\nI wouldn't rebuild everything. I'd start with one state, the one where your deal ends in less than six months. I'd test it against the screen we have today, and I'd measure how many people start a remortgage.\nThe eleven states, and a second idea about getting mortgage data directly from your lender, are in the appendix.",
-  "ask": [
-   [
-    "Why start with that state?",
-    "Because it's the closest to the outcome we care about, people starting a remortgage, and it's the moment where doing nothing costs the customer most. If the idea doesn't work there, I wouldn't build the rest."
-   ],
-   [
-    "What was the second idea?",
-    "Better data. With Open Banking, people could connect their lender directly, and Monzo could give advice before you ask. That concept was shared with the FCA as part of Monzo's Open Finance work."
    ]
   ]
  },
