@@ -320,3 +320,8 @@ dialog.fb-pop .cmp img{width:auto;max-width:100%;max-height:70vh;margin:0;border
 .road2 .road-col{display:flex;flex-direction:column;justify-content:flex-start}
 .road2 .road-art{flex:0 0 170px}
 .road2 .road-list li{padding:11px 0}
+
+.slide[data-k="results"] .res-levels .card{padding:20px 24px}
+.slide[data-k="results"] .res-levels .card p{font-size:17px;line-height:1.35}
+.slide[data-k="results"] .res-levels .card p.strong{font-size:19px;margin-bottom:4px}
+.slide[data-k="results"] .res-levels .big{font-size:64px;line-height:1;margin:2px 0 6px}
