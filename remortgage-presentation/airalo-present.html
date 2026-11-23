@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14252b">
+<meta name="description" content="A visual case study on evolving Monzo Homeownership and the remortgage experience.">
+<title>Remortgaging — 15-minute case study for Airalo | Laura Sampedro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Fragment+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=228">
+<link rel="stylesheet" href="deck.css?v=228">
+<link rel="stylesheet" href="monzo.css?v=228">
+<link rel="preconnect" href="https://images.ctfassets.net">
+<script src="airalo-present.js?v=228" defer></script>
+<style>
+body.present{--bar:52px;background:#112231;grid-template-rows:minmax(0,1fr) auto;height:100svh;min-height:0;overflow:hidden}
+.present .topbar,.present .slide-caption,.present .arrow,.present .notes-bottom,.present .notes-sheet{display:none!important}
+.present .presentation{padding:0;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.present .stage{display:flex;align-items:center;justify-content:center;width:100%;height:100%;margin:0}
+.present .slide-figure{flex:none;width:min(100vw,calc((100svh - var(--bar))*16/9));aspect-ratio:16/9;box-shadow:none}
+.present .bottombar{height:var(--bar);padding:0 clamp(16px,3vw,40px);display:grid;grid-template-rows:2px 1fr}
+.present .progress-track{margin:0}
+.present .control-row{align-items:center}
+.fs-btn{margin-left:10px;border:1px solid var(--line);border-radius:999px;background:transparent;padding:7px 13px;font-size:11px;cursor:pointer}
+.fs-btn:hover,.fs-btn:focus-visible{background:var(--lime);color:var(--ink);border-color:var(--lime)}
+</style>
+</head>
+<body class="present">
+<header class="topbar">
+  <div class="identity"><span class="monogram" aria-hidden="true">LS</span><div><strong>Laura Sampedro</strong><span>Product design · Case study</span></div></div>
+  <div class="deck-label"><span class="eyebrow">MONZO · HOMEOWNERSHIP</span><span class="divider" aria-hidden="true"></span><span id="slide-count" aria-live="polite">01 / 14</span></div>
+  <button class="notes-trigger" id="open-notes" type="button" aria-haspopup="dialog" aria-controls="notes-sheet"><span class="notes-icon" aria-hidden="true">▤</span><span>Speaker notes</span></button>
+</header>
+<main class="presentation" aria-label="Case study presentation">
+  <div class="stage">
+    <button class="arrow arrow-prev" id="previous-slide" type="button" aria-label="Previous slide"><span aria-hidden="true">←</span></button>
+    <figure class="slide-figure"><div class="deck"><div class="canvas">
+<section class="slide dark" data-n="01" data-k="cover">
+<div class="cover-photo a" style="background-image:url('https://images.ctfassets.net/ro61k101ee59/5zCoCJjnfklhsYlUOxEnGV/469ca8ed0852520eb2717e1d1268337e/HO_header.avif?w=1400&fm=webp&q=80')"></div>
+<div class="cover-text">
+  <div class="eyebrow a mz-kicker">Monzo Homeownership</div>
+  <h1 class="xl a" style="--d:1">Remortgaging<br>at Monzo</h1>
+  <p class="sub a" style="--d:2">From a referral link to a journey inside Monzo</p>
+  <div class="who a" style="--d:3"><b>Laura Sampedro</b><span>Senior Product Designer · design lead for remortgaging</span></div>
+  <div class="meta a" style="--d:4"><div><b>When</b>2025 – 2026</div><div><b>Team</b>PM, engineers, data scientist, user researcher, Habito, Ops and Compliance</div><div><b>My role</b>Vision, research synthesis, UX and UI, experiments, AI tooling</div></div>
+</div>
+<div class="pill-stack">
+  <span class="pill a" style="--d:4">“Don’t send me out.”</span>
+  <span class="pill a" style="--d:5">“Use what you know.”</span>
+  <span class="pill a" style="--d:6">“Let me choose.”</span>
+  <span class="pill coral a" style="--d:7">“Tell me what’s happening.”</span>
+</div></section>
+<section class="slide dark was-light" data-n="02" data-k="context"><div class="eyebrow a mz-kicker">Context</div><h1 class="a" style="--d:1">Monzo customers loved seeing their mortgage in the app, but it didn’t make money</h1>
+<div class="phones-row ctx" style="margin-top:26px">
+  <div class="bz a" style="--d:2"><span class="bz-screen"><img src="assets/img/connect-intro.webp?v=3" alt="Connect your mortgage from any lender, with no account details"><img class="bz-anim" src="assets/anim/house-light.webp" alt="" aria-hidden="true" style="left:8.54%;top:16.556%;width:82.917%"></span></div>
+  <div class="bz a" style="--d:3"><span class="bz-screen"><img src="assets/img/home-1.png" alt="Focus view: your home, equity and mortgage"><svg class="eq-arc" viewBox="0 0 402 874" aria-hidden="true" style="position:absolute;left:0;top:0;width:100%;height:auto;pointer-events:none">
+<path d="M 66.35 452.36 A 134.7 134.7 0 0 1 100.11 359.35" fill="none" stroke="#fff" stroke-width="19"/>
+<path d="M 66.35 452.36 A 134.7 134.7 0 0 1 100.11 359.35" fill="none" stroke="#f2f8f3" stroke-width="12"/>
+<path class="eq-fill" d="M 66.35 452.13 A 134.7 134.7 0 0 1 96.91 363.11" pathLength="1" fill="none" stroke="#34c759" stroke-width="11.4"/>
+</svg></span></div>
+  <div class="bz a" style="--d:4"><span class="bz-screen bz-375"><img src="assets/img/calc-overpay.png" alt="Overpayment calculator"><div class="ov-calc" aria-hidden="true">
+<i style="left:7.4667cqw;top:52.2667cqw;width:48.5333cqw;height:12.2667cqw"></i>
+<b class="oc-amt" style="left:8.8000cqw;top:52.8000cqw;font-size:9.6000cqw"><small>£</small><span>100</span></b>
+<i style="left:6.9333cqw;top:64.8000cqw;width:87.4667cqw;height:13.3333cqw"></i>
+<span class="oc-track" style="left:8.8000cqw;top:70.5600cqw;width:82.6667cqw;height:1.6000cqw"><span class="oc-fill"></span></span>
+<span class="oc-thumb" style="top:71.3600cqw;width:10.9333cqw;height:10.9333cqw"><em></em><em></em><em></em></span>
+<i style="left:64.0000cqw;top:113.6000cqw;width:28.8000cqw;height:8.5333cqw"></i>
+<b class="oc-int oc-r" style="right:8.8000cqw;top:114.5333cqw;font-size:6.6667cqw;color:#34c759;font-weight:500"><small>£</small><span>38,885</span></b>
+<i style="left:60.2667cqw;top:130.4000cqw;width:32.5333cqw;height:6.6667cqw"></i>
+<b class="oc-term oc-r" style="right:8.8000cqw;top:131.6000cqw;font-size:4.4267cqw;color:#091723">4 yrs 11 mo</b>
+<i style="left:20.2667cqw;top:141.0667cqw;width:72.0000cqw;height:10.6667cqw"></i>
+<span class="oc-free oc-p" style="left:21.3333cqw;top:141.2000cqw;width:69.8667cqw;font-size:3.3600cqw;line-height:5.0667cqw">You’d be mortgage free in Dec 2051 when you’re 53.</span>
+<i style="left:72.0000cqw;top:180.8000cqw;width:20.8000cqw;height:7.4667cqw"></i>
+<b class="oc-dint oc-r" style="right:9.0667cqw;top:182.1333cqw;font-size:5.8667cqw;color:#34c759;font-weight:500"><small>£</small><span>714</span></b>
+<i style="left:66.6667cqw;top:196.8000cqw;width:26.1333cqw;height:8.5333cqw"></i>
+<b class="oc-deq oc-r" style="right:9.3333cqw;top:197.8667cqw;font-size:6.6667cqw;color:#091723"><small>£</small><span>3,831</span></b>
+<i style="left:20.2667cqw;top:208.2667cqw;width:72.0000cqw;height:8.2667cqw"></i>
+<span class="oc-eq oc-p" style="left:21.3333cqw;top:208.4000cqw;width:69.8667cqw;font-size:3.3600cqw;line-height:5.0667cqw">You’d have £56,405 equity. You could use this as a deposit for your next home.</span>
+</div></span></div>
+  <div class="bz a" style="--d:5"><span class="bz-screen bz-375"><img src="assets/img/calc-rate.png?v=2" alt="Interest rate calculator: how different rates impact your payment"></span></div>
+  <div class="col" style="flex:1;gap:14px;margin-left:20px">
+    <div class="card  a" style="--d:6;"><div class="big count" data-to="250000" data-suffix=",000">250,000</div><p>connected mortgages when I joined, from almost any UK lender</p></div>
+    <div class="card pink a" style="--d:7;"><div class="label">The catch</div><p class="strong">An engagement product, with no revenue</p></div>
+    <a class="fig-link ghost a" style="--d:8;align-self:flex-start;margin-top:0" href="https://www.figma.com/design/vYurN7sfZ4L5LvqTpkaTpy/Homeownership-Master-file?node-id=8571-128380&t=kHX24gDhcGquarU5-1" target="_blank" rel="noopener">See all Homeownership journeys ↗</a>
+  </div>
+</div><style>
+.slide[data-k="context"] .eq-fill{stroke-dasharray:1 1;stroke-dashoffset:1}
+.slide[data-k="context"].active .eq-fill{animation:eqFill 1.5s cubic-bezier(.25,.7,.2,1) 1.1s both}
+@keyframes eqFill{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.ov-calc{position:absolute;inset:0;container-type:size;pointer-events:none;font-family:"Onest",sans-serif}
+.ov-calc>i{position:absolute;background:#fff}
+.ov-calc>b,.ov-calc>span{position:absolute;white-space:nowrap}
+.ov-calc b{font-weight:600;line-height:1;letter-spacing:-.01em}
+.ov-calc b small{font-size:.62em;font-weight:600;margin-right:.04em}
+.oc-amt{color:#218fb7!important;font-weight:500!important}
+.oc-amt small{font-weight:500!important}
+.oc-r{text-align:right}
+.oc-term{font-weight:700!important;letter-spacing:0!important}
+.oc-deq{font-weight:700!important}
+.oc-p{white-space:normal!important;color:#6b747b;font-weight:400}
+.oc-track{background:#eff1ee;border-radius:99px;overflow:hidden}
+.oc-fill{position:absolute;left:0;top:0;bottom:0;width:14.6%;background:#218fb7}
+.oc-thumb{left:20.53%;transform:translate(-50%,-50%);background:#fff;border-radius:50%;box-shadow:0 .5cqw 1.6cqw rgba(9,23,35,.16),0 0 0 .2cqw rgba(9,23,35,.03);display:flex;align-items:center;justify-content:center;gap:1.4cqw}
+.oc-thumb em{display:block;width:.5cqw;height:4.2cqw;background:#eff1ee;border-radius:2px}
+@media (prefers-reduced-motion:reduce){.slide[data-k="context"].active .eq-fill{animation:none;stroke-dashoffset:0}}
+</style><script>
+(function(){
+  var sec=document.currentScript.closest('section'); if(!sec) return;
+  var ov=sec.querySelector('.ov-calc'); if(!ov) return;
+  var q=function(c){return ov.querySelector(c)};
+  var amt=q('.oc-amt span'),fill=q('.oc-fill'),thumb=q('.oc-thumb'),it=q('.oc-int span'),term=q('.oc-term'),
+      free=q('.oc-free'),dint=q('.oc-dint span'),deq=q('.oc-deq span'),eq=q('.oc-eq');
+  // Illustrative model fitted to the screen's £100 figures: £180k over 330 months at 6%.
+  function run(x){var B=180000,i=.06/12,N=330,P=B*i/(1-Math.pow(1+i,-N)),b=B,t=0,m=0;
+    while(b>1e-6&&m<1000){var k=b*i;t+=k;var p=Math.min(b+k,P+x);b=b+k-p;m++}return [m,t]}
+  var base=run(0),r100=run(100),k=38885/(base[1]-r100[1]);
+  var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var END=2056*12+10, BORN=1998*12+5; // no-overpayment end: Nov 2056; aged 53 in Dec 2051
+  var gbp=function(n){return Math.round(n).toLocaleString('en-GB')};
+  function set(v){
+    v=Math.round(v/10)*10; var r=run(v),saved=base[0]-r[0],end=END-saved;
+    amt.textContent=gbp(v);
+    var x=53+(v-10)/990*270; thumb.style.left=(x/3.75)+'cqw'; fill.style.width=((x-33)/310*100)+'%';
+    it.textContent=gbp((base[1]-r[1])*k);
+    term.textContent=Math.floor(saved/12)+' yrs '+(saved%12)+' mo';
+    free.textContent='You’d be mortgage free in '+MON[end%12]+' '+Math.floor(end/12)+' when you’re '+Math.floor((end-BORN)/12)+'.';
+    dint.textContent=gbp(7.14*v); deq.textContent=gbp(38.31*v);
+    eq.textContent='You’d have £'+gbp(52574+38.31*v)+' equity. You could use this as a deposit for your next home.';
+  }
+  var raf=0,tm=0;
+  function play(){
+    cancelAnimationFrame(raf);clearTimeout(tm);set(100);
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){set(1000);return}
+    tm=setTimeout(function(){var t0=performance.now(),D=2600;
+      (function step(t){var p=Math.min(1,(t-t0)/D),e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;set(100+900*e);if(p<1)raf=requestAnimationFrame(step)})(t0)},1700);
+  }
+  new MutationObserver(function(){if(sec.classList.contains('active'))play();else{cancelAnimationFrame(raf);clearTimeout(tm)}})
+    .observe(sec,{attributes:true,attributeFilter:['class']});
+  if(sec.classList.contains('active'))play();
+})();
+</script></section>
+<section class="slide dark was-light" data-n="03" data-k="research"><div class="eyebrow a mz-kicker">The reset</div><h1 class="a" style="--d:1">Customers asked us for four things</h1>
+<img class="a" style="--d:2;position:absolute;right:84px;top:34px;width:216px;height:216px;border-radius:24px;object-fit:cover;z-index:1" src="assets/img/photo-sofa.webp?v=1" alt="Two people on the sofa looking at a phone">
+<div class="fgrid fgrid4"><div class="fcard a" style="--d:3"><i>01</i><h3>“Don’t send me out.”</h3><p>They expected to <mark>get the new deal inside Monzo</mark>.</p><div class="fviz"><img class="spot" src="assets/img/spot-app.png" alt=""><div class="fviz-r"><span class="chip dark">Monzo</span><span class="farrow"></span><span class="chip ghost">Better’s site</span></div></div></div><div class="fcard a" style="--d:4"><i>02</i><h3>“Use what you know.”</h3><p><mark>Reuse the data Monzo already holds</mark>, instead of asking again.</p><div class="fviz"><img class="spot" src="assets/img/spot-form.png" alt=""><div class="fviz-r"><span class="chip ok">Income</span><span class="chip ok">Mortgage balance</span><span class="chip ok">Address</span></div></div></div><div class="fcard a" style="--d:5"><i>03</i><h3>“Let me choose.”</h3><p>Some wanted a call, because it made them feel safe. Others preferred <mark>less intrusive ways, at a time they chose</mark>.</p><div class="fviz"><img class="spot" src="assets/img/spot-chat.png" alt=""><div class="fviz-r"><span class="chip">Chat</span><span class="chip">Phone</span><span class="chip">Email</span></div></div></div><div class="fcard a" style="--d:6"><i>04</i><h3>“Tell me what’s happening.”</h3><p><mark>The wait</mark> was the most stressful part.</p><div class="fviz"><img class="spot" src="assets/img/spot-bell.png" alt=""><div class="fviz-r"><span class="push"><em>M</em><span><b>Monzo</b> Your application has moved to the next step</span></span></div></div></div></div></section>
+<section class="slide dark" data-n="04" data-k="vision"><div class="eyebrow a mz-kicker">The vision</div><h1 class="a" style="--d:1">The whole remortgage, without leaving Monzo</h1>
+<div class="vr" data-vr><i class="vr-glow" aria-hidden="true"></i><button class="vr-ph" type="button" style="--i:0" data-tap="" aria-label="Screen 1 of 10: Your home: your deal ends in 6 months, find a new deal"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="1"><img class="bz-anim vr-base" src="assets/img/vis-01.webp?v=1" alt="Your home: your deal ends in 6 months, find a new deal" decoding="async"><img class="bz-anim vr-fl vr-fl-float" src="assets/img/vr/v01-ill0.webp?v=1" alt="" style="left:350px;top:300px;width:220px;animation-delay:-0.0s"></span></span></span></span></span><i class="vr-bar"><i></i></i></span></button><button class="vr-ph" type="button" style="--i:1" data-tap=".5,.913" aria-label="Screen 2 of 10: Your deal ends in September: example deals based on what we know"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="1316"><img class="bz-anim vr-base" src="assets/img/vr/v02-base.webp" alt="Your deal ends in September: example deals based on what we know" decoding="async"><span class="vr-row" style="top:973.8px;height:275.6px;background:#f2f8f3"><img class="bz-anim vr-ri" src="assets/img/vr/v02-row-a.webp?v=1" alt="" style="width:1710px" data-dx="1110"></span><span class="vr-row" style="top:1773.8px;height:232.1px;background:#f2f8f3"><img class="bz-anim vr-ri" src="assets/img/vr/v02-row-b.webp?v=1" alt="" style="width:1447px" data-dx="0"></span><img class="bz-anim vr-fl vr-fl-bob" src="assets/img/vr/v02-logo0.webp?v=1" alt="" style="left:67.9px;top:162.6px;width:100px;animation-delay:-0.0s"><img class="bz-anim vr-fl vr-fl-bob" src="assets/img/vr/v02-logo1.webp?v=1" alt="" style="left:361.1px;top:132.8px;width:98px;animation-delay:-0.45s"><img class="bz-anim vr-fl vr-fl-bob" src="assets/img/vr/v02-logo2.webp?v=1" alt="" style="left:466.4px;top:228.2px;width:76px;animation-delay:-0.9s"><img class="bz-anim vr-fl vr-fl-bob" src="assets/img/vr/v02-logo3.webp?v=1" alt="" style="left:91.6px;top:305.3px;width:71px;animation-delay:-1.35s"></span><img class="bz-anim vr-ft" src="assets/img/vis-status.webp?v=1" alt="" style="height:84px"><img class="bz-anim vr-fb" src="assets/img/vr/v02-foot.webp?v=1" alt="" style="height:284px"></span></span></span></span><i class="vr-bar"><i></i></i></span></button><button class="vr-ph" type="button" style="--i:2" data-tap=".2,.565" aria-label="Screen 3 of 10: How would you like to proceed: speak to an expert, or get a recommendation first"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="0"><img class="bz-anim vr-base" src="assets/img/vis-03.webp?v=1" alt="How would you like to proceed: speak to an expert, or get a recommendation first" decoding="async"><img class="bz-anim vr-fl vr-fl-float" src="assets/img/vr/v03-ill0.webp?v=1" alt="" style="left:352px;top:560px;width:196px;animation-delay:-0.0s"><img class="bz-anim vr-fl vr-fl-float" src="assets/img/vr/v03-ill1.webp?v=1" alt="" style="left:343px;top:940px;width:217px;animation-delay:-0.7s"></span></span></span></span></span><i class="vr-bar"><i></i></i></span></button><button class="vr-ph" type="button" style="--i:3" data-tap="0.21,0.83" aria-label="Screen 4 of 10: Let’s take a quick look at your info: pre-filled details to review"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="71"><img class="bz-anim vr-base" src="assets/img/vis-04.webp?v=1" alt="Let’s take a quick look at your info: pre-filled details to review" decoding="async"><img class="bz-anim vr-fl vr-fl-float" src="assets/img/vr/v04-ill0.webp?v=1" alt="" style="left:350px;top:488px;width:198px;animation-delay:-0.0s"><img class="bz-anim vr-fl vr-fl-float" src="assets/img/vr/v04-ill1.webp?v=1" alt="" style="left:340px;top:698px;width:212px;animation-delay:-0.7s"><img class="bz-anim vr-fl vr-fl-float" src="assets/img/vr/v04-ill2.webp?v=1" alt="" style="left:390px;top:975px;width:170px;animation-delay:-1.4s"></span><img class="bz-anim vr-ft" src="assets/img/vis-status.webp?v=1" alt="" style="height:84px"></span></span></span></span><i class="vr-bar"><i></i></i></span></button><button class="vr-ph" type="button" style="--i:4" data-tap=".42,.525" aria-label="Screen 5 of 10: Your adviser, Jane: book a call or send a message"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="144"><img class="bz-anim vr-base" src="assets/img/vis-05.webp?v=1" alt="Your adviser, Jane: book a call or send a message" decoding="async"></span><img class="bz-anim vr-ft" src="assets/img/vis-status.webp?v=1" alt="" style="height:84px"></span></span></span></span><i class="vr-bar"><i></i></i></span></button><button class="vr-ph" type="button" style="--i:5" data-tap=".89,.653" aria-label="Screen 6 of 10: Chat with the Monzo assistant and your adviser"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="1"><img class="bz-anim vr-base" src="assets/img/vis-06.webp?v=1" alt="Chat with the Monzo assistant and your adviser" decoding="async"></span></span></span></span></span><i class="vr-bar"><i></i></i></span></button><button class="vr-ph" type="button" style="--i:6" data-tap=".21,.666" aria-label="Screen 7 of 10: Your personalised mortgage recommendations"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="167"><img class="bz-anim vr-base" src="assets/img/vr/v07-base.webp" alt="Your personalised mortgage recommendations" decoding="async"><span class="vr-row" style="top:535.9px;height:549.6px;background:#f2f8f3"><img class="bz-anim vr-ri" src="assets/img/vr/v07-row.webp?v=1" alt="" style="width:1289px" data-dx="689"></span></span><img class="bz-anim vr-ft" src="assets/img/vr/v07-top.webp" alt="" style="height:150px"></span></span></span></span><i class="vr-bar"><i></i></i></span></button><button class="vr-ph" type="button" style="--i:7" data-tap=".377,.49" aria-label="Screen 8 of 10: Your remortgage process: steps and what happens next"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="605"><img class="bz-anim vr-base" src="assets/img/vis-08.webp?v=1" alt="Your remortgage process: steps and what happens next" decoding="async"></span><img class="bz-anim vr-ft" src="assets/img/vis-status.webp?v=1" alt="" style="height:84px"></span></span></span></span><i class="vr-bar"><i></i></i></span></button><button class="vr-ph" type="button" style="--i:8" data-tap=".3,.572" aria-label="Screen 9 of 10: Documents needed by Barclays, uploaded from your phone"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="336"><img class="bz-anim vr-base" src="assets/img/vis-09.webp?v=1" alt="Documents needed by Barclays, uploaded from your phone" decoding="async"><img class="bz-anim vr-fl vr-fl-float" src="assets/img/vr/v09-ill0.webp?v=1" alt="" style="left:35px;top:175px;width:155px;animation-delay:-0.0s"></span><img class="bz-anim vr-ft" src="assets/img/vis-status.webp?v=1" alt="" style="height:84px"></span></span></span></span><i class="vr-bar"><i></i></i></span></button><button class="vr-ph" type="button" style="--i:9" data-tap="" aria-label="Screen 10 of 10: Your remortgage with Barclays is completed"><span class="vr-rise"><span class="vr-dev"><span class="bz"><span class="bz-screen"><span class="vr-st"><span class="vr-sc" data-d="0"><img class="bz-anim vr-base" src="assets/img/vis-10.webp?v=1" alt="Your remortgage with Barclays is completed" decoding="async"></span></span></span></span></span><i class="vr-bar"><i></i></i></span></button></div><canvas class="vr-fx" aria-hidden="true"></canvas><button class="vr-pp a" style="--d:6" type="button" aria-pressed="false"><i class="vr-pp-i" aria-hidden="true"></i><span class="vr-pp-t">Pause</span></button><span class="vr-links a" style="--d:6"><a class="fig-link ghost" href="https://monzo.com/blog/slowing-down-to-speed-up-how-a-2-month-engineering-pause-rebooted-our-mortgage-strategy" target="_blank" rel="noopener">Read the Monzo blog post ↗</a><a class="fig-link ghost" href="https://www.figma.com/design/auJMcyTUagjoT1qWHXPAzR/Remortgage-vision?node-id=604-26556&amp;t=594yZfradgzQ7vAW-1" target="_blank" rel="noopener">See the vision in Figma ↗</a></span><script src="vision-reel.js?v=3" defer></script></section>
+<section class="slide dark was-light" data-n="05" data-k="d1"><div class="eyebrow a mz-kicker">Reach</div><h1 class="a" style="--d:1">Reach people before they’re ready to remortgage</h1><p class="sub a" style="--d:2">While we built towards the vision, we still had revenue targets to hit</p>
+<div class="phones-row ctx" style="margin-top:24px;gap:18px">
+  <div class="col reach-col" style="flex:1;gap:12px;min-width:0">
+    <div class="card  a" style="--d:3;"><div class="label">Problem</div><p class="strong">Only customers with a connected mortgage and a deal-end date could enter. Over 2m had one we couldn’t see.</p></div>
+    <div class="card navy a" style="--d:4;"><div class="label">What I designed</div><ul><li>Indicative rates for everyone</li><li>Estimated deals for connected customers</li><li>An entry point on the Monzo home screen</li><li>Alerts when rates change</li></ul></div>
+    <div class="card mint a" style="--d:5;"><div class="label">Result</div><p class="result"><span class="count" data-to="75" data-prefix="~" data-suffix="%">~75%</span> above the referral goal</p><p style="margin-top:6px">7,500 referrals, the goal was 4,300</p><p style="margin-top:6px">Connections ~200 → ~1,000 a day. Rate alerts: 44% of referrals</p></div>
+    <div class="a" style="--d:6;display:flex;flex-wrap:wrap;gap:10px"><a class="fig-link ghost" style="margin-top:0" href="https://www.figma.com/design/vYurN7sfZ4L5LvqTpkaTpy/Homeownership-Master-file?node-id=6947-37191&t=g6KvCPO5Ivyzphob-1" target="_blank" rel="noopener">Indicative rates ↗</a><button type="button" class="fig-link ghost fb-btn" data-pop="fb-rates" style="margin-top:0"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-5 4v-4H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle class="fb-dot" cx="8.2" cy="10.5" r="1.35"/><circle class="fb-dot" cx="12" cy="10.5" r="1.35"/><circle class="fb-dot" cx="15.8" cy="10.5" r="1.35"/></svg>What a Monzonaut said</button></div><dialog class="fb-pop" id="fb-rates" aria-label="Feedback from a Monzonaut"><div class="fb-head"><div><p class="fb-kicker">Feedback from a Monzonaut</p><p class="fb-sub">Shared publicly in Monzo’s product feedback channel on Slack · May 2025</p></div><button type="button" class="fb-close" aria-label="Close">×</button></div><img src="assets/img/feedback-rates2.webp?v=2" alt="Slack post: The mortgage rates update was great. I really liked the gentle nudge that rates are going down, compared to my 5+% rate, and the information on how it would impact my mortgage payments. In particular the ‘how rates have changed’ graph was lovely."></dialog>
+  </div>
+  <div class="role-ph a" style="--d:4"><div class="bz" style="width:216px"><span class="bz-screen"><img class="ir-scroll" src="assets/img/ir-rates.webp?v=4" alt="Current mortgage rates start at 4.6%: rates by mortgage length, with no connected mortgage" style="--t:-53.4%"></span></div><p><b>Indicative rates</b> · no connection needed</p></div><div class="role-ph a" style="--d:5"><div class="bz" style="width:216px"><span class="bz-screen"><img src="assets/img/ir-filters.webp?v=2" alt="Filters: deal length, property value, mortgage balance, property use and mortgage term"></span></div><p><b>Your details</b> · guessed from your area</p></div><div class="role-ph a" style="--d:6"><div class="bz" style="width:216px"><span class="bz-screen"><img class="ir-scroll" src="assets/img/ir-estimated.webp?v=5" alt="Your estimated rates start at 4.64%, based on your own mortgage details" style="--t:-42.4%"></span></div><p><b>Your estimated rates</b> · for your situation</p></div><div class="role-ph a" style="--d:7"><div class="bz" style="width:216px"><span class="bz-screen"><img class="ir-scroll" src="assets/img/ir-edeals.webp?v=1" alt="Your estimated mortgage rates: estimated deals from real lenders, with monthly repayment, interest rate, deal length, lender fee and APRC" style="--t:-42.3%"></span></div><p><b>Estimated deals</b> · for connected customers</p></div>
+</div></section>
+<section class="slide dark was-light" data-n="06" data-k="funnel"><div class="eyebrow a mz-kicker">Habito</div><h1 class="a" style="--d:1">Referrals beat the plan, the later stages didn’t</h1><p class="sub a" style="--d:2">Each stage of the Habito funnel, compared with its 2026 target</p>
+<div class="grid" style="grid-template-columns:1fr 520px;margin-top:26px">
+  <div class="card a chart" style="--d:3">
+    <div class="target"><span>Target</span></div>
+    <div class="bar-row"><div class="bl"><b>Referrals</b><span>Customers sent to Habito</span></div><div class="track"><div class="bar teal" style="--w:76.5%"><span>153% of plan</span></div></div></div>
+    <div class="bar-row"><div class="bl"><b>Referral → recommendation</b></div><div class="track"><div class="bar mintb" style="--w:36%"><span>72%</span></div></div></div>
+    <div class="bar-row hl"><div class="bl"><b>Recommendation → submitted to lender</b></div><div class="track"><div class="bar coralb" style="--w:22%"><span>44%</span></div></div></div>
+    <p class="hl-note">The biggest gap came after the recommendation, when intent should be highest.</p>
+  </div>
+  <div class="card navy a holdup" style="--d:4">
+    <div class="eyebrow">The question changed</div>
+    <h3>From “how do we send more people?” to “why don’t they go ahead?”</h3>
+  </div>
+</div>
+<div class="ladder a" style="--d:5">
+  <div class="ladder-label">What we measure, and when the money arrives</div>
+  <div class="ladder-steps">
+    <span>Referral</span><i>→</i><span>Application</span><i>→</i><span>Recommendation</span><i>→</i>
+    <span class="star"><b>Accepted</b><small>the team’s 2026 metric</small></span><i>→</i>
+    <span>Submitted to lender</span><i>→</i>
+    <span class="money"><b>Mortgage completes</b><small>revenue · months later</small></span>
+  </div>
+</div></section>
+<section class="slide dark was-light" data-n="07" data-k="bets"><div class="eyebrow a mz-kicker">Habito</div><h1 class="a" style="--d:1">I treated every decision as a bet</h1>
+<div class="bets">
+  <div class="bets-head a" style="--d:2"><span></span><span>We believed</span><span>We’d know it works if</span><span>I’d change course if</span></div>
+  <div class="bet a" style="--d:3"><div class="bet-name"><em>Bet 1</em>Say what it is<small style="display:block;font-weight:500;opacity:.7;margin-top:4px">Shipped in the onboarding</small></div>
+    <p>People expect a comparison site, so a broker’s questions feel like a bait-and-switch.<small>From my research: in-house surveys and support conversations</small></p>
+    <p>Fewer people leave at the first broker questions, and more reach a recommendation.</p>
+    <p>That step doesn’t move. Then the cause is the effort it takes.</p></div>
+  <div class="bet a" style="--d:4"><div class="bet-name"><em>Bet 2</em>The application in Monzo</div>
+    <p>The form loses people because it is long, off-app and typed from scratch.<small>From 2025 funnel data</small></p>
+    <p>More people finish each step, and come back after saving.</p>
+    <p>More finish the form but accepted recommendations don’t move. Then the form wasn’t the constraint.</p></div>
+  <div class="bet a" style="--d:5"><div class="bet-name"><em>Bet 3</em>A recommendation you can trust</div>
+    <p>People can see the deal but can’t decide: no reasons, no real cost, no next step.<small>From the insight workshop, my audit, and a first view-only version</small></p>
+    <p>People open the reasons, and more accept, sooner.</p>
+    <p>People read everything and still don’t accept. Then it’s the deal itself, and that’s Habito’s side.</p></div>
+  <div class="bet a" style="--d:6"><div class="bet-name"><em>Bet 4</em>The adviser in the app</div>
+    <p>People want to ask a human before committing, and leaving Monzo to do it breaks momentum.<small>From customer research</small></p>
+    <p>More people talk to their adviser before deciding, and more accept.</p>
+    <p>More than 5% of chats land in the wrong place. Agreed up front: roll back.</p></div>
+</div>
+<p class="note a" style="--d:7">Two goals. Bets 1 and 2 help more people get to a recommendation. Bets 3 and 4 help more of them accept it. Accepted recommendations stay the business number for all four.</p></section>
+<section class="slide dark was-light" data-n="08" data-k="rec"><div class="eyebrow a mz-kicker">Habito<span class="mz-pill">Bet 3 of 4</span></div><h1 class="a" style="--d:1">A push the moment the recommendation is ready</h1>
+<div style="display:flex;gap:16px;margin-top:22px;align-items:stretch">
+  <div class="col" style="flex:1;gap:12px;min-width:0;justify-content:space-between">
+    <div class="card  a" style="--d:3;"><div class="label">Why</div><p>The only reminder was an email from Habito, right when people cared most.</p></div>
+    <div class="card mint a" style="--d:7;"><div class="label">What launched · May 2026</div><p>Option B. The tracker already existed, so we could test fast. Acceptance went up.</p></div>
+  </div>
+  <div class="optcol a" style="--d:4;width:auto;padding:16px 14px 14px"><span class="opttag" style="min-height:26px;display:flex;align-items:center;justify-content:center;gap:4px">What we tried · a push from Monzo</span><div class="bz" style="width:236px;padding:6.1px;border-radius:35px"><span class="bz-screen" style="border-radius:29px"><img src="assets/img/push-lock.webp?v=1" alt="Lock screen with a Monzo push: Your recommendation is ready! Your Habito expert found you a match. See what they recommended."></span></div><ul><li>Day 0, the moment it’s ready</li><li>Again on day 3</li></ul></div>
+  <div class="a" style="--d:5;flex:0 0 104px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px"><p style="margin:0;font-weight:700;font-size:17px;line-height:1.25;color:var(--mz-text)">Where should it take you?</p><span aria-hidden="true" style="font-size:30px;line-height:1;color:var(--mz-soft)">→</span></div>
+  <div class="optcol a" style="--d:5;width:auto;padding:16px 14px 14px"><span class="opttag" style="min-height:26px;display:flex;align-items:center;justify-content:center;gap:4px">A · a new screen first</span><div class="bz" style="width:236px;padding:6.1px;border-radius:35px"><span class="bz-screen" style="border-radius:29px"><img src="assets/img/push-interstitial2.png" alt="Option A: your recommendation is ready, then on to Habito"></span></div><ul><li>2 taps to the recommendation</li><li>A whole screen to build trust</li><li>A new screen to build</li></ul></div>
+  <div class="optcol on a" style="--d:6;width:auto;padding:16px 14px 14px"><span class="opttag" style="min-height:26px;display:flex;align-items:center;justify-content:center;gap:4px">B · straight to the tracker <b>Launched</b></span><div class="bz" style="width:236px;padding:6.1px;border-radius:35px"><span class="bz-screen" style="border-radius:29px"><img src="assets/img/push-tracker.png" alt="Option B: the progress tracker with review your recommendations"></span></div><ul><li>3 taps to the recommendation</li><li>A screen people already know</li><li>Nothing new to build</li></ul></div>
+</div></section>
+<section class="slide dark" data-n="09" data-k="drec">
+<div class="design">
+  <div class="design-copy">
+    <div class="eyebrow a mz-kicker">Habito<span class="mz-pill">Bet 3 of 4</span></div>
+    <h1 class="a" style="--d:1">The recommendation, inside Monzo</h1>
+    <ul class="design-points"><li class="a" style="--d:3"><b>Why this deal, for me?</b> The adviser’s reasons, in their words.</li><li class="a" style="--d:4"><b>What does it really cost?</b> The total over the deal, and the deals we ruled out.</li><li class="a" style="--d:5"><b>What happens if I say yes?</b> Every detail first. Accept, reject or ask. Then a clear next step.</li></ul>
+    <div class="design-status a" style="--d:7">v2.1 · live since 1 Nov 2026, built after I left · placeholder figures and copy</div><a class="fig-link small-link a" style="--d:8" href="https://www.figma.com/design/62SgDTlCUyF0iAsrGe1SMJ/Recommendations-in-app--Copy-?node-id=15-8444&t=9AbXpzaUboFwne2Q-1" target="_blank" rel="noopener">Open the Figma file ↗</a>
+  </div>
+  <div class="design-stage a" style="--d:2"><iframe data-src="proto/flow.html?mz=4&f=rec&v=1" title="The recommendation, inside Monzo — animated prototype" style="width:860px" allowtransparency="true"></iframe></div>
+</div></section>
+<section class="slide dark was-light" data-n="10" data-k="d5"><div class="eyebrow a mz-kicker">Habito<span class="mz-pill">Bet 2 of 4</span></div><h1 class="a" style="--d:1">Move the application into Monzo, pre-filled</h1>
+<style>.f16 figure{margin:0;display:grid;gap:10px;justify-items:center}.f16 figcaption{font-size:14.5px;line-height:1.35;color:var(--mz-soft);text-align:center;max-width:226px}.f16 figcaption b{color:var(--mz-text);font-weight:700}</style>
+<div class="f16" style="display:flex;gap:18px;margin-top:24px;align-items:stretch">
+  <div class="col" style="flex:1;gap:12px;min-width:0">
+    <div class="card  a" style="--d:3;"><div class="label">Problem</div><p>The form lived on the broker’s website: around 200 questions. With Better, almost half of people dropped out there.</p></div>
+    <div class="card mint a" style="--d:4;"><div class="label">Status</div><p>Live since late September 2026 with half of customers. Early signal: about 40% more people finish it. Still early.</p></div>
+  </div>
+  <div class="optcol on a" style="--d:4;width:auto;padding:16px 18px"><span class="opttag">First version <b>Live · Sep 2026</b></span><figure><div class="bz" style="width:226px;padding:5.9px;border-radius:34px"><span class="bz-screen" style="border-radius:28px"><img class="ir-scroll" style="--t:-48.9%" src="assets/img/app-v1.webp?v=2" alt="First version: one long form with questions about who’s applying, work, income and commitments"></span></div><figcaption><b>One form</b>, inside Monzo</figcaption></figure></div>
+  <div class="optcol a" style="--d:5;width:auto;padding:16px 18px"><span class="opttag">Designed · the next version</span><div style="display:flex;gap:18px">
+    <figure><div class="bz" style="width:226px;padding:5.9px;border-radius:34px"><span class="bz-screen" style="border-radius:28px"><img src="assets/img/app-ready.webp?v=1" alt="Make sure you’re ready: the questions are personal, you’ll need your mortgage document, and it takes 15 to 25 minutes"></span></div><figcaption><b>Get ready</b> · what you’ll need</figcaption></figure>
+    <figure><div class="bz" style="width:226px;padding:5.9px;border-radius:34px"><span class="bz-screen" style="border-radius:28px"><img src="assets/img/app-prefill.webp?v=1" alt="We’ve answered 20 questions for you: review them to make sure we got it right"></span></div><figcaption><b>Pre-filled</b> · review, don’t type</figcaption></figure>
+    <figure><div class="bz" style="width:226px;padding:5.9px;border-radius:34px"><span class="bz-screen" style="border-radius:28px"><img src="assets/img/app-sections.webp?v=1" alt="Should take 20 minutes to finish: 2 sections done, next up Spending, 2 more sections"></span></div><figcaption><b>In sections</b> · progress saved</figcaption></figure>
+  </div></div>
+</div></section>
+<section class="slide dark" data-n="11" data-k="results"><div class="eyebrow a mz-kicker">Results</div><h1 class="a" style="--d:1">What changed, and what’s still to do</h1>
+<div class="grid" style="grid-template-columns:420px 1fr;gap:26px;margin-top:28px;align-items:stretch">
+  <div class="col res-levels" style="gap:12px">
+    <div class="card navy a" style="--d:3;"><div class="label">Strategy</div><p class="strong">The vision became the team’s plan</p><p>It was part of the case for changing our remortgage model, and the team still goes back to it.</p></div>
+    <div class="card  a" style="--d:4;"><div class="label">The team</div><p class="strong">Loans, Overdrafts and Wealth asked to use my Compliance checker</p><p>And everyone worked from one picture of the journey, and one name for it: Habito by Monzo.</p></div>
+    <div class="card teal a" style="--d:5;"><div class="label">Business · 2025–26</div><div class="big lime"><span class="count" data-to="75" data-prefix="~" data-suffix="%">~75%</span></div><p>above the referral goal: 7.5K against 4.3K. Record 355 applications from Monzo in September 2026. Accepted recommendations went up after the push. Completed mortgages: too early to tell.</p></div>
+  </div>
+  <div class="loop"><div class="loop-head a" style="--d:3"><span>Customers · what they asked for</span><span>Where it stands today</span></div><div class="loop-row a" style="--d:4"><b>“Don’t send me out.”</b><p><span class="st live">Live · Sep 2026</span>Application inside Monzo · early: ~40% more finish it<br><span class="st live">Live · Nov 2026</span>Recommendation accepted in Monzo · view-only v1: a small lift<br></p></div><div class="loop-row a" style="--d:5"><b>“Use what you know.”</b><p><span class="st live">Launched</span>Pre-fill on for everyone · 1 May 2026<br></p></div><div class="loop-row a" style="--d:6"><b>“Let me choose.”</b><p><span class="st live">Live</span>Estimated deals: see deals before talking to anyone<br><span class="st des">Designed</span>An “I need more time” option<br><span class="st live">Live</span>The adviser chat in the app, on Habito’s Intercom · a first step<br></p></div><div class="loop-row a" style="--d:7"><b>“Tell me what’s happening.”</b><p><span class="st live">Launched</span>Push on day 0 and day 3 · May 2026 · acceptance up<br><span class="st live">Live · Nov 2026</span>The new progress tracker · too early to tell<br></p></div></div>
+</div></section>
+<section class="slide dark was-light" data-n="12" data-k="learn"><div class="eyebrow a mz-kicker">Looking back</div><h1 class="a" style="--d:1">What I learned</h1>
+<div class="grid four" style="margin-top:40px">
+  <div class="card coral spot a" style="--d:3;"><div class="qnum">01</div><h3>Getting people in isn’t enough</h3><p>Referral growth showed a bottleneck after the recommendation. So we moved to the form and the recommendation.</p><img class="cspot" src="assets/img/spot-trends.png" alt=""></div>
+  <div class="card spot a" style="--d:4;"><div class="qnum">02</div><h3>Say what it is</h3><p>People thought we were a comparison site. Leading with the expert changed that.</p><img class="cspot" src="assets/img/spot-announce.png" alt=""></div>
+  <div class="card mint spot a" style="--d:5;"><div class="qnum">03</div><h3>Ship what you can, then improve</h3><p>The push used the tracker we already had, and acceptance went up.</p><img class="cspot" src="assets/img/spot-app.png" alt=""></div>
+  <div class="card navy spot a" style="--d:6;"><div class="qnum">04</div><h3>Work with your partner’s limits</h3><p>No designers at Habito, and a chat on Intercom. So I became the customer, and we shipped first steps.</p><img class="cspot" src="assets/img/spot-handshake.png" alt=""></div>
+</div></section>
+<section class="slide dark was-light" data-n="13" data-k="airalo"><div class="eyebrow a mz-kicker">Why Airalo</div><h1 class="a" style="--d:1">What I’d bring to Airalo</h1>
+<img class="a" style="--d:2;position:absolute;right:84px;top:34px;width:216px;height:216px;border-radius:24px;object-fit:cover;z-index:1" src="assets/img/photo-cafe.webp?v=1" alt="Friends talking over lunch">
+<div class="grid four" style="margin-top:40px">
+  <div class="card navy spot a" style="--d:3;"><h3>From research to launch</h3><p>A vision first, then small steps that shipped</p><img class="cspot" src="assets/img/spot-trends.png" alt=""></div>
+  <div class="card navy spot a" style="--d:4;"><h3>Partners whose systems you don’t own</h3><p>Monzo + Habito + lenders</p><img class="cspot" src="assets/img/spot-connected.png" alt=""></div>
+  <div class="card navy spot a" style="--d:5;"><h3>Clear status while people wait</h3><p>Who acts next, and what happens then</p><img class="cspot" src="assets/img/spot-peacemsg.png" alt=""></div>
+  <div class="card navy spot a" style="--d:6;"><h3>Every bet measured</h3><p>A metric, and a reason to stop</p><img class="cspot" src="assets/img/spot-globe.png" alt=""></div>
+</div></section>
+<section class="slide dark" data-n="14" data-k="qa">
+<div class="eyebrow a mz-kicker">Thank you</div>
+<h1 class="xl a" style="--d:1;margin-top:130px;max-width:1000px">Where would you like to go deeper?</h1>
+<img class="a" style="--d:2;position:absolute;right:84px;top:50%;transform:translateY(-54%);width:500px;height:500px;border-radius:32px;object-fit:cover" src="assets/img/photo-family.webp?v=1" alt="A family playing on the sofa at home"></section>
+</div></div></figure>
+    <button class="arrow arrow-next" id="next-slide" type="button" aria-label="Next slide"><span aria-hidden="true">→</span></button>
+  </div>
+  <div class="slide-caption"><span class="caption-number" id="caption-number">01</span><span id="slide-title">Remortgaging at Monzo, 2025–26</span></div>
+</main>
+<footer class="bottombar">
+  <div class="progress-track" role="progressbar" aria-label="Presentation progress" aria-valuemin="1" aria-valuemax="14" aria-valuenow="1"><span id="progress-fill"></span></div>
+  <div class="control-row">
+    <span class="keyboard-hint"><kbd>←</kbd><kbd>→</kbd> to move between slides</span>
+    <div class="slide-controls">
+      <button class="small-arrow" id="previous-bottom" type="button" aria-label="Previous slide">←</button>
+      <span id="bottom-count">01 <i>/</i> 22</span>
+      <button class="small-arrow" id="next-bottom" type="button" aria-label="Next slide">→</button>
+      <button class="notes-bottom" id="open-notes-bottom" type="button">Open notes <span aria-hidden="true">↗</span></button>
+      <button class="fs-btn" id="fs-toggle" type="button">Full screen ⤢</button>
+    </div>
+  </div>
+</footer>
+<dialog class="notes-sheet" id="notes-sheet" aria-labelledby="notes-heading">
+  <div class="sheet-handle" aria-hidden="true"></div>
+  <div class="sheet-inner">
+    <div class="sheet-heading">
+      <div><span class="eyebrow">PRESENTER NOTES</span><h2 id="notes-heading">Slide 1</h2></div>
+      <button class="close-notes" id="close-notes" type="button" aria-label="Close speaker notes">×</button>
+    </div>
+    <div class="sheet-progress"><span id="sheet-count">01 / 22</span><span class="sheet-nav"><button class="sheet-arrow" id="notes-prev" type="button" aria-label="Previous slide">← Previous</button><button class="sheet-arrow" id="notes-next" type="button" aria-label="Next slide">Next →</button></span></div>
+    <div class="notes-content" id="notes-content" tabindex="0"></div>
+  </div>
+</dialog>
+<script>
+(()=>{const b=document.getElementById("fs-toggle");if(!b)return;
+const set=()=>{b.textContent=document.fullscreenElement?"Exit full screen":"Full screen ⤢"};
+const t=()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen()};
+b.addEventListener("click",t);document.addEventListener("fullscreenchange",set);
+document.addEventListener("keydown",e=>{if((e.key==="f"||e.key==="F")&&!e.metaKey&&!e.ctrlKey&&!e.altKey&&!document.querySelector("dialog[open]"))t()});set()})();
+</script>
+</body>
+</html>
