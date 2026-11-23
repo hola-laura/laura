@@ -67,14 +67,14 @@ const slides=[
  },
  {
   "title": "We lent our engineers for two months, and used the time to listen",
-  "notes": "The reset started in a way I didn't expect.\nIn February 2025, another team at Monzo, Financial Health, needed engineers. They had a real business need, and Homeownership wasn't going the way we wanted.\nWe agreed they could borrow our engineers for two months. It wasn't the end of the product. Leadership confirmed the long-term commitment and we agreed a date for the engineers to come back.\nAnd we decided to use that time well. We ran a discovery sprint, to understand why our experiments weren't moving the numbers.\nOur user researcher interviewed two groups of people. I was in those interviews too, but the researcher was leading.\nOne group was people who had remortgaged with us, and the other was people who had started and then given up. And that sprint is what changed the strategy.",
+  "notes": "The reset started in a way I didn't expect.\nIn February 2025, another team at Monzo, Financial Health, needed engineers. They had a real business need, and Homeownership wasn't going the way we wanted.\nWe agreed they could borrow our engineers for two months. It wasn't the end of the product. Leadership confirmed the long-term commitment and we agreed a date for the engineers to come back.\nAnd we decided to use that time well. We ran a discovery phase, to understand why our work wasn't moving the numbers.\nOur user researcher interviewed two groups of people. I was in those interviews too, but the researcher was leading.\nOne group was people who had remortgaged with us, and the other was people who had started and then given up. And that phase is what changed the strategy.",
   "ask": [
    [
     "Whose decision was the pause?",
     "Our Product Director's, with leadership behind it. Leadership confirmed the long-term commitment to Homeownership and we agreed a return date. So it was a pause with an end, not a wind-down."
    ],
    [
-    "How was the sprint organised?",
+    "How was the discovery phase organised?",
     "In workstreams, each with an owner and a deliverable. The three that mattered most for this story were customer research, which our user researcher led, the vision, which was mine, and checking how feasible each idea was. The rest were outside design, and I wasn't close to them."
    ]
   ]
@@ -91,7 +91,7 @@ const slides=[
  },
  {
   "title": "The whole remortgage, without leaving Monzo",
-  "notes": "I turned all of that into a design vision.\nOne journey, inside Monzo, that adapts to the person. The application comes into the app, already filled in with what we know. People choose if they want to talk to an adviser first, or see deals first after filling the form.\nLike that, The paperwork gets easier. And you always know what happens next. I planned the sprint for it, and I ran the vision workshop together with our researcher.\nWhat you see playing here is the vision, directly from my Figma frames. And on this slide I've attached an article about our vision work, written by our product director. You can read it later if you want.\nI should say, this was a direction for the team. We weren't promising to build everything.\nBut it made one thing very clear. To give customers the experience they wanted, we needed to own much more of the journey than a referral partner allowed us to.\nSo the vision became part of the argument for changing our partnership model. Later Monzo bought Habito, and that's what made it possible to build. I wasn't part of the acquisition decision.\nBut the team still goes back to this vision.",
+  "notes": "I turned all of that into a design vision.\nOne journey, inside Monzo, that adapts to the person. The application comes into the app, already filled in with what we know. People choose if they want to talk to an adviser first, or see deals first after filling the form.\nLike that, the paperwork gets easier. And you always know what happens next. I planned the discovery phase for it, and I ran the vision workshop together with our researcher.\nWhat you see playing here is the vision, directly from my Figma frames. And on this slide I've attached an article about our vision work, written by our product director. You can read it later if you want.\nI should say, this was a direction for the team. We weren't promising to build everything.\nBut it made one thing very clear. To give customers the experience they wanted, we needed to own much more of the journey than a referral partner allowed us to.\nSo the vision became part of the argument for changing our partnership model. Later Monzo bought Habito, and that's what made it possible to build. I wasn't part of the acquisition decision.\nBut the team still goes back to this vision.",
   "ask": [
    [
     "So your vision made Monzo buy Habito?",
