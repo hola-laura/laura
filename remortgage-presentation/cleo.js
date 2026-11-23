@@ -216,6 +216,20 @@ const slides=[
   ]
  },
  {
+  "title": "The 2025 vision, designed end to end",
+  "notes": "This is where it all lands. In 2025 the vision was the whole remortgage without leaving Monzo. This is that journey, designed end to end, and the plan is to launch all of it in February.\nThe advice comes from Monzo, and nobody leaves the app. The form is pre-filled, you chat with your expert, and the recommendation arrives in the chat. You accept it in the app, upload documents from your phone, and the tracker shows every step.\nAt the end we ask: is this your new mortgage? That closes the loop, so we can help again when the new deal ends. It's designed, and it isn't live yet.",
+  "ask": [
+   [
+    "Is this live?",
+    "Not yet. It's designed, and the plan is to launch all of it in February."
+   ],
+   [
+    "Is that a real conversation in the chat?",
+    "The chat design is from the Figma. The conversation is an example I wrote for this deck, so it reads like a real one."
+   ]
+  ]
+ },
+ {
   "title": "What if designers could check their screens against the rules before Compliance?",
   "notes": "One more thing, about raising the quality bar. Every screen about rates or deals went back and forth with Compliance. So I built a checker with Cursor, using the documents with the rules, and we used it inside Monzo.\nYou paste your copy or drop in Figma screens. It flags what could break a rule and suggests a fix. If something required is missing, like the APRC, it tells you. It doesn't approve anything: Compliance still does that.\nLoans, Overdrafts and Wealth asked to use it too, so I ran a lunch and learn and set up a feedback channel. What you see is a copy I rebuilt for this case study, with no Monzo data in it.",
   "ask": [

@@ -355,6 +355,20 @@ const slides=[
   ]
  },
  {
+  "title": "The 2025 vision, designed end to end",
+  "notes": "This is where it all lands. In 2025 the vision was the whole remortgage without leaving Monzo. This is that journey, designed end to end. The plan is to launch all of it in February.\nThe difference from today: the advice comes from Monzo, and nobody leaves the app.\nYou start from your mortgage in Monzo. The form is pre-filled with what we already know. Then you chat with your expert, and the recommendation arrives in the chat.\nYou accept it in the app, upload your documents from your phone, and the tracker shows every step until the lender accepts the offer.\nAnd at the end we ask: is this your new mortgage? That closes the loop. The new deal goes back into Monzo, and we can help again when it ends.\nThe bets you've just seen are the pieces: the form, the recommendation, the tracker and the chat. It's designed, and it isn't live yet.",
+  "ask": [
+   [
+    "Is this live?",
+    "Not yet. It's designed, and the plan is to launch all of it in February."
+   ],
+   [
+    "Is that a real conversation in the chat?",
+    "The chat design is from the Figma. The conversation is an example I wrote for this deck, so it reads like a real one."
+   ]
+  ]
+ },
+ {
   "title": "What if designers could check their screens against the rules before Compliance?",
   "notes": "There's one more thing I want to show you. One of the slowest parts of the project was approval. Every screen about rates, deals or recommendations went back and forth with Compliance, many times.\nAnd I asked myself, what if designers could check their screens against the rules before they even get to Compliance?\nI built a checker myself with Cursor, which is an AI coding tool, using the documents with the rules. And we used it inside Monzo.\nA team pastes its copy or drops in Figma screens, and the tool flags the lines that could break a rule and suggests a fix. If something required is missing, like the APRC, the full yearly cost of the mortgage, it tells you. It doesn't make it up.\nIt doesn't approve anything, Compliance still does that, but the review can focus on the difficult decisions. Loans, Overdrafts and Wealth asked to use it too, so I ran a lunch and learn and set up a Slack channel for feedback.\nYou can see it running on the right. It's a copy I rebuilt for this case study, with no Monzo data in it.",
   "ask": [
