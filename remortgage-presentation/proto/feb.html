@@ -5,89 +5,209 @@
 @font-face{font-family:"Onest";font-weight:400;src:url(../assets/fonts/onest-latin-400-normal.woff2) format("woff2")}
 @font-face{font-family:"Onest";font-weight:600;src:url(../assets/fonts/onest-latin-600-normal.woff2) format("woff2")}
 @font-face{font-family:"Onest";font-weight:700;src:url(../assets/fonts/onest-latin-700-normal.woff2) format("woff2")}
-:root{--navy:#112231;--text:#f2f8f3;--soft:#9fb0b8;--lime:#d8f16a;--coral:#ff4f40}
+:root{--navy:#112231;--text:#f2f8f3;--soft:#9fb0b8;--lime:#d8f16a;--blue:#218fb7}
 *{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--navy);color:var(--text);font-family:"Onest",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden}
 .wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:14px 0}
 .stage{position:relative;width:calc(422px*var(--s));height:calc(894px*var(--s));flex:none}
-.phone{position:absolute;left:0;top:0;width:422px;height:894px;transform:scale(var(--s));transform-origin:0 0;border-radius:62px;background:#05090d;padding:10px;box-shadow:0 0 0 1.5px rgba(255,255,255,.14),0 30px 70px rgba(0,0,0,.45)}
-.view{position:relative;width:402px;height:874px;border-radius:52px;overflow:hidden;background:#f2f8f3;isolation:isolate}
+.phone{position:absolute;left:0;top:0;width:422px;height:894px;transform:scale(var(--s));transform-origin:0 0;border-radius:62px;background:#05090d;padding:10px;box-shadow:0 0 0 1.5px rgba(255,255,255,.16),0 30px 70px rgba(0,0,0,.45)}
+.phone::before{content:"";position:absolute;inset:3px;border-radius:59px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);pointer-events:none}
+.view{position:relative;width:402px;height:874px;border-radius:52px;overflow:hidden;background:#f2f8f3;isolation:isolate;touch-action:pan-y}
+.island{position:absolute;top:11px;left:50%;width:124px;height:36px;margin-left:-62px;border-radius:20px;background:#000;z-index:40;pointer-events:none}
 .scr{position:absolute;inset:0;background:#f2f8f3;will-change:transform}
 .scroll{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;overscroll-behavior:contain}
 .scroll::-webkit-scrollbar{display:none}
 .content{position:relative;width:402px}
-.content img{display:block;width:402px;height:auto;user-select:none;-webkit-user-drag:none;pointer-events:none}
-.fix{position:absolute;left:0;right:0;background-repeat:no-repeat;background-size:402px auto;z-index:2}
+.content>img{display:block;width:402px;height:auto;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.fix{position:absolute;left:0;right:0;background-repeat:no-repeat;background-size:402px auto;z-index:6}
 .fix.b{bottom:0;background-position:0 100%}
 .fix.t{top:0;height:62px;background-position:0 0;pointer-events:none}
-.hs{position:absolute;border:0;padding:0;margin:0;background:transparent;cursor:pointer;border-radius:14px;outline:none;-webkit-tap-highlight-color:transparent}
-.hs::after{content:"";position:absolute;inset:0;border-radius:inherit;background:rgba(33,143,183,.22);box-shadow:inset 0 0 0 2px rgba(33,143,183,.85);opacity:0;transition:opacity .2s}
+.dim{position:absolute;inset:0;background:#0b151d;opacity:0;pointer-events:none;z-index:30}
+.hs{position:absolute;border:0;padding:0;margin:0;cursor:pointer;border-radius:14px;outline:none;-webkit-tap-highlight-color:transparent;background-repeat:no-repeat;z-index:4;transition:transform .16s cubic-bezier(.3,.7,.4,1),filter .16s}
+.hs.nc{background:none!important}
+.hs.pressed{transform:scale(var(--ps,.96));filter:brightness(.93);transition-duration:.08s}
+.hs::after{content:"";position:absolute;inset:-3px;border-radius:inherit;box-shadow:0 0 0 2px rgba(33,143,183,.9),0 0 0 6px rgba(33,143,183,.18);opacity:0;transition:opacity .2s;pointer-events:none}
 .flash .hs::after{opacity:1}
 .hs:focus-visible::after{opacity:1}
-.inter{position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;background:rgba(17,34,49,.86);color:#fff;font-size:26px;font-weight:700;letter-spacing:-.01em;opacity:0;pointer-events:none;transition:opacity .35s}
-.inter.on{opacity:1}
+.hs.nudge::after{animation:nudge 1.6s ease-out 2}
+@keyframes nudge{0%{opacity:0;transform:scale(.98)}25%{opacity:1}100%{opacity:0;transform:scale(1.06)}}
+.sbar{position:absolute;right:3px;top:0;width:3px;border-radius:3px;background:rgba(0,0,0,.38);opacity:0;transition:opacity .4s;z-index:7;pointer-events:none}
+.sbar.on{opacity:1;transition-duration:.1s}
+.cover{position:absolute;left:0;width:402px;background:#fff;z-index:1;pointer-events:none}
+.run{position:absolute;background-repeat:no-repeat;z-index:2;opacity:0;pointer-events:none}
+.typing{position:absolute;left:16px;width:72px;height:40px;border-radius:20px 20px 20px 6px;background:#f2f8f3;z-index:2;display:flex;align-items:center;justify-content:center;gap:5px;opacity:0}
+.typing i{width:7px;height:7px;border-radius:50%;background:#8a979d;animation:dot 1s infinite ease-in-out}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-4px);opacity:1}}
+.bcov,.bfill{position:absolute;height:12px;border-radius:6px;z-index:3;pointer-events:none}
+.inter{position:absolute;inset:0;z-index:35;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:rgba(17,34,49,.62);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff;opacity:0;pointer-events:none}
+.inter b{font-size:27px;font-weight:700;letter-spacing:-.01em}
+.inter svg{width:64px;height:64px}
+.inter .mh{transform-origin:32px 32px;animation:spin .9s linear infinite}
+.inter .hh{transform-origin:32px 32px;animation:spin 10.8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 .bar{display:flex;align-items:center;gap:14px;width:min(560px,94vw);justify-content:space-between}
 .cap{min-width:0;flex:1;text-align:center}
 .cap b{display:block;font-size:16px;line-height:1.25;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .cap span{display:block;margin-top:3px;font-size:13px;color:var(--soft)}
-.btn{flex:none;height:38px;min-width:38px;padding:0 14px;border-radius:999px;border:1.5px solid rgba(242,248,243,.3);background:none;color:var(--text);font:600 14px/1 "Onest",sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
-.btn:hover{background:rgba(242,248,243,.1)}.btn[disabled]{opacity:.35;cursor:default}
+.btn{flex:none;height:38px;min-width:38px;padding:0 14px;border-radius:999px;border:1.5px solid rgba(242,248,243,.3);background:none;color:var(--text);font:600 14px/1 "Onest",sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:background .15s,transform .12s}
+.btn:hover{background:rgba(242,248,243,.1)}.btn:active{transform:scale(.96)}.btn[disabled]{opacity:.35;cursor:default}
 .btn.go{background:var(--lime);border-color:var(--lime);color:#112231}.btn.go:hover{background:#fff;border-color:#fff}
 .prog{width:min(420px,80vw);height:4px;border-radius:4px;background:rgba(242,248,243,.14);overflow:hidden}
-.prog i{display:block;height:100%;width:0;background:var(--lime);transition:width .35s}
-.hint{font-size:12.5px;color:var(--soft);margin:-6px 0 0}
+.prog i{display:block;height:100%;width:0;background:var(--lime);transition:width .45s cubic-bezier(.2,.8,.2,1)}
+.hint{font-size:12.5px;color:var(--soft);margin:-6px 0 0;text-align:center;padding:0 12px}
+@media (prefers-reduced-motion:reduce){.typing i,.inter .mh,.inter .hh{animation:none}}
 </style></head>
 <body><div class="wrap">
-<div class="stage" id="stage"><div class="phone"><div class="view" id="view"><div class="inter" id="inter"></div></div></div></div>
+<div class="stage" id="stage"><div class="phone"><div class="view" id="view"><div class="island"></div>
+<div class="inter" id="inter"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#d8f16a" stroke-width="3.5"/><line class="hh" x1="32" y1="32" x2="32" y2="18" stroke="#fff" stroke-width="4" stroke-linecap="round"/><line class="mh" x1="32" y1="32" x2="32" y2="11" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="32" r="3" fill="#d8f16a"/></svg><b id="interT"></b></div>
+</div></div></div>
 <div class="prog" aria-hidden="true"><i id="prog"></i></div>
 <div class="bar"><button class="btn" id="back" aria-label="Back">‹ Back</button><div class="cap" aria-live="polite"><b id="lab"></b><span id="step"></span></div><button class="btn go" id="next">Next ›</button></div>
-<p class="hint">Tap the screen like the app. Tap anywhere else to see what you can tap. Arrow keys work too.</p>
+<p class="hint">Tap the screen like the app, or swipe from the left edge to go back. Tap anywhere else to see what you can tap.</p>
 </div>
 <script>
-const D={"S": {"8882": {"l": "Your mortgage in Monzo", "w": 402, "h": 908, "fb": 0, "tr": null, "hs": [{"x": 16, "y": 124, "w": 370, "h": 152, "to": "7819", "i": null}], "n": "7819", "nl": null}, "8605": {"l": "Growth tab", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 210, "y": 500, "w": 177, "h": 180, "to": "7819", "i": null}], "n": "7819", "nl": null}, "7819": {"l": "Free advice from Monzo", "w": 402, "h": 1325, "fb": 144, "tr": null, "hs": [{"x": 16, "y": 330, "w": 370, "h": 144, "to": "8377", "i": null}, {"x": 16, "y": 818, "w": 370, "h": 184, "to": "8434", "i": null}, {"x": 280, "y": 60, "w": 110, "h": 48, "to": "8377", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}, {"x": 0, "y": 1181, "w": 402, "h": 144, "to": "8444", "i": null}], "n": "8444", "nl": null}, "8377": {"l": "Our lender panel", "w": 402, "h": 922, "fb": 0, "tr": "up", "hs": [{"x": 0, "y": 62, "w": 402, "h": 70, "to": "BACK", "i": null}], "n": "BACK", "nl": null}, "8434": {"l": "Terms of use", "w": 402, "h": 959, "fb": 0, "tr": "up", "hs": [{"x": 0, "y": 62, "w": 402, "h": 70, "to": "BACK", "i": null}], "n": "BACK", "nl": null}, "8444": {"l": "Your progress tracker", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 0, "y": 116, "w": 402, "h": 592, "to": "7926", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "7926", "nl": null}, "7926": {"l": "The fact find, already filled in", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 283, "y": 444, "w": 87, "h": 32, "to": "7890", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "7890", "nl": null}, "7890": {"l": "Personal details, pre-filled", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 0, "y": 760, "w": 402, "h": 114, "to": "7942", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "7942", "nl": null}, "7942": {"l": "Your expert reviews your details", "w": 402, "h": 945, "fb": 0, "tr": null, "hs": [{"x": 16, "y": 741, "w": 370, "h": 80, "to": "7955", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "7955", "nl": null}, "7955": {"l": "Chat with your mortgage expert", "w": 402, "h": 972, "fb": 68, "tr": null, "hs": [{"x": 0, "y": 116, "w": 402, "h": 788, "to": "8016", "i": "The next day"}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "8046", "i": null}], "n": "8016", "nl": "The next day"}, "8046": {"l": "Your recommendation is ready", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 0, "y": 116, "w": 402, "h": 664, "to": "14243", "i": null}, {"x": 293, "y": 652, "w": 77, "h": 32, "to": "8016", "i": null}, {"x": 80, "y": 724, "w": 263, "h": 56, "to": "7908", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "14243", "nl": null}, "8016": {"l": "The recommendation arrives in the chat", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 60, "y": 292, "w": 239, "h": 48, "to": "14243", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "14243", "nl": null}, "14243": {"l": "Your recommendation", "w": 402, "h": 1059, "fb": 100, "tr": null, "hs": [{"x": 16, "y": 58, "w": 48, "h": 48, "to": "BACK", "i": null}, {"x": 35, "y": 979, "w": 338, "h": 50, "to": "8155", "i": null}], "n": "8155", "nl": null}, "8155": {"l": "The full details", "w": 402, "h": 2400, "fb": 112, "tr": null, "hs": [{"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}, {"x": 0, "y": 2288, "w": 402, "h": 112, "to": "8194", "i": null}], "n": "8194", "nl": null}, "8194": {"l": "You\u2019ve chosen the Barclays deal", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 0, "y": 730, "w": 402, "h": 144, "to": "8250", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "8250", "nl": null}, "8250": {"l": "Lender questions and documents", "w": 402, "h": 985, "fb": 0, "tr": null, "hs": [{"x": 0, "y": 116, "w": 402, "h": 812, "to": "8864", "i": null}, {"x": 293, "y": 800, "w": 77, "h": 32, "to": "8016", "i": null}, {"x": 80, "y": 872, "w": 263, "h": 56, "to": "7908", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "8864", "nl": null}, "8864": {"l": "Supporting information", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 283, "y": 444, "w": 87, "h": 32, "to": "8282", "i": null}], "n": "8282", "nl": null}, "8282": {"l": "Documents needed by Barclays", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 0, "y": 116, "w": 402, "h": 628, "to": "8342", "i": null}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "8342", "nl": null}, "8342": {"l": "Upload from your phone", "w": 393, "h": 852, "fb": 0, "tr": "up", "hs": [{"x": 8, "y": 684, "w": 377, "h": 56, "to": "8338", "i": null}, {"x": 8, "y": 746, "w": 377, "h": 56, "to": "BACK", "i": null}], "n": "8338", "nl": null}, "8338": {"l": "Choose a photo", "w": 393, "h": 854, "fb": 0, "tr": null, "hs": [{"x": 132, "y": 180, "w": 130, "h": 130, "to": "8310", "i": null}, {"x": 10, "y": 56, "w": 70, "h": 40, "to": "BACK", "i": null}], "n": "8310", "nl": null}, "8310": {"l": "Documents uploaded", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 12, "y": 58, "w": 52, "h": 52, "to": "8460", "i": null}], "n": "8460", "nl": null}, "8460": {"l": "Barclays is reviewing your application", "w": 402, "h": 913, "fb": 0, "tr": null, "hs": [{"x": 0, "y": 344, "w": 402, "h": 305, "to": "8473", "i": "About a day later"}], "n": "8473", "nl": "About a day later"}, "8473": {"l": "Barclays is reviewing your application", "w": 402, "h": 913, "fb": 0, "tr": null, "hs": [{"x": 16, "y": 344, "w": 370, "h": 305, "to": "8486", "i": "2 to 4 weeks later"}], "n": "8486", "nl": "2 to 4 weeks later"}, "8486": {"l": "Offer accepted", "w": 402, "h": 1162, "fb": 0, "tr": null, "hs": [{"x": 0, "y": 344, "w": 402, "h": 325, "to": "8586", "i": "About 3 months later"}, {"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}], "n": "8586", "nl": "About 3 months later"}, "8586": {"l": "Back on your Home tab", "w": 402, "h": 874, "fb": 0, "tr": null, "hs": [{"x": 16, "y": 140, "w": 370, "h": 56, "to": "8500", "i": null}], "n": "8500", "nl": null}, "8500": {"l": "Is this your new mortgage?", "w": 402, "h": 1035, "fb": 248, "tr": null, "hs": [{"x": 0, "y": 787, "w": 402, "h": 248, "to": "8555", "i": null}], "n": "8555", "nl": null}, "8555": {"l": "Your new mortgage in Monzo", "w": 402, "h": 908, "fb": 0, "tr": null, "hs": [], "n": null, "nl": null}, "7908": {"l": "Cancel your application", "w": 402, "h": 975, "fb": 112, "tr": null, "hs": [{"x": 12, "y": 58, "w": 52, "h": 52, "to": "BACK", "i": null}, {"x": 0, "y": 863, "w": 402, "h": 112, "to": "8880", "i": null}], "n": "8880", "nl": null}, "8880": {"l": "Cancel your application", "w": 402, "h": 874, "fb": 0, "tr": "up", "hs": [{"x": 65, "y": 450, "w": 272, "h": 48, "to": "8882", "i": null}, {"x": 65, "y": 506, "w": 272, "h": 48, "to": "BACK", "i": null}], "n": "BACK", "nl": null}}, "MAIN": ["8882", "7819", "8444", "7926", "7890", "7942", "7955", "8016", "14243", "8155", "8194", "8250", "8864", "8282", "8342", "8338", "8310", "8460", "8473", "8486", "8586", "8500", "8555"], "START": "8882"};
-const S=D.S, MAIN=D.MAIN, IMG=k=>"../assets/proto/feb/"+k+".webp?v=1";
-const view=document.getElementById("view"), inter=document.getElementById("inter");
-let cur=null, hist=[], busy=false;
+const D={"S": {"8882": {"l": "Your mortgage in Monzo", "h": 908, "fb": 0, "hs": [{"x": 16, "y": 124, "w": 370, "h": 152, "to": "7819", "i": null, "p": false, "nc": false}, {"x": 32, "y": 228, "w": 130, "h": 32, "to": "7819", "i": null, "p": true, "nc": false}], "n": "7819", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8605": {"l": "Growth tab", "h": 874, "fb": 0, "hs": [{"x": 210, "y": 500, "w": 177, "h": 180, "to": "7819", "i": null, "p": true, "nc": false}], "n": "7819", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "7819": {"l": "Free advice from Monzo", "h": 1325, "fb": 144, "hs": [{"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}, {"x": 281, "y": 62, "w": 105, "h": 44, "to": "8377", "i": null, "p": false, "nc": false}, {"x": 16, "y": 330, "w": 370, "h": 144, "to": "8377", "i": null, "p": false, "nc": false}, {"x": 16, "y": 818, "w": 370, "h": 184, "to": "8434", "i": null, "p": false, "nc": false}, {"x": 32, "y": 1245, "w": 338, "h": 48, "to": "8444", "i": null, "p": true, "nc": false}], "n": "8444", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8377": {"l": "Our lender panel", "h": 922, "fb": 0, "hs": [{"x": 8, "y": 66, "w": 60, "h": 56, "to": "BACK", "i": null, "p": true, "nc": false}], "n": "BACK", "ni": null, "sheet": 62, "alert": null, "chat": null, "bar": null}, "8434": {"l": "Terms of use", "h": 959, "fb": 0, "hs": [{"x": 8, "y": 66, "w": 60, "h": 56, "to": "BACK", "i": null, "p": true, "nc": false}], "n": "BACK", "ni": null, "sheet": 62, "alert": null, "chat": null, "bar": null}, "8444": {"l": "Your progress tracker", "h": 874, "fb": 0, "hs": [{"x": 0, "y": 116, "w": 402, "h": 592, "to": "7926", "i": null, "p": false, "nc": true}, {"x": 37, "y": 572, "w": 329, "h": 48, "to": "7926", "i": null, "p": true, "nc": false}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "7926", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": {"x": 37, "y": 532.0, "h": 12.0, "w": 329, "fw": 8, "track": [241, 242, 242], "fill": [255, 149, 0], "bg": [255, 255, 255]}}, "7926": {"l": "The fact find, already filled in", "h": 874, "fb": 0, "hs": [{"x": 283, "y": 444, "w": 87, "h": 32, "to": "7890", "i": null, "p": true, "nc": false}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "7890", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "7890": {"l": "Personal details, pre-filled", "h": 874, "fb": 0, "hs": [{"x": 16, "y": 776, "w": 177, "h": 48, "to": "7942", "i": null, "p": false, "nc": false}, {"x": 209, "y": 776, "w": 177, "h": 48, "to": "7942", "i": null, "p": true, "nc": false}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "7942", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "7942": {"l": "Your expert reviews your details", "h": 945, "fb": 0, "hs": [{"x": 16, "y": 741, "w": 370, "h": 80, "to": "7955", "i": null, "p": false, "nc": false}, {"x": 293, "y": 765, "w": 77, "h": 32, "to": "7955", "i": null, "p": true, "nc": false}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "7955", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": {"x": 32, "y": 612.0, "h": 12.0, "w": 338, "fw": 169, "track": [241, 242, 242], "fill": [52, 199, 89], "bg": [255, 255, 255]}}, "7955": {"l": "Chat with your mortgage expert", "h": 972, "fb": 68, "hs": [{"x": 0, "y": 116, "w": 402, "h": 788, "to": "8016", "i": "The next day", "p": true, "nc": true}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "8046", "i": null, "p": false, "nc": false}], "n": "8016", "ni": "The next day", "sheet": null, "alert": null, "chat": {"runs": [{"y": 137, "h": 14, "x": 168, "w": 66, "t": "date"}, {"y": 176, "h": 192, "x": 16, "w": 295, "t": "exp"}, {"y": 392, "h": 112, "x": 16, "w": 295, "t": "exp"}, {"y": 528, "h": 36, "x": 202, "w": 184, "t": "user"}, {"y": 588, "h": 112, "x": 16, "w": 295, "t": "exp"}, {"y": 724, "h": 36, "x": 250, "w": 136, "t": "user"}, {"y": 784, "h": 88, "x": 16, "w": 295, "t": "exp"}], "top": 116, "h": 780}, "bar": null}, "8046": {"l": "Your recommendation is ready", "h": 874, "fb": 0, "hs": [{"x": 0, "y": 116, "w": 402, "h": 664, "to": "14243", "i": null, "p": false, "nc": true}, {"x": 37, "y": 548, "w": 329, "h": 48, "to": "14243", "i": null, "p": true, "nc": false}, {"x": 293, "y": 652, "w": 77, "h": 32, "to": "8016", "i": null, "p": false, "nc": false}, {"x": 16, "y": 716, "w": 370, "h": 64, "to": "7908", "i": null, "p": false, "nc": false}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "14243", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": {"x": 37, "y": 508.0, "h": 12.0, "w": 329, "fw": 165, "track": [241, 242, 242], "fill": [255, 149, 0], "bg": [255, 255, 255]}}, "8016": {"l": "The recommendation arrives in the chat", "h": 874, "fb": 68, "hs": [{"x": 60, "y": 292, "w": 239, "h": 48, "to": "14243", "i": null, "p": true, "nc": false}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "14243", "ni": null, "sheet": null, "alert": null, "chat": {"runs": [{"y": 137, "h": 14, "x": 181, "w": 40, "t": "date"}, {"y": 176, "h": 280, "x": 16, "w": 295, "t": "exp"}, {"y": 480, "h": 36, "x": 206, "w": 180, "t": "user"}, {"y": 540, "h": 112, "x": 16, "w": 295, "t": "exp"}], "top": 116, "h": 560}, "bar": null}, "14243": {"l": "Your recommendation", "h": 1059, "fb": 100, "hs": [{"x": 16, "y": 58, "w": 48, "h": 48, "to": "BACK", "i": null, "p": false, "nc": false}, {"x": 35, "y": 979, "w": 338, "h": 50, "to": "8155", "i": null, "p": true, "nc": false}], "n": "8155", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8155": {"l": "The full details", "h": 2400, "fb": 112, "hs": [{"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}, {"x": 32, "y": 2320, "w": 338, "h": 48, "to": "8194", "i": null, "p": true, "nc": false}], "n": "8194", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8194": {"l": "You\u2019ve chosen the Barclays deal", "h": 874, "fb": 0, "hs": [{"x": 32, "y": 794, "w": 338, "h": 48, "to": "8250", "i": null, "p": true, "nc": false}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "8250", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8250": {"l": "Lender questions and documents", "h": 985, "fb": 0, "hs": [{"x": 0, "y": 116, "w": 402, "h": 812, "to": "8864", "i": null, "p": false, "nc": true}, {"x": 37, "y": 696, "w": 329, "h": 48, "to": "8864", "i": null, "p": true, "nc": false}, {"x": 293, "y": 800, "w": 77, "h": 32, "to": "8016", "i": null, "p": false, "nc": false}, {"x": 16, "y": 864, "w": 370, "h": 64, "to": "7908", "i": null, "p": false, "nc": false}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "8864", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": {"x": 37, "y": 656.0, "h": 12.0, "w": 329, "fw": 8, "track": [241, 242, 242], "fill": [255, 149, 0], "bg": [255, 255, 255]}}, "8864": {"l": "Supporting information", "h": 874, "fb": 0, "hs": [{"x": 283, "y": 444, "w": 87, "h": 32, "to": "8282", "i": null, "p": true, "nc": false}], "n": "8282", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8282": {"l": "Documents needed by Barclays", "h": 874, "fb": 0, "hs": [{"x": 0, "y": 116, "w": 402, "h": 628, "to": "8342", "i": null, "p": false, "nc": true}, {"x": 16, "y": 370, "w": 370, "h": 64, "to": "8342", "i": null, "p": true, "nc": false}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "8342", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8342": {"l": "Upload from your phone", "h": 852, "fb": 0, "hs": [{"x": 8, "y": 684, "w": 377, "h": 56, "to": "8338", "i": null, "p": true, "nc": false}, {"x": 8, "y": 746, "w": 377, "h": 56, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "8338", "ni": null, "sheet": 620, "alert": null, "chat": null, "bar": null}, "8338": {"l": "Choose a photo", "h": 854, "fb": 0, "hs": [{"x": 132, "y": 180, "w": 130, "h": 130, "to": "8310", "i": null, "p": true, "nc": false}, {"x": 10, "y": 56, "w": 70, "h": 40, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "8310", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8310": {"l": "Documents uploaded", "h": 874, "fb": 0, "hs": [{"x": 16, "y": 62, "w": 44, "h": 44, "to": "8460", "i": null, "p": true, "nc": false}], "n": "8460", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8460": {"l": "Monzo submits your application", "h": 913, "fb": 0, "hs": [{"x": 0, "y": 344, "w": 402, "h": 305, "to": "8473", "i": "About a day later", "p": true, "nc": true}], "n": "8473", "ni": "About a day later", "sheet": null, "alert": null, "chat": null, "bar": {"x": 32, "y": 536.0, "h": 12.0, "w": 338, "fw": 169, "track": [241, 242, 242], "fill": [52, 199, 89], "bg": [255, 255, 255]}}, "8473": {"l": "Barclays reviews your application", "h": 913, "fb": 0, "hs": [{"x": 16, "y": 344, "w": 370, "h": 305, "to": "8486", "i": "2 to 4 weeks later", "p": true, "nc": true}], "n": "8486", "ni": "2 to 4 weeks later", "sheet": null, "alert": null, "chat": null, "bar": {"x": 32, "y": 536.0, "h": 12.0, "w": 338, "fw": 85, "track": [241, 242, 242], "fill": [52, 199, 89], "bg": [255, 255, 255]}}, "8486": {"l": "Offer accepted", "h": 1162, "fb": 0, "hs": [{"x": 0, "y": 344, "w": 402, "h": 325, "to": "8586", "i": "About 3 months later", "p": true, "nc": true}, {"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "8586", "ni": "About 3 months later", "sheet": null, "alert": null, "chat": null, "bar": {"x": 32, "y": 536.0, "h": 12.0, "w": 338, "fw": 169, "track": [241, 242, 242], "fill": [52, 199, 89], "bg": [255, 255, 255]}}, "8586": {"l": "Back on your Home tab", "h": 874, "fb": 0, "hs": [{"x": 16, "y": 140, "w": 370, "h": 56, "to": "8500", "i": null, "p": true, "nc": false}], "n": "8500", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8500": {"l": "Is this your new mortgage?", "h": 1035, "fb": 248, "hs": [{"x": 32, "y": 891, "w": 338, "h": 48, "to": "8555", "i": null, "p": true, "nc": false}, {"x": 32, "y": 955, "w": 338, "h": 48, "to": "BACK", "i": null, "p": false, "nc": false}], "n": "8555", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8555": {"l": "Your new mortgage in Monzo", "h": 908, "fb": 0, "hs": [], "n": null, "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "7908": {"l": "Cancel your application", "h": 975, "fb": 112, "hs": [{"x": 16, "y": 62, "w": 44, "h": 44, "to": "BACK", "i": null, "p": false, "nc": false}, {"x": 32, "y": 895, "w": 338, "h": 48, "to": "8880", "i": null, "p": true, "nc": false}], "n": "8880", "ni": null, "sheet": null, "alert": null, "chat": null, "bar": null}, "8880": {"l": "Cancel your application", "h": 874, "fb": 0, "hs": [{"x": 65, "y": 450, "w": 272, "h": 48, "to": "8882", "i": null, "p": false, "nc": false}, {"x": 65, "y": 506, "w": 272, "h": 48, "to": "BACK", "i": null, "p": true, "nc": false}], "n": "BACK", "ni": null, "sheet": null, "alert": [51, 306, 300, 262], "chat": null, "bar": null}}, "MAIN": ["8882", "7819", "8444", "7926", "7890", "7942", "7955", "8016", "14243", "8155", "8194", "8250", "8864", "8282", "8342", "8338", "8310", "8460", "8473", "8486", "8586", "8500", "8555"], "START": "8882", "EDGE": {"7890>7942": "pop", "8194>8250": "pop", "8310>8460": "pop", "8338>8310": "dismiss", "8500>8555": "dismiss", "7955>8016": "time", "8460>8473": "time", "8473>8486": "time", "8486>8586": "time", "8880>8882": "fade"}, "TO": {"8377": "sheet", "8434": "sheet", "8342": "sheet", "8880": "alert", "8338": "modal", "8500": "modal"}};
+const S=D.S, MAIN=D.MAIN, IMG=k=>"../assets/proto/feb/"+k+".webp?v=2";
+const view=document.getElementById("view"), inter=document.getElementById("inter"), island=view.querySelector(".island");
+const stack=[]; let curEl=null, busy=false, idleT=null, progW=0;
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const EASE="cubic-bezier(.22,.9,.24,1)";
 function fit(){const s=Math.min(1,(innerHeight-150)/894,(innerWidth-20)/422);document.documentElement.style.setProperty("--s",Math.max(.4,s).toFixed(4))}
 addEventListener("resize",fit);fit();
-const cache={};function pre(k){if(k&&S[k]&&!cache[k]){const i=new Image();i.src=IMG(k);cache[k]=i}}
+Object.keys(S).forEach(k=>{const i=new Image();i.src=IMG(k)});
+const cur=()=>stack[stack.length-1].k;
+
+function crop(el,k,x,y,w,h){const d=S[k];el.style.backgroundImage="url("+IMG(k)+")";el.style.backgroundSize="402px "+d.h+"px";el.style.backgroundPosition=(-x)+"px "+(-y)+"px"}
 function build(k){
   const d=S[k], el=document.createElement("div"); el.className="scr"; el.dataset.k=k;
   const sc=document.createElement("div"); sc.className="scroll"; const ct=document.createElement("div"); ct.className="content"; ct.style.height=d.h+"px";
-  const im=document.createElement("img"); im.src=IMG(k); im.alt=d.l; im.width=402; ct.append(im); sc.append(ct); el.append(sc);
+  const im=document.createElement("img"); im.src=IMG(k); im.alt=d.l; im.width=402; im.draggable=false; ct.append(im); sc.append(ct); el.append(sc);
+  el._sc=sc; el._ct=ct;
   let fx=null;
   if(d.fb){fx=document.createElement("div");fx.className="fix b";fx.style.height=d.fb+"px";fx.style.backgroundImage="url("+IMG(k)+")";el.append(fx)}
-  if(d.h>884){const t=document.createElement("div");t.className="fix t";t.style.backgroundImage="url("+IMG(k)+")";el.append(t)}
-  d.hs.forEach(h=>{const b=document.createElement("button");b.className="hs";b.type="button";b.setAttribute("aria-label",h.to==="BACK"?"Back":(S[h.to]?S[h.to].l:""));
+  if(d.h>884){const t=document.createElement("div");t.className="fix t";t.style.backgroundImage="url("+IMG(k)+")";el.append(t);
+    const sb=document.createElement("div");sb.className="sbar";const vis=874-d.fb;sb.style.height=Math.max(36,vis*vis/d.h)+"px";el.append(sb);
+    let ht=null;sc.addEventListener("scroll",()=>{const m=d.h-874, f=m>0?sc.scrollTop/m:0;sb.style.transform="translateY("+(62+f*(vis-62-parseFloat(sb.style.height)))+"px)";sb.classList.add("on");clearTimeout(ht);ht=setTimeout(()=>sb.classList.remove("on"),650)},{passive:true})}
+  el._hs=[];
+  d.hs.forEach(h=>{const b=document.createElement("button");b.className="hs"+(h.nc?" nc":"");b.type="button";
+    b.setAttribute("aria-label",h.to==="BACK"?"Back":(S[h.to]?S[h.to].l:""));
     const inFix=d.fb&&h.y>=d.h-d.fb-1;
-    b.style.cssText="left:"+h.x+"px;width:"+h.w+"px;height:"+h.h+"px;top:"+(inFix?h.y-(d.h-d.fb):h.y)+"px";
-    b.addEventListener("click",e=>{e.stopPropagation();go(h.to,h.i)});(inFix?fx:ct).append(b)});
-  el.addEventListener("click",()=>{el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("flash"),900)});
+    b.style.cssText+="left:"+h.x+"px;width:"+h.w+"px;height:"+h.h+"px;top:"+(inFix?h.y-(d.h-d.fb):h.y)+"px;border-radius:"+Math.min(h.h/2,16)+"px";
+    if(!h.nc)crop(b,k,h.x,h.y,h.w,h.h);
+    b.style.setProperty("--ps",h.h<=60?.95:.985);
+    const up=()=>b.classList.remove("pressed");
+    b.addEventListener("pointerdown",()=>b.classList.add("pressed"));
+    ["pointerup","pointerleave","pointercancel"].forEach(t=>b.addEventListener(t,up));
+    b.addEventListener("click",e=>{e.stopPropagation();poke();if(el._playing){skipChat(el);return}setTimeout(()=>go(h.to,h.i),70)});
+    b._h=h;(inFix?fx:ct).append(b);el._hs.push(b)});
+  el.addEventListener("click",()=>{poke();if(el._playing){skipChat(el);return}el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("flash"),900)});
   return el}
-function ui(){const d=S[cur], i=MAIN.indexOf(cur);
-  document.getElementById("lab").textContent=d.l;
-  document.getElementById("step").textContent=i>=0?("Step "+(i+1)+" of "+MAIN.length):"Side path";
-  document.getElementById("prog").style.width=(i>=0?(i+1)/MAIN.length*100:(document.getElementById("prog").style.width||"0").replace("%",""))+"%";
-  document.getElementById("back").disabled=!hist.length;
-  const nb=document.getElementById("next"); const end=cur===MAIN[MAIN.length-1];
-  nb.textContent=end?"Start again ↺":"Next ›";
-  (d.hs||[]).forEach(h=>pre(h.to)); pre(d.n)}
-function show(k,dir,label){
-  if(busy)return; busy=true;
-  const run=()=>{const old=view.querySelector(".scr"), el=build(k); view.insertBefore(el,inter); cur=k; ui();
-    const tr=S[k].tr, oldTr=old&&S[old.dataset.k].tr;
-    const T={duration:380,easing:"cubic-bezier(.2,.8,.2,1)",fill:"both"};
-    let a=Promise.resolve();
-    if(!old){} else if(dir==="fade"){el.animate([{opacity:0},{opacity:1}],T);a=old.animate([{opacity:1},{opacity:0}],T).finished}
-    else if(dir>0&&tr==="up"){el.animate([{transform:"translateY(100%)"},{transform:"none"}],T);a=new Promise(r=>setTimeout(r,380))}
-    else if(dir<0&&oldTr==="up"){view.append(old);a=old.animate([{transform:"none"},{transform:"translateY(100%)"}],T).finished}
-    else{el.animate([{transform:"translateX("+(dir>0?100:-30)+"%)"},{transform:"none"}],T);a=old.animate([{transform:"none"},{transform:"translateX("+(dir>0?-30:100)+"%)"}],T).finished}
-    a.then(()=>{if(old)old.remove();busy=false})};
-  if(label){inter.textContent=label;inter.classList.add("on");setTimeout(()=>{busy=false;inter.classList.remove("on");busy=false;run1()},900);const run1=()=>{busy=true;run()};}
-  else run()}
-function go(to,label){if(to==="BACK")return back(); if(!S[to])return; hist.push(cur); show(to,label?"fade":1,label)}
-function back(){if(!hist.length)return; show(hist.pop(),-1)}
-function next(){const d=S[cur]; if(cur===MAIN[MAIN.length-1]){hist=[];return show(D.START,"fade")} if(!d.n)return; const h=d.hs.find(x=>x.to===d.n); go(d.n,h&&h.i)}
+
+/* chat: bubbles arrive one by one */
+function prepChat(el,k){const c=S[k].chat; if(!c)return;
+  const cv=document.createElement("div");cv.className="cover";cv.style.top=c.top+"px";cv.style.height=c.h+"px";el._ct.append(cv);
+  el._runs=c.runs.map(r=>{const d=document.createElement("div");d.className="run";d.style.cssText+="left:"+r.x+"px;top:"+r.y+"px;width:"+r.w+"px;height:"+r.h+"px";crop(d,k,r.x,r.y,r.w,r.h);d._r=r;el._ct.append(d);return d});
+  el._hs.forEach(b=>{const h=b._h;if(h.y>=c.top&&h.y<c.top+c.h&&!h.nc){const d=el._runs.find(x=>h.y>=x._r.y&&h.y<x._r.y+x._r.h);if(d){b.style.visibility="hidden";(d._hs=d._hs||[]).push(b)}}});
+  el._typing=document.createElement("div");el._typing.className="typing";el._typing.innerHTML="<i></i><i></i><i></i>";el._ct.append(el._typing)}
+function showRun(el,d,anim){const r=d._r;d.style.opacity=1;(d._hs||[]).forEach(b=>b.style.visibility="");
+  if(anim)d.animate(r.t==="user"?[{opacity:0,transform:"translateY(14px) scale(.96)"},{opacity:1,transform:"none"}]:[{opacity:0,transform:"translateY(6px) scale(.97)"},{opacity:1,transform:"none"}],{duration:r.t==="user"?300:260,easing:EASE});
+  d.style.transformOrigin=r.t==="user"?"100% 100%":"0 100%";
+  const vis=874-(S[el.dataset.k].fb||0), t=r.y+r.h+14-vis; if(t>el._sc.scrollTop)el._sc.scrollTo({top:t,behavior:anim?"smooth":"auto"})}
+async function playChat(el){if(!el._runs)return; el._playing=true; const tk=el._tk={};
+  const live=()=>tk===el._tk&&el.isConnected;
+  for(const d of el._runs){ if(!live())return; const r=d._r;
+    if(r.t==="exp"){const ty=el._typing;ty.style.top=r.y+"px";ty.style.opacity=1;ty.animate([{opacity:0,transform:"scale(.9)"},{opacity:1,transform:"none"}],{duration:180,easing:EASE});
+      const vis=874-(S[el.dataset.k].fb||0), t=r.y+54-vis; if(t>el._sc.scrollTop)el._sc.scrollTo({top:t,behavior:"smooth"});
+      await wait(r.h>150?950:720); if(!live())return; ty.style.opacity=0}
+    else await wait(r.t==="date"?150:420);
+    if(!live())return; showRun(el,d,true); await wait(r.t==="date"?200:380)}
+  el._playing=false; nudgeLater()}
+function skipChat(el){el._tk={};el._playing=false;if(el._typing)el._typing.style.opacity=0;(el._runs||[]).forEach(d=>{if(d.style.opacity!=="1")showRun(el,d,false)});nudgeLater()}
+function showChatAll(el){(el._runs||[]).forEach(d=>showRun(el,d,false))}
+
+/* tracker bar fills up */
+function playBar(el,k){const b=S[k].bar; if(!b||b.fw<14)return;
+  const cv=document.createElement("div");cv.className="bcov";cv.style.cssText+="left:"+b.x+"px;top:"+b.y+"px;width:"+b.fw+"px;background:rgb("+b.track+")";
+  const f=document.createElement("div");f.className="bfill";f.style.cssText+="left:"+b.x+"px;top:"+b.y+"px;width:"+b.fw+"px;background:rgb("+b.fill+");transform-origin:0 50%";
+  el._ct.append(cv,f);
+  f.animate([{transform:"scaleX(.04)"},{transform:"scaleX(1)"}],{duration:1100,delay:180,easing:"cubic-bezier(.3,.8,.3,1)",fill:"backwards"}).finished.then(()=>{cv.remove();f.remove()})}
+
+/* transitions */
+function settle(el){if(!el)return;el.getAnimations().forEach(a=>{try{a.commitStyles()}catch(_){}a.cancel()});el.style.transform='';el.style.opacity='';el.style.clipPath='';el.style.boxShadow='';el.querySelectorAll(':scope>.dim').forEach(d=>d.remove())}
+const T=(el,kf,o)=>el.animate(kf,Object.assign({duration:420,easing:EASE,fill:"both"},o)).finished;
+function dimOn(el,a,b,o){const d=document.createElement("div");d.className="dim";el.append(d);return T(d,[{opacity:a},{opacity:b}],o)}
+function strip(k,top){const s=document.createElement("div");s.style.cssText="position:absolute;left:0;top:0;width:402px;height:"+top+"px;z-index:31;background:url("+IMG(k)+") 0 0/402px "+S[k].h+"px no-repeat";return s}
+async function animate(oldEl,el,how){
+  const nk=el.dataset.k, ok=oldEl&&oldEl.dataset.k;
+  if(!oldEl||!how){view.insertBefore(el,inter);return}
+  const under=["pop","unsheet","unalert","dismiss"].includes(how);
+  if(under)view.insertBefore(el,oldEl);else view.insertBefore(el,inter);
+  const P=[];
+  if(how==="push"){el.style.boxShadow="-10px 0 30px rgba(0,0,0,.18)";P.push(T(el,[{transform:"translateX(100%)"},{transform:"none"}]),T(oldEl,[{transform:"none"},{transform:"translateX(-28%)"}]),dimOn(oldEl,0,.14))}
+  else if(how==="pop"){oldEl.style.boxShadow="-10px 0 30px rgba(0,0,0,.18)";P.push(T(oldEl,[{transform:"none"},{transform:"translateX(100%)"}]),T(el,[{transform:"translateX(-28%)"},{transform:"none"}]),dimOn(el,.14,0))}
+  else if(how==="sheet"){const top=S[nk].sheet||0, st=strip(nk,top);view.insertBefore(st,inter);el.style.clipPath="inset("+top+"px 0 0 0)";
+    P.push(T(st,[{opacity:0},{opacity:1}],{duration:300,easing:"linear"}),T(el,[{transform:"translateY(100%)"},{transform:"none"}],{duration:460}),dimOn(oldEl,0,.25,{duration:300}));
+    await Promise.all(P);st.remove();oldEl.remove();settle(el);return}
+  else if(how==="unsheet"){const top=S[ok].sheet||0, st=strip(ok,top);view.insertBefore(st,inter);oldEl.style.clipPath="inset("+top+"px 0 0 0)";
+    P.push(T(st,[{opacity:1},{opacity:0}],{duration:300,easing:"linear"}),T(oldEl,[{transform:"none"},{transform:"translateY(100%)"}],{duration:380,easing:"cubic-bezier(.4,0,.8,.4)"}));
+    await Promise.all(P);st.remove();oldEl.remove();settle(el);return}
+  else if(how==="alert"){const a=S[nk].alert, bx=document.createElement("div");bx.style.cssText="position:absolute;z-index:32;border-radius:18px;left:"+a[0]+"px;top:"+a[1]+"px;width:"+a[2]+"px;height:"+a[3]+"px";crop(bx,nk,a[0],a[1],a[2],a[3]);view.insertBefore(bx,inter);
+    P.push(T(el,[{opacity:0},{opacity:1}],{duration:220,easing:"linear"}),T(bx,[{opacity:0,transform:"scale(1.12)"},{opacity:1,transform:"none"}],{duration:300}));
+    await Promise.all(P);bx.remove();oldEl.remove();settle(el);return}
+  else if(how==="unalert"){P.push(T(oldEl,[{opacity:1},{opacity:0}],{duration:200,easing:"linear"}))}
+  else if(how==="modal"){el.style.boxShadow="0 -10px 30px rgba(0,0,0,.18)";P.push(T(el,[{transform:"translateY(100%)"},{transform:"none"}],{duration:480}),dimOn(oldEl,0,.25,{duration:480}))}
+  else if(how==="dismiss"){P.push(T(oldEl,[{transform:"none"},{transform:"translateY(100%)"}],{duration:420,easing:"cubic-bezier(.4,0,.6,1)"}),dimOn(el,.25,0,{duration:420}))}
+  else{P.push(T(el,[{opacity:0},{opacity:1}],{duration:how==="time"?520:320,easing:"linear"}))}
+  await Promise.all(P);oldEl.remove();settle(el)}
+const REV={push:"pop",pop:"push",sheet:"unsheet",alert:"unalert",modal:"dismiss",dismiss:"modal",time:"fade",fade:"fade"};
+function howFor(from,to){return D.EDGE[from+">"+to]||D.TO[to]||"push"}
+
+async function show(k,how,{label,forward=true}={}){
+  if(busy)return; busy=true; clearTimeout(idleT);
+  if(label){document.getElementById("interT").textContent=label;await T(inter,[{opacity:0},{opacity:1}],{duration:260,easing:"linear"})}
+  const old=curEl, el=build(k); prepChat(el,k);
+  if(el._runs&&!forward)showChatAll(el);
+  curEl=el; ui(k);
+  const p=animate(old,el,old?how:null);
+  if(label){await wait(500);T(inter,[{opacity:1},{opacity:0}],{duration:340,easing:"linear"})}
+  await p; busy=false;
+  if(forward){playBar(el,k); if(el._runs)playChat(el); else nudgeLater()} else nudgeLater()}
+function go(to,label){if(busy)return; if(to==="BACK")return back(); if(!S[to])return;
+  const how=howFor(cur(),to); stack.push({k:to,how}); show(to,how,{label:label||null})}
+function back(){if(busy||stack.length<2)return; const top=stack.pop(); show(cur(),REV[top.how]||"pop",{forward:false})}
+function restart(){if(busy)return; stack.length=0; stack.push({k:D.START,how:null}); show(D.START,"fade")}
+function next(){if(busy)return; if(curEl&&curEl._playing){skipChat(curEl);return}
+  const k=cur(), d=S[k]; if(k===MAIN[MAIN.length-1])return restart(); if(!d.n)return; go(d.n,d.ni)}
+function ui(k){const d=S[k], i=MAIN.indexOf(k), lab=document.getElementById("lab"), st=document.getElementById("step");
+  lab.animate([{opacity:0,transform:"translateY(4px)"},{opacity:1,transform:"none"}],{duration:280,easing:EASE});
+  lab.textContent=d.l; st.textContent=i>=0?("Step "+(i+1)+" of "+MAIN.length):"Side path";
+  if(i>=0)progW=(i+1)/MAIN.length*100; document.getElementById("prog").style.width=progW+"%";
+  document.getElementById("back").disabled=stack.length<2;
+  document.getElementById("next").textContent=k===MAIN[MAIN.length-1]?"Start again ↺":"Next ›"}
+function poke(){clearTimeout(idleT);if(curEl)curEl._hs.forEach(b=>b.classList.remove("nudge"));nudgeLater()}
+function nudgeLater(){clearTimeout(idleT);idleT=setTimeout(()=>{if(!curEl||curEl._playing||busy)return;const b=curEl._hs.find(x=>x._h.p);if(b){b.classList.remove("nudge");void b.offsetWidth;b.classList.add("nudge")}nudgeLater()},4500)}
+
+/* swipe back from the left edge */
+let drag=null;
+view.addEventListener("pointerdown",e=>{if(busy||stack.length<2)return;const top=stack[stack.length-1];if(top.how!=="push")return;
+  const r=view.getBoundingClientRect(), s=r.width/402, x=(e.clientX-r.left)/s; if(x>26)return;
+  drag={x0:e.clientX,s,t0:performance.now(),prev:null,dx:0,id:e.pointerId}});
+view.addEventListener("pointermove",e=>{if(!drag)return;const dx=Math.max(0,(e.clientX-drag.x0)/drag.s);drag.dx=dx;
+  if(!drag.prev&&dx>6){try{view.setPointerCapture(drag.id)}catch(_){}const pk=stack[stack.length-2].k;drag.prev=build(pk);prepChat(drag.prev,pk);showChatAll(drag.prev);view.insertBefore(drag.prev,curEl);curEl.style.boxShadow="-10px 0 30px rgba(0,0,0,.18)"}
+  if(drag.prev){curEl.style.transform="translateX("+dx+"px)";drag.prev.style.transform="translateX("+(-0.28*402+dx*0.28)+"px)"}});
+const endDrag=async e=>{if(!drag)return;const d=drag;drag=null;if(!d.prev)return;
+  const v=d.dx/Math.max(1,performance.now()-d.t0), done=d.dx>130||(v>.45&&d.dx>40); busy=true;
+  const o={duration:260,easing:"cubic-bezier(.2,.8,.2,1)",fill:"forwards"};
+  if(done){await Promise.all([curEl.animate([{transform:curEl.style.transform},{transform:"translateX(402px)"}],o).finished,d.prev.animate([{transform:d.prev.style.transform},{transform:"none"}],o).finished]);
+    curEl.remove();stack.pop();curEl=d.prev;settle(curEl);ui(cur());busy=false;nudgeLater()}
+  else{await Promise.all([curEl.animate([{transform:curEl.style.transform},{transform:"none"}],o).finished,d.prev.animate([{transform:d.prev.style.transform},{transform:"translateX(-28%)"}],o).finished]);
+    d.prev.remove();settle(curEl);busy=false}};
+view.addEventListener("pointerup",endDrag);view.addEventListener("pointercancel",endDrag);
+
 document.getElementById("back").onclick=back; document.getElementById("next").onclick=next;
-addEventListener("keydown",e=>{if(e.key==="ArrowRight"||e.key===" "||e.key==="Enter"){e.preventDefault();next()}else if(e.key==="ArrowLeft"||e.key==="Backspace"){e.preventDefault();back()}else if(e.key==="Escape"&&parent!==window){parent.postMessage("feb-proto-close","*")}else if(e.key==="ArrowDown"||e.key==="ArrowUp"){const s=view.querySelector(".scr .scroll");if(s){e.preventDefault();s.scrollBy({top:e.key==="ArrowDown"?160:-160,behavior:"smooth"})}}});
-show(D.START,0);
+addEventListener("keydown",e=>{if(e.key==="ArrowRight"||e.key===" "||e.key==="Enter"){e.preventDefault();next()}else if(e.key==="ArrowLeft"||e.key==="Backspace"){e.preventDefault();back()}
+  else if(e.key==="Escape"&&parent!==window){parent.postMessage("feb-proto-close","*")}
+  else if((e.key==="ArrowDown"||e.key==="ArrowUp")&&curEl){e.preventDefault();curEl._sc.scrollBy({top:e.key==="ArrowDown"?180:-180,behavior:"smooth"})}});
+addEventListener("pointerdown",poke,{passive:true});
+stack.push({k:D.START,how:null}); show(D.START,null);
 </script></body></html>
