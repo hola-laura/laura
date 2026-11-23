@@ -342,7 +342,7 @@ const slides=[
  },
  {
   "title": "The adviser chat: designed, then paused",
-  "notes": "OK, the adviser. This bet is about relevance, and about choice.\nRemember the adviser-first test we had to park? The vision said people should choose how they talk to an adviser.\nBut in reality Habito's advisers worked by chat, in a separate tool, and at that time the chat opened in Habito, outside Monzo. We had two options.\nWait about nine months for Monzo's own chat, or put Habito's chat inside the app in about a month. I proposed the fast one, because every month we waited we were losing people at the decision.\nThe extra cost was small, about 43 thousand dollars a year, and the product review estimated it would pay for itself in about a month.\nBut having a second chat inside Monzo is risky. People could ask their adviser about a blocked card, or ask Monzo support about their mortgage.\nSo I designed three guardrails. Gate, which means we only show it during an active remortgage.\nSignpost, so the first time you open the chat there's a short intro that shows who you're talking to, a real person and a mortgage expert, and when they'll reply.\nAnd recover, so if you end up in the wrong place, you get to the right one in one tap.\nWe also agreed a kill switch before starting, so a limit that tells you in advance when to stop. Above 2 percent of chats in the wrong place we investigate, and above 5 percent we roll back.\nThe plan was a small pilot first, and then a proper 50/50 test.\nAnd in the end we paused it. People wanted it, and we could build it.\nAfter the analysis, the team decided this integration wasn't the best use of our resources this year, and put them into other problems, like first-time buyers.\nFirst-time buyers had been our second goal since the second half of 2025.\nIn 2026 it became the first. That was a business decision. We needed to show that buying Habito had been a good decision, and as you've seen, we were sometimes missing our revenue goals.\nAnd first-time buyers are a big opportunity for Monzo, because most Monzo customers are first-time buyers.\nSo for now the chat stays in Habito. The design is in the appendix, if you want to see it.",
+  "notes": "OK, the adviser. This bet is about relevance, and about choice.\nRemember the adviser-first test we had to park? The vision said people should choose how they talk to an adviser.\nBut in reality Habito's advisers worked by chat, in a separate tool, and at that time the chat opened in Habito, outside Monzo. We had two options.\nWait about nine months for Monzo's own chat, or put Habito's chat inside the app in about a month. I proposed the fast one, because every month we waited we were losing people at the decision.\nThe extra cost was small, about 43 thousand dollars a year, and the product review estimated it would pay for itself in about a month.\nBut having a second chat inside Monzo is risky. People could ask their adviser about a blocked card, or ask Monzo support about their mortgage.\nSo I designed three guardrails. Gate, which means we only show it during an active remortgage.\nSignpost, so the first time you open the chat there's a short intro that shows who you're talking to, a real person and a mortgage expert, and when they'll reply.\nAnd recover, so if you end up in the wrong place, you get to the right one in one tap.\nWe also agreed a kill switch before starting, so a limit that tells you in advance when to stop. Above 2 percent of chats in the wrong place we investigate, and above 5 percent we roll back.\nThe plan was a small pilot first, and then a proper 50/50 test.\nAnd in the end we paused it. People wanted it, and we could build it.\nAfter the analysis, the team decided this integration wasn't the best use of our resources this year, and put them into other problems, like first-time buyers.\nFirst-time buyers had been our second goal since the second half of 2025.\nIn 2026 it became the first. That was a business decision. We needed to show that buying Habito had been a good decision, and as you've seen, we were sometimes missing our revenue goals.\nAnd first-time buyers are a big opportunity for Monzo, because most Monzo customers are first-time buyers.\nBut we did ship a first step. Habito's advisers chat on Intercom, so for now you open Habito's chat inside the app, from the tracker. I know it's not the perfect experience. But people don't get confused by a chat on a website, and they don't have to leave Monzo. The goal is still the adviser inside Monzo. The full design is in the appendix, if you want to see it.",
   "ask": [
    [
     "How big was the risk, really?",
@@ -351,24 +351,6 @@ const slides=[
    [
     "Why was it paused?",
     "It came down to priorities. The integration was possible, but after the analysis the team decided to put its resources into other problems this year, like first-time buyers. The chat keeps working in Habito in the meantime. It isn't a final decision, and the design and the guardrails are ready for when it comes back."
-   ]
-  ]
- },
- {
-  "title": "Before scaling, I audited the whole product",
-  "notes": "By the summer of 2026, things were about to get bigger.\nFirst-time buyers were the focus for growth, and Habito was bringing more traffic into our flows.\nSo before designing the next journey I asked a different question, which was where should we invest first. I reviewed the whole live experience: ten areas in total.\nAnd I scored the main journeys with the same six criteria. Things like how clear the customer's job is, the risk when volume grows, and how confident we are in the evidence.\nI expected to find one or two broken journeys. And what I found was different. There wasn't one broken journey.\nIt was a product that had grown piece by piece. I'll give you a small example. When I counted, we had eleven different ways of saying 'connect your mortgage', and nine for remortgaging.\nSo I recommended three initiatives for the next half. Align the copy on our entry points. Improve trust and clarity on the mortgage home screen.\nAnd open estimated deals to people who don't have enough connected data.\nAnd one direction for the longer term, which is to organise the product around your property. They went into the team's planning as candidates, to be scored with everything else.",
-  "ask": [
-   [
-    "How did you score the journeys?",
-    "Six criteria, each scored one, three or five: customer job clarity, UX quality, strategic importance, scale risk, confidence and delivery effort. I said out loud that the scores were a map to compare journeys, not the final priority order."
-   ],
-   [
-    "What had growing piece by piece created?",
-    "Fragmented entry points, duplicated functionality, inconsistent user states, disconnected experiences, and foundations that get harder to scale."
-   ],
-   [
-    "What happened with it?",
-    "The three initiatives went into the team's prioritisation for the second half, scored alongside the rest of the portfolio. The property-level direction was there to guide future discovery, not as a commitment."
    ]
   ]
  },
@@ -396,7 +378,7 @@ const slides=[
  },
  {
   "title": "What changed, and what’s still to do",
-  "notes": "So, what came out of all this? At the start I told you that we beat the referral goal, but mortgages didn't grow at the same pace. Referrals ended about 75 percent above our goal.\nBut a referral is only the first step, and I prefer to tell you that than to claim an uplift I can't prove.\nSo the number that matters in this story is accepted recommendations. And that one went up.\nFirst with the push on day zero, because it took people straight to the tracker.\nThen the view-only recommendation moved it a little more.\nNow, the four things customers asked for at the beginning. I'm not going to read every row. Most of it is live.\nEstimated deals, pre-fill, the push when your recommendation is ready, the application inside Monzo since the end of September, and since this November, the new tracker and the new recommendation, where you can accept it inside Monzo.\nThe 'I need more time' option is designed. And the adviser chat is paused for this year.\nIn 2026, most of what I designed for Habito shipped late in the year, so the results are only starting to arrive.\nWith the application inside Monzo, I'm told that about 40 percent more people are finishing the form and getting to a recommendation. It's early, so I wouldn't call it a result yet.\nAnd the new tracker, which is the design I expect to have the biggest impact, has only just launched.\nI'm told the first signals are very positive, but it's too soon.\nAnd the whole remortgage isn't in the app yet. Document upload and the adviser chat were moved back, because the focus moved to first-time buyers.\nThat launched on the 11th of November, and I did the vision and the design of that first release.",
+  "notes": "So, what came out of all this? At the start I told you that we beat the referral goal, but mortgages didn't grow at the same pace. Referrals ended about 75 percent above our goal.\nBut a referral is only the first step, and I prefer to tell you that than to claim an uplift I can't prove.\nSo the number that matters in this story is accepted recommendations. And that one went up.\nFirst with the push on day zero, because it took people straight to the tracker.\nThen the view-only recommendation moved it a little more.\nNow, the four things customers asked for at the beginning. I'm not going to read every row. Most of it is live.\nEstimated deals, pre-fill, the push when your recommendation is ready, the application inside Monzo since the end of September, and since this November, the new tracker and the new recommendation, where you can accept it inside Monzo.\nThe 'I need more time' option is designed. And the adviser chat opens inside the app now, on Habito's Intercom chat. It's a first step towards our own chat in Monzo.\nIn 2026, most of what I designed for Habito shipped late in the year, so the results are only starting to arrive.\nWith the application inside Monzo, I'm told that about 40 percent more people are finishing the form and getting to a recommendation. It's early, so I wouldn't call it a result yet.\nAnd the new tracker, which is the design I expect to have the biggest impact, has only just launched.\nI'm told the first signals are very positive, but it's too soon.\nAnd the whole remortgage isn't in the app yet. Document upload and our own adviser chat in Monzo were moved back, because the focus moved to first-time buyers.\nThat launched on the 11th of November, and I did the vision and the design of that first release.",
   "ask": [
    [
     "What would you measure next?",
@@ -414,7 +396,7 @@ const slides=[
  },
  {
   "title": "What I learned",
-  "notes": "Looking back, there are four things I take with me. One, more referrals aren't more mortgages. They grew the top of the funnel, but they didn't fix where people dropped. That's why we moved to the application and the recommendation.\nTwo, when the systems of two companies meet, things like routing, consent and who you're talking to are design decisions too. Three, shipping fast is fine, but you agree the guardrails and the rollback before you start.\nAnd four, name the problem first. One word, compare or broker, changed what people expected from the whole journey.",
+  "notes": "Looking back, there are four things I take with me. One: getting people in isn't enough. Referrals beat the goal, but mortgages didn't grow at the same pace. So we moved to where people dropped: the form and the recommendation.\nTwo: say what it is. People thought we were a comparison site, and leading with the expert changed what they expected. Three: ship what you can, then improve it. The push used the tracker we already had, and accepted recommendations went up.\nAnd four: work with your partner's limits. Habito had no design team, and their chat ran on Intercom. So I went through the journey myself, and we shipped first steps, like the chat inside the app.",
   "ask": []
  },
  {
@@ -478,6 +460,25 @@ const slides=[
    [
     "Is this live?",
     "No, it's a concept. Its job was to show the regulator and the business what better mortgage data would make possible."
+   ]
+  ],
+  "appx": true
+ },
+ {
+  "title": "Before scaling, I audited the whole product",
+  "notes": "By the summer of 2026, things were about to get bigger.\nFirst-time buyers were the focus for growth, and Habito was bringing more traffic into our flows.\nSo before designing the next journey I asked a different question, which was where should we invest first. I reviewed the whole live experience: ten areas in total.\nAnd I scored the main journeys with the same six criteria. Things like how clear the customer's job is, the risk when volume grows, and how confident we are in the evidence.\nI expected to find one or two broken journeys. And what I found was different. There wasn't one broken journey.\nIt was a product that had grown piece by piece. I'll give you a small example. When I counted, we had eleven different ways of saying 'connect your mortgage', and nine for remortgaging.\nSo I recommended three initiatives for the next half. Align the copy on our entry points. Improve trust and clarity on the mortgage home screen.\nAnd open estimated deals to people who don't have enough connected data.\nAnd one direction for the longer term, which is to organise the product around your property. They went into the team's planning as candidates, to be scored with everything else.",
+  "ask": [
+   [
+    "How did you score the journeys?",
+    "Six criteria, each scored one, three or five: customer job clarity, UX quality, strategic importance, scale risk, confidence and delivery effort. I said out loud that the scores were a map to compare journeys, not the final priority order."
+   ],
+   [
+    "What had growing piece by piece created?",
+    "Fragmented entry points, duplicated functionality, inconsistent user states, disconnected experiences, and foundations that get harder to scale."
+   ],
+   [
+    "What happened with it?",
+    "The three initiatives went into the team's prioritisation for the second half, scored alongside the rest of the portfolio. The property-level direction was there to guide future discovery, not as a commitment."
    ]
   ],
   "appx": true

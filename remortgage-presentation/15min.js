@@ -156,7 +156,7 @@ const slides=[
  },
  {
   "title": "What I learned",
-  "notes": "Looking back, there are four things I take with me. One, more referrals aren't more mortgages. They grew the top of the funnel, but they didn't fix where people dropped. That's why we moved to the application and the recommendation.\nTwo, when the systems of two companies meet, things like routing, consent and who you're talking to are design decisions too. Three, shipping fast is fine, but you agree the guardrails and the rollback before you start.\nAnd four, name the problem first. One word, compare or broker, changed what people expected from the whole journey.",
+  "notes": "Looking back, there are four things I take with me. One: getting people in isn't enough. Referrals beat the goal, but mortgages didn't grow at the same pace. So we moved to where people dropped: the form and the recommendation.\nTwo: say what it is. People thought we were a comparison site, and leading with the expert changed what they expected. Three: ship what you can, then improve it. The push used the tracker we already had, and accepted recommendations went up.\nAnd four: work with your partner's limits. Habito had no design team, and their chat ran on Intercom. So I went through the journey myself, and we shipped first steps, like the chat inside the app.",
   "ask": []
  },
  {
