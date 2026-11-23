@@ -2043,4 +2043,7 @@ window.I18N_ES = {
 "<span>The UX Tarot.</span><em>Pick a situation, draw three cards.</em>": "<span>El Tarot de UX.</span><em>Elige una situación y saca tres cartas.</em>",
 "Drivo Test home screen showing progress, the mock exam and practice mode": "Pantalla de inicio de Drivo Test con el progreso, el examen oficial y el modo práctica",
 "Drivo Test question library with search, filters and a driving theory question": "Biblioteca de preguntas de Drivo Test con buscador, filtros y una pregunta de teoría",
+"Video: a mortgage found in Monzo, then setting a reminder for the date the deal ends": "Vídeo: Monzo encuentra la hipoteca y el cliente pone un recordatorio para el fin de la oferta",
+"Video: a long list of separate purchases collapses into the redesigned Flex account": "Vídeo: una lista larga de compras sueltas se convierte en la cuenta de Flex rediseñada",
+"Video: picking cells in the risk matrix of the redesigned dashboard to see the risks behind each number": "Vídeo: elegir celdas de la matriz de riesgos del panel rediseñado para ver los riesgos que hay detrás de cada número",
 };
