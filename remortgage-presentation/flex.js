@@ -1,82 +1,187 @@
 const slides=[
  {
-  "title": "From pay later to an everyday credit card",
-  "notes": "The second project is Flex, Monzo's credit product. Between February 2023 and March 2025 I led design as it went from a pay-later product to an everyday credit card. I'll take you from the first research to what launched, and what happened after.\nI covered two squads, Growth and Core, and worked with a part-time researcher, marketing, legal and compliance. The new direction had to land in five months.",
+  "title": "Monzo Flex, from a ‘Buy Now Pay Later’ to a credit card",
+  "notes": "The second project is Flex. It's the story of how we turned Monzo Flex from a buy now, pay later product into a credit card. I led design from February 2023 to March 2025, and I'll take you from the first research to what launched.",
   "ask": []
  },
  {
-  "title": "By early 2023, Flex was 15% behind its customer goal",
-  "notes": "Flex was a hybrid. You got a credit limit, and for every purchase you chose a plan: pay in full, or spread it over monthly payments. You could also move a past transaction from your current account to Flex.\nAt the start of 2023 we were 15 percent behind our customer goal, and NPS was dropping. The goals for the year: 700,000 customers, average spend from £200 to £400 a month, which was our north star, and active customers from 47 to 60 percent.\nAnd underneath, Flex had to move to Monzo's new app framework. So this was also a full redesign.",
+  "title": "Monzo",
+  "notes": "But first, Monzo. It's a digital bank that lives entirely in an app.",
   "ask": []
  },
  {
-  "title": "The product said “pay later”. Customers already used credit cards.",
-  "notes": "I started with what we already knew. With our researcher and the data scientist, I put everything in one board for the team.\nThe growth squad had surveyed 1,924 eligible customers who had never tried Flex. 65 percent used credit cards, only 9 percent used buy now, pay later, and 71 percent already knew Flex. It just didn't sound like it was for them.\nSo our hypothesis was that positioning Flex as a credit card would bring in more customers. I audited every entry point and sign-up screen, and worked with marketing on new ways to frame the product. On the right, before and after.",
+  "title": "Monzo is a leading digital bank in the UK, serving over 10 million users",
+  "notes": "It's one of the leading digital banks in the UK, with over 10 million customers. The mission is to make money work for everyone. And the vision is a financial control centre: everything about your money in one place, even products Monzo doesn't offer yet.",
   "ask": []
  },
  {
-  "title": "A travel message got more applications. A credit card message got more customers.",
-  "notes": "Here's a call I think you'll find interesting. We tested two framings in the app: Flex for travel, and Flex as a credit card.\nTravel started 13 percent more applications, but ended with 7.7 percent fewer accounts. The credit card message brought 10.8 percent more applications, and 7.1 percent more accounts. It even worked better than the travel message with customers we had identified as travellers.\nSo we chose credit card. Interest isn't customers: what matters is who finishes. Then a campaign with credit card messaging, sent to 870,000 customers, created 20 percent more accounts than our best previous message.",
+  "title": "What is Monzo Flex?",
+  "notes": "Flex is Monzo's revolving credit product, launched in 2021. It sat between buy now, pay later and a credit card. You got a credit limit, and for each purchase you chose a plan. You could also move a past transaction from your current account to Flex, and spread the payments over time.\nIn November 2022 it had about 350,000 customers.",
+  "ask": []
+ },
+ {
+  "title": "In January 2023, Flex was 15% behind on acquisition goals",
+  "notes": "But in January 2023, Flex was 15 percent behind its acquisition goals, and NPS was going down.",
+  "ask": []
+ },
+ {
+  "title": "In Feb 2023, I started to work with Flex full time",
+  "notes": "Before me, two senior designers worked on Flex, one for the growth squad and one for the product squad. They both left in January 2023. I had already helped Flex part time, so in February I moved full time and covered both squads.\nI had five months to land the new vision, with two product teams, two PMs, eight engineers and a data scientist, a part-time researcher, marketing, legal and compliance.",
+  "ask": []
+ },
+ {
+  "title": "The goals",
+  "notes": "These were the goals.",
+  "ask": []
+ },
+ {
+  "title": "Project goals",
+  "notes": "700,000 customers by the end of 2023. Average spend from £200 to £400 a month, which was our north star. And active customers from 47 to 60 percent.\nAnd underneath, moving Flex to Monzo's new app framework. Before it, every new product started from scratch, which was slow for engineering. Flex was the first product to move.",
+  "ask": []
+ },
+ {
+  "title": "Where did we start?",
+  "notes": "So, where did we start?",
+  "ask": []
+ },
+ {
+  "title": "What do we already know…",
+  "notes": "I set up sessions with stakeholders, and paired with the researcher and the data scientist to put everything we knew in one board.\nFour things stood out. People found it hard to understand the two ways of using Flex: the card, or moving transactions. They saw it as buy now, pay later, and many didn't need it because they already had a credit card. They wanted to pay like they do with a credit card. And 80 percent of our target market used credit cards, while only 9 percent used buy now, pay later.",
   "ask": [
    [
     "Why not keep travel for travellers?",
-    "We tested that too: the credit card message worked better than the travel one even with customers we had identified as travellers. We kept a travel trigger-based experiment on the list, as long as it didn't push out credit experiments."
+    "We tested it: the credit card message worked better than the travel one even with customers we had identified as travellers."
    ]
   ]
  },
  {
-  "title": "New words weren’t enough. A credit card has to behave like one.",
-  "notes": "But new words weren't enough. A credit card has to behave like one. I audited the product and found different promises across screens, and confusing actions. For example, 'Pay off extra' looked like paying your balance. In reality, it paid one purchase at a time.\nThen our researcher and I interviewed 20 customers. Flex was built around single purchases, and people wanted to manage the account as a whole. 37 percent had more than 10 active purchases. To change what they paid each month, they had to open every purchase, one by one.\nThey also wanted to pay the balance in one go, and to set a default for card payments, because choosing a plan for every coffee was painful. What surprised me: payment behaviours explained people better than personas did.",
+  "title": "What do we already know… control and variant",
+  "notes": "So the hypothesis was that positioning Flex as a credit card was how we'd win the market. I audited our entry points and sign-up screens, and worked with marketing on new ways to frame the product. On the right, control and variant.\nSign-ups went up 45 percent against control, when the target was 25. Transaction engagement went up 5 percent, and spend 2 percent.\nWe also tested a travel framing. It started more applications, but ended in fewer accounts, so we chose credit card. Interest isn't customers.",
   "ask": []
  },
  {
-  "title": "A credit card with full visibility and control",
-  "notes": "After playing back the research with the team, the vision was a credit card with full visibility and control, that you can use every day. The card leads the experience, also from the Monzo home screen.\nBut we didn't agree on what to build first: fix payments, move to the new framework, or phase it differently. So I ran a prioritisation workshop. We scored every option on fit with the vision, business impact and engineering effort. The order: the new framework first, then card defaults, then the payment experience.\nI tested the first version. People liked the structure, but payments confused them: the screen tried to do too much. So I simplified it, took out what we wouldn't build yet, like insights and rewards, and ran a task-based usability test. In the second round, 9 out of 10 completed the tasks without help.",
+  "title": "How can we align the product with our customers’ credit card needs?",
+  "notes": "But new words weren't enough. How could the product itself meet our customers' credit card needs?",
+  "ask": []
+ },
+ {
+  "title": "What we already have…",
+  "notes": "I audited the full product. Different value propositions across screens, confusing actions and copy, and an odd architecture.\nFor example, the manage tab had 'Pay off extra', which made people think they could pay towards their balance. In reality, they had to pick one purchase at a time.",
+  "ask": []
+ },
+ {
+  "title": "Initial research",
+  "notes": "Then the researcher and I spoke with 20 customers, Flex users and credit card users. We wanted to understand the needs we weren't covering as a credit card, and the biggest pain points.",
+  "ask": []
+ },
+ {
+  "title": "Key needs",
+  "notes": "The main problem: we focused on single purchases, and people wanted to manage Flex as a whole. They wanted the numbers in one place, and to pay and edit at a Flex level. 37 percent had more than 10 active purchases, and to change their monthly payment they had to open each one.\nThey wanted a default for card payments, because choosing a plan for every purchase was painful. And they asked for balance transfers, deposits, joint accounts, and points and rewards.\nWhat surprised me: payment behaviours explained people better than personas.",
+  "ask": []
+ },
+ {
+  "title": "Exploring vision concepts for feedback and alignment",
+  "notes": "After playing the research back to the team, the vision was a credit card with full visibility and control over credit and transactions. One that helps you understand your situation, and that you can use every day.\nI shared ideas early, to discuss and align. And the card leads the experience, because it's visible from the Monzo home screen.",
+  "ask": []
+ },
+ {
+  "title": "But wait! What are we building first?",
+  "notes": "And with the vision came some friction.",
+  "ask": []
+ },
+ {
+  "title": "Misalignment within the team",
+  "notes": "We didn't know what to build first. Keep the current experience and fix payments, move to the new framework first, or split it into launch phases. We just couldn't agree.",
   "ask": [
    [
     "Was there friction with the design system?",
-    "A bit of guesswork at the start, because we were stress-testing what the new framework could do. And engineers wanted to be efficient, but I pushed for some principles, like showing people when they save interest."
+    "A bit of guesswork at the start, because we were stress-testing what the new framework could do. Engineers wanted to be efficient, and I pushed for some principles, like always showing people when they save interest."
    ]
   ]
  },
  {
-  "title": "One balance. A clearer starting point.",
-  "notes": "This is the account we launched. Research and product data ranked what people came to do, and that ranking decided what went where. First the balance, what's left to spend and the next payment. Then paying early, paying extra or clearing it all. Then recent purchases, with each breakdown on a second screen.\n40 percent of customers never tapped the manage tab, so everything moved into one view.\nOne thing I'm proud of: limit utilisation. We weren't building insights yet, but credit card users care about their credit score. I talked to other teams building progress bars, and convinced my team to ship it in the first version. After launch, 26 percent more people asked for a higher limit.",
+  "title": "Workshop together",
+  "notes": "So I ran a prioritisation workshop. Everything we had to decide on one side, and we voted on product vision, business impact, engineering effort and reusable components.\nAt the end we had an order: adopting the new framework, then card defaults, then the payment experience.",
   "ask": []
  },
  {
-  "title": "In credit, less friction isn’t always better.",
-  "notes": "Then repayments. You can now pay your whole balance, and see what's left and the interest you save.\nBut an extra payment doesn't always lower your next one, because we allocate it to the latest purchases. So I added a pause that says so before you pay. In credit, less friction isn't always better.\nEditing the monthly payment shipped later. I first imagined it in the same flow as paying, but it changed how money is allocated to future payments, and engineering needed a new algorithm. So we split it, and the clearer account reached customers first. Now one amount is the starting point, and you see the effect on interest and the months ahead before you confirm.",
+  "title": "Testing the vision (I)",
+  "notes": "I tested the first vision with 8 customers, to see if they understood the new structure, and payments at a Flex level. The reaction was positive. But when prompted, the numbers and the structure confused them. The screen was trying to do too much.",
   "ask": []
  },
  {
-  "title": "Choose once, not for every coffee",
-  "notes": "Card defaults were one of the most requested features. Now you choose once: pay in full, the minimum, or still choose every time. We couldn't offer pay in 3 or 6 as a default, because it was a revenue risk.\nAnd one call I made. 'Pay in full' first looked like the kindest default: no interest. But failed payments went up. I recommended stopping it and testing 'Choose for every purchase' first. Failed payments barely changed, and people kept the decision.",
-  "ask": []
- },
- {
-  "title": "One screen. Every financial situation.",
-  "notes": "A credit product can't show everyone the same thing. The account adapts to where each person is: not used yet, spending, payment due, missed payment, payment made.\nFor new customers I also designed suggested actions for the first 30 days, starting with the physical card, because people with a physical card engage more, and it helps the mental model of a credit card.",
+  "title": "Reshaping the vision (II)",
+  "notes": "So I simplified it, and removed what we wouldn't build yet, like insights and rewards. Then I ran a task-based test with 10 customers, asking them to do things with their payments.\n9 out of 10 completed the tasks without help. We found places to explain better, like what a default would do, and the difference between paying early and paying extra.",
   "ask": [
    [
-    "How did you design all the edge cases?",
-    "By sharing the work with engineering all the time. A credit product has many states, and some things we couldn't do, or had to rethink, came out of those conversations."
+    "How did you handle edge cases?",
+    "By sharing the work with engineering all the time. Some ideas we couldn't build, or had to rethink, came out of those conversations. The scenarios are in the Figma file."
    ]
   ]
  },
  {
-  "title": "A credit card that won awards",
-  "notes": "It worked. Retention went up 37 percent, and 15 percent fewer customers missed payments. Payment complaints fell by 20.5 percent and support contacts by 7 percent. Average spend went up 10 percent, and NPS 8 percent.\nFlex won Best Credit Card Provider at the British Bank Awards in 2023, and Best Credit Card at the Card and Payments Awards in 2024. And from Monzo's annual reports: balances went from £169 million when I joined to £553 million by March 2025, with over a million customers.\nThose are the team's results. Marketing and credit decisions played their part too.",
+  "title": "Life after the happy paths",
+  "notes": "Then all the scenarios, including when things don't go to plan. A credit product has many. Sharing early with engineering, we found what we couldn't do.\nWe couldn't merge paying the monthly payment with editing it, because editing needed a new allocation algorithm. So it came later. And paying towards the balance doesn't reduce your next monthly payment, so I added friction, so people know before they pay.",
   "ask": []
  },
  {
-  "title": "What I learned",
-  "notes": "Three things I take with me. One: interest isn't customers. Measure who finishes, not who starts. Two: in credit, friction can be care. The pause before an extra payment saves people from a surprise.\nThree: our hardest calls weren't only design. Easy options could cost Monzo money or put customers at risk. Next time I'd bring business and risk into the first workshop, and measure success by people staying on top of their payments, not only by sign-ups.\nWhat came next: money transfers, for the things a card can't pay for, and limit changes that never feel like a surprise. Happy to go into those.",
+  "title": "The end result",
+  "notes": "So, what did we launch?",
   "ask": []
  },
  {
-  "title": "Where would you like to go deeper?",
-  "notes": "And that's Flex. Thank you. I'm happy to go deeper into any part of it.",
+  "title": "Focus view",
+  "notes": "A new focus view. Everything in one view: the numbers first, then payments, then purchases, settings, feedback and documents. 40 percent of customers never tapped the manage tab, so we removed that step. I added subheadings so payments were clear, and progress bars on each purchase, because seeing debt go down feels good.\nAnd I convinced the team to ship limit utilisation in the first version, by working with other teams building progress bars. Credit card users care about it because of their credit score. After launch, 26 percent more people asked for a higher limit.\nThe screen adapts to every scenario: new customers, active ones, or people in arrears.",
+  "ask": []
+ },
+ {
+  "title": "Paying balance",
+  "notes": "People can now pay their balance, see how much is left, and whether they save interest. And because an extra payment doesn't cover the next monthly payment, the message and the friction here mattered.",
+  "ask": []
+ },
+ {
+  "title": "Edit payment",
+  "notes": "Editing the monthly payment came a bit later, with two entry points: next to the monthly payment, and in payment settings. You see if you save or add interest, and the effect on your future payments.\nThe principle: always the least interest for the customer. If you lower your payment, we change the shorter or cheaper plans first. If you raise it, we pay the plans with the most interest first.",
+  "ask": []
+ },
+ {
+  "title": "Card defaults",
+  "notes": "And the requested card defaults. You choose how card payments behave automatically, also during sign-up.\nA bit sad for me as a designer: we couldn't offer pay in 3 or 6 as a default, because it was a revenue risk. So it's pay in full, the minimum, or choose every time.",
+  "ask": []
+ },
+ {
+  "title": "Helping new users to understand the product",
+  "notes": "For new customers, suggested actions in the first 30 days. The physical card first, because people with a physical card engage more, and research showed it helps the mental model of a credit card. Then moving a transaction, so they learn both ways. Then Apple or Google Pay, to keep us top of mind.",
+  "ask": []
+ },
+ {
+  "title": "And a new map of Flex",
+  "notes": "Because we changed frameworks, I redesigned the whole product, fixed the copy, reviewed sign-up, and created one source of truth for every team. It set a precedent for the rest of the product teams.\nLater we also launched holds, money transfers and credit insights. Happy to talk about those.",
+  "ask": []
+ },
+ {
+  "title": "How it performed",
+  "notes": "So, how did it perform?",
+  "ask": []
+ },
+ {
+  "title": "Impact",
+  "notes": "Really well. Retention up 37 percent, 20.5 percent fewer payment complaints, engagement up 25, NPS up 8, 15 percent fewer customers missing payments, average spend up 10, 7 percent less support contact, and 26 percent more people increasing their limit.\nFlex was named best credit card provider in the UK, twice. It was product of the day on 11:FS Pulse, and people even comment on it on LinkedIn. These are the team's results.",
+  "ask": []
+ },
+ {
+  "title": "Learnings",
+  "notes": "What did I learn?",
+  "ask": []
+ },
+ {
+  "title": "What did I learn?",
+  "notes": "Different phases of research shaped the design, and aligned the team. Sharing with the core experience team all the time mattered: Flex was the first product on the new framework, so other teams could reuse what we built.\nRisk, compliance and legal had a key role, and working with them continuously helped us ship faster. Launching little by little, in cohorts of 50,000 customers, de-risked the launch and showed us corner cases. And we kept finding bugs after launch, so I documented them and shared them, to get them into the roadmap.",
+  "ask": []
+ },
+ {
+  "title": "If I had more time…",
+  "notes": "If I had more time: customers still struggle with credit card payment cycles, and get confused between their monthly payment and their total balance. Our colour contrast needed work, and we started an accessibility audit. And I'd bring insights into the experience: it could be a differentiator, and teach good habits around debt.\nAnd that's Flex. Thank you. I'm happy to go deeper into any part of it.",
   "ask": []
  }
 ];
