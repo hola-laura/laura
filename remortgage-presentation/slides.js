@@ -137,8 +137,25 @@ const slides=[
  },
  {
   "title": "We designed the onboarding to Habito",
-  "notes": "And then the partner changed. At the end of 2025 Monzo agreed to buy Habito, which is another mortgage broker, and from December our customers started going to Habito, and no longer to Better.\nWith Better we already had entry points and an onboarding. The first thing we had to do was move all of that to Habito.\nWe designed all the entry points.\nOf course, we had to adapt some things to how Habito worked operationally.\nWhat we could do was improve the value proposition page, which is the first page.\nThen, let's set up your Habito account. We use your Monzo email, so you can check your progress in Monzo or on Habito's website.\nThen Habito needed to know if you were remortgaging with someone else, to add them as a second applicant.\nAnd from there, we took you to Habito.\nDuring the onboarding there were several changes. At first we couldn't say Habito by Monzo publicly. Later we could, and we tested the copy quite a lot.\nI convinced the team to call it Habito by Monzo, in the journey, in the documents and in the emails, so customers know it's all one journey, linked to Monzo.\nA rebrand is still pending. But with all the product work, Habito by Monzo did the job.",
-  "ask": []
+  "notes": "And then the partner changed. At the end of 2025 Monzo agreed to buy Habito, which is another mortgage broker, and from December our customers started going to Habito, and no longer to Better.\nWith Better we already had entry points and an onboarding. So the onboarding to Habito was similar, but with what we had learned, a lot of it from research.\nOf course, we had to adapt some things to how Habito worked operationally.\nLearning number one: people thought we were a comparison site. We led with 'compare remortgage deals from over 100 lenders', so when a broker started asking about their finances, it felt like a trick.\nSo on the first page I led with the help of a mortgage expert instead: 'Find a mortgage with free expert help'. The before and after are behind this button. It went live on the 1st of May 2026, with the Habito by Monzo brand, and Ops told us they were getting fewer questions about comparing deals.\nThen, the Habito account. It's another broker, so it's another click-out. Nobody wants another account, so I framed it as a benefit: we use your Monzo email, and you can check your progress here or on Habito's website.\nThen Habito needed to know if you were remortgaging with someone else, to add them as a second applicant. We were working on moving these questions into the application form, out of the onboarding, but that was going to take longer.\nAnd from there, we took you to Habito.\nDuring the onboarding there were several changes. At first we couldn't say Habito by Monzo publicly. Later we could, and we tested the copy quite a lot.\nI convinced the team to call it Habito by Monzo, in the journey, in the documents and in the emails, so customers know it's all one journey, linked to Monzo.\nA rebrand is still pending. But with all the product work, Habito by Monzo did the job.",
+  "ask": [
+   [
+    "Who did the research in 2026, without a researcher?",
+    "I did. I worked from the answers to our in-house surveys and from customer support conversations."
+   ],
+   [
+    "Did the reframe move conversion?",
+    "Not significantly yet, the numbers are still early. The signal so far comes from Ops: fewer questions about comparing deals, which was the confusion we wanted to fix. It also launched together with the Habito by Monzo brand, so I couldn't separate the two effects cleanly anyway."
+   ],
+   [
+    "Why not just remove the lenders?",
+    "Choice still matters, so the number is still there, in the second line. What changed is the order: first the expert, then the lenders."
+   ],
+   [
+    "Is the screen on the right exactly what went live?",
+    "It's my design for Day 1. The copy kept changing after launch. In my audit that summer I flagged that the live headline could still read like a comparison site, so it's a fight you keep having."
+   ]
+  ]
  },
  {
   "title": "First, I became the customer",
@@ -210,28 +227,6 @@ const slides=[
    [
     "Which bet were you least sure about?",
     "The recommendation. Explaining a deal better only helps if the deal is good for that person, and that part wasn't ours to change."
-   ]
-  ]
- },
- {
-  "title": "People thought we were a comparison site",
-  "notes": "The first bet was about the experience break. And we knew something important.\nIt came from research, which at that point I was doing myself, using our in-house surveys and conversations with customer support. People thought they were using a comparison site.\nAnd that was our fault. If you look at the screen on the left, the first thing we said was 'compare remortgage deals from over 100 lenders'.\nSo when a broker started asking about their finances, it felt like a trick.\nSo I proposed two changes. One, change what we say first. We stop leading with the number of lenders, and we lead with the help of a mortgage expert.\nThat's my design on the right, 'Find a mortgage with free expert help'. And two, a simpler consent. We kept the commission disclosure that Compliance needed, but in plain words.\nThis went live on the 1st of May 2026, when the journey was relaunched with the Habito by Monzo brand. We called that Day 1.\nAnd Ops told us they were getting fewer questions about comparing deals, which was exactly the confusion we wanted to fix.",
-  "ask": [
-   [
-    "Who did the research in 2026, without a researcher?",
-    "I did. I worked from the answers to our in-house surveys and from customer support conversations."
-   ],
-   [
-    "Did the reframe move conversion?",
-    "Not significantly yet, the numbers are still early. The signal so far comes from Ops: fewer questions about comparing deals, which was the confusion we wanted to fix. It also launched together with the Habito by Monzo brand, so I couldn't separate the two effects cleanly anyway."
-   ],
-   [
-    "Why not just remove the lenders?",
-    "Choice still matters, so the number is still there, in the second line. What changed is the order: first the expert, then the lenders."
-   ],
-   [
-    "Is the screen on the right exactly what went live?",
-    "It's my design for Day 1. The copy kept changing after launch. In my audit that summer I flagged that the live headline could still read like a comparison site, so it's a fight you keep having."
    ]
   ]
  },
