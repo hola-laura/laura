@@ -64,7 +64,7 @@ const slides=[
    ],
    [
     "Did you reach the goal for accepted recommendations?",
-    "They went up. First with the push on day zero, and then with the view-only recommendation, about 5 percent. I don't have the final figure against the goal, so I won't quote one."
+    "They went up. First with the push on day zero, and then a little more with the view-only recommendation. I don't have the final figure against the goal, so I won't quote one."
    ]
   ]
  },
@@ -97,12 +97,16 @@ const slides=[
    [
     "Why land on the tracker and not on the recommendation?",
     "The tracker already existed, so we could test quickly. And it was working, it just wasn't easy to find. Showing the recommendation itself in Monzo came next, with the view-only version."
+   ],
+   [
+    "Was the push an A/B test?",
+    "I don't remember exactly how it was measured, so I won't claim more than what I know: after the push launched in May, more people accepted their recommendation."
    ]
   ]
  },
  {
   "title": "The recommendation, inside Monzo · live since 1 Nov 2026",
-  "notes": "Then we brought the recommendation itself into Monzo. A first version, where you could only see it, moved accepted recommendations about 5 percent. Positive, but not enough. People could see the deal, but they couldn't really decide.\nSo I redesigned it, in four rounds over about four months. This is version 2.1, made from my Figma frames. It starts in the tracker, your recommendation is ready.\nThen you get one screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons.\n'How this deal was calculated' shows the real cost over the whole deal, so you see more than the monthly payment. And you can see the deals we ruled out.\nBefore you commit you can see every detail, and you can accept, reject, or chat with your adviser, which opens Habito's chat. And the last screen tells you what happens next.\nThe numbers and some of the copy are placeholders. And this version went live on the 1st of November. I designed it, but it was built after I'd left, so I didn't get to see it live.",
+  "notes": "Then we brought the recommendation itself into Monzo. A first version, where you could only see it, moved accepted recommendations a little. Positive, but not enough. People could see the deal, but they couldn't really decide.\nSo I redesigned it, in four rounds over about four months. This is version 2.1, made from my Figma frames. It starts in the tracker, your recommendation is ready.\nThen you get one screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons.\n'How this deal was calculated' shows the real cost over the whole deal, so you see more than the monthly payment. And you can see the deals we ruled out.\nBefore you commit you can see every detail, and you can accept, reject, or chat with your adviser, which opens Habito's chat. And the last screen tells you what happens next.\nThe numbers and some of the copy are placeholders. And this version went live on the 1st of November. I designed it, but it was built after I'd left, so I didn't get to see it live.",
   "ask": [
    [
     "Was this built?",
