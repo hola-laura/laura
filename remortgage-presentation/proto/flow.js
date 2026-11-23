@@ -57,7 +57,7 @@
         {img: 'fve-04.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-confetti.png', left: 99.9, top: 110.0, width: 202.2, float: true}, step: 3, hold: 3200, go: 'fade'},
         {img: 'fve-05b.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-plant.png', left: 126.3, top: 110.0, width: 149.4, float: true}, step: 4, hold: 3200, go: 'fade'},
         {img: 'fve-06.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 5, hold: 3200, go: 'fade'},
-        {img: 'fve-07.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 6, hold: 3200, go: 'fade'},
+        {img: 'fve-07.png?v=2', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 6, hold: 3200, go: 'fade'},
         {img: 'fve-08.png', anim: {src: 'assets/mortgages/tracker/hourglass.webp', left: -16.5, top: 2.3, width: 422.4, keep: true}, step: 7, hold: 3200, go: 'fade'},
         {img: 'fve-09.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-confetti.png', left: 99.9, top: 110.0, width: 202.2, float: true}, step: 8, hold: 3200, go: 'fade'},
         {img: 'fve-10.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-umbrella.png', left: 117.0, top: 110.0, width: 167.9, float: true}, step: 9, hold: 3200, go: 'fade'},
@@ -84,7 +84,7 @@
         {img: 'd1c-account.png', step: 0, hold: 3200, tap: [201, 800], go: 'push'},
         {img: 'd1b-joint.png', step: 1, hold: 2800, tap: [200, 456], go: 'push'},
         {img: 'd1b-allset.png', anim: {src: 'remortgage-presentation/assets/proto/d1b-drinks.png', left: 126, top: 215.9, width: 150, float: true}, step: 2, hold: 3800, tap: [201, 800], go: 'fade'},
-        {img: 'd1-habito.png', step: 3, hold: 4200}
+        {img: 'd1-habito.png?v=2', step: 3, hold: 4200}
       ]
     },
     window: {
@@ -100,7 +100,7 @@
     deals: {
       steps: ['Find it at home', 'Estimated deals, by lender', 'Every cost of a deal', 'Change your details', 'How rates have moved', 'How rates are estimated'],
       beats: [
-        {img: 'ed-home.png', step: 0, hold: 2200, tap: [188, 642], go: 'push'},
+        {img: 'ed-home.png?v=2', step: 0, hold: 2200, tap: [188, 642], go: 'push'},
         {img: 'ed-deals.png', step: 1, hold: 2800, tap: [77, 618], go: 'up'},
         {img: 'ed-detail-sheet2.png', back: 'ed-deals-dim.png', head: 'ed-detail-head.png', step: 2, hold: 4200, scroll: 485, scrollMs: 2800, go: 'down'},
         {img: 'ed-deals.png', step: 1, hold: 900, tap: [201, 329], go: 'up'},
