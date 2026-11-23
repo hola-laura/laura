@@ -2046,4 +2046,8 @@ window.I18N_ES = {
 "Video: a mortgage found in Monzo, then setting a reminder for the date the deal ends": "Vídeo: Monzo encuentra la hipoteca y el cliente pone un recordatorio para el fin de la oferta",
 "Video: a long list of separate purchases collapses into the redesigned Flex account": "Vídeo: una lista larga de compras sueltas se convierte en la cuenta de Flex rediseñada",
 "Video: picking cells in the risk matrix of the redesigned dashboard to see the risks behind each number": "Vídeo: elegir celdas de la matriz de riesgos del panel rediseñado para ver los riesgos que hay detrás de cada número",
+"Video: the Your home screen in Monzo. A card says the deal ends in 4 months, then the screen scrolls through equity, mortgage tools and the timeline": "Vídeo: la pantalla Your home de Monzo. Una tarjeta avisa de que la oferta acaba en 4 meses y después la pantalla recorre el patrimonio, las herramientas de hipoteca y la cronología",
+"Video: live screen, find a mortgage with free expert help from Habito inside Monzo, with its animated illustration": "Vídeo: pantalla real, encuentra una hipoteca con la ayuda gratuita de un experto de Habito dentro de Monzo, con su ilustración animada",
+"Video: the Monzo home screen, tapping the Flex card": "Vídeo: la pantalla de inicio de Monzo, pulsando la tarjeta Flex",
+"Video: the Flex account, scrolling from the balance and payment cycle to payment settings and details": "Vídeo: la cuenta de Flex, bajando desde el saldo y el ciclo de pago hasta los ajustes de pago y los detalles",
 };
