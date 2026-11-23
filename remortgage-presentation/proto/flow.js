@@ -134,7 +134,7 @@
   screen.innerHTML = '<div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><div class="fl-layer"><img alt=""><img class="fl-anim" alt="" hidden></div><i class="fl-tap"></i>';
   const layers = [...screen.querySelectorAll('.fl-layer')];
   const tapDot = screen.querySelector('.fl-tap');
-  flow.beats.forEach(beat => { new Image().src = A + beat.img; if (beat.anim && (beat.anim.float || beat.anim.keep)) new Image().src = beat.anim.src; });
+  flow.beats.forEach(beat => { new Image().src = A + beat.img + '?t=2'; if (beat.anim && (beat.anim.float || beat.anim.keep)) new Image().src = beat.anim.src; });
 
   let current = 0, front = 0, playing = false, timers = [];
   const later = (fn, ms) => timers.push(setTimeout(fn, ms));
@@ -149,7 +149,7 @@
     const incoming = layers[1 - front], outgoing = layers[front];
     const img = incoming.querySelector('img');
     incoming.classList.add('no-anim');
-    img.src = A + beat.img;
+    img.src = A + beat.img + '?t=2';
     incoming.style.background = beat.back ? `#f2f8f3 url(${A + beat.back}) top center / 402px auto no-repeat` : '';
     incoming.dataset.back = beat.back ? '1' : '';
     const anim = incoming.querySelector('.fl-anim');
