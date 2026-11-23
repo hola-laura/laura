@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Presentations · Laura Sampedro</title>
+<style>
+@font-face{font-family:"Onest";font-weight:400;font-display:swap;src:url(assets/fonts/onest-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Onest";font-weight:600;font-display:swap;src:url(assets/fonts/onest-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Onest";font-weight:800;font-display:swap;src:url(assets/fonts/onest-latin-800-normal.woff2) format("woff2")}
+:root{--navy:#112231;--card:#1b3346;--text:#f2f8f3;--soft:#b8c4cc;--coral:#ff4f40;--lime:#d6f25e;--mint:#7be6be;--line:rgba(242,248,243,.14)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--navy);color:var(--text);font-family:"Onest",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:980px;margin:0 auto;padding:64px 20px 80px}
+.kicker{color:var(--coral);font-weight:800;font-size:20px;margin:0}
+h1{font-size:52px;line-height:1.05;letter-spacing:-.02em;margin:14px 0 12px;font-weight:800}
+.lead{color:var(--soft);font-size:19px;line-height:1.5;margin:0 0 40px;max-width:720px}
+.co{background:var(--card);border-radius:24px;padding:28px;margin-top:18px}
+.co-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 16px;margin-bottom:6px}
+.co h2{font-size:30px;margin:0;font-weight:800;letter-spacing:-.01em}
+.tag{font-size:14px;font-weight:600;padding:5px 12px;border-radius:999px;border:1.5px solid var(--line);color:var(--soft)}
+.co p.what{color:var(--soft);margin:6px 0 18px;font-size:17px;line-height:1.45}
+.deck{border-top:1px solid var(--line);padding:16px 0 4px;display:grid;grid-template-columns:1fr auto;gap:10px 16px;align-items:center}
+.deck h3{margin:0;font-size:19px;font-weight:600}
+.deck h3 small{display:block;color:var(--soft);font-weight:400;font-size:15px;margin-top:3px}
+.btns{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+a.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:10px 16px;border-radius:999px;color:var(--navy);background:var(--lime);white-space:nowrap}
+a.btn.ghost{background:transparent;color:var(--text);border:1.5px solid rgba(242,248,243,.4)}
+a.btn:hover{filter:brightness(1.06)}
+.notes{margin-top:30px;color:var(--soft);font-size:16px;line-height:1.5}
+.notes a{color:var(--mint)}
+@media (max-width:640px){h1{font-size:38px}.deck{grid-template-columns:1fr}.btns{justify-content:flex-start}}
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">Laura Sampedro</p>
+  <h1>Presentations</h1>
+  <p class="lead">One version per company. “With notes” has the speaker notes; “Without notes” is the one to share on screen.</p>
+
+  <section class="co">
+    <div class="co-head"><h2>Deel</h2><span class="tag">Benefits · 50 min</span></div>
+    <p class="what">Remortgaging at Monzo, the full case study, with AI and the Compliance checker.</p>
+    <div class="deck"><h3>Remortgaging at Monzo<small>29 slides · about 50 min</small></h3>
+      <div class="btns"><a class="btn" href="present.html">Without notes</a><a class="btn ghost" href="index.html">With notes</a></div></div>
+  </section>
+
+  <section class="co">
+    <div class="co-head"><h2>Airalo</h2><span class="tag">Senior Product Designer · two projects</span></div>
+    <p class="what">Two projects taken from early conception to a launched product.</p>
+    <div class="deck"><h3>1 · Remortgaging at Monzo<small>14 slides · about 15 min</small></h3>
+      <div class="btns"><a class="btn" href="airalo-present.html">Without notes</a><a class="btn ghost" href="airalo.html">With notes</a></div></div>
+    <div class="deck"><h3>2 · Monzo Flex: from pay later to a credit card<small>13 slides · about 12–15 min</small></h3>
+      <div class="btns"><a class="btn" href="flex-present.html">Without notes</a><a class="btn ghost" href="flex.html">With notes</a></div></div>
+  </section>
+
+  <section class="co">
+    <div class="co-head"><h2>Cleo</h2><span class="tag">Case study · 25 min</span></div>
+    <p class="what">Remortgaging at Monzo, with more on insights, iteration, prototypes and how we measured.</p>
+    <div class="deck"><h3>Remortgaging at Monzo<small>21 slides · about 25 min</small></h3>
+      <div class="btns"><a class="btn" href="cleo-present.html">Without notes</a><a class="btn ghost" href="cleo.html">With notes</a></div></div>
+  </section>
+
+  <section class="co">
+    <div class="co-head"><h2>Other</h2></div>
+    <div class="deck"><h3>Remortgaging · 15 min, no company<small>The earlier short version</small></h3>
+      <div class="btns"><a class="btn" href="15min-present.html">Without notes</a><a class="btn ghost" href="15min.html">With notes</a></div></div>
+  </section>
+
+  <p class="notes">Speaker notes in English and Spanish, per company: <a href="https://claude.ai/artifact/KRCfBzovTKxSeuufkHWydF">notes doc</a> (only Laura can open it).</p>
+</main>
+</body>
+</html>
