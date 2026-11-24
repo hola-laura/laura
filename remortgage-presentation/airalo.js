@@ -26,7 +26,7 @@ const slides=[
  },
  {
   "title": "The whole remortgage, without leaving Monzo",
-  "notes": "I turned that into a design vision: one journey, inside Monzo, that adapts to the person. The application comes into the app, already filled in with what we know. People choose how they talk to an adviser. And they always know what happens next.\nWhat's playing here is the vision, straight from my Figma frames. I planned the discovery phase, and I ran the vision workshop with our researcher.\nIt was a direction for the team. We weren't promising to build everything. But it made one thing clear: to give customers what they wanted, we needed to own much more of the journey than a referral partner allowed. It became part of the case for changing our partnership model.",
+  "notes": "I turned that into a design vision: one journey, inside Monzo, that adapts to the person. The application comes into the app, already filled in with what we know. People choose how they talk to an adviser. And they always know what happens next.\nI planned the discovery phase, and I ran the vision workshop with our researcher.\nIt was a direction for the team. We weren't promising to build everything. But it made one thing clear: to give customers what they wanted, we needed to own much more of the journey than a referral partner allowed. It became part of the case for changing our partnership model.",
   "ask": [
    [
     "So your vision made Monzo buy Habito?",
@@ -102,7 +102,7 @@ const slides=[
  },
  {
   "title": "The recommendation, inside Monzo",
-  "notes": "This is version 2.1, made from my Figma frames. I'll tap through it.\nOne screen with the deal and what you pay every month. 'Why this is your best deal' gives you the mortgage expert's reasons. 'How this deal was calculated' shows the real cost over the whole deal, and the deals we ruled out. Then you can accept, reject, or chat with your mortgage expert.\nIt went live on the 1st of November. I designed it, but it was built after I'd left.\nThe live data will show if more people accept. To know if they understood it, I'd ask people to explain in their own words why that deal was chosen.",
+  "notes": "This is version 2.1. I'll tap through it.\nOne screen with the deal and what you pay every month. 'Why this is your best deal' gives you the mortgage expert's reasons. 'How this deal was calculated' shows the real cost over the whole deal, and the deals we ruled out. Then you can accept, reject, or chat with your mortgage expert.\nIt went live on the 1st of November. I designed it, but it was built after I'd left.\nThe live data will show if more people accept. To know if they understood it, I'd ask people to explain in their own words why that deal was chosen.",
   "ask": [
    [
     "Was this built?",

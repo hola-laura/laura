@@ -23,16 +23,16 @@
       body: c('Get personalised advice from a Habito mortgage expert who’ll recommend your best deal and answer any questions.', 'Recibe asesoramiento de un experto de Habito que te recomendará la mejor oferta y resolverá tus dudas.'),
       cta: c('Chat on Habito.com', 'Chatear en Habito.com')},
     {label: c('Sourcing deals', 'Buscando ofertas'), you: false, bar: 25, eta: c('It’ll take 2 days', 'Tardará 2 días'), expert: true,
-      title: c('Your adviser’s finding your best deal', 'Tu asesor está buscando tu mejor oferta'), body: notify},
+      title: c('Your mortgage expert’s finding your best deal', 'Tu asesor está buscando tu mejor oferta'), body: notify},
     {label: c('Recommendation', 'Recomendación'), you: true, bar: 38, message: true,
       title: c('Review your mortgage recommendation', 'Revisa tu recomendación hipotecaria'),
-      body: c('Your adviser found your best deal from 90+ lenders.', 'Tu asesor encontró tu mejor oferta entre más de 90 entidades.'),
+      body: c('Your mortgage expert found your best deal from 90+ lenders.', 'Tu asesor encontró tu mejor oferta entre más de 90 entidades.'),
       cta: c('Review', 'Revisar')},
     {label: c('Documents', 'Documentos'), you: true, bar: 50, expert: true, deal: true,
-      title: c('Your adviser needs a couple of things from you', 'Tu asesor necesita un par de cosas de ti'),
+      title: c('Your mortgage expert needs a couple of things from you', 'Tu asesor necesita un par de cosas de ti'),
       cta: c('See what’s needed', 'Ver qué falta')},
     {label: c('Checking documents', 'Revisión de documentos'), you: false, bar: 62, expert: true, deal: true,
-      title: c('Your adviser is checking your answers and documents', 'Tu asesor está revisando tus respuestas y documentos'), body: notify},
+      title: c('Your mortgage expert is checking your answers and documents', 'Tu asesor está revisando tus respuestas y documentos'), body: notify},
     {label: c('Submitting', 'Envío de la solicitud'), you: false, bar: 75, expert: true, deal: true,
       title: c('Habito is submitting your application to your lender', 'Habito está enviando tu solicitud a tu entidad'), body: notify},
     {label: c('Lender review', 'Revisión de la entidad'), you: false, bar: 88, eta: c('It’ll take 2–4 weeks', 'Tardará de 2 a 4 semanas'), expert: true, deal: true,
@@ -53,7 +53,7 @@
   screen.innerHTML = `
     <div class="tk-top"><span class="tk-glass"><img src="${A}back.svg" alt="" width="28" height="28"></span><span class="tk-glass"><img src="${A}bell.svg" alt="" width="28" height="28"></span></div>
     <div class="tk-body">
-      <div class="tk-art"><img src="${A}${reduced ? 'hourglass-still.png' : 'hourglass.webp'}" alt="" width="366" height="273"></div>
+      <div class="tk-art"><img src="${A}${reduced ? 'hourglass-still.png' : 'hourglass-slow.webp'}" alt="" width="366" height="273"></div>
       <div class="tk-card tk-message" data-tk="message"><span class="tk-logo"><img src="${A}habito.svg" alt="" width="32" height="32"></span><span class="tk-text"><b class="tk-accent">${c('New message', 'Nuevo mensaje')}</b><small>${c('Your mortgage expert', 'Tu experto hipotecario')}</small></span><span class="tk-pill"><img src="${A}chat.svg" alt="" width="20" height="20">${c('Reply', 'Responder')}</span></div>
       <p class="tk-foot" data-tk="message-foot">${c('Chatting on Habito.com', 'Chateando en Habito.com')}</p>
       <div class="tk-card tk-status">
@@ -63,9 +63,9 @@
       </div>
       <div class="tk-card tk-expert" data-tk="expert"><span class="tk-logo"><img src="${A}habito.svg" alt="" width="32" height="32"></span><span class="tk-text">${c('Your mortgage expert', 'Tu experto hipotecario')}<small>${c('Ask any questions you have', 'Pregunta lo que necesites')}</small></span><span class="tk-pill"><img src="${A}chat.svg" alt="" width="20" height="20">${c('Chat', 'Chat')}</span></div>
       <p class="tk-foot" data-tk="expert-foot">${c('Chatting on Habito.com', 'Chateando en Habito.com')}</p>
-      <div class="tk-card tk-deal" data-tk="deal"><div class="tk-head"><b>${c('Your chosen deal', 'Tu oferta elegida')}<em> • ${c('2 years fixed', 'Fijo a 2 años')}</em></b></div>
-        <div class="tk-row"><span class="tk-bank" aria-hidden="true"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M10 2 2 6v2h16V6l-8-4ZM4 9h2v6H4V9Zm5 0h2v6H9V9Zm5 0h2v6h-2V9ZM2 16h16v2H2v-2Z" fill="currentColor"/></svg></span><span class="tk-text">3.2%<small>${c('Your lender', 'Tu entidad')}</small></span><span class="tk-money"><small>£</small>240,000</span></div>
-        <div class="tk-row"><span class="tk-icon tk-blue"><img src="${A}info.svg" alt="" width="24" height="24"></span><span class="tk-text">${c('Your adviser will let you know if a cheaper deal becomes available', 'Tu asesor te avisará si aparece una oferta más barata')}</span></div></div>
+      <div class="tk-card tk-deal" data-tk="deal"><div class="tk-head"><b>${c('Your chosen deal', 'Tu oferta elegida')}<em> • ${c('5 years fixed', 'Fijo a 5 años')}</em></b></div>
+        <div class="tk-row"><span class="tk-logo"><img src="${A}natwest.png?v=1" alt="" width="32" height="32" style="border-radius:8px"></span><span class="tk-text">4.29%<small>NatWest</small></span><span class="tk-money"><small>£</small>266,500</span></div>
+        <div class="tk-row"><span class="tk-icon tk-blue"><img src="${A}info.svg" alt="" width="24" height="24"></span><span class="tk-text">${c('Your mortgage expert will let you know if a cheaper deal becomes available', 'Tu experto hipotecario te avisará si aparece una oferta más barata')}</span></div></div>
       <div class="tk-card tk-cancel"><span class="tk-icon tk-red"><img src="${A}close.svg" alt="" width="24" height="24"></span><span class="tk-text">${c('Cancel mortgage application', 'Cancelar solicitud hipotecaria')}</span><span class="tk-chev">›</span></div>
     </div>
     <div class="tk-done" data-tk="done"><img src="${A}confetti.svg" alt="" width="143" height="120"><p>${c('Congratulations, your application is complete', 'Enhorabuena, tu solicitud está completa')}</p><span class="tk-ok">Ok</span></div>`;
