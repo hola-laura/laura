@@ -62,7 +62,7 @@ const slides=[
  },
  {
   "title": "In 2025 and 2026, I led design for remortgaging through a strategy reset and an acquisition",
-  "notes": "This is the part I want to focus on: 2025 and 2026, when we went through two big changes. First we reset the strategy, and then there was an acquisition.\nIn 2025 I led the vision, that's the first screen you see here. Then I designed the growth experiments to reach more people, like rates for everyone and rate alerts. I'll tell you about them in a second.\nThen came Habito, a mortgage broker that has been part of the Monzo group since April 2026. That year I designed how its journey came into our app. The second screen is one part of that product today.\nThe team was one squad: a product manager, six engineers, a data scientist, and me, the only product designer. We worked a lot with Operations and Compliance, and we had a user researcher until the vision was done.\nLet's start with how the strategy changed. Then I'll go through the main problems we worked on, one by one, and what I designed for each.",
+  "notes": "This is the part I want to focus on in this case study: 2025 and 2026, when we went through two big changes. First we reset the strategy, and then there was an acquisition.\nIn 2025 I led the vision, which took a couple of months. I'll tell you about it in a second.\nThen came Habito, a mortgage broker that has been part of the Monzo group since April 2026. We, the team at Monzo, knew about it a bit earlier. That year, I designed how its journey came into our app. The second screen you see is from that.\nLet's start with how the strategy changed.",
   "ask": []
  },
  {
