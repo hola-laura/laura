@@ -159,7 +159,7 @@ const slides=[
  },
  {
   "title": "No design files at Habito, so I became the customer",
-  "notes": "Habito didn't have a design team, so there were no design files of their journey.\nSo before we built the tracker, I did the journey myself. I applied through Habito as a real customer, from the first tap in Monzo until I got the mortgage illustration.\nAnd I saved every screen, every email and every document in one page. That's the wall you see here. And doing that, I saw three things that no dashboard was showing us.\nHalfway through, you get a second account and a second brand. You have to fill in a long form before you get anything back.\nAnd the recommendation and the messages are on Habito's website and in emails branded Habito, they're not in Monzo. It gave the team one picture of the journey as it was, that everybody could look at.",
+  "notes": "Habito didn't have a design team, so there were no design files of their journey.\nSo to design the onboarding, the tracker and everything that came after, I needed to know the journey customers were completing in Habito. So I did the journey myself. I applied through Habito as a real customer, from the first step in Monzo until I got the mortgage illustration.\nI saved every screen, every email and every document in one page. That's the wall you see here.\nAnd by doing that, I saw the terminology they used, how they delivered the recommendation, and how they talked to customers. So we could see how to bring that into our app, and also the gaps: operational ones, and gaps in the Habito experience.\nAnd of course, it gave the team one picture of the journey as it was, that everybody could look at.",
   "ask": [
    [
     "Why do it yourself, and not rely on research?",
