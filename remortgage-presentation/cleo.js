@@ -157,7 +157,7 @@ const slides=[
  },
  {
   "title": "The recommendation, inside Monzo",
-  "notes": "This is version 2.1, made from my Figma frames. It starts in the tracker: your recommendation is ready.\nOne screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons. 'How this deal was calculated' shows the real cost over the whole deal, and the deals we ruled out. Then you can accept, reject, or chat with your adviser.\nIt went live on the 1st of November. I designed it, but it was built after I'd left. The numbers and some of the copy are placeholders.\nThe live data will show if more people accept. To know if they understood it, I'd ask people to explain in their own words why that deal was chosen.",
+  "notes": "This is version 2.1, made from my Figma frames. I'll tap through it.\nOne screen with the deal and what you pay every month. 'Why this is your best deal' gives you the mortgage expert's reasons. 'How this deal was calculated' shows the real cost over the whole deal, and the deals we ruled out. Then you can accept, reject, or chat with your mortgage expert.\nIt went live on the 1st of November. I designed it, but it was built after I'd left.\nThe live data will show if more people accept. To know if they understood it, I'd ask people to explain in their own words why that deal was chosen.",
   "ask": [
    [
     "Was this built?",
