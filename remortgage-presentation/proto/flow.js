@@ -70,9 +70,9 @@
         {img: 'vz-deals.png?v=9', anim: {src: 'remortgage-presentation/assets/anim/house-light.webp', left: 51, top: 132, width: 300}, step: 0, hold: 3000, tap: [201, 838], go: 'push'},
         {img: 'vz-choose.png?v=9', step: 1, hold: 2800, tap: [133, 740], go: 'push'},
         {img: 'vz-look.png?v=9', step: 2, hold: 2400, tap: [184, 373], go: 'push'},
-        {img: 'vz-review.png', step: 2, hold: 3600, scroll: 751, scrollMs: 2600, tap: [201, 805], go: 'push'},
+        {img: 'vz-review.png?v=9', step: 2, hold: 3600, scroll: 751, scrollMs: 2600, tap: [201, 805], go: 'push'},
         {img: 'vz-recs.png?v=9', step: 3, hold: 2800, tap: [84, 692], go: 'push'},
-        {img: 'vz-deal.png', step: 4, hold: 4200, scroll: 1390, scrollMs: 3200, tap: [201, 741], go: 'push'},
+        {img: 'vz-deal.png?v=9', step: 4, hold: 4200, scroll: 1390, scrollMs: 3200, tap: [201, 741], go: 'push'},
         {img: 'vz-docs.png', step: 5, hold: 2400, tap: [194, 497], go: 'push'},
         {img: 'vz-idkind.png', step: 5, hold: 2000, tap: [102, 300], go: 'fade'},
         {img: 'vz-tracker.png?v=9', step: 6, hold: 4200, scroll: 300, scrollMs: 1800}
