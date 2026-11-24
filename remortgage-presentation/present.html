@@ -9,11 +9,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Fragment+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=245">
-<link rel="stylesheet" href="deck.css?v=245">
-<link rel="stylesheet" href="monzo.css?v=245">
+<link rel="stylesheet" href="styles.css?v=246">
+<link rel="stylesheet" href="deck.css?v=246">
+<link rel="stylesheet" href="monzo.css?v=246">
 <link rel="preconnect" href="https://images.ctfassets.net">
-<script src="present.js?v=245" defer></script>
+<script src="present.js?v=246" defer></script>
 <style>
 body.present{--bar:52px;background:#112231;grid-template-rows:minmax(0,1fr) auto;height:100svh;min-height:0;overflow:hidden}
 .present .topbar,.present .slide-caption,.present .arrow,.present .notes-bottom,.present .notes-sheet{display:none!important}
@@ -529,7 +529,6 @@ body.present{--bar:52px;background:#112231;grid-template-rows:minmax(0,1fr) auto
       <span id="bottom-count">01 <i>/</i> 22</span>
       <button class="small-arrow" id="next-bottom" type="button" aria-label="Next slide">→</button>
       <button class="notes-bottom" id="open-notes-bottom" type="button">Open notes <span aria-hidden="true">↗</span></button>
-      <button class="fs-btn" id="fs-toggle" type="button">Full screen ⤢</button>
     </div>
   </div>
 </footer>
@@ -544,12 +543,5 @@ body.present{--bar:52px;background:#112231;grid-template-rows:minmax(0,1fr) auto
     <div class="notes-content" id="notes-content" tabindex="0"></div>
   </div>
 </dialog>
-<script>
-(()=>{const b=document.getElementById("fs-toggle");if(!b)return;
-const set=()=>{b.textContent=document.fullscreenElement?"Exit full screen":"Full screen ⤢"};
-const t=()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen()};
-b.addEventListener("click",t);document.addEventListener("fullscreenchange",set);
-document.addEventListener("keydown",e=>{if((e.key==="f"||e.key==="F")&&!e.metaKey&&!e.ctrlKey&&!e.altKey&&!document.querySelector("dialog[open]"))t()});set()})();
-</script>
 </body>
 </html>
