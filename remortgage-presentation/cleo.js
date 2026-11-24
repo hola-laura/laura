@@ -119,27 +119,13 @@ const slides=[
   ]
  },
  {
-  "title": "I treated every decision as a bet",
-  "notes": "I treated every decision as a bet. For each one I wrote down what we believed and where that came from, how we'd know it was working, and what would make me change direction.\nFor example, for the recommendation: if people read every reason and still don't accept, then the problem is the deal itself. And for the application: if more people finish the form but accepted recommendations don't move, the form wasn't the real problem.\nThe four bets have two goals. How we explain the product and the application form help more people get to a recommendation. The recommendation and the adviser help more people accept it.",
-  "ask": [
-   [
-    "Did the team define these, or you?",
-    "The main metric and the kill switch were agreed as a team. The early signals for each design are how I framed them, so that every design had a way to be proven wrong."
-   ],
-   [
-    "Which bet were you least sure about?",
-    "The recommendation. Explaining a deal better only helps if the deal is good for that person, and that part wasn't ours to change."
-   ]
-  ]
- },
- {
   "title": "We shipped the simplest tracker first",
   "notes": "The first progress tracker shows how I work with trade-offs. The first option was the ideal one: your steps, your deals and your expert in one place. But it depended on data we couldn't get. Not every step Habito gave us could be tracked from our side.\nSo with engineering we made a second proposal, only with the states we could track accurately. Documents mattered to customers, but we couldn't reliably tell whether Habito had received them. I suggested showing documents as an upcoming step. That let us explain what was ahead without telling someone their paperwork was progressing when we didn't know.\nEvery state needed its own screen and copy, so it was slower to build. We shipped the third option: Habito's own steps, with a link to the exact step on their website, because it was the one we could launch on time.\nCustomers found it useful, but it didn't move the metrics. A tracker without the rest of the journey mostly reduces the stress of waiting. The decision I'd make again: ship it small. It showed us early how hard the data part was.",
   "ask": []
  },
  {
   "title": "A push the moment the recommendation is ready",
-  "notes": "The first bet on the decision was the quickest one. When your recommendation was ready, the only reminder was an email from Habito. So we sent a push from Monzo on day zero, the moment it's ready, when people care the most.\nI explored where the push should land. Option A was a short screen in between, saying Habito is regulated and free. Two taps and a whole screen to build trust, but it was new to build. Option B was the progress tracker, which already existed. Three taps and more distraction, but nothing new to build.\nOn paper I preferred A, because it was the cleaner test. We shipped B in May, because we could test it much faster. We measured it on accepted recommendations, and they went up. I don't remember the exact number, so I won't give you one.\nThe tracker was already live, but it was hard to find. The push took people straight to it, so more people got there, and more of them accepted.",
+  "notes": "The first thing we did on the decision was the quickest one. When your recommendation was ready, the only reminder was an email from Habito. So we sent a push from Monzo on day zero, the moment it's ready, when people care the most.\nI explored where the push should land. Option A was a short screen in between, saying Habito is regulated and free. Two taps and a whole screen to build trust, but it was new to build. Option B was the progress tracker, which already existed. Three taps and more distraction, but nothing new to build.\nOn paper I preferred A, because it was the cleaner test. We shipped B in May, because we could test it much faster. We measured it on accepted recommendations, and they went up. I don't remember the exact number, so I won't give you one.\nThe tracker was already live, but it was hard to find. The push took people straight to it, so more people got there, and more of them accepted.",
   "ask": [
    [
     "Did the push on day zero work?",
@@ -189,7 +175,7 @@ const slides=[
  },
  {
   "title": "Move the application into Monzo, pre-filled",
-  "notes": "The other bet I'll show you is the application form, the most fragmented part of the journey. It lived on the broker's website, and it was long. With Better, in 2025, almost half of people dropped out there.\nI designed the application inside Monzo, with two decisions I care about. Pre-fill: you confirm what Monzo already knows, instead of typing it again. And saving your progress, because nobody has all their mortgage details ready in one go. That one is in the next version.\nWe measure it step by step, so the team can see exactly where people stop. The first version went live at the end of September, tested with half of our customers. The first signal is good, but the data isn't mature yet.\nAnd the next version is designed, on the right. It splits the form into sections and tells you what you'll need before you start.",
+  "notes": "Another piece I'll show you is the application form, the most fragmented part of the journey. It lived on the broker's website, and it was long. With Better, in 2025, almost half of people dropped out there.\nI designed the application inside Monzo, with two decisions I care about. Pre-fill: you confirm what Monzo already knows, instead of typing it again. And saving your progress, because nobody has all their mortgage details ready in one go. That one is in the next version.\nWe measure it step by step, so the team can see exactly where people stop. The first version went live at the end of September, tested with half of our customers. The first signal is good, but the data isn't mature yet.\nAnd the next version is designed, on the right. It splits the form into sections and tells you what you'll need before you start.",
   "ask": [
    [
     "Is the application live?",
