@@ -30,7 +30,7 @@ const slides=[
  },
  {
   "title": "Reach people before they're ready to remortgage",
-  "notes": "We couldn't build the vision overnight, and we still had a revenue target. So while we moved more of the journey into Monzo step by step, we worked on what we could control now, which was reach.\nMost people who were about to remortgage hadn't connected their mortgage, so we couldn't see them. At the time, about 365,000 customers had connected one, and more than two million had one we couldn't see.\nWhat if we gave them a tool to see mortgage rates? From there they could connect. And we could capture their deal-end date, to reach them at the right moment, even if they never connected.\nFor the result. Between late 2025 and spring 2026, all our referrals together beat our referral goal by about 75 percent. That's around 7,500 referrals, when the goal was 4,300. New mortgage connections went from about 200 to about 1,000 a day. And rate alerts were behind 44 percent of recent referrals.\nSo the hypothesis was right. But keep one thing in mind for later. A referral is only the first step. It isn't a mortgage yet.",
+  "notes": "We couldn't build the vision overnight, and we still had a revenue target. So while we moved more of the journey into Monzo step by step, we worked on what we could control now, which was reach.\nMost people who were about to remortgage hadn't connected their mortgage, so we couldn't see them. At the time, about 365,000 customers had connected one, and more than two million had one we couldn't see.\nWhat if we gave them a tool to see mortgage rates? From there they could connect. And we could capture their deal-end date, to reach them at the right moment, even if they never connected. That's the first screen.\nFor the result. Between late 2025 and spring 2026, all our referrals together beat our referral goal by about 75 percent. That's around 7,500 referrals, when the goal was 4,300. New mortgage connections went from about 200 to about 1,000 a day. And rate alerts were behind 44 percent of recent referrals.\nSo the hypothesis was right. But keep one thing in mind for later. A referral is only the first step. It isn't a mortgage yet.",
   "ask": [
    [
     "Is the 75 percent your result?",
@@ -43,7 +43,7 @@ const slides=[
   ]
  },
  {
-  "title": "More referrals didn't mean more mortgages",
+  "title": "Referrals beat the plan, the later stages didn’t",
   "notes": "And then we started with Habito. At the end of 2025 Monzo agreed to buy Habito, which is another mortgage broker. From December we sent customers to both partners, Better and Habito, and in October 2026 we stopped sending them to Better.\nBut more referrals didn't mean more mortgages. Remember that the money only arrives when a mortgage completes, and that can be months after the referral.\nSo the biggest gap against plan was between receiving a recommendation and submitting to a lender.\nSo we chose acceptance as an earlier signal we could act on, something we could read in weeks. A recommendation is the deal that the adviser proposes to you, and when you accept it, that's the first moment you really commit.\nAnd what surprised me is that people dropped after the recommendation, when they should be most motivated. These were people who had filled in the whole questionnaire, which brokers call the fact-find, and talked to an adviser, and then they didn't go ahead.\nSo for me this is the turning point of the whole story.\nUntil here, the question was how do we send more people. From here, the question is why people who already have a recommendation don't go ahead.",
   "ask": [
    [
@@ -105,7 +105,7 @@ const slides=[
   ]
  },
  {
-  "title": "The recommendation, inside Monzo · live since 1 Nov 2026",
+  "title": "The recommendation, inside Monzo",
   "notes": "Then we brought the recommendation itself into Monzo. A first version, where you could only see it, moved accepted recommendations a little. Positive, but not enough. People could see the deal, but they couldn't really decide.\nSo I redesigned it, in four rounds over about four months. This is version 2.1, made from my Figma frames. It starts in the tracker, your recommendation is ready.\nThen you get one screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons.\n'How this deal was calculated' shows the real cost over the whole deal, so you see more than the monthly payment. And you can see the deals we ruled out.\nBefore you commit you can see every detail, and you can accept, reject, or chat with your adviser, which opens Habito's chat. And the last screen tells you what happens next.\nThe numbers and some of the copy are placeholders. And this version went live on the 1st of November. I designed it, but it was built after I'd left, so I didn't get to see it live.",
   "ask": [
    [

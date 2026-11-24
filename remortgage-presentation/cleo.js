@@ -53,7 +53,7 @@ const slides=[
   ]
  },
  {
-  "title": "We designed the onboarding to Habito",
+  "title": "I designed the onboarding to Habito",
   "notes": "At the end of 2025 Monzo agreed to buy Habito, another mortgage broker. From December we sent customers to both partners, and in October 2026 we stopped sending them to Better.\nWe didn't have time to redesign and test the whole onboarding. So I translated Better's onboarding to Habito, applying what we had learned, and balancing the trade-offs Habito came with.\nLearning one: people thought we were a comparison site. We led with 'compare deals from over 100 lenders', so when a broker started asking about their finances, it felt like a trick. I redesigned the first screen to lead with the expert: 'Find a mortgage with free expert help'. It went live on the 1st of May 2026, and Ops told us they were getting fewer questions about comparing deals. The before and after are behind this button.\nLearning two: people didn't want to leave Monzo. We couldn't avoid sending them to Habito yet, so the team framed the Habito account as a benefit: you can check your progress in the app, or on Habito's website.",
   "ask": [
    [
@@ -75,7 +75,7 @@ const slides=[
   ]
  },
  {
-  "title": "More referrals didn't mean more mortgages",
+  "title": "Referrals beat the plan, the later stages didn’t",
   "notes": "Back to the numbers. With Habito, the reach work was still paying off.\nThis chart compares each stage of the Habito funnel with its 2026 target. Referrals were at 153 percent of plan. Recommendation to submitted to lender was at 44 percent. The biggest gap came after the recommendation, when intent should be highest.\nThe money only arrives when a mortgage completes, months later. So the team chose an earlier signal we could read in weeks: accepted recommendations. That's the first moment people really commit.\nTo give you a sense of scale: of the people who got to a recommendation, about six in a hundred submitted an application to a lender. With Better it was nine or ten, although you can't compare them directly, because Better put a phone call first.\nSo the question changed. From how do we send more people, to why don't people who already have a recommendation go ahead?",
   "ask": [
    [
@@ -160,7 +160,7 @@ const slides=[
   ]
  },
  {
-  "title": "Four rounds before the version you're about to see",
+  "title": "What customers needed to see before choosing a mortgage",
   "notes": "Then the recommendation itself. A first view-only version in the app moved accepted recommendations a little. Not enough. So I redesigned it, with one goal at the top of my file: help people decide with confidence when they're ready, or wait on purpose, without dropping off.\nFour rounds in about four months. In June, a top pick presented through the adviser, with the alternatives next to it. When I reviewed it against the research, it was missing a way to reach the adviser, and an honest sense of urgency.\nOver the summer, a low-fidelity round: total cost first, and staying versus switching, in pounds. In September, a hub with tools went to a design crit, and the feedback was that too many things were competing for attention.\nSo in version 2.1, in October, the monthly payment goes back on top, because showing the total cost first put people off. Monzo had seen it before: in a 2019 remortgage test with the broker Mojo, deals ranked by true cost looked uncompetitive to customers. Now you see the monthly payment and why the adviser chose this deal, and then you can open the full cost and see which deals were ruled out.",
   "ask": [
    [
@@ -170,7 +170,7 @@ const slides=[
   ]
  },
  {
-  "title": "The recommendation, inside Monzo · live since 1 Nov 2026",
+  "title": "The recommendation, inside Monzo",
   "notes": "This is version 2.1, made from my Figma frames. It starts in the tracker: your recommendation is ready.\nOne screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons. 'How this deal was calculated' shows the real cost over the whole deal, and the deals we ruled out. Then you can accept, reject, or chat with your adviser.\nIt went live on the 1st of November. I designed it, but it was built after I'd left. The numbers and some of the copy are placeholders.\nThe live data will show if more people accept. To know if they understood it, I'd ask people to explain in their own words why that deal was chosen.",
   "ask": [
    [

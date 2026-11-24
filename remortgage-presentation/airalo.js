@@ -53,7 +53,7 @@ const slides=[
   ]
  },
  {
-  "title": "More referrals didn't mean more mortgages",
+  "title": "Referrals beat the plan, the later stages didn’t",
   "notes": "And then we started with Habito. At the end of 2025 Monzo agreed to buy Habito, another mortgage broker. From December we sent customers to both partners, and in October 2026 we stopped sending them to Better.\nThis chart compares each stage of the Habito funnel with its 2026 target. Referrals were at 153 percent of plan. Recommendation to submitted to lender was at 44 percent. The biggest gap came after the recommendation, when intent should be highest.\nThe money only arrives when a mortgage completes, months later. So the team chose an earlier signal we could read in weeks: accepted recommendations. That's the first moment people really commit.\nSo the question changed. From how do we send more people, to why don't people who already have a recommendation go ahead?",
   "ask": [
    [
@@ -115,7 +115,7 @@ const slides=[
   ]
  },
  {
-  "title": "The recommendation, inside Monzo · live since 1 Nov 2026",
+  "title": "The recommendation, inside Monzo",
   "notes": "This is version 2.1, made from my Figma frames. It starts in the tracker: your recommendation is ready.\nOne screen with the deal and what you pay every month. 'Why this is your best deal' gives you the adviser's reasons. 'How this deal was calculated' shows the real cost over the whole deal, and the deals we ruled out. Then you can accept, reject, or chat with your adviser.\nIt went live on the 1st of November. I designed it, but it was built after I'd left. The numbers and some of the copy are placeholders.\nThe live data will show if more people accept. To know if they understood it, I'd ask people to explain in their own words why that deal was chosen.",
   "ask": [
    [
