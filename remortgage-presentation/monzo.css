@@ -41,7 +41,8 @@
 /* chips and tags: white outline, Monzo style */
 .tag,.demo-pill,.tags span,.opttag b{background:transparent!important;color:var(--mz-text)!important;border:1.5px solid var(--mz-text);font-weight:600}
 .tags span.alt{border-color:var(--mz-coral);color:var(--mz-coral)!important}
-.fig-link{color:var(--mz-text)!important;border-color:rgba(242,248,243,.5)!important;background:transparent!important}
+.fig-link{color:var(--mz-text)!important;border:1.5px solid rgba(242,248,243,.45)!important;background:transparent!important;box-sizing:border-box}
+.fig-link:hover{background:rgba(242,248,243,.1)!important}
 
 /* timeline */
 .tl-line span{background:var(--mz-coral)}
