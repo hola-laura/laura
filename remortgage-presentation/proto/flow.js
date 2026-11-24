@@ -88,13 +88,10 @@
       ]
     },
     window: {
-      steps: ['The push: your deal is ready', 'A card on your Monzo home', 'The recommendation, in Monzo', 'Other deals, as secondary options', 'To accept it, on to Habito'],
+      steps: ['The recommendation, in Monzo', 'Other deals, as secondary options'],
       beats: [
-        {img: 'vw-lock.png', step: 0, hold: 2000, tap: [200, 688], go: 'fade'},
-        {img: 'vw-home.png', step: 1, hold: 1800, tap: [300, 168], go: 'push'},
-        {img: 'vw-rec.png', step: 2, hold: 2400, scroll: 330, scrollMs: 1600, go: 'fade'},
-        {img: 'vw-rec.png', step: 3, from: 330, hold: 3000, scroll: 653, scrollMs: 2200, tap: [201, 818], go: 'push'},
-        {img: 'vw-habito.png', step: 4, hold: 3200}
+        {img: 'vw-rec.png', step: 0, hold: 2400, scroll: 330, scrollMs: 1600, go: 'fade'},
+        {img: 'vw-rec.png', step: 1, from: 330, hold: 3600, scroll: 653, scrollMs: 2200}
       ]
     },
     deals: {
