@@ -1,7 +1,7 @@
 const slides=[
  {
   "title": "Remortgaging at Monzo, 2025–26",
-  "notes": "Hi, I'm Laura. Thanks for having me. I'm going to present a remortgaging case study from Monzo, where I was a Senior Product Designer.\nLet me start with the ending. We beat our referral goal by 75 percent, but mortgages didn't grow at the same pace.\nSo most of what you'll see is how I found out why, and what I designed to fix it. First, a bit of context on the product.",
+  "notes": "Hello, I'm Laura. Thanks for having me, and for taking the time to learn about me and this project.\nI'm going to present a remortgaging case study from Monzo, where I was a Senior Product Designer. I worked at Monzo for the last six years of my career, and for the last two I focused on their Homeownership product.\nWe were a product team with a PM, engineers, a data scientist and a user researcher, and we worked with Habito, Ops and Compliance.\nMy role covered setting the vision, turning that vision into the product, UX and UI, experiments, and AI tooling.\nLet me start with something interesting. We beat our referral goal by 75 percent, but mortgages didn't grow at the same pace.\nSo most of what you'll see is how I found out why, and what I designed to fix it. But first, a bit of context about the product.",
   "ask": []
  },
  {
