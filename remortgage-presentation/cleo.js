@@ -76,7 +76,7 @@ const slides=[
  },
  {
   "title": "Referrals beat the plan, the later stages didn’t",
-  "notes": "Back to the numbers. With Habito, the reach work was still paying off.\nThis chart compares each stage of the Habito funnel with its 2026 target. Referrals were at 153 percent of plan. Recommendation to submitted to lender was at 44 percent. The biggest gap came after the recommendation, when intent should be highest.\nThe money only arrives when a mortgage completes, months later. So the team chose an earlier signal we could read in weeks: accepted recommendations. That's the first moment people really commit.\nTo give you a sense of scale: of the people who got to a recommendation, about six in a hundred submitted an application to a lender. With Better it was nine or ten, although you can't compare them directly, because Better put a phone call first.\nSo the question changed. From how do we send more people, to why don't people who already have a recommendation go ahead?",
+  "notes": "Back to the numbers. With Habito, the reach work was still paying off.\nThis chart compares each stage of the Habito funnel with its 2026 target. Referrals were at 153 percent of plan. Recommendation to submitted to lender was at 44 percent. The biggest gap came after the recommendation, when intent should be highest.\nThe money only arrives when a mortgage completes, months later. So the team chose an earlier signal we could read in weeks: accepted recommendations. That's the first moment people really commit.\nSo the question changed. From how do we send more people, to why don't people who already have a recommendation go ahead?",
   "ask": [
    [
     "Why accepted recommendations and not revenue?",
