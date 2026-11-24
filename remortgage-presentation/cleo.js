@@ -202,7 +202,7 @@ const slides=[
   ]
  },
  {
-  "title": "The 2025 vision, designed end to end",
+  "title": "The vision, almost there",
   "notes": "This is where it all lands. In 2025 the vision was the whole remortgage without leaving Monzo. This is that journey, designed end to end, and the plan is to launch all of it in February.\nThe advice comes from Monzo, and nobody leaves the app. The form is pre-filled, you chat with your expert, and the recommendation arrives in the chat. You accept it in the app, upload documents from your phone, and the tracker shows every step.\nAt the end we ask: is this your new mortgage? That closes the loop, so we can help again when the new deal ends. It's designed, and it isn't live yet.",
   "ask": [
    [
@@ -262,7 +262,7 @@ const slides=[
  },
  {
   "title": "What I learned",
-  "notes": "Looking back, four things. One: getting people in isn't enough. Referral growth showed us a bottleneck after the recommendation. Two: say what it is. People thought we were a comparison site, and leading with the expert changed that.\nThree: ship what you can, then improve it. The push used the tracker we already had, and acceptance went up. And four: work with your partner's limits. Habito had no design team, so I went through the journey myself, and we shipped first steps.",
+  "notes": "Looking back, four things. One: look past the first number. Referrals beat the plan, but people dropped after the recommendation, so we moved our work there. Two: say what it is. People thought we were a comparison site, and leading with the mortgage expert changed that.\nThree: know the goal, and ship in steps. The vision didn't change, but we got there in pieces: the push, the view-only screen, then version 2.1. And four: work with what your partner has. Habito had no design team, so I went through the journey as a customer, and we shipped first steps.",
   "ask": []
  },
  {

@@ -317,8 +317,8 @@ const slides=[
   ]
  },
  {
-  "title": "The 2025 vision, designed end to end",
-  "notes": "This is where it all lands. In 2025 the vision was the whole remortgage without leaving Monzo. This is that journey, designed end to end.\nThe difference from today: the advice comes from Monzo, and nobody leaves the app.\nYou start from your mortgage in Monzo. The form is pre-filled with what we already know. Then you chat with your expert, and the recommendation arrives in the chat.\nYou accept it in the app, upload your documents from your phone, and the tracker shows every step until the lender accepts the offer.\nAnd at the end we ask: is this your new mortgage? That closes the loop. The new deal goes back into Monzo, and we can help again when it ends.\nAs you can see, we still have some pieces of the vision to build. Mainly later steps in the journey, like uploading your documents and connecting your new mortgage. But it's almost there.\nYou can try the full prototype behind this button. The full launch is planned for February.",
+  "title": "The vision, almost there",
+  "notes": "What's next? As you can see, the vision is almost there. We still have a bit more to go.\nWe want the whole experience inside Monzo, with Habito fully integrated, so we don't need to mention Habito anymore. That's what we're working towards, and you can see it in the new onboarding: free advice from Monzo.\nWe're also working towards bringing the chat into Monzo. That will take longer, but here you can see how it could work in the Monzo app.\nAnd we're still missing everything to do with documents. Uploading them from your phone is designed. And the end of the journey: connecting your new mortgage again, so we can help you when it ends.\nAll of this is planned to launch in February, and I'm very excited to keep following this work.\nYou can try the full prototype behind this button.",
   "ask": [
    [
     "Is this live?",
@@ -353,31 +353,13 @@ const slides=[
   ]
  },
  {
-  "title": "What changed, and what’s still to do",
-  "notes": "So, what came out of all this? At the start I told you that we beat the referral goal, but mortgages didn't grow at the same pace. Referrals ended about 75 percent above our goal.\nBut a referral is only the first step, and I prefer to tell you that than to claim an uplift I can't prove.\nSo the number that matters in this story is accepted recommendations. And that one went up.\nFirst with the push on day zero, because it took people straight to the tracker.\nThen the view-only recommendation moved it a little more.\nNow, the four things customers asked for at the beginning. I'm not going to read every row. Most of it is live.\nEstimated deals, pre-fill, the push when your recommendation is ready, the application inside Monzo since the end of September, and since this November, the new tracker and the new recommendation, where you can accept it inside Monzo.\nAnd the adviser chat opens inside the app now, on Habito's Intercom chat. It's a first step towards our own chat in Monzo.\nIn 2026, most of what I designed for Habito shipped late in the year, so the results are only starting to arrive.\nWith the application inside Monzo, I'm told that about 40 percent more people are finishing the form and getting to a recommendation. It's early, so I wouldn't call it a result yet.\nAnd the new tracker, which is the design I expect to have the biggest impact, has only just launched, so it's too soon to tell.\nOne number I can share: in September, 355 applications came from Monzo, a record. Completed mortgages come months later, and I can't attribute those applications to the new form.\nAnd the whole remortgage isn't in the app yet. Document upload and our own adviser chat in Monzo were moved back, because the focus moved to first-time buyers.\nThat launched on the 11th of November, and I did the vision and the design of that first release.",
-  "ask": [
-   [
-    "What would you measure next?",
-    "Accepted recommendations first. Then whether people understand what they accepted: wrong turns, questions to the adviser, and how many come back after leaving."
-   ],
-   [
-    "What would you do differently?",
-    "Research the decision earlier. We spent a long time improving the way in before learning that the real barrier was the decision itself."
-   ],
-   [
-    "What did you do on first-time buyers?",
-    "The vision, and the design of the first release, which launched on the 11th of November."
-   ]
-  ]
- },
- {
   "title": "What I learned",
-  "notes": "Looking back, there are four things I take with me. One: getting people in isn't enough. Referral growth showed us a bottleneck after the recommendation. So we moved to where people dropped: the form and the recommendation.\nTwo: say what it is. People thought we were a comparison site, and leading with the expert changed what they expected. Three: ship what you can, then improve it. The push used the tracker we already had, and accepted recommendations went up.\nAnd four: work with your partner's limits. Habito had no design team, and their chat ran on Intercom. So I went through the journey myself, and we shipped first steps, like the chat inside the app.",
+  "notes": "Looking back, I take four things with me.\nOne: look past the first number. Referrals beat the plan, but people dropped after the recommendation. So we moved our work to the form and the recommendation.\nTwo: say what it is. People thought we were a comparison site. Leading with the mortgage expert changed what they expected.\nThree: know the goal, and ship in steps. The vision didn't change, but we got there in pieces: the push, the view-only screen, then version 2.1.\nAnd four: work with what your partner has. Habito had no design team, so I went through the journey as a customer. And we shipped first steps, like their chat inside our app.",
   "ask": []
  },
  {
   "title": "What I’d bring to Benefits",
-  "notes": "And I think this is why it's relevant for Benefits. From what I understand, Benefits works across international products, integrations and partners.\nSo providers whose systems you don't own, decisions that matter a lot to employees, and rules that change in every country. And that's very similar to what I've been doing.\nIn remortgaging I did exactly that: I made a service split between Monzo and a broker feel like one, and made sure people always knew which step they were on. And before I design anything, I like to check which step we need to move.",
+  "notes": "And this is why I think it's relevant for Benefits. From what I understand, Benefits works across countries, integrations and partners.\nSo, providers whose systems you don't own. People who need to know what happens next. Rules that change in every country. And choices that matter for years, like a mortgage at Monzo, or health cover and a pension at Deel.\nThat's very close to what I did in remortgaging. I made a service split between Monzo and a broker feel like one, and made sure people always knew which step they were on. And before I design anything, I like to check which step we need to move.",
   "ask": []
  },
  {
