@@ -27,8 +27,8 @@
     chat: {
       steps: ['The adviser lives in the tracker', 'An intro, the first time only', 'A mortgage-only chat', 'A real person joins', 'Off-topic? One tap to Monzo support', 'The recommendation arrives in the chat', 'And it opens in the app'],
       beats: [
-        {img: 'ic-tracker2.png', step: 0, hold: 2600, tap: [200, 624], go: 'push'},
-        {img: 'ic-intro.png', step: 1, hold: 3600, scroll: 75, scrollMs: 900, tap: [201, 820], go: 'push'},
+        {img: 'ic-tracker2.png?v=9', step: 0, hold: 2600, tap: [200, 624], go: 'push'},
+        {img: 'ic-intro.png?v=9', step: 1, hold: 3600, scroll: 75, scrollMs: 900, tap: [201, 820], go: 'push'},
         {img: 'ic-chat1.png', step: 2, hold: 3200, go: 'fade'},
         {img: 'ic-chat2.png', step: 3, hold: 3800, scroll: 355, scrollMs: 2200, go: 'fade'},
         {img: 'ic-redirect.png', step: 4, hold: 3400, go: 'fade'},
@@ -44,7 +44,7 @@
         {img: 'ap-drill.png', step: 2, hold: 4200, scroll: 1634, scrollMs: 3200, tap: [201, 770], go: 'push'},
         {img: 'ap-steps.png', step: 3, hold: 2800, tap: [201, 820], go: 'fade'},
         {img: 'ap-handoff.png', step: 4, hold: 2000, go: 'fade'},
-        {img: 'ap-tracker.png', step: 5, hold: 3400, scroll: 259}
+        {img: 'ap-tracker.png?v=9', step: 5, hold: 3400, scroll: 259}
       ]
     },
     focus: {
@@ -53,7 +53,7 @@
       beats: [
         {img: 'fve-01.png', anim: {src: 'remortgage-presentation/assets/anim/house-light.webp', left: 75.9, top: 85.1, width: 248.2, keep: true}, step: 0, hold: 3200, go: 'fade'},
         {img: 'fve-02.png', anim: {src: 'remortgage-presentation/assets/anim/calculator-light.webp', left: 35.3, top: 99.9, width: 295.6, keep: true}, step: 1, hold: 3200, go: 'fade'},
-        {img: 'fve-03.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 2, hold: 3200, go: 'fade'},
+        {img: 'fve-03.png?v=9', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 2, hold: 3200, go: 'fade'},
         {img: 'fve-04.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-confetti.png', left: 99.9, top: 110.0, width: 202.2, float: true}, step: 3, hold: 3200, go: 'fade'},
         {img: 'fve-05b.png', anim: {src: 'remortgage-presentation/assets/proto/fvi-plant.png', left: 126.3, top: 110.0, width: 149.4, float: true}, step: 4, hold: 3200, go: 'fade'},
         {img: 'fve-06.png', anim: {src: 'remortgage-presentation/assets/anim/calendar-light.webp', left: 94.0, top: 105.3, width: 214.0, keep: true}, step: 5, hold: 3200, go: 'fade'},
@@ -67,15 +67,15 @@
     vision: {
       steps: ['Your deal is ending: example deals, inside Monzo', 'Choose: an adviser first, or deals first', 'Pre-filled with what Monzo already knows', 'Recommendations, with your adviser one tap away', 'Every detail of the deal', 'Documents, straight from your phone', 'Always know what’s next'],
       beats: [
-        {img: 'vz-deals.png', anim: {src: 'remortgage-presentation/assets/anim/house-light.webp', left: 51, top: 132, width: 300}, step: 0, hold: 3000, tap: [201, 838], go: 'push'},
-        {img: 'vz-choose.png', step: 1, hold: 2800, tap: [133, 740], go: 'push'},
-        {img: 'vz-look.png', step: 2, hold: 2400, tap: [184, 373], go: 'push'},
+        {img: 'vz-deals.png?v=9', anim: {src: 'remortgage-presentation/assets/anim/house-light.webp', left: 51, top: 132, width: 300}, step: 0, hold: 3000, tap: [201, 838], go: 'push'},
+        {img: 'vz-choose.png?v=9', step: 1, hold: 2800, tap: [133, 740], go: 'push'},
+        {img: 'vz-look.png?v=9', step: 2, hold: 2400, tap: [184, 373], go: 'push'},
         {img: 'vz-review.png', step: 2, hold: 3600, scroll: 751, scrollMs: 2600, tap: [201, 805], go: 'push'},
-        {img: 'vz-recs.png', step: 3, hold: 2800, tap: [84, 692], go: 'push'},
+        {img: 'vz-recs.png?v=9', step: 3, hold: 2800, tap: [84, 692], go: 'push'},
         {img: 'vz-deal.png', step: 4, hold: 4200, scroll: 1390, scrollMs: 3200, tap: [201, 741], go: 'push'},
         {img: 'vz-docs.png', step: 5, hold: 2400, tap: [194, 497], go: 'push'},
         {img: 'vz-idkind.png', step: 5, hold: 2000, tap: [102, 300], go: 'fade'},
-        {img: 'vz-tracker.png', step: 6, hold: 4200, scroll: 300, scrollMs: 1800}
+        {img: 'vz-tracker.png?v=9', step: 6, hold: 4200, scroll: 300, scrollMs: 1800}
       ]
     },
     day1: {
@@ -98,12 +98,12 @@
       steps: ['Find it at home', 'Estimated deals, by lender', 'Every cost of a deal', 'Change your details', 'How rates have moved', 'How rates are estimated'],
       beats: [
         {img: 'ed-home.png?v=2', step: 0, hold: 2200, tap: [188, 642], go: 'push'},
-        {img: 'ed-deals.png', step: 1, hold: 2800, tap: [77, 618], go: 'up'},
+        {img: 'ed-deals.png?v=9', step: 1, hold: 2800, tap: [77, 618], go: 'up'},
         {img: 'ed-detail-sheet2.png', back: 'ed-deals-dim.png', head: 'ed-detail-head.png', step: 2, hold: 4200, scroll: 485, scrollMs: 2800, go: 'down'},
-        {img: 'ed-deals.png', step: 1, hold: 900, tap: [201, 329], go: 'up'},
+        {img: 'ed-deals.png?v=9', step: 1, hold: 900, tap: [201, 329], go: 'up'},
         {img: 'ed-form2.png', step: 3, hold: 2600, tap: [200, 800], go: 'down'},
-        {img: 'ed-deals.png', step: 4, hold: 4600, scroll: 733, scrollMs: 3200, go: 'fade'},
-        {img: 'ed-deals.png', step: 4, hold: 700, tap: [369, 77], go: 'up'},
+        {img: 'ed-deals.png?v=9', step: 4, hold: 4600, scroll: 733, scrollMs: 3200, go: 'fade'},
+        {img: 'ed-deals.png?v=9', step: 4, hold: 700, tap: [369, 77], go: 'up'},
         {img: 'ed-about.png', step: 5, hold: 4200, scroll: 383, scrollMs: 2600}
       ]
     },
