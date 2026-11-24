@@ -9,11 +9,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Fragment+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=283">
-<link rel="stylesheet" href="deck.css?v=283">
-<link rel="stylesheet" href="monzo.css?v=283">
+<link rel="stylesheet" href="styles.css?v=284">
+<link rel="stylesheet" href="deck.css?v=284">
+<link rel="stylesheet" href="monzo.css?v=284">
 <link rel="preconnect" href="https://images.ctfassets.net">
-<script src="present.js?v=283" defer></script>
+<script src="present.js?v=284" defer></script>
 <style>
 body.present{--bar:52px;background:#112231;grid-template-rows:minmax(0,1fr) auto;height:100svh;min-height:0;overflow:hidden}
 .present .topbar,.present .slide-caption,.present .arrow,.present .notes-bottom,.present .notes-sheet{display:none!important}
@@ -190,21 +190,34 @@ body.present{--bar:52px;background:#112231;grid-template-rows:minmax(0,1fr) auto
     <div class="role-ph a" style="--d:5"><div class="bz" style="width:300px"><span class="bz-screen"><img class="ir-scroll" src="assets/proto/rec-main.png?v=2" alt="2026: your Habito recommendation inside Monzo" style="--t:-17.47%"></span></div><p><b>2026</b> · Recommendations in the app</p></div>
   </div>
 </div></section>
-<section class="slide dark" data-n="05" data-k="pause">
-<div class="split" style="grid-template-columns:1fr 610px;gap:50px">
-  <div>
-    <div class="eyebrow a mz-kicker">The reset</div><h1 class="a" style="--d:1">We lent our engineers for two months, and used the time to listen</h1>
-    <div class="grid two" style="margin-top:34px">
-      <div class="card  a" style="--d:3;"><div class="label">Why</div><h3>Financial Health needed engineers</h3><p>And our work wasn’t moving the numbers</p></div>
-      <div class="card  a" style="--d:4;"><div class="label">How</div><h3>A discovery phase</h3><p>Customer research, a vision, and a feasibility check. Research with customers who remortgaged, and customers who dropped out.</p></div>
-    </div>
+<section class="slide dark" data-n="05" data-k="pause"><div class="eyebrow a mz-kicker">The reset</div><h1 class="a" style="--d:1">We lent our engineers for two months, and used the time to listen</h1>
+<style>
+.rs{display:grid;grid-template-columns:400px 56px 1fr;align-items:stretch;margin-top:36px}
+.rs-card{background:var(--mz-tile);border-radius:28px;padding:22px 30px 28px;display:flex;flex-direction:column}
+.rs-art{height:168px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.rs-art img{height:150px;mix-blend-mode:lighten}
+.rs-when{font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mz-coral)!important;margin:0 0 8px}
+.rs-card h3{font-size:30px;line-height:1.12;font-weight:800;letter-spacing:-.02em;color:#fff;margin:0 0 10px}
+.rs-card p{font-size:20px;line-height:1.35;color:var(--mz-soft);margin:0}
+.rs-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.rs-chips span{font-size:16px;font-weight:600;color:var(--mz-text);border:1px solid var(--mz-line);background:rgba(242,248,243,.06);border-radius:999px;padding:7px 14px}
+.rs-arrow{display:flex;align-items:center;justify-content:center;color:var(--mz-coral);font-size:40px;font-weight:800}
+.rs-group{position:relative;border:1.5px dashed rgba(242,248,243,.22);border-radius:34px;padding:44px 14px 14px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rs-glabel{position:absolute;top:13px;left:30px;font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mz-soft)}
+.rs-group .rs-card{padding-top:16px}
+.rs-group .rs-art{height:150px;margin-bottom:12px}
+.rs-group .rs-art img{height:132px}
+.rs-link{margin-top:22px}
+</style>
+<div class="rs">
+  <div class="rs-card a" style="--d:2"><div class="rs-art"><img src="assets/img/spot-trends.png" alt=""></div><div class="rs-when">February 2025</div><h3>Growth was slowing</h3><p>We launched lots of experiments, but the numbers didn’t move. So we paused engineering on Homeownership for two months.</p></div>
+  <div class="rs-arrow a" style="--d:3" aria-hidden="true">→</div>
+  <div class="rs-group a" style="--d:3"><span class="rs-glabel">From March · two months</span>
+    <div class="rs-card a" style="--d:4"><div class="rs-art"><img src="assets/img/spot-handshake.png" alt=""></div><div class="rs-when">Our engineers</div><h3>Helped two other teams</h3><div class="rs-chips"><span>Financial Health</span><span>Payments</span></div></div>
+    <div class="rs-card a" style="--d:5"><div class="rs-art"><img src="assets/img/spot-peacemsg.png" alt=""></div><div class="rs-when">The rest of the team</div><h3>Ran a discovery phase</h3><p>To understand what wasn’t working. We interviewed two groups:</p><div class="rs-chips"><span>Remortgaged with us</span><span>Started and gave up</span></div></div>
   </div>
-  <div class="col" style="align-items:flex-start;justify-content:center;gap:16px">
-    <img class="comic a" style="--d:2" src="https://images.ctfassets.net/ro61k101ee59/3YYXrc8ROFsNIHk5xhHYTK/bb95db66949cc82ae8acd34e0113c9b1/Image__6_.png?w=1600&fm=webp&q=80" alt="Comic strips of two customers, George and Carla, drawn from the research interviews">
-    <p class="note a" style="--d:4;margin:0!important;color:#9fb0b8!important">The research, told as comic strips: two customers we interviewed</p>
-    <a class="fig-link ghost a" style="--d:5;margin-top:0" href="https://monzo.com/blog/slowing-down-to-speed-up-how-a-2-month-engineering-pause-rebooted-our-mortgage-strategy" target="_blank" rel="noopener">Read the story on the Monzo blog ↗</a>
-  </div>
-</div></section>
+</div>
+<div class="rs-link a" style="--d:6"><a class="fig-link ghost" style="margin-top:0" href="https://monzo.com/blog/slowing-down-to-speed-up-how-a-2-month-engineering-pause-rebooted-our-mortgage-strategy" target="_blank" rel="noopener">Read the story on the Monzo blog ↗</a></div></section>
 <section class="slide dark was-light" data-n="06" data-k="research"><div class="eyebrow a mz-kicker">The reset</div><h1 class="a" style="--d:1">Customers asked us for four things</h1>
 <img class="a" style="--d:2;position:absolute;right:84px;top:34px;width:216px;height:216px;border-radius:24px;object-fit:cover;z-index:1" src="assets/img/photo-sofa.webp?v=1" alt="Two people on the sofa looking at a phone">
 <div class="fgrid fgrid4"><div class="fcard a" style="--d:3"><i>01</i><h3>“Don’t send me out.”</h3><p>They expected to <mark>get the new deal inside Monzo</mark>.</p><div class="fviz"><img class="spot" src="assets/img/spot-app.png" alt=""><div class="fviz-r"><span class="chip dark">Monzo</span><span class="farrow"></span><span class="chip ghost">Better’s site</span></div></div></div><div class="fcard a" style="--d:4"><i>02</i><h3>“Use what you know.”</h3><p><mark>Reuse the data Monzo already holds</mark>, instead of asking again.</p><div class="fviz"><img class="spot" src="assets/img/spot-form.png" alt=""><div class="fviz-r"><span class="chip ok">Income</span><span class="chip ok">Mortgage balance</span><span class="chip ok">Address</span></div></div></div><div class="fcard a" style="--d:5"><i>03</i><h3>“Let me choose.”</h3><p>Some wanted a call, because it made them feel safe. Others preferred <mark>less intrusive ways, at a time they chose</mark>.</p><div class="fviz"><img class="spot" src="assets/img/spot-chat.png" alt=""><div class="fviz-r"><span class="chip">Chat</span><span class="chip">Phone</span><span class="chip">Email</span></div></div></div><div class="fcard a" style="--d:6"><i>04</i><h3>“Tell me what’s happening.”</h3><p><mark>The wait</mark> was the most stressful part.</p><div class="fviz"><img class="spot" src="assets/img/spot-bell.png" alt=""><div class="fviz-r"><span class="push"><em>M</em><span><b>Monzo</b> Your application has moved to the next step</span></span></div></div></div></div></section>

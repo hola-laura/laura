@@ -67,7 +67,7 @@ const slides=[
  },
  {
   "title": "We lent our engineers for two months, and used the time to listen",
-  "notes": "The reset started in a way I didn't expect.\nEarly in 2025, our growth was slowing. We were launching lots of things, but they weren't moving the numbers. So in February we decided to pause engineering on Homeownership for two months.\nFrom March, our engineers helped two other teams, Financial Health and Payments. And we used that time to run a discovery phase, to understand what wasn't working.\nWe interviewed two groups of people. One group was people who had remortgaged with us, and the other was people who had started and given up.\nAnd just as a fun little thing: instead of presenting the discovery learnings in just a doc, I suggested we made a comic, so the research insights would stay with the team along the way.\nAnyway, that phase is what changed the strategy.",
+  "notes": "The reset started in a way I didn't expect.\nEarly in 2025, our growth was slowing. We were launching lots of things, but they weren't moving the numbers. So in February we decided to pause engineering on Homeownership for two months.\nFrom March, our engineers helped two other teams, Financial Health and Payments. And we used that time to run a discovery phase, to understand what wasn't working.\nWe interviewed two groups of people. One group was people who had remortgaged with us, and the other was people who had started and given up.\nAnyway, that phase is what changed the strategy.",
   "ask": [
    [
     "Whose decision was the pause?",
