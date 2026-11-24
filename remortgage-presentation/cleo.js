@@ -16,7 +16,7 @@ const slides=[
  },
  {
   "title": "Customers asked us for four things",
-  "notes": "In February 2025 we paused for two months to listen to customers: people who had remortgaged with us, and people who had started and given up. They told us four things.\nDon't send me out: they expected to get their new deal inside Monzo. Use what you already know about me. Let me choose how I talk to you. And tell me what's happening, because the waiting was the most stressful part.\nTwo personas from the research sum it up. George remortgaged with us, but he was frustrated that we sent him to a partner's website. Carla started and gave up, because doing everything outside the app was too much.\nKeep these four in mind. Each one became a design decision, and at the end I'll show you where each one stands.",
+  "notes": "In March 2025 we paused for two months to listen to customers: people who had remortgaged with us, and people who had started and given up. They told us four things.\nDon't send me out: they expected to get their new deal inside Monzo. Use what you already know about me. Let me choose how I talk to you. And tell me what's happening, because the waiting was the most stressful part.\nTwo personas from the research sum it up. George remortgaged with us, but he was frustrated that we sent him to a partner's website. Carla started and gave up, because doing everything outside the app was too much.\nKeep these four in mind. Each one became a design decision, and at the end I'll show you where each one stands.",
   "ask": [
    [
     "What was your part in the research?",
