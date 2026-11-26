@@ -1,7 +1,7 @@
 const slides=[
  {
   "title": "Remortgaging at Monzo, 2025–26",
-  "notes": "Hi, I'm Laura. Thanks for having me. I'm going to walk you through remortgaging at Monzo, from the first research in 2025 to what's live today.\nMy title was Senior Product Designer. I was the only product designer on the squad, and I led the design from the initial vision through to the Habito integration.\nLet me start with the ending. We beat our referral goal by about 75 percent, but mortgages didn't grow at the same pace. Most of what you'll see is how I found out why, and what I designed to fix it.",
+  "notes": "Hi, I'm Laura. Thanks for having me. I'm going to walk you through remortgaging at Monzo, from the first research in 2025 to what's live today. At the end I'll show you what came next: first-time buyers.\nMy title was Senior Product Designer. I was the only product designer on the squad, and I led the design from the initial vision through to the Habito integration.\nTwo things to keep in mind. Our goal was revenue, and we only made money when a mortgage completed, months later. So the number I'll come back to is accepted recommendations. And our limits: a broker whose systems we didn't own, and Compliance on every screen.\nLet me start with the ending. We beat our referral goal by about 75 percent, but mortgages didn't grow at the same pace. Most of what you'll see is how I found out why, and what I designed to fix it.",
   "ask": []
  },
  {
@@ -40,7 +40,7 @@ const slides=[
  },
  {
   "title": "Reach people before they're ready to remortgage",
-  "notes": "We couldn't build the vision overnight, and we still had revenue targets. So we worked on two tracks: reach more people now, and move the journey into Monzo, step by step.\nMost people about to remortgage hadn't connected their mortgage, so we couldn't see them. About 365,000 customers had connected one, and more than two million had one we couldn't see.\nSo I designed a way in without connecting: indicative rates for everyone. From there people could connect, and we could get their deal-end date, to reach them at the right moment.\nThe last screen is estimated deals, for connected customers: deals from real lenders, with the monthly repayment and the fees. Estimated, because they come before you apply.\nThe result: by early 2026, total referrals across all our partners were around 7,500 a month, against a target of 4,300. That's about 75 percent above plan. New mortgage connections went from about 200 to about 1,000 a day. The results supported our reach hypothesis, but a referral is only the first step. It isn't a mortgage yet.",
+  "notes": "We couldn't build the vision overnight, and we still had revenue targets. So we worked on two tracks: reach more people now, and move the journey into Monzo, step by step.\nMost people about to remortgage hadn't connected their mortgage, so we couldn't see them. So I designed a way in without connecting: indicative rates for everyone, and estimated deals for connected customers.\nThe result: by early 2026, total referrals across all our partners were around 7,500 a month, against a target of 4,300. That's about 75 percent above plan. New mortgage connections went from about 200 to about 1,000 a day. The results supported our reach hypothesis, but a referral is only the first step. It isn't a mortgage yet.",
   "ask": [
    [
     "Is the 75 percent your result?",
@@ -49,28 +49,6 @@ const slides=[
    [
     "Which experiment worked best?",
     "Rate alerts: a notification when mortgage rates change. In our May 2025 review they were linked to about 44 percent of recent referrals. It was an internal, approximate read, not proof that the alerts caused all of them."
-   ]
-  ]
- },
- {
-  "title": "I designed the onboarding to Habito",
-  "notes": "At the end of 2025 Monzo agreed to buy Habito, another mortgage broker. From December we sent customers to both partners, and in October 2026 we stopped sending them to Better.\nLearning one: people thought we were a comparison site, so when a broker started asking about their finances, it felt like a trick. I redesigned the first screen to lead with the mortgage expert: 'Find a mortgage with free expert help'. It went live in May 2026, and Ops told us they were getting fewer questions about comparing deals.\nLearning two: people didn't want to leave Monzo. We couldn't avoid sending them to Habito yet, so I proposed framing the Habito account as a benefit: you can check your progress in the app, or on Habito's website.",
-  "ask": [
-   [
-    "Who did the research in 2026, without a researcher?",
-    "I did. I worked from the answers to our in-house surveys and from customer support conversations."
-   ],
-   [
-    "Did the reframe move conversion?",
-    "Not significantly yet, the numbers are still early. The signal so far comes from Ops: fewer questions about comparing deals, which was the confusion we wanted to fix. It also launched together with the Habito by Monzo brand, so I couldn't separate the two effects cleanly anyway."
-   ],
-   [
-    "Why not just remove the lenders?",
-    "Choice still matters, so the number is still there, in the second line. What changed is the order: first the expert, then the lenders."
-   ],
-   [
-    "Is the screen on the right exactly what went live?",
-    "It's my design for Day 1. The copy kept changing after launch. In my audit that summer I flagged that the live headline could still read like a comparison site, so it's a fight you keep having."
    ]
   ]
  },
@@ -124,28 +102,6 @@ const slides=[
   "ask": []
  },
  {
-  "title": "A push the moment the recommendation is ready",
-  "notes": "Then the moment people decide. People could already see their recommendation in Monzo, but only if they came back. When it was ready, the only reminder was an email from Habito. So I designed a push from Monzo, on day zero, the moment it's ready, when people care the most, and again on day three. Outside the app, it couldn't mention a rate or a lender, to stay compliant.\nWe had two options for where the push should take you. Option A was a new screen that set expectations: your recommendation is ready, Habito is regulated, and it's free. Option B took you to the progress tracker, where you could already see your recommendation, and from there to Habito.\nWe went with B, in May 2026. People found it hard to come back to the tracker, this gave them a reason to, and it was a screen we already had, so we could test fast. Accepted recommendations went up in our early read, but I don't have the exact uplift, so I'd treat it as a positive early signal, not proof that the push alone caused it.",
-  "ask": [
-   [
-    "Did the push on day zero work?",
-    "Accepted recommendations went up in our early read. I don't have the exact uplift, so I treat it as a positive signal, not proof that the push alone caused it."
-   ],
-   [
-    "What did you measure?",
-    "How many people opened the push on day zero against day three, how many clicked through to Habito, how many dropped before getting there, how long it took them, and in the end, accepted recommendations."
-   ],
-   [
-    "Why land on the tracker and not on the recommendation?",
-    "The tracker already existed, and people could already see their recommendation from it, so we could test quickly. It was working, it just wasn't easy to find."
-   ],
-   [
-    "Was the push an A/B test?",
-    "I don't remember exactly how it was measured, so I won't claim more than what I know: after the push launched in May, more people accepted their recommendation."
-   ]
-  ]
- },
- {
   "title": "What customers needed to see before choosing a mortgage",
   "notes": "Then the recommendation itself. The first view-only version came earlier, inside the Habito integration, and accepting stayed with Habito. In an early test, showing the other deals under the main one gave around a 10 percent relative lift in accepted recommendations, but it didn't get us to our goal. So I redesigned it, to help people decide with confidence.\nOver the summer I tried total cost first, and in September a hub with tools went to a design crit: too many things were competing for attention.\nDuring October we finalised the new recommendation, with a trade-off. People wanted to compare, but Habito wanted one recommended deal. So one deal sits on top, with a note from the mortgage expert explaining why, and the others are one step away. And the monthly payment goes back on top, because showing the total cost first put people off.",
   "ask": [
@@ -174,22 +130,8 @@ const slides=[
   ]
  },
  {
-  "title": "Move the application into Monzo, pre-filled",
-  "notes": "Another piece I'll show you is the application form, the most fragmented part of the journey. It lived on the broker's website, and it was long: around 200 questions. With Better, in 2025, almost half of the people we sent to them never finished the form.\nI designed the application inside Monzo, with two decisions I care about. Pre-fill: you confirm what Monzo already knows, instead of typing it again. And saving your progress, because nobody has all their mortgage details ready in one go. We couldn't do that in the first version, so it comes in the next one.\nThe first version went live at the end of September 2026, as a 50/50 test against the existing journey on Habito's website. In the first read, about 40 percent of the people who started the form in Monzo finished it, compared with about 29 percent on the existing journey: roughly a 40 percent relative lift. The sample was still small, so I treated it as an early directional signal.",
-  "ask": [
-   [
-    "Is the application live?",
-    "Yes. The first version, a simple form, went live at the end of September 2026, as a 50/50 test. I designed it. In the first read, about 40 percent of the people who started it in Monzo finished it, against about 29 percent on the existing journey. It's an early signal, not a mature result."
-   ],
-   [
-    "Forty percent more than what?",
-    "It's a relative lift: about 40 percent finished the form in Monzo, against about 29 percent on the existing journey on Habito's website. So about 11 percentage points. The sample was still small, so I treat it as a directional signal."
-   ]
-  ]
- },
- {
   "title": "The tracker shows who has to act next",
-  "notes": "And the next progress tracker. It answers 'tell me what's happening' better than the first one. A remortgage has around ten stages, and the next step can be yours, the mortgage expert's or the lender's. I worked with Habito to understand them, and our engineers built the bridges between both systems.\nI designed one card that changes during the journey. It's orange when it's your turn, and green when someone else is working on it. You get a notification at every step, and you can turn them off by tapping the bell. The push lands here, and the chat with your mortgage expert opens from here.\nIt went live in November 2026, after I'd left. People I worked with tell me the early signals are very positive, but it's too soon to have results.",
+  "notes": "And the next progress tracker. It answers 'tell me what's happening' better than the first one. A remortgage has around ten stages, and the next step can be yours, the mortgage expert's or the lender's. I worked with Habito to understand them, and our engineers built the bridges between both systems.\nI designed one card that changes during the journey. It's orange when it's your turn, and green when someone else is working on it. You get a notification at every step, and you can turn them off by tapping the bell. The chat with your mortgage expert opens from here.\nIt went live in November 2026, after I'd left. People I worked with tell me the early signals are very positive, but it's too soon to have results.",
   "ask": [
    [
     "Is this live?",
@@ -202,22 +144,44 @@ const slides=[
   ]
  },
  {
-  "title": "The vision, almost there",
-  "notes": "This is where it all lands. In 2025 the vision was the whole remortgage without leaving Monzo. This is that journey, designed end to end, and the team is targeting February 2027 for it.\nThe new onboarding presents it as free advice through Monzo. The form is pre-filled, you chat with your mortgage expert, and the recommendation arrives in the chat. You accept it in the app, upload documents from your phone, and the tracker shows every step.\nAt the end we ask: is this your new mortgage? That closes the loop, so we can help again when the new deal ends. Some of these pieces are live already; the rest is designed, and isn't live yet.",
+  "title": "Move the application into Monzo, pre-filled",
+  "notes": "Now, two things we tested. The first is the application form, the most fragmented part of the journey. It lived on the broker's website, and it was long: around 200 questions. With Better, in 2025, almost half of the people we sent to them never finished the form.\nI designed the application inside Monzo, with two decisions I care about. Pre-fill: you confirm what Monzo already knows, instead of typing it again. And saving your progress, because nobody has all their mortgage details ready in one go. We couldn't do that in the first version, so it comes in the next one.\nThe first version went live at the end of September 2026, as a 50/50 test against the existing journey on Habito's website. In the first read, about 40 percent of the people who started the form in Monzo finished it, compared with about 29 percent on the existing journey: roughly a 40 percent relative lift. The sample was still small, so I treated it as an early directional signal.",
   "ask": [
    [
-    "Is this live?",
-    "Not all of it. The new recommendation and the new tracker are live. The rest is designed, and the team is targeting February 2027."
+    "Is the application live?",
+    "Yes. The first version, a simple form, went live at the end of September 2026, as a 50/50 test. I designed it. In the first read, about 40 percent of the people who started it in Monzo finished it, against about 29 percent on the existing journey. It's an early signal, not a mature result."
    ],
    [
-    "Is that a real conversation in the chat?",
-    "The chat design is from the Figma. The conversation is an example I wrote for this deck, so it reads like a real one."
+    "Forty percent more than what?",
+    "It's a relative lift: about 40 percent finished the form in Monzo, against about 29 percent on the existing journey on Habito's website. So about 11 percentage points. The sample was still small, so I treat it as a directional signal."
+   ]
+  ]
+ },
+ {
+  "title": "A push the moment the recommendation is ready",
+  "notes": "The second is the follow-up. People could already see their recommendation in Monzo, but only if they came back. When it was ready, the only reminder was an email from Habito. So I designed a push from Monzo on day zero, when people care the most, and again on day three. Outside the app, it couldn't mention a rate or a lender, to stay compliant.\nWe had two options for where the push should take you: a new screen that set expectations, or the progress tracker, where you could already see your recommendation. We went with the tracker, in May 2026. It gave people a reason to come back to it, and it was a screen we already had, so we could test fast.\nAccepted recommendations went up in our early read, but I don't have the exact uplift, so I'd treat it as a positive early signal, not proof that the push alone caused it.",
+  "ask": [
+   [
+    "Did the push on day zero work?",
+    "Accepted recommendations went up in our early read. I don't have the exact uplift, so I treat it as a positive signal, not proof that the push alone caused it."
+   ],
+   [
+    "What did you measure?",
+    "How many people opened the push on day zero against day three, how many clicked through to Habito, how many dropped before getting there, how long it took them, and in the end, accepted recommendations."
+   ],
+   [
+    "Why land on the tracker and not on the recommendation?",
+    "The tracker already existed, and people could already see their recommendation from it, so we could test quickly. It was working, it just wasn't easy to find."
+   ],
+   [
+    "Was the push an A/B test?",
+    "I don't remember exactly how it was measured, so I won't claim more than what I know: after the push launched in May, more people accepted their recommendation."
    ]
   ]
  },
  {
   "title": "What if designers could check their screens against the rules before Compliance?",
-  "notes": "One more thing, about raising the quality bar. Every screen about rates or deals went back and forth with Compliance. So I built a checker with Cursor, working from the documents that set out the rules, and we used it inside Monzo.\nYou paste your copy or drop in Figma screens. It flags what could break a rule and suggests a fix. If something required is missing, like the APRC, it tells you. It doesn't approve anything: Compliance still does that.\nLoans, Overdrafts and Wealth asked to use it too, so I ran a lunch and learn and set up a feedback channel. What you see is a copy I rebuilt for this case study, with no Monzo data in it.",
+  "notes": "One more thing, about raising the quality bar. Every screen about rates or deals went back and forth with Compliance. So I built a checker with Cursor, working from the documents that set out the rules, and we used it inside Monzo.\nYou paste your copy or drop in Figma screens. It flags what could break a rule and suggests a fix. If something required is missing, like the APRC, it tells you. It doesn't approve anything: Compliance still does that.\nLoans, Overdrafts and Wealth asked to use it too, so I ran a lunch and learn and set up a feedback channel. What you see is a copy I rebuilt for this case study, with no Monzo data in it.\nI did the same later with data, for first-time buyers. I use AI to remove a bottleneck, and the decision stays with me. I'll show you in a minute.",
   "ask": [
    [
     "Does it replace Compliance?",
@@ -256,6 +220,46 @@ const slides=[
   ]
  },
  {
+  "title": "Next: first-time buyers",
+  "notes": "In 2026, first-time buyers became the team's first goal. It was a business decision: we needed to show that buying Habito had been a good decision, and most Monzo customers are working towards buying their first home.\nI was the only designer on it. I designed the vision and the entry points.\nThe research said the problem is bigger than a mortgage. In a 2024 survey, only 38 percent of people knew what to expect from the process. And in interviews, seven of eight people had talked to a broker before making an offer. Trust starts early.\nWe had two limits. Habito's mortgage experts could take about 200 first-time buyers a month from Monzo in November and December. And a purchase takes months, so we couldn't wait for completed mortgages to learn.\nSo the first release had one design question: how do we make it easy to find, without sending people who aren't ready to a mortgage expert?\nWhat's playing on the right is the app today. I recorded it on the 26th of November.",
+  "ask": [
+   [
+    "Why not wait until people have an offer accepted?",
+    "In a reference cohort from October 2025, people with an accepted offer went on to apply about 29 percent of the time, and people with no property yet about 9 percent. But the people without an accepted offer were more than half of those asking for advice, and the research showed that trust in a broker starts before the offer."
+   ],
+   [
+    "What was the goal?",
+    "The goal the team reports is finished fact-finds that reach a mortgage expert: 421 a month by March. It's a target. I don't have results."
+   ],
+   [
+    "Why reuse the remortgage journey?",
+    "To learn sooner with less to build. The tracker and the form already worked for a purchase, so the new design work went into how people find it and what we ask them first."
+   ]
+  ]
+ },
+ {
+  "title": "Entry points, in steps",
+  "notes": "We reused the remortgage journey you've just seen: the tracker, and the form in sections that saves your progress. What I designed new comes before it: how people find it, and what we ask them first.\nI sized each door myself before choosing. I connected Cursor to our data repository and pulled the numbers. Then our data scientist checked my queries. Mortgage and house searches were about 2,000 a week: few people, but if you search for a first home, you want it. About 500,000 people a week open Do more. And the Grow tab, which comes next, has 2 to 3 million a week.\nThe first release is quiet: Search, Do more, and a card on the home screen. No pushes. The mortgage experts couldn't help millions of customers at once, so we agreed to open it in phases.\nThen we ask where you are in your home-buying journey: saving, actively looking, found a property, or offer accepted. If you're still saving, we tell you it's a little early to talk to a mortgage expert, and to come back when the time's right.\nOne idea I designed, and we postponed: Pots. About 52,000 customers had a savings Pot for a house with more than £5,000 in it, and about 460 of them buy a first home each month. They've already told us what they're saving for. But the people who open that Pot often are very engaged with Monzo, and most customers aren't like that. We chose the general doors first, so we could learn from every type of customer.\nThe first release is live in the app today. I designed it at Monzo, and the team launched it after I left. I don't have results. The first thing I'd look at is the mix of readiness, before volume. And next I'd test the value proposition: I designed six versions, and they haven't been tested yet.",
+  "ask": [
+   [
+    "How did you check your numbers?",
+    "I wrote the queries with Cursor on our data repository, which is a day behind. Then our data scientist checked the queries and the numbers against his own data. To choose the order of the entry points, general numbers were enough."
+   ],
+   [
+    "Why postpone Pots if the numbers were good?",
+    "The entry point only works if people open the Pot, and the people who do that often are very engaged with Monzo. We wanted the first release to teach us about every type of customer, so the general doors came first."
+   ],
+   [
+    "How do you learn without completed mortgages?",
+    "From the mix of readiness, where people stop, and what they tell us. I designed four short in-app surveys: one always on, one for people who haven't started, one for people who didn't take the recommendation, and one at a milestone. 'Help us improve' is live in the tracker. I can't confirm the others."
+   ],
+   [
+    "What's in the value proposition test?",
+    "Six versions: a baseline, all in Monzo, Habito Plus, human and digital together, affordability, and first-time-buyer scheme experts. Each has a screen and a notification. It hasn't been run yet."
+   ]
+  ]
+ },
+ {
   "title": "What I learned",
   "notes": "Looking back, four things. One: look past the first number. Referrals beat the plan, but people dropped after the recommendation, so we focused on the recommendation. Two: say what it is. People thought we were a comparison site, and leading with the mortgage expert changed what they expected.\nThree: know the goal, and ship in steps. The vision didn't change, but we got there in pieces: the view-only screen, the push, then the new recommendation. And four: work with what your partner has. Habito had no design team, so I went through the journey as a customer, and we shipped first steps, like their chat inside our app.",
   "ask": []
@@ -267,13 +271,51 @@ const slides=[
  },
  {
   "title": "Thank you. Where would you like to go deeper?",
-  "notes": "And that's the story. Thank you. I'm happy to go deeper into any part of it.",
+  "notes": "And that's the story. Thank you. I'm happy to go deeper into any part of it.\nTwo more slides sit after this one, for questions: the onboarding to Habito, and the full journey planned for February 2027.",
   "ask": [
    [
     "Why did you leave Monzo?",
     "After more than five years at Monzo, and two on the same product, it was my moment to change. The business was putting its energy into opening new lines, which is a fair call. But it meant the plan for remortgaging would stay half-built for a long time, and it started to feel like a project I wouldn't see finished. So I decided to take what I'd learned to a new problem."
    ]
   ]
+ },
+ {
+  "title": "I designed the onboarding to Habito",
+  "notes": "At the end of 2025 Monzo agreed to buy Habito, another mortgage broker. From December we sent customers to both partners, and in October 2026 we stopped sending them to Better.\nLearning one: people thought we were a comparison site, so when a broker started asking about their finances, it felt like a trick. I redesigned the first screen to lead with the mortgage expert: 'Find a mortgage with free expert help'. It went live in May 2026, and Ops told us they were getting fewer questions about comparing deals.\nLearning two: people didn't want to leave Monzo. We couldn't avoid sending them to Habito yet, so I proposed framing the Habito account as a benefit: you can check your progress in the app, or on Habito's website.",
+  "ask": [
+   [
+    "Who did the research in 2026, without a researcher?",
+    "I did. I worked from the answers to our in-house surveys and from customer support conversations."
+   ],
+   [
+    "Did the reframe move conversion?",
+    "Not significantly yet, the numbers are still early. The signal so far comes from Ops: fewer questions about comparing deals, which was the confusion we wanted to fix. It also launched together with the Habito by Monzo brand, so I couldn't separate the two effects cleanly anyway."
+   ],
+   [
+    "Why not just remove the lenders?",
+    "Choice still matters, so the number is still there, in the second line. What changed is the order: first the expert, then the lenders."
+   ],
+   [
+    "Is the screen on the right exactly what went live?",
+    "It's my design for Day 1. The copy kept changing after launch. In my audit that summer I flagged that the live headline could still read like a comparison site, so it's a fight you keep having."
+   ]
+  ],
+  "appx": true
+ },
+ {
+  "title": "The vision, almost there",
+  "notes": "This is where it all lands. In 2025 the vision was the whole remortgage without leaving Monzo. This is that journey, designed end to end, and the team is targeting February 2027 for it.\nThe new onboarding presents it as free advice through Monzo. The form is pre-filled, you chat with your mortgage expert, and the recommendation arrives in the chat. You accept it in the app, upload documents from your phone, and the tracker shows every step.\nAt the end we ask: is this your new mortgage? That closes the loop, so we can help again when the new deal ends. Some of these pieces are live already; the rest is designed, and isn't live yet.",
+  "ask": [
+   [
+    "Is this live?",
+    "Not all of it. The new recommendation and the new tracker are live. The rest is designed, and the team is targeting February 2027."
+   ],
+   [
+    "Is that a real conversation in the chat?",
+    "The chat design is from the Figma. The conversation is an example I wrote for this deck, so it reads like a real one."
+   ]
+  ],
+  "appx": true
  }
 ];
 let current=0;
