@@ -66,7 +66,7 @@ const slides=[
    ],
    [
     "What were the real numbers?",
-    "Of the people who got to a recommendation, about 6 to 6.5 percent submitted an application to a lender with Habito, against 9 to 10 percent with Better. And the goal for the first half was to take accepted recommendations from about 400 to 1,000."
+    "In March 2026, of the people who got a recommendation, about 10 percent submitted an application to a lender, against a target of 23 percent. And the goal for the next half was to take accepted recommendations from about 400 to 1,000 a month. We didn't reach it."
    ],
    [
     "This chart says 153 percent of target, but earlier you said 75 percent above plan?",
