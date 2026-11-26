@@ -245,8 +245,13 @@ const slides=[
  },
  {
   "title": "What I learned",
-  "notes": "Looking back, four things. One: look past the first number. Referrals beat the plan, but people dropped after the recommendation, so we focused on the recommendation. Two: say what it is. People thought we were a comparison site, and leading with the mortgage expert changed what they expected.\nThree: know the goal, and ship in steps. The vision didn't change, but we got there in pieces: the view-only screen, the push, then the new recommendation. And four: work with what your partner has. Habito had no design team, so I went through the journey as a customer, and we shipped first steps, like their chat inside our app.",
-  "ask": []
+  "notes": "Looking back, four things. One: look past the first number. Referrals beat the plan, but people dropped after the recommendation, so we focused on the recommendation. Two: say what it is. People thought we were a comparison site, and leading with the mortgage expert changed what they expected.\nThree: know the goal, and ship in steps. The vision didn't change, but we got there in pieces: the view-only screen, the push, then the new recommendation. And four: work with what your partner has. Habito had no design team, so I went through the journey as a customer, and we shipped first steps, like their chat inside our app.\nAnd what I'd do differently: bring people back sooner, with a notification at every step, because until the journey was inside Monzo they had no reason to come back. And ask about the technical limits before proposing a first version.",
+  "ask": [
+   [
+    "What would you do differently?",
+    "Three things. First, I'd bring people back much earlier. Until the whole journey was inside Monzo, people had no reason to come back to us. We learned that when we had to add a push for the recommendation. I'd have added notifications much sooner, and for every step. Someone getting a mortgage has other things going on in their life, so we need to stay top of mind. Second, the form. We took too long to decide what to do with it. There were real technical limits, but I could have been more proactive: map every question in a spreadsheet and work from that before the API was built. Third, the first tracker. I should have asked about the technical limits before proposing my first version, because it couldn't be built. I don't regret it, because it showed the team where we wanted to get to. But it cost a week or two while engineering checked."
+   ]
+  ]
  },
  {
   "title": "What I’d bring to Cleo",
@@ -268,6 +273,10 @@ const slides=[
    [
     "How did you convince someone who disagreed?",
     "With Habito, on the recommendation. Habito recommends one deal, and customers wanted to compare. I proposed a test: one version with one deal, and one with three, the other two as secondary options. The version with three did about 10 percent better on accepted recommendations. That still didn't convince them, and they had good reasons: how their operations work, and the software their mortgage experts use. So I went back to what customers wanted underneath: to see that the mortgage expert had done the research. In the next iteration I proposed a screen called 'Deals we ruled out'. One recommendation stays on top, which is what Habito needed, and the alternatives are one step away. That's the version that's live."
+   ],
+   [
+    "What would you do differently?",
+    "Three things. First, I'd bring people back much earlier. Until the whole journey was inside Monzo, people had no reason to come back to us. We learned that when we had to add a push for the recommendation. I'd have added notifications much sooner, and for every step. Someone getting a mortgage has other things going on in their life, so we need to stay top of mind. Second, the form. We took too long to decide what to do with it. There were real technical limits, but I could have been more proactive: map every question in a spreadsheet and work from that before the API was built. Third, the first tracker. I should have asked about the technical limits before proposing my first version, because it couldn't be built. I don't regret it, because it showed the team where we wanted to get to. But it cost a week or two while engineering checked."
    ],
    [
     "The short version",
