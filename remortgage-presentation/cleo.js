@@ -167,8 +167,20 @@ const slides=[
  },
  {
   "title": "What changed, and what’s still to do",
-  "notes": "So, what came out of it. Referrals ended about 75 percent above our goal, but a referral is only the first step. The number that matters here is accepted recommendations. They went up a little with the view-only recommendation, and again after the push on day zero.\nBack to the four things customers asked for. Most of it is live: estimated deals, pre-fill, the push, the application inside Monzo since the end of September, and since November the new tracker, the new recommendation, and Habito's chat inside the app as a first step.\nIn September 2026, 355 applications came from Monzo, a record. Completed mortgages come months later, and I can't attribute those applications to the new form. Most of what I designed for Habito launched late in 2026, so the results are only starting to arrive.",
+  "notes": "So, what came out of it, and what was mine.\nThree things were mine. The deal-end question: I added it to onboarding in 2024, and the share of people who told us when their deal ends went from 38 to 88 percent. Everything we did later to reach people at the right moment depends on that date. Reach: showing mortgage rates to everyone, without connecting a mortgage, was my idea and my designs, and referrals ended about 75 percent above our target. And I changed the question the team was asking: people dropped after the recommendation, so we moved our work there.\nEngineering built it and data told us what was working. The hypotheses and the designs were mine.\nThe business number is still early. The cleanest signal is the application form: in a 50/50 test, about 40 percent of people finished it in Monzo, against 29 percent on the broker's website. A mortgage takes months to complete, and most of what I designed for Habito went live in November, after I left.\nBack to the four things customers asked for. Most of it is live: estimated deals, pre-fill, the push, the application inside Monzo, and since November the new tracker, the new recommendation, and Habito's chat inside the app as a first step.",
   "ask": [
+   [
+    "What impact did you have, not the team?",
+    "Three things were mine. The deal-end question: I added it to onboarding in 2024, and people who told us when their deal ends went from 38 to 88 percent. Reach: showing mortgage rates to everyone was my idea and my designs, and referrals ended about 75 percent above our target. And I changed the question the team was asking, from referrals to why people don't go ahead after the recommendation. Engineering built it and data told us what was working. The hypotheses and the designs were mine."
+   ],
+   [
+    "But what business number did you move?",
+    "I can show you early signals, and I can't show you completed mortgages yet. The cleanest one is the application form: in a 50/50 test, about 40 percent of people finished it in Monzo, against 29 percent on the broker's website. I designed that form. A mortgage takes months to complete, and most of what I designed for Habito went live in November, after I left. I'd rather tell you what I know than give you a number I can't defend."
+   ],
+   [
+    "The short version",
+    "The deal-end question took us from 38 to 88 percent. My reach designs took referrals 75 percent above target. And three other teams asked to use the Compliance checker I built."
+   ],
    [
     "What would you measure next?",
     "Accepted recommendations first. Then whether people understand what they accepted: wrong turns, questions to the mortgage expert, and how many come back after leaving."
@@ -237,6 +249,18 @@ const slides=[
   "title": "Thank you. Where would you like to go deeper?",
   "notes": "And that's the story. Thank you. I'm happy to go deeper into any part of it.\nFour more slides sit after this one, for questions: the onboarding to Habito, the full journey planned for February 2027, how we reached more people, and the push on day zero.",
   "ask": [
+   [
+    "What impact did you have, not the team?",
+    "Three things were mine. The deal-end question: I added it to onboarding in 2024, and people who told us when their deal ends went from 38 to 88 percent. Reach: showing mortgage rates to everyone was my idea and my designs, and referrals ended about 75 percent above our target. And I changed the question the team was asking, from referrals to why people don't go ahead after the recommendation. Engineering built it and data told us what was working. The hypotheses and the designs were mine."
+   ],
+   [
+    "But what business number did you move?",
+    "I can show you early signals, and I can't show you completed mortgages yet. The cleanest one is the application form: in a 50/50 test, about 40 percent of people finished it in Monzo, against 29 percent on the broker's website. I designed that form. A mortgage takes months to complete, and most of what I designed for Habito went live in November, after I left. I'd rather tell you what I know than give you a number I can't defend."
+   ],
+   [
+    "The short version",
+    "The deal-end question took us from 38 to 88 percent. My reach designs took referrals 75 percent above target. And three other teams asked to use the Compliance checker I built."
+   ],
    [
     "Why did you leave Monzo?",
     "After more than five years at Monzo, and two on the same product, it was my moment to change. The business was putting its energy into opening new lines, which is a fair call. But it meant the plan for remortgaging would stay half-built for a long time, and it started to feel like a project I wouldn't see finished. So I decided to take what I'd learned to a new problem."
