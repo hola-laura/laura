@@ -89,8 +89,12 @@ const slides=[
  },
  {
   "title": "What customers needed to see before choosing a mortgage",
-  "notes": "Then the recommendation itself. The first view-only version came earlier, inside the Habito integration, and accepting stayed with Habito. In an early test, showing the other deals under the main one gave around a 10 percent relative lift in accepted recommendations, but it didn't get us to our goal. So I redesigned it, to help people decide with confidence.\nOver the summer I tried total cost first, and in September a hub with tools went to a design crit: too many things were competing for attention.\nDuring October we finalised the new recommendation, with a trade-off. People wanted to compare, but Habito wanted one recommended deal. So one deal sits on top, with a note from the mortgage expert explaining why, and the others are one step away. And the monthly payment goes back on top, because showing the total cost first put people off.",
+  "notes": "Then the recommendation itself. The first view-only version came earlier, inside the Habito integration, and accepting stayed with Habito. In an early test, showing the other deals under the main one gave around a 10 percent relative lift in accepted recommendations, but it didn't get us to our goal. So I redesigned it, to help people decide with confidence.\nOver the summer I tried total cost first, and in September a hub with tools went to a design crit: too many things were competing for attention.\nDuring October we finalised the new recommendation, with a trade-off. People wanted to compare, but Habito wanted one recommended deal. What customers wanted to see was that the mortgage expert had done the research. So one deal sits on top, with a note from the mortgage expert explaining why, and the others are one step away. And the monthly payment goes back on top, because showing the total cost first put people off.",
   "ask": [
+   [
+    "How did you convince someone who disagreed?",
+    "With Habito, on the recommendation. Habito recommends one deal, and customers wanted to compare. I proposed a test: one version with one deal, and one with three, the other two as secondary options. The version with three did about 10 percent better on accepted recommendations. That still didn't convince them, and they had good reasons: how their operations work, and the software their mortgage experts use. So I went back to what customers wanted underneath: to see that the mortgage expert had done the research. In the next iteration I proposed a screen called 'Deals we ruled out'. One recommendation stays on top, which is what Habito needed, and the alternatives are one step away. That's the version that's live."
+   ],
    [
     "What did the crit change?",
     "How much was on the first screen. Before, reasons, tools and timeline all competed. After, one recommendation and its reasons, and the rest behind a tap."
@@ -101,6 +105,10 @@ const slides=[
   "title": "The recommendation, inside Monzo",
   "notes": "So this is the new recommendation. I'll tap through it.\nThe pattern is one decision per screen. First you see the recommended deal and what you'd pay each month. The details are one tap away, in sheets that open over the screen: the rate and fees, the perks, and the APRC. You read one and you're back where you were.\n'Why this is your best deal' gives you the mortgage expert's reasons. 'How this deal was calculated' shows the real cost over the whole deal, and the deals we ruled out.\nThen the decision. Accepting asks for your PIN, because it's a commitment. Rejecting asks what you'd change, for example a two-year deal instead of five. And you can chat with your mortgage expert.\nThis version went live in November 2026. I designed these experiences while I was at Monzo. The team implemented and launched some of them after I left.\nThe live data will show if more people accept. To know if they understood it, I'd ask people to explain in their own words why that deal was chosen.",
   "ask": [
+   [
+    "How did you convince someone who disagreed?",
+    "With Habito, on the recommendation. Habito recommends one deal, and customers wanted to compare. I proposed a test: one version with one deal, and one with three, the other two as secondary options. The version with three did about 10 percent better on accepted recommendations. That still didn't convince them, and they had good reasons: how their operations work, and the software their mortgage experts use. So I went back to what customers wanted underneath: to see that the mortgage expert had done the research. In the next iteration I proposed a screen called 'Deals we ruled out'. One recommendation stays on top, which is what Habito needed, and the alternatives are one step away. That's the version that's live."
+   ],
    [
     "Was this built?",
     "Yes. It went live in November 2026. I designed it while I was at Monzo, and the team built and launched it after I left, so it's too early for results. Before it, the view-only version and the push on day zero had shipped."
@@ -256,6 +264,10 @@ const slides=[
    [
     "But what business number did you move?",
     "I can show you early signals, and I can't show you completed mortgages yet. The cleanest one is the application form: in a 50/50 test, about 40 percent of people finished it in Monzo, against 29 percent on the broker's website. I designed that form. A mortgage takes months to complete, and most of what I designed for Habito went live in November, after I left. I'd rather tell you what I know than give you a number I can't defend."
+   ],
+   [
+    "How did you convince someone who disagreed?",
+    "With Habito, on the recommendation. Habito recommends one deal, and customers wanted to compare. I proposed a test: one version with one deal, and one with three, the other two as secondary options. The version with three did about 10 percent better on accepted recommendations. That still didn't convince them, and they had good reasons: how their operations work, and the software their mortgage experts use. So I went back to what customers wanted underneath: to see that the mortgage expert had done the research. In the next iteration I proposed a screen called 'Deals we ruled out'. One recommendation stays on top, which is what Habito needed, and the alternatives are one step away. That's the version that's live."
    ],
    [
     "The short version",
