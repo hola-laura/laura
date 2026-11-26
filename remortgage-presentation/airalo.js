@@ -74,13 +74,13 @@ const slides=[
    ],
    [
     "Did you reach the goal for accepted recommendations?",
-    "They went up: a little with the view-only recommendation, and then after the push on day zero. I don't have the final figure against the goal, so I won't quote one."
+    "They went up: first after the push on day zero, and then a little with the view-only recommendation. I don't have the final figure against the goal, so I won't quote one."
    ]
   ]
  },
  {
   "title": "A push the moment the recommendation is ready",
-  "notes": "Then the moment people decide. People could already see their recommendation in Monzo, but only if they came back. When it was ready, the only reminder was an email from Habito. So I designed a push from Monzo, on day zero, the moment it's ready, when people care the most, and again on day three. Outside the app, it couldn't mention a rate or a lender, to stay compliant.\nWe had two options for where the push should take you. Option A was a new screen that set expectations: your recommendation is ready, Habito is regulated, and it's free. Option B took you to the progress tracker, where you could already see your recommendation, and from there to Habito.\nWe went with B, in May 2026. People found it hard to come back to the tracker, this gave them a reason to, and it was a screen we already had, so we could test fast. Accepted recommendations went up in our early read, but I don't have the exact uplift, so I'd treat it as a positive early signal, not proof that the push alone caused it.",
+  "notes": "Then the moment people decide. At that point, the recommendation lived in Habito, not in Monzo. When it was ready, the only reminder was an email from Habito. So I designed a push from Monzo, on day zero, the moment it's ready, when people care the most, and again on day three. Outside the app, it couldn't mention a rate or a lender, to stay compliant.\nWe had two options for where the push should take you. Option A was a new screen that set expectations: your recommendation is ready, Habito is regulated, and it's free. Option B took you to the progress tracker, and from there to Habito, where your recommendation was.\nWe went with B, in May 2026. People found it hard to come back to the tracker, this gave them a reason to, and it was a screen we already had, so we could test fast. Accepted recommendations went up in our early read, but I don't have the exact uplift, so I'd treat it as a positive early signal, not proof that the push alone caused it.",
   "ask": [
    [
     "Did the push on day zero work?",
@@ -92,7 +92,7 @@ const slides=[
    ],
    [
     "Why land on the tracker and not on the recommendation?",
-    "The tracker already existed, and people could already see their recommendation from it, so we could test quickly. It was working, it just wasn't easy to find."
+    "The tracker already existed, so we could test quickly. It was working, it just wasn't easy to find."
    ],
    [
     "Was the push an A/B test?",
@@ -106,7 +106,7 @@ const slides=[
   "ask": [
    [
     "Was this built?",
-    "Yes. It went live in November 2026. I designed it while I was at Monzo, and the team built and launched it after I left, so it's too early for results. Before it, the view-only version and the push on day zero had shipped."
+    "Yes. It went live in November 2026. I designed it while I was at Monzo, and the team built and launched it after I left, so it's too early for results. Before it, the push on day zero and the view-only version had shipped."
    ],
    [
     "How will the team know it works?",
@@ -134,7 +134,7 @@ const slides=[
  },
  {
   "title": "What changed, and what’s still to do",
-  "notes": "So, what came out of it. Referrals ended about 75 percent above our goal, but a referral is only the first step. The number that matters here is accepted recommendations. They went up a little with the view-only recommendation, and again after the push on day zero.\nBack to the four things customers asked for. Most of it is live: estimated deals, pre-fill, the push, the application inside Monzo since the end of September, and since November the new tracker, the new recommendation, and Habito's chat inside the app as a first step.\nIn September 2026, 355 applications came from Monzo, a record. Completed mortgages come months later, and I can't attribute those applications to the new form. Most of what I designed for Habito launched late in 2026, so the results are only starting to arrive.",
+  "notes": "So, what came out of it. Referrals ended about 75 percent above our goal, but a referral is only the first step. The number that matters here is accepted recommendations. They went up after the push on day zero, and a little more with the view-only recommendation.\nBack to the four things customers asked for. Most of it is live: estimated deals, pre-fill, the push, the application inside Monzo since the end of September, and since November the new tracker, the new recommendation, and Habito's chat inside the app as a first step.\nIn September 2026, 355 applications came from Monzo, a record. Completed mortgages come months later, and I can't attribute those applications to the new form. Most of what I designed for Habito launched late in 2026, so the results are only starting to arrive.",
   "ask": [
    [
     "What would you measure next?",
@@ -152,7 +152,7 @@ const slides=[
  },
  {
   "title": "What I learned",
-  "notes": "Looking back, four things. One: look past the first number. Referrals beat the plan, but people dropped after the recommendation, so we focused on the recommendation. Two: say what it is. People thought we were a comparison site, and leading with the mortgage expert changed what they expected.\nThree: know the goal, and ship in steps. The vision didn't change, but we got there in pieces: the view-only screen, the push, then the new recommendation. And four: work with what your partner has. Habito had no design team, so I went through the journey as a customer, and we shipped first steps, like their chat inside our app.",
+  "notes": "Looking back, four things. One: look past the first number. Referrals beat the plan, but people dropped after the recommendation, so we focused on the recommendation. Two: say what it is. People thought we were a comparison site, and leading with the mortgage expert changed what they expected.\nThree: know the goal, and ship in steps. The vision didn't change, but we got there in pieces: the push, the view-only screen, then the new recommendation. And four: work with what your partner has. Habito had no design team, so I went through the journey as a customer, and we shipped first steps, like their chat inside our app.",
   "ask": []
  },
  {
