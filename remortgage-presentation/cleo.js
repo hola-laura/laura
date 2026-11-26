@@ -6,7 +6,7 @@ const slides=[
  },
  {
   "title": "Monzo customers loved seeing their mortgage in the app, but it didn't make money",
-  "notes": "When I joined, Homeownership was this. You could connect your mortgage from almost any UK lender and see it in the app: your balance, how much of your home you own, and what happens if you overpay or your rate changes.\nThere were 250,000 mortgages connected. Customers loved it, but it didn't make any money.\nIn summer 2024 we launched remortgaging with a broker, Better.co.uk. It proved the model. But once people left Monzo for Better's website, we couldn't see or change what happened next.",
+  "notes": "When I joined, Homeownership was this. You could connect your mortgage from almost any UK lender and see it in the app: your balance, how much of your home you own, and what happens if you overpay or your rate changes.\nThere were 250,000 mortgages connected. Customers loved it, but it didn't make any money.\nIn summer 2024 we launched remortgaging with a broker, Better.co.uk. This last screen is where people left Monzo for Better's website. It proved the model. But once people left Monzo for Better's website, we couldn't see or change what happened next.",
   "ask": [
    [
     "How does connecting a mortgage work?",
