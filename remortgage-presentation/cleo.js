@@ -281,7 +281,7 @@ const slides=[
  },
  {
   "title": "The vision: from saving to owning, in Monzo",
-  "notes": "And this is the vision I designed for first-time buyers. It isn't about selling a mortgage. It's about staying with people for the whole life of their home.\nYou prepare, with an affordability calculator. You build a buyer profile, with your mortgage in principle and your adviser. You follow one plan: save the deposit, then compare lenders. And when you buy, Monzo keeps the conveyancing in one place, and explains your survey in plain words. At the end you own your home, with your mortgage in Monzo, and remortgaging brings you back to the start.\nThe first release covers finding the right mortgage, and remortgaging is already live. The rest is a direction, not a plan.",
+  "notes": "And this is the vision I designed for first-time buyers. It isn't about selling a mortgage. It's about staying with people for the whole life of their home.\nYou start by seeing what you can afford. Everything lives in one buyer profile, with your mortgage in principle and your adviser. When you find a home you like, you paste the listing and get insights, and you can share it with your adviser in a chat. Then Monzo Move gives you a conveyancing quote, every step of the purchase is tracked, and your survey comes back in plain words. And when you get the keys, your home story starts, with your mortgage in Monzo, until it's time to remortgage.\nThe first release covers finding the right mortgage, and remortgaging is already live. The rest is a direction, not a plan.",
   "ask": []
  },
  {
