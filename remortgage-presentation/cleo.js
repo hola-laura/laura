@@ -66,7 +66,7 @@ const slides=[
  },
  {
   "title": "Where people got stuck, and who could fix it",
-  "notes": "With our PM, I co-led a workshop about the drop-off, and I turned what we learned into an opportunity solution tree. Our hypothesis: these people wanted to remortgage, but when they saw the recommendation, they didn't feel confident enough to say yes.\nWe identified five possible causes. Relevance: you couldn't see the reasons or the mortgage expert behind the recommendation. Leaving Monzo: people got sent out of the app. Timing: some were still looking around. Momentum: our follow-up was slow and easy to miss. In one review, 54 percent of people didn't reply after they got their recommendation. And friction: the form was long, which we were already working on.\nFor each cause I asked: can Monzo fix it, or is it up to Habito? Relevance was split: Habito wrote the advice, and we could change how it showed up in Monzo.",
+  "notes": "With our PM, I co-led a workshop about the drop-off, and I turned what we learned into an opportunity solution tree. Our hypothesis: these people wanted to remortgage, but when they saw the recommendation, they didn't feel confident enough to say yes.\nWe identified five possible causes. Relevance: you couldn't see the reasons or the mortgage expert behind the recommendation. Leaving Monzo: people got sent out of the app. Timing: some were still looking around. Momentum: our follow-up was slow and easy to miss. In one review, 54 percent of people didn't reply after they got their recommendation. And friction: the form was long, which we were already working on.\nFor each cause I asked: can Monzo fix it, or is it up to Habito? Relevance was split: Habito wrote the advice, and we could change how it showed up in Monzo.\nWhat comes next follows these causes, starting with what we'd already shipped.",
   "ask": [
    [
     "What did you decide not to do?",
@@ -84,8 +84,22 @@ const slides=[
  },
  {
   "title": "We shipped the simplest tracker first",
-  "notes": "The first progress tracker shows how I work with trade-offs. We designed it for Better and launched it with the Habito onboarding, so it worked for both partners. The ideal version had your steps, your deals and your expert in one place, but it depended on data we couldn't get. A second version, with a screen for every step, would have made the build much longer.\nSo we shipped the third: the broker's own steps, with one card that changes at each step, and a button back to the broker. We heard it was useful, but we didn't see a measurable change in how many people reached or accepted a recommendation. The decision I'd make again: ship it small. It showed us early how hard the data part was.\nTo design it, I had to understand Habito's journey, and Habito had no design team and no design files. So I applied for a mortgage through Habito myself, as a real customer, and mapped the whole journey for the team.",
+  "notes": "One thing we'd already shipped was the first progress tracker. It shows how I work with trade-offs. We designed it for Better and launched it with the Habito onboarding, so it worked for both partners. The ideal version had your steps, your deals and your expert in one place, but it depended on data we couldn't get. A second version, with a screen for every step, would have made the build much longer.\nSo we shipped the third: the broker's own steps, with one card that changes at each step, and a button back to the broker. We heard it was useful, but we didn't see a measurable change in how many people reached or accepted a recommendation. The decision I'd make again: ship it small. It showed us early how hard the data part was.\nTo design it, I had to understand Habito's journey, and Habito had no design team and no design files. So I applied for a mortgage through Habito myself, as a real customer, and mapped the whole journey for the team.",
   "ask": []
+ },
+ {
+  "title": "Move the application into Monzo, pre-filled",
+  "notes": "Then friction: the form. The application form was the most fragmented part of the journey. It lived on the broker's website, and it was long: around 200 questions. With Better, in 2025, almost half of the people we sent to them never finished the form.\nI designed the application inside Monzo, with two decisions I care about. Pre-fill: you confirm what Monzo already knows, instead of typing it again. And saving your progress, because nobody has all their mortgage details ready in one go. We couldn't do that in the first version, so it comes in the next one.\nThe first version went live at the end of September 2026, as a 50/50 test against the existing journey on Habito's website. In the first read, about 40 percent of the people who started the form in Monzo finished it, compared with about 29 percent on the existing journey: roughly a 40 percent relative lift. The sample was still small, so I treated it as an early directional signal.",
+  "ask": [
+   [
+    "Is the application live?",
+    "Yes. The first version, a simple form, went live at the end of September 2026, as a 50/50 test. I designed it. In the first read, about 40 percent of the people who started it in Monzo finished it, against about 29 percent on the existing journey. It's an early signal, not a mature result."
+   ],
+   [
+    "Forty percent more than what?",
+    "It's a relative lift: about 40 percent finished the form in Monzo, against about 29 percent on the existing journey on Habito's website. So about 11 percentage points. The sample was still small, so I treat it as a directional signal."
+   ]
+  ]
  },
  {
   "title": "What customers needed to see before choosing a mortgage",
@@ -152,20 +166,6 @@ const slides=[
    [
     "Why was it paused?",
     "It came down to priorities. Our own chat in Monzo was possible, but the team decided to put its resources into first-time buyers this year. In the meantime, Habito's chat works inside the app, since November 2026. It isn't a final decision, and the design and the guardrails are ready for when it comes back."
-   ]
-  ]
- },
- {
-  "title": "Move the application into Monzo, pre-filled",
-  "notes": "Now, a test. The application form was the most fragmented part of the journey. It lived on the broker's website, and it was long: around 200 questions. With Better, in 2025, almost half of the people we sent to them never finished the form.\nI designed the application inside Monzo, with two decisions I care about. Pre-fill: you confirm what Monzo already knows, instead of typing it again. And saving your progress, because nobody has all their mortgage details ready in one go. We couldn't do that in the first version, so it comes in the next one.\nThe first version went live at the end of September 2026, as a 50/50 test against the existing journey on Habito's website. In the first read, about 40 percent of the people who started the form in Monzo finished it, compared with about 29 percent on the existing journey: roughly a 40 percent relative lift. The sample was still small, so I treated it as an early directional signal.",
-  "ask": [
-   [
-    "Is the application live?",
-    "Yes. The first version, a simple form, went live at the end of September 2026, as a 50/50 test. I designed it. In the first read, about 40 percent of the people who started it in Monzo finished it, against about 29 percent on the existing journey. It's an early signal, not a mature result."
-   ],
-   [
-    "Forty percent more than what?",
-    "It's a relative lift: about 40 percent finished the form in Monzo, against about 29 percent on the existing journey on Habito's website. So about 11 percentage points. The sample was still small, so I treat it as a directional signal."
    ]
   ]
  },
