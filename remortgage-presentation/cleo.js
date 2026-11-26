@@ -103,7 +103,7 @@ const slides=[
  },
  {
   "title": "The recommendation, inside Monzo",
-  "notes": "So this is the new recommendation. I'll tap through it.\nFirst you see the recommended deal and what you'd pay each month. The details are one tap away, in sheets that open over the screen, like the rate, the fees and the APRC. You read one and you're back where you were.\n'Why this is your best deal' gives you the mortgage expert's reasons. 'How this deal was calculated' shows the real cost over the whole deal, and the deals we ruled out.\nBefore you commit you can see every detail, and you can accept, reject, or chat with your mortgage expert, which opens Habito's chat. And the last screen tells you what happens next.\nThis version went live in November 2026. I designed these experiences while I was at Monzo. The team implemented and launched some of them after I left.\nThe live data will show if more people accept. To know if they understood it, I'd ask people to explain in their own words why that deal was chosen.\nThe new recommendation and the new tracker both brought new components into Monzo's design system. At Monzo, that goes through the design system team's own process.",
+  "notes": "So this is the new recommendation. I'll tap through it.\nFirst you see the recommended deal and what you'd pay each month. The details are one tap away, in sheets that open over the screen, like the rate, the fees and the APRC. You read one and you're back where you were. I defined how they open and close, so you never lose your place.\n'Why this is your best deal' gives you the mortgage expert's reasons. 'How this deal was calculated' shows the real cost over the whole deal, and the deals we ruled out.\nBefore you commit you can see every detail, and you can accept, reject, or chat with your mortgage expert, which opens Habito's chat. And the last screen tells you what happens next.\nThis version went live in November 2026. I designed these experiences while I was at Monzo. The team implemented and launched some of them after I left.\nThe live data will show if more people accept. To know if they understood it, I'd ask people to explain in their own words why that deal was chosen.\nThe new recommendation and the new tracker both brought new components into Monzo's design system. At Monzo, that goes through the design system team's own process.",
   "ask": [
    [
     "How did you convince someone who disagreed?",
@@ -125,7 +125,7 @@ const slides=[
  },
  {
   "title": "The tracker shows who has to act next",
-  "notes": "And the next progress tracker. It answers 'tell me what's happening' better than the first one. A remortgage has around ten stages, and the next step can be yours, the mortgage expert's or the lender's. I worked with Habito to understand them, and our engineers built the bridges between both systems.\nI designed one card that changes during the journey, so there's always one next step. It's orange when it's your turn, and green when someone else is working on it. You get a notification at every step, and you can turn them off by tapping the bell.\nIf you're remortgaging, the tracker is the first thing you see in Homeownership. A push from Monzo brings you back here when your recommendation is ready, and the chat with your mortgage expert opens from here.\nIn a design crit, a designer from the pensions team was exploring a tracker too. I worked with them to shape a pattern that works for both products.\nIt went live in November 2026, after I'd left. People I worked with tell me the early signals are very positive, but it's too soon to have results.",
+  "notes": "And the next progress tracker. It answers 'tell me what's happening' better than the first one. A remortgage has around ten stages, and the next step can be yours, the mortgage expert's or the lender's. I worked with Habito to understand them, and our engineers built the bridges between both systems.\nI designed one card that changes during the journey, so there's always one next step. It's orange when it's your turn, and green when someone else is working on it. You get a notification at every step, and you can turn them off by tapping the bell.\nI defined the interactions and the motion: how the card moves forward at each step, and how things open. The animated illustrations were my idea too, and our team's animator brought them to life.\nIf you're remortgaging, the tracker is the first thing you see in Homeownership. A push from Monzo brings you back here when your recommendation is ready, and the chat with your mortgage expert opens from here.\nIn a design crit, a designer from the pensions team was exploring a tracker too. I worked with them to shape a pattern that works for both products.\nIt went live in November 2026, after I'd left. People I worked with tell me the early signals are very positive, but it's too soon to have results.",
   "ask": [
    [
     "Is this live?",
@@ -134,6 +134,10 @@ const slides=[
    [
     "Why one card instead of a full timeline?",
     "Because people open it to answer one question: do I need to do something? The full timeline is one tap away."
+   ],
+   [
+    "Who did the motion?",
+    "I defined every interaction and micro-interaction: how sheets open, how the tracker card moves forward. The animated illustrations were my idea, and our team's animator made them."
    ]
   ]
  },
@@ -189,7 +193,7 @@ const slides=[
  },
  {
   "title": "What changed, and what’s still to do",
-  "notes": "So, what came out of it, and what was mine.\nThree things were mine. The deal-end question: I added it to onboarding in 2024, and the share of people who told us when their deal ends went from 38 to 88 percent. Everything we did later to reach people at the right moment depends on that date. Reach: showing mortgage rates to everyone, without connecting a mortgage, was my idea and my designs, and by early 2026 referrals were about 75 percent above our target. And I changed the question the team was asking: people dropped after the recommendation, so we moved our work there.\nEngineering built it and data told us what was working. The hypotheses and the designs were mine.\nWe didn't reach the £990,000 goal, or the goal for accepted recommendations. The business number for what came later is still early. The cleanest signal is the application form: in a 50/50 test, about 40 percent of people finished it in Monzo, against 29 percent on the broker's website. A mortgage takes months to complete, and most of what I designed for Habito went live in November, after I left.\nBack to the four things customers asked for. Most of it is live: estimated deals, pre-fill, the push, the application inside Monzo, and since November the new tracker, the new recommendation, and Habito's chat inside the app as a first step.\nAnd for what launched in November, this is what I'd measure: accepted recommendations for the new recommendation, people coming back to the app for the tracker, and chats in the wrong place for the chat.",
+  "notes": "So, what came out of it, and what was mine.\nThree things were mine. The deal-end question: I added it to onboarding in 2024, and the share of people who told us when their deal ends went from 38 to 88 percent. Everything we did later to reach people at the right moment depends on that date. Reach: showing mortgage rates to everyone, without connecting a mortgage, was my idea and my designs, and by early 2026 referrals were about 75 percent above our target. And I changed the question the team was asking: people dropped after the recommendation, so we moved our work there.\nEngineering built it and data told us what was working. The hypotheses and the designs were mine.\nWe didn't reach the £990,000 goal, or the goal for accepted recommendations. The business number for what came later is still early. The cleanest signal is the application form: in a 50/50 test, about 40 percent of people finished it in Monzo, against 29 percent on the broker's website. A mortgage takes months to complete, and most of what I designed for Habito went live in November, after I left.\nBack to the four things customers asked for. Most of it is live: estimated deals, pre-fill, the push, the application inside Monzo, and since November the new tracker, the new recommendation, and Habito's chat inside the app as a first step.\nAnd for what launched in November, this is what I'd measure: accepted recommendations for the new recommendation, people coming back to the app for the tracker, and chats in the wrong place for the chat.\nAnd what I'd do with each answer, from the opportunity tree. If accepted recommendations don't go up, the next lever is trust: making the mortgage expert's reasons stronger. If people don't come back to the tracker, a nudge at every step, not only for the recommendation. And if more than 5 percent of chats land in the wrong place, we roll back, as we agreed before launch.",
   "ask": [
    [
     "What impact did you have, not the team?",
@@ -214,6 +218,10 @@ const slides=[
    [
     "What did you do on first-time buyers?",
     "The vision, and the design of the first release, which launched in November 2026."
+   ],
+   [
+    "How did you lead, as the only designer?",
+    "Through the work and through people. I ran the workshop that turned the vision into a plan, took my work to design crits, and ran a lunch and learn on the Compliance checker. And I mentored two people from Operations at Monzo, who are now part of the Product Design team."
    ]
   ]
  },
@@ -269,7 +277,7 @@ const slides=[
  },
  {
   "title": "What I’d bring to Cleo",
-  "notes": "And why Cleo. From what I understand, people use Cleo to make decisions about their money, often in a chat. That's close to my last two years: helping people trust a recommendation enough to act on it, and designing a chat with a mortgage expert, with guardrails.\nAnd I like to know the goal and ship in steps: small releases, measured early. That's how I'd like to work with you.",
+  "notes": "And why Cleo. From what I understand, people use Cleo to make decisions about their money, often in a chat. That's close to my last two years: helping people trust a recommendation enough to act on it, and designing a chat with a mortgage expert, with guardrails.\nAnd I like to know the goal and ship in steps: small releases, measured early. That's how I'd like to work with you. And I like growing people: at Monzo I mentored two people from Operations who are now part of the Product Design team.",
   "ask": []
  },
  {
@@ -299,6 +307,10 @@ const slides=[
    [
     "Why did you leave Monzo?",
     "After more than five years at Monzo, and two on the same product, it was my moment to change. The business was putting its energy into opening new lines, which is a fair call. But it meant the plan for remortgaging would stay half-built for a long time, and it started to feel like a project I wouldn't see finished. So I decided to take what I'd learned to a new problem."
+   ],
+   [
+    "How did you lead, as the only designer?",
+    "Through the work and through people. I ran the workshop that turned the vision into a plan, took my work to design crits, and ran a lunch and learn on the Compliance checker. And I mentored two people from Operations at Monzo, who are now part of the Product Design team."
    ]
   ]
  },
