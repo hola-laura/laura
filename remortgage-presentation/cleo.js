@@ -106,7 +106,7 @@ const slides=[
   ]
  },
  {
-  "title": "What customers needed to see before choosing a mortgage",
+  "title": "What customers needed to choose a mortgage",
   "notes": "Then the moment people decide. First, the follow-up. When a recommendation was ready, the only reminder was an email from Habito. So in May 2026 I designed a push from Monzo, on day zero and day three, that opens the tracker. Outside the app the copy couldn't mention a rate or a lender, to stay compliant.\nThen the recommendation itself. The first view-only version came in June 2026, inside the Habito integration, and accepting stayed with Habito. In an early test, showing the other deals under the main one gave around a 10 percent relative lift in accepted recommendations, but it didn't get us to our goal: from about 400 to 1,000 accepted recommendations a month. So I redesigned it, to help people decide with confidence.\nOver the summer I tried different iterations that went to team crit and design team crit. For example, exploring a hub with tools, I realised too many things were competing for attention, and I needed to make better use of progressive disclosure.\nDuring September I finalised the new recommendation, with a trade-off. People wanted to compare, but Habito wanted one recommended deal. What customers wanted to see was that the mortgage expert had done the research. So one deal sits on top, with a note from the mortgage expert explaining why, and the others are one step away. And the monthly payment goes back on top, because showing the total cost first put people off.",
   "ask": [
    [
