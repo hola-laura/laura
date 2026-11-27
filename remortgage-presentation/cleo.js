@@ -187,7 +187,7 @@ const slides=[
  },
  {
   "title": "What if designers could check their screens against the rules before Compliance?",
-  "notes": "One more thing, about raising the quality bar. Every screen about rates or deals went back and forth with Compliance. So I built a checker with Cursor, working from the documents that set out the rules, and we used it inside Monzo.\nYou paste your copy or drop in Figma screens. It flags what could break a rule and suggests a fix. If something required is missing, like the APRC, it tells you. It doesn't approve anything: Compliance still does that.\nI presented it in a lunch and learn, and Loans, Overdrafts and Wealth asked to use it too. I took that feedback on and built a feature so each team can upload new regulations, or remove the ones they don't need.\nI use AI to remove a bottleneck, and the decision stays with me.",
+  "notes": "One more thing, about raising the quality bar. Every screen about rates or deals went back and forth with Compliance. So I built a checker with Cursor, working from the documents that set out the rules, and we used it inside Monzo.\nYou paste your copy or drop in Figma screens. It flags what could break a rule and suggests a fix. If something required is missing, like the APRC, it tells you. It doesn't approve anything: Compliance still does that.\nI presented it in a lunch and learn, and Loans, Overdrafts and Wealth asked to use it too. I took that feedback on and built a feature so each team can upload new regulations, or remove the ones they don't need. What you see is a copy I rebuilt for this case study, with no Monzo data in it.\nI use AI to remove a bottleneck, and the decision stays with me.",
   "ask": [
    [
     "Does it replace Compliance?",
