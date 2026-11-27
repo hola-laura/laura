@@ -235,15 +235,11 @@ const slides=[
  },
  {
   "title": "What changed, and what’s still to do",
-  "notes": "So, what came out of it, and what was mine.\nThree things were mine: the deal-end question, from 38 to 88 percent. Reach, with referrals about 75 percent above target. And when we didn't hit our goals, I moved the team's work to the recommendation.\nWe didn't reach the £990,000 goal. The cleanest signal is the form: about 40 percent finished it in Monzo, against 29 percent on the broker's website. Most of the rest went live in November, after I left.\nOn the right is where each of the four asks stands. Most of it is live, and pre-fill was rolled back after errors.",
+  "notes": "So, what came out of it, and what was mine.\nI led all the design: the vision, the onboarding, the form, the recommendation, the tracker, the pushes and the chat. And beyond the screens, three things came from me: the deal-end question, from 38 to 88 percent. Reach, with referrals about 75 percent above target. And when we didn't hit our goals, I moved the team's work to the recommendation.\nWe didn't reach the £990,000 goal. The cleanest signal is the form: about 40 percent finished it in Monzo, against 29 percent on the broker's website. Most of the rest went live in November, after I left.\nOn the right is where each of the four asks stands. Most of it is live, and pre-fill was rolled back after errors.",
   "ask": [
    [
-    "What would you measure next?",
-    "For what launched in November, from the opportunity tree. If accepted recommendations don't go up, the next lever is trust: making the mortgage expert's reasons stronger. If people don't come back to the tracker, we look at the nudges: when we send them, and what they say. And if more than 5 percent of chats land in the wrong place, we roll back, as we agreed before launch."
-   ],
-   [
     "What impact did you have, not the team?",
-    "Three things were mine. The deal-end question: I added it to onboarding in 2024, and people who told us when their deal ends went from 38 to 88 percent. Reach: showing mortgage rates to everyone was my idea and my designs, and by early 2026 referrals were about 75 percent above our target. And I changed the question the team was asking, from referrals to why people don't go ahead after the recommendation. Engineering built it and data told us what was working. The hypotheses and the designs were mine."
+    "I led all the design, end to end: the vision, the onboarding, the form, the recommendation, the tracker, the pushes and the chat. And beyond the screens, three things came from me. The deal-end question: I added it to onboarding in 2024, and people who told us when their deal ends went from 38 to 88 percent. Reach: showing mortgage rates to everyone was my idea and my designs, and by early 2026 referrals were about 75 percent above our target. And I changed the question the team was asking, from referrals to why people don't go ahead after the recommendation. Engineering built it and data told us what was working. The hypotheses and the designs were mine."
    ],
    [
     "But what business number did you move?",
