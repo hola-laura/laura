@@ -250,8 +250,13 @@ const slides=[
   ]
  },
  {
-  "title": "Next: first-time buyers",
-  "notes": "From autumn 2026, first-time buyers became the team's first goal. It was a business decision: we needed to show that buying Habito had been a good decision, and most Monzo customers are working towards buying their first home. I was the only designer on it. I designed the vision and the entry points.\nThe problem is bigger than a mortgage. In a 2024 survey, only 38 percent of people knew what to expect from the process. And in interviews, seven of eight people had talked to a broker before making an offer. Trust starts early.\nOur hypothesis: if we open Monzo's mortgage journey to first-time buyers, with what we'd already built, we can learn who comes in and how ready they are, before investing in a bigger proposition. So we designed for learning, not for volume.\nAnd we couldn't open it to millions at once: the mortgage experts could take about 200 first-time buyers a month from Monzo.\nThat left one design question: how do we make it easy enough to find, without sending people who aren't ready to a mortgage expert?\nOn the right is the app today.",
+  "title": "The vision: from saving to owning, in Monzo",
+  "notes": "Next, first-time buyers. We always wanted to cover the whole mortgage journey: from looking for a home, to your first mortgage, to remortgaging, and maybe moving home. So we knew first-time buyers would come at some point. While I worked on the more tactical remortgaging work, I explored this vision in parallel.\nIt isn't about selling a mortgage. It's about staying with people for the whole life of their home.\nYou see what you can afford, keep everything in one buyer profile, and talk to your adviser in a chat. When you buy, every step is tracked, from the conveyancing to the survey. And when you get the keys, your home story starts, until it's time to remortgage.\nIt's a direction, not a plan.",
+  "ask": []
+ },
+ {
+  "title": "First-time buyers became the priority",
+  "notes": "In autumn 2026, first-time buyers became the team's first goal. Remortgaging wasn't hitting its goals, and we knew many Monzo customers are working towards buying their first home, so we decided to open it as soon as possible. It was also a business decision: we needed to show that buying Habito had been a good decision.\nI was the only designer on it. The first release covers the first step of the vision: finding the right mortgage. I designed the entry points.\nThe problem is bigger than a mortgage. In a 2024 survey, only 38 percent of people knew what to expect from the process. And in interviews, seven of eight people had talked to a broker before making an offer. Trust starts early.\nOur hypothesis: if we open Monzo's mortgage journey to first-time buyers, with what we'd already built, we can learn who comes in and how ready they are, before investing in a bigger proposition. So we designed for learning, not for volume.\nAnd we couldn't open it to millions at once: the mortgage experts could take about 200 first-time buyers a month from Monzo.\nThat left one design question: how do we make it easy enough to find, without sending people who aren't ready to a mortgage expert?\nOn the right is the app today.",
   "ask": [
    [
     "Why not wait until people have an offer accepted?",
@@ -302,11 +307,6 @@ const slides=[
     "Six versions: a baseline, all in Monzo, Habito Plus, human and digital together, affordability, and first-time-buyer scheme experts. Each has a screen and a notification. It hasn't been run yet."
    ]
   ]
- },
- {
-  "title": "The vision: from saving to owning, in Monzo",
-  "notes": "And this is the vision I designed for first-time buyers. It isn't about selling a mortgage. It's about staying with people for the whole life of their home.\nYou see what you can afford, keep everything in one buyer profile, and talk to your adviser in a chat. When you buy, every step is tracked, from the conveyancing to the survey. And when you get the keys, your home story starts, until it's time to remortgage.\nThe first release covers finding the right mortgage, and remortgaging is already live. The rest is a direction, not a plan.",
-  "ask": []
  },
  {
   "title": "What I learned",
