@@ -20,6 +20,11 @@ const slides=[
   "ask": []
  },
  {
+  "title": "I designed the onboarding to Habito",
+  "notes": "",
+  "ask": []
+ },
+ {
   "title": "Referrals beat the plan, the later stages didn’t",
   "notes": "",
   "ask": []
@@ -103,12 +108,6 @@ const slides=[
   "title": "Thank you. Where would you like to go deeper?",
   "notes": "",
   "ask": []
- },
- {
-  "title": "I designed the onboarding to Habito",
-  "notes": "",
-  "ask": [],
-  "appx": true
  },
  {
   "title": "The vision, almost there",

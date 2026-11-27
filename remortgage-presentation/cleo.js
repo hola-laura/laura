@@ -43,6 +43,28 @@ const slides=[
   ]
  },
  {
+  "title": "I designed the onboarding to Habito",
+  "notes": "The first thing we did with Habito was the onboarding. We didn't have time to redesign and test a whole new one, so I translated Better's onboarding to Habito. I applied what we had learned, and adapted it to how Habito worked.\nLearning one: people thought we were a comparison site, so when a broker started asking about their finances, it felt like a trick. I redesigned the first screen to lead with the mortgage expert: 'Find a mortgage with free expert help'. It went live in May 2026, and Ops told us they were getting fewer questions about comparing deals.\nLearning two: people didn't want to leave Monzo. We couldn't avoid sending them to Habito yet, so I proposed framing the Habito account as a benefit: you can check your progress in the app, or on Habito's website.",
+  "ask": [
+   [
+    "Who did the research in 2026, without a researcher?",
+    "I did. I worked from the answers to our in-house surveys and from customer support conversations."
+   ],
+   [
+    "Did the reframe move conversion?",
+    "Not significantly yet, the numbers are still early. The signal so far comes from Ops: fewer questions about comparing deals, which was the confusion we wanted to fix. It also launched together with the Habito by Monzo brand, so I couldn't separate the two effects cleanly anyway."
+   ],
+   [
+    "Why not just remove the lenders?",
+    "Choice still matters, so the number is still there, in the second line. What changed is the order: first the expert, then the lenders."
+   ],
+   [
+    "Is the screen on the right exactly what went live?",
+    "It's my design for Day 1. The copy kept changing after launch. In my audit that summer I flagged that the live headline could still read like a comparison site, so it's a fight you keep having."
+   ]
+  ]
+ },
+ {
   "title": "Referrals beat the plan, the later stages didn’t",
   "notes": "We couldn't build the vision overnight, and we still had revenue targets. So first I designed ways to reach more people.\nThese are indicative rates: mortgage rates for everyone, with no need to connect a mortgage. We filled in the details with averages for your area, and you could change them. Connected customers got estimated deals from real lenders. By early 2026, total referrals across all our partners were around 7,500 a month, against a target of 4,300.\nBut a referral isn't a mortgage. In the Habito funnel, against its own 2026 targets, referrals were at 153 percent. Reaching a recommendation was at 72 percent. And accepted recommendations, going ahead with one lender, were at only 44 percent. Overall, only 7 percent of referrals made it to an accepted recommendation. The biggest gap came after the recommendation, when intent should be highest.\nSo we chose accepted recommendations as our signal, and the question changed: from 'how do we send more people?' to 'why don't people with a recommendation go ahead?'",
   "ask": [
@@ -325,7 +347,7 @@ const slides=[
  },
  {
   "title": "Thank you. Where would you like to go deeper?",
-  "notes": "And that's the story. Thank you. I'm happy to go deeper into any part of it.\nFour more slides sit after this one, for questions: the onboarding to Habito, the full journey planned for February 2027, how we reached more people, and the push on day zero.",
+  "notes": "And that's the story. Thank you. I'm happy to go deeper into any part of it.\nThree more slides sit after this one, for questions: the full journey planned for February 2027, how we reached more people, and the push on day zero.",
   "ask": [
    [
     "What impact did you have, not the team?",
@@ -356,29 +378,6 @@ const slides=[
     "Through the work and through people. I ran the workshop that turned the vision into a plan, took my work to design crits, and ran a lunch and learn on the Compliance checker. And I mentored two people from Operations at Monzo, who are now part of the Product Design team."
    ]
   ]
- },
- {
-  "title": "I designed the onboarding to Habito",
-  "notes": "At the end of 2025 Monzo agreed to buy Habito, another mortgage broker. From December we sent customers to both partners, and in October 2026 we stopped sending them to Better.\nLearning one: people thought we were a comparison site, so when a broker started asking about their finances, it felt like a trick. I redesigned the first screen to lead with the mortgage expert: 'Find a mortgage with free expert help'. It went live in May 2026, and Ops told us they were getting fewer questions about comparing deals.\nLearning two: people didn't want to leave Monzo. We couldn't avoid sending them to Habito yet, so I proposed framing the Habito account as a benefit: you can check your progress in the app, or on Habito's website.",
-  "ask": [
-   [
-    "Who did the research in 2026, without a researcher?",
-    "I did. I worked from the answers to our in-house surveys and from customer support conversations."
-   ],
-   [
-    "Did the reframe move conversion?",
-    "Not significantly yet, the numbers are still early. The signal so far comes from Ops: fewer questions about comparing deals, which was the confusion we wanted to fix. It also launched together with the Habito by Monzo brand, so I couldn't separate the two effects cleanly anyway."
-   ],
-   [
-    "Why not just remove the lenders?",
-    "Choice still matters, so the number is still there, in the second line. What changed is the order: first the expert, then the lenders."
-   ],
-   [
-    "Is the screen on the right exactly what went live?",
-    "It's my design for Day 1. The copy kept changing after launch. In my audit that summer I flagged that the live headline could still read like a comparison site, so it's a fight you keep having."
-   ]
-  ],
-  "appx": true
  },
  {
   "title": "The vision, almost there",
