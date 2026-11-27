@@ -1,12 +1,12 @@
 const slides=[
  {
   "title": "Remortgaging at Monzo, 2025–26",
-  "notes": "Hi, I'm Laura. Thanks for having me. I'm going to walk you through remortgaging at Monzo, from the first research in 2025 to what's live today. At the end I'll show you what came next: first-time buyers.\nMy title was Senior Product Designer. I was the only product designer on the squad, and I led the design from the initial vision through to the Habito integration.\nJust to spice things up, let me start with the ending. We beat our referral goal by about 75 percent, but mortgages didn't grow at the same pace. Most of what you'll see is how I found out why, and what I designed to fix it.",
+  "notes": "Hi, I'm Laura. Thanks for having me. I'm going to walk you through remortgaging at Monzo, from the research in 2025 to what's live today. At the end I'll show you what came next: first-time buyers.\nMy title was Senior Product Designer. I was the only product designer on the squad, and I led the design from the initial vision through to the Habito integration.\nJust to spice things up, let me start with the ending. We beat our referral goal by about 75 percent, but mortgages didn't grow at the same pace. Most of what you'll see is how I found out why, and what I designed to fix it.",
   "ask": []
  },
  {
   "title": "Monzo customers loved seeing their mortgage in the app, but it didn't make money",
-  "notes": "When I joined, Homeownership was this. You could connect your mortgage from almost any UK lender and see it in the app: your balance, how much of your home you own, and what happens if you overpay or your rate changes.\nThere were 250,000 mortgages connected. Customers loved it, but it didn't make any money.\nIn summer 2024 we launched remortgaging with a broker, Better.co.uk. It proved the model. But once people left Monzo for Better's website, on this last screen, we couldn't see or change what happened next.",
+  "notes": "When I joined, Homeownership was this. You could connect your mortgage from any UK lender and see it in the app: your balance, how much of your home you own, and what happens if you overpay or your rate changes.\nThere were 250,000 mortgages connected. Customers loved it, but it didn't make any money.\nIn summer 2024 we launched remortgaging with a broker, Better.co.uk. It proved the model. But once people left Monzo for Better's website, on this last screen, we couldn't see or change what happened next. And we weren't hitting our goal: £1 million a year by September 2024, which meant about 300 applications a month. In September we had about 70.",
   "ask": [
    [
     "How does connecting a mortgage work?",
