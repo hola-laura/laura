@@ -35,7 +35,7 @@ const slides=[
   "ask": []
  },
  {
-  "title": "Move the application into Monzo, pre-filled",
+  "title": "Move the application into Monzo",
   "notes": "",
   "ask": []
  },
