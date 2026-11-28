@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="deck.css?v=371">
 <link rel="stylesheet" href="monzo.css?v=371">
 <link rel="preconnect" href="https://images.ctfassets.net">
-<script src="revolut.js?v=2" defer></script>
+<script src="revolut.js?v=3" defer></script>
 <style id="pillfix">.opttag{display:inline-flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap}.opttag b{margin-left:0;line-height:1;padding:3px 9px 4px;display:inline-flex;align-items:center}</style><style>.tr-why{margin:24px 0 18px;padding:12px 16px;border-radius:14px;background:rgba(255,79,64,.12);border:1px solid rgba(255,79,64,.35);font-size:16px;line-height:1.4;color:var(--mz-text);max-width:440px}.tr-why b{color:#fff}</style>
 <style id="reader">
 /* Reading version: the notes are always visible beside the slide */
@@ -73,6 +73,19 @@ dialog.toc::backdrop{background:rgba(4,12,15,.58);backdrop-filter:blur(4px)}
  .notes-panel{padding:18px 18px 16px;border-radius:16px}
 }
 body.reader p.keyboard-hint b{color:#e5e8dc;font-weight:600}
+/* notes written to be read: labelled blocks, lists and role/status chips */
+.np-tags{margin:0 0 16px;display:grid;gap:6px}
+.np-tags>div{display:grid;grid-template-columns:54px 1fr;gap:10px;align-items:baseline;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,.05)}
+.np-tags dt{font:10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--lime)}
+.np-tags dd{margin:0;font-size:14px;line-height:1.4;color:#fff}
+.np-tags .is-status dt{color:#7fdcc0}
+.np-body .np-h{margin:20px 0 6px;font-size:15px;line-height:1.3;font-weight:700;color:#fff;letter-spacing:-.005em}
+.np-body .np-h:first-child,.np-tags+.np-h{margin-top:4px}
+.np-body .np-p{margin:0 0 10px}
+.np-body .np-list{margin:0 0 10px;padding:0 0 0 18px}
+.np-body .np-list li{margin:0 0 7px;padding-left:2px}
+.np-body .np-list li::marker{color:var(--lime)}
+.np-body{font-size:15.5px;line-height:1.58}
 </style>
 </head>
 <body class="reader">
