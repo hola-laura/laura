@@ -1,7 +1,7 @@
 const slides=[
  {
   "title": "Remortgaging and first-time buyers at Monzo, 2025–26",
-  "notes": "I'm Laura Sampedro. This is a case study of remortgaging at Monzo, where I was a Senior Product Designer. It covers 2025 and 2026, and ends with what came next: first-time buyers.\nI worked at Monzo for over five years, and for the last two I focused on their Homeownership product. I was the only product designer on the squad.\nThe team was one PM, an engineering manager, six engineers, a data scientist and a user researcher, and we worked with Ops, Compliance and a broker called Habito.\nMy role covered setting the vision, turning that vision into the product, UX and UI, experiments, and AI tooling.\nHow to read this: my notes sit next to every slide. They say what I decided, what the team did, and what is live today. The prototypes on the slides are interactive, and each design links to its Figma file.",
+  "notes": "I'm Laura Sampedro. This is a case study of remortgaging at Monzo, where I was a Senior Product Designer. It covers 2025 and 2026, and ends with what came next: first-time buyers.\nI worked at Monzo for over five years, and for the last two I focused on their Homeownership product. I was the only product designer on the squad.\nThe team was one PM, an engineering manager, six engineers, a data scientist and a user researcher, and we worked with Ops, Compliance and a broker called Habito.\nMy role covered setting the vision, turning that vision into the product, UX and UI, experiments, and AI tooling.\nHow to read this: my notes sit next to every slide. They say what I decided, what the team did, and what is live today. The prototypes on the slides are interactive, and several slides link to the Figma file.",
   "ask": []
  },
  {
@@ -325,77 +325,8 @@ const slides=[
  },
  {
   "title": "Thank you for reading",
-  "notes": "That's the story. Thank you for reading.\nSix more slides sit after this one: the full design of the chat with your mortgage expert, my Focus View proposal, two mortgages on one home, an Open Finance concept, and the audit of the whole product.\nThe Figma files are linked on each slide. I'm happy to go deeper into any part of it.",
+  "notes": "That's the story. Thank you for reading.\nThe buttons on this slide open my portfolio and the two Figma files. I'm happy to go deeper into any part of it.",
   "ask": []
- },
- {
-  "title": "Chat with your mortgage expert without leaving Monzo",
-  "notes": "This is how it was designed. The mortgage expert has a fixed place in the tracker, with a name and a face.\nThe first time you open the chat you get a short intro. Who Annie is, that this chat is only for your remortgage, and when she replies. You only see it that first time.\nIt's there so you feel confident that you're talking to a real person, and to an expert.\nAfter that, the chat opens directly from the tracker. If you ask about something else, your balance for example, it sends you to Monzo support in one tap.\nAnd when the mortgage expert sends your recommendation, it arrives in the chat and it opens in the app, so you don't go to another website. This was designed, but it was never built.",
-  "ask": [
-   [
-    "What if the mortgage expert still sends the old link to Habito's site?",
-    "We planned for that. For a Monzo customer, a message that only links to the recommendation on the web is hidden, so there aren't two doors to the same thing."
-   ]
-  ],
-  "appx": true
- },
- {
-  "title": "The home screen, in eleven states",
-  "notes": "My audit of the product pointed at one place to start: the Focus View. It's the home screen for your mortgage, the room every other journey opens into. And it had one design for everyone.\nSo my proposal was a screen that adapts: what you see depends on where you are in your mortgage. Watch it change.\nFirst visit, not connected: one clear action. Returning after looking at rates. Just connected: we celebrate first, we don't dump data.\nDeal far away: calm, equity and timeline. Then, as the deal end gets closer, the tone shifts from calm to urgent, and remortgaging becomes the main action. While you're remortgaging, the tracker comes first.\nAnd there's a state for when the data fails, and one for variable-rate mortgages, where there's no deal end at all.\nThe first principle is the important one: state-driven, not feature-driven. It's a proposal. The decision was to validate it before rebuilding.",
-  "ask": [
-   [
-    "Eleven states. Isn't that too many?",
-    "For the customer it's always one screen with one main action. The states are for the team: they make every case explicit, so nobody finds out in production that a joint mortgage breaks the layout."
-   ]
-  ],
-  "appx": true
- },
- {
-  "title": "Four decisions, and why I made them",
-  "notes": "Four decisions inside it that I'd defend. One: value without connecting. Millions of customers haven't connected a mortgage, and before this they had no home here at all.\nIf you only looked at rates, your saved rates are the first thing you see when you come back. Your earlier visit counts. Two: make the cost concrete.\nNot 'your deal ends soon', but what you pay now and what you'll pay if you do nothing. That's urgency the customer can check. Three: the remortgage tracker lives in the home screen, not on a separate one.\nThe home is the hub for everything about your mortgage. And four: never a dead end. If the data doesn't load, we show the last numbers we had, with the date.\nAnd the whole thing is resolved each time the screen opens, with three questions: are you connected, are you remortgaging, and how many months until your deal ends.",
-  "ask": [],
-  "appx": true
- },
- {
-  "title": "Four ways to show two mortgages on one home",
-  "notes": "This is an edge case that turned out to be a foundation. Our tools were built for one person with one mortgage.\nBut people have two mortgages on one home, or a couple shares one, and then the numbers got confusing: one deal-end date for two products, or two partners seeing a different value for the same house.\nFor our UX days I explored four ways to show it: a property overview, stacked sections, a switcher, and combining both into one deal, which could even save money. The useful part was the insight underneath.\nThe data already added up at the level of the property. The screen didn't.\nSo the answer to every case was the same: show the property first, then its mortgages. And I'd start with the cheapest fix: the case where both mortgages were already on screen and simply rendered badly.",
-  "ask": [
-   [
-    "Which one would you ship?",
-    "The property overview as the structure, because it works for one mortgage or five. Combining into one deal is the commercial idea I'd test next, with care about early repayment charges."
-   ]
-  ],
-  "appx": true
- },
- {
-  "title": "Next: mortgage data straight from the lender",
-  "notes": "This one shows where all of this could go. Early in 2026 I worked on a concept for Monzo's Open Finance vision.\nToday we read your mortgage from your credit file, which updates slowly and has little detail. With Open Banking, you connect your lender directly, with consent you control: you choose the accounts, and you renew every ninety days.\nAnd with better data, Monzo can give you advice before you ask.\n'You'll reach the next loan-to-value band before your deal ends.' 'Overpaying beats your savings pot.' Or the honest one: 'switching now would cost you 2,900 pounds in early repayment charges.' This was shared with the FCA as part of Monzo's Open Finance work, and it landed really well.",
-  "ask": [
-   [
-    "Is this live?",
-    "No, it's a concept. Its job was to show the regulator and the business what better mortgage data would make possible."
-   ]
-  ],
-  "appx": true
- },
- {
-  "title": "Before scaling, I audited the whole product",
-  "notes": "By the summer of 2026, things were about to get bigger.\nFirst-time buyers were the focus for growth, and Habito was bringing more traffic into our flows.\nSo before designing the next journey I asked a different question, which was where should we invest first. I reviewed the whole live experience: ten areas in total.\nAnd I scored the main journeys with the same six criteria. Things like how clear the customer's job is, the risk when volume grows, and how confident we are in the evidence.\nI expected to find one or two broken journeys. And what I found was different. There wasn't one broken journey.\nIt was a product that had grown piece by piece. A small example: when I counted, we had eleven different ways of saying 'connect your mortgage', and nine for remortgaging.\nSo I recommended three initiatives for the next half. Align the copy on our entry points. Improve trust and clarity on the mortgage home screen.\nAnd open estimated deals to people who don't have enough connected data.\nAnd one direction for the longer term, which is to organise the product around your property. They went into the team's planning as candidates, to be scored with everything else.",
-  "ask": [
-   [
-    "How did you score the journeys?",
-    "Six criteria, each scored one, three or five: customer job clarity, UX quality, strategic importance, scale risk, confidence and delivery effort. I said out loud that the scores were a map to compare journeys, not the final priority order."
-   ],
-   [
-    "What had growing piece by piece created?",
-    "Fragmented entry points, duplicated functionality, inconsistent user states, disconnected experiences, and foundations that get harder to scale."
-   ],
-   [
-    "What happened with it?",
-    "The three initiatives went into the team's prioritisation for the second half, scored alongside the rest of the portfolio. The property-level direction was there to guide future discovery, not as a commitment."
-   ]
-  ],
-  "appx": true
  }
 ];
 let current=0;
